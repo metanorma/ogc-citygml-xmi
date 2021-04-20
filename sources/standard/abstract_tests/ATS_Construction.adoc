@@ -1,0 +1,8 @@
+=== Conformance Class Construction
+
+include::Construction/ATS_Construction_Classes.adoc[]
+
+include::Construction/ATS_Construction_Boundaries.adoc[]
+
+include::Construction/ATS_Construction_ADE_Use.adoc[]
+

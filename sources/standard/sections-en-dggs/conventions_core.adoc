@@ -1,0 +1,114 @@
+
+=== Abbreviated terms
+
+DE-9IM:: Dimensionally Extended 9-Intersection Model
+
+EAERS:: equal-area Earth RS
+
+GEM:: Geodesic Elevation Model
+
+GIS:: geographic information system
+
+GUID:: globally unique identifier
+
+HPC:: high-performance computing
+
+HPD:: high-performance data
+
+ICT:: information and communications technology
+
+ISEA:: Icosahedral Snyder Equal Area
+
+ISEA3H:: Icosahedral Equal Area Aperture 3 Hexagon
+
+ISO:: International Organization for Standardization
+
+OGC:: Open Geospatial Consortium
+
+OWS:: OGC Web-Service
+
+QTM:: Quaternary Triangular Mesh
+
+rHEALPix:: rearranged Hierarchical Equal Area isoLatitude Pixelization
+
+RS:: reference system
+
+UML:: Unified Modeling Language
+
+URI:: Uniform Resource Identifier
+
+=== Universal Resource Identifiers
+
+The normative provisions in this specification are denoted by the URI
+
+http://www.opengis.net/spec/dggs/2.0
+
+All requirements and conformance tests that appear in this document denoted by partial URIs are relative to this base.
+
+=== Unified Modeling Language notation
+
+In this document, the conceptual schema for describing discrete global grid systems are presented in the UML.
+<<ISO19103>> presents the specific profile of UML used in this document.
+
+The UML diagrams in this document refer to classifiers in five other standards.
+Each standard has been assigned a colour that is used consistently across all UML diagrams.
+Each diagram has a key listing the standards referred to in that diagram and their colours.
+Interface names in the figure have the structure <module-name>::<interface-name>.
+For reference, Table 1 lists all the module names and the standard they belong to.
+Both colour and module name can be used as quick reference to a classifier’s standard.
+
+=== Naming conventions
+
+Where possible, when a classifier represents the common behaviour of
+a set of defined things from the terms defined in Clause 3,
+the UML classifier will generally use the defined terms as its name.
+Since classifier names are capitalized and contain no space, and the defined term may contain several words,
+the classifier name will separate words using upper-camel-case concatenations
+(no spaces but each word beginning with a capital with all other letters in lowercase).
+Similarly, the name may be some simplified key phrase.
+This "UpperCamelCase" rule is generally followed but
+may be violated if clarity or consistency with other standards is improved by minor violations.
+For example:
+
+[none]
+* Zone identifier values are represented by the interface ZonalIdentifier or
+  stored using the datatype DirectPosition defined in <<ISO19107>>.
+* Instances of primitives will realize the interface Primitive in
+  the package Common Spatio-temporal Classes and other interfaces
+  for their specific dimension and interpolation mechanism.
+  For example, Point, Instant, Interval, Line, NodeT, LocationS.
+* Any classifier name referenced from another standard retains its original format.
+
+Classifier names for attributes and operations in the UML models
+may similarly use key phrases in lowerCamelCase
+(same as UpperCamelCase, but the first word begins in a lowercase letter).
+For example: parent; child; parentOf; childOf and relatePosition are all used as operation names.
+
+Module and package names can contain spaces.
+In some situations, a phrase that has an abbreviation is used
+in its unabbreviated form as a package name.
+Where a package or module is referred to in the text,
+both the capitalisation and unabbreviated form are preserved.
+This distinguishes them from a phrase in general use.
+For example: DGGS Equal-Area Earth Reference System; Zone and Temporal Geometry;
+and Reference System defined in this standard and
+Coordinate Reference Systems defined in <<ISO19111>>.
+
+In summary, the use of capitals for a term in the general text indicates a reference to a classifier from the UML
+
+=== Attribute and association role status
+
+In this document, conceptual schema in Clauses 6&ndash;8 are defined by tables. In these tables:
+
+[none]
+* attributes and association roles are given an *Obligation* status: +
+** *M:* mandatory - this attribute or association role shall be supplied. +
+** *C:* conditional - this attribute  or association role shall be supplied if the condition (given in the description) is true. It may be supplied if the condition is false. +
+** *O:* optional - this attribute  or association role may be supplied.
+* the *Maximum Occurrence* column in the tables indicates the maximum number of occurrences of attribute values that are permissible, with * indicating no upper limit.
+* non-navigable associations are not included in the UML diagrams or tables.
+
+The tables provide a summary of the UML diagrams. In particular, association roles,
+attributes, operations, and constraints that
+are inherited from another class unchanged are not described in the tables.
+In the event of any discrepancies between the UML diagrams and text, the UML shall prevail.

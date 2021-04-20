@@ -1,0 +1,7 @@
+=== Conformance Class WaterBody
+
+include::WaterBody/ATS_Waterbody_Classes.adoc[]
+
+include::WaterBody/ATS_Waterbody_Boundaries.adoc[]
+
+include::WaterBody/ATS_Waterbody_ADE_Use.adoc[]

@@ -1,0 +1,37 @@
+
+=== General
+
+This document builds on the spatio-temporal definitions in <<ISO19111>> to achieve a broader integration of spatio-temporal concepts.
+In addressing alignment with <<ISO19108>>,
+the reader is directed to the discussion in <<ISO19111>>, Annex D as a starting point which is adopted in full in this document.
+
+=== Geometry and topology
+
+Time can be represented as an ordered, one dimensional geometry with topology.
+The only significant difference between one-dimensional spatial and one-dimensional temporal is the importance of direction,
+and the topological relationships that explicitly address direction.
+<<ISO19107>> and <<ISO19108>> define terms for geometric and topological primitives and their complexes that are functionally equivalent but different in structure.
+To achieve spatio-temporal uniformity this document aligns its definitions with <<ISO19107-2019>>.
+When compared with equivalent terms in <<ISO19108>> this primarily results in differences in class inheritance rather than in underlying meaning.
+Comparing <<ISO19108>> terms to this document's terms, while putting the structural differences aside:
+
+- TM_GeometricPrimitive and TM_TopologicalPrimitive map to this document's TemporalGeometricPrimitive, TemporalTopologicalPrimitive respectively;
+- TM_TopologicalComplex maps to this document's TemporalTopologicalComplex;
+- this document introduces TemporalGeometricComplex and TemporalGeometricCollection;
+- the super classes of TM_Primitive, TM_Complex and TM_Object are not implemented and instead this document introduces TemporalGeometry and TemporalTopology;
+- TM_Instant and TM_Period map to this document's Instant and Interval respectively;
+- TM_Node and TM_Edge map to this document's NodeT and EdgeT respectively;
+- TM_Duration, and its subclasses TM_PeriodLength and TM_IntervalLength map to this document's Duration, which encompasses any valid unit on a TemporalCS (<<ISO19111-2019>>); and
+- TM_RelativePosition maps to this document's RelativePosition, which is defined to reflect modern usage by SDWIG and OGC as defined in OWL-time.
+
+=== Referencing by named periods
+
+<<ISO19108>> includes the concepts of a named Ordinal Era, and Ordinal reference systems which address the needs of geological time.
+While the topology of Ordinal Era are known, their extent is in general ill-defined.
+To achieve spatio-temporal uniformity this document aligns itself with <<ISO19112-2019>>.
+Named Periods are introduced as the temporal equivalent of named Locations <<ISO19112-2019>>).
+Periods have well-defined extents as well as well-defined topology.
+Comparing the terms of <<ISO19108>> with this document's terms, while acknowledging this difference:
+
+- TM_OrdinalEra maps to both Period and PeriodClass in this document depending on context; and
+- TM_OrdinalReferenceSystems maps to TemporalReferenceSystemUsingPeriodIdentifers in this document.

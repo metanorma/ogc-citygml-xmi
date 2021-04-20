@@ -1,0 +1,111 @@
+// start: moved from specification-overview
+DGGSs (Discrete Global Grid Systems) provide a new way to organise,
+store and analyse spatio-temporal data.
+This document contains a normative definition for DGGS and informative annexes.
+<<AnnexB>> discusses the theoretical basis for equal area Earth DGGS,
+and <<AnnexC>> discusses DGGS’s historical background.
+At the heart of DGGS is a new Referencing system.
+Spatial and temporal RSs described elsewhere by ISO/TC211 and
+the OGC (Open Geospatial Consortium) fall into two types:
+
+[alpha]
+. Referencing by coordinates (<<ISO19111>>), and
+. Referencing by identifiers (geographic in <<ISO19112>> & ordinal era in <<ISO19108>>).
+
+In spatial Referencing by identifiers, the only required geometry is an extent,
+which may be expressed as a simple bounding box.
+Formal geometry need not be defined and sometimes follows societal whim.
+Similarly in ordinal temporal RSs, the topology of ordinal era’s are known,
+but the start and finish times are often only an estimation and
+are not required by the data model.
+DGGSs introduce a third type --
+Referencing by identifiers with structured geometry,
+illustrated in <<figure-int-rsuiwsg>>.
+A single parent global geometry is chosen to define the dimensionality and orientation
+of the region of space-time occupied by the DGGS -- it's global world.
+
+[[figure-int-rsuiwsg]]
+.Referencing by identifiers with structured geometry
+image::figures/Fig_Intro_ReferencingByIdentifiersWithStructuredGeometry.png[align="center"]
+
+The structure for the DGGS geometry is provided by a strictly controlled process
+of recursive tessellation of the parent geometry that creates the DGGS RS's units of geometry.
+The region occupied by each unit of geometry is called a zone.
+Each zone is given a unique name, called a zonal identifier.
+Each zonal identifier is associated with a representative spatio-temporal position in
+a base CRS (coordinate reference system) defined by a datum
+for the DGGS’s global world.
+Best practice is for a zonal identifier to be an encoding of both
+its position and its topology.
+Referencing by identifiers with structured geometry gives rise to
+RSs using zonal identifiers with structured geometry.
+Geographic information is inherently four-dimensional and includes time.
+So, a unified spatio-temporal data model for coordinate systems, geometry, topology,
+identifiers and RSs using identifiers is a pre-requisite for spatio-temporal DGGSs.
+
+The approach taken in this document to specifying spatio-temporal data classes is to
+apply the spatio-temporal data model pattern in <<ISO19111>> to
+spatial data classes in both <<ISO19107>> and <<ISO19112>> to
+produce their spatio-temporal equivalents.
+The set of common spatio-temporal classes for geometry, topology, identifiers, and
+RSs using identifiers specified in this document are therefore consistent with
+spatio-temporal CRS and coordinate systems in ISO 19111.
+Like ISO 19111, the temporal data model in this document
+does not reference <<ISO19108>>.
+The similarities and differences are described in <<AnnexD>>.
+
+In this document the spatio-temporal scope is constrained to
+spatial classes that are invariant through all time,
+and to temporal classes that are invariant throughout space.
+While this approach excludes certain spatio-temporal situations,
+it is flexible enough for a very large body of social and environmental modelling.
+Oceanic, climate and weather modelling often need geometries with
+a constant mass of gaseous fluid under changing pressure and temperature.
+These models can be run outside a DGGS.
+However, the results coming from these environmental models can be stored
+in a DGGS for efficient later use with other data.
+
+This document specifies data models for a consistent set of common spatio-temporal classes,
+a DGGS core built on the common spatio-temporal classes,
+and a DGGS EAERS (equal-area Earth RS).
+The Common Spatio-temporal Classes, DGGS Core,
+and DGGS Equal-Area Earth DGGS packages each have their own conformance classes with
+their associated specifications and requirements.
+
+The DGGS Core package is comprised of a RS, and functions for quantization,
+topological query and interoperability.
+
+The DGGS Core RS is a RS using zonal identifiers with structured geometry
+located in its real world by coordinates in a base CRS.
+The DGGS Core RS is designed to support:
+
+[none]
+* temporal, surface, volumetric and spatio-temporal DGGS,
+* DGGS with different grid constraints,
+* DGGS with different refinement strategies, and
+* DGGS refencing either the Earth or other celestial bodies.
+
+The RS in Equal-Area Earth DGGS is a specialization of the DGGS Core RS.
+It describes a RS, comprising:
+
+[none]
+* a base unit polyhedron,
+* a discrete hierarchical sequence of global grids,
+* global grids with equal-area zones each with a unique identifier, and
+* located in a geodetic CRS, that is typically also a geographic CRS.
+
+This document does not prescribe any specific Earth surface model,
+base polyhedron or class of polyhedra,
+but is intended to allow for a range of options that produce DGGSs with
+compatible and interoperable functional characteristics.
+
+Future additions to the OGC Topic 21 / ISO 19170 series are intended to cover:
+
+* Part 2 &mdash; Three-dimensional and equal-volume Earth RS.
+* Part 3 &mdash; Spatio-temporal Earth RS.
+* Part 4 &mdash; Axis-aligned RS with all zone edges parallel to the base CRS’s axes.
+* Specification for a DGGS-API to formalise client-server, and server-server operations, both between DGGSs and between DGGSs and non-DGGS architectures.
+* Creation of a register system for DGGS definitions analogous to the register for CRSs.
+* Additions to other specifications, such as for OWS <<OGC05-042r2>>,
+  <<OGC17-089r1>> architectures,
+  spatial features and data formats to support DGGS data structures.

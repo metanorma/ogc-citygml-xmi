@@ -1,0 +1,102 @@
+[[Building-class-table]]
+.Classes used in Building
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<Building-section,Building>> +
+ «TopLevelFeatureType»  |A Building is a free-standing, self-supporting construction that is roofed, usually walled, and can be entered by humans and is normally designed to stand permanently in one place. It is intended for human occupancy (e.g. a place of work or recreation), habitation and/or shelter of humans, animals or things.
+|<<AbstractBuilding-section,AbstractBuilding>> +
+ «FeatureType»  |AbstractBuilding is an abstract superclass representing the common attributes and associations of the classes Building and BuildingPart.
+|<<AbstractBuildingSubdivision-section,AbstractBuildingSubdivision>> +
+ «FeatureType»  |AbstractBuildingSubdivision is the abstract superclass for different kinds of logical building subdivisions.
+|<<BuildingConstructiveElement-section,BuildingConstructiveElement>> +
+ «FeatureType»  |A BuildingConstructiveElement is an element of a Building which is essential from a structural point of view. Examples are walls, slabs, staircases, beams.
+|<<BuildingFurniture-section,BuildingFurniture>> +
+ «FeatureType»  |A BuildingFurniture is an equipment for occupant use, usually not fixed to the building. [cf. ISO 6707-1]
+|<<BuildingInstallation-section,BuildingInstallation>> +
+ «FeatureType»  |A BuildingInstallation is a permanent part of a Building (inside and/or outside) which has not the significance of a BuildingPart. Examples are stairs, antennas, balconies or small roofs.
+|<<BuildingPart-section,BuildingPart>> +
+ «FeatureType»  |A BuildingPart is a physical or functional subdivision of a Building. It would be considered a Building, if it were not part of a collection of other BuildingParts.
+|<<BuildingRoom-section,BuildingRoom>> +
+ «FeatureType»  |A BuildingRoom is a space within a Building or BuildingPart intended for human occupancy (e.g. a place of work or recreation) and/or containment of animals or things. A BuildingRoom is bounded physically and/or virtually (e.g. by ClosureSurfaces or GenericSurfaces).
+|<<BuildingUnit-section,BuildingUnit>> +
+ «FeatureType»  |A BuildingUnit is a logical subdivision of a Building. BuildingUnits are formed according to some homogeneous property like function, ownership, management, or accessability. They may be separately sold, rented out, inherited, managed, etc.
+|<<Storey-section,Storey>> +
+ «FeatureType»  |A Storey is typically a horizontal section of a Building. Storeys are not always defined according to the building structure, but can also be defined according to logical considerations.
+|===
+
+[[Building-datatypes-table]]
+.Data Types used in Building
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfAbstractBuilding-section,ADEOfAbstractBuilding>> +
+ «DataType»  |ADEOfAbstractBuilding acts as a hook to define properties within an ADE that are to be added to AbstractBuilding.
+|<<ADEOfAbstractBuildingSubdivision-section,ADEOfAbstractBuildingSubdivision>> +
+ «DataType»  |ADEOfAbstractBuildingSubdivision acts as a hook to define properties within an ADE that are to be added to AbstractBuildingSubdivision.
+|<<ADEOfBuilding-section,ADEOfBuilding>> +
+ «DataType»  |ADEOfBuilding acts as a hook to define properties within an ADE that are to be added to a Building.
+|<<ADEOfBuildingConstructiveElement-section,ADEOfBuildingConstructiveElement>> +
+ «DataType»  |ADEOfBuildingConstructiveElement acts as a hook to define properties within an ADE that are to be added to a BuildingConstructiveElement.
+|<<ADEOfBuildingFurniture-section,ADEOfBuildingFurniture>> +
+ «DataType»  |ADEOfBuildingFurniture acts as a hook to define properties within an ADE that are to be added to a BuildingFurniture.
+|<<ADEOfBuildingInstallation-section,ADEOfBuildingInstallation>> +
+ «DataType»  |ADEOfBuildingInstallation acts as a hook to define properties within an ADE that are to be added to a BuildingInstallation.
+|<<ADEOfBuildingPart-section,ADEOfBuildingPart>> +
+ «DataType»  |ADEOfBuildingPart acts as a hook to define properties within an ADE that are to be added to a BuildingPart.
+|<<ADEOfBuildingRoom-section,ADEOfBuildingRoom>> +
+ «DataType»  |ADEOfBuildingRoom acts as a hook to define properties within an ADE that are to be added to a BuildingRoom.
+|<<ADEOfBuildingUnit-section,ADEOfBuildingUnit>> +
+ «DataType»  |ADEOfBuildingUnit acts as a hook to define properties within an ADE that are to be added to a BuildingUnit. 
+|<<ADEOfStorey-section,ADEOfStorey>> +
+ «DataType»  |ADEOfStorey acts as a hook to define properties within an ADE that are to be added to a Storey.
+|<<RoomHeight-section,RoomHeight>> +
+ «DataType»  |The RoomHeight represents a vertical distance (measured or estimated) between a low reference and a high reference. [cf. INSPIRE]
+|===
+
+[[Building-codelist-table]]
+.CodeList Classes used in Building
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<BuildingClassValue-section,BuildingClassValue>> +
+ «CodeList»  |BuildingClassValue is a code list used to further classify a Building.
+|<<BuildingConstructiveElementClassValue-section,BuildingConstructiveElementClassValue>> +
+ «CodeList»  |BuildingConstructiveElementClassValue is a code list used to further classify a BuildingConstructiveElement.
+|<<BuildingConstructiveElementFunctionValue-section,BuildingConstructiveElementFunctionValue>> +
+ «CodeList»  |BuildingConstructiveElementFunctionValue is a code list that enumerates the different purposes of a BuildingConstructiveElement.
+|<<BuildingConstructiveElementUsageValue-section,BuildingConstructiveElementUsageValue>> +
+ «CodeList»  |BuildingConstructiveElementUsageValue is a code list that enumerates the different uses of a BuildingConstructiveElement.
+|<<BuildingFunctionValue-section,BuildingFunctionValue>> +
+ «CodeList»  |BuildingFunctionValue is a code list that enumerates the different purposes of a Building.
+|<<BuildingFurnitureClassValue-section,BuildingFurnitureClassValue>> +
+ «CodeList»  |BuildingFurnitureClassValue is a code list used to further classify a BuildingFurniture.
+|<<BuildingFurnitureFunctionValue-section,BuildingFurnitureFunctionValue>> +
+ «CodeList»  |BuildingFurnitureFunctionValue is a code list that enumerates the different purposes of a BuildingFurniture.
+|<<BuildingFurnitureUsageValue-section,BuildingFurnitureUsageValue>> +
+ «CodeList»  |BuildingFurnitureUsageValue is a code list that enumerates the different uses of a BuildingFurniture.
+|<<BuildingInstallationClassValue-section,BuildingInstallationClassValue>> +
+ «CodeList»  |BuildingInstallationClassValue is a code list used to further classify a BuildingInstallation.
+|<<BuildingInstallationFunctionValue-section,BuildingInstallationFunctionValue>> +
+ «CodeList»  |BuildingInstallationFunctionValue is a code list that enumerates the different purposes of a BuildingInstallation.
+|<<BuildingInstallationUsageValue-section,BuildingInstallationUsageValue>> +
+ «CodeList»  |BuildingInstallationUsageValue is a code list that enumerates the different uses of a BuildingInstallation.
+|<<BuildingRoomClassValue-section,BuildingRoomClassValue>> +
+ «CodeList»  |BuildingRoomClassValue is a code list used to further classify a BuildingRoom.
+|<<BuildingRoomFunctionValue-section,BuildingRoomFunctionValue>> +
+ «CodeList»  |BuildingRoomFunctionValue is a code list that enumerates the different purposes of a BuildingRoom.
+|<<BuildingRoomUsageValue-section,BuildingRoomUsageValue>> +
+ «CodeList»  |BuildingRoomUsageValue is a code list that enumerates the different uses of a BuildingRoom.
+|<<BuildingSubdivisionClassValue-section,BuildingSubdivisionClassValue>> +
+ «CodeList»  |BuildingSubdivisionClassValue is a code list used to further classify a BuildingSubdivision.
+|<<BuildingSubdivisionFunctionValue-section,BuildingSubdivisionFunctionValue>> +
+ «CodeList»  |BuildingSubdivisionFunctionValue is a code list that enumerates the different purposes of a BuildingSubdivision.
+|<<BuildingSubdivisionUsageValue-section,BuildingSubdivisionUsageValue>> +
+ «CodeList»  |BuildingSubdivisionUsageValue is a code list that enumerates the different uses of a BuildingSubdivision.
+|<<BuildingUsageValue-section,BuildingUsageValue>> +
+ «CodeList»  |BuildingUsageValue is a code list that enumerates the different uses of a Building.
+|<<RoofTypeValue-section,RoofTypeValue>> +
+ «CodeList»  |RoofTypeValue is a code list that enumerates different roof types.
+|<<RoomElevationReferenceValue-section,RoomElevationReferenceValue>> +
+ «CodeList»  |RoomElevationReferenceValue is a code list that enumerates the different elevation reference levels used to measure room heights.
+|===  

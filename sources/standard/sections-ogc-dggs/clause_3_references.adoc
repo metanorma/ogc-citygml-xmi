@@ -1,0 +1,44 @@
+
+[bibliography]
+== References
+
+// include::../sections-en/normref_core.adoc[]
+The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
+
+// The following documents contain the define both UML entities and defined terms used in this document, and the reader may need to refer to these documents to gain a wider understanding concepts:
+
+* [[[ISO8601-1-2019, ISO 8601-1:2019]]] // ISO 8601-1:2019, _Date and time — Representations for information interchange — Part 1: Basic rules._ 2019
+
+* [[[ISO19103-2015, ISO 19103:2015]]] // ISO 19103:2015, _Geographic information — Conceptual schema language._ 2015
+
+* [[[ISO19107-2019, ISO 19107:2019]]] // ISO 19107:2019, _Geographic information -- Spatial schema._ 2019
+
+* [[[ISO19111-2019, ISO 19111:2019]]] // ISO 19112:2019, _Geographic information -- Spatial referencing by coordinates._ 2019
+
+// * [[[OGC18-005r4, OGC 18-005r4]]] _OGC Abstract Specification Topic 2 -- Referencing by coordinates,_ OGC 18-005r4, is identical in normative content with the latest edition (2019) of ISO 19111.
+
+* [[[ISO19112-2019, ISO 19112:2019]]] // ISO 19112:2019, _Geographic information -- Spatial referencing by geographic identifiers._ 2019
+
+* [[[ISO19115-1-2014, ISO 19115-1:2014]]] // ISO 19115-1:2014, _Geographic information -- Metadata -- Part 1: Fundamentals._ 2014 .. only referred to in data model
+
+// * [[[OGC11-111r1, OGC 11-111r1]]] _OGC Abstract specification Topic 11 -- Metadata,_ OGC 11-111r1, 2016, is identical in normative content with the latest edition (2014) of ISO 19115-1.
+
+* [[[ISO19117-2012, ISO 19117:2012]]] // ISO 19117:2012, _Geographic information — Portrayal._ 2012
+
+* [[[ISO19123-2005, ISO 19123:2005]]] // ISO 19123:2005, _Geographic information -- Schema for coverage geometry and functions._ 2005
+
+* [[[ISO19156-2011, ISO 19156:2011]]] // ISO 19156:2011(E), _Geographic information -- Observations and Measurements._ 2011
+
+// * [[[OGC10-004r3, OGC 10-004r3]]] _OGC Abstract Specification Topic 20 -- Observation and Measurement,_ OGC 10-004r3, 2011, is identical in normative content with the latest edition (2011) of ISO 19156.
+
+ * [[[ISO2382-2015, ISO/IEC 2382:2015]]] // ISO/IEC 2382:2015, _Information technology — Vocabulary_ 2015
+
+// The following documents contain the primary reference for defined terms used in this document, but the reader does not need a wider understanding of the concepts beyond the text of the definition:
+
+// * [[[ISO8601-1-2019, ISO 8601-1:2019]]] // ISO 8601-1:2019, _Date and time — Representations for information interchange — Part 1: Basic rules._ 2019
+
+// * [[[ISO19103-2015, ISO 19103:2015]]] // ISO 19103:2015, _Geographic information — Conceptual schema language._ 2015
+
+// * [[[ISO19117-2012, ISO 19117:2012]]] // ISO 19117:2012, _Geographic information — Portrayal._ 2012
+
+// * [[[ISO19123-2005, ISO 19123:2005]]] // ISO 19123:2005, _Geographic information -- Schema for coverage geometry and functions._ 2005

@@ -1,0 +1,28 @@
+== Conceptual Model Profile
+
+include::requirements/requirements_class_conceptual-profile.adoc[]
+
+CityGML has been designed as a universal topographic information model that defines object types and attributes which are useful for a broad range of applications. In practical applications the objects within specific 3D city models will most likely contain attributes which are not explicitly modelled in CityGML. Moreover, there might be 3D objects which are not covered by the thematic classes of CityGML. Therefore, it is anticiapted that the CityGML 3.0 Conceptual Model may be `profiled` to address the needs of a user community.
+
+Profiling is a dangerous business. It is far too easy for a proliferation of profiles to undermine the interoperability which was the goal of the original standard. Therefore, the CityGML 3.0 Conceptual Model Standard includes Conceptual Profiles as one of its' <<standardization-target-definition,Standardization Targets>>. 
+
+The Conceptual Model Profile Requirements Class defines the requirements and permissions governing the creation of CityGML 3.0 Conceptual Model profiles. Conformance with this Requirements Class shall be advertised as 
+
+----
+http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-conceptual-profile
+----
+
+a profile may omit packages which are not mandated and are not a dependency of an included package. 
+
+a profile may restrict the multiplicity and valid values of an attribute
+
+a profile may extend through generics, ADEs, and expanded codelists
+
+a profile may extend through additional packages. These extensions must be identified as a separate, optional conformance class.
+
+An implementation specification generated from a conformant conceptual profile is also conformant with CityGML 3.0.
+
+
+include::requirements/profile/REQ_profile_Template.adoc[]
+
+include::recommendations/Profile/PER_profile_Template.adoc[]

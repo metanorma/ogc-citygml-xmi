@@ -1,0 +1,8 @@
+[[rec_ade_uml]]
+[width="90%",cols="2,6"]
+|===
+^|*Recommendation  {counter:rec-id}* |*/rec/ade/uml* 
+2+|In addition to meeting the requirements for a CityGML ADE, an ADE should:
+^|A |The <<uml_notation_section,UML notations and stereotypes>> used in the CityGML conceptual model SHOULD be applied to corresponding model elements in an ADE.
+^|B |An ADE SHOULD import and use predefined classes from external conceptual UML models such as the CityGML modules or the standardized schemas of the ISO 19100 series of International Standards.
+|===

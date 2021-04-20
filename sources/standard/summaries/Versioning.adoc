@@ -1,0 +1,34 @@
+[[Versioning-class-table]]
+.Classes used in Versioning
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<Version-section,Version>> +
+ «FeatureType»  |Version represents a defined state of a city model consisting of the dedicated versions of all city object instances that belong to the respective city model version. Versions can have names, a description and can be labeled with an arbitrary number of user defined tags.
+|<<VersionTransition-section,VersionTransition>> +
+ «FeatureType»  |VersionTransition describes the change of the state of a city model from one version to another. Version transitions can have names, a description and can be further qualified by a type and a reason.
+|===
+
+[[Versioning-datatypes-table]]
+.Data Types used in Versioning
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfVersion-section,ADEOfVersion>> +
+ «DataType»  |ADEOfVersion acts as a hook to define properties within an ADE that are to be added to a Version.
+|<<ADEOfVersionTransition-section,ADEOfVersionTransition>> +
+ «DataType»  |ADEOfVersionTransition acts as a hook to define properties within an ADE that are to be added to a VersionTransition.
+|<<Transaction-section,Transaction>> +
+ «DataType»  |Transaction represents a modification of the city model by the creation, termination, or replacement of a specific city object. While the creation of a city object also marks its first object version, the termination marks the end of existence of a real world object and, hence, also terminates the final version of a city object. The replacement of a city object means that a specific version of it is replaced by a new version.
+|===
+
+[[Versioning-enumeration-table]]
+.Enumerated Classes used in Versioning
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<TransactionTypeValue-section,TransactionTypeValue>> +
+ «Enumeration» |TransactionTypeValue enumerates the three possible types of transactions: insert, delete, or replace.
+|<<TransitionTypeValue-section,TransitionTypeValue>> +
+ «Enumeration» |TransitionTypeValue enumerates the different kinds of version transitions. “planned” and “fork” should be used in cases when from one city model version multiple successor versions are being created. “realized” and “merge” should be used when different city model versions are converging into a common successor version.
+|===

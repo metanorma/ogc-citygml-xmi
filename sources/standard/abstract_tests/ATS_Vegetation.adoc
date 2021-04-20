@@ -1,0 +1,8 @@
+=== Conformance Class Vegetation
+
+include::Vegetation/ATS_Vegetation_Classes.adoc[]
+
+include::Vegetation/ATS_Vegetation_Boundaries.adoc[]
+
+include::Vegetation/ATS_Vegetation_ADE_Use.adoc[]
+

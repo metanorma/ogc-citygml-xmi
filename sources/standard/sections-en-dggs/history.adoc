@@ -1,0 +1,87 @@
+.
+[cols="10,10,13,15,52"]
+|===
+|*Date* |*Release* |*Author* |*Paragraph modified* |*Description*
+|2018-12-05 |1.0.0 |Matt Purss |All |Copied OGC Abstract Specification Topic 21 [OGC 15-104r5] into the ISO document template
+|2019-02-09 |1.0.1 |Robert Gibb |3.23, Note 1 |Corrected '`circule`' -> '`circle`', and changed '`-`' and '`pass:c[  -]`' -> '`pass:c[  -  ]`', consistent with usage elsewhere in this document
+| | | |5.2.4.2 |Corrected '`rato`' to '`ratio`'
+| | | |5.3.3.1 |Corrected '`left hand`' to '`left-hand`'
+| | | |5.3.3.2 |Corrected '`right hand`' to '`right-hand`'
+| | | |Annex A |Expanded width of all tables to the page margins
+| | | |Annex B.3, caption for Figure B.1 |Inserted reference [48] +
+Corrected use of hyphen to dash, consistent with other dashes in this caption
+| | | |Annex B.5 |Corrected hyphen to dash between '`ISO 19111`' and '`spatial`' +
+Inserted reference [49]
+| | | |Annex D Bibliography |[3] Corrected '`Forth`' to '`Fourth`' +
+[10] Inserted missing DOI hyperlink +
+[26] Corrected underlining and blue text and inserted missing DOI hyperlink +
+[27] Corrected '`Chen, Z.-t.`' -> '`Chen, Z.`' +
+[41] Inserted DOI missing hyperlink +
+[42] Inserted DOI missing hyperlink +
+[43] Inserted DOI missing hyperlink +
+Added reference [48]
+|2019-02-12 |1.0.2 |Matt Purss |Section 5 |Updated width of tables and figures to fill the full width of the page.
+|2019-02-16 |1.0.2 |Robert Gibb | |Submitted to ISO TC211 secretariat for CD vote
+|2019-05-13 |1.0.3 |Robert Gibb | |Received from ISO TC211 secretariat as N5025 for preparation as DIS
+// |2019-05-20 |1.0.4 |Robert Gibb | |Converted to asciidoc, with dual metanorma-iso and metanorma-ogc templating
+|2019-05-20 |1.0.4 |Robert Gibb | 3.16, 3.21 |*TMG042, TMG045* Added abbreviations to the terms
+|2019-05-28 |1.0.4 |Robert Gibb | |*DK003, DK004, DK014, DK017, TMG019, DK030, DK031, TMG041, DK080, DK081, JP084, DK086, FR087, FR105, FR106, DK109* removed the artifacts of word to pdf conversion referred to in the comments
+// To avoid future word to pdf conversion issues and manage ogc and iso variants better, converted to a common OGC-ISO asciidoc source that can be processed by both metanorma-ogc & metanorma-iso.
+|2019-05-28 |1.0.4 |Robert Gibb | Title page |*CN002* Changed title to ‘ Discrete Global Grid Systems - Part 1 Equal Area Earth Reference System’, this clarifies that purpose of Part 1 of the DGGS Standard, and makes the equal area explicit.
+|2019-05-28 |1.0.5 |Robert Gibb | Introduction, Scope, Annex B, Annex C, All |*DK010, GB011, GB021* Moved Introduction to a new Annex B - Discrete Global Grid System Theory, and moved all but the second paragraph of the Scope into the Introduction. +
+Incremented document version from 1.0.4 to 1.0.5 because many section numbers have changed.
+|2019-05-29 |1.0.5 |Robert Gibb | Annex B, last para |*DK015* Expanded DGGs abbreviation to ‘discrete global grids’ and made other changes to the paragraph to further clarify the distinction between historic DGGS, & DGG work and this standard.
+|2019-05-29 |1.0.5 |Robert Gibb | Introduction, Scope |*DK022* Changed the first instances of DGGS to Discrete Global Grid System - Equal Area Earth Reference System (DGGS) in Introduction and Scope, this also reflects the change in title.
+|2019-05-29 |1.0.5 |Robert Gibb | Introduction, Scope, Bibliography |*DK024, DK025* Now in Introduction not Scope, so added references to OWS, WCS, and WCPS. 'DGGS core Abstract Specification' (now in Introduction) refers to this document ISO19170. Have made this explicit.
+|2019-05-29 |1.0.5 |Robert Gibb | Intro para1, 3.20 Note 1, 5.1, 5.2.1, 5.2.2, 5.2.5.1, 5.2.5.3, 5.2.6, 5.2.6.1, 5.3, 5.3.1 para1,3, 5.3.2, 5.3.3, 5.3.3.1, 5.3.3.2, C.3 |*GB020* must adhere -> adheres, must represent -> represents,
+be compliant -> comply, must define -> shall define, and provide -> to form, must also include -> includes, must be defined -> shall be defined, must define -> shall define, must be -> is, must -> shall, must -> shall, must -> shall,
+must include -> includes, must -> shall, mechanisims -> quantisation methods, however, must always be fixed and be defined -> is however, always fixed and always defined, must -> shall, must also be able -> shall also define methods, must be able to -> needs to.
+|2019-05-29 |1.0.5 |Robert Gibb | Foreward |*TMG018* Changed the references to ISO/IEC Directives, Part 2, Revision 8, 2018, and added collaboration with OGC.
+|2019-05-29 |1.0.5 |Robert Gibb | 3.4, 3.11, 3.26, 3.41, 3.56, 3.57 |*TMG029, TMG039, TMG048, TMG062, TMG077, TMG078* Consolidated instances of sources with notes from a different source or modified notes, as recommended by TMG
+|2019-05-29 |1.0.5 |Robert Gibb | 3.6, 3.19, 3.30, 3.31, 3.32, 3.38, 3.40, 3.46, 3.47, 3.49 |*TMG033, TMG043, TMG051, TMG053, TMG054, TMG061, TMG061, TMG068, TMG069, TMG072* Updated to conform with revision of ISO19107:2019
+|2019-05-29 |1.0.5 |Robert Gibb | 3.7, 3.8, 3.12, 3.51 |*TMG034, TMG035, TMG040, TMG073* Updated to conform with revision of ISO19111:2019
+|2019-05-29 |1.0.5 |Robert Gibb | 3.20, 3.23, 3.243.28, 3.29, 3.33, 3.34, 3.36, 3.43, 3.45, 3.48, 3.55 |*TMG044, TMG046, TMG047, TMG049, TMG050, TMG055, TMG057, TMG059, TMG065, TMG067, TMG071, TMG076* Added <DGGS> domain to the definition
+|2019-05-29 |1.0.5 |Robert Gibb | 3.2 Para2 |*DK027* Changed '`arenas`' -> '`subject domains`'
+|2019-05-29 |1.0.5 |Robert Gibb | 3.3 Note2 |*DK028* Changed 'all have unique parents or child cells that may share parents' to 'each have a single parent or child cells that have multiple parents'
+|2019-05-29 |1.0.5 |Robert Gibb | 3.9, 3.10, 3.33, 3.34 |*TMG036, DK037, TMG038, DK056* Added <DGGS> domain to the definition, and deleted the word 'role' from the definitions
+|2019-05-29 |1.0.5 |Robert Gibb | 3.35 |*TMG058* removed reference to 19136, moved source 19123 to after the note
+|2019-05-29 |1.0.5 |Robert Gibb | Introduction, 3.45, 3.48 |*DK025, TMG066, TMG070* replaced references to this 'Abstract Specification' to this 'document'
+|2019-05-30 |1.0.5 |Robert Gibb | Foreword, 2, 3, 4.2 |*TMG018, DK079* Acknowledge the role of ISO19104 in the formulation of this document and the associated UML model.
+|2019-05-30 |1.0.5 |Robert Gibb | 5.2.4.2, Annex C |Fix a few ISO Style issues e.g. 1m - 1 m, 30m 30 m
+|2019-05-30 |1.0.5 |Robert Gibb | Intro, Scope, 5, Annex A, Annex B |*CN002, DK104, FR107* Aligned the document and URI structures, and ensured that terminology was consistent across everything that looks like a function, including replacing Core with EA-ERS.
+|2019-05-30 |1.0.5 |Robert Gibb | 5.2.1 |*DK089* changed '`defined`' -> '`expressed`'
+|2019-05-30 |1.0.5 |Robert Gibb | Introduction, 5.2.4.2 |*DK096* Inserted a reference to ISO 19112:2019 and clarified use of geodetic identifier to enforce the distinction between the two.
+|2019-05-30 |1.0.5 |Robert Gibb | 5.2.1 |*DK088* Added a sentence to elaborate the meaning, and recast the Requirements in terms of completeness and uniqueness.
+|2019-05-31 |1.0.5 |Robert Gibb | Annex C.4 |*DK110, DK111* Changed Criterium -> Criteria, and '`representing a single point`' -> '`whose centroid represents a single point`'
+|2019-05-31 |1.0.5 |Robert Gibb | Abbreviated terms |*DK092*, *DK103* Added new terms to the Abbreviated Terms list
+// |2019-06-03 |1.0.5 |Robert Gibb | NormRefs, TermDef | Updated asciidoc Terms & Defs to correctly represent modified [.source] statements, Update ISO19107 to distinguish between 19107:2003 and 19107-FDIS [souurce] material and updated 19107-FDIS clause numbers
+|2019-06-03 |1.0.5 |Robert Gibb | Fig 8 | *DK083, DK085* Split Spatial Reference figure into three figures and update all figures to reflect UML in newer editions of 19107 & 19111, implement HMMG advice.
+|2019-06-03 |1.0.5 |Robert Gibb | TermDef | Reviewed Terms and Definitions wrt updates in 19107, 19111, 19112, 19115, 19161-2, introduced internal T&C links, and removed retired terms that retain their previous meaning: curve, object, point, sequence, set, solid, surface
+|2019-07-22 |1.0.5 |Robert Gibb | Title page, NormRefs, TermDef | Rename as Part 1 as discussed at June ISO & OGC/TC meetings.
+// and correctly code 19107-FDIS references in asciidoc
+|2019-10-18 |1.0.6 |Robert Gibb | 5, Annex A, All | *CN002* As discussed at June ISO & OGC/TC meetings, reordered and restructured Sections 5 and A. Conformance to split into Core and Equal Area Earth Reference System modules, and added specific support for DGGS on static and dynamic datums. +
+Incremented document version from 1.0.5 to 1.0.6 because many section numbers have changed.
+// |2019-10-26 |1.0.6 |Robert Gibb | 5, Annex A | Converted all requirements and their conformance tests to the asciidoc/metanorma requirements model, so they can be styled by metanorma-ogc & metanroma-iso
+|2019-10-26 |1.0.6 |Robert Gibb | 5.2.2, Annex A | Elaborated the way cellQuery2D differs from Query2D and the described the behaviour of parent, child and sibling functions
+|2019-10-27 |1.0.6 |Robert Gibb | 5.3.2.2, Annex A | Introduced error budget as an improved way of deriving and describing equal area precision, changed to the wording of the equal area precision requirement, and added a new requirement for limiting the number of tessellations
+|2019-10-28 |1.0.6 |Robert Gibb | NormRefs, TermDef | Updated 19107-FDIS to 19107:2019, and resolved source reference for direct position which has been retired as a term but retained as a data type in 19107:2019
+|2019-10-28 |1.0.6 |Robert Gibb | Annex B Fig B.5 | *DK013* Fig B.5 (was Fig 5), left hand example replaced with monochrome one.
+|2019-10-28 |1.0.6 |Robert Gibb | Annex B para 1 | *DK016* removed ‘framework’ from annex B, para 1
+|2019-10-28 |1.0.6 |Robert Gibb | TermDef | *TMG0443*, *TMG074*, *TMG075*, terms 'direct position', 'spatial reference system’ and ‘surface’ deleted
+|2019-10-28 |1.0.6 |Robert Gibb | 5 | *DK082*, *DK083* all UML diagrams are now monochrome.
+|2019-10-30 |1.0.7 |Robert Gibb | Title page, Introduction, Scope, Abbr, 5, 5.1, 5.2, 6 (was 5.3)  | Added Reference System to the Core as a new section 5.2.1, and separated it out from 5.3. EAERS is a new conformance class section 6 (from 5.3) +
+Inserted new Fig 2 and 3, increasing numbers of all following figures in Sect 5 by 2. +
+*DK093*, *DK094*, *DK095*, *DK097*, *DK098*, *DK099*, *DK100*, *DK101* clarified by new wording +
+Incremented document version from 1.0.6 to 1.0.7 because many section numbers have changed.
+|2019-10-30 |1.0.7 |Robert Gibb | Requirements & Conformance | Renumbered and split as per: 1 to 1, 2..5 to 11..14, 6 to 3, 4 & 15, 7 to 5, 8 to 6, 9..11 to 18..20, 12 to 9, 10 & 21, 13..14 to 22..23, 16 to 2, 17 to 17, 18 to 7 & 8. And reworked wording to match revised 5.2.1 & 5.3.
+|2019-10-30 |1.0.7 |Robert Gibb | 5.2.1.2 | *DK091* a) ‘not self-intersect’ and b) ‘topologically the same as a circle’ introduced.
+|2019-11-06 |1.0.7 |Robert Gibb | Annex A | Insert 'Requirement n:' in Requirement line of each conformance test.
+|2019-11-06 |1.0.7 |Robert Gibb | Abbreviations | Removed DGGS-RS, & HEALPIX (retaining rHEALPIX), changed DGGS-EAERS to EAERS, and made more use of EAERS
+|2020-03-20 |1.0.8 |Robert Gibb | All | Created Spatio-temporal Common Class package with conformance classes for geometry and topology, zones and identifiers, and zonal query, their terms and definitions, conformance classes, requirements, defining tables, and abstract tests. Restructured all preamble sections and the core to accommodate the new common classes. Inserted a new Annex describing the relationship of the temporal classes to ISO19108.
+|2020-05-30 |1.0.8 |Robert Gibb |  | Submitted for ISO/DIS ballot, published as N5348
+|2020-06-02 |1.0.8 |Robert Gibb | Introduction, Annex E | Restructured for OGC template, added summary of v1.0 to v2.0 changes to introduction (OGC only),  added Annex E - Requirements v1.0 to v2.0 cross-walk tables (OGC only), published to OGC pending documents as 20-040
+|2020-06-11 |1.0.8 |Robert Gibb | Scope, Table 30, Fig 16; Req 47 URI, Fig C.2, Fig B.4, Annex A |changes submitted as DIS comments: Scope bullet 1.1; add description for extent (in EA); Fig 16 remove duplicate 'sibling' (in EA); Requirement 47 insert 'ea/ers/' in URI; Fig C.2 b), c), switch labelling; B.4 b) change 30deg to 90deg and 10deg to 30deg, also superscript deg; Annex A prepend 'conf/' to all abbreviated URI;
+|2020-12-06 |1.0.10 |Robert Gibb  | All | Align text with changes in response to TC211 comments from both DIS ballot and ISOCS editor
+|2020-12-07 |2.0.0 |Robert Gibb  | i-vii, 2 (OGC only) | Finalise OGC front material, incl. list of OGC submitters. Add OGC Conformance class tables as section 2, duplicating the summary tables in Abstract Test Suite, publish to OGC pending documents as 20-040r3 Topic 21 v2.0 Part 1 
+// |2019-10-06 |1.0.7 |Robert Gibb | Annex D | In this adoc, comment out changes that were only about asciidoc or metanorma usage, as they are invisible as changes to the standard.
+|===

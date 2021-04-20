@@ -1,0 +1,12 @@
+=== Conformance Class Core
+
+include::Core/ATS_Core_Classes.adoc[]
+
+include::Core/ATS_Core_ISO.adoc[]
+
+include::Core/ATS_Core_Boundaries.adoc[]
+
+include::Core/ATS_Core_ADE_Use.adoc[]
+
+
+

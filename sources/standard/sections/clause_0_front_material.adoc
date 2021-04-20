@@ -1,0 +1,74 @@
+[abstract]
+== Abstract
+
+This standard defines the open CityGML Conceptual Model for the storage and exchange of virtual 3D city models. The CityGML Conceptual Model is defined by a Unified Modeling Language (UML) object model. This UML model builds on the ISO Technical Committee 211 (ISO/TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the man-made features described in the city models share the same spatiotemporal universe as the surrounding countryside within which they reside.
+
+A key goal for the development of the CityGML Conceptual Model is to provide a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.
+
+
+[.preface]
+== Preface
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
+
+
+[.preface]
+== Submitters
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+.
+[width="75%",cols="25%,45%,5%",]
+|===
+| *Name* | *Representing*	| *OGC member*
+|Thomas H. Kolbe |Chair of Geoinformatics, Technical University of Munich, Germany
+|Tatjana Kutzner |Chair of Geoinformatics, Technical University of Munich, Germany
+|Carl Stephen Smyth |OpenSitePlan, USA
+|Claus Nagel |virtualcitySYSTEMS, Germany
+|Carsten Roensdorf |Ordnance Survey, Great Britain
+|Charles (Chuck) Heazel |HeazelTech LLC
+|Sylvester Hagler |U.S. National Geospatial-Intelligence Agency
+|===
+
+In addition to the Editors of the specification the following individuals contributed to the CityGML 3.0 development:
+
+[#participants_in_development,reftext='{table-caption} {counter:table-num}']
+.Participants in Development
+[width="100%",cols="1,2",options="header"]
+|===
+|Name |Institution
+|Giorgio Agugiaro |3D Geoinformation Group, Delft University of Technology, the Netherlands
+|Christof Beil |Chair of Geoinformatics, Technical University of Munich, Germany
+|Filip Biljecki |Department of Architecture, National University of Singapore, Singapore
+|Kanishk Chaturvedi |Chair of Geoinformatics, Technical University of Munich, Germany
+|Volker Coors |Stuttgart University of Applied Sciences, Germany
+|Emmanuel Devys |Institut national de l’information géographique et forestière (IGN), France
+|Jürgen Ebbinghaus |AED-SICAD, Germany
+|Heinrich Geerling |Architekturbüro Geerling, Germany
+|Gilles Gesquière |LIRIS, University of Lyon, France
+|Gerhard Gröger |CPA ReDev GmbH, Germany
+|Karl-Heinz Häfele |Institute for Automation and Applied Informatics, Karlsruhe Institute of Technology, Germany
+|Nobuhiro Ishimaru |Hitachi, Ltd., Japan
+|Marc-Oliver Löwner |Institute for Geodesy and Photogrammetry, Technische Universität Braunschweig, Germany
+|Diana Moraru |Ordnance Survey, Great Britain
+|Friso Penninga |Geonovum, the Netherlands
+|Helga Tauscher |Faculty of Spatial Information, HTW Dresden - University of Applied Sciences, Germany
+|Linda van den Brink |Geonovum, the Netherlands
+|Heidi Vanparys |Danish Agency for Data Supply and Efficiency, Denmark
+|Sisi Zlatanova |Faculty of Built Environment, University of New South Wales, Australia
+
+|===
+
+The table only lists persons that were involved in the development of CityGML 3.0. CityGML 3.0 is based on extensive previous work that was done for CityGML 2.0. For persons involved in the previous work, please refer to the CityGML 2.0 specification.
+
+
+[.preface]
+== Acknowledgements
+
+The editors wish to thank the Special Interest Group 3D (SIG 3D) of the initiative Geodata Infrastructure Germany (GDI-DE) which originally started the development of CityGML, the CityGML Standards Working Group and the 3D Information Management (3DIM) Working Group of the OGC as well as all contributors of change requests and comments.
+
+image::images/CityGML_Logo.png[align="center"]
+
+This is the official CityGML logo. For current news on CityGML and information about ongoing projects and fields of research in the area of CityGML see http://www.citygml.org and http://www.citygmlwiki.org.

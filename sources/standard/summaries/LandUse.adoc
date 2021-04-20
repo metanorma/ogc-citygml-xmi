@@ -1,0 +1,30 @@
+[[LandUse-class-table]]
+.Classes used in LandUse
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<LandUse-section,LandUse>> +
+ «TopLevelFeatureType»  |A LandUse object is an area of the earth's surface dedicated to a specific land use or having a specific land cover with or without vegetation, such as sand, rock, mud flats, forest, grasslands, or wetlands.
+|===
+
+[[LandUse-datatypes-table]]
+.Data Types used in LandUse
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfLandUse-section,ADEOfLandUse>> +
+ «DataType»  |ADEOfLandUse acts as a hook to define properties within an ADE that are to be added to a LandUse.
+|===
+
+[[LandUse-codelist-table]]
+.CodeList Classes used in LandUse
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<LandUseClassValue-section,LandUseClassValue>> +
+ «CodeList»  |LandUseClassValue is a code list used to further classify a LandUse.
+|<<LandUseFunctionValue-section,LandUseFunctionValue>> +
+ «CodeList»  |LandUseFunctionValue is a code list that enumerates the different purposes of a LandUse.
+|<<LandUseUsageValue-section,LandUseUsageValue>> +
+ «CodeList»  |LandUseUsageValue is a code list that enumerates the different uses of a LandUse.
+|===

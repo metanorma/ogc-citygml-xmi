@@ -1,0 +1,13 @@
+
+This document supports the definition of:
+
+[none]
+* A DGGS core comprising:
+** a RS using zonal identifiers with structured geometry, and
+** functions providing import, export and topological query,
+* Common spatio-temporal classes for geometry, topology, RS using zonal identifiers,
+  zonal identifiers and zones, based on ISO 19111 CRS.
+  The spatio-temporal scope is constrained to
+** spatial elements that are invariant through all time, and
+** temporal elements that are invariant across all space.
+* EAERS for equal-area Earth DGGS.

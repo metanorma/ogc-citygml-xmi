@@ -1,0 +1,11 @@
+=== Conformance Class Generics
+
+include::Generics/ATS_Generics_Classes.adoc[]
+
+include::Generics/ATS_Generics_Boundaries.adoc[]
+
+include::Generics/ATS_Generics_Use.adoc[]
+
+include::Generics/ATS_Generics_ADE_Use.adoc[]
+
+

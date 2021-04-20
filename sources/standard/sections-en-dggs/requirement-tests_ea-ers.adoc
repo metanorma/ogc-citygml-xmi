@@ -1,0 +1,13 @@
+
+[[test-ea-ers]]
+=== Equal-Area Earth DGGS package conformance categories
+
+The requirement tests that apply to each conformance category in the Equal-Area Earth DGGS package are listed in <<tab-ea-ers>>
+
+[[tab-ea-ers]]
+include::../abstract_tests/TEST_ea-ers-i.adoc[]
+
+include::../abstract_tests/TEST_ea-ers-harmonized_model.adoc[]
+include::../abstract_tests/TEST_ea-ers-global_domain.adoc[]
+include::../abstract_tests/TEST_ea-ers-tessellation.adoc[]
+include::../abstract_tests/TEST_ea-ers-cell.adoc[]

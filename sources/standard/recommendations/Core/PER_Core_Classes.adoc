@@ -1,0 +1,11 @@
+[[per_Core_classes]]
+[width="90%",cols="2,6"]
+|===
+^|*Permission  {counter:per-id}* |*/per/Core/classes* 
+2+|For each UML class defined or referenced in CityGML Conceptual Model:
+^|A |An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.
+^|B |An Implementation Specification MAY represent an association of the UML class with a null association. 
+^|C |An Implementation Specification MAY represent an attribute of the UML class with a null attribute.
+^|D |Whenever a null element is used to represent a concept from the Conceptual Model, the Implementation Specification SHOULD document that mapping and provide an explanation for why that concept was not implemented.
+|===
+

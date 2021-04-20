@@ -1,0 +1,78 @@
+[[Tunnel-class-table]]
+.Classes used in Tunnel
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<Tunnel-section,Tunnel>> +
+ «TopLevelFeatureType»  |A Tunnel represents a horizontal or sloping enclosed passage way of a certain length, mainly underground or underwater. [cf. ISO 6707-1]
+|<<AbstractTunnel-section,AbstractTunnel>> +
+ «FeatureType»  |AbstractTunnel is an abstract superclass representing the common attributes and associations of the classes Tunnel and TunnelPart.
+|<<HollowSpace-section,HollowSpace>> +
+ «FeatureType»  |A HollowSpace is a space within a Tunnel or TunnelPart intended for certain functions (e.g. transport or passage ways, service rooms, emergency shelters). A HollowSpace is bounded physically and/or virtually (e.g. by ClosureSurfaces or GenericSurfaces).
+|<<TunnelConstructiveElement-section,TunnelConstructiveElement>> +
+ «FeatureType»  | A TunnelConstructiveElement is an element of a Tunnel which is essential from a structural point of view. Examples are walls, slabs, beams.
+|<<TunnelFurniture-section,TunnelFurniture>> +
+ «FeatureType»  |A TunnelFurniture is an equipment for occupant use, usually not fixed to the tunnel. [cf. ISO 6707-1]
+|<<TunnelInstallation-section,TunnelInstallation>> +
+ «FeatureType»  |A TunnelInstallation is a permanent part of a Tunnel (inside and/or outside) which does not have the significance of a TunnelPart. In contrast to TunnelConstructiveElement, a TunnelInstallation is not essential from a structural point of view. Examples are stairs, antennas or railings.
+|<<TunnelPart-section,TunnelPart>> +
+ «FeatureType»  |A TunnelPart is a physical or functional subdivision of a Tunnel. It would be considered a Tunnel, if it were not part of a collection of other TunnelParts.
+|===
+
+[[Tunnel-datatypes-table]]
+.Data Types used in Tunnel
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfAbstractTunnel-section,ADEOfAbstractTunnel>> +
+ «DataType»  |ADEOfAbstractTunnel acts as a hook to define properties within an ADE that are to be added to AbstractTunnel.
+|<<ADEOfHollowSpace-section,ADEOfHollowSpace>> +
+ «DataType»  |ADEOfHollowSpace acts as a hook to define properties within an ADE that are to be added to a HollowSpace.
+|<<ADEOfTunnel-section,ADEOfTunnel>> +
+ «DataType»  |ADEOfTunnel acts as a hook to define properties within an ADE that are to be added to a Tunnel.
+|<<ADEOfTunnelConstructiveElement-section,ADEOfTunnelConstructiveElement>> +
+ «DataType»  |ADEOfTunnelConstructiveElement acts as a hook to define properties within an ADE that are to be added to a TunnelConstructiveElement.
+|<<ADEOfTunnelFurniture-section,ADEOfTunnelFurniture>> +
+ «DataType»  |ADEOfTunnelFurniture acts as a hook to define properties within an ADE that are to be added to a TunnelFurniture.
+|<<ADEOfTunnelInstallation-section,ADEOfTunnelInstallation>> +
+ «DataType»  |ADEOfTunnelInstallation acts as a hook to define properties within an ADE that are to be added to a TunnelInstallation.
+|<<ADEOfTunnelPart-section,ADEOfTunnelPart>> +
+ «DataType»  |ADEOfTunnelPart acts as a hook to define properties within an ADE that are to be added to a TunnelPart.
+|===
+
+[[Tunnel-codelist-table]]
+.CodeList Classes used in Tunnel
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<HollowSpaceClassValue-section,HollowSpaceClassValue>> +
+ «CodeList»  |HollowSpaceClassValue is a code list used to further classify a HollowSpace.
+|<<HollowSpaceFunctionValue-section,HollowSpaceFunctionValue>> +
+ «CodeList»  |HollowSpaceFunctionValue is a code list that enumerates the different purposes of a HollowSpace.
+|<<HollowSpaceUsageValue-section,HollowSpaceUsageValue>> +
+ «CodeList»  |HollowSpaceUsageValue is a code list that enumerates the different uses of a HollowSpace.
+|<<TunnelClassValue-section,TunnelClassValue>> +
+ «CodeList»  |TunnelClassValue is a code list used to further classify a Tunnel.
+|<<TunnelConstructiveElementClassValue-section,TunnelConstructiveElementClassValue>> +
+ «CodeList»  |TunnelConstructiveElementClassValue is a code list used to further classify a TunnelConstructiveElement.
+|<<TunnelConstructiveElementFunctionValue-section,TunnelConstructiveElementFunctionValue>> +
+ «CodeList»  |TunnelConstructiveElementFunctionValue is a code list that enumerates the different purposes of a TunnelConstructiveElement.
+|<<TunnelConstructiveElementUsageValue-section,TunnelConstructiveElementUsageValue>> +
+ «CodeList»  |TunnelConstructiveElementUsageValue is a code list that enumerates the different uses of a TunnelConstructiveElement.
+|<<TunnelFunctionValue-section,TunnelFunctionValue>> +
+ «CodeList»  |TunnelFunctionValue is a code list that enumerates the different purposes of a Tunnel.
+|<<TunnelFurnitureClassValue-section,TunnelFurnitureClassValue>> +
+ «CodeList»  |TunnelFurnitureClassValue is a code list used to further classify a TunnelFurniture.
+|<<TunnelFurnitureFunctionValue-section,TunnelFurnitureFunctionValue>> +
+ «CodeList»  |TunnelFurnitureFunctionValue is a code list that enumerates the different purposes of a TunnelFurniture.
+|<<TunnelFurnitureUsageValue-section,TunnelFurnitureUsageValue>> +
+ «CodeList»  |TunnelFurnitureUsageValue is a code list that enumerates the different uses of a TunnelFurniture.
+|<<TunnelInstallationClassValue-section,TunnelInstallationClassValue>> +
+ «CodeList»  |TunnelInstallationClassValue is a code list used to further classify a TunnelInstallation.
+|<<TunnelInstallationFunctionValue-section,TunnelInstallationFunctionValue>> +
+ «CodeList»  |TunnelInstallationFunctionValue is a code list that enumerates the different purposes of a TunnelInstallation.
+|<<TunnelInstallationUsageValue-section,TunnelInstallationUsageValue>> +
+ «CodeList»  |TunnelInstallationUsageValue is a code list that enumerates the different uses of a TunnelInstallation.
+|<<TunnelUsageValue-section,TunnelUsageValue>> +
+ «CodeList»  |TunnelUsageValue is a code list that enumerates the different uses of a Tunnel.
+|===  

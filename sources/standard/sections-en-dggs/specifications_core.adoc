@@ -1,0 +1,588 @@
+
+=== DGGS Core package conformance classes
+
+This clause specifies the DGGS Core RS conformance class and the DGGS Core Functions conformance class. These cover:
+
+[arabic]
+. DGGS Core RS -- comprising parent global geometry, base CRS,
+  and RS using zonal identifiers with structured geometry;
+. DGGS Core Functions -- comprising quantization, topological query, and interoperation.
+
+[[req-core-rs]]
+=== Core RS using Zonal Identifiers with Structured Geometry module
+
+==== Core RS data model and base CRS
+
+The DGGS Core RS shown in <<figureCO-0>> is
+a RS using zonal identifiers with structured geometry for a globe.
+It is defined by the attributes of the DGG_ReferenceSystem
+interface <<tab-DGG_ReferenceSystem>> and its metadata.
+In the context of the DGGS, and particularly in the DGGS Core, the term globe
+is used in its most general sense to represent a mathematical model of any planetary body and,
+depending on need,
+potentially its surroundings out to the orbit of a planet's outer moons,
+and for spatio-temporal DGGS over a defined time span.
+The spatio-temporal extent of the entire globe is referred to as the domain of the DGGS.
+The DGGS Core itself is dimension agnostic.
+
+[[figureCO-0]]
+.Core RS using Zonal Identifiers with Structured Geometry module
+image::figures/Fig_DGGSCore-ReferenceSystemusingZonalIdentifierswithStructuredGeometry.png[align="center"]
+
+The DGGS Core RS model in <<figureCO-0>> describes a hierarchy of paired elements
+-- at each tier of the hierarchy a geometry element,
+shown on the left of the figure is paired with the equivalent zonal element, shown on the right of the figure.
+
+At the root of the hierarchy, the globe's reference model and base CRS for the DGGS are defined.
+A single parent geometry (GlobeGeometry) is defined to coincide with the globe's reference model.
+The parent geometry's dimensionality governs
+the dimensionality of the DGGS (See <<req-core-rs-global_domain>>).
+The parent global geometry is paired with a RS using zonal identifiers (RSUsingZonalIdentifiers).
+
+A sequence of discrete global grids (DiscreteGlobalGrids),
+each paired with a ZoneClass, define the lower levels of the hierarchy.
+
+Each DiscreteGlobaGrid is made up of Cells.
+Each Cell occupies a region of space-time (a Zone).
+The Zones corresponding to Cells in a DiscreteGlobaGrid all belong to
+the corresponding ZoneClass (See <<req-core-rs-discrete_global_grid>>).
+
+Cells provide zones with geometry and topology, and zones provide cells with
+names in the form of  zonal identifiers and representative positions in the base CRS
+in the form of direct positions (See <<req-core-rs-cell>>).
+
+Each cell is the child of one or more parent cells in the parent discrete global grid in
+the level above in the hierarchy.
+The cells of a discrete global grid are topologically related to the cells in the parent(s)
+by the collection of refinement strategies defined in DGG_ReferenceSystem(DGGS_Refinement).
+
+Each cell’s geometry, orientation and size is governed by
+the constraint defined in DGG_ReferenceSystem(DGGS_Grids) and by
+the sequence of refinement ratios defined in DGG_ReferenceSystem(DGGS_RefinementRatio).
+If a sequence of refinementRatio is defined, the values are applied to each
+level in the hierarchy in a recurring sequence starting at the top with
+the first refinementRatio in the sequence and working down through the levels in order.
+
+==== Defining tables
+
+include::../tables/TAB_core-rs-i.adoc[]
+. <<tab-DGG_GridConstraint>> -- Elements of Core RS using Zonal Identifiers with Structured Geometry::DGG_GridConstraint
+. <<tab-DGG_RefinementStrategy>> -- Elements of Core RS using Zonal Identifiers with Structured Geometry::DGG_RefinementStrategy
+
+include::../tables/TAB_core-rs.adoc[]
+
+[[tab-DGG_GridConstraint]]
+.Elements of Core RS using Zonal Identifiers with Structured Geometry::DGG_GridConstraint
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| DGG_GridConstraint
+|*Definition:* 7+a| CodeList for constraints that are used to define different categories of DGGS.
+Each constraint is a constraint on the shape, size, or orientation of cells in a DiscreteGlobalGrid.
+|*Stereotype:* 7+a| CodeList
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.6+|*Values:*  | _Name_ 6+a| _Definition_
+ | cellAxisAligned 6+| Cell edges are parallel to the base CRS's coordinate system axes.
+ | cellConformal 6+| Variation in shape between all the cells in each DiscreteGlobalGrid is minimized.
+ | cellEquiAngular 6+| Variation in bearing from one cell's representative position to the next neighboring cell's representative positions in each DiscreteGlobalGrid is minimized.
+ | cellEquiDistant 6+| Variation in distance from a cell's representative position to all of it's neighboring cell's representative positions in each DiscreteGlobalGrid is minimized.
+ | cellEquiSized 6+| Variation in interior size between all cells in each DiscreteGlobalGrid is minimized.
+|===
+
+{empty} +
+
+[[tab-DGG_RefinementStrategy]]
+.Elements of Core RS using Zonal Identifiers with Structured Geometry::DGG_RefinementStrategy
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| DGG_RefinementStrategy
+|*Definition:* 7+a| CodeList for strategies that are used to define different categories of DGGS.
+Each strategy defines the topological relationship of one or more elements of cell geometry belonging to a child cell with one or more elements of geometry of its parent cell.
+|*Stereotype:* 7+a| CodeList
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.7+|*Values:*  | _Name_ 6+a| _Definition_
+ | centredChildCell 6+| `parent&lArr;zone.representativePosition()` = `child&lArr;zone.representativePosition()` for one child.
+ | nestedChildCell 6+| `parent.boundary = pass:c[<<set of all parent.child>>].boundary`.
+ | nodeCentredChildCell 6+| Each parent cell has a `child&lArr;zone.representativePosition` coincident with each of the parent's _nodes_ (zero-Dimensional topological boundary element).
+ | edgeCentredChildCell 6+| Each parent cell of dimension greater than 1 has a child cell for which the `cell&lArr;zone.representativePosition` lies on each of the parent's _edges_ (one-Dimensional topological boundary element)
+ | faceCentredChildCell 6+| Each parent cell of dimension greater than 2 has a child cell for which the `cell&lArr;zone.representativePosition` lies on each of the parent's _faces_ (two-Dimensional topological boundary element)
+ | solidCentredChildCell 6+| Each parent cell of dimension greater than 3 has a child cell for which the `cell&lArr;zone.representativePosition` lies on each of the parent's _solids_ (three-Dimensional topological boundary element)
+|===
+
+{empty} +
+
+The following requirements apply:
+include::../requirements/REQ_core-rs-harmonized_model.adoc[]
+
+{blank} +
+
+include::../requirements/REQ_core-rs-crs.adoc[]
+
+[[req-core-rs-global_domain]]
+==== Global domain
+
+The domain of the DGGS shall be defined as the entire globe, with cells that
+_"exhaustively cover the globe without overlapping or underlapping"_ (Goodchild <<ref9>>).
+Applying these criteria to the cells in each discrete global grid,
+there shall be no gaps between cells and no positions that are covered by more than one cell.
+
+Each cell inherits its dimensionality from the choice of geometry for the GlobalGeometry class,
+so a reference system that specifies a geometry and domain as the globe's surface
+will have two-dimensional cells on the surface of the globe, and
+one that specifies a geometry and domain as a globe's volume
+will have three-dimensional cells filling the globe.
+A reference system that specifies a linear geometry and domain,
+for instance for time, will result in one-dimensional cells.
+
+The following requirements apply:
+include::../requirements/REQ_core-rs-global_domain.adoc[]
+
+[[req-core-rs-cell]]
+==== Cells and zones
+
+[[req-core-rs-cell-simple]]
+===== Cell simple geometry
+
+Semantically, the terms cell and zone refer to different characteristics of the same region of space-time.
+Cells in a DGGS shall be geometrically simple. Simple geometries have the following properties:
+
+[loweralpha]
+. they do not self-intersect;
+. they are topologically the same as a circle, or the circle’s equivalent in the dimension of the cell.
+  e.g. to a sphere in three-dimensions; and
+. they enclose a region which is always measurable using a metric of the same dimensionality as the cell.
+
+The following requirement applies:
+
+include::../requirements/REQ_core-rs-cell-simple.adoc[]
+
+[[req-core-rs-cell-direct_position]]
+===== Cell position
+
+Each cell's zone has a fixed representative position in the space of the base CRS, recorded as a direct position.
+
+The following requirement applies:
+
+include::../requirements/REQ_core-rs-cell-direct_position.adoc[]
+
+[[req-core-rs-cell-address]]
+===== Cell address
+
+Each cell's zone shall be assigned a unique address in the form of a zonal identifier.
+The value assigned to each address shall be structured on one or more of these four general indexing methods: hierarchy-based, space-filling curve based, coordinate <<ref1>> and encoded address schemas (such as those used for IP addresses <<ref12>>).
+
+The following requirement applies:
+include::../requirements/REQ_core-rs-cell-address.adoc[]
+
+[[req-core-rs-discrete_global_grid]]
+==== Discrete global grid and its sequence
+
+Cells at the same level in the tessellation hierarchy are aggregated into discrete global grids.
+The hierarchy of discrete global grids is an ordered sequence, typically also of decreasing cell size, representing the lowest resolution to higher resolutions.
+The discrete sequence of grids forms a multi-resolution grid hierarchy that is the basis for the DGGS RS.
+
+The following requirements apply:
+include::../requirements/REQ_core-rs-discrete_global_grid.adoc[]
+
+=== DGGS Core functions
+
+[[req-core-functions-quantization]]
+==== Core Quantization Functions module
+
+A DGGS is defined based on the geometry of the globe in a data agnostic manner.
+Therefore, a DGGS specification shall define quantization methods for assigning data
+to cells so that the data is accessible for future use.
+Different quantization strategies may be used for sampling content into cells.
+For example, a single DGGS may be used as a data structure for integrating multiple datasets
+of different types (e.g. vector and raster datasets)<<ref11>> and in different ways
+(e.g. DGGS cells as data tiles, or one raster pixel per DGGS cell or
+DGGS cell indices as vector coordinate-pairs).
+This abstract specification makes use of the concepts defined by <<ISO19156>>
+to facilitate the association of observations/spatial data to a DGGS cell(s).
+Some DGGS/polyhedron choices are more efficient for sampling than others
+(e.g. DGGS based on an icosahedron).
+
+Multiple observation contexts are recognized for quantization,
+each corresponding to a distinct role for DGGS cells to play.
+In any particular DGGS specification, one or more (and potentially all) roles may be described for either internal or external use to support interoperability, as follows:
+
+[loweralpha]
+. *asDataTiles:* In data tile quantization, spatial feature/observations
+  (e.g. point clouds, images, vectors, etc.) are aggregated and
+clipped to cell boundaries and stored in tiles without any changes made to the feature type parameters.
+The cells of the DGGS provide a multi-,or single-resolution tiling schema
+with the cell index used as the identifier in the tile naming convention.
+In the context of "Big Data Analytics", 'asDataTile' support will likely be the
+most efficient type of granularity for job submission on HPC/HPD or Cloud ICT infrastructure,
+particularly for dominantly embarrassingly parallel analyses.
+It is also likely to be the most efficient granularity for many data transfer requests.
+. *asDataCells:* In data cell quantization, the spatial features/observations
+  (e.g. point clouds, images, vectors, etc.) are sampled to each DGGS cell by assignment of
+  data value(s) using the cell's geometry to govern the quantization operation.
+. *asCoordinates:* In coordinate quantization, each coordinate tuple from the
+  spatial feature/observation is converted to a cell index of an appropriate level of precision.
+The cell data package will include appropriate vector topology to preserve the structure of the spatial feature in the context of the DGGS.
+. *asTags:* In tag quantization, cell index values are "tagged" to data objects
+  in a similar fashion to social media records.
+The refinement level of the cell index is indicative of the precision with which the
+location of a spatial feature/observation and/or its spatial extent are known.
+This can be thought of as a convex hull with the same geometry of
+the DGGS cell surrounding the objects to be assigned to that cell.
+. *asGraphicCells:* In graphic cell quantization, data is rendered to cells,
+  and refinement levels are leveraged to support corresponding levels of detail or zoom levels.
+. *asGraphicTiles:* In graphic tile quantization, graphic cells are tiled,
+  and often cached for delivery to a display system.
+As with data tiles, the cell index is used as the identifier in the tile naming convention.
+
+The extent of the data assigned at any time to a particular DGGS implementation,
+defines the DGGS's extent.
+The extent is likely to vary over the DGGS's lifecycle as the extent
+of data assigned to it changes.
+The domain of the DGGS, is however, always fixed and always defined
+over the entire surface model of the DGGS's globe.
+
+<<figureCO-1>> shows the key elements required to perform data quantization operations in a DGGS specification.
+
+[[figureCO-1]]
+.Components of the Core Quantization Functions module
+image::figures/Fig_DGGSCore_ComponentsofQuantizationFunctionsmodule.png[align="center"]
+
+==== Defining tables for Core Quantization Functions sub-package
+
+include::../tables/TAB_core-qf-i.adoc[]
+. <<tab-Quantization>> -- Elements of Core Quantization Functions::Quantisation
+
+include::../tables/TAB_core-qf.adoc[]
+
+[[tab-Quantization]]
+.Elements of Core Quantization Functions::Quantization
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| Quantisation
+|*Definition:* 7+a| CodeList for roles that cell geometries may play in a DataAssignmentProcess.
+|*Stereotype:* 7+a| CodeList
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.7+|*Values:*  | _Name_ 6+a| _Definition_
+ | asDataTiles 6+| Cell assigned features clipped to the boundary of the cell +
+*NOTE* Features are  clipped to the cell boundary and stored as a feature tile. +
+*NOTE* The cell's zonal identifier may be used in the naming convention for data tiles
+ | asDataCells 6+| Cell assigned a data value, either resampled or remapped, from a feature based on the geometry of the cell.
+ | asCoordinates 6+| Each coordinate tuple in a vector feature's geometry data is replaced by a zonal identifier.
+ The size of zone is chosen to represent the uncertainty in the knowledge of the position represented by the coordinate tuple.
+ | asTags 6+| Minimal set of zonal identifiers applied to an object. +
+*NOTE* The zone operates in this context as a minimum bounding container (similar to a minimum bounding rectangle in 2D) where the boundary of the zone wholly encloses a set of features assigned to that zone. +
+*NOTE* The refinement level of a zone index used to tag a feature (or set of features) provides an indication of the level of precision and/or the spatial extents of the feature.
+ | asGraphicCells 6+| Cell assigned the colour of a pixel in a map image ready for delivery to a map display system, with the colour  representing an attribute value, either sampled or mapped, from a feature. +
+*NOTE* Refinement levels may be aligned with zoom levels or scales in a map display system.
+ | asGraphicTiles 6+| Tiling scheme used for a map display system using cells to define the tile boundaries. +
+*NOTE* Graphic tiles may be cached or stored and sent to the display system as a map tile.
+|===
+
+{empty} +
+
+The following requirement applies:
+include::../requirements/REQ_core-functions-quantization.adoc[]
+
+[[req-core-functions-query]]
+==== Core Topological Query Functions module
+
+===== Overview of topological query functions
+
+The Topological Query Functions module implements the DE9IM <<ref7>> functionality
+defined in <<ISO19107-2019>> Geometry::Query2D and Geometry::Query3D for zonal topology.
+This is achieved through a single interface called ZoneQuery (<<figureCO-3>>, <<tab-ZoneQuery>>).
+By default ZoneQuery operates at the dimensionality of the DGGS’s zones.
+Changes in dimensionality are controlled with an optional parameter _projectTo_
+that constrains ZoneQuery to a specified reference direction, surface or volume.
+
+Two additional operations are provided that are based on the temporal concept of  relative position.
+These are called relatePosition and relativePosition.
+These are generalized for use on any single reference direction specified by _projectTo_,
+not just the temporal direction.
+
+Six additional operations are provided in ZoneQuery that leverage the ZoneClass hierarchy. These are called parent, child and sibling and parentOf, childOf and siblingOf.
+
+ZoneQuery operations are defined in <<figureCO-3>> and <<def-tab-ZoneQuery>>.
+The following parameters are shared by many of the operations as specified in <<<tab-ZoneQuery>>
+
+_another_:: type ZonalIdentifier, mandatory. +
+Specifies the target region for the query.
+In zonal query a zone's identifier provides sufficient description of its topology.
+ZonalIdentifier therefore takes the place of the geometry data used in Query2D and Query3D for both the source and the target.
+_inheritID_:: type Boolean, optional, default &lArr; _False_ +
+When _inheritID_ has a value of _True_ the result pass:c[<<set>>] only contains cells for which the IDs have shared inheritance,
+and a value of _False_ indicates that inheritance is ignored.
+_projectTo_:: type directPosition[4], optional, default &lArr; _(0,0,0,1)_ for relatePosition and relativePosition, otherwise _(1,1,1,1)_ +
+_projectTo_ specifies an optional reference direction, surface or volume for an operation. +
+Allowed values for each direction are _0_ and _1_, and spatial directions may also have a value of  _n_. +
+_projectTo_ defines a vector whose starting point is inferred as the point with each _projectTo_ direction whose value is _1_ set to _0_.
+It takes one of three forms. +
+In its one-dimensional form for specifying a reference direction, one direction has a value of _1_.
+For example _(0,0,0,1)_ projects to the temporal axis, and _(0,0,1,0)_ projects to the vertical axis. +
+In its two-dimensional form for specifying a reference surface, two directions have a value of _1_.
+For example a surface at height _n_ is specified by a _projectTo_ value of _(1,1,n,0)_ representing the vector _[ (0,0,n,0), (1,1,n,0) ]_. +
+In its three-dimensional form for specifying a reference volume, three directions have a value of _1_.
+For example _(1,1,1,0)_ projects to a spatial volume without reference to time, and _(1,1,n,1)_ projects to a surface spanning all time at height _n_. +
+Only the one-D\dimensional form is supported by relativePosition and relatePosition. +
+While this construct could be used to implement more complex spatio-temporal queries, that isn't the intent of Query2D, and isn't specified for ZoneQuery either. +
+_rangeRefine_:: type refinementLevelRange, optional, default &lArr; [ min(source.refinementLevel,target.refinementLevel) : max(source.refinementLevel,target.refinementLevel) ]. +
+Specifies the range of refinement levels to include in the return pass:c[<<set>>].
+The lower and upper bounds in the refinementLevelRange datatype are both included in the range.
+_levels_:: type Integer, optional, default &lArr; _1_ +
+_Levels_ indicates the relative number of levels in the hierarchy to be traversed in assembling the result pass:c[<<set>>]
+<<figureCO-2>> illustrates the parent, child and sibling suite of functions through examples.
+
+===== Summary of operations in ZoneQuery
+
+The following operations have the same topological meaning as their equivalent operations in <<ISO19107-2019>> Geometry::Query2D and Geometry::Query3D: distance, contains, crosses, disjoint, equals, intersects, overlaps, touches, within, withinDistance, difference, intersection, symDifference, union, and relate.
+
+[loweralpha]
+. *relativePosition:* _A_.relativePosition(_B_, _projectTo_), returns the relativePosition enumerator that describes _B_'s relative position to _A_ with respect to the direction defined by _projectTo_.
+. *relatePosition:* _A_.relatePosition(_B_, _relation_, _projectTo_) returns whether _B_ has the relative position to _A_ given by _relation_ with respect to the direction _projectTo_
+. *parentOf:* _A_.parentOf(_B_, _inheritID_, _projectTo_), returns whether _A_ is a parent cell of _B_, optionally filtered by _inheritID_ and _projectTo_.
+. *childOf:* _A_.childOf(_B_, _inheritID_, _projectTo_), returns whether _A_ is a child cell of _B_, optionally filtered by _inheritID_ and _projectTo_.
+. *siblingOf:* _A_.siblingOf(_B_, _inheritID_, _projectTo_), returns whether _A_ is a sibling cell of _B_, optionally filtered by _inheritID_ and _projectTo_.
+. *parent:* _A_.parent(_inheritID_, _projectTo_, _levels_), returns the unique pass:c[<<set>>] of zoneIdentifiers for zones that satisfy _A_.parentOf(_B_, _inheritID_, _projectTo_) applied recursively _levels_ times up the parent hierarchy.
+The pass:c[<<set>>] will have at most one member from each level of the hierarchy if  _inheritID_ is _True_ and may have more than one if the cell refinementStrategy is not nested.
+. *child:* _A_.child(_inheritID_, _projectTo_, _levels_), returns the unique pass:c[<<set>>] of zoneIdentifiers for zones that satisfy _A_.parentOf(_B_,  _inheritID_, _projectTo_) applied recursively _levels_ times down the parent hierarchy.
+. *sibling:* _A_.sibling(_inheritID_, _projectTo_, _levels_), returns the unique pass:c[<<set>>] of zoneIdentifiers for zones that satisfy _A_.parentOf(_B_, _inheritID_, _projectTo_) applied recursively _levels_ times outward on zones at the same refinement level. Multiple levels of sibling can also be thought of as the children of its parent(s) the specified number of levels up the hierarchy.
+
+[[figureCO-2]]
+.Examples of parent, child, and sibling query operations
+image::figures/Fig_core-Functions_Query-Example.png[align="center"]
+
+EXAMPLES:: _Parent, sibling and child queries for zone *40*:_ +
+*40*.parent() returns {*4*} +
+*40*.sibling(_inheritID=true_) returns {*40*, *41*, *42*, *43*} +
+*40*.sibling() returns {*13*, *22*, *23*, *31*, *40*, *41*, *42*, *43*} +
+*40*.child(_inheritID=true_) returns {*400*, *401*, *402*, *403*} +
+{blank} +
+_Parent, sibling and child tests for zone *40*:_ +
+*40*.parentOf(*400*) returns _true_ +
+*40*.siblingOf(*41*) returns _true_ +
+*40*.siblingOf(*31*, _inheritID=true_) returns _false_ +
+*40*.siblingOf(*41*) returns _true_ +
+*40*.childOf(*4*) returns _true_ +
+{blank} +
+_Parent and child tests for zones *31* and *33* with multiple parents:_ +
+*31*.childOf(*4*, _inheritID=true_) returns _false_ +
+*31*.childOf(*4*) returns _true_ +
+*31*.parent(_inheritID=true_) returns {*3*} +
+*31*.parent() returns {*3*, *4*} +
+*33*.parent() returns {*3*, *4*, *5*, *6*} +
+{blank} +
+_Parent and child queries with levels set to a value greater than 1:_ +
+*400*.parent(_inheritID=true_, _level=2_) returns {*40*, *4*} +
+*4*.child(_inheritID=true_, 2) returns {*40*, *41*, *42*, *43*, *400*, *401*, *402*, *403*, *410*, *411*, *412*, *413*, *420*, *421*, *422*, *423*, *430*, *431*, *432*, *433*} +
+*400*.sibling(_inheritID=true_, _levels=2_) returns {*400*, *401*, *402*, *403*, *410*, *411*, *412*, *413*, *420*, *421*, *422*, *423*, *430*, *431*, *432*, *433*} +
+While some of these results extend to zones that are not drawn in the figure,
+the location indicated by their zonal identifier should be readily apparent from the pattern. +
+
+NOTE: In all examples the optional parameters _inheritID_ and _levels_ take their default values
+of _false_ and _1_ respectively, unless they are specified.
+Since these are two-dimensional examples without any depth or time, _projectTo_ has no influence.
+
+Further query and analysis functions may then be applied to the returned data
+through additional software bindings.
+This abstract specification does not specify any requirements for the
+binding or implementation of further, extension, query or analytic functions.
+
+[[figureCO-3]]
+.Components of Topological Zonal Query Functions module
+image::figures/Fig_DGGSCore-TopologicalQueryFunctions.png[align="center"]
+
+[[def-tab-ZoneQuery]]
+==== Defining tables
+
+include::../tables/TAB_core-af-i.adoc[]
+. <<tab-RelativePosition>> -- Elements of Core Query Functions::RelativePosition
+
+include::../tables/TAB_core-af.adoc[]
+
+[[tab-RelativePosition]]
+.Elements of Core Topological Query Functions::RelativePosition enumeration
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| RelativePosition
+|*Definition:* 7+a| Enumeration for the relative position of two geometries projected to a single uni-directional dimension, e.g. time. +
+*NOTE* In this document the relative position names follow those jointly adopted by W3D and OGC <<OGC16-071r3>>, which are more recent than <<ISO19108>>
+|*Stereotype:* 7+a| Enumeration
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.16+|*Values:*  | _Name_ 6+a| _Definition:_ +
+ _self and another are two Periods (or 1D projected ZoneGeometries)._
+ | Before 6+| self.end &lt; another.begin
+ | After 6+| self.begin &gt; another.end
+ | Meets 6+| self.end = another.begin
+ | MetBy 6+| self.begin = another.end
+ | Overlaps 6+| self.begin &lt; another.begin AND self.end &gt; another.begin AND self.end &lt; another.end
+ | OverlappedBy 6+| self.begin &lt; another.end AND self.end &gt; another.end
+ | Starts 6+| self.begin = another.begin AND self.end &lt; another.end
+ | StartedBy 6+| self.begin = another.begin AND self.end &gt; another.end
+ | During 6+| self.begin &gt; another.begin AND self.end &lt; another.end
+ | Contains 6+| self.begin &lt; another. begin AND self.end &gt; another.end
+ | Finishes 6+| self.end = another.end AND self.begin &gt; another.begin
+ | FinishedBy 6+| self.begin &gt; another.begin AND self.end = another.end
+ | Equals 6+| self.begin = another.begin AND self.end = another.end
+ | In 6+| self.relativePosion(another) IN [Starts, During, Finishes]
+ | Disjoint 6+| self.relativePosion(another) IN [Before, After]
+|===
+
+{empty} +
+
+The following requirement applies:
+include::../requirements/REQ_core-functions-query.adoc[]
+
+==== Core Interoperation Functions module
+
+===== Overview of interoperation functions
+
+While the quantization and topological query functions enable a DGGS implementation to
+successfully operate internally,
+in order to facilitate connectivity with other spatial data infrastructures
+additional interoperation functions are required.
+As shown in <<figureCO-4>>, the interoperation functions are split into two modules:
+
+[arabic]
+. Interoperation Query: Interpret and translate external data queries sent to the DGGS implementation; and
+. Interoperation Broadcast: Convert the result set returned from a DGGS query operation from
+  internal data format(s) (optimized for that DGGS implementation)
+  to format(s) suitable for external data delivery.
+
+This document does not specify the specific interface protocol encodings required to connect a DGGS implementation
+to an external client and to facilitate the transfer of information into and out of a DGGS.
+This abstract specification makes use of the tools available in <<ISO19156>>
+to facilitate the linkage between external query operations and the
+data/observations assigned to the DGGS zone(s) of interest.
+Specific interface encodings are anticipated to be elaborated as extensions to this abstract specification.
+
+[[figureCO-4]]
+.Components of Core Interoperation Functions module
+image::figures/Fig_DGGSCore-ComponentsofInteroperationFunctions.png[align="center"]
+
+===== Defining tables
+
+include::../tables/TAB_core-if-i.adoc[]
+
+include::../tables/TAB_core-if.adoc[]
+
+[[req-core-functions-interoperation-query]]
+===== Interoperation Query module
+
+External queries may originate from an external client application and range in syntax
+from natural language queries (e.g. 'Where are the gas pipelines in Western Canada located?',
+or 'How has the Murray-Darling Basin in Australia changed over the past 27 years?',
+or 'Compute the watershed area of the Kawarau Catchment in New Zealand'),
+to an OWS 'GetCapabilities' or similar type of query,
+to an SQL (or similar) statement.
+To support interoperability, a DGGS specification shall define methods to
+receive, interpret and translate an external data query (or process) request into a form
+that can be processed by the internal DGGS data retrieval and query functions.
+
+<<figureCO-5>> shows the key functional elements required for DGGS
+to translate and execute an external query or process operations.
+
+[[figureCO-5]]
+.Components of Interoperation Query module
+image::figures/Fig_DGGSCore-InteroperationQuery.png[align="center"]
+
+===== Defining tables
+
+include::../tables/TAB_core-if-q-i.adoc[]
+. <<tab-QueryType>> -- Elements of Interoperation Query::QueryType
+
+include::../tables/TAB_core-if-q.adoc[]
+
+[[tab-QueryType]]
+.Elements of Interoperation Query::QueryType
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| QueryType
+|*Definition:* 7+a| CodeList for the structure of an interoperation query.
+|*Stereotype:* 7+a| CodeList
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.9+|*Values:*  | _Name_ 6+a| _Definition_
+ | OGCAPI 6+| OGC API query
+ | SQL 6+| Structured Query Language query.
+ | WCS 6+| Web Coverage Service query.
+ | WCPS 6+| Web Coverage Processing Service query.
+ | WFS 6+| Web Feature Service query.
+ | WMS 6+| Web Map Processing Service query.
+ | WMTS 6+| Web Map Tile Service query.
+ | WPS 6+| Web Processing Service query.
+|===
+
+{empty} +
+
+The following requirement applies:
+include::../requirements/REQ_core-functions-interoperation-query.adoc[]
+
+[[req-core-functions-interoperation-broadcast]]
+===== Interoperation Broadcast module
+
+Just as it is necessary for DGGS to be able to interpret and execute external data queries,
+DGGS shall also define methods to broadcast results from data queries to external client(s) or
+data infrastructure(s). External clients are anticipated to be web-based client(s),
+software client(s) on the same ICT infrastructure as the DGGS, or other DGGS.
+
+<<figureCO-6>> shows basic elements required to translate the result set(s)
+returned from a DGGS data query into
+a suitable data format for transfer and broadcast the reformatted result set
+via one or a number of data or information transfer protocols.
+
+[[figureCO-6]]
+.Interoperation Broadcast
+image::figures/Fig_DGGSCore-InteroperationBroadcast.png[align="center"]
+
+===== Defining tables
+
+include::../tables/TAB_core-if-b-i.adoc[]
+. <<tab-BroadcastType>> -- Elements of Interoperation Broadcast::TranslationType
+. <<tab-TranslationType>> -- Elements of Interoperation Broadcast::TranslationType
+
+include::../tables/TAB_core-if-b.adoc[]
+
+[[tab-BroadcastType]]
+.Elements of Interoperation Broadcast::BroadcastType
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| BroadcastType
+|*Definition:* 7+a| CodeList for DGGS interoperation data broadcast protocols
+|*Stereotype:* 7+a| CodeList
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.4+|*Values:*  | _Name_ 6+a| _Definition_
+ | https 6+| Broadcast over Hypertext transfer secure protocol.
+ | http 6+| Broadcast over Hypertext transfer protocol.
+ | ftp 6+| Broadcast over File transfer protocol.
+ | smtp 6+| Broadcast over Simple mail transfer protocol.
+|===
+
+{empty} +
+
+[[tab-TranslationType]]
+.Elements of Interoperation Broadcast::TranslationType
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+|*Name:* 7+a| TranslationType
+|*Definition:* 7+a| CodeList for DGGS interoperation data broadcast translation formats.
+|*Stereotype:* 7+a| CodeList
+|*Abstract:* 7+a| true
+.1+|*Associations:* 7+a| (none)
+.8+|*Values:*  | _Name_ 6+a| _Definition_
+ | toASCII 6+| Translate to ASCII format.
+ | toGeoJSON 6+| Translate to GeoJSON format.
+ | toGML 6+| Translate to GML format.
+ | toHDF 6+| Translate to HDF format.
+ | toJSON-LD 6+| Translate to JSON-LD format.
+ | toNetCDF 6+| Translate to NetCDF format.
+ | toXML 6+| Translate to XML format.
+|===
+
+{empty} +
+
+The following requirement applies:
+include::../requirements/REQ_core-functions-interoperation-broadcast.adoc[]

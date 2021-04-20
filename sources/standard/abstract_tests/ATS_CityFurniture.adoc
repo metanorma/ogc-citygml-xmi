@@ -1,0 +1,9 @@
+=== Conformance Class CityFurniture
+
+include::CityFurniture/ATS_CityFurniture_Classes.adoc[]
+
+include::CityFurniture/ATS_CityFurniture_Boundaries.adoc[]
+
+include::CityFurniture/ATS_CityFurniture_ADE_Use.adoc[]
+
+

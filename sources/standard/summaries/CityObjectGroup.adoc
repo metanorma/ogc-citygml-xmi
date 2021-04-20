@@ -1,0 +1,32 @@
+[[CityObjectGroup-class-table]]
+.Classes used in CityObjectGroup
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<CityObjectGroup-section,CityObjectGroup>> +
+ «TopLevelFeatureType»  |A CityObjectGroup represents an application-specific aggregation of city objects according to some user-defined criteria. Examples for groups are the buildings in a specific region, the result of a query, or objects put together for visualization purposes. Each member of a group may be qualified by a role name, reflecting the role each city object plays in the context of the group.
+|<<Role-section,Role>> +
+ «ObjectType»  |Role qualifies the function of a city object within the CityObjectGroup.
+|===
+
+[[CityObjectGroup-datatypes-table]]
+.Data Types used in CityObjectGroup
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfCityObjectGroup-section,ADEOfCityObjectGroup>> +
+ «DataType»  |ADEOfCityObjectGroup acts as a hook to define properties within an ADE that are to be added to a CityObjectGroup.
+|===
+
+[[CityObjectGroup-codelist-table]]
+.CodeList Classes used in CityObjectGroup
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<CityObjectGroupClassValue-section,CityObjectGroupClassValue>> +
+ «CodeList»  |CityObjectGroupClassValue is a code list used to further classify a CityObjectGroup.
+|<<CityObjectGroupFunctionValue-section,CityObjectGroupFunctionValue>> +
+ «CodeList»  |CityObjectGroupFunctionValue is a code list that enumerates the different purposes of a CityObjectGroup.
+|<<CityObjectGroupUsageValue-section,CityObjectGroupUsageValue>> +
+ «CodeList»  |CityObjectGroupUsageValue is a code list that enumerates the different uses of a CityObjectGroup.
+|===  

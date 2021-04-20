@@ -1,0 +1,183 @@
+[[Core-class-table]]
+.Classes used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<AbstractAppearance-section,AbstractAppearance>> +
+ «FeatureType»  |AbstractAppearance is the abstract superclass to represent any kind of appearance objects.
+|<<AbstractCityObject-section,AbstractCityObject>> +
+ «FeatureType»  |AbstractCityObject is the abstract superclass of all thematic classes within the CityGML data model.
+|<<AbstractDynamizer-section,AbstractDynamizer>> +
+ «FeatureType»  |AbstractDynamizer is the abstract superclass to represent Dynamizer objects.
+|<<AbstractFeature-section,AbstractFeature>> +
+ «FeatureType»  |AbstractFeature is the abstract superclass of all feature types within the CityGML data model.
+|<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> +
+ «FeatureType»  |AbstractFeatureWithLifespan is the base class for all CityGML features. It allows the optional specification of the real-world and database times for the existence of each feature.
+|<<AbstractLogicalSpace-section,AbstractLogicalSpace>> +
+ «FeatureType»  |AbstractLogicalSpace is the abstract superclass for all types of logical spaces. Logical space refers to spaces that are not bounded by physical surfaces but are defined according to thematic considerations.
+|<<AbstractOccupiedSpace-section,AbstractOccupiedSpace>> +
+ «FeatureType»  |AbstractOccupiedSpace is the abstract superclass for all types of physically occupied spaces. Occupied space refers to spaces that are partially or entirely filled with matter.
+|<<AbstractPhysicalSpace-section,AbstractPhysicalSpace>> +
+ «FeatureType»  |AbstractPhysicalSpace is the abstract superclass for all types of physical spaces. Physical space refers to spaces that are fully or partially bounded by physical objects.
+|<<AbstractPointCloud-section,AbstractPointCloud>> +
+ «FeatureType»  |AbstractPointCloud is the abstract superclass to represent PointCloud objects.
+|<<AbstractSpace-section,AbstractSpace>> +
+ «FeatureType»  |AbstractSpace is the abstract superclass for all types of spaces. A space is an entity of volumetric extent in the real world.
+|<<AbstractSpaceBoundary-section,AbstractSpaceBoundary>> +
+ «FeatureType»  |AbstractSpaceBoundary is the abstract superclass for all types of space boundaries. A space boundary is an entity with areal extent in the real world. Space boundaries are objects that bound a Space. They also realize the contact between adjacent spaces.
+|<<AbstractThematicSurface-section,AbstractThematicSurface>> +
+ «FeatureType»  |AbstractThematicSurface is the abstract superclass for all types of thematic surfaces.
+|<<AbstractUnoccupiedSpace-section,AbstractUnoccupiedSpace>> +
+ «FeatureType»  |AbstractUnoccupiedSpace is the abstract superclass for all types of physically unoccupied spaces. Unoccupied space refers to spaces that are entirely or mostly free of matter.
+|<<AbstractVersion-section,AbstractVersion>> +
+ «FeatureType»  |AbstractVersion is the abstract superclass to represent Version objects.
+|<<AbstractVersionTransition-section,AbstractVersionTransition>> +
+ «FeatureType»  |AbstractVersionTransition is the abstract superclass to represent VersionTransition objects.
+|<<Address-section,Address>> +
+ «FeatureType»  |Address represents an address of a city object.
+|<<CityModel-section,CityModel>> +
+ «FeatureType»  |CityModel is the container for all objects belonging to a city model.
+|<<ClosureSurface-section,ClosureSurface>> +
+ «FeatureType»  |ClosureSurface is a special type of thematic surface used to close holes in volumetric objects. Closure surfaces are virtual (non-physical) surfaces.
+|<<CityObjectRelation-section,CityObjectRelation>> +
+ «ObjectType»  |CityObjectRelation represents a specific relation from the city object in which it is included to another city object.
+|<<ImplicitGeometry-section,ImplicitGeometry>> +
+ «ObjectType»  |ImplicitGeometry is a geometry representation where the shape is stored only once as a prototypical geometry, for example a tree or other vegetation object, a traffic light or a traffic sign. This prototypic geometry object can be re-used or referenced many times, wherever the corresponding feature occurs in the 3D city model.
+|===
+
+[[Core-datatypes-table]]
+.Data Types used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<AbstractGenericAttribute-section,AbstractGenericAttribute>> +
+ «DataType»  |AbstractGenericAttribute is the abstract superclass for all types of generic attributes.
+|<<ADEOfAbstractAppearance-section,ADEOfAbstractAppearance>> +
+ «DataType»  |ADEOfAbstractAppearance acts as a hook to define properties within an ADE that are to be added to AbstractAppearance.
+|<<ADEOfAbstractCityObject-section,ADEOfAbstractCityObject>> +
+ «DataType»  |ADEOfAbstractCityObject acts as a hook to define properties within an ADE that are to be added to AbstractCityObject.
+|<<ADEOfAbstractDynamizer-section,ADEOfAbstractDynamizer>> +
+ «DataType»  |ADEOfAbstractDynamizer acts as a hook to define properties within an ADE that are to be added to AbstractDynamizer.
+|<<ADEOfAbstractFeature-section,ADEOfAbstractFeature>> +
+ «DataType»  |ADEOfAbstractFeature acts as a hook to define properties within an ADE that are to be added to AbstractFeature.
+|<<ADEOfAbstractFeatureWithLifespan-section,ADEOfAbstractFeatureWithLifespan>> +
+ «DataType»  |ADEOfAbstractFeatureWithLifespan acts as a hook to define properties within an ADE that are to be added to AbstractFeatureWithLifespan.
+|<<ADEOfAbstractLogicalSpace-section,ADEOfAbstractLogicalSpace>> +
+ «DataType»  |ADEOfAbstractLogicalSpace acts as a hook to define properties within an ADE that are to be added to AbstractLogicalSpace.
+|<<ADEOfAbstractOccupiedSpace-section,ADEOfAbstractOccupiedSpace>> +
+ «DataType»  |ADEOfAbstractOccupiedSpace acts as a hook to define properties within an ADE that are to be added to AbstractOccupiedSpace.
+|<<ADEOfAbstractPhysicalSpace-section,ADEOfAbstractPhysicalSpace>> +
+ «DataType»  |ADEOfAbstractPhysicalSpace acts as a hook to define properties within an ADE that are to be added to AbstractPhysicalSpace.
+|<<ADEOfAbstractPointCloud-section,ADEOfAbstractPointCloud>> +
+ «DataType»  |ADEOfAbstractPointCloud acts as a hook to define properties within an ADE that are to be added to AbstractPointCloud.
+|<<ADEOfAbstractSpace-section,ADEOfAbstractSpace>> +
+ «DataType»  |ADEOfAbstractSpace acts as a hook to define properties within an ADE that are to be added to AbstractSpace.
+|<<ADEOfAbstractSpaceBoundary-section,ADEOfAbstractSpaceBoundary>> +
+ «DataType»  |ADEOfAbstractSpaceBoundary acts as a hook to define properties within an ADE that are to be added to AbstractSpaceBoundary.
+|<<ADEOfAbstractThematicSurface-section,ADEOfAbstractThematicSurface>> +
+ «DataType»  |ADEOfAbstractThematicSurface acts as a hook to define properties within an ADE that are to be added to AbstractThematicSurface.
+|<<ADEOfAbstractUnoccupiedSpace-section,ADEOfAbstractUnoccupiedSpace>> +
+ «DataType»  |ADEOfAbstractUnoccupiedSpace acts as a hook to define properties within an ADE that are to be added to AbstractUnoccupiedSpace.
+|<<ADEOfAbstractVersion-section,ADEOfAbstractVersion>> +
+ «DataType»  |ADEOfAbstractVersion acts as a hook to define properties within an ADE that are to be added to AbstractVersion.
+|<<ADEOfAbstractVersionTransition-section,ADEOfAbstractVersionTransition>> +
+ «DataType»  |ADEOfAbstractVersionTransition acts as a hook to define properties within an ADE that are to be added to AbstractVersionTransition.
+|<<ADEOfAddress-section,ADEOfAddress>> +
+ «DataType»  |ADEOfAddress acts as a hook to define properties within an ADE that are to be added to an Address.
+|<<ADEOfCityModel-section,ADEOfCityModel>> +
+ «DataType»  |ADEOfCityModel acts as a hook to define properties within an ADE that are to be added to a CityModel.
+|<<ADEOfClosureSurface-section,ADEOfClosureSurface>> +
+ «DataType»  |ADEOfClosureSurface acts as a hook to define properties within an ADE that are to be added to a ClosureSurface.
+|<<ExternalReference-section,ExternalReference>> +
+ «DataType»  |ExternalReference is a reference to a corresponding object in another information system, for example in the German cadastre (ALKIS), the German topographic information system (ATKIS), or the OS UK MasterMap®.
+|<<Occupancy-section,Occupancy>> +
+ «DataType»  |Occupancy is an application-dependent indication of what is contained by a feature.
+|<<QualifiedArea-section,QualifiedArea>> +
+ «DataType»  |QualifiedArea is an application-dependent measure of the area of a space or of a thematic surface.
+|<<QualifiedVolume-section,QualifiedVolume>> +
+ «DataType»  |QualifiedVolume is an application-dependent measure of the volume of a space.
+|<<XALAddressDetails-section,XALAddressDetails>> +
+ «DataType»  |XALAddressDetails represents address details according to the OASIS xAL standard.
+|===
+
+[[Core-primitives-table]]
+.Primitive Data Types used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<Code-section,Code>> +
+ «BasicType»  |Code is a basic type for a String-based term, keyword, or name that can additionally have a code space.
+|<<DoubleBetween0and1-section,DoubleBetween0and1>> +
+ «BasicType»  |DoubleBetween0and1 is a basic type for values, which are greater or equal than 0 and less or equal than 1. The type is used for color encoding, for example.
+|<<DoubleBetween0and1List-section,DoubleBetween0and1List>> +
+ «BasicType»  |DoubleBetween0and1List is a basic type that represents a list of double values greater or equal than 0 and less or equal than 1. The type is used for color encoding, for example.
+|<<DoubleList-section,DoubleList>> +
+ «BasicType»  |DoubleList is an ordered sequence of double values.
+|<<DoubleOrNilReasonList-section,DoubleOrNilReasonList>> +
+ «BasicType»  |DoubleOrNilReasonList is a basic type that represents a list of double values and/or nil reasons.
+|<<ID-section,ID>> +
+ «BasicType»  |ID is a basic type that represents a unique identifier.
+|<<IntegerBetween0and3-section,IntegerBetween0and3>> +
+ «BasicType»  |IntegerBetween0and3 is a basic type for integer values, which are greater or equal than 0 and less or equal than 3. The type is used for encoding the LOD number.
+|<<MeasureOrNilReasonList-section,MeasureOrNilReasonList>> +
+ «BasicType»  |MeasureOrNilReasonList is a basic type that represents a list of double values and/or nil reasons together with a unit of measurement.
+|<<TransformationMatrix2x2-section,TransformationMatrix2x2>> +
+ «BasicType»  |TransformationMatrix2x2 is a 2 by 2 matrix represented as a list of four double values in row major order.
+|<<TransformationMatrix3x4-section,TransformationMatrix3x4>> +
+ «BasicType»  |TransformationMatrix3x4 is a 3 by 4 matrix represented as a list of twelve double values in row major order.
+|<<TransformationMatrix4x4-section,TransformationMatrix4x4>> +
+ «BasicType»  |TransformationMatrix4x4 is a 4 by 4 matrix represented as a list of sixteen double values in row major order.
+|===
+
+[[Core-unions-table]]
+.Union types used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<CityModelMember-section,CityModelMember>> +
+ «Union»  |CityModelMember is a union type that enumerates the different types of objects that can occur as members of a city model.
+|<<DoubleOrNilReason-section,DoubleOrNilReason>> +
+ «Union»  |DoubleOrNilReason is a union type that allows for choosing between a double value and a nil reason.
+|<<NilReason-section,NilReason>> +
+ «Union»  |NilReason is a union type that allows for choosing between two different types of nil reason.
+|===
+
+[[Core-enumeration-table]]
+.Enumerated Classes used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<RelativeToTerrain-section,RelativeToTerrain>> +
+ «Enumeration»  |RelativeToTerrain enumerates the spatial relations of a city object relative to terrain in a qualitative way.
+|<<RelativeToWater-section,RelativeToWater>> +
+ «Enumeration»  |RelativeToWater enumerates the spatial relations of a city object relative to the water surface in a qualitative way.
+|<<SpaceType-section,SpaceType>> +
+ «Enumeration»  |SpaceType is an enumeration that characterises a space according to its closure properties.
+|===
+
+[[Core-codelist-table]]
+.CodeList Classes used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<IntervalValue-section,IntervalValue>> +
+ «CodeList»  |IntervalValue is a code list used to specify a time period.
+|<<MimeTypeValue-section,MimeTypeValue>> +
+ «CodeList»  |MimeTypeValue is a code list used to specify the MIME type of a referenced resource.
+|<<NilReasonEnumeration-section,NilReasonEnumeration>> +
+ «CodeList»  |NilReasonEnumeration is a code list that enumerates the different nil reasons.
+|<<OccupantTypeValue-section,OccupantTypeValue>> +
+ «CodeList»  |OccupantTypeValue is a code list used to classify occupants.
+|<<OtherRelationTypeValue-section,OtherRelationTypeValue>> +
+ «CodeList»  |OtherRelationTypeValue is a code list used to classify other types of city object relations.
+|<<QualifiedAreaTypeValue-section,QualifiedAreaTypeValue>> +
+ «CodeList»  |QualifiedAreaTypeValue is a code list used to specify area types.
+|<<QualifiedVolumeTypeValue-section,QualifiedVolumeTypeValue>> +
+ «CodeList»  |QualifiedVolumeTypeValue is a code list used to specify volume types.
+|<<RelationTypeValue-section,RelationTypeValue>> +
+ «CodeList»  |RelationTypeValue is a code list used to classify city object relations.
+|<<TemporalRelationTypeValue-section,TemporalRelationTypeValue>> +
+ «CodeList»  |TemporalRelationTypeValue is a code list used to classify temporal city object relations.
+|<<TopologicRelationTypeValue-section,TopologicRelationTypeValue>> +
+ «CodeList»  |TopologicRelationTypeValue is a code list used to classify topological city object relations.
+|===  

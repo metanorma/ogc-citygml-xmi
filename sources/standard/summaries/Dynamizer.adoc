@@ -1,0 +1,71 @@
+[[Dynamizer-class-table]]
+.Classes used in Dynamizer
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<AbstractAtomicTimeseries-section,AbstractAtomicTimeseries>> +
+ «FeatureType»  |AbstractAtomicTimeseries represents the attributes and relationships that are common to all kinds of atomic timeseries (GenericTimeseries, TabulatedFileTimeseries, StandardFileTimeseries). An atomic timeseries represents time-varying data of a specific data type for a single contiguous time interval.
+|<<AbstractTimeseries-section,AbstractTimeseries>> +
+ «FeatureType»  |AbstractTimeseries is the abstract superclass representing any type of timeseries data.
+|<<CompositeTimeseries-section,CompositeTimeseries>> +
+ «FeatureType»  |A CompositeTimeseries is a (possibly recursive) aggregation of atomic and composite timeseries. The components of a composite timeseries must have non-overlapping time intervals.
+|<<Dynamizer-section,Dynamizer>> +
+ «FeatureType»  |A Dynamizer is an object that injects timeseries data for an individual attribute of the city object in which it is included. The timeseries data overrides the static value of the referenced city object attribute in order to represent dynamic (time-dependent) variations of its value.
+|<<GenericTimeseries-section,GenericTimeseries>> +
+ «FeatureType»  |A GenericTimeseries represents time-varying data in the form of embedded time-value-pairs of a specific data type for a single contiguous time interval.
+|<<StandardFileTimeseries-section,StandardFileTimeseries>> +
+ «FeatureType»  |A StandardFileTimeseries represents time-varying data for a single contiguous time interval. The data is provided in an external file referenced in the StandardFileTimeseries. The data within the external file is encoded according to a dedicated format for the representation of timeseries data such as using the OGC TimeseriesML or OGC Observations & Measurements Standard. The data type of the data has to be specified within the external file.
+|<<TabulatedFileTimeseries-section,TabulatedFileTimeseries>> +
+ «FeatureType»  |A TabulatedFileTimeseries represents time-varying data of a specific data type for a single contiguous time interval. The data is provided in an external file referenced in the TabulatedFileTimeseries. The file contains table structured data using an appropriate file format such as comma-separated values (CSV), Microsoft Excel (XLSX) or Google Spreadsheet. The timestamps and the values are given in specific columns of the table. Each row represents a single time-value-pair. A subset of rows can be selected using the idColumn and idValue attributes.
+|===
+
+[[Dynamizer-datatypes-table]]
+.Data Types used in Dynamizer
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfAbstractAtomicTimeseries-section,ADEOfAbstractAtomicTimeseries>> +
+ «DataType»  |ADEOfAbstractAtomicTimeseries acts as a hook to define properties within an ADE that are to be added to AbstractAtomicTimeseries.
+|<<ADEOfAbstractTimeseries-section,ADEOfAbstractTimeseries>> +
+ «DataType»  |ADEOfAbstractTimeseries acts as a hook to define properties within an ADE that are to be added to AbstractTimeseries.
+|<<ADEOfCompositeTimeseries-section,ADEOfCompositeTimeseries>> +
+ «DataType»  |ADEOfCompositeTimeseries acts as a hook to define properties within an ADE that are to be added to a CompositeTimeseries.
+|<<ADEOfDynamizer-section,ADEOfDynamizer>> +
+ «DataType»  |ADEOfDynamizer acts as a hook to define properties within an ADE that are to be added to a Dynamizer.
+|<<ADEOfGenericTimeseries-section,ADEOfGenericTimeseries>> +
+ «DataType»  |ADEOfGenericTimeseries acts as a hook to define properties within an ADE that are to be added to a GenericTimeseries.
+|<<ADEOfStandardFileTimeseries-section,ADEOfStandardFileTimeseries>> +
+ «DataType»  |ADEOfStandardFileTimeseries acts as a hook to define properties within an ADE that are to be added to a StandardFileTimeseries.
+|<<ADEOfTabulatedFileTimeseries-section,ADEOfTabulatedFileTimeseries>> +
+ «DataType»  |ADEOfTabulatedFileTimeseries acts as a hook to define properties within an ADE that are to be added to a TabulatedFileTimeseries.
+|<<SensorConnection-section,SensorConnection>> +
+ «DataType»  |A SensorConnection provides all details that are required to retrieve a specific datastream from an external sensor web service. This data type comprises the service type (e.g. OGC SensorThings API, OGC Sensor Observation Services, MQTT, proprietary platforms), the URL of the sensor service, the identifier for the sensor or thing, and its observed property as well as information about the required authentication method.
+|<<TimeseriesComponent-section,TimeseriesComponent>> +
+ «DataType»  |TimeseriesComponent represents an element of a CompositeTimeseries.
+|<<TimeValuePair-section,TimeValuePair>> +
+ «DataType»  |A TimeValuePair represents a value that is valid for a given timepoint. For each TimeValuePair, only one of the value properties can be used mutually exclusive. Which value property has to be provided depends on the selected value type in the GenericTimeSeries feature, in which the TimeValuePair is included.
+|===
+
+[[Dynamizer-enumeration-table]]
+.Enumerated Classes used in Dynamizer
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<TimeseriesTypeValue-section,TimeseriesTypeValue>> +
+ «Enumeration» |TimeseriesTypeValue enumerates the possible value types for GenericTimeseries and TimeValuePair.
+|===
+
+[[Dynamizer-codelist-table]]
+.CodeList Classes used in Dynamizer
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<AuthenticationTypeValue-section,AuthenticationTypeValue>> +
+ «CodeList»  |AuthenticationTypeValue is a code list used to specify the authentication method to be used to access the referenced sensor service. Each value provides enough information such that a software application could determine the required access credentials.
+|<<SensorConnectionTypeValue-section,SensorConnectionTypeValue>> +
+ «CodeList»  |SensorConnectionTypeValue is a code list used to specify the type of the referenced sensor service. Each value provides enough information such that a software application would be able to identify the API type and version.
+|<<StandardFileTypeValue-section,StandardFileTypeValue>> +
+ «CodeList»  |StandardFileTypeValue is a code list used to specify the type of the referenced external timeseries data file. Each value provides information about the standard and version.
+|<<TabulatedFileTypeValue-section,TabulatedFileTypeValue>> +
+ «CodeList»  |TabulatedFileTypeValue is a code list used to specify the data format of the referenced external tabulated data file.
+|===  

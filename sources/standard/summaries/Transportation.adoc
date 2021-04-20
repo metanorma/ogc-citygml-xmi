@@ -1,0 +1,165 @@
+[[Transportation-class-table]]
+.Classes used in Transportation
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<Railway-section,Railway>> +
+ «TopLevelFeatureType»  |A Railway is a transportation space used by wheeled vehicles on rails.
+|<<Road-section,Road>> +
+ «TopLevelFeatureType»  |A Road is a transportation space used by vehicles, bicycles and/or pedestrians.
+|<<Square-section,Square>> +
+ «TopLevelFeatureType»  |A Square is a transportation space for unrestricted movement for vehicles, bicycles and/or pedestrians. This includes plazas as well as large sealed surfaces such as parking lots.
+|<<Track-section,Track>> +
+ «TopLevelFeatureType»  |A Track is a small path mainly used by pedestrians. Tracks can be segmented into Sections and Intersections.
+|<<Waterway-section,Waterway>> +
+ «TopLevelFeatureType»  |A Waterway is a transportation space used for the movement of vessels upon or within a water body.
+|<<AbstractTransportationSpace-section,AbstractTransportationSpace>> +
+ «FeatureType»  |AbstractTransportationSpace is the abstract superclass of transportation objects such as Roads, Tracks, Railways, Waterways or Squares.
+|<<AuxiliaryTrafficArea-section,AuxiliaryTrafficArea>> +
+ «FeatureType»  |An AuxiliaryTrafficArea is the ground surface of an AuxiliaryTrafficSpace.
+|<<AuxiliaryTrafficSpace-section,AuxiliaryTrafficSpace>> +
+ «FeatureType»  |An AuxiliaryTrafficSpace is a space within the transportation space not intended for traffic purposes.
+|<<ClearanceSpace-section,ClearanceSpace>> +
+ «FeatureType»  |A ClearanceSpace represents the actual free space above a TrafficArea within which a mobile object can move without contacting an obstruction.
+|<<Hole-section,Hole>> +
+ «FeatureType»  |A Hole is an opening in the surface of a Road, Track or Square such as road damages, manholes or drains. Holes can span multiple transportation objects.
+|<<HoleSurface-section,HoleSurface>> +
+ «FeatureType»  |A HoleSurface is a representation of the ground surface of a hole.
+|<<Intersection-section,Intersection>> +
+ «FeatureType»  |An Intersection is a transportation space that is a shared segment of multiple Road, Track, Railway, or Waterway objects (e.g. a crossing of two roads or a level crossing of a road and a railway).
+|<<Marking-section,Marking>> +
+ «FeatureType»  |A Marking is a visible pattern on a transportation area relevant to the structuring or restriction of traffic. Examples are road markings and markings related to railway or waterway traffic.
+|<<Section-section,Section>> +
+ «FeatureType»  |A Section is a transportation space that is a segment of a Road, Railway, Track, or Waterway.
+|<<TrafficArea-section,TrafficArea>> +
+ «FeatureType»  |A TrafficArea is the ground surface of a TrafficSpace. Traffic areas are the surfaces upon which traffic actually takes place.
+|<<TrafficSpace-section,TrafficSpace>> +
+ «FeatureType»  |A TrafficSpace is a space in which traffic takes place. Traffic includes the movement of entities such as trains, vehicles, pedestrians, ships, or other transportation types. 
+|===
+
+[[Transportation-datatypes-table]]
+.Data Types used in Transportation
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfAbstractTransportationSpace-section,ADEOfAbstractTransportationSpace>> +
+ «DataType»  |ADEOfAbstractTransportationSpace acts as a hook to define properties within an ADE that are to be added to AbstractTransportationSpace.
+|<<ADEOfAuxiliaryTrafficArea-section,ADEOfAuxiliaryTrafficArea>> +
+ «DataType»  |ADEOfAuxiliaryTrafficArea acts as a hook to define properties within an ADE that are to be added to an AuxiliaryTrafficArea.
+|<<ADEOfAuxiliaryTrafficSpace-section,ADEOfAuxiliaryTrafficSpace>> +
+ «DataType»  |ADEOfAuxiliaryTrafficSpace acts as a hook to define properties within an ADE that are to be added to an AuxiliaryTrafficSpace.
+|<<ADEOfClearanceSpace-section,ADEOfClearanceSpace>> +
+ «DataType»  |ADEOfClearanceSpace acts as a hook to define properties within an ADE that are to be added to a ClearanceSpace.
+|<<ADEOfHole-section,ADEOfHole>> +
+ «DataType»  |ADEOfHole acts as a hook to define properties within an ADE that are to be added to a Hole.
+|<<ADEOfHoleSurface-section,ADEOfHoleSurface>> +
+ «DataType»  |ADEOfHoleSurface acts as a hook to define properties within an ADE that are to be added to a HoleSurface.
+|<<ADEOfIntersection-section,ADEOfIntersection>> +
+ «DataType»  |ADEOfIntersection acts as a hook to define properties within an ADE that are to be added to an Intersection.
+|<<ADEOfMarking-section,ADEOfMarking>> +
+ «DataType»  |ADEOfMarking acts as a hook to define properties within an ADE that are to be added to a Marking.
+|<<ADEOfRailway-section,ADEOfRailway>> +
+ «DataType»  |ADEOfRailway acts as a hook to define properties within an ADE that are to be added to a Railway.
+|<<ADEOfRoad-section,ADEOfRoad>> +
+ «DataType»  |ADEOfRoad acts as a hook to define properties within an ADE that are to be added to a Road.
+|<<ADEOfSection-section,ADEOfSection>> +
+ «DataType»  |ADEOfSection acts as a hook to define properties within an ADE that are to be added to a Section.
+|<<ADEOfSquare-section,ADEOfSquare>> +
+ «DataType»  |ADEOfSquare acts as a hook to define properties within an ADE that are to be added to a Square.
+|<<ADEOfTrack-section,ADEOfTrack>> +
+ «DataType»  |ADEOfTrack acts as a hook to define properties within an ADE that are to be added to a Track.
+|<<ADEOfTrafficArea-section,ADEOfTrafficArea>> +
+ «DataType»  |ADEOfTrafficArea acts as a hook to define properties within an ADE that are to be added to a TrafficArea.
+|<<ADEOfTrafficSpace-section,ADEOfTrafficSpace>> +
+ «DataType»  |ADEOfTrafficSpace acts as a hook to define properties within an ADE that are to be added to a TrafficSpace.
+|<<ADEOfWaterway-section,ADEOfWaterway>> +
+ «DataType»  |ADEOfWaterway acts as a hook to define properties within an ADE that are to be added to a Waterway.
+|===
+
+[[Transportation-enumeration-table]]
+.Enumerated Classes used in Transportation
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<GranularityValue-section,GranularityValue>> +
+ «Enumeration» |GranularityValue enumerates the different levels of granularity in which transportation objects are represented.
+|<<TrafficDirectionValue-section,TrafficDirectionValue>> +
+ «Enumeration» |TrafficDirectionValue enumerates the allowed directions of travel of a mobile object.
+|===
+
+[[Transportation-codelist-table]]
+.CodeList Classes used in Transportation
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<AuxiliaryTrafficAreaClassValue-section,AuxiliaryTrafficAreaClassValue>> +
+ «CodeList»  |AuxiliaryTrafficAreaClassValue is a code list used to further classify an AuxiliaryTrafficArea.
+|<<AuxiliaryTrafficAreaFunctionValue-section,AuxiliaryTrafficAreaFunctionValue>> +
+ «CodeList»  |AuxiliaryTrafficAreaFunctionValue is a code list that enumerates the different purposes of an AuxiliaryTrafficArea.
+|<<AuxiliaryTrafficAreaUsageValue-section,AuxiliaryTrafficAreaUsageValue>> +
+ «CodeList»  |AuxiliaryTrafficAreaUsageValue is a code list that enumerates the different uses of an AuxiliaryTrafficArea.
+|<<AuxiliaryTrafficSpaceClassValue-section,AuxiliaryTrafficSpaceClassValue>> +
+ «CodeList»  |AuxiliaryTrafficSpaceClassValue is a code list used to further classify an AuxiliaryTrafficSpace.
+|<<AuxiliaryTrafficSpaceFunctionValue-section,AuxiliaryTrafficSpaceFunctionValue>> +
+ «CodeList»  |AuxiliaryTrafficSpaceFunctionValue is a code list that enumerates the different purposes of an AuxiliaryTrafficSpace.
+|<<AuxiliaryTrafficSpaceUsageValue-section,AuxiliaryTrafficSpaceUsageValue>> +
+ «CodeList»  |AuxiliaryTrafficSpaceUsageValue is a code list that enumerates the different uses of an AuxiliaryTrafficSpace.
+|<<ClearanceSpaceClassValue-section,ClearanceSpaceClassValue>> +
+ «CodeList»  |ClearanceSpaceClassValue is a code list used to further classify a ClearanceSpace.
+|<<HoleClassValue-section,HoleClassValue>> +
+ «CodeList»  |HoleClassValue is a code list used to further classify a Hole.
+|<<IntersectionClassValue-section,IntersectionClassValue>> +
+ «CodeList»  |IntersectionClassValue is a code list used to further classify an Intersection.
+|<<MarkingClassValue-section,MarkingClassValue>> +
+ «CodeList»  |MarkingClassValue is a code list used to further classify a Marking.
+|<<RailwayClassValue-section,RailwayClassValue>> +
+ «CodeList»  |RailwayClassValue is a code list used to further classify a Railway.
+|<<RailwayFunctionValue-section,RailwayFunctionValue>> +
+ «CodeList»  |RailwayFunctionValue is a code list that enumerates the different purposes of a Railway.
+|<<RailwayUsageValue-section,RailwayUsageValue>> +
+ «CodeList»  |RailwayUsageValue is a code list that enumerates the different uses of a Railway.
+|<<RoadClassValue-section,RoadClassValue>> +
+ «CodeList»  |RoadClassValue is a code list used to further classify a Road.
+|<<RoadFunctionValue-section,RoadFunctionValue>> +
+ «CodeList»  |RoadFunctionValue is a code list that enumerates the different purposes of a Road.
+|<<RoadUsageValue-section,RoadUsageValue>> +
+ «CodeList»  |RoadUsageValue is a code list that enumerates the different uses of a Road.
+|<<SectionClassValue-section,SectionClassValue>> +
+ «CodeList»  |SectionClassValue is a code list used to further classify a Section.
+|<<SquareClassValue-section,SquareClassValue>> +
+ «CodeList»  |SquareClassValue is a code list used to further classify a Square.
+|<<SquareFunctionValue-section,SquareFunctionValue>> +
+ «CodeList»  |SquareFunctionValue is a code list that enumerates the different purposes of a Square.
+|<<SquareUsageValue-section,SquareUsageValue>> +
+ «CodeList»  |SquareUsageValue is a code list that enumerates the different uses of a Square.
+|<<SurfaceMaterialValue-section,SurfaceMaterialValue>> +
+ «CodeList»  |SurfaceMaterialValue is a code list that enumerates the different surface materials.
+|<<TrackClassValue-section,TrackClassValue>> +
+ «CodeList»  |TrackClassValue is a code list used to further classify a Track.
+|<<TrackFunctionValue-section,TrackFunctionValue>> +
+ «CodeList»  |TrackFunctionValue is a code list that enumerates the different purposes of a Track.
+|<<TrackUsageValue-section,TrackUsageValue>> +
+ «CodeList»  |TrackUsageValue is a code list that enumerates the different uses of a Track.
+|<<TrafficAreaClassValue-section,TrafficAreaClassValue>> +
+ «CodeList»  |TrafficAreaClassValue is a code list used to further classify a TrafficArea.
+|<<TrafficAreaFunctionValue-section,TrafficAreaFunctionValue>> +
+ «CodeList»  |TrafficAreaFunctionValue is a code list that enumerates the different purposes of a TrafficArea.
+|<<TrafficAreaUsageValue-section,TrafficAreaUsageValue>> +
+ «CodeList»  |TrafficAreaUsageValue is a code list that enumerates the different uses of a TrafficArea.
+|<<TrafficSpaceClassValue-section,TrafficSpaceClassValue>> +
+ «CodeList»  |TrafficSpaceClassValue is a code list used to further classify a TrafficSpace.
+|<<TrafficSpaceFunctionValue-section,TrafficSpaceFunctionValue>> +
+ «CodeList»  |TrafficSpaceFunctionValue is a code list that enumerates the different purposes of a TrafficSpace.
+|<<TrafficSpaceUsageValue-section,TrafficSpaceUsageValue>> +
+ «CodeList»  |TrafficSpaceUsageValue is a code list that enumerates the different uses of a TrafficSpace.
+|<<WaterwayClassValue-section,WaterwayClassValue>> +
+ «CodeList»  |WaterwayClassValue is a code list used to further classify a Waterway.
+|<<WaterwayFunctionValue-section,WaterwayFunctionValue>> +
+ «CodeList»  |WaterwayFunctionValue is a code list that enumerates the different purposes of a Waterway.
+|<<WaterwayUsageValue-section,WaterwayUsageValue>> +
+ «CodeList»  |WaterwayUsageValue is a code list that enumerates the different uses of a Waterway.
+|===  
+
+
+
+

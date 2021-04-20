@@ -1,0 +1,23 @@
+
+=== DGGS Core package conformance categories
+
+The requirement tests that apply to each conformance category in the DGGS Core package are listed in <<tab-core>>
+
+[[tab-core]]
+include::../abstract_tests/TEST_core-i.adoc[]
+
+[[test-core-rs]]
+==== Core -- Reference System
+
+include::../abstract_tests/TEST_core-rs-harmonized_model.adoc[]
+include::../abstract_tests/TEST_core-rs-crs.adoc[]
+include::../abstract_tests/TEST_core-rs-global_domain.adoc[]
+include::../abstract_tests/TEST_core-rs-cell.adoc[]
+include::../abstract_tests/TEST_core-rs-discrete_global_grid.adoc[]
+
+[[test-core-functions]]
+==== Core -- Functions
+
+include::../abstract_tests/TEST_core-functions-quantization.adoc[]
+include::../abstract_tests/TEST_core-functions-query.adoc[]
+include::../abstract_tests/TEST_core-functions-interoperation.adoc[]

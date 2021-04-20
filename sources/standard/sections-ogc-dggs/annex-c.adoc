@@ -1,0 +1,6 @@
+
+[[AnnexC]]
+[appendix,obligation=informative]
+== Background to DGGS
+
+include::../sections-en/background_core.adoc[]

@@ -1,0 +1,32 @@
+
+[[AnnexA]]
+[appendix,obligation="normative"]
+== Conformance Class Abstract Test Suite
+
+include::../sections-en/requirement-tests_cc-st.adoc[]
+
+include::../sections-en/requirement-tests_core.adoc[]
+
+include::../sections-en/requirement-tests_ea-ers.adoc[]
+
+////
+[NOTE]
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+
+=== Conformance Class A
+
+==== Requirement 1
+[requirement,type="pseudocode",label="/req/req-class-a/req-name-1"]
+=====
+
+[verification,label="/conf/conf-class-a/req-name-1"]
+======
+Test purpose:: Verify that...
+
+Test method:: Inspect...
+======
+
+=====
+
+==== Requirement 2
+////

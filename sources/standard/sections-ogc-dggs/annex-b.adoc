@@ -1,0 +1,6 @@
+
+[[AnnexB]]
+[appendix,obligation=informative]
+== Equal area DGGS theory
+
+include::../sections-en/theory_eadggs.adoc[]

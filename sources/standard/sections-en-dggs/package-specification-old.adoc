@@ -1,0 +1,127 @@
+
+
+[lutaml, ../../xmi-19170-only/iso-19170-uml241-xmi242.xmi, context]
+----
+{% for main_package in context.packages %}
+{% for root_package in main_package.packages %}
+== {{ root_package.name }} package
+
+
+{{ root_package }}
+
+=== {{ root_package.name }} overview
+
+The {{ root_package.name }} package is organized into
+{{ root_package.packages.size }} packages with {{ 'TODO nested packages length' }} modules:
+
+[arabic]
+{% for package in root_package.packages %}
+. {{ package.name }} package comprises:
+{% for module in package.packages %}
+.. {{module.name}} module
+{% endfor %}
+{% endfor %}
+
+{% for package in root_package.packages %}
+=== {{ package.name }}
+{% for module in package.packages %}
+==== {{module.name}} module
+
+{% if module.packages.size > 0 %}
+{% for moduletwo in module.packages %}
+
+==== Level 2 {{moduletwo.name}} module
+
+===== Defining tables
+
+[arabic]
+{% for klass in moduletwo.classes %}
+. <<tab-{{ klass.name }}>> -- Elements of {{ module.name }}::{{ klass.name }}
+{% endfor %}
+
+{% for klass in moduletwo.classes %}
+[[tab-{{ klass.name }}]]
+.Elements of {{ moduletwo.name }}::{{ klass.name }}
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+
+h|Name: 7+| {{ klass.name }}
+
+h|Definition: 7+| {{ klass.definition }}
+
+h|Stereotype: 7+| Interface
+h|Inheritance from: 7+| TODO interface
+h|Abstract: 7+| true
+{% if klass.associations.size > 0 %}
+# .{{klass.associations.size | plus: 1}}+h|Associations:  4+|_Association with:_ |_Obligation_ | _Maximum currence_ |_Provides:_
+{% for assoc in klass.associations %}
+ 4+| {{assoc.member_end}} | TODO Obligation | TODO Maximum occurrence | TODO Provides
+{% endfor %}
+{% else %}
+.1+h|Associations: 7+| (none)
+{% endif %}
+{% if klass.attributes.size > 0 %}
+# .{{klass.attributes.size | plus: 1}}+h|Public attributes:  | _Name_ 2+| _Definition_ | _Derived_ | _Obligation_ | aximum occurrence_ | _Data type_
+{% for attr in klass.attributes %}
+ | {{attr.name}} 2+| {{attr.definition}} |  | {{attr.cardinality.min}} | {{attr.cardinality.max}} | {{attr.type}}
+{% endfor %}
+{% else %}
+.1+h|Public attributes: 7+| (none)
+{% endif %}
+
+h|Constraints: 7+| (none)
+
+|===
+{% endfor %}
+{% endfor %}
+
+{% endif %}
+
+===== Defining tables
+
+[arabic]
+{% for klass in module.classes %}
+. <<tab-{{ klass.name }}>> -- Elements of {{ module.name }}::{{ klass.name }}
+{% endfor %}
+
+{% for klass in module.classes %}
+[[tab-{{ klass.name }}]]
+.Elements of {{ module.name }}::{{ klass.name }}
+[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+|===
+
+h|Name: 7+| {{ klass.name }}
+
+h|Definition: 7+| {{ klass.definition }}
+
+h|Stereotype: 7+| Interface
+h|Inheritance from: 7+| TODO interface
+h|Abstract: 7+| true
+{% if klass.associations.size > 0 %}
+# .{{klass.associations.size | plus: 1}}+h|Associations:  4+|_Association with:_ |_Obligation_ | _Maximum currence_ |_Provides:_
+{% for assoc in klass.associations %}
+ 4+| {{assoc.member_end}} | TODO Obligation | TODO Maximum occurrence | TODO Provides
+{% endfor %}
+{% else %}
+.1+h|Associations: 7+| (none)
+{% endif %}
+{% if klass.attributes.size > 0 %}
+# .{{klass.attributes.size | plus: 1}}+h|Public attributes:  | _Name_ 2+| _Definition_ | _Derived_ | _Obligation_ | aximum occurrence_ | _Data type_
+{% for attr in klass.attributes %}
+ | {{attr.name}} 2+| {{attr.definition}} |  | {{attr.cardinality.min}} | {{attr.cardinality.max}} | {{attr.type}}
+{% endfor %}
+{% else %}
+.1+h|Public attributes: 7+| (none)
+{% endif %}
+
+h|Constraints: 7+| (none)
+
+|===
+{% endfor %}
+
+{% endfor %}
+{% endfor %}
+
+{% endfor %}
+{% endfor %}
+----

@@ -1,0 +1,20 @@
+
+* [[[ISO8601-1-2019,ISO 8601-1:2019]]] // , _Date and time — Representations for information interchange — Part 1: Basic rules._ 2019
+
+* [[[ISO19103-2015, ISO 19103:2015]]] //
+
+* [[[ISO19107-2019, ISO 19107:2019]]] // , _Geographic information -- Spatial schema._ 2019
+
+* [[[ISO19111-2019, ISO 19111:2019]]] // , _Geographic information -- Spatial referencing by coordinates._ 2019
+
+* [[[ISO19112-2019, ISO 19112:2019]]] // , _Geographic information -- Spatial referencing by geographic identifiers._ 2019
+
+* [[[ISO19115-1-2014, ISO 19115-1:2014]]] // , _Geographic information -- Metadata -- Part 1: Fundamentals._ 2014 .. only referred to in data model
+
+* [[[ISO19117-2012, ISO 19117:2012]]] //
+
+* [[[ISO19123-2005, ISO 19123:2005]]] // , _Geographic information -- Schema for coverage geometry and functions._ 2005
+
+* [[[ISO19156-2011, ISO 19156:2011]]] // , _Geographic information -- Observations and Measurements._ 2011
+
+* [[[ISO2382-2015, ISO/IEC 2382:2015]]] //

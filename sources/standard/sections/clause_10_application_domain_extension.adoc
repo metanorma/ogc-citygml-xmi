@@ -1,0 +1,88 @@
+[[rc_ade_section]]
+== Application Domain Extension (ADE)
+
+An _Application Domain Extension_ (ADE) is a formal and systematic extension of the CityGML Conceptual Model (CM) for a specific application or domain. The ADE is expressed in the form of a UML conceptual model. The domain data is mapped to a set of additional classes, attributes, and relations. ADEs may use elements from the CityGML CM to derive application-specific subclasses, to inject additional properties, to associate application data with predefined CityGML content, or to define value domains for attributes.
+
+The ADE mechanism allows application-specific information to be aligned with the CityGML CM in a well-structured and systematic way. By this means, CityGML can be extended to meet the information needs of an application while at the same time preserving its concepts and semantic structures. Moreover, and in contrast to generic city objects and attributes, application data can be validated against the formal definition of an ADE to ensure semantic interoperability.
+
+Previous versions of the CityGML Standard defined the ADE mechanism solely at the level of the XML Schema encoding. With CityGML 3.0, ADEs become platform-independent models at a conceptual level that can be mapped to multiple and different target encodings.
+
+ADEs have successfully been implemented in practice and enable a wide range of applications and use cases based on the CityGML Standard. An overview and discussion of existing ADEs is provided in [<<Biljecki2018>>].
+
+=== General Rules for ADEs
+
+An ADE shall be defined as a UML conceptual model in accordance with the General Feature Model and the rules for creating application schemas in UML as specified in <<iso19109,ISO 19109>> and the rules and constraints for using UML to model geographic information as specified in <<iso19103,ISO 19103>>. The <<uml_notation_section, UML notations and stereotypes>> used in the CityGML conceptual model should also be applied to corresponding model elements in an ADE.
+
+Every ADE shall be organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE. An ADE may additionally import and use predefined classes from external conceptual UML models such as the CityGML modules or the standardized schemas of the ISO 19100 series of International Standards.
+
+=== Defining New ADE Model Elements
+
+Following ISO 19109, the primary view of geospatial information and the core element of application schemas is the __feature__. ADEs therefore typically extend CityGML by defining new feature types appropriate to the application area together with additional content such as object types, data types, code lists, and enumerations.
+
+Every feature type in an ADE shall be derived either directly or indirectly from the CityGML root feature type _Core::AbstractFeature_ or, depending on its type and characteristics, from a more appropriate subclass thereof. According to the general CityGML space concept, features representing spaces or space boundaries shall be derived either directly or indirectly from _Core::AbstractSpace_ or _Core::AbstractSpaceBoundary_ respectively. UML classes representing top-level feature types shall use the _&#171;TopLevelFeatureType&#187;_ stereotype.
+
+In contrast to feature types, object types and data types are not required to be derived from a predefined CityGML class unless explicitly stated otherwise.
+
+ADE classes may have an unlimited number of attributes and associations in addition to those inherited from their parents. Attributes can be modelled with either simple or complex data types. To ensure semantic interoperability, the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards should be used wherever appropriate. This includes, amongst others, basic types from ISO/TS 19103, geometry and topology objects from ISO 10107, and temporal geometry and topology objects from ISO 19108.
+
+If a predefined type is not available, ADEs can either define their own data types or import data types from external conceptual models. This explicitly includes the possibility of defining new geometry types not offered by ISO 19107. Designers of an ADE should however note that software might not be able to properly identify and consume such geometry types.
+
+A feature type capturing a real-world feature with geometry should be derived either directly or indirectly from _Core::AbstractSpace_ or _Core::AbstractSpaceBoundary_. By this means, the CityGML predefined spatial properties and the associated LOD concept are inherited and available for the feature type. If, however, these superclasses are either inappropriate or lack a spatial property required to represent the feature, an ADE may define new and additional spatial properties. If such a spatial property should belong to one of the predefined LODs, then the property name shall start with the prefix “lod__X__”, where _X_ is to be replaced by an integer value between 0 and 3 indicating the target LOD. This enables software to derive the LOD of the geometry.
+
+Constraints on model elements should be expressed using a formal language such as the Object Constraint Language (OCL). The ADE specifies the manner of application of constraints. However, following the CityGML conceptual model, constraints should at least be expressed on ADE subclasses of _Core::AbstractSpace_ to limit the types of space boundaries (i.e., instances of _Core::AbstractSpaceBoundary_) that may be used to model the boundary of a space object.
+
+Illustrative examples for ADEs can be found in the <<_user_guide,CityGML 3.0 User Guide>>.
+
+=== Augmenting CityGML Feature Types with Additional ADE Properties
+
+If a predefined CityGML feature type lacks one or more properties required for a specific application, a feasible solution in CityGML 2.0 was to derive a new ADE feature type as subclass of the CityGML class and to add the properties to this subclass. While conceptually clean, this approach also faces drawbacks. If multiple ADEs require additional properties for the same CityGML feature type, this will lead to many subclasses of this feature type in different ADE namespaces. Information about the same real-world feature might therefore be spread over various instances of the different feature classes in an encoding making it difficult for software to consume the feature data.
+
+For this reason, CityGML 3.0 provides a way to augment the predefined CityGML feature types with additional properties from the ADE domain without the need for subclassing. Each CityGML feature type has an extension attribute of name “adeOf__FeatureTypeName__” and type “_ADEOfFeatureTypeName”_, where _FeatureTypeName_ is replaced by the class name in which the attribute is defined. For example, the _Building::Building_ class offers the attribute _adeOfBuilding_ of type _Building::ADEOfBuilding_. Each of these extension attributes can occur zero to unlimited times, and the attribute types are defined as abstract and empty data types.
+
+If an ADE augments a specific CityGML feature type with additional ADE properties, the ADE shall create a subclass of the corresponding abstract data type associated with the feature class. This subclass shall also be defined as data type using the stereotype _&#171;DataType&#187;_. The additional application-specific attributes and associations are then modelled as properties of the ADE subclass. This may include, amongst others, attributes with simple or complex data type, spatial properties or associations to other object and feature types from the ADE or external models such as CityGML.
+
+The predefined “_ADEOfFeatureTypeName”_ data types are called “hooks” because they are used as the head of a hierarchy of ADE subclasses attaching application-specific properties. When subclassing the “hook” of a specific CityGML feature type in an ADE, the properties defined in the subclass can be used for that feature type as well as for all directly or indirectly derived feature types, including feature types defined in the same or another ADE.
+
+Multiple distinct ADEs can use the “hook” mechanism to define additional ADE properties for the same CityGML feature type. Since the “adeOf__FeatureTypeName__” attribute may occur multiple times, the various ADE properties can be exchanged as part of the same CityGML feature instance in an encoding. Software can therefore easily consume the default CityGML feature data plus the additional properties from the different ADEs.
+
+Content from unknown or unsupported ADEs may be ignored by an application or service consuming an encoded CityGML model.
+
+Designers of an ADE should favor using this “hook” mechanism over subclassing a CityGML feature type when possible. If an ADE must enable other ADEs to augment its own feature types (so-called ADE of an ADE), then it shall implement “hooks” for its feature types following the same schema and naming concept as in the CityGML conceptual model.
+
+The UML fragment in <<figure-adeusage>> shows an example for using the "hook" mechanism. For more details on this and other example ADEs, please see the <<_user_guide,CityGML 3.0 User Guide>> for an example ADE.
+
+[[figure-adeusage]]
+.The CityGML feature type Building is augmented with additional ADE properties by defining the data type EnergyProperties as a subclass of the ADE data type ADEOfBuilding.
+image::./images/Energy_ADE_UML_example.png[align="center"]
+
+=== Encoding of ADEs
+
+This document only addresses the conceptual modelling of ADEs. Rules and constraints for mapping a conceptual ADE model to a target encoding are expected to be defined in a corresponding CityGML Encoding Standard. If supported, an ADE may provide additional mapping rules and constraints in conformance with a corresponding CityGML Encoding Standard.
+
+=== Requirements and Recommendations
+
+The following requirements and recommendations specify how ADEs shall be used as an extension capability to the CityGML Conceptual Model.
+
+include::requirements/requirements_class_ADE.adoc[]
+
+==== UML
+
+Any extension to the CityGML Conceptual Model should be a faithful continuation of the styles and techniques used in that model. The following Requirements and Recommendations define a "faithful continuation".
+
+include::requirements/ADE/REQ_ADE_UML.adoc[]
+
+include::recommendations/ADE/REC_ADE_UML.adoc[]
+
+==== Classes
+
+The following Requirements and Recommendations define how CityGML classes should be extended by an ADE.
+
+include::requirements/ADE/REQ_ADE_Elements.adoc[]
+
+include::recommendations/ADE/REC_ADE_Elements.adoc[]
+
+==== Properties
+
+The following Requirements define how to use the CityGML extension properties to add attributes to an existing CityGML Feature Type.
+
+include::requirements/ADE/REQ_ADE_Properties.adoc[]

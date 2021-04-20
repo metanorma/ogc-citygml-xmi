@@ -1,0 +1,8 @@
+
+
+[lutaml, ../../xmi-19170-only/iso-19170-uml241-xmi242.xmi, context]
+----
+{% assign root_package = context.packages | first %}
+{% assign main_package = root_package.packages | first %}
+{% include "packages", depth: 2, context: main_package %}
+----

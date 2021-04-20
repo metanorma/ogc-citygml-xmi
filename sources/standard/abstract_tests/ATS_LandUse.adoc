@@ -1,0 +1,7 @@
+=== Conformance Class LandUse
+
+include::LandUse/ATS_LandUse_Classes.adoc[]
+
+include::LandUse/ATS_LandUse_ADE_Use.adoc[]
+
+

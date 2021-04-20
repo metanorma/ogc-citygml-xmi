@@ -1,0 +1,10 @@
+[[per_Profile_template]]
+[width="90%",cols="2,6"]
+|===
+^|*Permission  {counter:per-id}* |*/per/Profile/template* 
+2+|For each UML class defined or referenced in the Core Package:
+^|A |The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
+^|B |The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
+^|C |The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and cardinality.
+^|D |The implementation Specification SHALL represent the attributes of all parent classes of the the UML class including the name, definition, type, and cardinality.
+|===

@@ -1,0 +1,72 @@
+= OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard
+:doctype: standard
+:encoding: utf-8
+:lang: en
+:status: published
+:committee: technical
+:version: 2.0.0
+:external-id: http://www.opengis.net/doc/IS/CityGML-1/3.0
+:docnumber: 20-010
+:received-date: 2021-03-02
+:issued-date:
+:published-date: 2021-03-02
+:fullname:
+Thomas H. Kolbe, Tatjana Kutzner, Carl Stephen Smyth, Claus Nagel, Carsten Roensdorf, Charles Heazel
+Robert Gibb
+:docsubtype: conceptual-model
+:keywords: ogcdoc, OGC document, CityGML, 3D city models
+:submitting-organizations:
+|Thomas H. Kolbe |Chair of Geoinformatics, Technical University of Munich, Germany
+|Tatjana Kutzner |Chair of Geoinformatics, Technical University of Munich, Germany
+|Carl Stephen Smyth |OpenSitePlan, USA
+|Claus Nagel |virtualcitySYSTEMS, Germany
+|Carsten Roensdorf |Ordnance Survey, Great Britain
+|Charles (Chuck) Heazel |HeazelTech LLC
+|Sylvester Hagler |U.S. National Geospatial-Intelligence Agency
+
+Manaaki Whenua - Landcare Research, New Zealand; Geoscience Australia, Joint Research Centre (JRC), Pangaea Innovations Pty Ltd; Peking University Collaborative Innovation Center for Geospatial Big Data; University of Calgary
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:pdf-uri: ./20-040r3.pdf
+:xml-uri: ./20-040r3.xml
+:doc-uri: ./20-040r3.doc
+
+////
+Make sure to complete each included document
+////
+
+include::sections/clause_0_front_material.adoc[]
+
+include::sections/clause_1_introduction.adoc[]
+
+include::sections/clause_2_scope.adoc[]
+
+include::sections/clause_3_conformance.adoc[]
+
+include::sections/clause_4_references.adoc[]
+
+include::sections/clause_5_terms_and_definitions.adoc[]
+
+include::sections/clause_6_conventions.adoc[]
+
+include::sections/clause_7_overview.adoc[]
+
+include::sections/clause_8_conceptual_model.adoc[]
+
+include::sections/clause_9_data-dictionary.adoc[]
+
+include::sections/clause_10_application_domain_extension.adoc[]
+
+include::sections/annex-ats.adoc[]
+
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+////
+include::sections/annex-history.adoc[]
+
+include::sections/annex-glossary.adoc[]
+
+include::sections/annex-bibliography.adoc[]

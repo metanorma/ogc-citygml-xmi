@@ -1,0 +1,3 @@
+== Scope
+
+include::../sections-en/scope_core.adoc[]

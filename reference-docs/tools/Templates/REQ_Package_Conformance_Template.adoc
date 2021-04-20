@@ -1,0 +1,7 @@
+[[req_LPACK_conformance]]
+[width="90%",cols="2,6"]
+|===
+^|*Requirement  {counter:req-id}* |*/req/LPACK/conformance* 
+^|A |An Implementation Specification which implements the PACKAGE Package shall validate conformance with the `http://www.opengis.net/spec/CityGML/3.0/req/req-class-LPACK` Requirements Class.
+^|B |An Implementation Specification which has demonstrated conformance with the `http://www.opengis.net/spec/CityGML/3.0/req/req-class-LPACK` Requirements Class shall advertise its' implementation of the `http://www.opengis.net/spec/CityGML/3.0/conf/conf-class-LPACK` Conformance Class through a means appropriate to the implementing technology.
+|===

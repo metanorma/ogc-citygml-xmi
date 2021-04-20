@@ -1,0 +1,42 @@
+[[rc_appearance_section]]
+=== Appearance
+
+include::requirements/requirements_class_appearance.adoc[]
+
+The Appearance module provides the representation of surface data such as observable properties for surface geometry objects in the form of textures and material.
+
+Appearances are not limited to visual data but represent arbitrary categories called themes such as infrared radiation, noise pollution, or earthquake-induced structural stress. A single surface geometry object may have surface data for multiple themes. Similarly, surface data can be shared by multiple surface geometry objects (e.g. road paving).
+
+Surface data that is constant across a surface is modelled as material based on the material definitions from the X3D and COLLADA standards. Surface data that depends on the exact location within the surface is modelled as a texture. This can either be a parameterized texture (a texture that uses texture coordinates) or a transformation matrix for parameterization, or a georeferenced texture (a texture that uses a planimetric projection).
+
+Each surface geometry object can have both, a material and a texture per theme and side. This allows for providing a constant approximation and a complex measurement of a surface’s property simultaneously.
+
+The UML diagram of the Appearance module is illustrated in <<appearance-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-appearance-section[CityGML 3.0 Users Guide].
+
+[[appearance-uml]]
+.UML diagram of CityGML’s Appearance model.
+image::figures/Appearance.png[align="center"]
+
+The ADE data types provided for the Appearance module are illustrated in <<appearance-uml-ade-types>>.
+
+[[appearance-uml-ade-types]]
+.ADE classes of the CityGML Appearance Module.
+image::figures/Appearance-ADE_Datatypes.png[align="center"]
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Appearance Module as an Implementation Specification.
+
+include::requirements/Appearance/REQ_Appearance_Classes.adoc[]
+
+The use of extension capabilities by Appearance elements is constrained by the following requirement:
+
+include::requirements/Appearance/REQ_Appearance_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::summaries/Appearance.adoc[]
+
+==== Additional Information
+
+Additional information about the Appearance Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-appearance-section[OGC CityGML 3.0 Users Guide]

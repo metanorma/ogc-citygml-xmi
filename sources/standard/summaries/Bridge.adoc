@@ -1,0 +1,78 @@
+[[Bridge-class-table]]
+.Classes used in Bridge
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<Bridge-section,Bridge>> +
+ «TopLevelFeatureType»  |A Bridge represents a structure that affords the passage of pedestrians, animals, vehicles, and service(s) above obstacles or between two points at a height above ground. [cf. ISO 6707-1]
+|<<AbstractBridge-section,AbstractBridge>> +
+ «FeatureType»  |AbstractBridge is an abstract superclass representing the common attributes and associations of the classes Bridge and BridgePart.
+|<<BridgeConstructiveElement-section,BridgeConstructiveElement>> +
+ «FeatureType»  |A BridgeConstructiveElement is an element of a bridge which is essential from a structural point of view. Examples are pylons, anchorages, slabs, beams.
+|<<BridgeFurniture-section,BridgeFurniture>> +
+ «FeatureType»  |A BridgeFurniture is an equipment for occupant use, usually not fixed to the bridge. [cf. ISO 6707-1]
+|<<BridgeInstallation-section,BridgeInstallation>> +
+ «FeatureType»  |A BridgeInstallation is a permanent part of a Bridge (inside and/or outside) which does not have the significance of a BridgePart. In contrast to BridgeConstructiveElements, a BridgeInstallation is not essential from a structural point of view. Examples are stairs, antennas or railways.
+|<<BridgePart-section,BridgePart>> +
+ «FeatureType»  |A BridgePart is a physical or functional subdivision of a Bridge. It would be considered a Bridge, if it were not part of a collection of other BridgeParts.
+|<<BridgeRoom-section,BridgeRoom>> +
+ «FeatureType»  |A BridgeRoom is a space within a Bridge or BridgePart intended for human occupancy (e.g. a place of work or recreation) and/or containment (storage) of animals or things. A BridgeRoom is bounded physically and/or virtually (e.g. by ClosureSurfaces or GenericSurfaces).
+|===
+
+[[Bridge-datatypes-table]]
+.Data Types used in Bridge
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfAbstractBridge-section,ADEOfAbstractBridge>> +
+ «DataType»  |ADEOfAbstractBridge acts as a hook to define properties within an ADE that are to be added to AbstractBridge.
+|<<ADEOfBridge-section,ADEOfBridge>> +
+ «DataType»  |ADEOfBridge acts as a hook to define properties within an ADE that are to be added to a Bridge.
+|<<ADEOfBridgeConstructiveElement-section,ADEOfBridgeConstructiveElement>> +
+ «DataType»  |ADEOfBridgeConstructiveElement acts as a hook to define properties within an ADE that are to be added to a BridgeConstructiveElement.
+|<<ADEOfBridgeFurniture-section,ADEOfBridgeFurniture>> +
+ «DataType»  |ADEOfBridgeFurniture acts as a hook to define properties within an ADE that are to be added to a BridgeFurniture.
+|<<ADEOfBridgeInstallation-section,ADEOfBridgeInstallation>> +
+ «DataType»  |ADEOfBridgeInstallation acts as a hook to define properties within an ADE that are to be added to a BridgeInstallation.
+|<<ADEOfBridgePart-section,ADEOfBridgePart>> +
+ «DataType»  |ADEOfBridgePart acts as a hook to define properties within an ADE that are to be added to a BridgePart.
+|<<ADEOfBridgeRoom-section,ADEOfBridgeRoom>> +
+ «DataType»  |ADEOfBridgeRoom acts as a hook to define properties within an ADE that are to be added to a BridgeRoom.
+|===
+
+[[Bridge-codelist-table]]
+.CodeList Classes used in Bridge
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<BridgeClassValue-section,BridgeClassValue>> +
+ «CodeList»  |BridgeClassValue is a code list used to further classify a Bridge.
+|<<BridgeConstructiveElementClassValue-section,BridgeConstructiveElementClassValue>> +
+ «CodeList»  |BridgeConstructiveElementClassValue is a code list used to further classify a BridgeConstructiveElement.
+|<<BridgeConstructiveElementFunctionValue-section,BridgeConstructiveElementFunctionValue>> +
+ «CodeList»  |BridgeConstructiveElementFunctionValue is a code list that enumerates the different purposes of a BridgeConstructiveElement.
+|<<BridgeConstructiveElementUsageValue-section,BridgeConstructiveElementUsageValue>> +
+ «CodeList»  |BridgeConstructiveElementUsageValue is a code list that enumerates the different uses of a BridgeConstructiveElement.
+|<<BridgeFunctionValue-section,BridgeFunctionValue>> +
+ «CodeList»  |BridgeFunctionValue is a code list that enumerates the different purposes of a Bridge.
+|<<BridgeFurnitureClassValue-section,BridgeFurnitureClassValue>> +
+ «CodeList»  |BridgeFurnitureClassValue is a code list used to further classify a BridgeFurniture.
+|<<BridgeFurnitureFunctionValue-section,BridgeFurnitureFunctionValue>> +
+ «CodeList»  |BridgeFurnitureFunctionValue is a code list that enumerates the different purposes of a BridgeFurniture.
+|<<BridgeFurnitureUsageValue-section,BridgeFurnitureUsageValue>> +
+ «CodeList»  |BridgeFurnitureUsageValue is a code list that enumerates the different uses of a BridgeFurniture.
+|<<BridgeInstallationClassValue-section,BridgeInstallationClassValue>> +
+ «CodeList»  |BridgeInstallationClassValue is a code list used to further classify a BridgeInstallation.
+|<<BridgeInstallationFunctionValue-section,BridgeInstallationFunctionValue>> +
+ «CodeList»  |BridgeInstallationFunctionValue is a code list that enumerates the different purposes of a BridgeInstallation.
+|<<BridgeInstallationUsageValue-section,BridgeInstallationUsageValue>> +
+ «CodeList»  |BridgeInstallationUsageValue is a code list that enumerates the different uses of a BridgeInstallation.
+|<<BridgeRoomClassValue-section,BridgeRoomClassValue>> +
+ «CodeList»  |BridgeRoomClassValue is a code list used to further classify a BridgeRoom.
+|<<BridgeRoomFunctionValue-section,BridgeRoomFunctionValue>> +
+ «CodeList»  |BridgeRoomFunctionValue is a code list that enumerates the different purposes of a BridgeRoom.
+|<<BridgeRoomUsageValue-section,BridgeRoomUsageValue>> +
+ «CodeList»  |BridgeRoomUsageValue is a code list that enumerates the different uses of a BridgeRoom.
+|<<BridgeUsageValue-section,BridgeUsageValue>> +
+ «CodeList»  |BridgeUsageValue is a code list that enumerates the different uses of a Bridge.
+|===

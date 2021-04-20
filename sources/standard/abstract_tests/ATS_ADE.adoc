@@ -1,0 +1,9 @@
+=== Conformance Class ADE
+
+include::ADE/ATS_ADE_UML.adoc[]
+
+include::ADE/ATS_ADE_Elements.adoc[]
+
+include::ADE/ATS_ADE_Properties.adoc[]
+
+

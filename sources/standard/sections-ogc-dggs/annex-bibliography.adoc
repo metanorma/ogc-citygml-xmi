@@ -1,0 +1,5 @@
+[bibliography]
+[[Bibliography]]
+== Bibliography
+
+include::../sections-en/bibliography_core.adoc[]

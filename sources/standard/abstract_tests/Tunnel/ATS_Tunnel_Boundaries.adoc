@@ -1,0 +1,10 @@
+[[ats_tunnel_boundaries]]
+[width="90%",cols="2,6"]
+|===
+^|*Abstract Test {counter:ats-id}* |*/ats/tunnel/boundaries* 
+^|Test Purpose |To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
+^|Requirement |<<req_tunnel_boundaries,/req/tunnel/boundaries>>
+^|Test Method |Manual Inspection
+2+|For each UML class defined or referenced in the Tunnel Package:
+^|A |Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
+|===

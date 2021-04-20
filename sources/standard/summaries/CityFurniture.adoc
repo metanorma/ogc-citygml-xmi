@@ -1,0 +1,31 @@
+[[CityFurniture-class-table]]
+.Classes used in CityFurniture
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<CityFurniture-section,CityFurniture>> +
+ «TopLevelFeatureType»  |CityFurniture is an object or piece of equipment installed in the outdoor environment for various purposes. Examples include street signs, traffic signals, street lamps, benches, fountains.
+|===
+
+[[CityFurniture-datatypes-table]]
+.Data Types used in CityFurniture
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<ADEOfCityFurniture-section,ADEOfCityFurniture>> +
+ «DataType»  |ADEOfCityFurniture acts as a hook to define properties within an ADE that are to be added to a CityFurniture. 
+|===
+
+[[CityFurniture-codelist-table]]
+.CodeList Classes used in CityFurniture
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+|<<CityFurnitureClassValue-section,CityFurnitureClassValue>> +
+ «CodeList»  |CityFurnitureClassValue is a code list used to further classify a CityFurniture.
+|<<CityFurnitureFunctionValue-section,CityFurnitureFunctionValue>> +
+ «CodeList»  |CityFurnitureFunctionValue is a code list that enumerates the different purposes of a CityFurniture.
+|<<CityFurnitureUsageValue-section,CityFurnitureUsageValue>> +
+ «CodeList»  |CityFurnitureUsageValue is a code list that enumerates the different uses of a CityFurniture.
+|===  
+

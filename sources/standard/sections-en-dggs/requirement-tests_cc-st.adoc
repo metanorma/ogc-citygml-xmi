@@ -1,0 +1,16 @@
+
+This annex specifies Abstract test suites for the conformance categories in this document.
+The requirement tests associated with each conformance category are listed in <<tab-cc>>&ndash;<<tab-ea-ers>>. Tests identifiers below are relative to http://www.opengis.net/spec/dggs/2.0/
+
+=== Common Spatio-temporal Classes package conformance categories
+
+The requirement tests that apply to each conformance category in the Common Spatio-temporal Classes package are listed in <<tab-cc>>
+
+[[tab-cc]]
+include::../abstract_tests/TEST_cc-i.adoc[]
+
+include::../abstract_tests/TEST_cc-temporal-geometry.adoc[]
+include::../abstract_tests/TEST_cc-zone-geometry.adoc[]
+include::../abstract_tests/TEST_cc-spatial-location.adoc[]
+include::../abstract_tests/TEST_cc-temporal-rsupi.adoc[]
+include::../abstract_tests/TEST_cc-zone-rsuzi.adoc[]

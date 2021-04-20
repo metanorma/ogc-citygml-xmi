@@ -1,0 +1,8 @@
+=== Conformance Class CityObjectGroup
+
+include::CityObjectGroup/ATS_CityObjectGroup_Classes.adoc[]
+
+include::CityObjectGroup/ATS_CityObjectGroup_Boundaries.adoc[]
+
+include::CityObjectGroup/ATS_CityObjectGroup_ADE_Use.adoc[]
+
