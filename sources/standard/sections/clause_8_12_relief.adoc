@@ -1,7 +1,7 @@
 [[rc_relief_section]]
 === Relief
 
-include::requirements/requirements_class_relief.adoc[]
+include::../requirements/requirements_class_relief.adoc[]
 
 The Relief module provides the representation of terrain which is an essential part of city models. In CityGML, the terrain is modelled by relief features. They are represented in the UML model by the top-level feature type _ReliefFeature_, which is the main class of the Relief module.
 The relief features, in turn, are collections of relief components that describe the Earth's surface, also known as the Digital Terrain Model. The relief components can have different terrain representations which can coexist. Each relief component may be specified as a regular raster or grid, as a TIN (Triangulated Irregular Network), by break lines, or by mass points. In addition, the validity of the relief components may be restricted to certain areas.
@@ -23,15 +23,15 @@ image::figures/Relief-ADE_Datatypes.png[align="center"]
 
 The following requirement defines the rules governing implementation of the CityGML Relief Module as an Implementation Specification.
 
-include::requirements/Relief/REQ_Relief_Classes.adoc[]
+include::../requirements/Relief/REQ_Relief_Classes.adoc[]
 
 The use of extension capabilities by Relief elements is constrained by the following requirement:
 
-include::requirements/Relief/REQ_Relief_ADE_Use.adoc[]
+include::../requirements/Relief/REQ_Relief_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Relief.adoc[]
+include::../summaries/Relief.adoc[]
 
 ==== Additional Information
 

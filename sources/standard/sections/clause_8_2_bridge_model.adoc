@@ -1,7 +1,7 @@
 [[rc_bridge-model_section]]
 === Bridge
 
-include::requirements/requirements_class_bridge.adoc[]
+include::../requirements/requirements_class_bridge.adoc[]
 
 The Bridge module provides the representation of thematic and spatial aspects of bridges. Bridges are movable or unmovable structures that span intervening natural or built elements. In this way, bridges allow the passage of pedestrians, animals, vehicles, and service(s) above obstacles or between two points at a height above ground.
 Bridges are represented in the UML model by the top-level feature type _Bridge_, which is the main class of the Bridge module. Bridges can physically or functionally be subdivided into bridge parts. In addition, bridges can be decomposed into structural elements, such as pylons, anchorages, cables, slabs, and beams.
@@ -128,19 +128,19 @@ a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
 
 The following requirement defines the rules governing implementation of the CityGML Bridge Module as an Implementation Specification.
 
-include::requirements/Bridge/REQ_Bridge_Classes.adoc[]
+include::../requirements/Bridge/REQ_Bridge_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Bridge/REQ_Bridge_Boundaries.adoc[]
+include::../requirements/Bridge/REQ_Bridge_Boundaries.adoc[]
 
 The use of extension capabilities by Bridge elements is constrained by the following requirement:
 
-include::requirements/Bridge/REQ_Bridge_ADE_Use.adoc[]
+include::../requirements/Bridge/REQ_Bridge_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Bridge.adoc[]
+include::../summaries/Bridge.adoc[]
 
 ==== Additional Information
 

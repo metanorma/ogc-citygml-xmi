@@ -3,7 +3,7 @@
 [[rc_core_section]]
 === Core
 
-include::requirements/requirements_class_core.adoc[]
+include::../requirements/requirements_class_core.adoc[]
 
 The CityGML Core module defines the basic concepts and components of city models. This rather large body of work is divided into seven sections. These sections build on each other from the fundamental principles specified by the relevant ISO standards up to the full CityGML model. These sections are summarized in <<citygml-core-table>>.
 
@@ -23,11 +23,11 @@ The CityGML Core module defines the basic concepts and components of city models
 
 The CityGML Core defines technology-agnostic concepts. These concepts are then realized in technology-specific Implementation Specifications. The following requirements govern the creation of any CityGML compliant Implementation Specification (IS).
 
-include::requirements/Core/REQ_Core_Classes.adoc[]
+include::../requirements/Core/REQ_Core_Classes.adoc[]
 
 While the CityGML Conceptual Model builds on ISO Standards, there are some restrictions on the use of those standards.
 
-include::requirements/Core/REQ_Core_ISO.adoc[]
+include::../requirements/Core/REQ_Core_ISO.adoc[]
 
 An implementing technology may not be able to support all of the concepts defined in the CityGML Conceptual Model. Alternately, some concepts from the Conceptual Model may be inappropriate for the application domain for which the Implementation Specification was developed. In those cases, elements of the Conceptual Model may be mapped to null elements in the Implementation Specification.
 
@@ -78,11 +78,11 @@ a| * Core::AbstractSpaceBoundary and the subclasses: +
 
 Surface boundaries are constrained by the following requirement:
 
-include::requirements/Core/REQ_Core_Boundaries.adoc[]
+include::../requirements/Core/REQ_Core_Boundaries.adoc[]
 
 The use of extension capabilities by Core elements is constrained by the following requirement:
 
-include::requirements/Core/REQ_Core_ADE_Use.adoc[]
+include::../requirements/Core/REQ_Core_ADE_Use.adoc[]
 
 [[ISO-dependencies-section]]
 ==== ISO Dependencies
@@ -126,7 +126,7 @@ image::figures/Core/Core-City_models_and_city_objects.png[align="center"]
 
 The City Model and City Object classes defined in the CityGML UML model are introduced in <<Core-city-model-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 
-include::summaries/Core-CityObjects.adoc[]
+include::../summaries/Core-CityObjects.adoc[]
 
 [[space-concepts-section]]
 ==== Space Concept
@@ -156,7 +156,7 @@ image::figures/Core/Core-Space_concepts.png[align="center"]
 
 The Space Concept classes defined in the CityGML UML model are introduced in <<Core-spatial-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 
-include::summaries/Core-Spatial.adoc[]
+include::../summaries/Core-Spatial.adoc[]
 
 [[geometry-lod-section]]
 ==== Geometry and LOD
@@ -184,7 +184,7 @@ The Geometry and LOD Concept classes defined in the CityGML UML model are introd
 
 Of particular note is the Implicit Geometry concept. Many of the objects encountered in a city landscape have the same geometry. How many types of street lamps can there be? An Implicit Geometry captures that geometry once, and re-uses that one geometry for all similar street lamp objects.
 
-include::summaries/Core-Geometry.adoc[]
+include::../summaries/Core-Geometry.adoc[]
 
 [[CityGML-section]]
 ==== CityGML Core Model
@@ -199,7 +199,7 @@ image::figures/Core/Core-Overview.png[align="center"]
 
 <<Core-city-model-class-table>>, <<Core-spatial-class-table>>, and <<Core-geometry-class-table>> introduce already most of the classes of the CityGML Core module. The additional classes required to complete this section of the standard are introduced in <<Core-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 
-include::summaries/Core-CityModel.adoc[]
+include::../summaries/Core-CityModel.adoc[]
 
 [[b-e-c-section]]
 ==== Data types, Enumerations, and Code lists
@@ -218,7 +218,7 @@ image::figures/Core/Core-Basic_Types_Enumerations_Codelists.png[align="center"]
 
 These supporting constructs are defined in the following tables.
 
-include::summaries/Core-others.adoc[]
+include::../summaries/Core-others.adoc[]
 
 ==== Additional Information
 

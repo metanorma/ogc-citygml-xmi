@@ -1,7 +1,7 @@
 [[rc_waterbody_section]]
 === Water Body
 
-include::requirements/requirements_class_waterbody.adoc[]
+include::../requirements/requirements_class_waterbody.adoc[]
 
 The WaterBody module provides the representation of significant and permanent or semi-permanent accumulations of surface water, usually covering a part of the Earth. Examples of such water bodies that can be modelled with CityGML are rivers, canals, lakes, and basins.
 Water bodies are represented in the UML model by the top-level feature type _WaterBody_, which is the main class of the WaterBody module.
@@ -48,19 +48,19 @@ a| * WaterBody::AbstractWaterBoundarySurface and all subclasses, i.e. +
 
 The following requirement defines the rules governing implementation of the CityGML WaterBody Module as an Implementation Specification.
 
-include::requirements/Waterbody/REQ_Waterbody_Classes.adoc[]
+include::../requirements/Waterbody/REQ_Waterbody_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Waterbody/REQ_Waterbody_Boundaries.adoc[]
+include::../requirements/Waterbody/REQ_Waterbody_Boundaries.adoc[]
 
 The use of extension capabilities by Waterbody elements is constrained by the following requirement:
 
-include::requirements/Waterbody/REQ_Waterbody_ADE_Use.adoc[]
+include::../requirements/Waterbody/REQ_Waterbody_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/WaterBody.adoc[]
+include::../summaries/WaterBody.adoc[]
 
 ==== Additional Information
 

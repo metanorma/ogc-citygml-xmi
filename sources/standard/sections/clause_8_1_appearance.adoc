@@ -1,7 +1,7 @@
 [[rc_appearance_section]]
 === Appearance
 
-include::requirements/requirements_class_appearance.adoc[]
+include::../requirements/requirements_class_appearance.adoc[]
 
 The Appearance module provides the representation of surface data such as observable properties for surface geometry objects in the form of textures and material.
 
@@ -27,15 +27,15 @@ image::figures/Appearance-ADE_Datatypes.png[align="center"]
 
 The following requirement defines the rules governing implementation of the CityGML Appearance Module as an Implementation Specification.
 
-include::requirements/Appearance/REQ_Appearance_Classes.adoc[]
+include::../requirements/Appearance/REQ_Appearance_Classes.adoc[]
 
 The use of extension capabilities by Appearance elements is constrained by the following requirement:
 
-include::requirements/Appearance/REQ_Appearance_ADE_Use.adoc[]
+include::../requirements/Appearance/REQ_Appearance_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Appearance.adoc[]
+include::../summaries/Appearance.adoc[]
 
 ==== Additional Information
 

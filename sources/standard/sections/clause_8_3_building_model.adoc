@@ -1,7 +1,7 @@
 [[rc_building-model_section]]
 === Building
 
-include::requirements/requirements_class_building.adoc[]
+include::../requirements/requirements_class_building.adoc[]
 
 The Building module provides the representation of thematic and spatial aspects of buildings. Buildings are free-standing, self-supporting constructions that are roofed and usually walled, and that can be entered by humans and are normally designed to stand permanently in one place. Buildings are intended for human occupancy (e.g. a place of work or recreation), habitation and/or shelter of humans, animals or things. Buildings are represented in the UML model by the top-level feature type _Building_, which is the main class of the Building module. Buildings can physically or functionally be subdivided into building parts, and logically into storeys and building units (e.g. apartments). In addition, buildings can be decomposed into structural elements, such as walls, slabs, staircases, and beams.
 
@@ -151,19 +151,19 @@ a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
 
 The following requirement defines the rules governing implementation of the CityGML Building Module as an Implementation Specification.
 
-include::requirements/Building/REQ_Building_Classes.adoc[]
+include::../requirements/Building/REQ_Building_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Building/REQ_Building_Boundaries.adoc[]
+include::../requirements/Building/REQ_Building_Boundaries.adoc[]
 
 The use of extension capabilities by Building elements is constrained by the following requirement:
 
-include::requirements/Building/REQ_Building_ADE_Use.adoc[]
+include::../requirements/Building/REQ_Building_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Building.adoc[]
+include::../summaries/Building.adoc[]
 
 ==== Additional Information
 

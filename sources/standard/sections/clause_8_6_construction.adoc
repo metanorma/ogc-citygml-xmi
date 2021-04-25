@@ -1,7 +1,7 @@
 [[rc_construction_section]]
 === Construction
 
-include::requirements/requirements_class_construction.adoc[]
+include::../requirements/requirements_class_construction.adoc[]
 
 The Construction module defines concepts that are common to all forms of constructions. Constructions are objects that are manufactured by humans from construction materials, are connected to earth, and are intended to be permanent. The Construction module focuses on as-built representations of constructions and integrates all concepts that are similar over different types of constructions, in particular buildings, bridges, and tunnels. In addition, for representing man-made structures that are neither buildings, nor bridges, nor tunnels so-called other constructions (e.g. large chimneys or city walls) can be defined.
 
@@ -116,19 +116,19 @@ a| * Construction::WindowSurface
 
 The following requirement defines the rules governing implementation of the CityGML Construction Module as an Implementation Specification.
 
-include::requirements/Construction/REQ_Construction_Classes.adoc[]
+include::../requirements/Construction/REQ_Construction_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Construction/REQ_Construction_Boundaries.adoc[]
+include::../requirements/Construction/REQ_Construction_Boundaries.adoc[]
 
 The use of extension capabilities by Construction elements is constrained by the following requirement:
 
-include::requirements/Construction/REQ_Construction_ADE_Use.adoc[]
+include::../requirements/Construction/REQ_Construction_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Construction.adoc[]
+include::../summaries/Construction.adoc[]
 
 ==== Additional Information
 
