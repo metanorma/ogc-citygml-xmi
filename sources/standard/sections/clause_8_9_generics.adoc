@@ -1,7 +1,7 @@
 [[rc_generics_section]]
 === Generics
 
-include::requirements/requirements_class_generics.adoc[]
+include::../requirements/requirements_class_generics.adoc[]
 
 The Generics module provides the representation of generic city objects. These are city objects that are not covered by any explicitly modelled thematic class within the CityGML Conceptual Model. The Generics module also provides the representation of generic attributes which are attributes that are not explicitly represented in the CityGML Conceptual Model. In order to avoid problems concerning semantic interoperability, generic city objects and generic attributes shall only be used if appropriate thematic classes and attributes are not provided by any other CityGML module.
 
@@ -56,23 +56,23 @@ a| * Core::ClosureSurface
 
 The following requirement defines the rules governing implementation of the CityGML Generics Module as an Implementation Specification.
 
-include::requirements/Generics/REQ_Generics_Classes.adoc[]
+include::../requirements/Generics/REQ_Generics_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Generics/REQ_Generics_Boundaries.adoc[]
+include::../requirements/Generics/REQ_Generics_Boundaries.adoc[]
 
 The decision of whether or not to use Generics is constrained by the following requirement:
 
-include::requirements/Generics/REQ_Generics_Use.adoc[]
+include::../requirements/Generics/REQ_Generics_Use.adoc[]
 
 The use of extension capabilities by Generics elements is constrained by the following requirement:
 
-include::requirements/Generics/REQ_Generics_ADE_Use.adoc[]
+include::../requirements/Generics/REQ_Generics_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Generics.adoc[]
+include::../summaries/Generics.adoc[]
 
 ==== Additional Information
 

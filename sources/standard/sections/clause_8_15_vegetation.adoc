@@ -1,7 +1,7 @@
 [[rc_vegetation_section]]
 === Vegetation
 
-include::requirements/requirements_class_vegetation.adoc[]
+include::../requirements/requirements_class_vegetation.adoc[]
 
 The Vegetation module defines the concepts to represent vegetation within city models. Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
 Vegetation is represented in the UML model by the top-level feature types _SolitaryVegetationObject_ and _PlantCover_, which are also the only classes of the Vegetation module.
@@ -46,19 +46,19 @@ a|No boundaries allowed
 
 The following requirement defines the rules governing implementation of the CityGML Vegetation Module as an Implementation Specification.
 
-include::requirements/Vegetation/REQ_Vegetation_Classes.adoc[]
+include::../requirements/Vegetation/REQ_Vegetation_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Vegetation/REQ_Vegetation_Boundaries.adoc[]
+include::../requirements/Vegetation/REQ_Vegetation_Boundaries.adoc[]
 
 The use of extension capabilities by Vegetation elements is constrained by the following requirement:
 
-include::requirements/Vegetation/REQ_Vegetation_ADE_Use.adoc[]
+include::../requirements/Vegetation/REQ_Vegetation_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Vegetation.adoc[]
+include::../summaries/Vegetation.adoc[]
 
 ==== Additional Information
 

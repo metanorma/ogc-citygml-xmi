@@ -1,7 +1,7 @@
 [[rc_versioning_section]]
 === Versioning
 
-include::requirements/requirements_class_versioning.adoc[]
+include::../requirements/requirements_class_versioning.adoc[]
 
 The Versioning module defines the concepts that enable representing multiple versions of a city model. A specific version represents a defined state of a city model consisting of the dedicated versions of all city object instances that belong to the respective city model version. Each version can be complemented by version transitions that describe the change of the state of a city model from one version to another and that give the reason for the change and the modifications applied.
 
@@ -24,15 +24,15 @@ image::figures/Versioning-ADE_Datatypes.png[align="center"]
 
 The following requirement defines the rules governing implementation of the CityGML Versioning Module as an Implementation Specification.
 
-include::requirements/Versioning/REQ_Versioning_Classes.adoc[]
+include::../requirements/Versioning/REQ_Versioning_Classes.adoc[]
 
 The use of extension capabilities by Versioning elements is constrained by the following requirement:
 
-include::requirements/Versioning/REQ_Versioning_ADE_Use.adoc[]
+include::../requirements/Versioning/REQ_Versioning_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Versioning.adoc[]
+include::../summaries/Versioning.adoc[]
 
 ==== Additional Information
 

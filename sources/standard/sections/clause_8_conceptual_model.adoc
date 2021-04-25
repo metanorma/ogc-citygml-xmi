@@ -1,67 +1,11 @@
-[[conceptual-model-section]]
-== CityGML UML Model
+[lutaml, ../../xmi-full/full-242.xmi, context]
+----
+{% assign root_package = context.packages | first %}
+== {{ root_package.name }} UML Model
 
-The CityGML UML model is the normative definition of the CityGML Conceptual Model. The tables and figures in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.
+{% include "packages", depth: 3, context: root_package %}
 
-An alternate representation can be found in the Data Dictionary in <<data-dictionary-section>>.
+== {{ root_package.name }} Data Dictionary
 
-[[rc_overview-section]]
-=== Structural Overview of Requirements Classes
-
-The Requirements Classes for this standard are structured as
-UML Packages as illustrated in <<package-diagram>>. Each Requirements Class is specified in detail in their respective subsections. These subsections include a UML diagram, data dictionary, and the applicable requirements.
-
-[[package-diagram]]
-.CityGML UML Packages
-image::figures/CityGMLPackageDiagram.png[align="center"]
-
-[[core_section]]
-include::clause_8_7_core.adoc[]
-
-[[appearance_section]]
-include::clause_8_1_appearance.adoc[]
-
-[[city_furniture_section]]
-include::clause_8_4_city_furniture.adoc[]
-
-[[city_object_group_section]]
-include::clause_8_5_city_object_group.adoc[]
-
-[[dynamizer_section]]
-include::clause_8_8_dynamizer.adoc[]
-
-[[generics_section]]
-include::clause_8_9_generics.adoc[]
-
-[[land_use_section]]
-include::clause_8_10_land_use.adoc[]
-
-[[pointcloud_section]]
-include::clause_8_11_pointcloud.adoc[]
-
-[[relief_section]]
-include::clause_8_12_relief.adoc[]
-
-[[transportation_section]]
-include::clause_8_13_transportation.adoc[]
-
-[[vegetation_section]]
-include::clause_8_15_vegetation.adoc[]
-
-[[versioning_section]]
-include::clause_8_16_versioning.adoc[]
-
-[[waterbody_section]]
-include::clause_8_17_waterbody.adoc[]
-
-[[construction_section]]
-include::clause_8_6_construction.adoc[]
-
-[[bridge_section]]
-include::clause_8_2_bridge_model.adoc[]
-
-[[building_section]]
-include::clause_8_3_building_model.adoc[]
-
-[[tunnel_section]]
-include::clause_8_14_tunnel.adoc[]
+{% include "packages_data_dictionary", depth: 3, context: root_package %}
+----

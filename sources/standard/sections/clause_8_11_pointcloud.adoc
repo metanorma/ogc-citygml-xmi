@@ -1,7 +1,7 @@
 [[rc_pointcloud_section]]
 === Point Cloud
 
-include::requirements/requirements_class_pointcloud.adoc[]
+include::../requirements/requirements_class_pointcloud.adoc[]
 
 The PointCloud module specifies how to encode the geometry of physical spaces and of thematic surfaces as 3D point clouds. In this way, the building hull, a room within a building or a single wall surface can be spatially represented by a point cloud only. The same applies to all other thematic feature types including transportation objects, vegetation, city furniture, etc. Point clouds can either be provided inline within a CityGML file or as reference to external point cloud files of common file types such as LAS or LAZ.
 Point clouds are represented in the UML model by the feature type _PointCloud_, which is also the only class of the PointCloud module.
@@ -23,15 +23,15 @@ image::figures/PointCloud-ADE_Datatypes.png[align="center"]
 
 The following requirement defines the rules governing implementation of the CityGML Point Cloud Module as an Implementation Specification.
 
-include::requirements/PointCloud/REQ_PointCloud_Classes.adoc[]
+include::../requirements/PointCloud/REQ_PointCloud_Classes.adoc[]
 
 The use of extension capabilities by Point Cloud elements is constrained by the following requirement:
 
-include::requirements/PointCloud/REQ_PointCloud_ADE_Use.adoc[]
+include::../requirements/PointCloud/REQ_PointCloud_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/PointCloud.adoc[]
+include::../summaries/PointCloud.adoc[]
 
 ==== Additional Information
 

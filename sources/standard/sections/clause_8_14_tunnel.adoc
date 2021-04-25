@@ -1,7 +1,7 @@
 [[rc_tunnel_section]]
 === Tunnel
 
-include::requirements/requirements_class_tunnel.adoc[]
+include::../requirements/requirements_class_tunnel.adoc[]
 
 The Tunnel module provides the representation of thematic and spatial aspects of tunnels. Tunnels are horizontal or sloping enclosed passage ways of a certain length, mainly underground or underwater. Tunnels are intended for passing obstacles such as mountains, waterways or other traffic routes by humans, animals or things.
 
@@ -132,19 +132,19 @@ a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
 
 The following requirement defines the rules governing implementation of the CityGML Tunnel Module as an Implementation Specification.
 
-include::requirements/Tunnel/REQ_Tunnel_Classes.adoc[]
+include::../requirements/Tunnel/REQ_Tunnel_Classes.adoc[]
 
 The implementation of this Module is further constrained by the following spatial boundary requirement:
 
-include::requirements/Tunnel/REQ_Tunnel_Boundaries.adoc[]
+include::../requirements/Tunnel/REQ_Tunnel_Boundaries.adoc[]
 
 The use of extension capabilities by Tunnel elements is constrained by the following requirement:
 
-include::requirements/Tunnel/REQ_Tunnel_ADE_Use.adoc[]
+include::../requirements/Tunnel/REQ_Tunnel_ADE_Use.adoc[]
 
 ==== Class Definitions
 
-include::summaries/Tunnel.adoc[]
+include::../summaries/Tunnel.adoc[]
 
 ==== Additional Information
 

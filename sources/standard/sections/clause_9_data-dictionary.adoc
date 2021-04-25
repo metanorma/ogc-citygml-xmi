@@ -15,55 +15,55 @@ image::figures/CityGMLPackageDiagram.png[align="center"]
 The following classes are defined in ISO standards and used by the CityGML Conceptual Model.
 
 [[data-dictionary-ISO]]
-include::data-dictionaries/ISO-Classes.adoc[]
+include::../data-dictionaries/ISO-Classes.adoc[]
 
 [[data-dictionary-core]]
-include::data-dictionaries/Core.adoc[]
+include::../data-dictionaries/Core.adoc[]
 
 [[data-dictionary-appearance]]
-include::data-dictionaries/Appearance.adoc[]
+include::../data-dictionaries/Appearance.adoc[]
 
 [[data-dictionary-city_furniture]]
-include::data-dictionaries/CityFurniture.adoc[]
+include::../data-dictionaries/CityFurniture.adoc[]
 
 [[data-dictionary-city_object-group]]
-include::data-dictionaries/CityObjectGroup.adoc[]
+include::../data-dictionaries/CityObjectGroup.adoc[]
 
 [[data-dictionary-dynamizer]]
-include::data-dictionaries/Dynamizer.adoc[]
+include::../data-dictionaries/Dynamizer.adoc[]
 
 [[data-dictionary-generics]]
-include::data-dictionaries/Generics.adoc[]
+include::../data-dictionaries/Generics.adoc[]
 
 [[data-dictionary-land_use]]
-include::data-dictionaries/LandUse.adoc[]
+include::../data-dictionaries/LandUse.adoc[]
 
 [[data-dictionary-pointcloud]]
-include::data-dictionaries/PointCloud.adoc[]
+include::../data-dictionaries/PointCloud.adoc[]
 
 [[data-dictionary-relief]]
-include::data-dictionaries/Relief.adoc[]
+include::../data-dictionaries/Relief.adoc[]
 
 [[data-dictionary-transportation]]
-include::data-dictionaries/Transportation.adoc[]
+include::../data-dictionaries/Transportation.adoc[]
 
 [[data-dictionary-vegetation]]
-include::data-dictionaries/Vegetation.adoc[]
+include::../data-dictionaries/Vegetation.adoc[]
 
 [[data-dictionary-versioning]]
-include::data-dictionaries/Versioning.adoc[]
+include::../data-dictionaries/Versioning.adoc[]
 
 [[data-dictionary-waterbody]]
-include::data-dictionaries/WaterBody.adoc[]
+include::../data-dictionaries/WaterBody.adoc[]
 
 [[data-dictionary-construction]]
-include::data-dictionaries/Construction.adoc[]
+include::../data-dictionaries/Construction.adoc[]
 
 [[data-dictionary-bridge]]
-include::data-dictionaries/Bridge.adoc[]
+include::../data-dictionaries/Bridge.adoc[]
 
 [[data-dictionary-building]]
-include::data-dictionaries/Building.adoc[]
+include::../data-dictionaries/Building.adoc[]
 
 [[data-dictionary-tunnel]]
-include::data-dictionaries/Tunnel.adoc[]
+include::../data-dictionaries/Tunnel.adoc[]

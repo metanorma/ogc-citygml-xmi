@@ -1,61 +1,16 @@
 {% for package in context.packages %}
-{% capture equalsigns %}{% for count in (1..depth) %}={% endfor %}{% endcapture %}{{equalsigns}} {{ package.name }} package
-{{equalsigns}}= {{ package.name }} overview
-
-{% if package.packages.size > 0 %}The {{ package.name }} package is organized into
-{{ package.packages.size }} packages{% assign modules_nested_size = 0 %}{% for module in package.packages %}{% assign modules_nested_size = modules_nested_size | plus: module.packages.size %}{% endfor %}{% if modules_nested_size > 0 %} with {{modules_nested_size}} modules{% endif %}:
-{% endif %}
-[arabic]
-{% for module in package.packages %}
-. {{ module.name }} package comprises:
-{% for nested_module in module.packages %}
-.. {{nested_module.name}} module
-{% endfor %}
-{% endfor %}
+{% capture equalsigns %}{% for count in (1..depth) %}={% endfor %}{% endcapture %}{{equalsigns}} {{ package.name }}
+{{equalsigns}}= {{ package.name }}
 
 {% if package.classes.size > 0 %}
-
-{{equalsigns}}= Defining tables
-
-[arabic]
-{% for klass in package.classes %}
-. <<tab-{{ package.name | replace: ' ', '-' }}-{{ klass.name | replace: ' ', '-' }}>> -- Elements of {{ package.name }}::{{ klass.name }}
-{% endfor %}
-
-{% for klass in package.classes %}
-[[tab-{{ package.name | replace: ' ', '-' }}-{{ klass.name | replace: ' ', '-' }}]]
-.Elements of {{ package.name }}::{{ klass.name }}
-[width="100%",cols="8%,10%,20%,20%,6%,8%,8%,20%",]
+.Classes used in {{ package.name }}
+[cols="2,6",options="headers"]
 |===
-
-h|Name: 7+| {{ klass.name }}
-
-h|Definition: 7+| {{ klass.definition | html2adoc }}
-
-h|Stereotype: 7+| {{ klass.stereotype }}
-h|Inheritance from: 7+| TODO interface
-h|Abstract: 7+| {{ klass.is_abstract }}
-{% if klass.associations.size > 0 %}
-.{{klass.associations.size | plus: 1}}+h|Associations:  4+|_Association with:_ |_Obligation_ | _Maximum occurrence_ |_Provides:_
-{% for assoc in klass.associations %}
- 4+| {{assoc.member_end}} | TODO Obligation | TODO Maximum occurrence | TODO Provides
+^|*Class Name* ^|*Description*
+{% for klass in package.classes %}
+|<<P-{{ package.name }}-C-{{ klass.name }}-section,{{ klass.name }}>> |{{ klass.definition }}
 {% endfor %}
-{% else %}
-.1+h|Associations: 7+| (none)
-{% endif %}
-{% if klass.attributes.size > 0 %}
-.{{klass.attributes.size | plus: 1}}+h|Public attributes:  | _Name_ 2+| _Definition_ | _Derived_ | _Obligation_ | _Maximum occurrence_ | _Data type_
-{% for attr in klass.attributes %}
- | {{attr.name}} 2+| {{ attr.definition | html2adoc }} |  | {{attr.cardinality.min}} | {{attr.cardinality.max}} | {{attr.type}}
-{% endfor %}
-{% else %}
-.1+h|Public attributes: 7+| (none)
-{% endif %}
-
-h|Constraints: 7+| (none)
-
 |===
-{% endfor %}
 {% endif %}
 {% if package.packages.size > 0 %}{% assign nested_depth = depth | plus: 1 %}{% include "packages", depth: nested_depth, context: package %}{% endif %}
 {% endfor %}
