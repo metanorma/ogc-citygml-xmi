@@ -1,5 +1,5 @@
-[[conformance-section]]
 
+[[conformance-section]]
 == Conformance
 
 This standard defines a <<conceptual_model_definition,Conceptual Model>> which is independent of any encoding or formatting techniques. The <<standardization-target-definition,Standardization Targets>> for this standard are:

@@ -1,5 +1,6 @@
 = OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard
 :doctype: standard
+:docsubtype: conceptual-model
 :encoding: utf-8
 :lang: en
 :status: published
@@ -10,28 +11,36 @@
 :received-date: 2021-03-02
 :issued-date:
 :published-date: 2021-03-02
-:fullname:
-Thomas H. Kolbe, Tatjana Kutzner, Carl Stephen Smyth, Claus Nagel, Carsten Roensdorf, Charles Heazel
-Robert Gibb
-:docsubtype: conceptual-model
+:fullname: Thomas H. Kolbe
+:affiliation: Chair of Geoinformatics, Technical University of Munich, Germany
+:role: editor
+:fullname_2: Tatjana Kutzner
+:affiliation_2: Chair of Geoinformatics, Technical University of Munich, Germany
+:role_2: editor
+:fullname_3: Carl Stephen Smyth
+:affiliation_3: OpenSitePlan, USA
+:role_3: editor
+:fullname_4: Claus Nagel
+:affiliation_4:
+:role_4: editor
+:fullname_5: Carsten Roensdorf
+:affiliation_5: Ordnance Survey, Great Britain
+:role_5: editor
+:fullname_6: Charles Heazel
+:affiliation_6: HeazelTech LLC
+:role_6: editor
+:fullname_7: Sylvester Hagler
+:affiliation_7: U.S. National Geospatial-Intelligence Agency
+:role_7: editor
 :keywords: ogcdoc, OGC document, CityGML, 3D city models
-:submitting-organizations:
-|Thomas H. Kolbe |Chair of Geoinformatics, Technical University of Munich, Germany
-|Tatjana Kutzner |Chair of Geoinformatics, Technical University of Munich, Germany
-|Carl Stephen Smyth |OpenSitePlan, USA
-|Claus Nagel |virtualcitySYSTEMS, Germany
-|Carsten Roensdorf |Ordnance Survey, Great Britain
-|Charles (Chuck) Heazel |HeazelTech LLC
-|Sylvester Hagler |U.S. National Geospatial-Intelligence Agency
-
-Manaaki Whenua - Landcare Research, New Zealand; Geoscience Australia, Joint Research Centre (JRC), Pangaea Innovations Pty Ltd; Peking University Collaborative Innovation Center for Geospatial Big Data; University of Calgary
+:submitting-organizations: Technical University of Munich, Germany; OpenSitePlan, USA; virtualcitySYSTEMS, Germany; Ordnance Survey, Great Britain; HeazelTech LLC, USA; U.S. National Geospatial-Intelligence Agency, USA
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
-:pdf-uri: ./20-040r3.pdf
-:xml-uri: ./20-040r3.xml
-:doc-uri: ./20-040r3.doc
+:pdf-uri: ./20-010.pdf
+:xml-uri: ./20-010.xml
+:doc-uri: ./20-010.doc
 
 ////
 Make sure to complete each included document

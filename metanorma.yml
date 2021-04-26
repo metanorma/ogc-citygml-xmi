@@ -2,9 +2,8 @@
 metanorma:
   source:
     files:
-      - sources/as21-dggs/20-040r3.adoc
-      - sources/as21-dggs/iso-19170-1-is-en-sections.adoc
+      - sources/standard/20-010.adoc
 
   collection:
     organization: "OGC"
-    name: "DGGS XMI model-driven standard"
+    name: "OGC TB 17 D144 CityGML XMI model-driven standard"
