@@ -37,19 +37,23 @@ image::figures/Generics-Codelists.png[align="center"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
 |GenericLogicalSpace
-a| * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |GenericOccupiedSpace
-a| * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |GenericUnoccupiedSpace
-a| * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
 |===
 
 ==== Requirements
