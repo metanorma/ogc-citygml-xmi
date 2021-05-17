@@ -1,0 +1,81 @@
+{% assign is_klass_spare = klass.name | slice: 0,5 %}
+{% if is_klass_spare == 'old: ' %}{% continue %}
+{% elsif is_klass_spare == 'Spare' %}{% continue %}
+{% endif %}
+{% assign klass_name = klass.name | downcase | replace: ':', '' | replace: ' ', '_' %}
+[[tab-P-{{ package_name }}-C-{{ klass_name }}]]
+.Elements of {{ package.name }}::{{ klass.name }}
+[width="100%",cols="a,a,a,a,a,a,a,a"]
+|===
+
+h|Name: 7+| {{ klass.name }}
+
+h|Definition: 7+| {{ klass.definition | html2adoc }}
+
+h|Stereotype: 7+| {{ klass.stereotype | default: 'interface' }}
+
+{% assign inherited = klass.associations | where: "member_end_type", "inheritance" %}
+{% if inherited.size > 0 %}
+h|Inheritance from: 7+| {{ inherited | map: 'member_end' | join: ", " }}
+{% endif %}
+
+{% assign generalizations = klass.associations | where: "member_end_type", "generalization" %}
+{% if generalizations.size > 0 %}
+h|Generalization of: 7+| {{ generalizations | map: 'member_end' | join: ", " }}
+{% endif %}
+
+h|Abstract: 7+| {{ klass.is_abstract }}
+{% assign aggregations = klass.associations | where: "member_end_type", "aggregation" %}
+{% if aggregations.size > 0 %}
+.{{aggregations.size | plus: 1}}+h|Associations:
+4+|_Association with:_
+|_Obligation_
+| _Maximum occurrence_
+|_Provides:_
+
+{% for assoc in aggregations %}
+4+| {{assoc.member_end}}
+| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.min }}{% endif %}
+| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.max }}{% endif %}
+| {{ assoc.member_end_attribute_name }}
+
+{% endfor %}
+{% else %}
+
+.1+h|Associations: 7+| (none)
+{% endif %}
+{% if klass.attributes.size > 0 %}
+.{{klass.attributes.size | plus: 1}}+h|Public attributes:
+| _Name_
+2+| _Definition_
+| _Derived_
+| _Obligation_
+| _Maximum occurrence_
+| _Data type_
+
+{% for attr in klass.attributes %}
+| {{attr.name}}
+2+| {{ attr.definition | html2adoc }}
+| {{ attr.is_derived }}
+| {{attr.cardinality.min}}
+| {{attr.cardinality.max}}
+| {{attr.type}}
+
+{% endfor %}
+{% else %}
+.1+h|Public attributes:
+7+| (none)
+{% endif %}
+
+{% if klass.constraints.size > 0 %}
+.{{ klass.constraints.size }}+|*Constraints:*
+{% for constr in klass.constraints %}
+7+| `{{ constr.body }}`
+
+{% endfor %}
+{% else %}
+
+h|Constraints: 7+| (none)
+{% endif %}
+
+|===

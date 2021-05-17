@@ -1,0 +1,63 @@
+{% assign is_klass_spare = klass.name | slice: 0,5 %}
+{% if is_klass_spare == 'old: ' %}{% continue %}
+{% elsif is_klass_spare == 'Spare' %}{% continue %}
+{% endif %}
+{% assign klass_name = klass.name | downcase | replace: ':', '' | replace: ' ', '_' %}
+[[tab-P-{{ package_name }}-DT-{{ klass_name }}]]
+.Elements of {{ package.name }}::{{ klass.name }}
+[width="100%",cols="a,a,a,a,a,a,a,a"]
+|===
+
+h|Name: 7+| {{ klass.name }}
+
+h|Definition: 7+| {{ klass.definition | html2adoc }}
+
+h|Stereotype: 7+| {{ klass.stereotype | default: 'interface' }}
+
+{% assign inherited = klass.associations | where: "member_end_type", "inheritance" %}
+{% if inherited.size > 0 %}
+h|Inheritance from: 7+| {{ inherited | map: 'member_end' | join: ", " }}
+{% endif %}
+
+{% assign generalizations = klass.associations | where: "member_end_type", "generalization" %}
+{% if generalizations.size > 0 %}
+h|Generalization of: 7+| {{ generalizations | map: 'member_end' | join: ", " }}
+{% endif %}
+
+h|Abstract: 7+| {{ klass.is_abstract }}
+{% assign aggregations = klass.associations | where: "member_end_type", "aggregation" %}
+{% if aggregations.size > 0 %}
+.{{aggregations.size | plus: 1}}+h|Associations:
+4+|_Association with:_
+|_Obligation_
+| _Maximum occurrence_
+|_Provides:_
+
+{% for assoc in aggregations %}
+4+| {{assoc.member_end}}
+| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.min }}{% endif %}
+| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.max }}{% endif %}
+| {{ assoc.member_end_attribute_name }}
+
+{% endfor %}
+{% else %}
+
+.1+h|Associations: 7+| (none)
+{% endif %}
+
+{% if klass.attributes.size > 0 %}
+.{{klass.attributes.size | plus: 1}}+h|Values:
+| _Name_
+6+| _Definition_
+
+{% for value in klass.attributes %}
+| {{value.name}}
+6+| {{ value.definition | html2adoc }}
+
+{% endfor %}
+{% else %}
+.1+h|Values:
+7+| (none)
+{% endif %}
+
+|===
