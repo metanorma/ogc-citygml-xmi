@@ -12,7 +12,9 @@ The ADE data types provided for the {{ package.name }} module are illustrated in
 
 {% capture requirement_filename %}requirements/requirements_class_{{ package_name }}{% endcapture %}
 {% capture requirement_content %}{% include requirement_filename %}{% endcapture %}
-{{ requirement_filename }}
+{% unless requirement_content contains "Liquid error" %}
+{{ requirement_content }}
+{% endunless %}
 
 {% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
 {% capture requirement_classes_content %}{% include requirement_classes_filename %}{% endcapture %}
@@ -20,10 +22,25 @@ The ADE data types provided for the {{ package.name }} module are illustrated in
 {% capture requirement_boundaries_content %}{% include requirement_boundaries_filename %}{% endcapture %}
 {% capture requirement_ade_use_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_ADE_Use{% endcapture %}
 {% capture requirement_ade_use_content %}{% include requirement_ade_use_filename %}{% endcapture %}
-{{ requirement_classes_filename }}
-{{ requirement_boundaries_filename }}
-{{ requirement_ade_use_content }}
+{% unless requirement_classes_filename contains "Liquid error" and requirement_boundaries_content contains "Liquid error" and requirement_ade_use_content contains "Liquid error" %}
+{{equalsigns}}= Requirements
 
+{% unless requirement_classes_content contains "Liquid error" %}
+The following requirement defines the rules governing implementation of the CityGML Bridge Module as an Implementation Specification.
+
+{{ requirement_classes_content }}
+{% endunless %}
+{% unless requirement_boundaries_content contains "Liquid error" %}
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+{{ requirement_boundaries_content }}
+{% endunless %}
+{% unless requirement_ade_use_content contains "Liquid error" %}
+The use of extension capabilities by Bridge elements is constrained by the following requirement:
+
+{{ requirement_ade_use_content }}
+{% endunless %}
+{% endunless %}
 
 {{equalsigns}}= Class Definitions
 {% if package.classes.size > 0 %}
