@@ -1,14 +1,58 @@
 {% for package in context.packages %}
+{% assign package_name = package.name | downcase | replace: ":", "" | replace: " ", "_" %}
 {% capture equalsigns %}{% for count in (1..depth) %}={% endfor %}{% endcapture %}{{equalsigns}} {{ package.name }}
 {{equalsigns}}= {{ package.name }}
 
+[[{{ package_name }}-uml]]
+.UML diagram of the {{ package.name }} Model.
+
+TODO: figures/{{ package.name }}.png[align="center"]
+
+The ADE data types provided for the {{ package.name }} module are illustrated in <<{{ package_name }}-uml-ade-types>>.
+
+{% capture requirement_filename %}requirements/requirements_class_{{ package_name }}{% endcapture %}
+{% capture requirement_content %}{% include requirement_filename %}{% endcapture %}
+{{ requirement_filename }}
+
+{% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
+{% capture requirement_classes_content %}{% include requirement_classes_filename %}{% endcapture %}
+{% capture requirement_boundaries_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Boundaries{% endcapture %}
+{% capture requirement_boundaries_content %}{% include requirement_boundaries_filename %}{% endcapture %}
+{% capture requirement_ade_use_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_ADE_Use{% endcapture %}
+{% capture requirement_ade_use_content %}{% include requirement_ade_use_filename %}{% endcapture %}
+{{ requirement_classes_filename }}
+{{ requirement_boundaries_filename }}
+{{ requirement_ade_use_content }}
+
+
+{{equalsigns}}= Class Definitions
 {% if package.classes.size > 0 %}
 .Classes used in {{ package.name }}
 [cols="2,6",options="headers"]
 |===
-^|*Class Name* ^|*Description*
+^|*Class* ^|*Description*
 {% for klass in package.classes %}
 |<<P-{{ package.name }}-C-{{ klass.name }}-section,{{ klass.name }}>> |{{ klass.definition }}
+{% endfor %}
+|===
+{% endif %}
+{% if package.data_types.size > 0 %}
+.Data Types used in {{ package.name }}
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+{% for klass in package.data_types %}
+|<<P-{{ package.name }}-DT-{{ klass.name }}-section,{{ klass.name }}>> |{{ klass.definition }}
+{% endfor %}
+|===
+{% endif %}
+{% if package.enums.size > 0 %}
+.Enumerated Classes used in {{ package.name }}
+[cols="2,6",options="headers"]
+|===
+^|*Name* ^|*Description*
+{% for klass in package.enums %}
+|<<P-{{ package.name }}-E-{{ klass.name }}-section,{{ klass.name }}>> |{{ klass.definition }}
 {% endfor %}
 |===
 {% endif %}
