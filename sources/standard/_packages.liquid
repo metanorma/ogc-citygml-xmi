@@ -3,18 +3,40 @@
 {% capture equalsigns %}{% for count in (1..depth) %}={% endfor %}{% endcapture %}{{equalsigns}} {{ package.name }}
 {{equalsigns}}= {{ package.name }}
 
-[[{{ package_name }}-uml]]
-.UML diagram of the {{ package.name }} Model.
-
-TODO: figures/{{ package.name }}.png[align="center"]
-
-The ADE data types provided for the {{ package.name }} module are illustrated in <<{{ package_name }}-uml-ade-types>>.
-
 {% capture requirement_filename %}requirements/requirements_class_{{ package_name }}{% endcapture %}
 {% capture requirement_content %}{% include requirement_filename %}{% endcapture %}
 {% unless requirement_content contains "Liquid error" %}
 {{ requirement_content }}
 {% endunless %}
+
+{% for diagram in package.diagrams %}
+{% if diagram.name == package.name %}
+The UML diagram of the {{ package.name }} module is depicted in <<{{ package_name }}-uml>>. A detailed discussion of Requirements Class {{ package.name }} can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package_name }}-section[CityGML 3.0 Users Guide].
+
+[[{{ package_name }}-uml]]
+.UML diagram of the {{ package.name }} Model.
+
+image::figures/{{ package.name }}.png[align="center"]
+
+{% capture ade_types_image_name %}{{ package.name }} - ADE Data types{% endcapture %}
+{{ ade_types_image_name }}
+{% elsif diagram.name contains ade_types_image_name %}
+The ADE data types provided for the {{ package.name }} module are illustrated in <<{{ package_name }}-uml-ade-types>>.
+
+[[{{ package_name }}-uml-ade-types]]
+.ADE classes of the CityGML {{ package.name }} module.
+image::figures/{{ package.name }}-ADE_Datatypes.png[align="center"]
+
+{% capture codelists_image_name %}{{ package.name }} - Code lists{% endcapture %}
+{{ codelists_image_name }}
+{% elsif diagram.name contains codelists_image_name %}
+The Code Lists provided for the {{ package.name }} module are illustrated in <<{{ package_name }}-uml-codelists>>.
+
+[[{{ package_name }}-uml-codelists]]
+.Codelists from the CityGML {{ package.name }} module.
+image::figures/{{ package.name }}-Codelists.png[align="center"]
+{% endif %}
+{% endfor %}
 
 {% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
 {% capture requirement_classes_content %}{% include requirement_classes_filename %}{% endcapture %}
