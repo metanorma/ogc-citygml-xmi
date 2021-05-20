@@ -2,11 +2,13 @@
 {% capture equalsigns %}{% for count in (1..depth) %}={% endfor %}{% endcapture %}{{equalsigns}} {{ package.name }}
 {{equalsigns}}= {{ package.name }}
 
-[cols="1,4",frame=none,grid=none]
+[cols="1a,4a"]
 |===
-|{nbsp}{nbsp}{nbsp}{nbsp}Description: | {{ package.definition }}
-|{nbsp}{nbsp}{nbsp}{nbsp}Parent Package: | {{ context.name }}
-|{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: | TODO: package' stereotype
+
+h|Description:    | {{ package.definition }}
+h|Parent Package: | {{ context.name }}
+h|Stereotype:     | TODO: 'package' stereotype
+
 |===
 
 {% if package.classes.size > 0 %}
@@ -14,28 +16,39 @@
 
 {% for klass in package.classes %}
 [[P-{{ package.name }}-C-{{ klass.name }}-section]]
-[cols="1a"]
-|===
-|*{{ klass.name }}*
-[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! {{ klass.definition }}
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! TODO: class subclass
-!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  {{ klass.stereotype }}
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} crs «Property» !<<SC_CRS-section,SC_CRS>> [0..1] !Relates to the coordinate reference system of the transformation matrix.
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+{{equalsigns}}== {{ klass.name }}
 
-!{set:cellbgcolor:#FFFFFF} worldToTexture «Property»  !<<TransformationMatrix3x4-section,TransformationMatrix3x4>>  !Specifies the 3x4 transformation matrix that defines the transformation between world coordinates and texture coordinates.
-!===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+[cols="1a,4a"]
 |===
+
+h|Definition:      | {{ klass.definition }}
+h|Subclass of:     | TODO: class subclass
+h|Stereotype:      | {{ klass.stereotype }}
+
+|===
+
+[cols="15,20,60",options="header"]
+|===
+|Role name |Target class and multiplicity |Definition
+
+| TODO: role name. Was: `crs «Property»`
+| TODO: link to target class and cardinality. Was: `<<SC_CRS-section,SC_CRS>> [0..1]`
+| TODO: definition. Was: "`Relates to the coordinate reference system of the transformation matrix.`"
+
+|===
+
+[cols="15,20,60",options="header"]
+|===
+|Attribute |Value type and multiplicity |Definition
+
+| TODO: attribute name. Was: `worldToTexture «Property»`
+| TODO: link to target class and cardinality. Was `<<TransformationMatrix3x4-section,TransformationMatrix3x4>>`
+| TODO: definition (was: "`Specifies the 3x4 transformation matrix that defines the transformation between world coordinates and texture coordinates.")
+
+|===
+
+NOTE: TODO SHOW THIS IF THERE IS A STEREOTYPE. Was: "`Unless otherwise specified, all attributes and role names have the stereotype «Property».`"
+
 {% endfor %}
 
 {% endif %}
