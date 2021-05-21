@@ -1,3 +1,0 @@
-== Conventions
-
-include::../sections-en/conventions_core.adoc[]

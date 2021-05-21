@@ -1,7 +1,0 @@
-
-[[req-s-t_context_for_dggs]]
-== DGGS Specification Overview
-
-include::../sections-en/specifications_overview.adoc[]
-
-include::../sections-en/package-specification.adoc[]

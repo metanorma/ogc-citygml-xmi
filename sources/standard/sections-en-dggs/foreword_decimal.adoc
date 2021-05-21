@@ -1,8 +1,0 @@
-
-In accordance with the ISO/IEC Directives, Part 2, 2018, _Rules for the structure and drafting of International Standards_,
-in International Standards the decimal sign is a comma on the line.
-However the General Conference on Weights and Measures (_Conférence Générale des Poids et Mesures_) at its meeting in 2003 passed unanimously the following resolution:
-“The decimal marker shall be either a point on the line or a comma on the line.”
-In practice, the choice between these alternatives depends on customary use in the language concerned.
-In the technical areas of geodesy and geographic information it is customary for the decimal point always to be used, for all languages.
-That practice is used throughout this document.

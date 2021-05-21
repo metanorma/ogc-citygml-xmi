@@ -1,6 +1,0 @@
-
-[[AnnexD]]
-[appendix,obligation=informative]
-== Temporal geometry, topology, and temporal referencing by named periods -- Context for modelling
-
-include::../sections-en/temporal-alignment.adoc[]
