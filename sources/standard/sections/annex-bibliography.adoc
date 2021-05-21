@@ -64,18 +64,20 @@
 
 * [[[Vretanos2010, Vretanos 2010]]], Vretanos, P. A. 2010: *OpenGIS Web Feature Service 2.0 Interface Standard*, Open Geospatial Consortium. http://www.opengeospatial.org/standards/wfs[OGC Doc. 09-025r1]
 
-* [[[MQTT2019, MQTT]]], OASIS MQTT Technical Committee: *MQTT Version 5.0 Standard*, OASIS, March 7, 2019, Available from https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html[OASIS].
+* [[[MQTT2019,OASIS MQTT]]], OASIS MQTT Technical Committee: *MQTT Version 5.0 Standard*, OASIS, March 7, 2019, Available from https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html[OASIS].
 
 * [[[i3s_citation,OGC 17-014r7]]], Reed, C., Belayneh T.: *OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package Format Specification*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/cs/17-014r7/17-014r7.html[OGC Doc. 17-014r7].
 
 * [[[three-dtiles_citation, OGC 18-053r2]]], Cozzi, P., Lilley, S., Getz, G. *OGC 3D Tiles Specification 1.0* Open Geospatial Consortium, Available from http://docs.opengeospatial.org/cs/18-053r2/18-053r2.html[OGC Doc. 18-053r2]
 
-* [[[kml_citation, OGC 12-007r2]]], Burggraf, D.: *OGC KML 2.3*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/12-007r2/12-007r2.html[OGC Doc. 12-007r2]
+* [[[kml_citation,OGC 12-007r2]]], Burggraf, D.: *OGC KML 2.3*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/12-007r2/12-007r2.html[OGC Doc. 12-007r2]
 
-* [[[sos_citation, OGC 12-006]]], Bröring, A., Stasch, C., Echterhoff, J.: *OGC® Sensor Observation Service Interface Standard*, Open Geospatial Consortium, Available from https://portal.opengeospatial.org/files/?artifact_id=47599[OGC Doc. 12-006]
+* [[[sos_citation,OGC 12-006]]], Bröring, A., Stasch, C., Echterhoff, J.: *OGC® Sensor Observation Service Interface Standard*, Open Geospatial Consortium, Available from https://portal.opengeospatial.org/files/?artifact_id=47599[OGC Doc. 12-006]
 
-* [[[sensorthing_citation, OGC 15-078r6]]]Liang, S., Huang, C., Khalafbeigi, T.: *OGC SensorThings API Part 1: Sensing*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/15-078r6/15-078r6.html[OGC Doc. 15-078r6]
+* [[[sensorthing_citation,OGC 15-078r6]]]Liang, S., Huang, C., Khalafbeigi, T.: *OGC SensorThings API Part 1: Sensing*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/15-078r6/15-078r6.html[OGC Doc. 15-078r6]
 
-* [[[three-dps_citation, OGC 15-001r3]]], Hagedorn, B., Thum, S., Reitz, T., Coors, V., Gutbell, R.: *OGC® 3D Portrayal Service 1.0*, Open Geospatial Consortium, Available from https://portal.ogc.org/files/?artifact_id=65620[OGC Doc. 15-001r3].
+* [[[three-dps_citation,OGC 15-001r3]]], Hagedorn, B., Thum, S., Reitz, T., Coors, V., Gutbell, R.: *OGC® 3D Portrayal Service 1.0*, Open Geospatial Consortium, Available from https://portal.ogc.org/files/?artifact_id=65620[OGC Doc. 15-001r3].
 
-* [[[gltf_citation, Khronos gLTF]]]Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: *The GL Transmission Format (glTF)*, The Khronos Group, Available from https://www.khronos.org/gltf[https://www.khronos.org/gltf].
+* [[[gltf_citation, Khronos gLTF]]], Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: *The GL Transmission Format (glTF)*, The Khronos Group, Available from https://www.khronos.org/gltf[https://www.khronos.org/gltf].
+
+* [[[inspire_glossary,INSPIRE Glossary]]], INSPIRE Glossary.

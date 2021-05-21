@@ -2,9 +2,6 @@
 [bibliography]
 == References
 
-//The following normative documents contain provisions that, through reference in this text, constitute provisions of OGC 20-010. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. However, parties to agreements based on this part of OGC 20-010 are encouraged to investigate the possibility of applying the most recent editions of the normative documents indicated below. For undated references, the latest edition of the normative document referred to applies.
-
-
 * [[[rfc2045,IETF RFC 2045]]] IETF: RFC 2045 & 2046, Multipurpose Internet Mail Extensions (MIME). (November 1996),
 
 * [[[rfc3986,IETF RFC 3986]]] IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax. (January 2005)
@@ -44,7 +41,6 @@
 * [[[topic8,OGC 99-108r2]]] OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2
 
 * [[[topic10,OGC 99-110]]] OGC: The OpenGIS™ Abstract Specification Topic 10: Feature Collections, OGC document 99-110
-
 // TODO TB17 added references below
 
 * [[[OMGMDA,OMG MDA]]] Object Management Group: Model Driven Architecture Guide rev. 2.0
