@@ -28,8 +28,8 @@ image::figures/CityFurniture-with_codelists_and_ADE_datatypes.png[align="center"
 |===
 ^|*Space class* ^|*Allowed space boundaries*
 |CityFurniture  a|  * Core::ClosureSurface
-                    * Generics::GenericThematicSurface
-                    * Possible classes from ADEs
+                 * Generics::GenericThematicSurface
+                 * Possible classes from ADEs
 |===
 
 ==== Requirements

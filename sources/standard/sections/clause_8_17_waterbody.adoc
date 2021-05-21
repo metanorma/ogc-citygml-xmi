@@ -36,12 +36,13 @@ image::figures/WaterBody-Codelists.png[align="center"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
 |WaterBody
-a| * WaterBody::AbstractWaterBoundarySurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} WaterBody::WaterGroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} WaterBody::WaterSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  WaterBody::AbstractWaterBoundarySurface and all subclasses, i.e.
+** WaterBody::WaterGroundSurface,
+** WaterBody::WaterSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 |===
 
 ==== Requirements

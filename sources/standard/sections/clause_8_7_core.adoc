@@ -43,39 +43,44 @@ include::recommendations/Core/PER_Core_Classes.adoc[]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
 |AbstractLogicalSpace
-a| * Core::AbstractSpaceBoundary and the subclasses: +
+a|
+*  Core::AbstractSpaceBoundary and the subclasses: +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::AbstractThematicSurface, +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |AbstractOccupiedSpace
-a| * Core::AbstractSpaceBoundary and the subclasses: +
+a|
+*  Core::AbstractSpaceBoundary and the subclasses: +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::AbstractThematicSurface, +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |AbstractPhysicalSpace
-a| * Core::AbstractSpaceBoundary and the subclasses: +
+a|
+*  Core::AbstractSpaceBoundary and the subclasses: +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::AbstractThematicSurface, +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |AbstractSpace
-a| * Core::AbstractSpaceBoundary and the subclasses: +
+a|
+*  Core::AbstractSpaceBoundary and the subclasses: +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::AbstractThematicSurface, +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |AbstractUnoccupiedSpace
-a| * Core::AbstractSpaceBoundary and the subclasses: +
+a|
+*  Core::AbstractSpaceBoundary and the subclasses: +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::AbstractThematicSurface, +
 {nbsp}{nbsp}{nbsp}{nbsp}Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 |===
 
 Surface boundaries are constrained by the following requirement:

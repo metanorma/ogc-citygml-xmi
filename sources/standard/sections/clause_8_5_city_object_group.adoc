@@ -35,8 +35,8 @@ image::figures/CityObjectGroup-Codelists.png[align="center"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
   |CityObjectGroup  a|  * Core::ClosureSurface
-                        * Generics::GenericThematicSurface
-                        * Possible classes from ADEs
+                     * Generics::GenericThematicSurface
+                     * Possible classes from ADEs
 |===
 
 ==== Requirements
