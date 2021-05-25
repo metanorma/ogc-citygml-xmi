@@ -1,6 +1,7 @@
 {% for package in context.packages %}
 {% assign package_name = package.name | downcase | replace: ":", "" | replace: " ", "_" %}
 {% capture equalsigns %}{% for count in (1..depth) %}={% endfor %}{% endcapture %}{{equalsigns}} {{ package.name }}
+[[rc_{{ package_name }}-model_section]]
 {{equalsigns}}= {{ package.name }}
 
 {% capture requirement_filename %}requirements/requirements_class_{{ package_name }}{% endcapture %}
@@ -10,6 +11,8 @@
 {% endunless %}
 
 {% for diagram in package.diagrams %}
+{% capture codelists_image_name %}{{ package.name }} - Code lists{% endcapture %}
+{% capture ade_types_image_name %}{{ package.name }} - ADE Data types{% endcapture %}
 {% if diagram.name == package.name %}
 The UML diagram of the {{ package.name }} module is depicted in
 <<{{ package_name }}-uml>>.
@@ -22,8 +25,6 @@ link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package_name 
 
 image::figures/{{ package.name }}.png[align="center"]
 
-{% capture ade_types_image_name %}{{ package.name }} - ADE Data types{% endcapture %}
-{{ ade_types_image_name }}
 {% elsif diagram.name contains ade_types_image_name %}
 The ADE data types provided for the {{ package.name }} module are
 illustrated in <<{{ package_name }}-uml-ade-types>>.
@@ -32,8 +33,6 @@ illustrated in <<{{ package_name }}-uml-ade-types>>.
 .ADE classes of the CityGML {{ package.name }} module.
 image::figures/{{ package.name }}-ADE_Datatypes.png[]
 
-{% capture codelists_image_name %}{{ package.name }} - Code lists{% endcapture %}
-{{ codelists_image_name }}
 {% elsif diagram.name contains codelists_image_name %}
 The Code Lists provided for the {{ package.name }} module are
 illustrated in <<{{ package_name }}-uml-codelists>>.
@@ -43,6 +42,42 @@ illustrated in <<{{ package_name }}-uml-codelists>>.
 image::figures/{{ package.name }}-Codelists.png[]
 {% endif %}
 {% endfor %}
+
+<<{{ package_name }}-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the {{ package.name }} module:
+
+[[{{ package_name }}-boundaries-table]]
+.{{ package.name }} space classes and their allowed thematic surface boundaries
+[cols="2,6",options="headers"]
+|===
+^|*Space class* ^|*Allowed space boundaries*
+|AbstractBridge
+a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
+   * Core::ClosureSurface
+   * Generics::GenericThematicSurface
+   * possible classes from ADEs
+
+|Bridge
+a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
+{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
+   * Core::ClosureSurface
+   * Generics::GenericThematicSurface
+   * possible classes from ADEs
+
 
 {% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
 {% capture requirement_classes_content %}{% include requirement_classes_filename %}{% endcapture %}
@@ -117,6 +152,10 @@ by the following requirement:
 
 |===
 {% endif %}
+
+{{equalsigns}}= Additional Information
+
+Additional information about the {{ package.name }} can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package_name }}-section[OGC CityGML 3.0 Users Guide]
 
 {% if package.packages.size > 0 %}{% assign nested_depth = depth | plus: 1 %}
 {% include "packages", depth: nested_depth, context: package %}
