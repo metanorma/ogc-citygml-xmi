@@ -50,33 +50,17 @@ image::figures/{{ package.name }}-Codelists.png[]
 [cols="2,6",options="headers"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
-|AbstractBridge
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
+{% for klass in package.classes %}
+|{{ klass.name }}
+{% assign first_assoc = klass.associations | first %}
+a| * {{ first_assoc.member_end }}
+{% for assoc in klass.associations offest:1  %}
+   * {{ assoc.member_end }}
+{% endfor %}
    * possible classes from ADEs
 
-|Bridge
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+{% endfor %}
+|===
 
 
 {% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
