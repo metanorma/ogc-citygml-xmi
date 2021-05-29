@@ -7,7 +7,7 @@
 
 h|Description:    | {{ package.definition }}
 h|Parent Package: | {{ context.name }}
-h|Stereotype:     | TODO: 'package' stereotype
+h|Stereotype:     | «{{ package.stereotype }}»
 
 |===
 
@@ -15,42 +15,37 @@ h|Stereotype:     | TODO: 'package' stereotype
 {{equalsigns}}= Classes
 
 {% for klass in package.classes %}
-[[P-{{ package.name }}-C-{{ klass.name }}-section]]
-{{equalsigns}}== {{ klass.name }}
-
-[cols="1a,4a"]
+{% capture generalizations %}{% for assoc in klass.associations | where: "member_end_type", "generalization" %}{{ assoc.member_end }}{% endfor %}{% endcapture %}
+[[tab-P-{{ package_name }}-C-{{ klass.name }}]]
+[cols="1a"]
 |===
-
-h|Definition:      | {{ klass.definition }}
-h|Subclass of:     | TODO: class subclass
-h|Stereotype:      | {{ klass.stereotype }}
-
-|===
-
-[cols="15,20,60",options="header"]
-|===
-|Role name |Target class and multiplicity |Definition
-
-| TODO: role name. Was: `crs «Property»`
-| TODO: link to target class and cardinality. Was: `<<SC_CRS-section,SC_CRS>> [0..1]`
-| TODO: definition. Was: "`Relates to the coordinate reference system of the transformation matrix.`"
-
-|===
-
-[cols="15,20,60",options="header"]
-|===
-|Attribute |Value type and multiplicity |Definition
-
-| TODO: attribute name. Was: `worldToTexture «Property»`
-| TODO: link to target class and cardinality. Was `<<TransformationMatrix3x4-section,TransformationMatrix3x4>>`
-| TODO: definition (was: "`Specifies the 3x4 transformation matrix that defines the transformation between world coordinates and texture coordinates.")
-
-|===
-
-NOTE: TODO SHOW THIS IF THERE IS A STEREOTYPE. Was: "`Unless otherwise specified, all attributes and role names have the stereotype «Property».`"
-
-{% endfor %}
-
+|*{{ klass.name }}*
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! {{ klass.definition }}
+{% if generalizations.size > 0 %}
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! {{ generalizations }}
 {% endif %}
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  {{ klass.stereotype }}
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+{% for assoc in aggregations %}
+!{set:cellbgcolor:#FFFFFF} {{ assoc.member_end_attribute_name }}  !<<{{assoc.member_end}}-section,{{assoc.member_end}}>> [{% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.min }}{% endif %}..| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.max }}{% endif %}] ! TODO: defenition
+{% endfor %}
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+{% for attr in klass.attributes %}
+!{set:cellbgcolor:#FFFFFF} {{ attr.name }}  !<<{{ attr.name }}-section,{{ attr.name }}>>  [{{attr.cardinality.min}}..{{attr.cardinality.max}}] !{{ attr.definition }}
+{% endfor %}
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+|===
+{% endfor %}
+{% endif %}
+
 {% if package.packages.size > 0 %}{% assign nested_depth = depth | plus: 1 %}{% include "packages", depth: nested_depth, context: package %}{% endif %}
 {% endfor %}
