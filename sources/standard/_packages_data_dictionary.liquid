@@ -15,26 +15,28 @@ h|Stereotype:     | «{{ package.stereotype }}»
 {{equalsigns}}= Classes
 
 {% for klass in package.classes %}
-{% capture generalizations %}{% for assoc in klass.associations | where: "member_end_type", "generalization" %}{{ assoc.member_end }}{% endfor %}{% endcapture %}
+{% capture generalizations %}{% for assoc in klass.associations | where: "member_end_type", "generalization" %}{{ assoc.member_end }} {% endfor %}{% endcapture %}
 [[tab-P-{{ package_name }}-C-{{ klass.name }}]]
 [cols="1a"]
 |===
 |*{{ klass.name }}*
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! {{ klass.definition }}
-{% if generalizations.size > 0 %}
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! {{ generalizations }}
-{% endif %}
-!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  {{ klass.stereotype }}
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractAppearance is the abstract superclass to represent any kind of appearance objects.
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>>
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
+{% if klass.associations.size > 0 %}
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-{% for assoc in aggregations %}
-!{set:cellbgcolor:#FFFFFF} {{ assoc.member_end_attribute_name }}  !<<{{assoc.member_end}}-section,{{assoc.member_end}}>> [{% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.min }}{% endif %}..| {% if assoc.member_end_cardinality %}{{ assoc.member_end_cardinality.max }}{% endif %}] ! TODO: defenition
+{% for assoc in klass.associations %}
+{% if assoc.member_end_attribute_name.size > 0 %}
+!{set:cellbgcolor:#FFFFFF} {{ assoc.member_end_attribute_name }}  !<<{{assoc.member_end}}-section,{{assoc.member_end}}>> [{{ assoc.member_end_cardinality.min }}..{{ assoc.member_end_cardinality.max }}] ! {{ assoc.definition }}
+{% endif %}
 {% endfor %}
 !===
+{% endif %}
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
@@ -44,6 +46,7 @@ h|Stereotype:     | «{{ package.stereotype }}»
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |===
+
 {% endfor %}
 {% endif %}
 
