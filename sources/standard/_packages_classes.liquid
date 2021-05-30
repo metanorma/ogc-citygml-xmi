@@ -1,0 +1,43 @@
+{% for klass in classes %}
+{% capture generalizations %}{% for assoc in klass.associations | where: "member_end_type", "generalization" %}{{ assoc.member_end }} {% endfor %}{% endcapture %}
+[[tab-P-{{ package_name }}-C-{{ klass.name }}]]
+[cols="1a"]
+|===
+|*{{ klass.name }}*
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! {{ klass.definition }}
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! {{ generalizations }}
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «{{ klass.stereotype }}»
+!===
+{% if klass.associations.size > 0 %}
+{% capture rendered_associations %}
+{% for assoc in klass.associations %}
+{% if assoc.member_end_attribute_name.size > 0 %}
+{% capture cardinality %}{% if assoc.member_end_cardinality.min == 'C' %}[0..{{ assoc.member_end_cardinality.max }}]{% elsif assoc.member_end_cardinality.min == 'M' and assoc.member_end_cardinality.max == '1' %}[1..1]{% else %}[{{ assoc.member_end_cardinality.max }}]{% endif %}{% endcapture %}
+!{set:cellbgcolor:#FFFFFF} {{ assoc.member_end_attribute_name }}  !<<{{assoc.member_end}}-section,{{assoc.member_end}}>> {{ cardinality }} ! {{ assoc.definition }}
+{% endif %}
+{% endfor %}
+{% endcapture %}
+{% if rendered_associations.size > 0 %}
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+{{ rendered_associations }}
+!===
+{% endif %}
+{% endif %}
+{% if klass.attributes.size > 0 %}
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+{% for attr in klass.attributes %}
+{% capture cardinality %}{% if attr.cardinality.min == 'C' %}[0..{{ attr.cardinality.max }}]{% elsif assoc.member_end_cardinality.min == 'M' and assoc.member_end_cardinality.max == '1' %}[1..1]{% else %}[{{ attr.cardinality.max }}]{% endif %}{% endcapture %}
+!{set:cellbgcolor:#FFFFFF} {{ attr.name }}  !<<{{ attr.name }}-section,{{ attr.name }}>>  {{ cardinality }} !{{ attr.definition }}
+{% endfor %}
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+{% endif %}
+|===
+
+{% endfor %}
