@@ -1,6 +1,6 @@
 {% for klass in classes %}
 {% capture generalizations %}{% for assoc in klass.associations | where: "member_end_type", "generalization" %}{{ assoc.member_end }} {% endfor %}{% endcapture %}
-[[tab-P-{{ package_name }}-C-{{ klass.name }}]]
+[[{{ klass.name }}-section]]
 [cols="1a"]
 |===
 |*{{ klass.name }}*
@@ -33,7 +33,7 @@
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
 {% for attr in klass.attributes %}
 {% capture cardinality %}{% if attr.cardinality.min == 'C' %}[0..{{ attr.cardinality.max }}]{% elsif assoc.member_end_cardinality.min == 'M' and assoc.member_end_cardinality.max == '1' %}[1..1]{% else %}[{{ attr.cardinality.max }}]{% endif %}{% endcapture %}
-!{set:cellbgcolor:#FFFFFF} {{ attr.name }}  !<<{{ attr.name }}-section,{{ attr.name }}>>  {{ cardinality }} !{{ attr.definition }}
+!{set:cellbgcolor:#FFFFFF} {{ attr.name }}  !<<{{ attr.type }}-section,{{ attr.name }}>>  {{ cardinality }} !{{ attr.definition }}
 {% endfor %}
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».

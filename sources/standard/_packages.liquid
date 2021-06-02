@@ -50,18 +50,9 @@ image::figures/{{ package.name }}-Codelists.png[]
 [cols="2,6",options="headers"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
-{% for klass in package.classes %}
-|{{ klass.name }}
-{% assign first_assoc = klass.associations | first %}
-a| * {{ first_assoc.member_end }}
-{% for assoc in klass.associations offest:1  %}
-   * {{ assoc.member_end }}
-{% endfor %}
-   * possible classes from ADEs
-
-{% endfor %}
+| TODO: implement boundaries
+| TODO: implement boundaries
 |===
-
 
 {% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
 {% capture requirement_classes_content %}{% include requirement_classes_filename %}{% endcapture %}
@@ -100,7 +91,8 @@ by the following requirement:
 |Class |Description
 
 {% for klass in package.classes %}
-|<<P-{{ package.name }}-C-{{ klass.name }}-section,{{ klass.name }}>>
+|<<{{ klass.name }}-section,{{ klass.name }}>>
+«{{ klass.stereotype }}»
 |{{ klass.definition }}
 
 {% endfor %}
@@ -114,7 +106,7 @@ by the following requirement:
 |Name |Description
 
 {% for klass in package.data_types %}
-|<<P-{{ package.name }}-DT-{{ klass.name }}-section,{{ klass.name }}>>
+|<<{{ klass.name }}-section,{{ klass.name }}>>
 |{{ klass.definition }}
 
 {% endfor %}
@@ -129,7 +121,7 @@ by the following requirement:
 |Name |Description
 
 {% for klass in package.enums %}
-|<<P-{{ package.name }}-E-{{ klass.name }}-section,{{ klass.name }}>>
+|<<{{ klass.name }}-section,{{ klass.name }}>>
 |{{ klass.definition }}
 
 {% endfor %}
