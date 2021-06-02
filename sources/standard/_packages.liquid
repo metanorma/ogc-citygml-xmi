@@ -43,16 +43,13 @@ image::figures/{{ package.name }}-Codelists.png[]
 {% endif %}
 {% endfor %}
 
+{% capture boundaries_filename %}boundaries/boundaries_{{ package_name }}{% endcapture %}
+{% capture boundaries_content %}{% include boundaries_filename %}{% endcapture %}
+{% unless boundaries_content contains "Liquid error" %}
 <<{{ package_name }}-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the {{ package.name }} module:
 
-[[{{ package_name }}-boundaries-table]]
-.{{ package.name }} space classes and their allowed thematic surface boundaries
-[cols="2,6",options="headers"]
-|===
-^|*Space class* ^|*Allowed space boundaries*
-| TODO: implement boundaries
-| TODO: implement boundaries
-|===
+{{ boundaries_content }}
+{% endunless %}
 
 {% capture requirement_classes_filename %}requirements/{{ package_name }}/REQ_{{ package_name }}_Classes{% endcapture %}
 {% capture requirement_classes_content %}{% include requirement_classes_filename %}{% endcapture %}
