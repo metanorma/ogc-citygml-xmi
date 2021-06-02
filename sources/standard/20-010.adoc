@@ -64,8 +64,6 @@ include::sections/clause_7_overview.adoc[]
 
 include::sections/clause_8_conceptual_model.adoc[]
 
-include::sections/clause_9_data-dictionary.adoc[]
-
 include::sections/clause_10_application_domain_extension.adoc[]
 
 include::sections/annex-ats.adoc[]
