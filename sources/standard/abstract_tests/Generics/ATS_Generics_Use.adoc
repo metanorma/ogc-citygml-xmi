@@ -1,7 +1,7 @@
 [[ats_generics_use]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/generics/use* 
+^|*Abstract Test {counter:ats-id}* |*/ats/generics/use*
 ^|Test Purpose |To validate that Generics are not used in a way that duplicates or conflicts with feature classes or attributes defined in the Conceptual Model..
 ^|Requirement |<<req_generics_use,/req/generics/use>>
 ^|Test Method |Manual Inspection

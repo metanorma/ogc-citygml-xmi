@@ -1,7 +1,7 @@
 [[ats_waterbody_ade_use]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/waterbody/ade/use* 
+^|*Abstract Test {counter:ats-id}* |*/ats/waterbody/ade/use*
 ^|Test Purpose |To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
 ^|Requirement |<<req_waterbody_ade_use,/req/waterbody/ade_use>>
 ^|Test Method |Manual Inspection

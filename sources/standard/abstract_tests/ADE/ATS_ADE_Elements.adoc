@@ -1,7 +1,7 @@
 [[ats_ade_elements]]
-[width="90%",cols="2,6a"]
+[cols="2,6a"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/ade/elements* 
+^|*Abstract Test {counter:ats-id}* |*/ats/ade/elements*
 ^|Test Purpose |To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model are implemented correctly.
 ^|Requirement |<<req_ade_elements,/req/ade/elements>>
 ^|Test Method |Manual Inspection
@@ -11,7 +11,7 @@
 ^|C |Validate that every UML class in an ADE which represents spaces or space boundaries is derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
 ^|D |Validate that any new or additional spatial properties defined by an ADE:
 
-. belongs to a predefined LOD, 
+. belongs to a predefined LOD,
 . has a property name which starts with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
 |===
 

@@ -9,7 +9,7 @@ The CityGML Core module defines the basic concepts and components of city models
 
 [[citygml-core-table]]
 .CityGML Core Sections
-[width="90%",cols="2.^,6.^"]
+[cols="2.^,6.^"]
 |===
 
 |<<ISO-dependencies-section,The Use of ISO Standards>> |Describes the use of the ISO 19100 series of International Standards to provide a foundation to the CityGML model.

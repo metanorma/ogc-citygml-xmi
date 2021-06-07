@@ -1,13 +1,13 @@
 [[ats_ade_properties]]
-[width="90%",cols="2,6a"]
+[cols="2,6a"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/ade/properties* 
+^|*Abstract Test {counter:ats-id}* |*/ats/ade/properties*
 ^|Test Purpose |To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model implement extension properties correctly.
 ^|Requirement |<<req_ade_properties,/req/ade/properties>>
 ^|Test Method |Manual Inspection
 2+|Every Feature Type in the CityGML Conceptual Model includes an extension property whos' purpose is to allow an ADE to add properties to that existing Feature Type. In every case where an extension property has been used:
-^|A |Validate that the ADE creates a subclass of the abstract data type associated with the extension property. 
-^|B |Validate that this subclass is defined as a data type using the stereotype _&#171;DataType&#187;_. 
+^|A |Validate that the ADE creates a subclass of the abstract data type associated with the extension property.
+^|B |Validate that this subclass is defined as a data type using the stereotype _&#171;DataType&#187;_.
 ^|C |Validate that all application-specific attributes and associations for that Feature Type are modeled as properties of the ADE subclass.
 |===
 

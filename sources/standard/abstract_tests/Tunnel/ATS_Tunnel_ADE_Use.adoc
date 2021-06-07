@@ -1,7 +1,7 @@
 [[ats_tunnel_ade_use]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/tunnel/ade/use* 
+^|*Abstract Test {counter:ats-id}* |*/ats/tunnel/ade/use*
 ^|Test Purpose |To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
 ^|Requirement |<<req_tunnel_ade_use,/req/tunnel/ade_use>>
 ^|Test Method |Manual Inspection

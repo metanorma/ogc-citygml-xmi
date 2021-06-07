@@ -1,7 +1,7 @@
 [[rec_ade_elements]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Recommendation  {counter:req-id}* |*/rec/ade/elements* 
+^|*Recommendation  {counter:req-id}* |*/rec/ade/elements*
 2+|ADEs typically extend CityGML by defining new feature types together with additional content such as object types, data types, code lists, and enumerations.
 ^|A |ADEs SHOULD use the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards.
 ^|B |Constraints on model elements SHOULD be expressed using a formal language such as the Object Constraint Language (OCL).
