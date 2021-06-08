@@ -2,9 +2,6 @@ source "https://rubygems.org"
 
 gem "metanorma-cli"
 
-gem "lutaml-xmi", git: "git@github.com:lutaml/lutaml-xmi.git", branch: "feature/diagram-reference-xmi"
-gem "lutaml-uml", git: "git@github.com:lutaml/lutaml-uml.git", branch: "feature/diagram-reference-xmi"
+gem "lutaml-xmi"
+gem "lutaml-uml"
 gem "reverse_adoc", git: "git@github.com:metanorma/reverse_adoc.git", branch: "feature/mixed-adoc-html-parser"
-# gem "metanorma-plugin-lutaml", git: "git@github.com:metanorma/metanorma-plugin-lutaml.git", branch: "feature/liquid-include-support"
-
-# gem "byebug", "~> 11.1"
