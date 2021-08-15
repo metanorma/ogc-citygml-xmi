@@ -1,3 +1,8 @@
+[[rc_dynamizer_section]]
+=== Dynamizer
+
+include::../requirements/requirements_class_dynamizer.adoc[]
+
 The Dynamizer module provides the concepts that enable representation of time-varying data for city object properties as well as for integrating sensors with 3D city models. Dynamizers are objects that inject timeseries data for an individual attribute of the city object in which the Dynamizer is included. In order to represent dynamic (time-dependent) variations of its value, the timeseries data overrides the static value of the referenced city object attribute.
 
 The dynamic values may be given by retrieving observation results directly from external sensor/<<IoT_definition,IoT>> services using a sensor connection (e.g. OGC SensorThings API, Sensor Observation Service, or other sensor data platforms including <<MQTT2019,MQTT>>). Alternatively, the dynamic values may be provided as atomic timeseries that represent time-varying data of a specific data type for a single contiguous time interval. The data can be provided in:
@@ -32,3 +37,21 @@ The Code Lists provided for the Dynamizer module are illustrated in <<dynamizer-
 [[dynamizer-uml-codelists]]
 .Codelists from the CityGML Dynamizer module.
 image::figures/Dynamizer-Codelists.png[align="center"]
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Dynamizer Module as an Implementation Specification.
+
+include::../requirements/Dynamizer/REQ_Dynamizer_Classes.adoc[]
+
+The use of extension capabilities by Dynamizer elements is constrained by the following requirement:
+
+include::../requirements/Dynamizer/REQ_Dynamizer_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/Dynamizer.adoc[]
+
+==== Additional Information
+
+Additional information about the Dynamizer Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-dynamizer-section[OGC CityGML 3.0 Users Guide]

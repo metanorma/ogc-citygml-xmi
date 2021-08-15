@@ -1,3 +1,8 @@
+[[rc_transportation_section]]
+=== Transportation
+
+include::../requirements/requirements_class_transportation.adoc[]
+
 The Transportation module defines central elements of the traffic infrastructure. This includes the transportation objects road, track, and square for the movement of vehicles, bicycles, and pedestrians, the transportation object railway for the movement of wheeled vehicles on rails, as well as the transportation object waterway for the movement of vessels upon or within water bodies.
 The transportation objects are represented in the UML model by the top-level feature types _Road_, _Track_, _Square_, _Railway_, and _Waterway_, which are the main classes of the Transportation module. Transportation objects can be subdivided into sections, which can be regular road, track or railway legs, into intersection areas, and into roundabouts.
 
@@ -23,3 +28,114 @@ The Code Lists provided for the Transportation module are illustrated in <<trans
 image::figures/Bridge-Codelists.png[align="center"]
 
 <<transportation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Transportation module:
+
+[[transportation-boundaries-table]]
+.Transportation space classes and their allowed thematic surface boundaries
+[cols="2,6",options="headers"]
+|===
+^|*Space class* ^|*Allowed space boundaries*
+|AbstractTransportationSpace
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|AuxiliaryTrafficSpace
+a|
+*  Transportation::AuxiliaryTrafficArea
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|ClearanceSpace
+a|
+*  Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Hole
+a|
+*  Transportation::HoleSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Intersection
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Railway
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Road
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Section
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Square
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Track
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|TrafficSpace
+a|
+*  Transportation::TrafficArea
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Waterway
+a|
+*  Transportation::Marking
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+|===
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Transportation Module as an Implementation Specification.
+
+include::../requirements/Transportation/REQ_Transportation_Classes.adoc[]
+
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+include::../requirements/Transportation/REQ_Transportation_Boundaries.adoc[]
+
+The use of extension capabilities by Transportation elements is constrained by the following requirement:
+
+include::../requirements/Transportation/REQ_Transportation_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/Transportation.adoc[]
+
+==== Additional Information
+
+Additional information about the Transportation Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-transportation-section[OGC CityGML 3.0 Users Guide]

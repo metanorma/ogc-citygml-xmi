@@ -1,3 +1,8 @@
+[[rc_waterbody_section]]
+=== Water Body
+
+include::../requirements/requirements_class_waterbody.adoc[]
+
 The WaterBody module provides the representation of significant and permanent or semi-permanent accumulations of surface water, usually covering a part of the Earth. Examples of such water bodies that can be modelled with CityGML are rivers, canals, lakes, and basins.
 Water bodies are represented in the UML model by the top-level feature type _WaterBody_, which is the main class of the WaterBody module.
 
@@ -24,3 +29,40 @@ The Code Lists provided for the Water Body module are illustrated in <<waterbody
 image::figures/WaterBody-Codelists.png[align="center"]
 
 <<waterbody-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the WaterBody module:
+
+[[waterbody-boundaries-table]]
+.WaterBody space classes and their allowed thematic surface boundaries
+[cols="2,6",options="headers"]
+|===
+^|*Space class* ^|*Allowed space boundaries*
+|WaterBody
+a|
+*  WaterBody::AbstractWaterBoundarySurface and all subclasses, i.e.
+** WaterBody::WaterGroundSurface,
+** WaterBody::WaterSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+|===
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML WaterBody Module as an Implementation Specification.
+
+include::../requirements/Waterbody/REQ_Waterbody_Classes.adoc[]
+
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+include::../requirements/Waterbody/REQ_Waterbody_Boundaries.adoc[]
+
+The use of extension capabilities by Waterbody elements is constrained by the following requirement:
+
+include::../requirements/Waterbody/REQ_Waterbody_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/WaterBody.adoc[]
+
+==== Additional Information
+
+Additional information about the WaterBody Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-waterbody-section[OGC CityGML 3.0 Users Guide]

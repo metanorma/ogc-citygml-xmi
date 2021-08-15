@@ -1,3 +1,8 @@
+[[rc_city-object-group_section]]
+=== City Object Group
+
+include::../requirements/requirements_class_cityobjectgroup.adoc[]
+
 The CityObjectGroup module provides the application-specific aggregation of city objects according to some user-defined criteria. Examples for groups are the buildings in a specific region, the result of a query, or objects put together for visualization purposes. Each member of a group may be qualified by a role name, reflecting the role each city object plays in the context of the group.
 City object groups are represented in the UML model by the top-level feature type _CityObjectGroup_, which is the main class of the CityObjectGroup module.
 
@@ -23,3 +28,35 @@ The Code Lists provided for the CityObjectGroup module are illustrated in <<city
 image::figures/CityObjectGroup-Codelists.png[align="center"]
 
 <<cityobjectgroup-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityObjectGroup module:
+
+[[cityobjectgroup-boundaries-table]]
+.CityObjectGroup space classes and their allowed thematic surface boundaries
+[cols="2,6",options="headers"]
+|===
+^|*Space class* ^|*Allowed space boundaries*
+  |CityObjectGroup  a|  * Core::ClosureSurface
+                     * Generics::GenericThematicSurface
+                     * Possible classes from ADEs
+|===
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML City Object Group Module as an Implementation Specification.
+
+include::../requirements/CityObjectGroup/REQ_CityObjectGroup_Classes.adoc[]
+
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+include::../requirements/CityObjectGroup/REQ_CityObjectGroup_Boundaries.adoc[]
+
+The use of extension capabilities by City Object Group elements is constrained by the following requirement:
+
+include::../requirements/CityObjectGroup/REQ_CityObjectGroup_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/CityObjectGroup.adoc[]
+
+==== Additional Information
+
+Additional information about the City Object Group Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-object-group-section[OGC CityGML 3.0 Users Guide].

@@ -1,3 +1,8 @@
+[[rc_vegetation_section]]
+=== Vegetation
+
+include::../requirements/requirements_class_vegetation.adoc[]
+
 The Vegetation module defines the concepts to represent vegetation within city models. Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
 Vegetation is represented in the UML model by the top-level feature types _SolitaryVegetationObject_ and _PlantCover_, which are also the only classes of the Vegetation module.
 
@@ -21,3 +26,40 @@ The Code Lists provided for the Vegetation module are illustrated in <<vegetatio
 image::figures/Vegetation-Codelists.png[align="center"]
 
 <<vegetation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Vegetation module.
+
+[[vegetation-boundaries-table]]
+.Vegetation space classes and their allowed thematic surface boundaries
+[cols="2,6",options="headers"]
+|===
+^|*Space class* ^|*Allowed space boundaries*
+|AbstractVegetationObject
+a|No boundaries allowed
+
+|PlantCover
+a|No boundaries allowed
+
+|SolitaryVegetationObject
+a|No boundaries allowed
+|===
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Vegetation Module as an Implementation Specification.
+
+include::../requirements/Vegetation/REQ_Vegetation_Classes.adoc[]
+
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+include::../requirements/Vegetation/REQ_Vegetation_Boundaries.adoc[]
+
+The use of extension capabilities by Vegetation elements is constrained by the following requirement:
+
+include::../requirements/Vegetation/REQ_Vegetation_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/Vegetation.adoc[]
+
+==== Additional Information
+
+Additional information about the Vegetation Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-vegetation-section[OGC CityGML 3.0 Users Guide]

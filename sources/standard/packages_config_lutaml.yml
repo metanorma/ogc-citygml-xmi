@@ -1,0 +1,20 @@
+packages:
+  - "Appearance"
+  - "BridgeModel"
+  - "BuildingModel"
+  - "CityFurniture"
+  - "CityObjectGroup"
+  - "Construction"
+  - "Core"
+  - "Dynamizer"
+  - "Generics"
+  - "LandUse"
+  - "Pointcloud"
+  - "Relief"
+  - "Transportation"
+  - "Tunnel"
+  - "Vegetation"
+  - "Versioning"
+  - "Waterbody"
+section_depth: 3
+render_style: entity_list
