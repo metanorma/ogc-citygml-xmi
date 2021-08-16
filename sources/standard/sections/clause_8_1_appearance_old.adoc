@@ -1,3 +1,8 @@
+[[rc_appearance_section]]
+=== Appearance
+
+include::../requirements/requirements_class_appearance.adoc[]
+
 The Appearance module provides the representation of surface data such as observable properties for surface geometry objects in the form of textures and material.
 
 Appearances are not limited to visual data but represent arbitrary categories called themes such as infrared radiation, noise pollution, or earthquake-induced structural stress. A single surface geometry object may have surface data for multiple themes. Similarly, surface data can be shared by multiple surface geometry objects (e.g. road paving).
@@ -17,3 +22,21 @@ The ADE data types provided for the Appearance module are illustrated in <<appea
 [[appearance-uml-ade-types]]
 .ADE classes of the CityGML Appearance Module.
 image::figures/Appearance-ADE_Datatypes.png[align="center"]
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Appearance Module as an Implementation Specification.
+
+include::../requirements/Appearance/REQ_Appearance_Classes.adoc[]
+
+The use of extension capabilities by Appearance elements is constrained by the following requirement:
+
+include::../requirements/Appearance/REQ_Appearance_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/Appearance.adoc[]
+
+==== Additional Information
+
+Additional information about the Appearance Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-appearance-section[OGC CityGML 3.0 Users Guide]

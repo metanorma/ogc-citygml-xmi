@@ -1,0 +1,141 @@
+[[rc_construction_section]]
+=== Construction
+
+include::../requirements/requirements_class_construction.adoc[]
+
+The Construction module defines concepts that are common to all forms of constructions. Constructions are objects that are manufactured by humans from construction materials, are connected to earth, and are intended to be permanent. The Construction module focuses on as-built representations of constructions and integrates all concepts that are similar over different types of constructions, in particular buildings, bridges, and tunnels. In addition, for representing man-made structures that are neither buildings, nor bridges, nor tunnels so-called other constructions (e.g. large chimneys or city walls) can be defined.
+
+Furniture, installations, and constructive elements are further concepts that are defined in the Construction module. Installations are permanent parts of a construction that strongly affect the outer or inner appearance of the construction and that cannot be moved (e.g. balconies, chimneys, or stairs), whereas furniture represent moveable objects of a construction (e.g. tables and chairs). Constructive elements allow for decomposing a construction into volumetric components, such as walls, beams, and slabs.
+Constructions and constructive elements can be bounded by different types of surfaces. In this way, the outer structure of constructions and constructive elements can be differentiated semantically into wall surfaces, roof surfaces, ground surfaces, outer floor surfaces, and outer ceiling surfaces, whereas the visible surface of interior spaces can be structured into interior wall surfaces, floor surfaces, and ceiling surfaces.
+Furthermore, the openings of constructions, i.e. windows and doors, can be represented as so-called filling elements including their corresponding filling surfaces.
+
+The UML diagram of the Construction module is depicted in <<construction-uml>>.
+The Construction module defines concepts that are inherited and, where necessary, are specialized by the modules Building, Bridge, and Tunnel  (cf. <<rc_building-model_section>>, <<rc_bridge-model_section>>, and <<rc_tunnel_section>>).
+A detailed discussion of the Requirements Class Construction can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-construction-section[CityGML 3.0 Users Guide].
+
+[[construction-uml]]
+.UML diagram of the Construction Model.
+
+image::figures/Construction.png[align="center"]
+
+The ADE data types provided for the Construction module are illustrated in <<construction-uml-ade-types>>.
+
+[[construction-uml-ade-types]]
+.ADE classes of the CityGML Construction module.
+image::figures/Construction-ADE_Datatypes.png[align="center"]
+
+The Code Lists provided for the Construction module are illustrated in <<construction-uml-codelists>>.
+
+[[construction-uml-codelists]]
+.Codelists from the CityGML Construction module.
+image::figures/Construction-Codelists.png[align="center"]
+
+<<construction-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Construction module:
+
+[[construction-boundaries-table]]
+.Construction space classes and their allowed thematic surface boundaries
+[cols="2,6",options="headers"]
+|===
+^|*Space class* ^|*Allowed space boundaries*
+|AbstractConstruction
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|AbstractConstructiveElement
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|AbstractFillingElement
+a|No boundaries allowed
+
+|AbstractFurniture
+a|No boundaries allowed
+
+|AbstractInstallation
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Door
+a|
+*  Construction::DoorSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|OtherConstruction
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+
+|Window
+a|
+*  Construction::WindowSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
+|===
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Construction Module as an Implementation Specification.
+
+include::../requirements/Construction/REQ_Construction_Classes.adoc[]
+
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+include::../requirements/Construction/REQ_Construction_Boundaries.adoc[]
+
+The use of extension capabilities by Construction elements is constrained by the following requirement:
+
+include::../requirements/Construction/REQ_Construction_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/Construction.adoc[]
+
+==== Additional Information
+
+Additional information about the Construction Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-construction-section[OGC CityGML 3.0 Users Guide]

@@ -1,3 +1,8 @@
+[[rc_land-use_section]]
+=== Land Use
+
+include::../requirements/requirements_class_landuse.adoc[]
+
 The LandUse module defines objects that can be used to describe areas of the earth’s surface dedicated to a specific land use or having a specific land cover with or without vegetation, such as sand, rock, mud flats, forest, grasslands, or wetlands (i.e. the physical appearance). Land use and land cover are different concepts. The first describes human activities on the earth’s surface, the second describes its physical and biological cover. However, the two concepts are interlinked and often mixed in practice. Land use objects in CityGML support both concepts: They can be employed to represent parcels, spatial planning objects, recreational objects, and objects describing the physical characteristics of an area in 3D.
 Land use objects are represented in the UML model by the top-level feature type _LandUse_, which is also the only class of the LandUse module.
 
@@ -19,3 +24,21 @@ The Code Lists provided for the Land Use module are illustrated in <<landuse-uml
 [[landuse-uml-codelists]]
 .Codelists from the CityGML Land Use module.
 image::figures/LandUse-Codelists.png[align="center"]
+
+==== Requirements
+
+The following requirement defines the rules governing implementation of the CityGML Land Use Module as an Implementation Specification.
+
+include::../requirements/LandUse/REQ_LandUse_Classes.adoc[]
+
+The use of extension capabilities by Land Use elements is constrained by the following requirement:
+
+include::../requirements/LandUse/REQ_LandUse_ADE_Use.adoc[]
+
+==== Class Definitions
+
+include::../summaries/LandUse.adoc[]
+
+==== Additional Information
+
+Additional information about the Land Use Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-land-use-section[OGC CityGML 3.0 Users Guide]
