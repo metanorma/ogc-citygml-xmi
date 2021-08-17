@@ -4,6 +4,8 @@ This Standard documents an OGC Conceptual Model (CM) Standard for specifying the
 
 This standard does not define the PSMs nor schemas for CityGML 3.0. Future CityGML 3.0 <<implementation-specification-definition,Implementation Specifications>> (IS) will be developed to address this need. At a minimum, support for a Geography Markup Language (GML) Impementation Specification is expected. Additional Implementation Specifications for JSON and database schemas are also highly desirable.
 
+A discussion of current and planned efforts to build Implementation Specifications for the CityGML Conceptual Model can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-citygml-encodings-section[CityGML 3.0 Users Guide].
+
 The target of the conformance classes specified in this document are:
 
 * CityGML Implementation Specifications that provide encodings for the UML conceptual model specified in this document, and

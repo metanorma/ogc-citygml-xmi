@@ -1,6 +1,6 @@
 [[req_cityfurniture_boundaries]]
-[cols="2,6"]
+[width="90%",cols="2,6"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/cityfurniture/boundaries*
+^|*Requirement  {counter:req-id}* |*/req/cityfurniture/boundaries* 
 2+|<<cityfurniture-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityFurniture module. An Implementation Specification SHALL only support the boundaries described in <<cityfurniture-boundaries-table>>
 |===

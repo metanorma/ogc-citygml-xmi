@@ -1,7 +1,7 @@
 The Relief module provides the representation of terrain which is an essential part of city models. In CityGML, the terrain is modelled by relief features. They are represented in the UML model by the top-level feature type _ReliefFeature_, which is the main class of the Relief module.
 The relief features, in turn, are collections of relief components that describe the Earth's surface, also known as the Digital Terrain Model. The relief components can have different terrain representations which can coexist. Each relief component may be specified as a regular raster or grid, as a TIN (Triangulated Irregular Network), by break lines, or by mass points. In addition, the validity of the relief components may be restricted to certain areas.
 
-The UML diagram of the Relief module is depicted in <<relief-uml>>. A detailed discussion of this Requirements Class can be found in the  https://github.com/opengeospatial/CityGML3-Workspace/blob/master/19-072UG.html#bp_relief_section[CityGML User Guide].
+The UML diagram of the Relief module is depicted in <<relief-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-relief-section[OGC CityGML 3.0 Users Guide].
 
 [[relief-uml]]
 .UML diagram of Relief module.
