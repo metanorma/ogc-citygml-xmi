@@ -1,7 +1,7 @@
 The Vegetation module defines the concepts to represent vegetation within city models. Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
 Vegetation is represented in the UML model by the top-level feature types _SolitaryVegetationObject_ and _PlantCover_, which are also the only classes of the Vegetation module.
 
-The UML diagram of the Vegetation module is depicted in <<vegetation-uml>>. A detailed discussion of this Requirements Class can be found in the  https://github.com/opengeospatial/CityGML3-Workspace/blob/master/19-072UG.html#bp_vegetation_section[CityGML User Guide].
+The UML diagram of the Vegetation module is depicted in <<vegetation-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-vegetation-section[OGC CityGML 3.0 Users Guide].
 
 [[vegetation-uml]]
 .UML diagram of the Vegetation Model.

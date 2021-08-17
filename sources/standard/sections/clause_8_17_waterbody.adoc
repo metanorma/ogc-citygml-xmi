@@ -4,7 +4,7 @@ Water bodies are represented in the UML model by the top-level feature type _Wat
 Water bodies can be bounded by water surfaces, which represent the upper exterior interface between the water body and the atmosphere, and by water ground surfaces, which represent the exterior boundary surfaces of the submerged bottom of a water body (e.g. DTM or floor of a 3D basin object).
 Water surfaces are dynamic surfaces, thus, the visible water surface can regularly as well as irregularly change in height and covered area due to natural forces such as tides and floods.
 
-The UML diagram of the WaterBody module is depicted in <<waterbody-uml>>. A detailed discussion of this Requirements Class can be found in the  https://github.com/opengeospatial/CityGML3-Workspace/blob/master/19-072UG.html#bp_waterbody_section[CityGML User Guide].
+The UML diagram of the WaterBody module is depicted in <<waterbody-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-waterbody-section[OGC CityGML 3.0 Users Guide].
 
 [[waterbody-uml]]
 .UML diagram of the Water Body Model.

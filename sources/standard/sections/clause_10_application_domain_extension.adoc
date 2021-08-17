@@ -31,8 +31,6 @@ A feature type capturing a real-world feature with geometry should be derived ei
 
 Constraints on model elements should be expressed using a formal language such as the Object Constraint Language (OCL). The ADE specifies the manner of application of constraints. However, following the CityGML conceptual model, constraints should at least be expressed on ADE subclasses of _Core::AbstractSpace_ to limit the types of space boundaries (i.e., instances of _Core::AbstractSpaceBoundary_) that may be used to model the boundary of a space object.
 
-Illustrative examples for ADEs can be found in the <<_user_guide,CityGML 3.0 User Guide>>.
-
 === Augmenting CityGML Feature Types with Additional ADE Properties
 
 If a predefined CityGML feature type lacks one or more properties required for a specific application, a feasible solution in CityGML 2.0 was to derive a new ADE feature type as subclass of the CityGML class and to add the properties to this subclass. While conceptually clean, this approach also faces drawbacks. If multiple ADEs require additional properties for the same CityGML feature type, this will lead to many subclasses of this feature type in different ADE namespaces. Information about the same real-world feature might therefore be spread over various instances of the different feature classes in an encoding making it difficult for software to consume the feature data.
@@ -49,7 +47,7 @@ Content from unknown or unsupported ADEs may be ignored by an application or ser
 
 Designers of an ADE should favor using this “hook” mechanism over subclassing a CityGML feature type when possible. If an ADE must enable other ADEs to augment its own feature types (so-called ADE of an ADE), then it shall implement “hooks” for its feature types following the same schema and naming concept as in the CityGML conceptual model.
 
-The UML fragment in <<figure-adeusage>> shows an example for using the "hook" mechanism. For more details on this and other example ADEs, please see the <<_user_guide,CityGML 3.0 User Guide>> for an example ADE.
+The UML fragment in <<figure-adeusage>> shows an example for using the "hook" mechanism. For more details on this and other example ADEs, please see the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-ade-section[OGC CityGML 3.0 Users Guide].
 
 [[figure-adeusage]]
 .The CityGML feature type Building is augmented with additional ADE properties by defining the data type EnergyProperties as a subclass of the ADE data type ADEOfBuilding.
@@ -63,7 +61,7 @@ This document only addresses the conceptual modelling of ADEs. Rules and constra
 
 The following requirements and recommendations specify how ADEs shall be used as an extension capability to the CityGML Conceptual Model.
 
-include::../requirements/requirements_class_ADE.adoc[]
+include::../requirements/_requirements_class_ADE.adoc[]
 
 ==== UML
 
@@ -71,7 +69,7 @@ Any extension to the CityGML Conceptual Model should be a faithful continuation 
 
 include::../requirements/ADE/REQ_ADE_UML.adoc[]
 
-include::recommendations/ADE/REC_ADE_UML.adoc[]
+include::../recommendations/ADE/REC_ADE_UML.adoc[]
 
 ==== Classes
 
@@ -79,7 +77,7 @@ The following Requirements and Recommendations define how CityGML classes should
 
 include::../requirements/ADE/REQ_ADE_Elements.adoc[]
 
-include::recommendations/ADE/REC_ADE_Elements.adoc[]
+include::../recommendations/ADE/REC_ADE_Elements.adoc[]
 
 ==== Properties
 

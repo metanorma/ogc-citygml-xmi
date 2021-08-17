@@ -1,6 +1,6 @@
 [[req_cityobjectgroup_ade_use]]
-[cols="2,6"]
+[width="90%",cols="2,6"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/cityobjectgroup/ade/use*
+^|*Requirement  {counter:req-id}* |*/req/cityobjectgroup/ade/use* 
 2+|ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.
 |===

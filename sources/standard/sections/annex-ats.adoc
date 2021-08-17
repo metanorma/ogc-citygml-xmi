@@ -1,6 +1,7 @@
 [appendix]
+:appendix-caption: Annex
 [[abstract-test-suite]]
-== Abstract Test Suite
+== Abstract Test Suite (Normative)
 
 === Introduction
 
@@ -8,39 +9,39 @@ CityGML 3.0 is a Conceptual Model. Since it is agnostic to implementing technolo
 
 The test method specified in this ATS is manual inspection. Automated methods may be used where they exist.
 
-include::abstract_tests/ATS_Core.adoc[]
+include::../abstract_tests/ATS_Core.adoc[]
 
-include::abstract_tests/ATS_Appearance.adoc[]
+include::../abstract_tests/ATS_Appearance.adoc[]
 
-include::abstract_tests/ATS_CityFurniture.adoc[]
+include::../abstract_tests/ATS_CityFurniture.adoc[]
 
-include::abstract_tests/ATS_CityObjectGroup.adoc[]
+include::../abstract_tests/ATS_CityObjectGroup.adoc[]
 
-include::abstract_tests/ATS_Dynamizer.adoc[]
+include::../abstract_tests/ATS_Dynamizer.adoc[]
 
-include::abstract_tests/ATS_Generics.adoc[]
+include::../abstract_tests/ATS_Generics.adoc[]
 
-include::abstract_tests/ATS_LandUse.adoc[]
+include::../abstract_tests/ATS_LandUse.adoc[]
 
-include::abstract_tests/ATS_PointCloud.adoc[]
+include::../abstract_tests/ATS_PointCloud.adoc[]
 
-include::abstract_tests/ATS_Relief.adoc[]
+include::../abstract_tests/ATS_Relief.adoc[]
 
-include::abstract_tests/ATS_Transportation.adoc[]
+include::../abstract_tests/ATS_Transportation.adoc[]
 
-include::abstract_tests/ATS_Vegetation.adoc[]
+include::../abstract_tests/ATS_Vegetation.adoc[]
 
-include::abstract_tests/ATS_Versioning.adoc[]
+include::../abstract_tests/ATS_Versioning.adoc[]
 
-include::abstract_tests/ATS_WaterBody.adoc[]
+include::../abstract_tests/ATS_WaterBody.adoc[]
 
-include::abstract_tests/ATS_Construction.adoc[]
+include::../abstract_tests/ATS_Construction.adoc[]
 
-include::abstract_tests/ATS_Bridge.adoc[]
+include::../abstract_tests/ATS_Bridge.adoc[]
 
-include::abstract_tests/ATS_Building.adoc[]
+include::../abstract_tests/ATS_Building.adoc[]
 
-include::abstract_tests/ATS_Tunnel.adoc[]
+include::../abstract_tests/ATS_Tunnel.adoc[]
 
-include::abstract_tests/ATS_ADE.adoc[]
+include::../abstract_tests/ATS_ADE.adoc[]
 

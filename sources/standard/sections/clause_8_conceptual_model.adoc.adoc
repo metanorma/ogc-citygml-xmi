@@ -43,7 +43,21 @@ Additional information about the Appearance Module can be found in the link:http
 ....
 ----
 
+[[data-dictionary-section]]
 == CityGML Data Dictionary
+
+The CityGML UML model is the normative definition of the CityGML Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.
+
+An alternate representation can be found in the Conceptual Model in <<conceptual-model-section>>.
+
+[[data-dictionary-package-diagram]]
+.CityGML UML Packages
+image::figures/CityGMLPackageDiagram.png[align="center"]
+
+[[ISO-classes-dd]]
+=== ISO Classes
+
+The following classes are defined in ISO standards and used by the CityGML Conceptual Model.
 
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,packages_config_lutaml_data_dictionary.yml]
 ----

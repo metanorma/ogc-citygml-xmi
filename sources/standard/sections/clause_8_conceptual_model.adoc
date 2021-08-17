@@ -1,4 +1,21 @@
+[[conceptual-model-section]]
 == CityGML UML Model
+
+The CityGML UML model is the normative definition of the CityGML Conceptual Model. The tables and figures in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.
+
+An alternate representation can be found in the Data Dictionary in <<data-dictionary-section>>.
+
+[[rc_overview-section]]
+=== Structural Overview of Requirements Classes
+
+The Requirements Classes for this standard are structured as
+UML Packages as illustrated in <<package-diagram>>. Each Requirements Class is specified in detail in their respective subsections. These subsections include a UML diagram, data dictionary, and the applicable requirements.
+
+[[package-diagram]]
+.CityGML UML Packages
+image::figures/CityGMLPackageDiagram.png[align="center"]
+
+A detailed discussion of the structuring of the UML model can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-structure-section[OGC CityGML 3.0 Users Guide].
 
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,packages_config_lutaml.yml]
 ----
@@ -123,7 +140,21 @@ Additional information about the Appearance Module can be found in the link:http
 ....
 ----
 
+[[data-dictionary-section]]
 == CityGML Data Dictionary
+
+The CityGML UML model is the normative definition of the CityGML Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.
+
+An alternate representation can be found in the Conceptual Model in <<conceptual-model-section>>.
+
+[[data-dictionary-package-diagram]]
+.CityGML UML Packages
+image::figures/CityGMLPackageDiagram.png[align="center"]
+
+[[ISO-classes-dd]]
+=== ISO Classes
+
+The following classes are defined in ISO standards and used by the CityGML Conceptual Model.
 
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,packages_config_lutaml_data_dictionary.yml]
 ----
