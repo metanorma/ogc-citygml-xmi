@@ -41,14 +41,14 @@ A value domain including a code for each permissible value.
 model that defines concepts of a universe of discourse
 
 [.source]
-<<ISO 19101-1:2014,4.1.5>>
+<<iso19101-1,4.1.5>>
 
 === conceptual schema
 
 formal description of a {{conceptual model}}
 
 [.source]
-<<ISO 19101-1:2014,4.1.6>>
+<<iso19101-1,4.1.6>>
 
 // TODO: enable second definition
 // . base schema. Formal description of the model of any geospatial information. term:[application schema,Application schemas] are built from conceptual schemas.
@@ -70,14 +70,14 @@ quantity of information that portrays the real world
 NOTE: The concept comprises data capturing rules of spatial object types, the accuracy and the types of geometries, and other aspects of a data specification. In particular, it is related to the notions of scale and resolution.
 
 [.source]
-<<INSPIRE-Glossary>>
+<<inspire_glossary>>
 
 === life-cycle information
 
 set of properties of a spatial object that describe the temporal characteristics of a version of a spatial object or the changes between versions
 
 [.source]
-<<INSPIRE-Glossary>>
+<<inspire_glossary>>
 
 === Platform (Model Driven Architecture)
 
