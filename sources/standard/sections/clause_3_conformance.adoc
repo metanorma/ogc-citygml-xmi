@@ -2,10 +2,10 @@
 [[conformance-section]]
 == Conformance
 
-This standard defines a <<conceptual_model_definition,Conceptual Model>> which is independent of any encoding or formatting techniques. The <<standardization-target-definition,Standardization Targets>> for this standard are:
+This standard defines a <<conceptual_model_definition,Conceptual Model>> which is independent of any encoding or formatting techniques. The {{Standardization Target,Standardization Targets}} for this standard are:
 
-. <<conceptual-model-definition,Conceptual Models>> (extended versions of this conceptual model)
-. <<implementation-specification-definition,Implementation Specifications>> (encodings of this conceptual model)
+. {{conceptual model,Conceptual Models}} (extended versions of this conceptual model)
+. {{Implementation Specifications}} (encodings of this conceptual model)
 
 [[conceptual-model-conformance]]
 === Conceptual Models

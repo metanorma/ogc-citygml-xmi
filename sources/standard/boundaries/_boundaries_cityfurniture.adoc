@@ -3,7 +3,9 @@
 [cols="2,6",options="headers"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
-|CityFurniture  a|  * Core::ClosureSurface
-                    * Generics::GenericThematicSurface
-                    * Possible classes from ADEs
+|CityFurniture
+a|
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* Possible classes from ADEs
 |===

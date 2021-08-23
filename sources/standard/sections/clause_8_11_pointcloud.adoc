@@ -6,10 +6,10 @@ The UML diagram of the PointCloud module is depicted in <<pointcloud-uml>>. A de
 [[pointcloud-uml]]
 .UML diagram of the Point Cloud Model.
 
-image::figures/PointCloud.png[align="center"]
+image::figures/PointCloud.png[]
 
 The ADE data types provided for the Point Cloud module are illustrated in <<pointcloud-uml-ade-types>>.
 
 [[pointcloud-uml-ade-types]]
 .ADE classes of the CityGML Point Cloud module.
-image::figures/PointCloud-ADE_Datatypes.png[align="center"]
+image::figures/PointCloud-ADE_Datatypes.png[]

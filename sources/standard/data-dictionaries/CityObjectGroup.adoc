@@ -22,13 +22,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! parent  !<<AbstractCityObject-section,AbstractCityObject>> [0..1] !Relates to a city object to which the CityObjectGroup belongs.
 ! groupMember  !<<AbstractCityObject-section,AbstractCityObject>> [*] !Relates to the city objects that are part of the CityObjectGroup.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<CityObjectGroupClassValue-section,CityObjectGroupClassValue>>  [0..1] !Indicates the specific type of the CityObjectGroup.
 
@@ -53,7 +53,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! role  !<<CharacterString-section,CharacterString>>  [0..1] !Describes the role the city object plays within the CityObjectGroup.
 !===

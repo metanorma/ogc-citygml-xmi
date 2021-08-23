@@ -6,18 +6,18 @@ The UML diagram of the Vegetation module is depicted in <<vegetation-uml>>. A de
 [[vegetation-uml]]
 .UML diagram of the Vegetation Model.
 
-image::figures/Vegetation.png[align="center"]
+image::figures/Vegetation.png[]
 
 The ADE data types provided for the Vegetation module are illustrated in <<vegetation-uml-ade-types>>.
 
 [[vegetation-uml-ade-types]]
 .ADE classes of the CityGML Vegetation module.
-image::figures/Vegetation-ADE_Datatypes.png[align="center"]
+image::figures/Vegetation-ADE_Datatypes.png[]
 
 The Code Lists provided for the Vegetation module are illustrated in <<vegetation-uml-codelists>>.
 
 [[vegetation-uml-codelists]]
 .Codelists from the CityGML Vegetation module.
-image::figures/Vegetation-Codelists.png[align="center"]
+image::figures/Vegetation-Codelists.png[]
 
 <<vegetation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Vegetation module.

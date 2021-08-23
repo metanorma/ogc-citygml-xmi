@@ -51,7 +51,7 @@ The UML fragment in <<figure-adeusage>> shows an example for using the "hook" me
 
 [[figure-adeusage]]
 .The CityGML feature type Building is augmented with additional ADE properties by defining the data type EnergyProperties as a subclass of the ADE data type ADEOfBuilding.
-image::./images/Energy_ADE_UML_example.png[align="center"]
+image::./images/Energy_ADE_UML_example.png[]
 
 === Encoding of ADEs
 

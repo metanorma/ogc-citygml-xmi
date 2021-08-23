@@ -6,16 +6,16 @@ The UML diagram of the LandUse module is depicted in <<landuse-uml>>. A detailed
 [[landuse-uml]]
 .UML diagram of the Land Use Model.
 
-image::figures/LandUse.png[align="center"]
+image::figures/LandUse.png[]
 
 The ADE data types provided for the Land Use module are illustrated in <<landuse-uml-ade-types>>.
 
 [[landuse-uml-ade-types]]
 .ADE classes of the CityGML Land Use module.
-image::figures/LandUse-ADE_Datatypes.png[align="center"]
+image::figures/LandUse-ADE_Datatypes.png[]
 
 The Code Lists provided for the Land Use module are illustrated in <<landuse-uml-codelists>>.
 
 [[landuse-uml-codelists]]
 .Codelists from the CityGML Land Use module.
-image::figures/LandUse-Codelists.png[align="center"]
+image::figures/LandUse-Codelists.png[]

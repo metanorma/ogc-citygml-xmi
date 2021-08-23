@@ -22,12 +22,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! versionMember «Version» !<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> [*] !Relates to all city objects that are part of the city model version.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! tag  !<<CharacterString-section,CharacterString>>  [0..*] !Allows for adding keywords to the city model version.
 
@@ -48,14 +48,14 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! from  !<<Version-section,Version>> [0..1] !Relates to the predecessor version of the VersionTransition.
 ! transaction  !<<Transaction-section,Transaction>> [*] !Relates to all transactions that have been applied as part of the VersionTransition.
 ! to  !<<Version-section,Version>> [0..1] !Relates to the successor version of the VersionTransition.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! reason  !<<CharacterString-section,CharacterString>>  [0..1] !Specifies why the VersionTransition has been carried out.
 
@@ -106,13 +106,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! newFeature «Version» !<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> [0..1] !Relates to the version of the city object subsequent to the Transaction.
 ! oldFeature «Version» !<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> [0..1] !Relates to the version of the city object prior to the Transaction.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! type  !<<TransactionTypeValue-section,TransactionTypeValue>> [1..1] !Indicates the specific type of the Transaction.
 !===
@@ -144,7 +144,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! insert  !Indicates that the feature referenced from the Transaction via the "newFeature" association has been newly created; the association "oldFeature" is empty in this case.
 
@@ -165,7 +165,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! planned  !Indicates that the successor version of the city model represents a planning state for a possible future of the city.
 

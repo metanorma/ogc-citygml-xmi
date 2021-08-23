@@ -4,111 +4,119 @@
 |===
 ^|*Space class* ^|*Allowed space boundaries*
 |AbstractBuilding
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |AbstractBuildingSubdivision
 a|No boundaries allowed
 
 |Building
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |BuildingConstructiveElement
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |BuildingFurniture
 a|No boundaries allowed
 
 |BuildingInstallation
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |BuildingPart
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |BuildingRoom
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |BuildingUnit
-a| * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 
 |Storey
-a| * Construction::AbstractConstructionSurface and all subclasses, i.e. +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::GroundSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::RoofSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::CeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterCeilingSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::FloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::OuterFloorSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::WallSurface, +
-{nbsp}{nbsp}{nbsp}{nbsp} Construction::InteriorWallSurface
-   * Core::ClosureSurface
-   * Generics::GenericThematicSurface
-   * possible classes from ADEs
+a|
+*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+** Construction::GroundSurface,
+** Construction::RoofSurface,
+** Construction::CeilingSurface,
+** Construction::OuterCeilingSurface,
+** Construction::FloorSurface,
+** Construction::OuterFloorSurface,
+** Construction::WallSurface,
+** Construction::InteriorWallSurface
+* Core::ClosureSurface
+* Generics::GenericThematicSurface
+* possible classes from ADEs
 |===

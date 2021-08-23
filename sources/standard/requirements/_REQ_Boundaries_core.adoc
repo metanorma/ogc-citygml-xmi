@@ -1,6 +1,6 @@
 [[req_core_boundaries]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/core/boundaries* 
+^|*Requirement  {counter:req-id}* |*/req/core/boundaries*
 2+|<<core-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Core module. An Implementation Specification SHALL only support the boundaries described in <<core-boundaries-table>>
 |===

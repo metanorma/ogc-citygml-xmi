@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! observationProperty  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the phenomenon for which the atomic timeseries provides observation values.
 
@@ -45,7 +45,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! firstTimestamp  !<<TM_Position-section,TM_Position>>  [0..1] !Specifies the beginning of the timeseries.
 
@@ -68,12 +68,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! component  !<<TimeseriesComponent-section,TimeseriesComponent>> [1..*] !Relates to the atomic and composite timeseries that are part of the CompositeTimeseries. The referenced timeseries are sequentially ordered.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfCompositeTimeseries  !<<ADEOfCompositeTimeseries-section,ADEOfCompositeTimeseries>>  [0..*] !Augments the CompositeTimeseries with properties defined in an ADE.
 !===
@@ -92,13 +92,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! dynamicData  !<<AbstractTimeseries-section,AbstractTimeseries>> [0..1] !Relates to the timeseries data that is given either inline within a CityGML dataset or by a link to an external file containing timeseries data.
 ! sensorConnection  !<<SensorConnection-section,SensorConnection>> [0..1] !Relates to the sensor API that delivers timeseries data.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! attributeRef  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the attribute of a CityGML feature whose value is overridden or replaced by the (dynamic) values specified by the Dynamizer.
 
@@ -140,12 +140,12 @@ else TimeValuePair->forAll(c \| c.appearanceValue->size()=1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! timeValuePair  !<<TimeValuePair-section,TimeValuePair>> [1..*] !Relates to the time-value-pairs that are part of the GenericTimeseries.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! valueType  !<<TimeseriesTypeValue-section,TimeseriesTypeValue>> [1..1] !Indicates the specific type of all time-value-pairs that are part of the GenericTimeseries.
 
@@ -166,7 +166,7 @@ else TimeValuePair->forAll(c \| c.appearanceValue->size()=1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! fileLocation  !<<URI-section,URI>> [1..1] !Specifies the URI that points to the external timeseries file.
 
@@ -195,7 +195,7 @@ else TimeValuePair->forAll(c \| c.appearanceValue->size()=1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! fileLocation  !<<URI-section,URI>> [1..1] !Specifies the URI that points to the external timeseries file.
 
@@ -328,12 +328,12 @@ else TimeValuePair->forAll(c \| c.appearanceValue->size()=1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! sensorLocation  !<<AbstractCityObject-section,AbstractCityObject>> [0..1] !Relates the sensor to the city object where it is located.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! connectionType  !<<SensorConnectionTypeValue-section,SensorConnectionTypeValue>> [1..1] !Indicates the type of Sensor API to which the SensorConnection refers.
 
@@ -376,12 +376,12 @@ else TimeValuePair->forAll(c \| c.appearanceValue->size()=1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! timeseries  !<<AbstractTimeseries-section,AbstractTimeseries>> [1..1] !Relates a timeseries to the TimeseriesComponent.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! repetitions  !<<Integer-section,Integer>> [1..1] !Specifies how often the timeseries that is referenced by the TimeseriesComponent should be iterated.
 
@@ -406,7 +406,7 @@ implicitGeometryValue->size() + appearanceValue->size() = 1
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! timestamp  !<<TM_Position-section,TM_Position>> [1..1] !Specifies the timepoint at which the value of the TimeValuePair is valid.
 
@@ -496,7 +496,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! int  !Indicates that the values of the GenericTimeseries are of type "Integer".
 

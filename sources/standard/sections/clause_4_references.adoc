@@ -41,12 +41,3 @@
 * [[[topic8,OGC 99-108r2]]] OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2
 
 * [[[topic10,OGC 99-110]]] OGC: The OpenGIS™ Abstract Specification Topic 10: Feature Collections, OGC document 99-110
-// TODO TB17 added references below
-
-* [[[OMGMDA,OMG MDA]]] Object Management Group: Model Driven Architecture Guide rev. 2.0
-
-* [[[INSPIRE-Glossary,INSPIRE Glossary]]] INSPIRE: Glossary
-
-* [[[OGCDR,OGC Definitions Register]]] OGC: Definitions Register
-
-* [[[OGCDTR,OGC Document Types Register]]] OGC: Document Types Register

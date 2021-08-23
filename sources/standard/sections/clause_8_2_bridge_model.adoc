@@ -10,18 +10,18 @@ The UML diagram of the Bridge module is depicted in <<bridge-uml>>. The Bridge m
 [[bridge-uml]]
 .UML diagram of the Bridge Model.
 
-image::figures/Bridge.png[align="center"]
+image::figures/Bridge.png[]
 
 The ADE data types provided for the Bridge module are illustrated in <<bridge-uml-ade-types>>.
 
 [[bridge-uml-ade-types]]
 .ADE classes of the CityGML Bridge module.
-image::figures/Bridge-ADE_Datatypes.png[align="center"]
+image::figures/Bridge-ADE_Datatypes.png[]
 
 The Code Lists provided for the Bridge module are illustrated in <<bridge-uml-codelists>>.
 
 [[bridge-uml-codelists]]
 .Codelists from the CityGML Bridge module.
-image::figures/Bridge-Codelists.png[align="center"]
+image::figures/Bridge-Codelists.png[]
 
 <<bridge-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Bridge module:

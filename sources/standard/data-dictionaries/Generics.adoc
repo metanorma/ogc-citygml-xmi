@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<GenericLogicalSpaceClassValue-section,GenericLogicalSpaceClassValue>>  [0..1] !Indicates the specific type of the GenericLogicalSpace.
 
@@ -47,7 +47,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<GenericOccupiedSpaceClassValue-section,GenericOccupiedSpaceClassValue>>  [0..1] !Indicates the specific type of the GenericOccupiedSpace.
 
@@ -72,7 +72,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<GenericThematicSurfaceClassValue-section,GenericThematicSurfaceClassValue>>  [0..1] !Indicates the specific type of the GenericThematicSurface.
 
@@ -97,7 +97,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<GenericUnoccupiedSpaceClassValue-section,GenericUnoccupiedSpaceClassValue>>  [0..1] !Indicates the specific type of the GenericUnoccupiedSpace.
 
@@ -172,7 +172,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the CodeAttribute.
 
@@ -193,7 +193,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the DateAttribute.
 
@@ -214,7 +214,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the DoubleAttribute.
 
@@ -235,12 +235,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! genericAttribute  !<<AbstractGenericAttribute-section,AbstractGenericAttribute>> [1..*] !Relates to the generic attributes that are part of the GenericAttributeSet.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the GenericAttributeSet.
 
@@ -261,7 +261,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the IntAttribute.
 
@@ -282,7 +282,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the MeasureAttribute.
 
@@ -303,7 +303,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the StringAttribute.
 
@@ -324,7 +324,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! name  !<<CharacterString-section,CharacterString>> [1..1] !Specifies the name of the UriAttribute.
 

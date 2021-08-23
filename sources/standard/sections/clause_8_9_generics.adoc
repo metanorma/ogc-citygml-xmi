@@ -10,18 +10,18 @@ The UML diagram of the Generics module is depicted in <<generics-uml>>. A detail
 [[generics-uml]]
 .UML diagram of the Generics Model.
 
-image::figures/Generics.png[align="center"]
+image::figures/Generics.png[]
 
 The ADE data types provided for the Generics module are illustrated in <<generics-uml-ade-types>>.
 
 [[generics-uml-ade-types]]
 .ADE classes of the CityGML Generics module.
-image::figures/Generics-ADE_Datatypes.png[align="center"]
+image::figures/Generics-ADE_Datatypes.png[]
 
 The Code Lists provided for the Generics module are illustrated in <<generics-uml-codelists>>.
 
 [[generics-uml-codelists]]
 .Codelists from the CityGML Generics module.
-image::figures/Generics-Codelists.png[align="center"]
+image::figures/Generics-Codelists.png[]
 
 <<generics-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Generics module:

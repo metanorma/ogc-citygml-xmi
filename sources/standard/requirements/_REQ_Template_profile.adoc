@@ -1,7 +1,7 @@
 [[req_Profile_template]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/Profile/template* 
+^|*Requirement  {counter:req-id}* |*/req/Profile/template*
 2+|For each UML class defined or referenced in the Core Package:
 ^|A |The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
 ^|B |The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
