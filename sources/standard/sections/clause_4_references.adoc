@@ -8,7 +8,9 @@
 
 * [[[inspirebu,INSPIRE: D2.8.III.2]]] INSPIRE: D2.8.III.2 Data Specification on Buildings – Technical Guidelines. European Commission Joint Research Centre.
 
-* [[[iso19101,ISO 19101-1:2014]]] ISO: ISO 19101-1:2014, Geographic information - Reference model - Part 1: Fundamentals
+* [[[iso19101-1,ISO 19101-1:2014]]] ISO: ISO 19101-1:2014, Geographic information - Reference model - Part 1: Fundamentals
+
+* [[[iso19101-2,ISO 19101-2:2018]]] ISO: ISO 19101-2:2018, Geographic information - Reference model — Part 2: Imagery
 
 * [[[iso19103,ISO 19103:2015]]] ISO: ISO 19103:2015, Geographic Information – Conceptual Schema Language
 
@@ -23,6 +25,8 @@
 * [[[iso19111,ISO 19111:2019]]] ISO: ISO 19111:2019, Geographic information – Referencing by coordinates
 
 * [[[iso19123,ISO 19123:2005]]] ISO: ISO 19123:2005, Geographic information — Schema for coverage geometry and functions
+
+* [[[iso19143,ISO 19143]]]
 
 * [[[iso19156,ISO 19156:2011]]] ISO: ISO 19156:2011, Geographic information – Observations and measurements
 
@@ -41,3 +45,7 @@
 * [[[topic8,OGC 99-108r2]]] OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2
 
 * [[[topic10,OGC 99-110]]] OGC: The OpenGIS™ Abstract Specification Topic 10: Feature Collections, OGC document 99-110
+
+* [[[ogc08-094r1,OGC 08-094r1]]]
+
+* [[[ogc15-043r3,OGC 15-043r3]]]

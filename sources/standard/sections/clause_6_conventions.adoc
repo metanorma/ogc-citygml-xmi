@@ -36,15 +36,15 @@ The following stereotypes are used in this model:
 
 In order to enhance the readability of the CityGML UML diagrams, classes are depicted in different colors. The following coloring scheme is applied:
 
-image:images/ColorScheme_yellow.png[]
+image::images/ColorScheme_yellow.png[]
 
-Classes painted in yellow belong to the Requirements Class which is subject of discussion in that clause of the standard in which the UML diagram is given. For example, in the context of <<rc_core_section>>, which introduces the _CityGML Core_ module, the yellow color is used to denote classes that are defined in the _CityGML Core_ Requirements Class. Likewise, the yellow classes shown in the UML diagram in <<rc_building-model_section>> are associated with the _Building_ Requirements Class that is subject of discussion in that chapter.
+Classes painted in yellow belong to the Requirements Class which is subject of discussion in that clause of the standard in which the UML diagram is given. For example, in the context of <<rc_core-model_section>>, which introduces the _CityGML Core_ module, the yellow color is used to denote classes that are defined in the _CityGML Core_ Requirements Class. Likewise, the yellow classes shown in the UML diagram in <<rc_building-model_section>> are associated with the _Building_ Requirements Class that is subject of discussion in that chapter.
 
-image:images/ColorScheme_blue.png[]
+image::images/ColorScheme_blue.png[]
 
 Classes painted in blue belong to a Requirements Class different to that associated with the yellow color. In order to explicitly denote to which Requirements Class these classes belong, their class names are preceded by the UML package name of that Requirements Class. For example, in the context of the _Building_ Requirements Class, classes from the _CityGML Core_ and the _Construction_ Requirements Classes are painted in blue and their class names are preceded by _Core_ and _Construction_, respectively.
 
-image:images/ColorScheme_green.png[]
+image::images/ColorScheme_green.png[]
 
 Classes painted in green are defined in the ISO standards 19107, 19111, or 19123. Their class names are preceded by the UML package name, in which the classes are defined.
 
@@ -52,7 +52,7 @@ image:images/ColorScheme_grey.png[]
 
 Classes painted in grey are defined in the ISO standard 19109. In the context of this standard, this only applies to the class _AnyFeature_. _AnyFeature_ is an instance of the metaclass _FeatureType_ and acts as super class of all classes in the CityGML UML model with the stereotype &#171;FeatureType&#187;. A metaclass is a class whose instances are classes.
 
-image:images/ColorScheme_white.png[]
+image::images/ColorScheme_white.png[]
 
 The color white is used for notes and <<iso19507,Object Constraint Language>> (OCL) constraints that are provided in the UML diagrams.
 
@@ -61,4 +61,3 @@ The example UML diagram in <<figure-2>> demonstrates the UML notation and colori
 [[figure-2]]
 .Example UML diagram demonstrating the UML notation and coloring scheme used throughout the CityGML Standard.
 image::images/UML_Notation_Example.png[]
-

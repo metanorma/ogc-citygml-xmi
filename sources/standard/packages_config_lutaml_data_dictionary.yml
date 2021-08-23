@@ -1,7 +1,7 @@
 packages:
   - "Appearance"
-  - "BridgeModel"
-  - "BuildingModel"
+  - "Bridge"
+  - "Building"
   - "CityFurniture"
   - "CityObjectGroup"
   - "Construction"
@@ -15,6 +15,6 @@ packages:
   - "Tunnel"
   - "Vegetation"
   - "Versioning"
-  - "Waterbody"
+  - "WaterBody"
 section_depth: 3
 render_style: data_dictionary

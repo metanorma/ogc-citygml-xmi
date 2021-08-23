@@ -40,9 +40,8 @@ A class of features having common characteristics
 A set of operations having the object of determining the value of a quantity
 
 [.source]
-<<iso19101-2:2018,clause=3.21>>
+<<iso19101-2,clause=3.21>>
 //<<VIM,clause=2.1>>
-
 
 === model
 
