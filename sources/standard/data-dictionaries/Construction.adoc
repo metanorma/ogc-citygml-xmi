@@ -22,12 +22,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the construction. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! conditionOfConstruction  !<<ConditionOfConstructionValue-section,ConditionOfConstructionValue>>  [0..1] !Indicates the life-cycle status of the construction. [cf. INSPIRE]
 
@@ -60,12 +60,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! fillingSurface  !<<AbstractFillingSurface-section,AbstractFillingSurface>> [*] !Relates to the surfaces that seal the openings of the construction surface.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractConstructionSurface  !<<ADEOfAbstractConstructionSurface-section,ADEOfAbstractConstructionSurface>>  [0..*] !Augments AbstractConstructionSurface with properties defined in an ADE.
 !===
@@ -84,13 +84,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the constructive element. This relation is inherited from the Core module.
 ! filling  !<<AbstractFillingElement-section,AbstractFillingElement>> [*] !Relates to the elements that fill the opening of the constructive element.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! isStructuralElement  !<<Boolean-section,Boolean>>  [0..1] !Indicates whether the constructive element is essential from a structural point of view. A structural element cannot be omitted without collapsing of the construction. Examples are pylons and anchorages of bridges.
 
@@ -111,7 +111,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractFillingElement  !<<ADEOfAbstractFillingElement-section,ADEOfAbstractFillingElement>>  [0..*] !Augments AbstractFillingElement with properties defined in an ADE.
 !===
@@ -130,7 +130,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractFillingSurface  !<<ADEOfAbstractFillingSurface-section,ADEOfAbstractFillingSurface>>  [0..*] !Augments AbstractFillingSurface with properties defined in an ADE.
 !===
@@ -149,7 +149,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractFurniture  !<<ADEOfAbstractFurniture-section,ADEOfAbstractFurniture>>  [0..*] !Augments AbstractFurniture with properties defined in an ADE.
 !===
@@ -168,12 +168,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the installation. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! relationToConstruction  !<<RelationToConstruction-section,RelationToConstruction>>  [0..1] !Indicates whether the installation is located inside and/or outside of the construction.
 
@@ -194,7 +194,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfCeilingSurface  !<<ADEOfCeilingSurface-section,ADEOfCeilingSurface>>  [0..*] !Augments the CeilingSurface with properties defined in an ADE.
 !===
@@ -213,13 +213,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! address  !<<Address-section,Address>> [*] !Relates to the addresses that are assigned to the Door.
 ! boundary  !<<DoorSurface-section,DoorSurface>> [*] !Relates to the door surfaces that bound the Door. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<DoorClassValue-section,DoorClassValue>>  [0..1] !Indicates the specific type of the Door.
 
@@ -244,12 +244,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! address  !<<Address-section,Address>> [*] !Relates to the addresses that are assigned to the DoorSurface.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfDoorSurface  !<<ADEOfDoorSurface-section,ADEOfDoorSurface>>  [0..*] !Augments the DoorSurface with properties defined in an ADE.
 !===
@@ -268,7 +268,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfFloorSurface  !<<ADEOfFloorSurface-section,ADEOfFloorSurface>>  [0..*] !Augments the FloorSurface with properties defined in an ADE.
 !===
@@ -287,7 +287,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfGroundSurface  !<<ADEOfGroundSurface-section,ADEOfGroundSurface>>  [0..*] !Augments the GroundSurface with properties defined in an ADE.
 !===
@@ -306,7 +306,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfInteriorWallSurface  !<<ADEOfInteriorWallSurface-section,ADEOfInteriorWallSurface>>  [0..*] !Augments the InteriorWallSurface with properties defined in an ADE.
 !===
@@ -325,7 +325,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<OtherConstructionClassValue-section,OtherConstructionClassValue>>  [0..1] !Indicates the specific type of the OtherConstruction.
 
@@ -350,7 +350,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfOuterCeilingSurface  !<<ADEOfOuterCeilingSurface-section,ADEOfOuterCeilingSurface>>  [0..*] !Augments the OuterCeilingSurface with properties defined in an ADE.
 !===
@@ -369,7 +369,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfOuterFloorSurface  !<<ADEOfOuterFloorSurface-section,ADEOfOuterFloorSurface>>  [0..*] !Augments the OuterFloorSurface with properties defined in an ADE.
 !===
@@ -388,7 +388,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfRoofSurface  !<<ADEOfRoofSurface-section,ADEOfRoofSurface>>  [0..*] !Augments the RoofSurface with properties defined in an ADE.
 !===
@@ -407,7 +407,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfWallSurface  !<<ADEOfWallSurface-section,ADEOfWallSurface>>  [0..*] !Augments the WallSurface with properties defined in an ADE.
 !===
@@ -426,12 +426,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<WindowSurface-section,WindowSurface>> [*] !Relates to the window surfaces that bound the Window. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<WindowClassValue-section,WindowClassValue>>  [0..1] !Indicates the specific type of the Window.
 
@@ -456,7 +456,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfWindowSurface  !<<ADEOfWindowSurface-section,ADEOfWindowSurface>>  [0..*] !Augments the WindowSurface with properties defined in an ADE.
 !===
@@ -717,7 +717,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! event  !<<EventValue-section,EventValue>> [1..1] !Indicates the specific event type.
 
@@ -740,7 +740,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! elevationReference  !<<ElevationReferenceValue-section,ElevationReferenceValue>> [1..1] !Specifies the level from which the elevation was measured. [cf. INSPIRE]
 
@@ -761,7 +761,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! highReference  !<<ElevationReferenceValue-section,ElevationReferenceValue>> [1..1] !Indicates the high point used to calculate the value of the height. [cf. INSPIRE]
 
@@ -918,7 +918,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! declined  !Indicates that the construction cannot be used under normal conditions, though its main elements (walls, roof) are still present. [cf. INSPIRE]
 
@@ -945,7 +945,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! estimated  !Indicates that the height has been estimated and not measured. [cf. INSPIRE]
 
@@ -964,7 +964,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! inside  !Indicates that the installation is positioned inside of the construction.
 

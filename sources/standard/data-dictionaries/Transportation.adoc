@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! marking  !<<Marking-section,Marking>> [*] !Relates to the markings that are part of the transportation space.
 ! trafficSpace  !<<TrafficSpace-section,TrafficSpace>> [*] !Relates to the traffic spaces that are part of the transportation space.
 ! auxiliaryTrafficSpace  !<<AuxiliaryTrafficSpace-section,AuxiliaryTrafficSpace>> [*] !Relates to the auxiliary traffic spaces that are part of the transportation space.
@@ -30,7 +30,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! trafficDirection  !<<TrafficDirectionValue-section,TrafficDirectionValue>>  [0..1] !Indicates the direction of traffic flow relative to the corresponding linear geometry representation.
 
@@ -53,7 +53,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<AuxiliaryTrafficAreaClassValue-section,AuxiliaryTrafficAreaClassValue>>  [0..1] !Indicates the specific type of the AuxiliaryTrafficArea.
 
@@ -80,12 +80,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AuxiliaryTrafficArea-section,AuxiliaryTrafficArea>> [*] !Relates to the auxiliary traffic areas that bound the AuxiliaryTrafficSpace. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<AuxiliaryTrafficSpaceClassValue-section,AuxiliaryTrafficSpaceClassValue>>  [0..1] !Indicates the specific type of the AuxiliaryTrafficSpace.
 
@@ -112,7 +112,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<ClearanceSpaceClassValue-section,ClearanceSpaceClassValue>>  [0..*] !Indicates the specific type of the ClearanceSpace.
 
@@ -133,12 +133,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the Hole. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<HoleClassValue-section,HoleClassValue>>  [0..1] !Indicates the specific type of the Hole.
 
@@ -159,7 +159,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfHoleSurface  !<<ADEOfHoleSurface-section,ADEOfHoleSurface>>  [0..*] !Augments the HoleSurface with properties defined in an ADE.
 !===
@@ -178,7 +178,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<IntersectionClassValue-section,IntersectionClassValue>>  [0..1] !Indicates the specific type of the Intersection.
 
@@ -199,7 +199,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<MarkingClassValue-section,MarkingClassValue>>  [0..1] !Indicates the specific type of the Marking.
 
@@ -220,13 +220,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! intersection  !<<Intersection-section,Intersection>> [*] !Relates to the intersections that are part of the Railway.
 ! section  !<<Section-section,Section>> [*] !Relates to the sections that are part of the Railway.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<RailwayClassValue-section,RailwayClassValue>>  [0..1] !Indicates the specific type of the Railway.
 
@@ -251,13 +251,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! intersection  !<<Intersection-section,Intersection>> [*] !Relates to the intersections that are part of the Road.
 ! section  !<<Section-section,Section>> [*] !Relates to the sections that are part of the Road.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<RoadClassValue-section,RoadClassValue>>  [0..1] !Indicates the specific type of the Road.
 
@@ -282,7 +282,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<SectionClassValue-section,SectionClassValue>>  [0..1] !Indicates the specific type of the Section.
 
@@ -303,7 +303,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<SquareClassValue-section,SquareClassValue>>  [0..1] !Indicates the specific type of the Square.
 
@@ -328,13 +328,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! section  !<<Section-section,Section>> [*] !Relates to the sections that are part of the Track.
 ! intersection  !<<Intersection-section,Intersection>> [*] !Relates to the intersections that are part of the Track.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<TrackClassValue-section,TrackClassValue>>  [0..1] !Indicates the specific type of the Track.
 
@@ -359,7 +359,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<TrafficAreaClassValue-section,TrafficAreaClassValue>>  [0..1] !Indicates the specific type of the TrafficArea.
 
@@ -386,7 +386,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! successor  !<<TrafficSpace-section,TrafficSpace>> [*] !Indicates the successor(s) of the TrafficSpace.
 ! clearanceSpace  !<<ClearanceSpace-section,ClearanceSpace>> [*] !Relates to the clearance spaces that are part of the TrafficSpace.
 ! predecessor  !<<TrafficSpace-section,TrafficSpace>> [*] !Indicates the predecessor(s) of the TrafficSpace.
@@ -394,7 +394,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<TrafficSpaceClassValue-section,TrafficSpaceClassValue>>  [0..1] !Indicates the specific type of the TrafficSpace.
 
@@ -425,13 +425,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! intersection  !<<Intersection-section,Intersection>> [*] !Relates to the intersections that are part of the Waterway.
 ! section  !<<Section-section,Section>> [*] !Relates to the sections that are part of the Waterway.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<WaterwayClassValue-section,WaterwayClassValue>>  [0..1] !Indicates the specific type of the Waterway.
 
@@ -1024,7 +1024,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! lane  !Indicates that the individual lanes of the transportation object are represented.
 
@@ -1043,7 +1043,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! forwards  !Indicates that traffic flows in the direction of the corresponding linear geometry.
 

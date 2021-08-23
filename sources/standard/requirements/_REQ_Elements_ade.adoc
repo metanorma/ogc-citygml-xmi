@@ -1,7 +1,7 @@
 [[req_ade_elements]]
-[width="90%",cols="2,6"]
+[cols="2,6"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/ade/elements* 
+^|*Requirement  {counter:req-id}* |*/req/ade/elements*
 2+|ADEs typically extend CityGML by defining new Feature Types together with additional content such as Object Types, Data Types, Code Lists, and Enumerations.
 ^|A |Every Feature Type in an ADE SHALL be derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
 ^|B |UML classes representing Top-Level Feature Types SHALL use the _&#171;TopLevelFeatureType&#187;_ stereotype.

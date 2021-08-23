@@ -8,18 +8,18 @@ The UML diagram of the Transportation module is depicted in <<transportation-uml
 [[transportation-uml]]
 .UML diagram of the Transportation Model.
 
-image::figures/Transportation.png[align="center"]
+image::figures/Transportation.png[]
 
 The ADE data types provided for the Transportation module are illustrated in <<transportation-uml-ade-types>>.
 
 [[transportation-uml-ade-types]]
 .ADE classes of the CityGML Transportation module.
-image::figures/Transportation-ADE_Datatypes.png[align="center"]
+image::figures/Transportation-ADE_Datatypes.png[]
 
 The Code Lists provided for the Transportation module are illustrated in <<transportation-uml-codelists>>.
 
 [[transportation-uml-codelists]]
 .Codelists from the CityGML Transportation module.
-image::figures/Bridge-Codelists.png[align="center"]
+image::figures/Bridge-Codelists.png[]
 
 <<transportation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Transportation module:

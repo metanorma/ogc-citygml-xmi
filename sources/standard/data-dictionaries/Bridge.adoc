@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! bridgeConstructiveElement  !<<BridgeConstructiveElement-section,BridgeConstructiveElement>> [*] !Relates the constructive elements to the Bridge or BridgePart.
 ! bridgeInstallation  !<<BridgeInstallation-section,BridgeInstallation>> [*] !Relates the installation objects to the Bridge or BridgePart.
 ! bridgeFurniture  !<<BridgeFurniture-section,BridgeFurniture>> [*] !Relates the furniture objects to the Bridge or BridgePart.
@@ -31,7 +31,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BridgeClassValue-section,BridgeClassValue>>  [0..1] !Indicates the specific type of the Bridge or BridgePart.
 
@@ -58,12 +58,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! bridgePart  !<<BridgePart-section,BridgePart>> [*] !Relates the bridge parts to the Bridge.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfBridge  !<<ADEOfBridge-section,ADEOfBridge>>  [0..*] !Augments the Bridge with properties defined in an ADE.
 !===
@@ -82,7 +82,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BridgeConstructiveElementClassValue-section,BridgeConstructiveElementClassValue>>  [0..1] !Indicates the specific type of the BridgeConstructiveElement.
 
@@ -107,7 +107,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BridgeFurnitureClassValue-section,BridgeFurnitureClassValue>>  [0..1] !Indicates the specific type of the BridgeFurniture.
 
@@ -132,7 +132,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BridgeInstallationClassValue-section,BridgeInstallationClassValue>>  [0..1] !Indicates the specific type of the BridgeInstallation.
 
@@ -157,7 +157,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfBridgePart  !<<ADEOfBridgePart-section,ADEOfBridgePart>>  [0..*] !Augments the BridgePart with properties defined in an ADE.
 !===
@@ -176,14 +176,14 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! bridgeInstallation  !<<BridgeInstallation-section,BridgeInstallation>> [*] !Relates to the installation objects to the BridgeRoom.
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the BridgeRoom. This relation is inherited from the Core module.
 ! bridgeFurniture  !<<BridgeFurniture-section,BridgeFurniture>> [*] !Relates the furniture objects to the BridgeRoom.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BridgeRoomClassValue-section,BridgeRoomClassValue>>  [0..1] !Indicates the specific type of the BridgeRoom.
 

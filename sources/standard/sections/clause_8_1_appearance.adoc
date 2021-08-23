@@ -10,10 +10,10 @@ The UML diagram of the Appearance module is illustrated in <<appearance-uml>>. A
 
 [[appearance-uml]]
 .UML diagram of CityGML’s Appearance model.
-image::figures/Appearance.png[align="center"]
+image::figures/Appearance.png[]
 
 The ADE data types provided for the Appearance module are illustrated in <<appearance-uml-ade-types>>.
 
 [[appearance-uml-ade-types]]
 .ADE classes of the CityGML Appearance Module.
-image::figures/Appearance-ADE_Datatypes.png[align="center"]
+image::figures/Appearance-ADE_Datatypes.png[]

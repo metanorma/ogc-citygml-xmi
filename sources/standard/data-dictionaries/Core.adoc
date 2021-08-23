@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractAppearance  !<<ADEOfAbstractAppearance-section,ADEOfAbstractAppearance>>  [0..*] !Augments AbstractAppearance with properties defined in an ADE.
 !===
@@ -41,7 +41,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! generalizesTo  !<<AbstractCityObject-section,AbstractCityObject>> [*] !Relates generalized representations of the same real-world object in different Levels of Detail to the city object. The direction of this relation is from the city object to the corresponding generalized city objects.
 ! genericAttribute  !<<AbstractGenericAttribute-section,AbstractGenericAttribute>> [*] !Relates generic attributes to the city object.
 ! dynamizer  !<<AbstractDynamizer-section,AbstractDynamizer>> [*] !Relates Dynamizer objects to the city object. These allow timeseries data to override static attribute values of the city object.
@@ -51,7 +51,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! relativeToTerrain  !<<RelativeToTerrain-section,RelativeToTerrain>>  [0..1] !Describes the vertical position of the city object relative to the surrounding terrain.
 
@@ -74,7 +74,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractDynamizer  !<<ADEOfAbstractDynamizer-section,ADEOfAbstractDynamizer>>  [0..*] !Augments AbstractDynamizer with properties defined in an ADE.
 !===
@@ -93,7 +93,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! featureID  !<<ID-section,ID>> [1..1] !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
 
@@ -120,7 +120,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! creationDate  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a CityGML feature was added to the CityModel.
 
@@ -147,7 +147,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractLogicalSpace  !<<ADEOfAbstractLogicalSpace-section,ADEOfAbstractLogicalSpace>>  [0..*] !Augments AbstractLogicalSpace with properties defined in an ADE.
 !===
@@ -166,14 +166,14 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! lod3ImplicitRepresentation  !<<ImplicitGeometry-section,ImplicitGeometry>> [0..1] !Relates to an implicit geometry that represents the occupied space in Level of Detail 3.
 ! lod1ImplicitRepresentation  !<<ImplicitGeometry-section,ImplicitGeometry>> [0..1] !Relates to an implicit geometry that represents the occupied space in Level of Detail 1.
 ! lod2ImplicitRepresentation  !<<ImplicitGeometry-section,ImplicitGeometry>> [0..1] !Relates to an implicit geometry that represents the occupied space in Level of Detail 2.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractOccupiedSpace  !<<ADEOfAbstractOccupiedSpace-section,ADEOfAbstractOccupiedSpace>>  [0..*] !Augments AbstractOccupiedSpace with properties defined in an ADE.
 !===
@@ -192,7 +192,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! lod3TerrainIntersectionCurve  !<<GM_MultiCurve-section,GM_MultiCurve>> [0..1] !Relates to a 3D MultiCurve geometry that represents the terrain intersection curve of the physical space in Level of Detail 3.
 ! lod2TerrainIntersectionCurve  !<<GM_MultiCurve-section,GM_MultiCurve>> [0..1] !Relates to a 3D MultiCurve geometry that represents the terrain intersection curve of the physical space in Level of Detail 2.
 ! pointCloud  !<<AbstractPointCloud-section,AbstractPointCloud>> [0..1] !Relates to a 3D PointCloud that represents the physical space.
@@ -200,7 +200,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractPhysicalSpace  !<<ADEOfAbstractPhysicalSpace-section,ADEOfAbstractPhysicalSpace>>  [0..*] !Augments AbstractPhysicalSpace with properties defined in an ADE.
 !===
@@ -219,7 +219,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractPointCloud  !<<ADEOfAbstractPointCloud-section,ADEOfAbstractPointCloud>>  [0..*] !Augments AbstractPointCloud with properties defined in an ADE.
 !===
@@ -238,7 +238,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! lod2MultiCurve  !<<GM_MultiCurve-section,GM_MultiCurve>> [0..1] !Relates to a 3D MultiCurve geometry that represents the space in Level of Detail 2.
 ! lod0MultiCurve  !<<GM_MultiCurve-section,GM_MultiCurve>> [0..1] !Relates to a 3D MultiCurve geometry that represents the space in Level of Detail 0.
 ! lod0MultiSurface  !<<GM_MultiSurface-section,GM_MultiSurface>> [0..1] !Relates to a 3D MultiSurface geometry that represents the space in Level of Detail 0.
@@ -253,7 +253,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! spaceType  !<<SpaceType-section,SpaceType>>  [0..1] !Specifies the degree of openness of a space.
 
@@ -278,7 +278,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractSpaceBoundary  !<<ADEOfAbstractSpaceBoundary-section,ADEOfAbstractSpaceBoundary>>  [0..*] !Augments AbstractSpaceBoundary with properties defined in an ADE.
 !===
@@ -297,7 +297,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! lod1MultiSurface  !<<GM_MultiSurface-section,GM_MultiSurface>> [0..1] !Relates to a 3D MultiSurface geometry that represents the thematic surface in Level of Detail 1.
 ! pointCloud  !<<AbstractPointCloud-section,AbstractPointCloud>> [0..1] !Relates to a 3D PointCloud that represents the thematic surface.
 ! lod0MultiCurve  !<<GM_MultiCurve-section,GM_MultiCurve>> [0..1] !Relates to a 3D MultiCurve geometry that represents the thematic surface in Level of Detail 0.
@@ -307,7 +307,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! area  !<<QualifiedArea-section,QualifiedArea>>  [0..*] !Specifies qualified areas related to the thematic surface.
 
@@ -328,7 +328,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractUnoccupiedSpace  !<<ADEOfAbstractUnoccupiedSpace-section,ADEOfAbstractUnoccupiedSpace>>  [0..*] !Augments AbstractUnoccupiedSpace with properties defined in an ADE.
 !===
@@ -347,7 +347,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractVersion  !<<ADEOfAbstractVersion-section,ADEOfAbstractVersion>>  [0..*] !Augments AbstractVersion with properties defined in an ADE.
 !===
@@ -366,7 +366,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractVersionTransition  !<<ADEOfAbstractVersionTransition-section,ADEOfAbstractVersionTransition>>  [0..*] !Augments AbstractVersionTransition with properties defined in an ADE.
 !===
@@ -385,13 +385,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! multiPoint  !<<GM_MultiPoint-section,GM_MultiPoint>> [0..1] !Relates to the MultiPoint geometry of the Address. The geometry relates the address spatially to a city object.
 ! xalAddress  !<<XALAddress-section,XALAddress>> [1..1] !Relates an OASIS address object to the Address.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAddress  !<<ADEOfAddress-section,ADEOfAddress>>  [0..*] !Augments the Address with properties defined in an ADE.
 !===
@@ -410,12 +410,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! cityModelMember  !<<CityModelMember-section,CityModelMember>> [*] !Relates to all objects that are part of the CityModel.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! engineeringCRS  !<<EngineeringCRS-section,EngineeringCRS>>  [0..1] !Specifies the local engineering coordinate reference system of the CityModel that can be provided inline the CityModel instead of referencing a well-known CRS definition. The definition of an engineering CRS requires an anchor point which relates the origin of the local coordinate system to a point on the earth’s surface in order to facilitate the transformation of coordinates from the local engineering CRS.
 
@@ -436,12 +436,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! genericAttribute  !<<AbstractGenericAttribute-section,AbstractGenericAttribute>> [*] !Relates generic attributes to the CityObjectRelation.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! relationType  !<<RelationTypeValue-section,RelationTypeValue>> [1..1] !Indicates the specific type of the CityObjectRelation.
 !===
@@ -460,7 +460,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfClosureSurface  !<<ADEOfClosureSurface-section,ADEOfClosureSurface>>  [0..*] !Augments the ClosureSurface with properties defined in an ADE.
 !===
@@ -479,14 +479,14 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! relativeGeometry  !<<GM_Object-section,GM_Object>> [0..1] !Relates to a prototypical geometry in a local coordinate system stored inline with the city model.
 ! referencePoint  !<<GM_Point-section,GM_Point>> [1..1] !Relates to a 3D Point geometry that represents the base point of the object in the world coordinate system.
 ! appearance  !<<AbstractAppearance-section,AbstractAppearance>> [*] !Relates appearances to the ImplicitGeometry.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! objectID  !<<ID-section,ID>> [1..1] !Specifies the unique identifier of the ImplicitGeometry.
 
@@ -741,7 +741,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! targetResource  !<<URI-section,URI>> [1..1] !Specifies the URI that points to the object in the external information system.
 
@@ -764,7 +764,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! numberOfOccupants  !<<Integer-section,Integer>> [1..1] !Indicates the number of occupants contained by a feature.
 
@@ -787,7 +787,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! area  !<<Area-section,Area>> [1..1] !Specifies the value of the QualifiedArea.
 
@@ -808,7 +808,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! volume  !<<Volume-section,Volume>> [1..1] !Specifies the value of the QualifiedVolume.
 
@@ -843,7 +843,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! codeSpace  !<<URI-section,URI>>  [0..1] !Associates the Code with an authority that controls the term, keyword, or name.
 !===
@@ -876,7 +876,7 @@ forAll(p \| p > = 0 and p < = 1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! list  !<<DoubleBetween0and1-section,DoubleBetween0and1>> [1..1] !Specifies the list of double values.
 !===
@@ -895,7 +895,7 @@ forAll(p \| p > = 0 and p < = 1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! list  !<<Real-section,Real>> [1..1] !Specifies the list of double values.
 !===
@@ -914,7 +914,7 @@ forAll(p \| p > = 0 and p < = 1)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! list  !<<DoubleOrNilReason-section,DoubleOrNilReason>> [1..1] !Specifies the list of double values and/or nil reasons.
 !===
@@ -959,7 +959,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! uom  !<<UnitOfMeasure-section,UnitOfMeasure>> [1..1] !Specifies the unit of measurement of the double values.
 !===
@@ -1018,7 +1018,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Member name* !*Type* !*Definition*
+!*Member name* !*Type* !*Definition*
 
 ! cityObjectMember  !<<AbstractCityObject-section,AbstractCityObject>> [1..1] !Specifies the city objects that are part of the CityModel.
 
@@ -1043,7 +1043,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Member name* !*Type* !*Definition*
+!*Member name* !*Type* !*Definition*
 
 ! value  !<<Real-section,Real>> [1..1] !Specifies the double value.
 
@@ -1062,7 +1062,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Member name* !*Type* !*Definition*
+!*Member name* !*Type* !*Definition*
 
 ! nilReasonEnumeration  !<<NilReasonEnumeration-section,NilReasonEnumeration>> [1..1] !Indicates a nil reason that is provided in a code list.
 
@@ -1195,7 +1195,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! entirelyAboveTerrain  !Indicates that the city object is located entirely above the terrain.
 
@@ -1220,7 +1220,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! entirelyAboveWaterSurface  !Indicates that the city object is located entirely above the water surface.
 
@@ -1247,7 +1247,7 @@ forAll(p \| p > = 0 and p < = 3)
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! closed  !Indicates that the space has boundaries at the bottom, at the top, and on all sides.
 

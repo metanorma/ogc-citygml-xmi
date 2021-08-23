@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractVegetationObject  !<<ADEOfAbstractVegetationObject-section,ADEOfAbstractVegetationObject>>  [0..*] !Augments AbstractVegetationObject with properties defined in an ADE.
 !===
@@ -41,7 +41,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<PlantCoverClassValue-section,PlantCoverClassValue>>  [0..1] !Indicates the specific type of the PlantCover.
 
@@ -72,7 +72,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<SolitaryVegetationObjectClassValue-section,SolitaryVegetationObjectClassValue>>  [0..1] !Indicates the specific type of the SolitaryVegetationObject.
 

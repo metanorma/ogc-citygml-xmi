@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! buildingFurniture  !<<BuildingFurniture-section,BuildingFurniture>> [*] !Relates the furniture objects to the Building or BuildingPart.
 ! buildingRoom  !<<BuildingRoom-section,BuildingRoom>> [*] !Relates the rooms to the Building or BuildingPart.
 ! buildingInstallation  !<<BuildingInstallation-section,BuildingInstallation>> [*] !Relates the installation objects to the Building or BuildingPart.
@@ -32,7 +32,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BuildingClassValue-section,BuildingClassValue>>  [0..1] !Indicates the specific type of the Building or BuildingPart.
 
@@ -67,7 +67,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! buildingRoom  !<<BuildingRoom-section,BuildingRoom>> [*] !Relates the rooms to the building subdivision.
 ! buildingFurniture  !<<BuildingFurniture-section,BuildingFurniture>> [*] !Relates the furniture objects to the building subdivision.
 ! buildingConstructiveElement  !<<BuildingConstructiveElement-section,BuildingConstructiveElement>> [*] !Relates the constructive elements to the building subdivision.
@@ -75,7 +75,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BuildingSubdivisionClassValue-section,BuildingSubdivisionClassValue>>  [0..1] !Indicates the specific type of the building subdivision.
 
@@ -104,12 +104,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! buildingPart  !<<BuildingPart-section,BuildingPart>> [*] !Relates the building parts to the Building.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfBuilding  !<<ADEOfBuilding-section,ADEOfBuilding>>  [0..*] !Augments the Building with properties defined in an ADE.
 !===
@@ -128,7 +128,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BuildingConstructiveElementClassValue-section,BuildingConstructiveElementClassValue>>  [0..1] !Indicates the specific type of the BuildingConstructiveElement.
 
@@ -153,7 +153,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BuildingFurnitureClassValue-section,BuildingFurnitureClassValue>>  [0..1] !Indicates the specific type of the BuildingFurniture.
 
@@ -178,7 +178,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BuildingInstallationClassValue-section,BuildingInstallationClassValue>>  [0..1] !Indicates the specific type of the BuildingInstallation.
 
@@ -203,7 +203,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfBuildingPart  !<<ADEOfBuildingPart-section,ADEOfBuildingPart>>  [0..*] !Augments the BuildingPart with properties defined in an ADE.
 !===
@@ -222,14 +222,14 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! buildingInstallation  !<<BuildingInstallation-section,BuildingInstallation>> [*] !Relates the installation objects to the BuildingRoom.
 ! buildingFurniture  !<<BuildingFurniture-section,BuildingFurniture>> [*] !Relates the furniture objects to the BuildingRoom.
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the BuildingRoom. This relation is inherited from the Core module.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<BuildingRoomClassValue-section,BuildingRoomClassValue>>  [0..1] !Indicates the specific type of the BuildingRoom.
 
@@ -256,13 +256,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! storey  !<<Storey-section,Storey>> [*] !Relates to the storeys on which the BuildingUnit is located.
 ! address  !<<Address-section,Address>> [*] !Relates to the addresses that are assigned to the BuildingUnit.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfBuildingUnit  !<<ADEOfBuildingUnit-section,ADEOfBuildingUnit>>  [0..*] !Augments the BuildingUnit with properties defined in an ADE.
 !===
@@ -281,13 +281,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AbstractThematicSurface-section,AbstractThematicSurface>> [*] !Relates to the surfaces that bound the Storey. This relation is inherited from the Core module.
 ! buildingUnit  !<<BuildingUnit-section,BuildingUnit>> [*] !Relates to the building units that belong to the Storey.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfStorey  !<<ADEOfStorey-section,ADEOfStorey>>  [0..*] !Augments the Storey with properties defined in an ADE.
 !===
@@ -428,7 +428,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! highReference  !<<RoomElevationReferenceValue-section,RoomElevationReferenceValue>> [1..1] !Indicates the high point used to calculate the value of the room height.
 

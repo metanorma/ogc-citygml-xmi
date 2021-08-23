@@ -12,7 +12,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 !
 !<<FeatureType-section,FeatureType>>
 [1..1]
@@ -35,7 +35,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! element
 !<<CV_GridPointValuePair-section,CV_GridPointValuePair>>
 [1..*]
@@ -62,13 +62,13 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! CRS !<<CRS-section,CRS>> [0..1]!
 ! CRS !<<SC_CRS-section,SC_CRS>> [0..1]!
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 ! coordinate   !Sequence<<<number-section,Number>>> [1..1]!
 ! dimension   !<<Integer-section,Integer>> [1..1] !
 !===
@@ -93,7 +93,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 !
 !<<Geometry-section,Geometry>> [1..1]
 !
@@ -131,7 +131,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! length  !<<Length-section,Length>> [1..1] !
 !===
@@ -152,7 +152,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! position   !Set<<<DirectPosition-section,DirectPosition>>> [1..1] !
 !===
@@ -173,7 +173,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! area   !<<Area-section,Area>> [1..1] !
 
@@ -196,7 +196,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 !
 !<<Point-section,Point>>
 [1..1]
@@ -208,7 +208,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! position   !<<DirectPosition-section,DirectPosition>> [1..1]  !The attribute "position" shall be the DirectPosition of this GM_Point.
 GM_Point::position [1] : DirectPosition
@@ -231,7 +231,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! composite
 !<<GM_CompositeSolid-section,GM_CompositeSolid>>
 [0..*]
@@ -259,7 +259,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 !
 !<<GM_GenericSurface-section,GM_GenericSurface>>
 [1..1]
@@ -286,7 +286,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! breakLines   !Set<<<GM_LineString-section,GM_LineString>>> [1..1] !
 
@@ -328,7 +328,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! coordOperationTo
 !<<CC_CoordinateOperation-section,CC_CoordinateOperation>>
 [0..*]
@@ -340,7 +340,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! scope   !<<CharacterString-section,CharacterString>>  [1..*] !Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
 !===
@@ -361,7 +361,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! anyOther   !<<TM_TemporalPosition-section,TM_TemporalPosition>> [1..1] !
 

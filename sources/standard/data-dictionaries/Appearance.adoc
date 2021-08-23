@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! isFront  !<<Boolean-section,Boolean>>  [0..1] !Indicates whether the texture or material is assigned to the front side or the back side of the surface geometry object.
 
@@ -43,7 +43,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! imageURI  !<<URI-section,URI>> [1..1] !Specifies the URI that points to the external image data file.
 
@@ -72,12 +72,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! surfaceData  !<<AbstractSurfaceData-section,AbstractSurfaceData>> [*] !Relates to the surface data that are part of the Appearance.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! theme  !<<CharacterString-section,CharacterString>>  [0..1] !Specifies the topic of the Appearance. Each Appearance contains surface data for one theme only. Examples of themes are infrared radiation, noise pollution, or earthquake-induced structural stress.
 
@@ -98,12 +98,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! referencePoint  !<<GM_Point-section,GM_Point>>  [0..1]!Relates to the 2D Point geometry that represents the center of the upper left image pixel in world space.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! preferWorldFile  !<<Boolean-section,Boolean>>  [0..1] !Indicates whether the georeference from the image file or the accompanying world file should be preferred.
 
@@ -128,12 +128,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! textureParameterization  !<<AbstractTextureParameterization-section,AbstractTextureParameterization>> [*] !Relates to the texture coordinates or transformation matrices used for parameterization.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfParameterizedTexture  !<<ADEOfParameterizedTexture-section,ADEOfParameterizedTexture>>  [0..*] !Augments the ParameterizedTexture with properties defined in an ADE.
 !===
@@ -152,7 +152,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! target  !<<URI-section,URI>> [1..1] !Specifies the URI that points to the surface geometry object to which the texture is applied.
 !===
@@ -171,7 +171,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! ambientIntensity  !<<DoubleBetween0and1-section,DoubleBetween0and1>>  [0..1] !Specifies the minimum percentage of diffuseColor that is visible regardless of light sources.
 
@@ -292,12 +292,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! crs  !<<SC_CRS-section,SC_CRS>> [0..1] !Relates to the coordinate reference system of the transformation matrix.
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! worldToTexture  !<<TransformationMatrix3x4-section,TransformationMatrix3x4>> [1..1] !Specifies the 3x4 transformation matrix that defines the transformation between world coordinates and texture coordinates.
 !===
@@ -316,7 +316,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! textureCoordinates  !<<DoubleList-section,DoubleList>>  [1..*] !Specifies the coordinates of texture used for parameterization. The texture coordinates are provided separately for each LinearRing of the surface geometry object.
 
@@ -374,7 +374,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! specific  !Indicates that the texture is specific to a single surface.
 
@@ -395,7 +395,7 @@ none
 !===
 |[cols="1,4",options="header"]
 !===
-^!{set:cellbgcolor:#DDDDDD} *Literal value* !*Definition*
+^!*Literal value* !*Definition*
 
 ^! none  !Indicates that the texture is applied to the surface "as is". The part of the surface that is not covered by the texture is shown fully transparent. [cf. COLLADA]
 

@@ -16,7 +16,7 @@ The CityGML Conceptual Model provides models for the most important types of obj
 
 [[figure-moduleoverview]]
 .CityGML 3.0 module overview. The vertical boxes show the different thematic modules. Horizontal modules specify concepts that are applicable to all thematic modules.
-image::images/ModuleOverview.png[align="center"]
+image::images/ModuleOverview.png[]
 
 The CityGML conceptual model is thematically decomposed into a _Core module_ and different kinds of _extension modules_ as shown in <<figure-moduleoverview>>. The Core module (shown in green) comprises the basic concepts and components of the CityGML CM and, thus, must be implemented by any conformant system. Each red colored module covers a specific thematic field of virtual 3D city models.
 
@@ -90,7 +90,7 @@ Note that the conceptual schema of ISO 19107 allows composite geometries to be d
 
 [[figure-recursiveaggregation]]
 .Recursive aggregation of objects and geometries in CityGML (graphic: IGG Uni Bonn).
-image::images/RecursiveAggregation.png[align="center"]
+image::images/RecursiveAggregation.png[]
 
 While the CityGML Conceptual Model does not employ the topology classes from ISO 19107, topological relations between geometries can be established by sharing geometries (typically parts of the boundary) between different geometric objects. One part of real-world space can be represented only once by a geometry object and is referenced by all features or more complex geometries which are defined or bounded by this geometry object. Thus redundancy can be avoided and explicit topological relations between parts are maintained.
 
@@ -112,7 +112,7 @@ In CityGML, objects of equal shape like trees and other vegetation objects, traf
 
 [[figure-prototypicshapes]]
 .Examples of prototypic shapes (source: Rheinmetall Defence Electronics).
-image::images/PrototypicShapes.png[align="center"]
+image::images/PrototypicShapes.png[]
 
 ==== Point Cloud Representation
 
@@ -137,7 +137,7 @@ Physical spaces, in turn, are further classified into occupied spaces and unoccu
 
 [[figure-occupiedandunoccupiedspaces]]
 .Occupied and unoccupied spaces
-image::images/OccupiedAndUnoccupiedSpaces.png[align="center"]
+image::images/OccupiedAndUnoccupiedSpaces.png[]
 
 The new space concept offers several advantages:
 
@@ -170,7 +170,7 @@ The classification of real-world objects into spaces and space boundaries is sol
 
 [[figure-buildinglods]]
 .Representation of the same real-world building in the Levels of Detail 0-3.
-image::images/BuildingLODs.png[align="center"]
+image::images/BuildingLODs.png[]
 
 The biggest changes between CityGML 3.0 and earlier versions are that:
 
@@ -181,7 +181,7 @@ The biggest changes between CityGML 3.0 and earlier versions are that:
 
 [[figure-floorplan]]
 .Floor plan representation (LOD0) of a building (left), combined LOD2 indoor and outdoor representation (right). Image adopted from <<Löwner2016>>.
-image::images/Floorplan.png[align="center"]
+image::images/Floorplan.png[]
 
 _Spaces_ and all its subclasses like _Building_, _Room_, and _TrafficSpace_ can now be spatially represented by single points in LOD0, multi-surfaces in LOD0/2/3, solids in LOD1/2/3, and multi-curves in LOD2/3. _Space Boundaries_ and all its subclasses such as _WallSurface_, _LandUse_, or _Relief_ can now be represented by multi-surfaces in LOD0/2/3 and as multi-curves in LOD2/3. See <<geometry-lod-section>> for further details on the different Levels of Detail.
 
@@ -193,7 +193,7 @@ The concept of ClosureSurface can also be employed to model the entrances of sub
 
 [[figure-closuresurfaces]]
 .Closure surfaces to seal open structures. Passages are subsurface objects (left). The entrance is sealed by a virtual ClosureSurface feature, which is both part of the DTM and the subsurface object (right) (graphic: IGG Uni Bonn).
-image::images/ClosureSurfaces.png[align="center"]
+image::images/ClosureSurfaces.png[]
 
 ==== Terrain Intersection Curves
 
@@ -203,7 +203,7 @@ If, for example, a building has a courtyard, the TIC consists of two closed ring
 
 [[figure-terrainintersectioncurves]]
 .TerrainIntersectionCurve for a building (left, black) and a tunnel object (right, red). The tunnel’s hollow space is sealed by a triangulated ClosureSurface (graphic: IGG Uni Bonn).
-image::images/TerrainIntersectionCurves.png[align="center"]
+image::images/TerrainIntersectionCurves.png[]
 
 ==== Coherent Semantical-Geometrical Modelling
 
@@ -237,7 +237,7 @@ The new Dynamizer module improves the usability of CityGML for different kinds o
 
 [[figure-dynamizers]]
 .Dynamizers link timeseries data coming from different sources to specific properties of individual city objects.
-image::images/Dynamizers.png[align="center"]
+image::images/Dynamizers.png[]
 
 As shown in <<figure-dynamizers>>, Dynamizers serve three main purposes:
 

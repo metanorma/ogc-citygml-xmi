@@ -11,18 +11,18 @@ A detailed discussion of the Requirements Class Construction can be found in the
 [[construction-uml]]
 .UML diagram of the Construction Model.
 
-image::figures/Construction.png[align="center"]
+image::figures/Construction.png[]
 
 The ADE data types provided for the Construction module are illustrated in <<construction-uml-ade-types>>.
 
 [[construction-uml-ade-types]]
 .ADE classes of the CityGML Construction module.
-image::figures/Construction-ADE_Datatypes.png[align="center"]
+image::figures/Construction-ADE_Datatypes.png[]
 
 The Code Lists provided for the Construction module are illustrated in <<construction-uml-codelists>>.
 
 [[construction-uml-codelists]]
 .Codelists from the CityGML Construction module.
-image::figures/Construction-Codelists.png[align="center"]
+image::figures/Construction-Codelists.png[]
 
 <<construction-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Construction module:

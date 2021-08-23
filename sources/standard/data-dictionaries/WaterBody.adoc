@@ -22,7 +22,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfAbstractWaterBoundarySurface  !<<ADEOfAbstractWaterBoundarySurface-section,ADEOfAbstractWaterBoundarySurface>>  [0..*] !Augments AbstractWaterBoundarySurface with properties defined in an ADE.
 !===
@@ -41,12 +41,12 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!*Role name* !*Target class and multiplicity*  !*Definition*
 ! boundary  !<<AbstractWaterBoundarySurface-section,AbstractWaterBoundarySurface>> [*] !
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! class  !<<WaterBodyClassValue-section,WaterBodyClassValue>>  [0..1] !Indicates the specific type of the WaterBody.
 
@@ -71,7 +71,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! adeOfWaterGroundSurface  !<<ADEOfWaterGroundSurface-section,ADEOfWaterGroundSurface>>  [0..*] !Augments the WaterGroundSurface with properties defined in an ADE.
 !===
@@ -90,7 +90,7 @@
 !===
 |[cols="15,20,60",options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!*Attribute* !*Value type and multiplicity* !*Definition*
 
 ! waterLevel  !<<WaterLevelValue-section,WaterLevelValue>>  [0..1] !Specifies the level of the WaterSurface.
 

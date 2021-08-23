@@ -1,8 +1,7 @@
 [appendix]
-:appendix-caption: Annex
 == Revision History
 
-[width="90%",options="header"]
+[options="header"]
 |===
 |Date |Release |Editor | Primary clauses modified |Description
 |2020-06-04 |0.9.0 |C. Heazel |all |Draft for review
