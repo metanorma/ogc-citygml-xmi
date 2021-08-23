@@ -5,7 +5,7 @@
 This standard defines a <<conceptual_model_definition,Conceptual Model>> which is independent of any encoding or formatting techniques. The {{Standardization Target,Standardization Targets}} for this standard are:
 
 . {{conceptual model,Conceptual Models}} (extended versions of this conceptual model)
-. {{Implementation Specifications}} (encodings of this conceptual model)
+. {{Implementation Specification,Implementation Specifications}} (encodings of this conceptual model)
 
 [[conceptual-model-conformance]]
 === Conceptual Models
