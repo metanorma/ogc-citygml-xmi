@@ -1,6 +1,5 @@
 [[req_tunnel_boundaries]]
-[cols="2,6",options="header"]
-|===
-| Requirement  {counter:req-id} | /req/tunnel/boundaries
-2+|<<tunnel-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Tunnel module. An Implementation Specification SHALL only support the boundaries described in <<tunnel-boundaries-table>>
-|===
+[requirement,type="general",label="/req/tunnel/boundaries"]
+====
+<<tunnel-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Tunnel module. An Implementation Specification SHALL only support the boundaries described in <<tunnel-boundaries-table>>
+====
