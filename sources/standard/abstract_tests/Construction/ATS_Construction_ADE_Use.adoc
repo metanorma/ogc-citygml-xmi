@@ -1,7 +1,7 @@
 [[ats_construction_ade_use]]
-[cols="2,6"]
+[cols="2h,6",options="header"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/construction/ade/use*
+| Abstract Test {counter:ats-id} | /ats/construction/ade/use
 ^|Test Purpose |To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
 ^|Requirement |<<req_construction_ade_use,/req/construction/ade_use>>
 ^|Test Method |Manual Inspection

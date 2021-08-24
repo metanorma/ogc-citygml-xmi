@@ -1,8 +1,8 @@
 [[req_ade_uml]]
-[cols="2,6"]
+[cols="2h,6",options="header"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/ade/uml*
-2+|An ADE SHALL be defined as conceptual model in UML in accordance with the conceptual modelling framework of the ISO 19100 series of International Standards
+| Requirement  {counter:req-id} | /req/ade/uml
+2+|An ADE SHALL be defined as conceptual model in UML in accordance with the conceptual modeling framework of the ISO 19100 series of International Standards
 ^|A |The UML model SHALL adhere to the General Feature Model as specified in ISO 19109.
 ^|B |The UML model SHALL adhere to rules and constraints for application schemas as specified in ISO/TS 19103.
 ^|C |Every ADE SHALL be organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE.

@@ -6,9 +6,9 @@ The CityGML UML model is the normative definition of the CityGML Conceptual Mode
 An alternate representation can be found in the Data Dictionary in <<data-dictionary-section>>.
 
 [[rc_overview-section]]
-=== Structural Overview of Requirements Classes
+=== Structural overview of requirements classes
 
-The Requirements Classes for this standard are structured as UML Packages as
+The Requirements Classes for this Standard are structured as UML Packages as
 illustrated in <<package-diagram>>. Each Requirements Class is specified in
 detail in their respective subsections. These subsections include a UML diagram,
 data dictionary, and the applicable requirements.
@@ -20,21 +20,16 @@ image::figures/CityGMLPackageDiagram.png[]
 A detailed discussion of the structuring of the UML model can be found in the
 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-structure-section[OGC CityGML 3.0 Users Guide].
 
-[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,packages_config_lutaml.yml]
+[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages.yml]
 ----
+[.before, package="Core"]
+....
+include::clause_8_2_core.adoc[]
+....
+
 [.before, package="Appearance"]
 ....
-include::clause_8_1_appearance.adoc[]
-....
-
-[.before, package="Bridge"]
-....
-include::clause_8_2_bridge_model.adoc[]
-....
-
-[.before, package="Building"]
-....
-include::clause_8_3_building_model.adoc[]
+include::clause_8_3_appearance.adoc[]
 ....
 
 [.before, package="CityFurniture"]
@@ -47,64 +42,69 @@ include::clause_8_4_city_furniture.adoc[]
 include::clause_8_5_city_object_group.adoc[]
 ....
 
-[.before, package="Construction"]
-....
-include::clause_8_6_construction.adoc[]
-....
-
-[.before, package="Core"]
-....
-include::clause_8_7_core.adoc[]
-....
-
 [.before, package="Dynamizer"]
 ....
-include::clause_8_8_dynamizer.adoc[]
+include::clause_8_6_dynamizer.adoc[]
 ....
 
 [.before, package="Generics"]
 ....
-include::clause_8_9_generics.adoc[]
+include::clause_8_7_generics.adoc[]
 ....
 
 [.before, package="LandUse"]
 ....
-include::clause_8_10_land_use.adoc[]
+include::clause_8_8_land_use.adoc[]
 ....
 
 [.before, package="PointCloud"]
 ....
-include::clause_8_11_pointcloud.adoc[]
+include::clause_8_9_pointcloud.adoc[]
 ....
 
 [.before, package="Relief"]
 ....
-include::clause_8_12_relief.adoc[]
+include::clause_8_10_relief.adoc[]
 ....
 
 [.before, package="Transportation"]
 ....
-include::clause_8_13_transportation.adoc[]
-....
-
-[.before, package="Tunnel"]
-....
-include::clause_8_14_tunnel.adoc[]
+include::clause_8_11_transportation.adoc[]
 ....
 
 [.before, package="Vegetation"]
 ....
-include::clause_8_15_vegetation.adoc[]
+include::clause_8_12_vegetation.adoc[]
 ....
 
 [.before, package="Versioning"]
 ....
-include::clause_8_16_versioning.adoc[]
+include::clause_8_13_versioning.adoc[]
 ....
 
 [.before, package="WaterBody"]
 ....
-include::clause_8_17_waterbody.adoc[]
+include::clause_8_14_waterbody.adoc[]
+....
+
+[.before, package="Construction"]
+....
+include::clause_8_15_construction.adoc[]
+....
+
+[.before, package="Bridge"]
+....
+include::clause_8_16_bridge_model.adoc[]
+....
+
+[.before, package="Building"]
+....
+include::clause_8_17_building_model.adoc[]
+....
+
+[.before, package="Tunnel"]
+....
+include::clause_8_18_tunnel.adoc[]
 ....
 
 [.include_block, base_path="requirements/requirements_class_"]
@@ -113,16 +113,12 @@ include::clause_8_17_waterbody.adoc[]
 
 [.include_block, base_path="boundaries/boundaries_"]
 ....
-<<{{ package_name }}-boundaries-table>> lists the surfaces that are allowed as
-thematic surface boundaries of the space classes defined in the
-{{ package.name }} module:
-
 ....
 
 [.include_block, base_path="requirements/REQ_Classes_"]
 ....
 The following requirement defines the rules governing implementation
-of the CityGML Bridge Module as an Implementation Specification.
+of the CityGML TO_BE_INTERPOLATED Module as an Implementation Specification.
 ....
 
 [.include_block, base_path="requirements/REQ_Boundaries_"]
@@ -133,128 +129,15 @@ following spatial boundary requirement:
 
 [.include_block, base_path="requirements/REQ_ADE_Use_"]
 ....
-The use of extension capabilities by Bridge elements is constrained
+The use of extension capabilities by TO_BE_INTERPOLATED elements is constrained
 by the following requirement:
 ....
 
-[.after, package="Appearance"]
+[.after, package="*"]
 ....
 ==== Additional Information
 
-Additional information about the {{ package.name }} Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{package_name}}-section[OGC CityGML 3.0 Users Guide]
-....
-
-
-[.after, package="Bridge"]
-....
-==== Additional Information
-
-Additional information about the Bridge Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-bridge-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Building"]
-....
-==== Additional Information
-
-Additional information about the Building Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-building-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="CityFurniture"]
-....
-==== Additional Information
-
-Additional information about the City Furniture Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-furniture-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="CityObjectGroup"]
-....
-==== Additional Information
-
-Additional information about the City Object Group Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-object-group-section[OGC CityGML 3.0 Users Guide].
-....
-
-[.after, package="Construction"]
-....
-==== Additional Information
-
-Additional information about the Construction Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-construction-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Core"]
-....
-==== Additional Information
-
-A detailed discussion of the CityGML Core can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-core-section[OGC CityGML 3.0 Users Guide].
-....
-
-[.after, package="Dynamizer"]
-....
-==== Additional Information
-
-Additional information about the Dynamizer Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-dynamizer-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Generics"]
-....
-==== Additional Information
-
-Additional information about the Generics Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-generics-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="LandUse"]
-....
-==== Additional Information
-
-Additional information about the Land Use Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-land-use-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="PointCloud"]
-....
-==== Additional Information
-
-Additional information about the Point Cloud Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-point-cloud-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Relief"]
-....
-==== Additional Information
-
-Additional information about the Relief Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-relief-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Transportation"]
-....
-==== Additional Information
-
-Additional information about the Transportation Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-transportation-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Tunnel"]
-....
-==== Additional Information
-
-Additional information about the Tunnel Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-tunnel-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Vegetation"]
-....
-==== Additional Information
-
-Additional information about the Vegetation Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-vegetation-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="Versioning"]
-....
-==== Additional Information
-
-Additional information about the Versioning Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-versioning-section[OGC CityGML 3.0 Users Guide]
-....
-
-[.after, package="WaterBody"]
-....
-==== Additional Information
-
-Additional information about the WaterBody Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-waterbody-section[OGC CityGML 3.0 Users Guide]
+Additional information about the TO_BE_INTERPOLATED Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-TO_BE_INTERPOLATED_LOWER_CASE-section[OGC CityGML 3.0 Users Guide]
 ....
 
 ----

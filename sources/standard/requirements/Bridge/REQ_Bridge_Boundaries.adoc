@@ -1,6 +1,0 @@
-[[req_bridge_boundaries]]
-[cols="2,6"]
-|===
-^|*Requirement  {counter:req-id}* |*/req/bridge/boundaries*
-2+|<<bridge-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Bridge module. An Implementation Specification SHALL only support the boundaries described in <<bridge-boundaries-table>>
-|===

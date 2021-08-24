@@ -2,13 +2,12 @@
 
 include::../requirements/requirements_class_conceptual-profile.adoc[]
 
-CityGML has been designed as a universal topographic information model that defines object types and attributes which are useful for a broad range of applications. In practical applications the objects within specific 3D city models will most likely contain attributes which are not explicitly modelled in CityGML. Moreover, there might be 3D objects which are not covered by the thematic classes of CityGML. Therefore, it is anticiapted that the CityGML 3.0 Conceptual Model may be `profiled` to address the needs of a user community.
+CityGML has been designed as a universal topographic information model that defines object types and attributes which are useful for a broad range of applications. In practical applications the objects within specific 3D city models will most likely contain attributes which are not explicitly modeled in CityGML. Moreover, there might be 3D objects which are not covered by the thematic classes of CityGML. Therefore, it is anticipated that the CityGML 3.0 Conceptual Model may be `profiled` to address the needs of a user community.
 
-Profiling is a dangerous business. It is far too easy for a proliferation of profiles to undermine the interoperability which was the goal of the original standard. Therefore, the CityGML 3.0 Conceptual Model Standard includes Conceptual Profiles as one of its' <<standardization-target-definition,Standardization Targets>>.
+Profiling is a dangerous business. It is far too easy for a proliferation of profiles to undermine the interoperability which was the goal of the original standard. Therefore, the CityGML 3.0 Conceptual Model Standard includes Conceptual Profiles as one of its' {{Standardization Target,Standardization Targets}}.
 
 The Conceptual Model Profile Requirements Class defines the requirements and permissions governing the creation of CityGML 3.0 Conceptual Model profiles. Conformance with this Requirements Class shall be advertised as
 
-[source]
 ----
 http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-conceptual-profile
 ----

@@ -8,7 +8,7 @@
 |<<AbstractTunnel-section,AbstractTunnel>> +
  «FeatureType»  |AbstractTunnel is an abstract superclass representing the common attributes and associations of the classes Tunnel and TunnelPart.
 |<<HollowSpace-section,HollowSpace>> +
- «FeatureType»  |A HollowSpace is a space within a Tunnel or TunnelPart intended for certain functions (e.g. transport or passage ways, service rooms, emergency shelters). A HollowSpace is bounded physically and/or virtually (e.g. by ClosureSurfaces or GenericSurfaces).
+ «FeatureType»  |A HollowSpace is a space within a Tunnel or TunnelPart intended for certain functions (e.g., transport or passage ways, service rooms, emergency shelters). A HollowSpace is bounded physically and/or virtually (e.g., by ClosureSurfaces or GenericSurfaces).
 |<<TunnelConstructiveElement-section,TunnelConstructiveElement>> +
  «FeatureType»  | A TunnelConstructiveElement is an element of a Tunnel which is essential from a structural point of view. Examples are walls, slabs, beams.
 |<<TunnelFurniture-section,TunnelFurniture>> +
@@ -75,4 +75,4 @@
  «CodeList»  |TunnelInstallationUsageValue is a code list that enumerates the different uses of a TunnelInstallation.
 |<<TunnelUsageValue-section,TunnelUsageValue>> +
  «CodeList»  |TunnelUsageValue is a code list that enumerates the different uses of a Tunnel.
-|===  
+|===

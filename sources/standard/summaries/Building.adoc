@@ -4,7 +4,7 @@
 |===
 ^|*Class* ^|*Description*
 |<<Building-section,Building>> +
- «TopLevelFeatureType»  |A Building is a free-standing, self-supporting construction that is roofed, usually walled, and can be entered by humans and is normally designed to stand permanently in one place. It is intended for human occupancy (e.g. a place of work or recreation), habitation and/or shelter of humans, animals or things.
+ «TopLevelFeatureType»  |A Building is a free-standing, self-supporting construction that is roofed, usually walled, and can be entered by humans and is normally designed to stand permanently in one place. It is intended for human occupancy (e.g., a place of work or recreation), habitation and/or shelter of humans, animals or things.
 |<<AbstractBuilding-section,AbstractBuilding>> +
  «FeatureType»  |AbstractBuilding is an abstract superclass representing the common attributes and associations of the classes Building and BuildingPart.
 |<<AbstractBuildingSubdivision-section,AbstractBuildingSubdivision>> +
@@ -18,7 +18,7 @@
 |<<BuildingPart-section,BuildingPart>> +
  «FeatureType»  |A BuildingPart is a physical or functional subdivision of a Building. It would be considered a Building, if it were not part of a collection of other BuildingParts.
 |<<BuildingRoom-section,BuildingRoom>> +
- «FeatureType»  |A BuildingRoom is a space within a Building or BuildingPart intended for human occupancy (e.g. a place of work or recreation) and/or containment of animals or things. A BuildingRoom is bounded physically and/or virtually (e.g. by ClosureSurfaces or GenericSurfaces).
+ «FeatureType»  |A BuildingRoom is a space within a Building or BuildingPart intended for human occupancy (e.g., a place of work or recreation) and/or containment of animals or things. A BuildingRoom is bounded physically and/or virtually (e.g., by ClosureSurfaces or GenericSurfaces).
 |<<BuildingUnit-section,BuildingUnit>> +
  «FeatureType»  |A BuildingUnit is a logical subdivision of a Building. BuildingUnits are formed according to some homogeneous property like function, ownership, management, or accessability. They may be separately sold, rented out, inherited, managed, etc.
 |<<Storey-section,Storey>> +
@@ -47,7 +47,7 @@
 |<<ADEOfBuildingRoom-section,ADEOfBuildingRoom>> +
  «DataType»  |ADEOfBuildingRoom acts as a hook to define properties within an ADE that are to be added to a BuildingRoom.
 |<<ADEOfBuildingUnit-section,ADEOfBuildingUnit>> +
- «DataType»  |ADEOfBuildingUnit acts as a hook to define properties within an ADE that are to be added to a BuildingUnit. 
+ «DataType»  |ADEOfBuildingUnit acts as a hook to define properties within an ADE that are to be added to a BuildingUnit.
 |<<ADEOfStorey-section,ADEOfStorey>> +
  «DataType»  |ADEOfStorey acts as a hook to define properties within an ADE that are to be added to a Storey.
 |<<RoomHeight-section,RoomHeight>> +
@@ -99,4 +99,4 @@
  «CodeList»  |RoofTypeValue is a code list that enumerates different roof types.
 |<<RoomElevationReferenceValue-section,RoomElevationReferenceValue>> +
  «CodeList»  |RoomElevationReferenceValue is a code list that enumerates the different elevation reference levels used to measure room heights.
-|===  
+|===

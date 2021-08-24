@@ -11,7 +11,7 @@ All requirements and conformance tests that appear in this document are denoted 
 [[uml_notation_section]]
 === UML Notation
 
-The CityGML Conceptual Model (CM) Standard is presented in this document through diagrams using the Unified Modeling Language (UML) static structure diagram (see Booch et al. 1997). The UML notations used in this standard are described in the diagram in <<figure-1>>.
+The CityGML Conceptual Model (CM) Standard is presented in this document through diagrams using the Unified Modeling Language (UML) static structure diagram (see Booch, et al. 1997). The UML notations used in this Standard are described in the diagram in <<figure-1>>.
 
 [[figure-1]]
 .UML notation (see ISO TS 19103, Geographic information - Conceptual schema language).
@@ -19,7 +19,7 @@ image::images/UML_Notation.png[]
 
 All associations between model elements in the CityGML Conceptual Model are uni-directional. Thus, associations in the model are navigable in only one direction. The direction of navigation is depicted by an arrowhead. In general, the context an element takes within the association is indicated by its role. The role is displayed near the target of the association. If the graphical representation is ambiguous though, the position of the role has to be drawn to the element the association points to.
 
-The following stereotypes are used in this model:
+The following stereotypes are used in this model.
 
 * &#171;ApplicationSchema&#187; denotes a conceptual schema for data required by one  or more applications. In the CityGML Conceptual Model, every module is defined as a separate application schema to allow for modularization.
 * &#171;FeatureType&#187; represents features that are similar and exhibit common characteristics. Features are abstractions of real-world phenomena and have an identity.
@@ -34,7 +34,7 @@ The following stereotypes are used in this model:
 * &#171;Property&#187; denotes attributes and association roles. This stereotype does not add further semantics to the conceptual model, but is required to be able to add tagged values to the attributes and association roles that are relevant for the encoding.
 * &#171;Version&#187; denotes that the value of an association role that ends at a feature type is a specific version of the feature, not the feature in general.
 
-In order to enhance the readability of the CityGML UML diagrams, classes are depicted in different colors. The following coloring scheme is applied:
+In order to enhance the readability of the CityGML UML diagrams, classes are depicted in different colors. The following coloring scheme is applied.
 
 image::images/ColorScheme_yellow.png[]
 
@@ -46,17 +46,17 @@ Classes painted in blue belong to a Requirements Class different to that associa
 
 image::images/ColorScheme_green.png[]
 
-Classes painted in green are defined in the ISO standards 19107, 19111, or 19123. Their class names are preceded by the UML package name, in which the classes are defined.
+Classes painted in green are defined in the ISO standards <<iso19107>>, <<iso19111>>, or <<iso19123>>. Their class names are preceded by the UML package name, in which the classes are defined.
 
 image:images/ColorScheme_grey.png[]
 
-Classes painted in grey are defined in the ISO standard 19109. In the context of this standard, this only applies to the class _AnyFeature_. _AnyFeature_ is an instance of the metaclass _FeatureType_ and acts as super class of all classes in the CityGML UML model with the stereotype &#171;FeatureType&#187;. A metaclass is a class whose instances are classes.
+Classes painted in grey are defined in the ISO standard <<iso19109>>. In the context of this Standard, this only applies to the class _AnyFeature_. _AnyFeature_ is an instance of the metaclass _FeatureType_ and acts as super class of all classes in the CityGML UML model with the stereotype &#171;FeatureType&#187;. A metaclass is a class whose instances are classes.
 
 image::images/ColorScheme_white.png[]
 
 The color white is used for notes and <<iso19507,Object Constraint Language>> (OCL) constraints that are provided in the UML diagrams.
 
-The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the _CityGML Building_ module, the blue classes are from the _CityGML Core_ and _Construction_ modules, and the green class depicts a geometry element defined by ISO 19107.
+The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this Standard. In this example, the yellow classes are associated with the _CityGML Building_ module, the blue classes are from the _CityGML Core_ and _Construction_ modules, and the green class depicts a geometry element defined by <<iso19107>>.
 
 [[figure-2]]
 .Example UML diagram demonstrating the UML notation and coloring scheme used throughout the CityGML Standard.

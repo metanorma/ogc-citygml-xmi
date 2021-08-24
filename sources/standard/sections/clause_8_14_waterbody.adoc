@@ -1,0 +1,25 @@
+The WaterBody module provides the representation of significant and permanent or semi-permanent accumulations of surface water, usually covering a part of the Earth. Examples of such water bodies that can be modeled with CityGML are rivers, canals, lakes, and basins.
+Water bodies are represented in the UML model by the top-level feature type _WaterBody_, which is the main class of the WaterBody module.
+
+Water bodies can be bounded by water surfaces, which represent the upper exterior interface between the water body and the atmosphere, and by water ground surfaces, which represent the exterior boundary surfaces of the submerged bottom of a water body (e.g., DTM or floor of a 3D basin object).
+Water surfaces are dynamic surfaces, thus, the visible water surface can regularly as well as irregularly change in height and covered area due to natural forces such as tides and floods.
+
+The UML diagram of the WaterBody module is depicted in <<waterbody-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-waterbody-section[OGC CityGML 3.0 Users Guide].
+
+[[waterbody-uml]]
+.UML diagram of the Water Body Model.
+image::figures/WaterBody.png[]
+
+The ADE data types provided for the Water Body module are illustrated in <<waterbody-uml-ade-types>>.
+
+[[waterbody-uml-ade-types]]
+.ADE classes of the CityGML Water Body module.
+image::figures/WaterBody-ADE_Datatypes.png[]
+
+The Code Lists provided for the Water Body module are illustrated in <<waterbody-uml-codelists>>.
+
+[[waterbody-uml-codelists]]
+.Codelists from the CityGML Water Body module.
+image::figures/WaterBody-Codelists.png[]
+
+<<waterbody-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the WaterBody module:

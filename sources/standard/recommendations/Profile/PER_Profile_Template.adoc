@@ -1,7 +1,7 @@
 [[per_Profile_template]]
-[cols="2,6"]
+[cols="2h,6",options="header"]
 |===
-^|*Permission  {counter:per-id}* |*/per/Profile/template*
+| Permission  {counter:per-id} | /per/Profile/template
 2+|For each UML class defined or referenced in the Core Package:
 ^|A |The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
 ^|B |The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.

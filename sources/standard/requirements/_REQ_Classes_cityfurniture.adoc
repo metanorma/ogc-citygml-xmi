@@ -1,7 +1,7 @@
 [[req_cityfurniture_classes]]
-[cols="2,6"]
+[cols="2h,6",options="header"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/cityfurniture/classes*
+| Requirement  {counter:req-id} | /req/cityfurniture/classes
 2+|For each UML class defined or referenced in the CityFurniture Package:
 ^|A |The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
 ^|B |The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
