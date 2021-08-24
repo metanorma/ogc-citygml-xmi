@@ -1,8 +1,15 @@
 [[rec_ade_uml]]
-[cols="2,6",options="header"]
-|===
-| Recommendation  {counter:rec-id} | /rec/ade/uml
-2+|In addition to meeting the requirements for a CityGML ADE, an ADE should:
-h| A | The <<uml_notation_section,UML notations and stereotypes>> used in the CityGML conceptual model SHOULD be applied to corresponding model elements in an ADE.
-h| B | An ADE SHOULD import and use predefined classes from external conceptual UML models such as the CityGML modules or the standardized schemas of the ISO 19100 series of International Standards.
-|===
+[.recommendation,label="/rec/ade/uml"]
+====
+In addition to meeting the requirements for a CityGML ADE, an ADE should:
+
+[.component,class=part]
+--
+The <<uml_notation_section,UML notations and stereotypes>> used in the CityGML conceptual model SHOULD be applied to corresponding model elements in an ADE.
+--
+
+[.component,class=part]
+--
+An ADE SHOULD import and use predefined classes from external conceptual UML models such as the CityGML modules or the standardized schemas of the ISO 19100 series of International Standards.
+--
+====
