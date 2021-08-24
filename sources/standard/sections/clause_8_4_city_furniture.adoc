@@ -1,4 +1,4 @@
-The CityFurniture module provides the representation of objects or pieces of equipment that are installed in the outdoor environment for various purposes, such as decoration, explanation or control. City furniture objects are relatively small, immovable objects and usually are of prototypical or geotypical form. Examples include road signs, traffic signals, bicycle racks, street lamps, fountains, flower buckets, advertising columns, and benches.
+The CityFurniture module provides the representation of objects or pieces of equipment that are installed in the outdoor environment for various purposes, such as decoration, explanation, or control. City furniture objects are relatively small, immovable objects and usually are of prototypical or geotypical form. Examples include road signs, traffic signals, bicycle racks, street lamps, fountains, flower buckets, advertising columns, and benches.
 
 City furniture is represented in the UML model by the top-level feature type _CityFurniture_, which is also the only class of the CityFurniture module.
 

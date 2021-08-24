@@ -1,7 +1,7 @@
 The CityObjectGroup module provides the application-specific aggregation of city objects according to some user-defined criteria. Examples for groups are the buildings in a specific region, the result of a query, or objects put together for visualization purposes. Each member of a group may be qualified by a role name, reflecting the role each city object plays in the context of the group.
 City object groups are represented in the UML model by the top-level feature type _CityObjectGroup_, which is the main class of the CityObjectGroup module.
 
-City object groups can be linked to other city objects, the so-called parent objects, which allows for modelling a generic hierarchical grouping concept. In addition, as city object groups represent city objects themselves, a group may become a member of another group realizing recursive aggregation in this way.
+City object groups can be linked to other city objects, the so-called parent objects, which allows for modeling a generic hierarchical grouping concept. In addition, as city object groups represent city objects themselves, a group may become a member of another group realizing recursive aggregation in this way.
 
 The UML diagram of the CityObjectGroup module is depicted in <<cityobject-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-object-group-section[CityGML 3.0 Users Guide].
 

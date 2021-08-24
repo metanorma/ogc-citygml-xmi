@@ -23,7 +23,7 @@ Every feature type in an ADE shall be derived either directly or indirectly from
 
 In contrast to feature types, object types and data types are not required to be derived from a predefined CityGML class unless explicitly stated otherwise.
 
-ADE classes may have an unlimited number of attributes and associations in addition to those inherited from their parents. Attributes can be modelled with either simple or complex data types. To ensure semantic interoperability, the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards should be used wherever appropriate. This includes, amongst others, basic types from ISO/TS 19103, geometry and topology objects from ISO 10107, and temporal geometry and topology objects from ISO 19108.
+ADE classes may have an unlimited number of attributes and associations in addition to those inherited from their parents. Attributes can be modeled with either simple or complex data types. To ensure semantic interoperability, the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards should be used wherever appropriate. This includes, amongst others, basic types from ISO/TS 19103, geometry and topology objects from ISO 10107, and temporal geometry and topology objects from ISO 19108.
 
 If a predefined type is not available, ADEs can either define their own data types or import data types from external conceptual models. This explicitly includes the possibility of defining new geometry types not offered by ISO 19107. Designers of an ADE should however note that software might not be able to properly identify and consume such geometry types.
 
@@ -37,7 +37,7 @@ If a predefined CityGML feature type lacks one or more properties required for a
 
 For this reason, CityGML 3.0 provides a way to augment the predefined CityGML feature types with additional properties from the ADE domain without the need for subclassing. Each CityGML feature type has an extension attribute of name “adeOf__FeatureTypeName__” and type “_ADEOfFeatureTypeName”_, where _FeatureTypeName_ is replaced by the class name in which the attribute is defined. For example, the _Building::Building_ class offers the attribute _adeOfBuilding_ of type _Building::ADEOfBuilding_. Each of these extension attributes can occur zero to unlimited times, and the attribute types are defined as abstract and empty data types.
 
-If an ADE augments a specific CityGML feature type with additional ADE properties, the ADE shall create a subclass of the corresponding abstract data type associated with the feature class. This subclass shall also be defined as data type using the stereotype _&#171;DataType&#187;_. The additional application-specific attributes and associations are then modelled as properties of the ADE subclass. This may include, amongst others, attributes with simple or complex data type, spatial properties or associations to other object and feature types from the ADE or external models such as CityGML.
+If an ADE augments a specific CityGML feature type with additional ADE properties, the ADE shall create a subclass of the corresponding abstract data type associated with the feature class. This subclass shall also be defined as data type using the stereotype _&#171;DataType&#187;_. The additional application-specific attributes and associations are then modeled as properties of the ADE subclass. This may include, amongst others, attributes with simple or complex data type, spatial properties or associations to other object and feature types from the ADE or external models such as CityGML.
 
 The predefined “_ADEOfFeatureTypeName”_ data types are called “hooks” because they are used as the head of a hierarchy of ADE subclasses attaching application-specific properties. When subclassing the “hook” of a specific CityGML feature type in an ADE, the properties defined in the subclass can be used for that feature type as well as for all directly or indirectly derived feature types, including feature types defined in the same or another ADE.
 
@@ -55,7 +55,7 @@ image::./images/Energy_ADE_UML_example.png[]
 
 === Encoding of ADEs
 
-This document only addresses the conceptual modelling of ADEs. Rules and constraints for mapping a conceptual ADE model to a target encoding are expected to be defined in a corresponding CityGML Encoding Standard. If supported, an ADE may provide additional mapping rules and constraints in conformance with a corresponding CityGML Encoding Standard.
+This document only addresses the conceptual modeling of ADEs. Rules and constraints for mapping a conceptual ADE model to a target encoding are expected to be defined in a corresponding CityGML Encoding Standard. If supported, an ADE may provide additional mapping rules and constraints in conformance with a corresponding CityGML Encoding Standard.
 
 === Requirements and Recommendations
 
