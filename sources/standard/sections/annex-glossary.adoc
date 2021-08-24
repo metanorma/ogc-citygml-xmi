@@ -26,7 +26,6 @@ A characteristic of a feature
 <<iso19101-1,clause=4.1.12>>
 
 
-[[FeatureType-section]]
 === feature type
 
 A class of features having common characteristics
@@ -141,7 +140,6 @@ Particular variation of a spatial object
 
 The following concepts from the ISO TC211 Harmonized UML model are referenced by the CityGML Conceptual UML model but do not play a major role in its' definition. They are provided here to support a more complete understanding of the model.
 
-[[Area-section]]
 === Area
 
 The measure of the physical extent of any topologically 2-D geometric object. Usually measured in "square" units of length.
@@ -150,7 +148,6 @@ The measure of the physical extent of any topologically 2-D geometric object. Us
 <<iso19103>>
 
 
-[[Boolean-section]]
 === Boolean
 
 Boolean is the mathematical datatype associated with two-valued logic
@@ -158,7 +155,6 @@ Boolean is the mathematical datatype associated with two-valued logic
 [.source]
 <<iso19103>>
 
-[[CC_CoordinateOperation-section]]
 === CC_CoordinateOperation
 
 A mathematical operation on coordinates that transforms or converts coordinates to another coordinate reference system.
@@ -167,7 +163,6 @@ A mathematical operation on coordinates that transforms or converts coordinates 
 <<iso19111>>
 
 
-[[Character-section]]
 === Character
 
 A symbol from a standard character-set.
@@ -176,7 +171,6 @@ A symbol from a standard character-set.
 <<iso19103>>
 
 
-[[CharacterString-section]]
 === CharacterString
 
 CharacterString is a family of datatypes which represent strings of symbols from standard character-sets.
@@ -185,7 +179,6 @@ CharacterString is a family of datatypes which represent strings of symbols from
 <<iso19103>>
 
 
-[[CRS-section]]
 === CRS
 
 Coordinate reference system which is usually single but may be compound.
@@ -194,7 +187,6 @@ Coordinate reference system which is usually single but may be compound.
 <<iso19111>>
 
 
-[[CV_DiscreteCoverage-section]]
 === CV_DiscreteCoverage
 
 A subclass of CV_Coverage that returns a single record of values for any direct position within a single geometric object in its spatiotemporal domain.
@@ -203,7 +195,6 @@ A subclass of CV_Coverage that returns a single record of values for any direct 
 <<iso19123>>
 
 
-[[CV_DomainObject-section]]
 === CV_DomainObject
 
 An element of the domain of the CV_Coverage. It is an aggregation of objects that may include any combination of GM_Objects (ISO 19107:2003), TM_GeometricPrimitives (ISO 10108), or spatial or temporal objects defined in other standards, such as the CV_GridPoint defined in this International Standard.
@@ -212,7 +203,6 @@ An element of the domain of the CV_Coverage. It is an aggregation of objects tha
 <<iso19123>>
 
 
-[[CV_GridPointValuePair-section]]
 === CV_GridPointValuePair
 
 A subtype of CV_GeometryValuePair that has a GM_GridPoint as the value of its geometry attribute.
@@ -221,7 +211,6 @@ A subtype of CV_GeometryValuePair that has a GM_GridPoint as the value of its ge
 <<iso19123>>
 
 
-[[CV_GridValuesMatrix-section]]
 === CV_GridValuesMatrix
 
 The geometry represented by the various offset vectors is in the image plane of the grid.
@@ -230,7 +219,6 @@ The geometry represented by the various offset vectors is in the image plane of 
 <<iso19123>>
 
 
-[[CV_ReferenceableGrid-section]]
 === CV_ReferenceableGrid
 
 A subclass of CV_Coverage that relates the grid coordinates to an external coordinate reference system.
@@ -239,7 +227,6 @@ A subclass of CV_Coverage that relates the grid coordinates to an external coord
 <<iso19123>>
 
 
-[[Date-section]]
 === Date
 
 Date gives values for year, month and day. Representation of Date is specified in ISO 8601. Principles for date and time are further discussed in ISO 19108.
@@ -248,7 +235,6 @@ Date gives values for year, month and day. Representation of Date is specified i
 <<iso19103>>
 
 
-[[DateTime-section]]
 === DateTime
 
 A DateTime is a combination of a date and a time types. Representation of DateTime is specified in ISO 8601. Principles for date and time are further discussed in ISO 19108.
@@ -257,7 +243,6 @@ A DateTime is a combination of a date and a time types. Representation of DateTi
 <<iso19103>>
 
 
-[[Distance-section]]
 === Distance
 
 Used as a type for returning distances and possibly lengths.
@@ -266,7 +251,6 @@ Used as a type for returning distances and possibly lengths.
 <<iso19103>>
 
 
-[[EngineeringCRS-section]]
 === Engineering CRS
 A contextually local coordinate reference system which can be divided into two broad categories:
 
@@ -278,7 +262,6 @@ A contextually local coordinate reference system which can be divided into two b
 <<iso19111>>
 
 
-[[GenericName-section]]
 === Generic Name
 
 Generic Name is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName.
@@ -287,7 +270,6 @@ Generic Name is the abstract class for all names in a NameSpace. Each instance o
 <<iso19103>>
 
 
-[[Geometry-section]]
 === Geometry
 
 Geometry is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects.
@@ -296,7 +278,6 @@ Geometry is the root class of the geometric object taxonomy and supports interfa
 <<iso19107>>
 
 
-[[GM_CompositePoint-section]]
 === GM_CompositePoint
 
 A GM_Complex containing one and only one GM_Point.
@@ -305,7 +286,6 @@ A GM_Complex containing one and only one GM_Point.
 <<iso19107>>
 
 
-[[GM_CompositeSolid-section]]
 === GM_CompositeSolid
 
 A set of geometric solids adjoining one another along common boundary geometric surfaces
@@ -314,7 +294,6 @@ A set of geometric solids adjoining one another along common boundary geometric 
 <<iso19107>>
 
 
-[[GM_GenericSurface-section]]
 === GM_GenericSurface
 
 GM_Surface and GM_SurfacePatch both represent sections of surface geometry, and therefore share a number of operation signatures. These are defined in the interface class GM_GenericSurface.
@@ -323,7 +302,6 @@ GM_Surface and GM_SurfacePatch both represent sections of surface geometry, and 
 <<iso19107>>
 
 
-[[GM_LineString-section]]
 === GM_LineString
 
 Consists of sequence of line segments, each having a parameterization like the one for GM_LineSegment
@@ -332,7 +310,6 @@ Consists of sequence of line segments, each having a parameterization like the o
 <<iso19107>>
 
 
-[[GM_MultiPrimitive-section]]
 === GM_MultiPrimitive
 
 The root class for all primitive aggregates. The association role “element” shall be the set of GM_Primitives contained in this GM_MultiPrimitive. The attribute declaration here specializes the one at GM_Aggregate to include only GM_Primitives in this type of aggregate.
@@ -341,7 +318,6 @@ The root class for all primitive aggregates. The association role “element” 
 <<iso19107>>
 
 
-[[GM_OrientableSurface-section]]
 === GM_OrientableSurface
 
 A surface and an orientation inherited from GM_OrientablePrimitive. If the orientation is "+", then the GM_OrientableSurface is a GM_Surface. If the orientation is "-", then the GM_OrientableSurface is a reference to a GM_Surface with an upNormal that reverses the direction for this GM_OrientableSurface, the sense of "the top of the surface".
@@ -350,7 +326,6 @@ A surface and an orientation inherited from GM_OrientablePrimitive. If the orien
 <<iso19107>>
 
 
-[[GM_PolyhedralSurface-section]]
 === GM_PolyhedralSurface
 
 A GM_Surface composed of polygon surfaces (GM_Polygon) connected along their common boundary curves.
@@ -359,7 +334,6 @@ A GM_Surface composed of polygon surfaces (GM_Polygon) connected along their com
 <<iso19107>>
 
 
-[[GM_Position-section]]
 === GM_Position
 
 A union type consisting of either a DirectPosition or of a reference to a GM_Point from which a DirectPosition shall be obtained.
@@ -368,7 +342,6 @@ A union type consisting of either a DirectPosition or of a reference to a GM_Poi
 <<iso19107>>
 
 
-[[GM_Primitive-section]]
 === GM_Primitive
 
 The abstract root class of the geometric primitives. Its main purpose is to define the basic "boundary" operation that ties the primitives in each dimension together.
@@ -377,7 +350,6 @@ The abstract root class of the geometric primitives. Its main purpose is to defi
 <<iso19107>>
 
 
-[[Integer-section]]
 === Integer
 
 An exact integer value, with no fractional part.
@@ -394,7 +366,6 @@ The network of physical objects--“things”--that are embedded with sensors, s
 [.source]
 
 
-[[IO_IdentifiedObjectBase-section]]
 === IO_IdentifiedObjectBase
 
 Supplementary identification and remarks information for a CRS or CRS-related object.
@@ -403,7 +374,6 @@ Supplementary identification and remarks information for a CRS or CRS-related ob
 <<iso19111>>
 
 
-[[Length-section]]
 === Length
 
 The measure of distance as an integral, i.e., the limit of an infinite sum of distances between points on a curve.
@@ -412,7 +382,6 @@ The measure of distance as an integral, i.e., the limit of an infinite sum of di
 <<iso19103>>
 
 
-[[Measure-section]]
 === Measure
 
 The result from performing the act or process of ascertaining the extent, dimensions, or quantity of some entity.
@@ -421,7 +390,6 @@ The result from performing the act or process of ascertaining the extent, dimens
 <<iso19103>>
 
 
-[[number-section]]
 === Number
 
 The base type for all number data, giving the basic algebraic operations.
@@ -430,7 +398,6 @@ The base type for all number data, giving the basic algebraic operations.
 <<iso19103>>
 
 
-[[Point-section]]
 === Point
 
 GM_Point is the basic data type for a geometric object consisting of one and only one point.
@@ -439,7 +406,6 @@ GM_Point is the basic data type for a geometric object consisting of one and onl
 <<iso19107>>
 
 
-[[Real-section]]
 === Real
 
 The common binary Real finite implementation using base 2.
@@ -448,7 +414,6 @@ The common binary Real finite implementation using base 2.
 <<iso19103>>
 
 
-[[RS_ReferenceSystem-section]]
 === RS_ReferenceSystem
 
 Description of a spatial and temporal reference system used by a dataset.
@@ -457,7 +422,6 @@ Description of a spatial and temporal reference system used by a dataset.
 <<iso19111>>
 
 
-[[ScopedName-section]]
 === Scoped Name
 
 ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail.
@@ -466,7 +430,6 @@ ScopedName is a composite of a LocalName for locating another NameSpace and a Ge
 <<iso19103>>
 
 
-[[Solid-section]]
 === Solid
 
 GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
@@ -475,7 +438,6 @@ GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. T
 <<iso19107>>
 
 
-[[Time-section]]
 === Time
 
 Time is the designation of an instant on a selected time scale, astronomical or atomic. It is used in the sense of time of day.
@@ -484,7 +446,6 @@ Time is the designation of an instant on a selected time scale, astronomical or 
 <<iso19103>>
 
 
-[[TM_Duration-section]]
 === TM_Duration
 
 A data type to be used for describing length or distance in the temporal dimension.
@@ -493,7 +454,6 @@ A data type to be used for describing length or distance in the temporal dimensi
 <<iso19108>>
 
 
-[[TM_TemporalPosition-section]]
 === TM_TemporalPosition
 
 The position of a TM_Instant relative to a TM_ReferenceSystem.
@@ -502,7 +462,6 @@ The position of a TM_Instant relative to a TM_ReferenceSystem.
 <<iso19108>>
 
 
-[[UnitOfMeasure-section]]
 === Unit of Measure
 
 Any of the systems devised to measure some physical quantity such distance or area or a system devised to measure such things as the passage of time.
@@ -511,7 +470,6 @@ Any of the systems devised to measure some physical quantity such distance or ar
 <<iso19103>>
 
 
-[[URI-section]]
 === URI
 
 Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource
@@ -520,7 +478,6 @@ Uniform Resource Identifier (URI), is a compact string of characters used to ide
 <<iso19103>>
 
 
-[[Volume-section]]
 === Volume
 
 Volume is the measure of the physical space of any 3-D geometric object.
