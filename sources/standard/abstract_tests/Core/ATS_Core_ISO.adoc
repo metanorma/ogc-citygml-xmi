@@ -5,6 +5,6 @@
 ^|Test Purpose |To validate that none of the restrictions which the CityGML Conceptual Model imposes on ISO classes are violated by an Implementation Specification.
 ^|Requirement |<<req_Core_iso-restrictions,/req/Core/isorestrictions>>
 ^|Test Method |Manual Inspection
-^|A |For each instance of the GM_Solid class, validate that there are no interior boundaries associated with that instance.
-^|B |For each instance of a class descended from the GM_Solid class, validate that there are no interior boundaries associated with that instance.
+h| A | For each instance of the GM_Solid class, validate that there are no interior boundaries associated with that instance.
+h| B | For each instance of a class descended from the GM_Solid class, validate that there are no interior boundaries associated with that instance.
 |===

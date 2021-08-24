@@ -1,12 +1,12 @@
 [[req_transportation_classes]]
-[cols="2h,6",options="header"]
+[cols="2,6",options="header"]
 |===
 | Requirement  {counter:req-id} | /req/transportation/classes
 2+|For each UML class defined or referenced in the Transportation Package:
-^|A |The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
-^|B |The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
-^|C |The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and multiplicity.
-^|D |The implementation Specification SHALL represent the attributes of all superclasses of the UML class including the name, definition, type, and multiplicity.
-^|E |The implementation Specification SHALL represent the associations of all superclasses of the UML class including the source, target, direction, roles, and multiplicity.
-^|F |The Implementation Specification SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
+h| A | The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
+h| B | The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
+h| C | The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and multiplicity.
+h| D | The implementation Specification SHALL represent the attributes of all superclasses of the UML class including the name, definition, type, and multiplicity.
+h| E | The implementation Specification SHALL represent the associations of all superclasses of the UML class including the source, target, direction, roles, and multiplicity.
+h| F | The Implementation Specification SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
 |===

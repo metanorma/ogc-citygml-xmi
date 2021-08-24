@@ -2,7 +2,9 @@
 [bibliography]
 == References
 
-* [[[rfc2045,IETF RFC 2045]]] IETF: RFC 2045 & 2046, Multipurpose Internet Mail Extensions (MIME). (1996)
+* [[[rfc2045,IETF RFC 2045]]] IETF: RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies. (1996)
+
+* [[[rfc2046,IETF RFC 2046]]] IETF: RFC 2046, Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. (1996)
 
 * [[[rfc3986,IETF RFC 3986]]] IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax. (2005)
 

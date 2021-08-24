@@ -83,4 +83,4 @@ include::../recommendations/ADE/REC_ADE_Elements.adoc[]
 
 The following Requirements define how to use the CityGML extension properties to add attributes to an existing CityGML Feature Type.
 
-include::../requirements/ADE/REQ_ADE_Properties.adoc[]
+include::../requirements/ADE/_REQ_ADE_Properties.adoc[]

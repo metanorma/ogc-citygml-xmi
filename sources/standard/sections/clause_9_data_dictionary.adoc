@@ -15,7 +15,7 @@ image::figures/CityGMLPackageDiagram.png[]
 
 The following classes are defined in ISO standards and used by the CityGML Conceptual Model.
 
-include::data-dictionaries/ISO-Classes.adoc[]
+include::../data-dictionaries/ISO-Classes.adoc[]
 
 
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_data_dictionary.yml]
