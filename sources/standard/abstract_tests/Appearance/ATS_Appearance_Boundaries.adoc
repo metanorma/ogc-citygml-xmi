@@ -1,10 +1,20 @@
 [[ats_appearance_boundaries]]
-[cols="2,6",options="header"]
-|===
-| Abstract Test {counter:ats-id} | /ats/appearance/boundaries
-^|Test Purpose |To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
-^|Requirement |<<req_appearance_boundaries,/req/appearance/boundaries>>
-^|Test Method |Manual Inspection
-2+|For each UML class defined or referenced in the Appearance Package:
-h| A | Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
-|===
+[requirement,type="abstracttest",label="/ats/appearance/boundaries",subject='<<req_appearance_boundaries,/req/appearance/boundaries>>']
+====
+[.component,class=test-purpose]
+--
+To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
+--
+
+[.component,class=test-method]
+--
+Manual Inspection
+--
+
+For each UML class defined or referenced in the Appearance Package:
+
+[.component,class=part]
+--
+Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
+--
+====

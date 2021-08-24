@@ -1,10 +1,20 @@
 [[ats_landuse_ade_use]]
-[cols="2,6",options="header"]
-|===
-| Abstract Test {counter:ats-id} | /ats/landuse/ade/use
-^|Test Purpose |To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
-^|Requirement |<<req_landuse_ade_use,/req/landuse/ade_use>>
-^|Test Method |Manual Inspection
-2+|If any ADE classes or properties are included in the LandUse Package:
-h| A | Validate that the Implementation Specification conforms with the ADE Requirements Class.
-|===
+[requirement,type="abstracttest",label="/ats/landuse/ade/use",subject='<<req_landuse_ade_use,/req/landuse/ade_use>>']
+====
+[.component,class=test-purpose]
+--
+To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
+--
+
+[.component,class=test-method]
+--
+Manual Inspection
+--
+
+If any ADE classes or properties are included in the LandUse Package:
+
+[.component,class=part]
+--
+Validate that the Implementation Specification conforms with the ADE Requirements Class.
+--
+====

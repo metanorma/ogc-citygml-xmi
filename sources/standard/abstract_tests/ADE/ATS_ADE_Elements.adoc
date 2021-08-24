@@ -1,17 +1,39 @@
 [[ats_ade_elements]]
-[cols="2,6",options="header"]
-|===
-| Abstract Test {counter:ats-id} | /ats/ade/elements
-^|Test Purpose |To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model are implemented correctly.
-^|Requirement |<<req_ade_elements,/req/ade/elements>>
-^|Test Method |Manual Inspection
-2+|For each new UML class defined by an ADE:
-h| A | Validate that every Feature Type class in an ADE is derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
-h| B | Validate that every UML class in an ADE which represents a top-level Feature Type is assigned the _&#171;TopLevelFeatureType&#187;_ stereotype.
-h| C | Validate that every UML class in an ADE which represents spaces or space boundaries is derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
-h| D | Validate that any new or additional spatial properties defined by an ADE:
+[requirement,type="abstracttest",label="/ats/ade/elements",subject='<<req_ade_elements,/req/ade/elements>>']
+====
+[.component,class=test-purpose]
+--
+To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model are implemented correctly.
+--
+
+[.component,class=test-method]
+--
+Manual Inspection
+--
+
+For each new UML class defined by an ADE:
+
+[.component,class=part]
+--
+Validate that every Feature Type class in an ADE is derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
+--
+
+[.component,class=part]
+--
+Validate that every UML class in an ADE which represents a top-level Feature Type is assigned the _&#171;TopLevelFeatureType&#187;_ stereotype.
+--
+
+[.component,class=part]
+--
+Validate that every UML class in an ADE which represents spaces or space boundaries is derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
+--
+
+[.component,class=part]
+--
+Validate that any new or additional spatial properties defined by an ADE:
 
 . belongs to a predefined LOD,
 . has a property name which starts with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
-|===
+--
+====
 
