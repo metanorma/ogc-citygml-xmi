@@ -1,10 +1,10 @@
 [[ats_pointcloud_ade_use]]
-[cols="2h,6",options="header"]
+[cols="2,6",options="header"]
 |===
 | Abstract Test {counter:ats-id} | /ats/pointcloud/ade/use
 ^|Test Purpose |To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
 ^|Requirement |<<req_pointcloud_ade_use,/req/pointcloud/ade_use>>
 ^|Test Method |Manual Inspection
 2+|If any ADE classes or properties are included in the PointCloud Package:
-^|A |Validate that the Implementation Specification conforms with the ADE Requirements Class.
+h| A | Validate that the Implementation Specification conforms with the ADE Requirements Class.
 |===

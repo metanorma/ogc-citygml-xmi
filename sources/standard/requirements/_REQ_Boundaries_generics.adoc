@@ -1,5 +1,5 @@
 [[req_generics_boundaries]]
-[cols="2h,6",options="header"]
+[cols="2,6",options="header"]
 |===
 | Requirement  {counter:req-id} | /req/generics/boundaries
 2+|<<generics-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Generics module. An Implementation Specification SHALL only support the boundaries described in <<generics-boundaries-table>>

@@ -68,6 +68,7 @@ The table only lists persons that were involved in the development of CityGML 3.
 
 The editors wish to thank the Special Interest Group 3D (SIG 3D) of the initiative Geodata Infrastructure Germany (GDI-DE) which originally started the development of CityGML, the CityGML Standards Working Group and the 3D Information Management (3DIM) Working Group of the OGC as well as all contributors of change requests and comments.
 
+[%unnumbered]
 image::images/CityGML_Logo.png[]
 
 This is the official CityGML logo. For current news on CityGML and information about ongoing projects and fields of research in the area of CityGML see http://www.citygml.org and http://www.citygmlwiki.org.

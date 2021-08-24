@@ -1,5 +1,5 @@
 [[req_bridge_ade_use]]
-[cols="2h,6",options="header"]
+[cols="2,6",options="header"]
 |===
 | Requirement  {counter:req-id} | /req/bridge/ade/use
 2+|ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.
