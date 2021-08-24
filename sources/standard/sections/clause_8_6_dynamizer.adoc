@@ -3,16 +3,16 @@ The Dynamizer module provides the concepts that enable representation of time-va
 The dynamic values may be given by retrieving observation results directly from external sensor/<<IoT_definition,IoT>> services using a sensor connection (e.g., OGC SensorThings API, Sensor Observation Service, or other sensor data platforms including <<MQTT2019,MQTT>>). Alternatively, the dynamic values may be provided as atomic timeseries that represent time-varying data of a specific data type for a single contiguous time interval. The data can be provided in:
 
 * external tabulated files, such as CSV or Excel sheets,
-* external files that format timeseries data according to the OGC TimeseriesML Standard or the OGC Observations & Measurements standards,
-* or inline as embedded time-value-pairs.
+* external files that format timeseries data according to the OGC TimeseriesML Standard or the OGC Observations & Measurements standards, or
+* inline as embedded time-value-pairs.
 
 Furthermore, timeseries data can also be aggregated to form composite timeseries with non-overlapping time intervals.
 
 By using the Dynamizer module, fast changes over a short or longer time period with respect to cities and city models can be represented. This includes:
 
 * variations of spatial properties such as change of a feature’s geometry, both in respect to shape and to location (e.g., moving objects),
-* variations of thematic attributes such as changes of physical quantities like energy demands, temperatures, solar irradiation, traffic density, pollution concentration, or overpressure on building walls,
-* and variations with respect to sensor or real-time data resulting from simulations or measurements.
+* variations of thematic attributes such as changes of physical quantities like energy demands, temperatures, solar irradiation, traffic density, pollution concentration, or overpressure on building walls, and
+* variations with respect to sensor or real-time data resulting from simulations or measurements.
 
 The UML diagram of the Dynamizer module is depicted in <<dynamizer-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-dynamizer-section[CityGML 3.0 Users Guide].
 
