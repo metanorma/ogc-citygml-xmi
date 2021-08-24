@@ -14,7 +14,7 @@
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 !
-!<<FeatureType-section,FeatureType>>
+!{{FeatureType}}
 [1..1]
 !
 !===
@@ -30,18 +30,18 @@
 |[cols="1,4"]
 !===
 !Definition: !A coverage that returns the same feature attribute values for every direct position within any single spatial object, temporal object or spatiotemporal object in its domain.
-!Subclass Of: ! <<CV_DiscreteCoverage-section,CV_DiscreteCoverage>>
+!Subclass Of: ! {{CV_DiscreteCoverage}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 ! element
-!<<CV_GridPointValuePair-section,CV_GridPointValuePair>>
+!{{CV_GridPointValuePair}}
 [1..*]
 !
 ! valueAssignment
-!<<CV_GridValuesMatrix-section,CV_GridValuesMatrix>>
+!{{CV_GridValuesMatrix}}
 [1..1]
 !
 !===
@@ -63,14 +63,14 @@
 |[cols="15,20,60",options="header"]
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
-! CRS !<<CRS-section,CRS>> [0..1]!
-! CRS !<<SC_CRS-section,SC_CRS>> [0..1]!
+! CRS !{{CRS}} [0..1]!
+! CRS !{{SC_CRS}} [0..1]!
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
-! coordinate   !Sequence<<<number-section,Number>>> [1..1]!
-! dimension   !<<Integer-section,Integer>> [1..1] !
+! coordinate   !Sequence{{<number}} [1..1]!
+! dimension   !{{Integer}} [1..1] !
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
@@ -95,22 +95,22 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 !
-!<<Geometry-section,Geometry>> [1..1]
+!{{Geometry}} [1..1]
 !
 !
-!TransfiniteSet<<<DirectPosition-section,DirectPosition>>>
+!TransfiniteSet{{<DirectPosition}}
 [1..1]
 !
 !
-!<<CV_DomainObject-section,CV_DomainObject>>
+!{{CV_DomainObject}}
 [1..1]
 !
 ! CRS
-!<<CRS-section,CRS>>
+!{{CRS}}
 [0..1]
 !
 ! CRS
-!<<SC_CRS-section,SC_CRS>>
+!{{SC_CRS}}
 [0..1]
 !
 !===
@@ -126,14 +126,14 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |[cols="1,4"]
 !===
 !Definition: !An aggregate class containing only instances of GM_OrientableCurve. The association role “element” shall be the set of GM_OrientableCurves contained in this GM_MultiCurve.
-!Subclass Of: ! <<GM_MultiPrimitive-section,GM_MultiPrimitive>>
+!Subclass Of: ! {{GM_MultiPrimitive}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! length  !<<Length-section,Length>> [1..1] !
+! length  !{{Length}} [1..1] !
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
@@ -147,14 +147,14 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |[cols="1,4"]
 !===
 !Definition: ! GM_MultiPoint is an aggregate class containing only points. The association role “element” shall be the set of GM_Points contained in this GM_MultiPoint.
-!Subclass Of: ! <<GM_MultiPrimitive-section,GM_MultiPrimitive>>
+!Subclass Of: ! {{GM_MultiPrimitive}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! position   !Set<<<DirectPosition-section,DirectPosition>>> [1..1] !
+! position   !Set{{<DirectPosition}} [1..1] !
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
@@ -168,16 +168,16 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |[cols="1,4"]
 !===
 !Definition: !An aggregate class containing only instances of GM_OrientableSurface. The association role “element” shall be the set of GM_OrientableSurfaces contained in this GM_MultiSurface.
-!Subclass Of: ! <<GM_MultiPrimitive-section,GM_MultiPrimitive>>
+!Subclass Of: ! {{GM_MultiPrimitive}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! area   !<<Area-section,Area>> [1..1] !
+! area   !{{Area}} [1..1] !
 
-! perimeter   !<<Length-section,Length>> [1..1] !
+! perimeter   !{{Length}} [1..1] !
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
@@ -191,18 +191,18 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |[cols="1,4"]
 !===
 !Definition: ! GM_Point is the basic data type for a geometric object consisting of one and only one point.
-!Subclass Of: ! <<GM_Primitive-section,GM_Primitive>>
+!Subclass Of: ! {{GM_Primitive}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 !
-!<<Point-section,Point>>
+!{{Point}}
 [1..1]
 !
 ! composite
-!<<GM_CompositePoint-section,GM_CompositePoint>>
+!{{GM_CompositePoint}}
 [0..*]
 !
 !===
@@ -210,7 +210,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! position   !<<DirectPosition-section,DirectPosition>> [1..1]  !The attribute "position" shall be the DirectPosition of this GM_Point.
+! position   !{{DirectPosition}} [1..1]  !The attribute "position" shall be the DirectPosition of this GM_Point.
 GM_Point::position [1] : DirectPosition
 NOTE In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.
 !===
@@ -226,18 +226,18 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |[cols="1,4"]
 !===
 !Definition: !GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
-!Subclass Of: ! <<GM_Primitive-section,GM_Primitive>>
+!Subclass Of: ! {{GM_Primitive}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 ! composite
-!<<GM_CompositeSolid-section,GM_CompositeSolid>>
+!{{GM_CompositeSolid}}
 [0..*]
 !
 !
-!<<Solid-section,Solid>>
+!{{Solid}}
 [1..1]
 !
 !===
@@ -254,18 +254,18 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 !===
 !Definition: ! GM_Surface is a subclass of GM_Primitive and is the basis for 2-dimensional geometry. Unorientable surfaces such as the Möbius band are not allowed. The orientation of a surface chooses an "up" direction through the choice of the upward normal, which, if the surface is not a cycle, is the side of the surface from which the exterior boundary appears counterclockwise. Reversal of the surface orientation reverses the curve orientation of each boundary component, and interchanges the conceptual "up" and "down" direction of the surface. If the surface is the boundary of a solid, the "up" direction is usually outward. For closed surfaces, which have no boundary, the up direction is that of the surface patches, which must be consistent with one another. Its included GM_SurfacePatches describe the interior structure of a GM_Surface.
 NOTE Other than the restriction on orientability, no other "validity" condition is required for GM_Surface.
-!Subclass Of: ! <<GM_OrientableSurface-section,GM_OrientableSurface>>
+!Subclass Of: ! {{GM_OrientableSurface}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 !
-!<<GM_GenericSurface-section,GM_GenericSurface>>
+!{{GM_GenericSurface}}
 [1..1]
 !
 !
-!<<Building-section,Building>>
+!{{Building}}
 [0..*]
 !
 !===
@@ -281,20 +281,20 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 |[cols="1,4"]
 !===
 !Definition: ! A GM_Tin is a GM_TriangulatedSurface that uses the Delaunay algorithm or a similar algorithm complemented with consideration for breaklines, stoplines and maximum length of triangle sides (Figure 22). These networks satisfy the Delaunay criterion away from the modifications: For each triangle in the network, the circle passing through its vertexes does not contain, in its interior, the vertex of any other triangle.
-!Subclass Of: ! <<GM_TriangulatedSurface-section,GM_TriangulatedSurface>>
+!Subclass Of: ! {{GM_TriangulatedSurface}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! breakLines   !Set<<<GM_LineString-section,GM_LineString>>> [1..1] !
+! breakLines   !Set{{<GM_LineString}} [1..1] !
 
-! controlPoint   !<<GM_Position-section,GM_Position>>  [3..*] !
+! controlPoint   !{{GM_Position}}  [3..*] !
 
-! maxLength   !<<Distance-section,Distance>> [1..1] !
+! maxLength   !{{Distance}} [1..1] !
 
-! stopLines   !Set<<<GM_LineString-section,GM_LineString>>> [1..1] !
+! stopLines   !Set{{<GM_LineString}} [1..1] !
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
@@ -308,7 +308,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 |[cols="1,4"]
 !===
 !Definition: ! A GM_TriangulatedSurface is a GM_PolyhedralSurface that is composed only of triangles (GM_Triangle). There is no restriction on how the triangulation is derived.
-!Subclass Of: ! <<GM_PolyhedralSurface-section,GM_PolyhedralSurface>>
+!Subclass Of: ! {{GM_PolyhedralSurface}}
 !StereoType: !  «type»
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
@@ -323,18 +323,18 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 |[cols="1,4"]
 !===
 !Definition: ! Coordinate reference system which is usually single but may be compound.
-!Subclass Of: ! <<IO_IdentifiedObjectBase-section,IO_IdentifiedObjectBase>>, <<RS_ReferenceSystem-section,RS_ReferenceSystem>>
+!Subclass Of: ! {{IO_IdentifiedObjectBase}}, {{RS_ReferenceSystem}}
 !StereoType: !  «type»
 !===
 |[cols="15,20,60",options="header"]
 !===
 !*Role name* !*Target class and multiplicity*  !*Definition*
 ! coordOperationTo
-!<<CC_CoordinateOperation-section,CC_CoordinateOperation>>
+!{{CC_CoordinateOperation}}
 [0..*]
 !Not-navigable association from a Coordinate Operation that uses ths CRS as its targetCRS.
 ! grid
-!<<CV_ReferenceableGrid-section,CV_ReferenceableGrid>>
+!{{CV_ReferenceableGrid}}
 [0..*]
 !
 !===
@@ -342,7 +342,7 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! scope   !<<CharacterString-section,CharacterString>>  [1..*] !Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
+! scope   !{{CharacterString}}  [1..*] !Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
@@ -363,13 +363,13 @@ NOTE Other than the restriction on orientability, no other "validity" condition 
 !===
 !*Attribute* !*Value type and multiplicity* !*Definition*
 
-! anyOther   !<<TM_TemporalPosition-section,TM_TemporalPosition>> [1..1] !
+! anyOther   !{{TM_TemporalPosition}} [1..1] !
 
-! date8601   !<<Date-section,Date>> [1..1] !
+! date8601   !{{Date}} [1..1] !
 
-! time8601   !<<Time-section,Time>> [1..1] !
+! time8601   !{{Time}} [1..1] !
 
-! dateTime8601   !<<DateTime-section,DateTime>> [1..1] !
+! dateTime8601   !{{DateTime}} [1..1] !
 !===
 | NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
 |===
