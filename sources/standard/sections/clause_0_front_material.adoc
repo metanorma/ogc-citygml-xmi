@@ -13,7 +13,7 @@ Recipients of this document are requested to submit, with their comments, notifi
 
 == Submitters
 
-
+[%unnumbered,options="header"]
 |===
 |Name |Affiliation
 
@@ -35,7 +35,7 @@ Recipients of this document are requested to submit, with their comments, notifi
 In addition to the Editors of the specification the following individuals contributed to the CityGML 3.0 development:
 
 .Participants in Development
-[options="header"]
+[%unnumbered,options="header"]
 |===
 |Name |Institution
 
