@@ -1,6 +1,6 @@
 [[req_generics_use]]
-[cols="2,6"]
+[cols="2h,6",options="header"]
 |===
-^|*Requirement  {counter:req-id}* |*/req/generics/use*
+| Requirement  {counter:req-id} | /req/generics/use
 2+|Generic objects and attributes SHALL only be used if a more specific feature class or attribute is not available from the CityGML conceptual model.
 |===

@@ -1,9 +1,0 @@
-[[req_ade_properties]]
-[cols="2,6"]
-|===
-^|*Requirement  {counter:req-id}* |*/req/ade/properties*
-2+|Every Feature Type includes an extension property (hook) of type “ADEOf<FeatureTypeName>” where <FeatureTypeName> is the name of that Feature Type. To add an extension property to a Feature Type:
-^|A |The ADE SHALL create a subclass of the abstract data type associated with the hook.
-^|B |This subclass SHALL be defined as a data type using the stereotype _&#171;DataType&#187;_.
-^|C |Application-specific attributes and associations SHALL be modeled as properties of the ADE subclass.
-|===

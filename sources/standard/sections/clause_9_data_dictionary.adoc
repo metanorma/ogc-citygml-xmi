@@ -9,11 +9,15 @@ An alternate representation can be found in the Conceptual Model in <<conceptual
 .CityGML UML Packages
 image::figures/CityGMLPackageDiagram.png[]
 
+
 [[ISO-classes-dd]]
 === ISO Classes
 
 The following classes are defined in ISO standards and used by the CityGML Conceptual Model.
 
-[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,packages_config_lutaml_data_dictionary.yml]
+include::data-dictionaries/ISO-Classes.adoc[]
+
+
+[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_data_dictionary.yml]
 ----
 ----

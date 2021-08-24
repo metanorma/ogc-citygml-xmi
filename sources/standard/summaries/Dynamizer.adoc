@@ -39,7 +39,7 @@
 |<<ADEOfTabulatedFileTimeseries-section,ADEOfTabulatedFileTimeseries>> +
  «DataType»  |ADEOfTabulatedFileTimeseries acts as a hook to define properties within an ADE that are to be added to a TabulatedFileTimeseries.
 |<<SensorConnection-section,SensorConnection>> +
- «DataType»  |A SensorConnection provides all details that are required to retrieve a specific datastream from an external sensor web service. This data type comprises the service type (e.g. OGC SensorThings API, OGC Sensor Observation Services, MQTT, proprietary platforms), the URL of the sensor service, the identifier for the sensor or thing, and its observed property as well as information about the required authentication method.
+ «DataType»  |A SensorConnection provides all details that are required to retrieve a specific datastream from an external sensor web service. This data type comprises the service type (e.g., OGC SensorThings API, OGC Sensor Observation Services, MQTT, proprietary platforms), the URL of the sensor service, the identifier for the sensor or thing, and its observed property as well as information about the required authentication method.
 |<<TimeseriesComponent-section,TimeseriesComponent>> +
  «DataType»  |TimeseriesComponent represents an element of a CompositeTimeseries.
 |<<TimeValuePair-section,TimeValuePair>> +
@@ -68,4 +68,4 @@
  «CodeList»  |StandardFileTypeValue is a code list used to specify the type of the referenced external timeseries data file. Each value provides information about the standard and version.
 |<<TabulatedFileTypeValue-section,TabulatedFileTypeValue>> +
  «CodeList»  |TabulatedFileTypeValue is a code list used to specify the data format of the referenced external tabulated data file.
-|===  
+|===

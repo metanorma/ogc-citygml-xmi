@@ -26,7 +26,7 @@
 |<<HoleSurface-section,HoleSurface>> +
  «FeatureType»  |A HoleSurface is a representation of the ground surface of a hole.
 |<<Intersection-section,Intersection>> +
- «FeatureType»  |An Intersection is a transportation space that is a shared segment of multiple Road, Track, Railway, or Waterway objects (e.g. a crossing of two roads or a level crossing of a road and a railway).
+ «FeatureType»  |An Intersection is a transportation space that is a shared segment of multiple Road, Track, Railway, or Waterway objects (e.g., a crossing of two roads or a level crossing of a road and a railway).
 |<<Marking-section,Marking>> +
  «FeatureType»  |A Marking is a visible pattern on a transportation area relevant to the structuring or restriction of traffic. Examples are road markings and markings related to railway or waterway traffic.
 |<<Section-section,Section>> +
@@ -34,7 +34,7 @@
 |<<TrafficArea-section,TrafficArea>> +
  «FeatureType»  |A TrafficArea is the ground surface of a TrafficSpace. Traffic areas are the surfaces upon which traffic actually takes place.
 |<<TrafficSpace-section,TrafficSpace>> +
- «FeatureType»  |A TrafficSpace is a space in which traffic takes place. Traffic includes the movement of entities such as trains, vehicles, pedestrians, ships, or other transportation types. 
+ «FeatureType»  |A TrafficSpace is a space in which traffic takes place. Traffic includes the movement of entities such as trains, vehicles, pedestrians, ships, or other transportation types.
 |===
 
 [[Transportation-datatypes-table]]
@@ -158,7 +158,7 @@
  «CodeList»  |WaterwayFunctionValue is a code list that enumerates the different purposes of a Waterway.
 |<<WaterwayUsageValue-section,WaterwayUsageValue>> +
  «CodeList»  |WaterwayUsageValue is a code list that enumerates the different uses of a Waterway.
-|===  
+|===
 
 
 

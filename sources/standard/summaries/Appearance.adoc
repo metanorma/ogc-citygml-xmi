@@ -8,7 +8,7 @@
 |<<AbstractTexture-section,AbstractTexture>> +
  «FeatureType»  |AbstractTexture is the abstract superclass to represent the common attributes of the classes ParameterizedTexture and GeoreferencedTexture.
 |<<Appearance-section,Appearance>> +
- «FeatureType»  |An Appearance is a collection of surface data, i.e. observable properties for surface geometry objects in the form of textures and material.
+ «FeatureType»  |An Appearance is a collection of surface data, i.e., observable properties for surface geometry objects in the form of textures and material.
 |<<GeoreferencedTexture-section,GeoreferencedTexture>> +
  «FeatureType»  |A GeoreferencedTexture is a texture that uses a planimetric projection. It contains an implicit parameterization that is either stored within the image file, an accompanying world file or specified using the orientation and referencePoint elements.
 |<<ParameterizedTexture-section,ParameterizedTexture>> +

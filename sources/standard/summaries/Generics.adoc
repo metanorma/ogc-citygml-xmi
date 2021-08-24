@@ -4,13 +4,13 @@
 |===
 ^|*Class* ^|*Description*
 |<<GenericLogicalSpace-section,GenericLogicalSpace>> +
- «TopLevelFeatureType»  |A GenericLogicalSpace is a space that is not represented by any explicitly modelled AbstractLogicalSpace subclass within CityGML.
+ «TopLevelFeatureType»  |A GenericLogicalSpace is a space that is not represented by any explicitly modeled AbstractLogicalSpace subclass within CityGML.
 |<<GenericOccupiedSpace-section,GenericOccupiedSpace>> +
- «TopLevelFeatureType»  |A GenericOccupiedSpace is a space that is not represented by any explicitly modelled AbstractOccupiedSpace subclass within CityGML.
+ «TopLevelFeatureType»  |A GenericOccupiedSpace is a space that is not represented by any explicitly modeled AbstractOccupiedSpace subclass within CityGML.
 |<<GenericThematicSurface-section,GenericThematicSurface>> +
- «TopLevelFeatureType»  |A GenericThematicSurface is a surface that is not represented by any explicitly modelled AbstractThematicSurface subclass within CityGML.
+ «TopLevelFeatureType»  |A GenericThematicSurface is a surface that is not represented by any explicitly modeled AbstractThematicSurface subclass within CityGML.
 |<<GenericUnoccupiedSpace-section,GenericUnoccupiedSpace>> +
- «TopLevelFeatureType»  |A GenericUnoccupiedSpace is a space that is not represented by any explicitly modelled AbstractUnoccupiedSpace subclass within CityGML.
+ «TopLevelFeatureType»  |A GenericUnoccupiedSpace is a space that is not represented by any explicitly modeled AbstractUnoccupiedSpace subclass within CityGML.
 |===
 
 [[Generics-datatypes-table]]
@@ -73,4 +73,4 @@
  «CodeList»  |GenericUnoccupiedSpaceFunctionValue is a code list that enumerates the different purposes of a GenericUnoccupiedSpace.
 |<<GenericUnoccupiedSpaceUsageValue-section,GenericUnoccupiedSpaceUsageValue>> +
  «CodeList»  |GenericUnoccupiedSpaceUsageValue is a code list that enumerates the different uses of a GenericUnoccupiedSpace.
-|===  
+|===

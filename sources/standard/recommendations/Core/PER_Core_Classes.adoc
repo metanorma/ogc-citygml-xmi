@@ -1,7 +1,7 @@
 [[per_Core_classes]]
-[cols="2,6"]
+[cols="2h,6",options="header"]
 |===
-^|*Permission  {counter:per-id}* |*/per/Core/classes*
+| Permission  {counter:per-id} | /per/Core/classes
 2+|For each UML class defined or referenced in CityGML Conceptual Model:
 ^|A |An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.
 ^|B |An Implementation Specification MAY represent an association of the UML class with a null association.

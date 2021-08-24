@@ -1,7 +1,7 @@
 [abstract]
 == Abstract
 
-This standard defines the open CityGML Conceptual Model for the storage and exchange of virtual 3D city models. The CityGML Conceptual Model is defined by a Unified Modeling Language (UML) object model. This UML model builds on the ISO Technical Committee 211 (ISO/TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the man-made features described in the city models share the same spatiotemporal universe as the surrounding countryside within which they reside.
+This Standard defines the open CityGML Conceptual Model for the storage and exchange of virtual 3D city models. The CityGML Conceptual Model is defined by a Unified Modeling Language (UML) object model. This UML model builds on the ISO Technical Committee 211 (ISO/TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the man-made features described in the city models share the same spatiotemporal universe as the surrounding countryside within which they reside.
 
 A key goal for the development of the CityGML Conceptual Model is to provide a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.
 

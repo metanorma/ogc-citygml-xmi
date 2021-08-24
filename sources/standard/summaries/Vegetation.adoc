@@ -6,7 +6,7 @@
 |<<PlantCover-section,PlantCover>> +
  «TopLevelFeatureType»  |A PlantCover represents a space covered by vegetation.
 |<<SolitaryVegetationObject-section,SolitaryVegetationObject>> +
- «TopLevelFeatureType»  |A SolitaryVegetationObject represents individual vegetation objects, e.g. trees or bushes.
+ «TopLevelFeatureType»  |A SolitaryVegetationObject represents individual vegetation objects, e.g., trees or bushes.
 |<<AbstractVegetationObject-section,AbstractVegetationObject>> +
  «FeatureType»  |AbstractVegetationObject is the abstract superclass for all kinds of vegetation objects.
 |===
@@ -43,4 +43,4 @@
  «CodeList»  |SolitaryVegetationObjectUsageValue is a code list that enumerates the different uses of a SolitaryVegetationObject.
 |<<SpeciesValue-section,SpeciesValue>> +
  «CodeList»  |A SpeciesValue is a code list that enumerates the species of a SolitaryVegetationObject.
-|===  
+|===

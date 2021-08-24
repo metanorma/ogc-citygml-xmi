@@ -1,7 +1,7 @@
 [[ats_ade_elements]]
-[cols="2,6a"]
+[cols="2,6",options="header"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/ade/elements*
+| Abstract Test {counter:ats-id} | /ats/ade/elements
 ^|Test Purpose |To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model are implemented correctly.
 ^|Requirement |<<req_ade_elements,/req/ade/elements>>
 ^|Test Method |Manual Inspection

@@ -16,7 +16,7 @@
 |<<BridgePart-section,BridgePart>> +
  «FeatureType»  |A BridgePart is a physical or functional subdivision of a Bridge. It would be considered a Bridge, if it were not part of a collection of other BridgeParts.
 |<<BridgeRoom-section,BridgeRoom>> +
- «FeatureType»  |A BridgeRoom is a space within a Bridge or BridgePart intended for human occupancy (e.g. a place of work or recreation) and/or containment (storage) of animals or things. A BridgeRoom is bounded physically and/or virtually (e.g. by ClosureSurfaces or GenericSurfaces).
+ «FeatureType»  |A BridgeRoom is a space within a Bridge or BridgePart intended for human occupancy (e.g., a place of work or recreation) and/or containment (storage) of animals or things. A BridgeRoom is bounded physically and/or virtually (e.g., by ClosureSurfaces or GenericSurfaces).
 |===
 
 [[Bridge-datatypes-table]]

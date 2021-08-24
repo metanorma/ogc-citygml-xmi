@@ -406,7 +406,7 @@ Supplementary identification and remarks information for a CRS or CRS-related ob
 [[Length-section]]
 === Length
 
-The measure of distance as an integral, i.e. the limit of an infinite sum of distances between points on a curve.
+The measure of distance as an integral, i.e., the limit of an infinite sum of distances between points on a curve.
 
 [.source]
 <<iso19103>>
