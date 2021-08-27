@@ -1,10 +1,20 @@
 [[ats_cityfurniture_ade_use]]
-[cols="2,6",options="header"]
-|===
-| Abstract Test {counter:ats-id} | /ats/cityfurniture/ade/use
-^|Test Purpose |To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
-^|Requirement |<<req_cityfurniture_ade_use,/req/cityfurniture/ade_use>>
-^|Test Method |Manual Inspection
-2+|If any ADE classes or properties are included in the CityFurniture Package:
-h| A | Validate that the Implementation Specification conforms with the ADE Requirements Class.
-|===
+[requirement,type="abstracttest",label="/ats/cityfurniture/ade/use",subject='<<req_cityfurniture_ade_use,/req/cityfurniture/ade_use>>']
+====
+[.component,class=test-purpose]
+--
+To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
+--
+
+[.component,class=test-method]
+--
+Manual Inspection
+--
+
+If any ADE classes or properties are included in the CityFurniture Package:
+
+[.component,class=part]
+--
+Validate that the Implementation Specification conforms with the ADE Requirements Class.
+--
+====

@@ -1,10 +1,25 @@
 [[req_Profile_template]]
-[cols="2,6",options="header"]
-|===
-| Requirement  {counter:req-id} | /req/Profile/template
-2+|For each UML class defined or referenced in the Core Package:
-h| A | The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
-h| B | The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
-h| C | The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and cardinality.
-h| D | The implementation Specification SHALL represent the attributes of all parent classes of the the UML class including the name, definition, type, and cardinality.
-|===
+[requirement,type="general",label="/req/Profile/template"]
+====
+For each UML class defined or referenced in the Core Package:
+
+[.component,class=part]
+--
+The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
+--
+
+[.component,class=part]
+--
+The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
+--
+
+[.component,class=part]
+--
+The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and cardinality.
+--
+
+[.component,class=part]
+--
+The implementation Specification SHALL represent the attributes of all parent classes of the the UML class including the name, definition, type, and cardinality.
+--
+====

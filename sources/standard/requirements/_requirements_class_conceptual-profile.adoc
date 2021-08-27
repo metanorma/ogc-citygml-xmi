@@ -1,8 +1,5 @@
 [[rc_conceptual-profile]]
-[cols="1,4"]
-|===
-2+|*Requirements Class*
-2+|http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-conceptual-profile
-|Target type |Conceptual Model Profile
-|Dependency |<<citygml_3-0,CityGML 3.0 Conceptual Model>>
-|===
+[requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-conceptual-profile",subject="Conceptual Model Profile"]
+====
+inherit:[<<citygml_3-0,CityGML 3.0 Conceptual Model>>]
+====

@@ -1,8 +1,5 @@
 [[rc_pointCloud]]
-[cols="1,4"]
-|===
-2+|*Requirements Class*
-2+|http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-pointcloud
-|Target type |Implementation Specification
-|Dependency |<<rc_core,/req/req-class-core>>
-|===
+[requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-pointcloud",subject="Implementation Specification"]
+====
+inherit:[<<rc_core,/req/req-class-core>>]
+====

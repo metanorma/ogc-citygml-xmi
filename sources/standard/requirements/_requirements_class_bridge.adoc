@@ -1,9 +1,6 @@
 [[rc_bridge]]
-[cols="1,4"]
-|===
-2+|*Requirements Class*
-2+|http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-bridge
-|Target type |Implementation Specification
-|Dependency |<<rc_core,/req/req-class-core>>
-|Dependency |<<rc_construction,/req/req-class-construction>>
-|===
+[requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-bridge",subject="Implementation Specification"]
+====
+inherit:[<<rc_core,/req/req-class-core>>]
+inherit:[<<rc_construction,/req/req-class-construction>>]
+====

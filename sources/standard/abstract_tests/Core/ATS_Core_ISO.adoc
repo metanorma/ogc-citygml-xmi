@@ -1,10 +1,23 @@
 [[ats_Core_iso-restrictions]]
-[cols="2,6",options="header"]
-|===
-| Abstract Test {counter:ats-id} | /ats/Core/isorestrictions
-^|Test Purpose |To validate that none of the restrictions which the CityGML Conceptual Model imposes on ISO classes are violated by an Implementation Specification.
-^|Requirement |<<req_Core_iso-restrictions,/req/Core/isorestrictions>>
-^|Test Method |Manual Inspection
-h| A | For each instance of the GM_Solid class, validate that there are no interior boundaries associated with that instance.
-h| B | For each instance of a class descended from the GM_Solid class, validate that there are no interior boundaries associated with that instance.
-|===
+[requirement,type="abstracttest",label="/ats/Core/isorestrictions",subject='<<req_Core_iso-restrictions,/req/Core/isorestrictions>>']
+====
+[.component,class=test-purpose]
+--
+To validate that none of the restrictions which the CityGML Conceptual Model imposes on ISO classes are violated by an Implementation Specification.
+--
+
+[.component,class=test-method]
+--
+Manual Inspection
+--
+
+[.component,class=part]
+--
+For each instance of the GM_Solid class, validate that there are no interior boundaries associated with that instance.
+--
+
+[.component,class=part]
+--
+For each instance of a class descended from the GM_Solid class, validate that there are no interior boundaries associated with that instance.
+--
+====
