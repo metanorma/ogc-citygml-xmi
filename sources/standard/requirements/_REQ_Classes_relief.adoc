@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Relief Module as an Implementation Specification.
+
 [[req_relief_classes]]
 [requirement,type="general",label="/req/relief/classes"]
 ====

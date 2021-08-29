@@ -1,3 +1,5 @@
+The use of extension capabilities by Waterbody elements is constrained by the following requirement:
+
 [[req_waterbody_ade_use]]
 [requirement,type="general",label="/req/waterbody/ade/use"]
 ====

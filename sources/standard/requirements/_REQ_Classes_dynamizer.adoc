@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Dynamizer Module as an Implementation Specification.
+
 [[req_dynamizer_classes]]
 [requirement,type="general",label="/req/dynamizer/classes"]
 ====

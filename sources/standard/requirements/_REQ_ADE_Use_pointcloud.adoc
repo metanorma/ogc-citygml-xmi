@@ -1,3 +1,5 @@
+The use of extension capabilities by Point Cloud elements is constrained by the following requirement:
+
 [[req_pointcloud_ade_use]]
 [requirement,type="general",label="/req/pointcloud/ade/use"]
 ====

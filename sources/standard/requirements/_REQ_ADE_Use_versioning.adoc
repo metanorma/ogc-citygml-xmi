@@ -1,3 +1,5 @@
+The use of extension capabilities by Versioning elements is constrained by the following requirement:
+
 [[req_versioning_ade_use]]
 [requirement,type="general",label="/req/versioning/ade/use"]
 ====

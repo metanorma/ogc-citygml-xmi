@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Pointcloud Module as an Implementation Specification.
+
 [[req_pointcloud_classes]]
 [requirement,type="general",label="/req/pointcloud/classes"]
 ====

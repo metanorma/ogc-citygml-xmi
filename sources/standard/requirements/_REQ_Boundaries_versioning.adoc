@@ -1,3 +1,5 @@
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
 [[req_versioning_boundaries]]
 [requirement,type="general",label="/req/versioning/boundaries"]
 ====

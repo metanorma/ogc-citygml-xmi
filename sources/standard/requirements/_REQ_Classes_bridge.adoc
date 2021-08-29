@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Bridge Module as an Implementation Specification.
+
 [[req_bridge_classes]]
 [requirement,type="general",label="/req/bridge/classes"]
 ====

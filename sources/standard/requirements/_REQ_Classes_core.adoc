@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Core Module as an Implementation Specification.
+
 [[req_core_classes]]
 [requirement,type="general",label="/req/core/classes"]
 ====

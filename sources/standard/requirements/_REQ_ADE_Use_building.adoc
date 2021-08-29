@@ -1,3 +1,5 @@
+The use of extension capabilities by Building elements is constrained by the following requirement:
+
 [[req_building_ade_use]]
 [requirement,type="general",label="/req/building/ade/use"]
 ====

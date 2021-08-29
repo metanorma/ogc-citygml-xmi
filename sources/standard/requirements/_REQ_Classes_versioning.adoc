@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Versioning Module as an Implementation Specification.
+
 [[req_versioning_classes]]
 [requirement,type="general",label="/req/versioning/classes"]
 ====

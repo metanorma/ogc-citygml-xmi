@@ -1,3 +1,5 @@
+The use of extension capabilities by Generics elements is constrained by the following requirement:
+
 [[req_generics_ade_use]]
 [requirement,type="general",label="/req/generics/ade/use"]
 ====

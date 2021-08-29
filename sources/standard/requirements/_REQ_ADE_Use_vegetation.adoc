@@ -1,3 +1,5 @@
+The use of extension capabilities by Vegetation elements is constrained by the following requirement:
+
 [[req_vegetation_ade_use]]
 [requirement,type="general",label="/req/vegetation/ade/use"]
 ====
