@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Vegetation Module as an Implementation Specification.
+
 [[req_vegetation_classes]]
 [requirement,type="general",label="/req/vegetation/classes"]
 ====

@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Generics Module as an Implementation Specification.
+
 [[req_generics_classes]]
 [requirement,type="general",label="/req/generics/classes"]
 ====

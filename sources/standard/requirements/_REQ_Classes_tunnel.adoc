@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Tunnel Module as an Implementation Specification.
+
 [[req_tunnel_classes]]
 [requirement,type="general",label="/req/tunnel/classes"]
 ====

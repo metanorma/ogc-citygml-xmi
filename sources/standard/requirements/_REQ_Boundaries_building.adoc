@@ -1,3 +1,7 @@
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
+The implementation of this Module is further constrained by the following spatial boundary requirement:
+
 [[req_building_boundaries]]
 [requirement,type="general",label="/req/building/boundaries"]
 ====

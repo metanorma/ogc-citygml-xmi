@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Transportation Module as an Implementation Specification.
+
 [[req_transportation_classes]]
 [requirement,type="general",label="/req/transportation/classes"]
 ====

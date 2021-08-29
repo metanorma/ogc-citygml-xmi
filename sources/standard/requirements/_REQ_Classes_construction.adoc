@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Construction Module as an Implementation Specification.
+
 [[req_construction_classes]]
 [requirement,type="general",label="/req/construction/classes"]
 ====

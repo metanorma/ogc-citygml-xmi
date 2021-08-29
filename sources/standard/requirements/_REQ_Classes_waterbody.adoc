@@ -1,3 +1,5 @@
+The following requirement defines the rules governing implementation of the CityGML Waterbody Module as an Implementation Specification.
+
 [[req_waterbody_classes]]
 [requirement,type="general",label="/req/waterbody/classes"]
 ====
