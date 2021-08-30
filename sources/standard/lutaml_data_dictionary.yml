@@ -18,3 +18,4 @@ packages:
   - "Tunnel"
 section_depth: 3
 render_style: data_dictionary
+include_root: true
