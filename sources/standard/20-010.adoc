@@ -9,7 +9,7 @@
 :external-id: http://www.opengis.net/doc/IS/CityGML-1/3.0
 :docnumber: 20-010
 :received-date: 2021-03-02
-:approval-date: 2021-06-04
+:issued-date: 2021-06-04
 :published-date: 2021-07-15
 :fullname: Thomas H. Kolbe
 :affiliation: Chair of Geoinformatics, Technical University of Munich, Germany
