@@ -1,4 +1,3 @@
-
 The Dynamizer module provides the concepts that enable representation of time-varying data for city object properties as well as for integrating sensors with 3D city models. Dynamizers are objects that inject timeseries data for an individual attribute of the city object in which the Dynamizer is included. In order to represent dynamic (time-dependent) variations of its value, the timeseries data overrides the static value of the referenced city object attribute.
 
 The dynamic values may be given by retrieving observation results directly from external sensor/<<IoT_definition,IoT>> services using a sensor connection (e.g., OGC SensorThings API, Sensor Observation Service, or other sensor data platforms including <<MQTT2019,MQTT>>). Alternatively, the dynamic values may be provided as atomic timeseries that represent time-varying data of a specific data type for a single contiguous time interval. The data can be provided in:
