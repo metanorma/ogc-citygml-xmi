@@ -1,3 +1,4 @@
+
 The WaterBody module provides the representation of significant and permanent or semi-permanent accumulations of surface water, usually covering a part of the Earth. Examples of such water bodies that can be modeled with CityGML are rivers, canals, lakes, and basins.
 Water bodies are represented in the UML model by the top-level feature type _WaterBody_, which is the main class of the WaterBody module.
 
