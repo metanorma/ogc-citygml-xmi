@@ -1,3 +1,4 @@
+
 The Vegetation module defines the concepts to represent vegetation within city models. Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
 Vegetation is represented in the UML model by the top-level feature types _SolitaryVegetationObject_ and _PlantCover_, which are also the only classes of the Vegetation module.
 

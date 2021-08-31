@@ -1,3 +1,4 @@
+
 The Transportation module defines central elements of the traffic infrastructure. This includes the transportation objects road, track, and square for the movement of vehicles, bicycles, and pedestrians, the transportation object railway for the movement of wheeled vehicles on rails, as well as the transportation object waterway for the movement of vessels upon or within water bodies.
 The transportation objects are represented in the UML model by the top-level feature types _Road_, _Track_, _Square_, _Railway_, and _Waterway_, which are the main classes of the Transportation module. Transportation objects can be subdivided into sections, which can be regular road, track or railway legs, into intersection areas, and into roundabouts.
 
