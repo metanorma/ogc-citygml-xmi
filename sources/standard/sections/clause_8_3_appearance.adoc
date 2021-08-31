@@ -1,4 +1,3 @@
-
 The Appearance module provides the representation of surface data such as observable properties for surface geometry objects in the form of textures and material.
 
 Appearances are not limited to visual data but represent arbitrary categories called themes such as infrared radiation, noise pollution, or earthquake-induced structural stress. A single surface geometry object may have surface data for multiple themes. Similarly, surface data can be shared by multiple surface geometry objects (e.g., road paving).
