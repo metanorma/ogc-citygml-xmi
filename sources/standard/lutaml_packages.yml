@@ -6,7 +6,7 @@ packages:
   - "Dynamizer"
   - "Generics"
   - "LandUse"
-  - "Pointcloud"
+  - "PointCloud"
   - "Relief"
   - "Transportation"
   - "Vegetation"
