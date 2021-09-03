@@ -1,4 +1,4 @@
-The following requirement defines the rules governing implementation of the CityGML Core Module as an Implementation Specification.
+The CityGML Core defines technology-agnostic concepts. These concepts are then realized in technology-specific Implementation Specifications. The following requirements govern the creation of any CityGML compliant Implementation Specification (IS).
 
 [[req_core_classes]]
 [requirement,type="general",label="/req/core/classes"]

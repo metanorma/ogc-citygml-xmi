@@ -1,4 +1,4 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+Surface boundaries are constrained by the following requirement:
 
 [[req_core_boundaries]]
 [requirement,type="general",label="/req/core/boundaries"]
