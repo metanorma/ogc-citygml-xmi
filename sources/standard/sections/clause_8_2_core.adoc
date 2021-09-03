@@ -121,3 +121,7 @@ Of particular note is the Implicit Geometry concept. Many of the objects encount
 The <<city-objects-section,City Model and City Object>> classes, the <<space-concepts-section,Space Concept>> classes, and the <<geometry-lod-section,Geometry and LOD>> classes define the majority of the CityGML Core module. In addition to these concepts, the Core module also specifies that city objects can have relations to other city objects and that they can have address information. All other modules defined in the CityGML model refer to the Core module.
 
 The UML diagram of the complete Core module is depicted in <<core-uml>>.
+
+[[core-uml]]
+.UML diagram of CityGML's core module
+image::figures/Core/Core-Overview.png[align="center"]
