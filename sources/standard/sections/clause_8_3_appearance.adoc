@@ -4,12 +4,12 @@ Appearances are not limited to visual data but represent arbitrary categories ca
 
 Surface data that is constant across a surface is modeled as material based on the material definitions from the X3D and COLLADA standards. Surface data that depends on the exact location within the surface is modeled as a texture. This can either be a parameterized texture (a texture that uses texture coordinates) or a transformation matrix for parameterization, or a georeferenced texture (a texture that uses a planimetric projection).
 
-Each surface geometry object can have both, a material and a texture per theme and side. This allows for providing a constant approximation and a complex measurement of a surface’s property simultaneously.
+Each surface geometry object can have both, a material and a texture per theme and side. This allows for providing a constant approximation and a complex measurement of a surface's property simultaneously.
 
 The UML diagram of the Appearance module is illustrated in <<appearance-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-appearance-section[CityGML 3.0 Users Guide].
 
 [[appearance-uml]]
-.UML diagram of CityGML’s Appearance model.
+.UML diagram of CityGML's Appearance model.
 image::figures/Appearance.png[]
 
 The ADE data types provided for the Appearance module are illustrated in <<appearance-uml-ade-types>>.

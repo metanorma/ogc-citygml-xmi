@@ -17,7 +17,7 @@ Recipients of this document are requested to submit, with their comments, notifi
 |===
 |Name |Affiliation
 
-|Emmanuel Devys |Institut national de l’information géographique et forestière (IGN), France
+|Emmanuel Devys |Institut national de l'information géographique et forestière (IGN), France
 |Volker Coors |HFT Stuttgart, Germany
 |Sylvester Hagler |U.S. National Geospatial-Intelligence Agency
 |Charles (Chuck) Heazel |HeazelTech LLC
@@ -44,7 +44,7 @@ In addition to the Editors of the specification the following individuals contri
 |Filip Biljecki |Department of Architecture, National University of Singapore, Singapore
 |Kanishk Chaturvedi |Chair of Geoinformatics, Technical University of Munich, Germany
 |Volker Coors |HFT Stuttgart, Germany
-|Emmanuel Devys |Institut national de l’information géographique et forestière (IGN), France
+|Emmanuel Devys |Institut national de l'information géographique et forestière (IGN), France
 |Jürgen Ebbinghaus |AED-SICAD, Germany
 |Heinrich Geerling |Architekturbüro Geerling, Germany
 |Gilles Gesquière |LIRIS, University of Lyon, France

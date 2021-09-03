@@ -5,7 +5,7 @@ City furniture is represented in the UML model by the top-level feature type _Ci
 The UML diagram of the CityFurniture module is depicted in <<cityfurniture-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-furniture-section[CityGML 3.0 Users Guide].
 
 [[cityfurniture-uml]]
-.UML diagram of CityGML’s City Furniture model.
+.UML diagram of CityGML's City Furniture model.
 
 image::figures/CityFurniture.png[]
 

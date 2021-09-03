@@ -10,7 +10,7 @@ Furthermore, timeseries data can also be aggregated to form composite timeseries
 
 By using the Dynamizer module, fast changes over a short or longer time period with respect to cities and city models can be represented. This includes:
 
-* variations of spatial properties such as change of a feature’s geometry, both in respect to shape and to location (e.g., moving objects),
+* variations of spatial properties such as change of a feature's geometry, both in respect to shape and to location (e.g., moving objects),
 * variations of thematic attributes such as changes of physical quantities like energy demands, temperatures, solar irradiation, traffic density, pollution concentration, or overpressure on building walls, and
 * variations with respect to sensor or real-time data resulting from simulations or measurements.
 

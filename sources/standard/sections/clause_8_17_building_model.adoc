@@ -9,7 +9,7 @@ Buildings can be bounded by different types of surfaces. In this way, the outer 
 The UML diagram of the building module is depicted in <<building-uml>>. The Building module inherits concepts from the Construction module (cf. <<rc_construction-model_section>>). The Construction module defines objects that are common to all types of construction, such as the different surface types and the openings. A detailed discussion of the Requirements Class Building can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-building-section[CityGML 3.0 Users Guide].
 
 [[building-uml]]
-.UML diagram of CityGML’s building model.
+.UML diagram of CityGML's building model.
 
 image::figures/Building.png[]
 
