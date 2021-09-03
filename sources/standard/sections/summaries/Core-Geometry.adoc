@@ -1,0 +1,18 @@
+[[Core-geometry-class-table]]
+.Geometry Classes used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<AbstractOccupiedSpace-section,AbstractOccupiedSpace>> +
+ «FeatureType»  |AbstractOccupiedSpace is the abstract superclass for all types of physically occupied spaces. Occupied space refers to spaces that are partially or entirely filled with matter.
+|<<AbstractPhysicalSpace-section,AbstractPhysicalSpace>> +
+ «FeatureType»  |AbstractPhysicalSpace is the abstract superclass for all types of physical spaces. Physical space refers to spaces that are fully or partially bounded by physical objects.
+|<<AbstractPointCloud-section,AbstractPointCloud>> +
+ «FeatureType»  |AbstractPointCloud is the abstract superclass to represent PointCloud objects.
+|<<AbstractSpace-section,AbstractSpace>> +
+ «FeatureType»  |AbstractSpace is the abstract superclass for all types of spaces. A space is an entity of volumetric extent in the real world.
+|<<AbstractThematicSurface-section,AbstractThematicSurface>> +
+ «FeatureType»  |AbstractThematicSurface is the abstract superclass for all types of thematic surfaces.
+|<<ImplicitGeometry-section,ImplicitGeometry>> +
+ «ObjectType»  |ImplicitGeometry is a geometry representation where the shape is stored only once as a prototypical geometry. Examples are a tree or other vegetation object, a traffic light or a traffic sign. This prototypic geometry object can be re-used or referenced many times, wherever the corresponding feature occurs in the 3D city model.
+|===

@@ -1,0 +1,23 @@
+[[Core-city-model-class-table]]
+.City Model and City Object classes used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<AbstractAppearance-section,AbstractAppearance>> +
+ «FeatureType»  |AbstractAppearance is the abstract superclass to represent any kind of appearance objects.
+|<<AbstractCityObject-section,AbstractCityObject>> +
+ «FeatureType»  |AbstractCityObject is the abstract superclass of all thematic classes within the CityGML Conceptual Model.
+|<<AbstractDynamizer-section,AbstractDynamizer>> +
+ «FeatureType»  |AbstractDynamizer is the abstract superclass to represent Dynamizer objects.
+|<<AbstractFeature-section,AbstractFeature>> +
+ «FeatureType»  |AbstractFeature is the abstract superclass of all feature types within the CityGML Conceptual Model.
+|<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> +
+ «FeatureType»  |AbstractFeatureWithLifespan is the base class for all CityGML features. This class allows the optional specification of the real-world and database times for the existence of each feature.
+|<<AbstractVersion-section,AbstractVersion>> +
+ «FeatureType»  |AbstractVersion is the abstract superclass to represent Version objects.
+|<<AbstractVersionTransition-section,AbstractVersionTransition>> +
+ «FeatureType»  |AbstractVersionTransition is the abstract superclass to represent VersionTransition objects.
+|<<CityModel-section,CityModel>> +
+ «FeatureType»  |CityModel is the container for all objects belonging to a city model.
+|===
+

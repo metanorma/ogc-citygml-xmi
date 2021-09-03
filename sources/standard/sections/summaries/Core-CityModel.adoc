@@ -1,0 +1,11 @@
+[[Core-class-table]]
+.Additional Classes used in Core
+[cols="2,6",options="headers"]
+|===
+^|*Class* ^|*Description*
+|<<Address-section,Address>> +
+ «FeatureType»  |Address represents an address of a city object.
+|<<CityObjectRelation-section,CityObjectRelation>> +
+ «ObjectType»  |CityObjectRelation represents a specific relation from the city object in which the relation is included to another city object.
+|===
+
