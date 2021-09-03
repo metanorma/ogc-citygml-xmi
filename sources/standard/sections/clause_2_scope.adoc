@@ -40,7 +40,7 @@ Features of the CityGML 3.0 Conceptual Model include the following.
 ** Vegetation (areas, volumes, and solitary objects with vegetation classification);
 ** Water bodies (volumes, surfaces);
 ** Transportation facilities (graph structures, 3D space, and 3D surface data);
-** Land use (representation of areas of the earth’s surface dedicated to a specific land use);
+** Land use (representation of areas of the earth's surface dedicated to a specific land use);
 ** City furniture;
 ** Generic city objects and attributes; and
 ** User-definable (recursive) grouping.
