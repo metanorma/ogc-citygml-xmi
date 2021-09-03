@@ -1,7 +1,0 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
-
-[[req_versioning_boundaries]]
-[requirement,type="general",label="/req/versioning/boundaries"]
-====
-<<versioning-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Versioning module. An Implementation Specification SHALL only support the boundaries described in <<versioning-boundaries-table>>
-====

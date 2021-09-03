@@ -1,7 +1,0 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
-
-[[req_landuse_boundaries]]
-[requirement,type="general",label="/req/landuse/boundaries"]
-====
-<<landuse-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the LandUse module. An Implementation Specification SHALL only support the boundaries described in <<landuse-boundaries-table>>
-====
