@@ -1,7 +1,0 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
-
-[[req_relief_boundaries]]
-[requirement,type="general",label="/req/relief/boundaries"]
-====
-<<relief-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Relief module. An Implementation Specification SHALL only support the boundaries described in <<relief-boundaries-table>>
-====
