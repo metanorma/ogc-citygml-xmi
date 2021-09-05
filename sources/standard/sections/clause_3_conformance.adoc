@@ -1,11 +1,11 @@
-
 [[conformance-section]]
+
 == Conformance
 
-This Standard defines a {{Conceptual Model}} which is independent of any encoding or formatting techniques. The {{Standardization Target,Standardization Targets}} for this Standard are:
+This Standard defines a <<conceptual_model_definition,Conceptual Model>> which is independent of any encoding or formatting techniques. The <<standardization-target-definition,Standardization Targets>> for this Standard are:
 
-. {{conceptual model,Conceptual Models}} (extended versions of this conceptual model)
-. {{Implementation Specification,Implementation Specifications}} (encodings of this conceptual model)
+. <<conceptual-model-definition,Conceptual Models>> (extended versions of this conceptual model); and
+. <<implementation-specification-definition,Implementation Specifications>> (encodings of this conceptual model).
 
 [[conceptual-model-conformance]]
 === Conceptual Models
@@ -24,14 +24,14 @@ Extensions of the CityGML Conceptual Model conform with the ADE Conformance Clas
 [[implementation-specification-conformance]]
 === Implementation Specifications
 
-Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <<abstract-test-suite>> of this document.
+Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <<abstract-test-suite,Annex A>> (normative) of this document.
 
 Since this Standard is agnostic to the implementing technologies, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as an annex to the Implementation Specification document.
 
 [[conformance-class-section]]
 === Conformance Classes
 
-This Standard identifies seventeen (17) conformance classes. One conformance class is defined for each package in the UML model. Each conformance class is defined by one requirements class. The tests in <<abstract-test-suite>> are organized by Requirements Class. So an implementation of the _Core_ conformance class must pass all tests specified in <<abstract-test-suite>> for the _Core_ requirements class.
+This Standard identifies seventeen (17) conformance classes. One conformance class is defined for each package in the UML model. Each conformance class is defined by one requirements class. The tests in <<abstract-test-suite,Annex A>> are organized by Requirements Class. So an implementation of the _Core_ conformance class must pass all tests specified in Annex A for the _Core_ requirements class.
 
 Of these seventeen conformance classes, only the _Core_ conformance class is mandatory. All other conformance classes are optional. In the case where a conformance class has a dependency on another conformance class, that conformance class should also be implemented.
 
