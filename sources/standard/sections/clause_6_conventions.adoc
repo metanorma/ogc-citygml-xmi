@@ -77,3 +77,5 @@ The example UML diagram in <<figure-2>> demonstrates the UML notation and colori
 [[figure-2]]
 .Example UML diagram demonstrating the UML notation and coloring scheme used throughout the CityGML Standard.
 image::images/UML_Notation_Example.png[]
+
+The UML diagrams presented in this standard can also be found in XML Metadata Interchange (XMI) format at link:https://github.com/opengeospatial/CityGML3-Workspace/tree/1.0/UML/CityGML[]
