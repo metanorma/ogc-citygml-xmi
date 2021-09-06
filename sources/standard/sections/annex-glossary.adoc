@@ -1,4 +1,4 @@
-[appendix]
+[appendix,obligation="informative"]
 [heading='terms and definitions']
 == Glossary
 

@@ -1,6 +1,6 @@
 [appendix,obligation="normative"]
 [[abstract-test-suite]]
-== Abstract Test Suite
+== Abstract test suite
 
 === Introduction
 
