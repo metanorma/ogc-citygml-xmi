@@ -2,7 +2,7 @@
 .City Model and City Object classes used in Core
 [cols="2,6",options="headers"]
 |===
-^|*Class* ^|*Description*
+| Class | Description
 |<<AbstractAppearance-section,AbstractAppearance>> +
  «FeatureType»  |AbstractAppearance is the abstract superclass to represent any kind of appearance objects.
 |<<AbstractCityObject-section,AbstractCityObject>> +

@@ -2,7 +2,7 @@
 .Space Classes used in Core
 [cols="2,6",options="headers"]
 |===
-^|*Class* ^|*Description*
+| Class | Description
 |<<AbstractLogicalSpace-section,AbstractLogicalSpace>> +
  «FeatureType»  |AbstractLogicalSpace is the abstract superclass for all types of logical spaces. Logical space refers to spaces that are not bounded by physical surfaces but are defined according to thematic considerations.
 |<<AbstractOccupiedSpace-section,AbstractOccupiedSpace>> +

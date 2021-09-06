@@ -2,7 +2,7 @@
 .Additional Classes used in Core
 [cols="2,6",options="headers"]
 |===
-^|*Class* ^|*Description*
+| Class | Description
 |<<Address-section,Address>> +
  «FeatureType»  |Address represents an address of a city object.
 |<<CityObjectRelation-section,CityObjectRelation>> +

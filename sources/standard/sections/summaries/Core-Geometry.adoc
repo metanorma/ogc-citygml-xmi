@@ -2,7 +2,7 @@
 .Geometry Classes used in Core
 [cols="2,6",options="headers"]
 |===
-^|*Class* ^|*Description*
+| Class | Description
 |<<AbstractOccupiedSpace-section,AbstractOccupiedSpace>> +
  «FeatureType»  |AbstractOccupiedSpace is the abstract superclass for all types of physically occupied spaces. Occupied space refers to spaces that are partially or entirely filled with matter.
 |<<AbstractPhysicalSpace-section,AbstractPhysicalSpace>> +
