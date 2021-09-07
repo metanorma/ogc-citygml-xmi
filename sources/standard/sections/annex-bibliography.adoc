@@ -81,13 +81,10 @@
 
 * [[[gltf_citation, Khronos gLTF]]], Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: *The GL Transmission Format (glTF)*, The Khronos Group, Available from https://www.khronos.org/gltf[https://www.khronos.org/gltf].
 
-// TODO TB17 added references below
-// These references are used but not listed
+* [[[inspire_glossary,INSPIRE Glossary]]], European Union: *INSPIRE Glossary*, Available from https://inspire.ec.europa.eu/glossary
 
-* [[[inspire_glossary,INSPIRE Glossary]]], INSPIRE Glossary.
+* [[[OMGMDA,OMG MDA]]], Object Management Group: Model Driven Architecture Guide rev. 2.0, Available from https://www.omg.org/cgi-bin/doc?ormsc/14-06-01
 
-* [[[OMGMDA,OMG MDA]]] Object Management Group: Model Driven Architecture Guide rev. 2.0
+* [[[OGCDR,OGC Definitions Register]]], OGC: Definitions Register, Available from http://www.opengis.net/def/
 
-* [[[OGCDR,OGC Definitions Register]]] OGC: Definitions Register
-
-* [[[OGCDTR,OGC Document Types Register]]] OGC: Document Types Register
+* [[[OGCDTR,OGC Document Types Register]]] OGC: Document Types Register, Available from http://www.opengis.net/def/doc-type
