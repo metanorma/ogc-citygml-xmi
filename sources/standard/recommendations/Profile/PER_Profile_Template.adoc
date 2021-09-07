@@ -1,25 +1,12 @@
 [[per_Profile_template]]
-[.permission,label="/per/Profile/template"]
+[permission]
 ====
-For each UML class defined or referenced in the Core Package:
-
-[.component,class=part]
---
-The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=part]
---
-The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
---
-
-[.component,class=part]
---
-The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and cardinality.
---
-
-[.component,class=part]
---
-The implementation Specification SHALL represent the attributes of all parent classes of the the UML class including the name, definition, type, and cardinality.
---
+[%metadata]
+model:: ogc
+label:: /per/Profile/template
+description:: For each UML class defined or referenced in the Core Package:
+part:: The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
+part:: The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
+part:: The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and cardinality.
+part:: The implementation Specification SHALL represent the attributes of all parent classes of the the UML class including the name, definition, type, and cardinality.
 ====

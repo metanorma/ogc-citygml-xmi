@@ -1,26 +1,13 @@
 [[per_Core_classes]]
-[.permission,label="/per/Core/classes"]
+[permission]
 ====
-For each UML class defined or referenced in CityGML Conceptual Model:
-
-[.component,class=part]
---
-An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.
---
-
-[.component,class=part]
---
-An Implementation Specification MAY represent an association of the UML class with a null association.
---
-
-[.component,class=part]
---
-An Implementation Specification MAY represent an attribute of the UML class with a null attribute.
---
-
-[.component,class=part]
---
-Whenever a null element is used to represent a concept from the Conceptual Model, the Implementation Specification SHOULD document that mapping and provide an explanation for why that concept was not implemented.
---
+[%metadata]
+model:: ogc
+label:: /per/Core/classes
+description:: For each UML class defined or referenced in CityGML Conceptual Model:
+part:: An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.
+part:: An Implementation Specification MAY represent an association of the UML class with a null association.
+part:: An Implementation Specification MAY represent an attribute of the UML class with a null attribute.
+part:: Whenever a null element is used to represent a concept from the Conceptual Model, the Implementation Specification SHOULD document that mapping and provide an explanation for why that concept was not implemented.
 ====
 

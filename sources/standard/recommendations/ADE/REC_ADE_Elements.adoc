@@ -1,20 +1,11 @@
 [[rec_ade_elements]]
-[.recommendation,label="/rec/ade/elements"]
+[recommendation]
 ====
-ADEs typically extend CityGML by defining new feature types together with additional content such as object types, data types, code lists, and enumerations.
-
-[.component,class=part]
---
-ADEs SHOULD use the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards.
---
-
-[.component,class=part]
---
-Constraints on model elements SHOULD be expressed using a formal language such as the Object Constraint Language (OCL).
---
-
-[.component,class=part]
---
-ADE subclasses of _core:AbstractSpace_ SHOULD include constraints to limit the boundaries of the space object.
---
+[%metadata]
+model:: ogc
+label:: /rec/ade/elements
+description:: ADEs typically extend CityGML by defining new feature types together with additional content such as object types, data types, code lists, and enumerations.
+part:: ADEs SHOULD use the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards.
+part:: Constraints on model elements SHOULD be expressed using a formal language such as the Object Constraint Language (OCL).\
+part:: ADE subclasses of _core:AbstractSpace_ SHOULD include constraints to limit the boundaries of the space object.
 ====
