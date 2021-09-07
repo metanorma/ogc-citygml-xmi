@@ -2,7 +2,7 @@
 ==== AnyFeature (from <<iso19109,ISO 19109:2015>>)
 
 .Metadata of AnyFeature (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | AnyFeature is an abstract class that is the generalization of all feature types. AnyFeature is an instance of the «metaclass» FeatureType [cf. ISO 19109].
 h|Subclass of: | none
@@ -10,7 +10,7 @@ h|Stereotype: | «FeatureType»
 |===
 
 .Associations of AnyFeature (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 |
@@ -25,7 +25,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== CV_DiscreteGridPointCoverage (from <<iso19123,ISO 19123:2005>>)
 
 .Metadata of CV_DiscreteGridPointCoverage (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | A coverage that returns the same feature attribute values for every direct position within any single spatial object, temporal object or spatiotemporal object in its domain.
 h|Subclass of: | {{CV_DiscreteCoverage}}
@@ -33,7 +33,7 @@ h|Stereotype: | «type»
 |===
 
 .Associations of CV_DiscreteGridPointCoverage (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 | element
@@ -51,7 +51,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== DirectPosition (from <<iso19107>>)
 
 .Metadata of DirectPosition (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | DirectPosition object data types (Figure 14) hold the coordinates for a position within some coordinate reference system. The coordinate reference system is described in ISO 19111. Since DirectPositions, as data types, will often be included in larger objects (such as GM_Objects) that have references to ISO19111::SC_CRS, the DirectPosition::cordinateReferenceSystem may be left NULL if this particular DirectPosition is included in a larger object with such a reference to a SC_CRS. In this case, the DirectPosition::cordinateReferenceSystem is implicitly assumed to take on the value of the containing object's SC_CRS.
 h|Subclass of: | None
@@ -59,7 +59,7 @@ h|Stereotype: | None
 |===
 
 .Associations of DirectPosition (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 | CRS |{{CRS}} [0..1]|
@@ -67,7 +67,7 @@ h|Stereotype: | None
 |===
 
 .Attributes of DirectPosition (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 | coordinate   |Sequence {{number}} [1..1]|
@@ -81,7 +81,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_Object (from <<iso19107>>)
 
 .Metadata of GM_Object (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | GM_Object is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet<DirectPosition>. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.
 
@@ -95,7 +95,7 @@ h|Stereotype: | «type»
 |===
 
 .Associations of GM_Object (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 
@@ -128,7 +128,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_MultiCurve (from <<iso19107>>)
 
 .Metadata of GM_MultiCurve (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | An aggregate class containing only instances of GM_OrientableCurve. The association role “element” shall be the set of GM_OrientableCurves contained in this GM_MultiCurve.
 h|Subclass of: | {{GM_MultiPrimitive}}
@@ -136,7 +136,7 @@ h|Stereotype: | «type»
 |===
 
 .Attributes of GM_MultiCurve (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
@@ -150,7 +150,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_MultiPoint (from <<iso19107>>)
 
 .Metadata of GM_MultiPoint (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | GM_MultiPoint is an aggregate class containing only points. The association role “element” shall be the set of GM_Points contained in this GM_MultiPoint.
 h|Subclass of: | {{GM_MultiPrimitive}}
@@ -158,7 +158,7 @@ h|Stereotype: | «type»
 |===
 
 .Attributes of GM_MultiPoint (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
@@ -172,7 +172,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_MultiSurface (from <<iso19107>>)
 
 .Metadata of GM_MultiSurface (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | An aggregate class containing only instances of GM_OrientableSurface. The association role “element” shall be the set of GM_OrientableSurfaces contained in this GM_MultiSurface.
 h|Subclass of: | {{GM_MultiPrimitive}}
@@ -180,7 +180,7 @@ h|Stereotype: | «type»
 |===
 
 .Attributes of GM_MultiSurface (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
@@ -196,7 +196,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_Point (from <<iso19107>>)
 
 .Metadata of GM_Point (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | GM_Point is the basic data type for a geometric object consisting of one and only one point.
 h|Subclass of: | {{GM_Primitive}}
@@ -204,7 +204,7 @@ h|Stereotype: | «type»
 |===
 
 .Associations of GM_Point (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 |
@@ -216,7 +216,7 @@ h|Stereotype: | «type»
 |===
 
 .Attributes of GM_Point (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
@@ -232,7 +232,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_Solid (from <<iso19107>>)
 
 .Metadata of GM_Solid (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
 h|Subclass of: | {{GM_Primitive}}
@@ -240,7 +240,7 @@ h|Stereotype: | «type»
 |===
 
 .Associations of GM_Solid (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 | composite
@@ -258,7 +258,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_Surface (from <<iso19107>>)
 
 .Metadata of GM_Surface (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | GM_Surface is a subclass of GM_Primitive and is the basis for 2-dimensional geometry. Unorientable surfaces such as the Möbius band are not allowed. The orientation of a surface chooses an "up" direction through the choice of the upward normal, which, if the surface is not a cycle, is the side of the surface from which the exterior boundary appears counterclockwise. Reversal of the surface orientation reverses the curve orientation of each boundary component, and interchanges the conceptual "up" and "down" direction of the surface. If the surface is the boundary of a solid, the "up" direction is usually outward. For closed surfaces, which have no boundary, the up direction is that of the surface patches, which must be consistent with one another. Its included GM_SurfacePatches describe the interior structure of a GM_Surface.
 
@@ -269,7 +269,7 @@ h|Stereotype: | «type»
 |===
 
 .Associations of GM_Surface (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 |
@@ -287,7 +287,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_Tin (from <<iso19107>>)
 
 .Metadata of GM_Tin (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | A GM_Tin is a GM_TriangulatedSurface that uses the Delaunay algorithm or a similar algorithm complemented with consideration for breaklines, stoplines and maximum length of triangle sides (Figure 22). These networks satisfy the Delaunay criterion away from the modifications: For each triangle in the network, the circle passing through its vertexes does not contain, in its interior, the vertex of any other triangle.
 h|Subclass of: | {{GM_TriangulatedSurface}}
@@ -295,7 +295,7 @@ h|Stereotype: | «type»
 |===
 
 .Attributes of GM_Tin (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
@@ -315,7 +315,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== GM_TriangulatedSurface (from <<iso19107>>)
 
 .Metadata of GM_TriangulatedSurface (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | A GM_TriangulatedSurface is a GM_PolyhedralSurface that is composed only of triangles (GM_Triangle). There is no restriction on how the triangulation is derived.
 h|Subclass of: | {{GM_PolyhedralSurface}}
@@ -329,7 +329,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== SC_CRS (from <<iso19111,ISO 19111:2019>>)
 
 .Metadata of SC_CRS (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | Coordinate reference system which is usually single but may be compound.
 h|Subclass of: | {{IO_IdentifiedObjectBase}}, {{RS_ReferenceSystem}}
@@ -337,7 +337,7 @@ h|Stereotype: | «type»
 |===
 
 .Associations of SC_CRS (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
 | coordOperationTo
@@ -349,7 +349,7 @@ h|Stereotype: | «type»
 |===
 
 .Attributes of SC_CRS (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
@@ -363,7 +363,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 ==== TM_Position (from <<iso19108,ISO 19108:2006>>)
 
 .Metadata of TM_Position (class)
-[cols="1,4"]
+[cols="1a,4a"]
 |===
 h|Definition: | TM_Position is a union class that consists of one of the data types listed as its attributes. Date, Time, and DateTime are basic data types defined in ISO/TS 19103.
 h|Subclass of: | None
@@ -371,7 +371,7 @@ h|Stereotype: | «Union»
 |===
 
 .Attributes of TM_Position (class)
-[cols="15,20,60",options="header"]
+[cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
 
