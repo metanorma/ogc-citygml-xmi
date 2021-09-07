@@ -53,7 +53,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 .Metadata of DirectPosition (class)
 [cols="1a,4a"]
 |===
-h|Definition: | DirectPosition object data types (Figure 14) hold the coordinates for a position within some coordinate reference system. The coordinate reference system is described in ISO 19111. Since DirectPositions, as data types, will often be included in larger objects (such as GM_Objects) that have references to ISO19111::SC_CRS, the DirectPosition::cordinateReferenceSystem may be left NULL if this particular DirectPosition is included in a larger object with such a reference to a SC_CRS. In this case, the DirectPosition::cordinateReferenceSystem is implicitly assumed to take on the value of the containing object's SC_CRS.
+h|Definition: | DirectPosition object data types (<<iso19107,figure=14>>) hold the coordinates for a position within some coordinate reference system. The coordinate reference system is described in ISO 19111. Since DirectPositions, as data types, will often be included in larger objects (such as GM_Objects) that have references to ISO19111::SC_CRS, the DirectPosition::cordinateReferenceSystem may be left NULL if this particular DirectPosition is included in a larger object with such a reference to a SC_CRS. In this case, the DirectPosition::cordinateReferenceSystem is implicitly assumed to take on the value of the containing object's SC_CRS.
 h|Subclass of: | None
 h|Stereotype: | None
 |===
@@ -289,7 +289,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 .Metadata of GM_Tin (class)
 [cols="1a,4a"]
 |===
-h|Definition: | A GM_Tin is a GM_TriangulatedSurface that uses the Delaunay algorithm or a similar algorithm complemented with consideration for breaklines, stoplines and maximum length of triangle sides (Figure 22). These networks satisfy the Delaunay criterion away from the modifications: For each triangle in the network, the circle passing through its vertexes does not contain, in its interior, the vertex of any other triangle.
+h|Definition: | A GM_Tin is a GM_TriangulatedSurface that uses the Delaunay algorithm or a similar algorithm complemented with consideration for breaklines, stoplines and maximum length of triangle sides (<<iso19107,figure=22>>). These networks satisfy the Delaunay criterion away from the modifications: For each triangle in the network, the circle passing through its vertexes does not contain, in its interior, the vertex of any other triangle.
 h|Subclass of: | {{GM_TriangulatedSurface}}
 h|Stereotype: | «type»
 |===
