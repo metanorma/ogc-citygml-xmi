@@ -1,35 +1,14 @@
 [[req_vegetation_classes]]
-[requirement,type="general",label="/req/vegetation/classes"]
+[requirement]
 ====
-For each UML class defined or referenced in the Vegetation Package:
-
-[.component,class=part]
---
-The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=part]
---
-The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
---
-
-[.component,class=part]
---
-The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and multiplicity.
---
-
-[.component,class=part]
---
-The implementation Specification SHALL represent the attributes of all superclasses of the UML class including the name, definition, type, and multiplicity.
---
-
-[.component,class=part]
---
-The implementation Specification SHALL represent the associations of all superclasses of the UML class including the source, target, direction, roles, and multiplicity.
---
-
-[.component,class=part]
---
-The Implementation Specification SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
---
+[%metadata]
+model:: ogc
+type:: general
+description:: For each UML class defined or referenced in the Vegetation Package:
+part:: The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
+part:: The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
+part:: The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and multiplicity.
+part:: The implementation Specification SHALL represent the attributes of all superclasses of the UML class including the name, definition, type, and multiplicity.
+part:: The implementation Specification SHALL represent the associations of all superclasses of the UML class including the source, target, direction, roles, and multiplicity.
+part:: The Implementation Specification SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
 ====

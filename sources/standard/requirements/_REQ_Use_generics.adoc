@@ -1,5 +1,9 @@
 [[req_generics_use]]
-[requirement,type="general",label="/req/generics/use"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 Generic objects and attributes SHALL only be used if a more specific feature class or attribute is not available from the CityGML conceptual model.
 ====

@@ -1,9 +1,3 @@
-// [[rc_ade]]
-// [requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-ade",subject="Conceptual Model"]
-// ====
-// inherit:[<<rc_core,/req/req-class-core>>]
-// ====
-
 [[rc_ade]]
 [requirement]
 ====
@@ -13,6 +7,4 @@ type:: class
 label:: http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-ade
 subject:: Conceptual Model
 inherit:: <<rc_core,/req/req-class-core>>
-
-This paragraph is necessary so that no build failure occurs.
 ====

@@ -1,5 +1,9 @@
 [[req_transportation_boundaries]]
-[requirement,type="general",label="/req/transportation/boundaries"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 <<transportation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Transportation module. An Implementation Specification SHALL only support the boundaries described in <<transportation-boundaries-table>>
 ====

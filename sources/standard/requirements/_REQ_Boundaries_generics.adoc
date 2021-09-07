@@ -1,5 +1,9 @@
 [[req_generics_boundaries]]
-[requirement,type="general",label="/req/generics/boundaries"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 <<generics-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Generics module. An Implementation Specification SHALL only support the boundaries described in <<generics-boundaries-table>>
 ====

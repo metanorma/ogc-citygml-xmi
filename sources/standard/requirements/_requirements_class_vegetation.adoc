@@ -1,5 +1,8 @@
 [[rc_vegetation]]
-[requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-vegetation",subject="Implementation Specification"]
+[requirement]
 ====
-inherit:[<<rc_core,/req/req-class-core>>]
+[%metadata]
+model:: ogc
+type:: class
+inherit:: <<rc_core,/req/req-class-core>>
 ====

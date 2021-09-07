@@ -1,5 +1,9 @@
 [[req_core_boundaries]]
-[requirement,type="general",label="/req/core/boundaries"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 <<core-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Core module. An Implementation Specification SHALL only support the boundaries described in <<core-boundaries-table>>
 ====

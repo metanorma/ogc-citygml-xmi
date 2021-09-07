@@ -1,10 +1,13 @@
 [[rc_core]]
-[requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-core",subject="Implementation Specification"]
+[requirement]
 ====
-inherit:[<<iso19103,ISO 19103:2015>>]
-inherit:[<<iso19107,ISO 19107:2003>>]
-inherit:[<<iso19109,ISO 19109:2015>>]
-inherit:[<<iso19111,ISO 19111:2019>>]
-inherit:[<<iso19123,ISO 19123:2005>>]
-inherit:[<<xal2,OASIS xAL v3.0>>]
+[%metadata]
+model:: ogc
+type:: class
+inherit:: <<iso19103,ISO 19103:2015>>
+inherit:: <<iso19107,ISO 19107:2003>>
+inherit:: <<iso19109,ISO 19109:2015>>
+inherit:: <<iso19111,ISO 19111:2019>>
+inherit:: <<iso19123,ISO 19123:2005>>
+inherit:: <<xal2,OASIS xAL v3.0>>
 ====

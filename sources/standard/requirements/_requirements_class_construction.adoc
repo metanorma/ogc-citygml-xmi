@@ -1,6 +1,9 @@
 [[rc_construction]]
-[requirement,type="class",label="http://www.opengis.net/spec/CityGML-1/3.0/req/req-class-construction",subject="Implementation Specification"]
+[requirement]
 ====
-inherit:[<<rc_core,/req/req-class-core>>]
-inherit:[<<rc_generics,/req/req-class-generics>>]
+[%metadata]
+model:: ogc
+type:: class
+inherit:: <<rc_core,/req/req-class-core>>
+inherit:: <<rc_generics,/req/req-class-generics>>
 ====

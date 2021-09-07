@@ -1,25 +1,12 @@
 [[req_ade_elements]]
-[requirement,type="general",label="/req/ade/elements"]
+[requirement]
 ====
-ADEs typically extend CityGML by defining new Feature Types together with additional content such as Object Types, Data Types, Code Lists, and Enumerations.
-
-[.component,class=part]
---
-Every Feature Type in an ADE SHALL be derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
---
-
-[.component,class=part]
---
-UML classes representing Top-Level Feature Types SHALL use the _&#171;TopLevelFeatureType&#187;_ stereotype.
---
-
-[.component,class=part]
---
-Features representing spaces or space boundaries SHALL be derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
---
-
-[.component,class=part]
---
-An ADE may define new and additional spatial properties. If such a spatial property should belong to a predefined LOD, then the property name SHALL start with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
---
+[%metadata]
+model:: ogc
+type:: general
+description:: ADEs typically extend CityGML by defining new Feature Types together with additional content such as Object Types, Data Types, Code Lists, and Enumerations.
+part:: Every Feature Type in an ADE SHALL be derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
+part:: UML classes representing Top-Level Feature Types SHALL use the _&#171;TopLevelFeatureType&#187;_ stereotype.
+part:: Features representing spaces or space boundaries SHALL be derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
+part:: An ADE may define new and additional spatial properties. If such a spatial property should belong to a predefined LOD, then the property name SHALL start with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
 ====

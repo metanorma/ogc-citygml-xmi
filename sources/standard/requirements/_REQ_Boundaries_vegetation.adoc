@@ -1,5 +1,9 @@
 [[req_vegetation_boundaries]]
-[requirement,type="general",label="/req/vegetation/boundaries"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 <<vegetation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Vegetation module. An Implementation Specification SHALL only support the boundaries described in <<vegetation-boundaries-table>>
 ====

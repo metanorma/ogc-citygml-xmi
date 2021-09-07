@@ -1,5 +1,9 @@
 [[req_core_ade_use]]
-[requirement,type="general",label="/req/core/ade/use"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.
 ====

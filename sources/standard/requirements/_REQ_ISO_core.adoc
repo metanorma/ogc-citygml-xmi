@@ -1,11 +1,9 @@
 [[req_Core_iso-restrictions]]
-[requirement,type="general",label="/req/Core/isorestrictions"]
+[requirement]
 ====
-ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:
-
-[.component,class=part]
---
-Classes derived from the GM_Solid class (ISO 19107) SHALL only include exterior boundaries. (The `interior` association on the GM_SolidBoundary shall not be defined)
---
+[%metadata]
+model:: ogc
+type:: general
+description:: ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:
+part:: Classes derived from the GM_Solid class (ISO 19107) SHALL only include exterior boundaries. (The `interior` association on the GM_SolidBoundary shall not be defined)
 ====
-

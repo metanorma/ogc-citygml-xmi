@@ -1,5 +1,9 @@
 [[req_cityobjectgroup_boundaries]]
-[requirement,type="general",label="/req/cityobjectgroup/boundaries"]
+[requirement]
 ====
+[%metadata]
+model:: ogc
+type:: general
+
 <<cityobjectgroup-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityObjectGroup module. An Implementation Specification SHALL only support the boundaries described in <<cityobjectgroup-boundaries-table>>
 ====

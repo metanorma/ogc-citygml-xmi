@@ -1,20 +1,11 @@
 [[req_ade_properties]]
-[requirement,type="general",label="/req/ade/properties"]
+[requirement]
 ====
-Every Feature Type includes an extension property (hook) of type “ADEOf<FeatureTypeName>” where <FeatureTypeName> is the name of that Feature Type. To add an extension property to a Feature Type:
-
-[.component,class=part]
---
-The ADE SHALL create a subclass of the abstract data type associated with the hook. 
---
-
-[.component,class=part]
---
-This subclass SHALL be defined as a data type using the stereotype _&#171;DataType&#187;_. 
---
-
-[.component,class=part]
---
-Application-specific attributes and associations SHALL be modeled as properties of the ADE subclass.
---
+[%metadata]
+model:: ogc
+type:: general
+description:: Every Feature Type includes an extension property (hook) of type “ADEOf<FeatureTypeName>” where <FeatureTypeName> is the name of that Feature Type. To add an extension property to a Feature Type:
+part:: The ADE SHALL create a subclass of the abstract data type associated with the hook. 
+part:: This subclass SHALL be defined as a data type using the stereotype _&#171;DataType&#187;_. 
+part:: Application-specific attributes and associations SHALL be modeled as properties of the ADE subclass.
 ====
