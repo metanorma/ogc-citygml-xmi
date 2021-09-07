@@ -51,16 +51,21 @@ model that defines concepts of a universe of discourse
 
 ==== conceptual schema
 
+[.definition]
+--
 formal description of a {{conceptual model}}
 
 [.source]
 <<iso19101-1,clause=4.1.6>>
+--
 
-// TODO: enable second definition
-// . base schema. Formal description of the model of any geospatial information. term:[application schema,Application schemas] are built from conceptual schemas.
-//
-// [.source]
-// <<OGCDR>>, http://www.opengis.net/def/glossary/term/ConceptualSchema
+[.definition]
+--
+base schema. Formal description of the model of any geospatial information. term:[application schema,Application schemas] are built from conceptual schemas.
+
+[.source]
+<<OGCDR>>, http://www.opengis.net/def/glossary/term/ConceptualSchema
+--
 
 ==== Implementation Specification
 
