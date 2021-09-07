@@ -1,31 +1,15 @@
 [[ats_ade_uml]]
-[requirement,type="abstracttest",label="/ats/ade/uml",subject='<<req_ade_uml,/req/ade/uml>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that Application Domain Extensions (ADE) to the CityGML Conceptual Model are modeled correctly in UML.
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
-An ADE is defined as conceptual model in UML in accordance with the conceptual modeling framework of the ISO 19100 series of International Standards
-
-[.component,class=part]
---
-Validate that the ADE UML model adheres to the General Feature Model as specified in ISO 19109.
---
-
-[.component,class=part]
---
-Validate that the ADE UML model adheres to rules and constraints for application schemas as specified in ISO/TS 19103.
---
-
-[.component,class=part]
---
-Validate that the ADE UML model is organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE.
---
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/ade/uml
+subject:: <<req_ade_uml,/req/ade/uml>>
+test-purpose:: To validate that Application Domain Extensions (ADE) to the CityGML Conceptual Model are modeled correctly in UML.
+test-method:: Manual Inspection
+description:: An ADE is defined as conceptual model in UML in accordance with the conceptual modeling framework of the ISO 19100 series of International Standards
+part:: Validate that the ADE UML model adheres to the General Feature Model as specified in ISO 19109.
+part:: Validate that the ADE UML model adheres to rules and constraints for application schemas as specified in ISO/TS 19103.
+part:: Validate that the ADE UML model is organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE.
 ====
-

@@ -1,32 +1,15 @@
 [[ats_ade_properties]]
-[requirement,type="abstracttest",label="/ats/ade/properties",subject='<<req_ade_properties,/req/ade/properties>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model implement extension properties correctly.
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
-Every Feature Type in the CityGML Conceptual Model includes an extension property whos' purpose is to allow an ADE to add properties to that existing Feature Type. In every case where an extension property has been used:
-
-[.component,class=part]
---
-Validate that the ADE creates a subclass of the abstract data type associated with the extension property.
---
-
-[.component,class=part]
---
-Validate that this subclass is defined as a data type using the stereotype _&#171;DataType&#187;_.
---
-
-[.component,class=part]
---
-Validate that all application-specific attributes and associations for that Feature Type are modeled as properties of the ADE subclass.
---
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/ade/properties
+subject:: <<req_ade_properties,/req/ade/properties>>
+test-purpose:: To validate that Application Domain Extensions (ADE) to the CityGML Conceptual Model implement extension properties correctly.
+test-method:: Manual Inspection
+description:: Every Feature Type in the CityGML Conceptual Model includes an extension property whos' purpose is to allow an ADE to add properties to that existing Feature Type. In every case where an extension property has been used:
+part:: Validate that the ADE creates a subclass of the abstract data type associated with the extension property.
+part:: Validate that this subclass is defined as a data type using the stereotype _&#171;DataType&#187;_.
+part:: Validate that all application-specific attributes and associations for that Feature Type are modeled as properties of the ADE subclass.
 ====
-
-

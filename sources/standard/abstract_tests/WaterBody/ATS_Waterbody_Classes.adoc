@@ -1,45 +1,18 @@
 [[ats_waterbody_classes]]
-[requirement,type="abstracttest",label="/ats/waterbody/classes",subject='<<req_waterbody_classes,/req/waterbody/classes>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that the Implementation Specification correctly implements the UML Classes defined in the Conceptual Model.
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
-For each UML class defined or referenced in the Waterbody Package:
-
-[.component,class=part]
---
-Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=part]
---
-Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.
---
-
-[.component,class=part]
---
-Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.
---
-
-[.component,class=part]
---
-Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model
---
-
-[.component,class=part]
---
-Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model
---
-
-[.component,class=part]
---
-Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model
---
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/waterbody/classes
+subject:: <<req_waterbody_classes,/req/waterbody/classes>>
+test-purpose:: To validate that the Implementation Specification correctly implements the UML Classes defined in the Conceptual Model.
+test-method:: Manual Inspection
+description:: For each UML class defined or referenced in the Waterbody Package:
+part:: Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.
+part:: Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.
+part:: Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.
+part:: Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model
+part:: Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model
+part:: Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model
 ====

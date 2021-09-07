@@ -1,20 +1,13 @@
 [[ats_generics_use]]
-[requirement,type="abstracttest",label="/ats/generics/use",subject='<<req_generics_use,/req/generics/use>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that Generics are not used in a way that duplicates or conflicts with feature classes or attributes defined in the Conceptual Model..
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
-For all Generics-based classes and attributes defined in the Implementation Specification:
-
-[.component,class=part]
---
-Demonstrate that this class or attribute does not duplicate or conflict with any classes or attributes defined in the Conceptual Model.
---
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/generics/use
+subject:: <<req_generics_use,/req/generics/use>>
+test-purpose:: To validate that Generics are not used in a way that duplicates or conflicts with feature classes or attributes defined in the Conceptual Model..
+test-method:: Manual Inspection
+description:: For all Generics-based classes and attributes defined in the Implementation Specification:
+part:: Demonstrate that this class or attribute does not duplicate or conflict with any classes or attributes defined in the Conceptual Model.
 ====

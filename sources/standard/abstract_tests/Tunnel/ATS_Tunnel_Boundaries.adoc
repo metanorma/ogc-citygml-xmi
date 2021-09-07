@@ -1,20 +1,13 @@
 [[ats_tunnel_boundaries]]
-[requirement,type="abstracttest",label="/ats/tunnel/boundaries",subject='<<req_tunnel_boundaries,/req/tunnel/boundaries>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/tunnel/boundaries
+subject:: <<req_tunnel_boundaries,/req/tunnel/boundaries>>
+test-purpose:: To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
+test-method:: Manual Inspection
 For each UML class defined or referenced in the Tunnel Package:
-
-[.component,class=part]
---
-Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
---
+part:: Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
 ====

@@ -1,20 +1,13 @@
 [[ats_core_boundaries]]
-[requirement,type="abstracttest",label="/ats/core/boundaries",subject='<<req_core_boundaries,/req/core/boundaries>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
-For each UML class defined or referenced in the Core Package:
-
-[.component,class=part]
---
-Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
---
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/core/boundaries
+subject:: <<req_core_boundaries,/req/core/boundaries>>
+test-purpose:: To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
+test-method:: Manual Inspection
+description:: For each UML class defined or referenced in the Core Package:
+part:: Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
 ====

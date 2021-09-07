@@ -1,20 +1,13 @@
 [[ats_waterbody_ade_use]]
-[requirement,type="abstracttest",label="/ats/waterbody/ade/use",subject='<<req_waterbody_ade_use,/req/waterbody/ade_use>>']
+[requirement]
 ====
-[.component,class=test-purpose]
---
-To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
---
-
-[.component,class=test-method]
---
-Manual Inspection
---
-
-If any ADE classes or properties are included in the Waterbody Package:
-
-[.component,class=part]
---
-Validate that the Implementation Specification conforms with the ADE Requirements Class.
---
+[%metadata]
+model:: ogc
+type:: abstracttest
+label:: /ats/waterbody/ade/use
+subject:: <<req_waterbody_ade_use,/req/waterbody/ade_use>>
+test-purpose:: To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
+test-method:: Manual Inspection
+description:: If any ADE classes or properties are included in the Waterbody Package:
+part:: Validate that the Implementation Specification conforms with the ADE Requirements Class.
 ====
