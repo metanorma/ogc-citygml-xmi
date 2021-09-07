@@ -63,7 +63,7 @@ h|Stereotype: | None
 |===
 | Role name | Target class and multiplicity | Definition
 | CRS |{{CRS}} [0..1]|
-| CRS |{{SC_CRS}} [0..1]|
+| CRS |<<SC_CRS-section>> [0..1]|
 |===
 
 .Attributes of DirectPosition (class)
@@ -104,7 +104,7 @@ h|Stereotype: | «type»
 |
 
 |
-|TransfiniteSet{{DirectPosition}} [1..1]
+|TransfiniteSet<<DirectPosition-section>> [1..1]
 |
 
 |
@@ -116,7 +116,7 @@ h|Stereotype: | «type»
 |
 
 | CRS
-|{{SC_CRS}} [0..1]
+|<<SC_CRS-section>> [0..1]
 |
 
 |===
@@ -162,7 +162,7 @@ h|Stereotype: | «type»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| position   |Set  {{DirectPosition}} [1..1] |
+| position   |Set  <<DirectPosition-section>> [1..1] |
 |===
 
 NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
@@ -220,7 +220,7 @@ h|Stereotype: | «type»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| position   |{{DirectPosition}} [1..1]  |The attribute "position" shall be the DirectPosition of this GM_Point.
+| position   |<<DirectPosition-section>> [1..1]  |The attribute "position" shall be the DirectPosition of this GM_Point.
 
 NOTE: In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.
 |===
@@ -290,7 +290,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 [cols="1a,4a"]
 |===
 h|Definition: | A GM_Tin is a GM_TriangulatedSurface that uses the Delaunay algorithm or a similar algorithm complemented with consideration for breaklines, stoplines and maximum length of triangle sides (<<iso19107,figure=22>>). These networks satisfy the Delaunay criterion away from the modifications: For each triangle in the network, the circle passing through its vertexes does not contain, in its interior, the vertex of any other triangle.
-h|Subclass of: | {{GM_TriangulatedSurface}}
+h|Subclass of: | <<GM_TriangulatedSurface-section>>
 h|Stereotype: | «type»
 |===
 
