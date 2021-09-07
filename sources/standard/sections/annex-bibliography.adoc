@@ -19,7 +19,7 @@
 
 * [[[Chaturvedi2016,Chaturvedi & Kolbe 2016]]], Chaturvedi, K., Kolbe, T. H., 2016: *Integrating Dynamic Data and Sensors with Semantic 3D City Models in the context of Smart Cities*. In: Proceedings of the 11th International 3D Geoinfo Conference, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. IV-2/W1, ISPRS. https://doi.org/10.5194/isprs-annals-IV-2-W1-31-2016
 
-* [[[Chaturvedi2017,OGC 16-098]]]Chaturvedi, K., Kolbe, T. H., 2017: *Future City Pilot 1 Engineering Report*, Open Geospatial Consortium. http://docs.opengeospatial.org/per/16-098.html[OGC Doc. 19-098]
+* [[[Chaturvedi2017,OGC 16-098]]], Chaturvedi, K., Kolbe, T. H., 2017: *Future City Pilot 1 Engineering Report*, Open Geospatial Consortium. http://docs.opengeospatial.org/per/16-098.html[OGC Doc. 19-098]
 
 * [[[Chaturvedi2019,Chaturvedi & Kolbe 2019]]], Chaturvedi, K., Kolbe, T. H., 2019: *A Requirement Analysis on Extending Semantic 3D City Models for Supporting Time-dependent Properties*. In: Proceedings of the 4th International Conference on Smart Data and Smart Cities, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. IV-4/W9, ISPRS. https://doi.org/10.5194/isprs-annals-IV-4-W9-19-2019
 
@@ -31,11 +31,11 @@
 
 * [[[Gröger2012b,OGC 12-019]]], Gröger, G., Kolbe, T. H., Nagel, C., Häfele, K.-H., 2012: *OGC City Geography Markup Language (CityGML) Encoding Standard, Version 2.0.0*, Open Geospatial Consortium. https://portal.opengeospatial.org/files/?artifact_id=47842[OGC Doc. 12-019]
 
-* [[[Jensen1998,Jensen & Dyreson 1998]]], , Jensen, Christian S. and Dyreson, Curtis E.: *The Consensus Glossary of Temporal Database Concepts*. February 1998 Version. In: Temporal Databases: Research and Practice [online]. Springer Berlin Heidelberg, 1998. p. 367–405. Lecture Notes in Computer Science. Available from: 10.1007/BFb0053710
+* [[[Jensen1998,Jensen & Dyreson 1998]]], Jensen, Christian S. and Dyreson, Curtis E.: *The Consensus Glossary of Temporal Database Concepts*. February 1998 Version. In: Temporal Databases: Research and Practice [online]. Springer Berlin Heidelberg, 1998. p. 367–405. Lecture Notes in Computer Science. Available from: 10.1007/BFb0053710
 
-* [[[Jensen2008,Jensen & Snodgrass 2008]]], , Jensen, Christian S. and Snodgrass, Richard T., eds.: *TR-90, Temporal Database Entries for the Springer Encyclopedia of Database Systems*. Technical Report. TimeCenter, 22 May 2008. Available from: http://timecenter.cs.aau.dk/TimeCenterPublications/TR-90.pdf[http://timecenter.cs.aau.dk/TimeCenterPublications/TR-90.pdf]
+* [[[Jensen2008,Jensen & Snodgrass 2008]]], Jensen, Christian S. and Snodgrass, Richard T., eds.: *TR-90, Temporal Database Entries for the Springer Encyclopedia of Database Systems*. Technical Report. TimeCenter, 22 May 2008. Available from: http://timecenter.cs.aau.dk/TimeCenterPublications/TR-90.pdf
 
-* [[[Johnson2010,Johnson 2010]]], , Johnson, Tom: *Bitemporal Data*. Elsevier, 2014. ISBN 978-0-12-408067-6. Available from: 10.1016/C2012-0-06609-4
+* [[[Johnson2010,Johnson 2010]]], Johnson, Tom: *Bitemporal Data*. Elsevier, 2014. ISBN 978-0-12-408067-6. Available from: 10.1016/C2012-0-06609-4
 
 * [[[Kaden2017,Kaden & Clemen 2017]]], Kaden, R., Clemen, C., 2017: *Applying Geodetic Coordinate Reference Systems within Building Information Modeling (BIM)*. In: Proceedings of the FIG Working Week 2017, Helsinki, Finland. https://www.fig.net/resources/proceedings/fig_proceedings/fig2017/papers/ts06h/TS06H_kaden_clemen_8967.pdf
 
@@ -59,7 +59,7 @@
 
 * [[[Smith2000,Smith & Varzi 2000]]], Smith, B., Varzi, A. C., 2000: *Fiat and Bona Fide Boundaries*. Philosophy and Phenomenological Research, Vol. 60, No. 2, 401-420. https://doi.org/10.2307/2653492
 
-* [[[Snodgrass1999,Snodgrass 1999]]], Snodgrass, Richard T: *Developing time-oriented database applications in SQL*. San Francisco, California : Morgan Kaufmann Publishers, July 1999. ISBN 1-55860-436-7. Available from: http://www.cs.arizona.edu/~rts/tdbbook.pdf[http://www.cs.arizona.edu/~rts/tdbbook.pdf]
+* [[[Snodgrass1999,Snodgrass 1999]]], Snodgrass, Richard T: *Developing time-oriented database applications in SQL*. San Francisco, California : Morgan Kaufmann Publishers, July 1999. ISBN 1-55860-436-7. Available from: http://www.cs.arizona.edu/~rts/tdbbook.pdf
 
 * [[[Stadler2007,Stadler & Kolbe 2007]]], Stadler, A., Kolbe, T. H., 2007: *Spatio-semantic Coherence in the Integration of 3D City Models*. In: Proceedings of the 5th International ISPRS Symposium on Spatial Data Quality ISSDQ 2007 in Enschede. http://www.isprs.org/proceedings/XXXVI/2-C43/Session1/paper_Stadler.pdf
 
@@ -75,11 +75,11 @@
 
 * [[[sos_citation,OGC 12-006]]], Bröring, A., Stasch, C., Echterhoff, J.: *OGC® Sensor Observation Service Interface Standard*, Open Geospatial Consortium, Available from https://portal.opengeospatial.org/files/?artifact_id=47599[OGC Doc. 12-006]
 
-* [[[sensorthing_citation,OGC 15-078r6]]]Liang, S., Huang, C., Khalafbeigi, T.: *OGC SensorThings API Part 1: Sensing*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/15-078r6/15-078r6.html[OGC Doc. 15-078r6]
+* [[[sensorthing_citation,OGC 15-078r6]]], Liang, S., Huang, C., Khalafbeigi, T.: *OGC SensorThings API Part 1: Sensing*, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/15-078r6/15-078r6.html[OGC Doc. 15-078r6]
 
 * [[[three-dps_citation,OGC 15-001r4]]], Hagedorn, B., Thum, S., Reitz, T., Coors, V., Gutbell, R.: *OGC® 3D Portrayal Service 1.0*, Open Geospatial Consortium, Available from https://docs.opengeospatial.org/is/15-001r4/15-001r4.html[OGC Doc. 15-001r4].
 
-* [[[gltf_citation, Khronos gLTF]]], Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: *The GL Transmission Format (glTF)*, The Khronos Group, Available from https://www.khronos.org/gltf[https://www.khronos.org/gltf].
+* [[[gltf_citation, Khronos gLTF]]], Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: *The GL Transmission Format (glTF)*, The Khronos Group, Available from https://www.khronos.org/gltf.
 
 * [[[inspire_glossary,INSPIRE Glossary]]], European Union: *INSPIRE Glossary*, Available from https://inspire.ec.europa.eu/glossary
 
