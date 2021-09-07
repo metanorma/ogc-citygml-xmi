@@ -1,6 +1,6 @@
 [[construction-boundaries-table]]
 .Construction space classes and their allowed thematic surface boundaries
-[cols="2,6",options="headers"]
+[cols="2a,6a",options="header"]
 |===
 ^|*Space class* ^|*Allowed space boundaries*
 |AbstractConstruction

@@ -12,7 +12,7 @@ The ISO classes explicitly used in the CityGML UML model are introduced in <<iso
 
 [[iso-class-table]]
 .ISO Classes used in CityGML
-[cols="2,6",options="headers"]
+[cols="2a,6a",options="header"]
 |===
 |Class Name |Description
 

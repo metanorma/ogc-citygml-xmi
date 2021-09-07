@@ -1,6 +1,6 @@
 [[Core-city-model-class-table]]
 .City Model and City Object classes used in Core
-[cols="2,6",options="headers"]
+[cols="2a,6a",options="header"]
 |===
 | Class | Description
 |<<AbstractAppearance-section,AbstractAppearance>> +

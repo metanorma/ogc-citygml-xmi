@@ -1,6 +1,6 @@
 [[Core-geometry-class-table]]
 .Geometry Classes used in Core
-[cols="2,6",options="headers"]
+[cols="2a,6a",options="header"]
 |===
 | Class | Description
 |<<AbstractOccupiedSpace-section,AbstractOccupiedSpace>> +
