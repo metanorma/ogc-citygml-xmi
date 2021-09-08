@@ -227,7 +227,16 @@ This approach not only facilitates the explicit representation of different city
 
 ==== Dynamizers: Using Time-Series Data for Object Attributes
 
-The new Dynamizer module improves the usability of CityGML for different kinds of simulations as well as to facilitate the integration of devices from the Internet-of-Things (IoT) like sensors with 3D city models. Both, simulations and sensors provide dynamic variations of some measured or simulated properties such as the electricity consumption of a building or the traffic density within a road segment. The variations of the value are typically represented using time-series data. The data sources of the time-series data could be either sensor observations (e.g., from a smart meter), pre-recorded load profiles (e.g., from an energy company), or the results of some simulation run.
+The new Dynamizer module improves the usability of CityGML for different kinds
+of simulations as well as to facilitate the integration of devices from the
+{{Internet of Things,Internet of Things (IoT)}}
+like sensors with 3D city models. Both, simulations and sensors provide dynamic
+variations of some measured or simulated properties such as the electricity
+consumption of a building or the traffic density within a road segment. The
+variations of the value are typically represented using time-series data. The
+data sources of the time-series data could be either sensor observations (e.g.,
+from a smart meter), pre-recorded load profiles (e.g., from an energy company),
+or the results of some simulation run.
 
 [[figure-dynamizers]]
 .Dynamizers link timeseries data coming from different sources to specific properties of individual city objects.
