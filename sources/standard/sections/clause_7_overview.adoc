@@ -261,9 +261,9 @@ Dynamizers have already been implemented as an Application Domain Extension (ADE
 
 CityGML is designed as a universal information model that defines object types and attributes which are useful for a broad range of applications. In practical applications, the objects within specific 3D city models will most likely contain attributes which are not explicitly modeled in CityGML. Moreover, there might be 3D objects which are not covered by the CityGML CM thematic classes. The CityGML CM provides three different concepts to support the exchange of such data:
 
-. <<rc_generics-model_section,Generic objects and attributes>>,
-. <<rc_ade_section,Application Domain Extensions>>, and
-. <<codelist-definition,Code lists>>.
+. Generic objects and attributes (<<rc_generics-model_section>>),
+. Application Domain Extensions (<<rc_ade_section>>), and
+. Code lists (<<codelist-definition>>).
 
 The concept of generic objects and attributes allows application-specific concepts to be represented in CityGML at runtime. This means that any city object may be augmented by additional attributes and relations, whose names, data types, and values can be provided by a running application without requiring extensions to the CityGML conceptual schema and the respective encodings. Similarly, features not represented by the predefined thematic classes of the CityGML conceptual model may be modeled and exchanged using generic objects. The generic extensions of CityGML are provided by the _Generics_ module (cf. <<rc_generics-model_section>>).
 

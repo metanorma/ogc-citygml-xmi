@@ -17,7 +17,7 @@ A Conceptual Model standardization target is a version of the CityGML 3.0 Concep
 . Restriction on the valid values for an attribute; and
 . Additional concepts documented through ADEs.
 
-Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the CityGML conceptual model. These extensions are accomplished using the ADE mechanism described in <<rc_ade_section,Section 10>> Application Domain Extensions (ADE).
+Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the CityGML conceptual model. These extensions are accomplished using the ADE mechanism described in <<rc_ade_section>> Application Domain Extensions (ADE).
 
 Extensions of the CityGML Conceptual Model conform with the ADE Conformance Class.
 

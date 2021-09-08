@@ -121,9 +121,9 @@ include::summaries/Core-Geometry.adoc[]
 [[CityGML-section]]
 ==== CityGML Core Model
 
-The <<city-objects-section,City Model and City Object>> classes, the
-<<space-concepts-section,Space Concept>> classes, and the
-<<geometry-lod-section,Geometry and LOD>> classes define the majority of the
+The City Model and City Object classes (<<city-objects-section>>), the
+Space Concept classes (<<space-concepts-section>>), and the
+Geometry and LOD classes (<<geometry-lod-section>>) define the majority of the
 CityGML Core module. In addition to these concepts, the Core module also
 specifies that city objects can have relations to other city objects and that
 they can have address information. All other modules defined in the CityGML
