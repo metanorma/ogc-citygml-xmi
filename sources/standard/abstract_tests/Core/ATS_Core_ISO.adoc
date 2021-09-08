@@ -1,5 +1,5 @@
 [[ats_Core_iso-restrictions]]
-[requirement,type="abstracttest",label="/ats/Core/isorestrictions",subject='<<req_Core_iso-restrictions,/req/Core/isorestrictions>>']
+[requirement,type="abstracttest",label="/ats/core/isorestrictions",subject='<<req_Core_iso-restrictions,/req/core/isorestrictions>>']
 ====
 [.component,class=test-purpose]
 --

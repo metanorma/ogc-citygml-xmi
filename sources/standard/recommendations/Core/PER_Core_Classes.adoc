@@ -1,5 +1,5 @@
 [[per_Core_classes]]
-[.permission,label="/per/Core/classes"]
+[.permission,label="/per/core/classes"]
 ====
 For each UML class defined or referenced in CityGML Conceptual Model:
 

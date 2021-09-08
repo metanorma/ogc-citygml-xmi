@@ -40,7 +40,7 @@ The Implementation Specification SHALL specify how an implementation observes al
 While the CityGML Conceptual Model builds on ISO Standards, there are some restrictions on the use of those standards.
 
 [[req_Core_iso-restrictions]]
-[requirement,type="general",label="/req/Core/isorestrictions"]
+[requirement,type="general",label="/req/core/isorestrictions"]
 ====
 ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:
 
@@ -53,7 +53,7 @@ Classes derived from the GM_Solid class (ISO 19107) SHALL only include exterior 
 An implementing technology may not be able to support all of the concepts defined in the CityGML Conceptual Model. Alternately, some concepts from the Conceptual Model may be inappropriate for the application domain for which the Implementation Specification was developed. In those cases, elements of the Conceptual Model may be mapped to null elements in the Implementation Specification.
 
 [[per_Core_classes]]
-[.permission,label="/per/Core/classes"]
+[.permission,label="/per/core/classes"]
 ====
 For each UML class defined or referenced in CityGML Conceptual Model:
 

@@ -1,5 +1,5 @@
 [[req_Core_iso-restrictions]]
-[requirement,type="general",label="/req/Core/isorestrictions"]
+[requirement,type="general",label="/req/core/isorestrictions"]
 ====
 ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:
 
