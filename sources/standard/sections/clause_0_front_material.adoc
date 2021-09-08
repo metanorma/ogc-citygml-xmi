@@ -7,6 +7,9 @@ A key goal for the development of the CityGML Conceptual Model is to provide a c
 
 == Submitters
 
+All questions regarding this submission should be directed to the editors or the
+submitters:
+
 |===
 |Name |Affiliation
 
