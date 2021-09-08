@@ -107,7 +107,7 @@ a model of a system that is defined in terms of a specific platform
 <<OMGMDA>>
 
 
-=== Abbreviated Terms
+=== Abbreviated terms
 
 2D:: Two Dimensional
 3D:: Three Dimensional
