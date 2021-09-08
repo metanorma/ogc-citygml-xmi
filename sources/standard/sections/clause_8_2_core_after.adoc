@@ -144,6 +144,7 @@ classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 include::summaries/Core-CityModel.adoc[]
 // TODO: Insert table for Table 9. Additional Classes used in Core
 
+[[b-e-c-section]]
 ==== Data types, Enumerations, and Code lists
 
 The ADE data types provided for in the Core module are illustrated in

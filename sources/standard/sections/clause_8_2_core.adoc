@@ -4,11 +4,11 @@ The CityGML Core module defines the basic concepts and components of city models
 .CityGML Core Sections
 [cols="2.^,6.^"]
 |===
-|<<ISO-dependencies-section,The Use of ISO Standards>> |Describes the use of the ISO 19100 series of International Standards to provide a foundation to the CityGML model.
-|<<city-objects-section,City Models and City Objects>>|Defines the basic building blocks of the CityGML model.
-|<<space-concepts-section,Space Concept>>|Defines the concepts of space as used in the CityGML model.
-|<<geometry-lod-section,Geometry and LOD>>|Defines the geometry and Levels Of Detail concepts.
-|<<CityGML-section,CityGML Core Model>>|Presents the complete Core model.
-|<<b-e-c-section,Types, Enumerations, and Codelist>> |Defines the little things which make this model work.
+|The Use of ISO Standards (<<ISO-dependencies-section>>) |Describes the use of the ISO 19100 series of International Standards to provide a foundation to the CityGML model.
+|City Models and City Objects (<<city-objects-section>>)|Defines the basic building blocks of the CityGML model.
+|Space Concept (<<space-concepts-section>>)|Defines the concepts of space as used in the CityGML model.
+|Geometry and LOD (<<geometry-lod-section>>)|Defines the geometry and Levels Of Detail concepts.
+|CityGML Core Model (<<CityGML-section>>)|Presents the complete Core model.
+|Data types, Enumerations, and Code lists (<<b-e-c-section>>) |Defines the little things which make this model work.
 |===
 
