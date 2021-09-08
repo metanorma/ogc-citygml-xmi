@@ -244,13 +244,18 @@ image::images/Dynamizers.png[]
 
 As shown in <<figure-dynamizers>>, Dynamizers serve three main purposes:
 
-. Dynamizer is a data structure to represent dynamic values in different and generic ways. Such dynamic values may be given by (1) tabulation of time/value pairs using its _AtomicTimeseries_ class, (2) patterns of time/value pairs based on statistical rules using its _CompositeTimeseries_ class, and (3) retrieving observations directly from external sensor/IoT services using its _SensorConnection_ class. The values can be obtained from sensor services such as the <<sos_citation,OGC Sensor Observation Service>> or <<sensorthing_citation,OGC SensorThings API>>, simulation specific databases, and also external files such as CSV or Excel sheets.
+. Dynamizer is a data structure to represent dynamic values in different and generic ways. Such dynamic values may be given by (1) tabulation of time/value pairs using its _AtomicTimeseries_ class, (2) patterns of time/value pairs based on statistical rules using its _CompositeTimeseries_ class, and (3) retrieving observations directly from external sensor/{{Internet of Things,IoT}} services using its _SensorConnection_ class. The values can be obtained from sensor services such as the
+OGC Sensor Observation Service (<<sos_citation>>) or
+OGC SensorThings API (<<sensorthing_citation>>),
+simulation specific databases, and also external files such as CSV or Excel sheets.
+
 . Dynamizer delivers a method to enhance static city models by adding dynamic property values. A Dynamizer references a specific property (e.g., spatial, thematic or appearance properties) of a specific object within a 3D city model providing dynamic values overriding the static value of the referenced object attribute.
+
 . Dynamizer objects establish explicit links between sensor/observation data and the respective properties of city model objects that are measured by them. By making such explicit links with city object properties, the semantics of sensor data become implicitly defined by the city model.
 
 Dynamizers are used to inject dynamic variations of city object properties into an otherwise static representation. The advantage in following such an approach is that it allows only selected properties of city models to be made dynamic. If an application does not support dynamic data, the application simply does not allow/include these special types of features.
 
-Dynamizers have already been implemented as an Application Domain Extension (ADE) for CityGML 2.0 and were employed in the OGC Future City Pilot Phase 1. More details about Dynamizers are given in [<<Chaturvedi2017>>].
+Dynamizers have already been implemented as an Application Domain Extension (ADE) for CityGML 2.0 and were employed in the OGC Future City Pilot Phase 1. More details about Dynamizers are given in <<Chaturvedi2017>>.
 
 === Extending CityGML
 

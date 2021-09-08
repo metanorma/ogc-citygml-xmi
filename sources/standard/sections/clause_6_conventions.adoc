@@ -70,7 +70,7 @@ Classes painted in grey are defined in the ISO standard <<iso19109>>. In the con
 .Notation for UML notes and OCL constraints
 image::images/ColorScheme_white.png[]
 
-The color white is used for notes and <<iso19507,Object Constraint Language>> (OCL) constraints that are provided in the UML diagrams.
+The color white is used for notes and Object Constraint Language (OCL) (<<iso19507>>) constraints that are provided in the UML diagrams.
 
 The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this Standard. In this example, the yellow classes are associated with the _CityGML Building_ module, the blue classes are from the _CityGML Core_ and _Construction_ modules, and the green class depicts a geometry element defined by <<iso19107>>.
 

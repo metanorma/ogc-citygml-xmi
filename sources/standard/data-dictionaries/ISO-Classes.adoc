@@ -1,5 +1,5 @@
 [[AnyFeature-section]]
-==== AnyFeature (from <<iso19109,ISO 19109:2015>>)
+==== AnyFeature (from <<iso19109>>)
 
 .Metadata of AnyFeature (class)
 [cols="1a,4a"]
@@ -22,7 +22,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 
 
 [[CV_DiscreteGridPointCoverage-section]]
-==== CV_DiscreteGridPointCoverage (from <<iso19123,ISO 19123:2005>>)
+==== CV_DiscreteGridPointCoverage (from <<iso19123>>)
 
 .Metadata of CV_DiscreteGridPointCoverage (class)
 [cols="1a,4a"]
@@ -326,7 +326,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 
 
 [[SC_CRS-section]]
-==== SC_CRS (from <<iso19111,ISO 19111:2019>>)
+==== SC_CRS (from <<iso19111>>)
 
 .Metadata of SC_CRS (class)
 [cols="1a,4a"]
@@ -360,7 +360,7 @@ NOTE: Unless otherwise specified, all attribute and role names have the stereoty
 
 
 [[TM_Position-section]]
-==== TM_Position (from <<iso19108,ISO 19108:2006>>)
+==== TM_Position (from <<iso19108>>)
 
 .Metadata of TM_Position (class)
 [cols="1a,4a"]
