@@ -7,7 +7,6 @@ A key goal for the development of the CityGML Conceptual Model is to provide a c
 
 == Submitters
 
-[%unnumbered,options="header"]
 |===
 |Name |Affiliation
 
