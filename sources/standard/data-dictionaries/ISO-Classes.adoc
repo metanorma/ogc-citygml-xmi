@@ -18,7 +18,11 @@ h|Stereotype: | «FeatureType»
 |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[CV_DiscreteGridPointCoverage-section]]
@@ -44,7 +48,11 @@ h|Stereotype: | «type»
 |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[DirectPosition-section]]
@@ -74,7 +82,11 @@ h|Stereotype: | None
 | dimension   |{{Integer}} [1..1] |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_Object-section]]
@@ -121,7 +133,11 @@ h|Stereotype: | «type»
 
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_MultiCurve-section]]
@@ -143,7 +159,11 @@ h|Stereotype: | «type»
 | length  |{{Length}} [1..1] |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_MultiPoint-section]]
@@ -165,7 +185,11 @@ h|Stereotype: | «type»
 | position   |Set  <<DirectPosition-section>> [1..1] |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_MultiSurface-section]]
@@ -189,7 +213,11 @@ h|Stereotype: | «type»
 | perimeter   |{{Length}} [1..1] |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_Point-section]]
@@ -225,7 +253,11 @@ h|Stereotype: | «type»
 NOTE: In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_Solid-section]]
@@ -251,7 +283,11 @@ h|Stereotype: | «type»
 |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_Surface-section]]
@@ -280,7 +316,11 @@ h|Stereotype: | «type»
 |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_Tin-section]]
@@ -308,7 +348,11 @@ h|Stereotype: | «type»
 | stopLines   |Set {{GM_LineString}} [1..1] |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[GM_TriangulatedSurface-section]]
@@ -322,7 +366,11 @@ h|Subclass of: | {{GM_PolyhedralSurface}}
 h|Stereotype: | «type»
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[SC_CRS-section]]
@@ -356,7 +404,11 @@ h|Stereotype: | «type»
 | scope   |{{CharacterString}}  [1..*] |Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
 [[TM_Position-section]]
@@ -384,6 +436,10 @@ h|Stereotype: | «Union»
 | dateTime8601   |{{DateTime}} [1..1] |
 |===
 
-NOTE: Unless otherwise specified, all attribute and role names have the stereotype «Property»
+[NOTE,keep-separate=true]
+====
+Unless otherwise specified, all attributes and role names have the stereotype
+«Property».
+====
 
 
