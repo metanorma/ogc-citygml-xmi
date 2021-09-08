@@ -5,12 +5,6 @@ This Standard defines the open CityGML Conceptual Model for the storage and exch
 
 A key goal for the development of the CityGML Conceptual Model is to provide a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.
 
-== Preface
-
-Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
-
-Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
-
 == Submitters
 
 [%unnumbered,options="header"]
