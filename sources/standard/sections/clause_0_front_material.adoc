@@ -13,15 +13,15 @@ submitters:
 |===
 |Name |Affiliation
 
-|Emmanuel Devys |Institut national de l'information géographique et forestière (IGN), France
-|Volker Coors |HFT Stuttgart, Germany
+|Emmanuel Devys |Institut national de l'information géographique et forestière (IGN)
+|Volker Coors |HFT Stuttgart
 |Sylvester Hagler |U.S. National Geospatial-Intelligence Agency
 |Charles (Chuck) Heazel |HeazelTech LLC
-|Thomas H. Kolbe |Chair of Geoinformatics, Technical University of Munich, Germany
-|Tatjana Kutzner |Chair of Geoinformatics, Technical University of Munich, Germany
-|Claus Nagel |Virtual City Systems, Germany
-|Carsten Roensdorf |Ordnance Survey, Great Britain
-|Carl Stephen Smyth |OpenSitePlan, USA
+|Thomas H. Kolbe |Chair of Geoinformatics, Technical University of Munich
+|Tatjana Kutzner |Chair of Geoinformatics, Technical University of Munich
+|Claus Nagel |Virtual City Systems
+|Carsten Roensdorf |Ordnance Survey
+|Carl Stephen Smyth |OpenSitePlan
 
 |===
 
