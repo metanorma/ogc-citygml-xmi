@@ -27,7 +27,6 @@ A key goal for the development of the CityGML Conceptual Model is to provide a c
 
 In addition to the Editors of the specification the following individuals contributed to the CityGML 3.0 development:
 
-.Participants in Development
 [%unnumbered,options="header"]
 |===
 |Name |Institution
