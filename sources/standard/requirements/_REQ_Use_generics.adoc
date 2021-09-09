@@ -1,3 +1,5 @@
+The decision of whether or not to use Generics is constrained by the following requirement:
+
 [[req_generics_use]]
 [requirement,type="general",label="/req/generics/use"]
 ====
