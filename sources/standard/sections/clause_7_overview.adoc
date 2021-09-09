@@ -271,4 +271,5 @@ Application Domain Extensions (ADE) specify additions to the CityGML conceptual 
 
 CityGML can also be extended with regard to the allowed values specified in code lists. Many attributes of CityGML types use a code list as a data type such as, for instance, the attributes _class_, _usage_, and _function_ of city objects. A code list defines a value domain including a code for each permissible value. In contrast to fixed enumerations, modifications and extensions to the value domain become possible with code lists. The values for all code lists in CityGML have to be defined externally. This could, for example, be by adopting classifications from global, national, or industrial standards.
 
-Additional information about the extension features of CityGML can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-extending-citygml-section[CityGML 3.0 Users Guide].
+Additional information about the extension features of CityGML can be found in the
+link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-extending-citygml-section[CityGML 3.0 Users Guide].

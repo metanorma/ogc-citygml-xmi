@@ -143,7 +143,8 @@ include::clause_8_2_core_after.adoc[]
 ....
 ==== Additional Information
 
-Additional information about the {{ package.name }} Module can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package.name | identify }}-section[OGC CityGML 3.0 Users Guide]
+Additional information about the {{ package.name }} Module can be found in the
+link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package.name | identify }}-section[OGC CityGML 3.0 Users Guide].
 ....
 
 ----
