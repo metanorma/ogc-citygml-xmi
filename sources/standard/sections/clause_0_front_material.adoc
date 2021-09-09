@@ -10,6 +10,7 @@ A key goal for the development of the CityGML Conceptual Model is to provide a c
 All questions regarding this submission should be directed to the editors or the
 submitters:
 
+[%unnumbered]
 |===
 |Name |Affiliation
 
