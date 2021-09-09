@@ -6,34 +6,42 @@
 To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model are implemented correctly.
 --
 
-[.component,class=test-method]
+[.component,class=test method type]
 --
 Manual Inspection
 --
 
+[.component,class=test method]
+=====
+
+[.component,class=step]
+======
 For each new UML class defined by an ADE:
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that every Feature Type class in an ADE is derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
 --
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that every UML class in an ADE which represents a top-level Feature Type is assigned the _&#171;TopLevelFeatureType&#187;_ stereotype.
 --
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that every UML class in an ADE which represents spaces or space boundaries is derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
 --
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that any new or additional spatial properties defined by an ADE:
 
 . belongs to a predefined LOD,
 . has a property name which starts with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
 --
+
+======
+=====
 ====
 
