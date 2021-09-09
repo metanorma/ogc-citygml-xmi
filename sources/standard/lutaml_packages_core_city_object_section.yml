@@ -1,0 +1,12 @@
+packages:
+  - "Core":
+    - AbstractAppearance
+    - AbstractCityObject
+    - AbstractDynamizer
+    - AbstractFeature
+    - AbstractFeatureWithLifespan
+    - AbstractVersion
+    - AbstractVersionTransition
+    - CityModel
+section_depth: 3
+render_style: entity_list_class

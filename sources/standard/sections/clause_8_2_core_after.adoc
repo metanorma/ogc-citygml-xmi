@@ -43,8 +43,11 @@ image::figures/Core/Core-City_models_and_city_objects.png[]
 
 The City Model and City Object classes defined in the CityGML UML model are introduced in <<Core-city-model-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 
-include::summaries/Core-CityObjects.adoc[]
-// TODO: insert Table 6. City Model and City Object classes used in Core
+[[Core-city-model-class-table]]
+.City Model and City Object classes used in Core
+[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_city_object_section.yml]
+-----
+-----
 
 
 [[space-concepts-section]]
@@ -76,8 +79,11 @@ image::figures/Core/Core-Space_concepts.png[]
 
 The Space Concept classes defined in the CityGML UML model are introduced in <<Core-spatial-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 
-include::summaries/Core-Spatial.adoc[]
-// TODO: Insert Table 7. Space Classes used in Core
+[[Core-spatial-class-table]]
+.Space Classes used in Core
+[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_space_section.yml]
+-----
+-----
 
 
 [[geometry-lod-section]]
@@ -114,8 +120,11 @@ encountered in a city landscape have the same geometry. How many types of street
 lamps can there be? An Implicit Geometry captures that geometry once, and
 re-uses that one geometry for all similar street lamp objects.
 
-include::summaries/Core-Geometry.adoc[]
-// TODO: Insert table for Table 8. Geometry Classes used in Core
+[[Core-geometry-class-table]]
+.Geometry Classes used in Core
+[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_geometry_section.yml]
+-----
+-----
 
 
 [[CityGML-section]]
@@ -141,8 +150,11 @@ CityGML Core module. The additional classes required to complete this section of
 the standard are introduced in <<Core-class-table>>. More details about these
 classes can be found in the Data Dictionary in <<data-dictionary-section>>.
 
-include::summaries/Core-CityModel.adoc[]
-// TODO: Insert table for Table 9. Additional Classes used in Core
+[[Core-class-table]]
+.Additional Classes used in Core
+[lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_city_model_section.yml]
+-----
+-----
 
 [[b-e-c-section]]
 ==== Data types, Enumerations, and Code lists
