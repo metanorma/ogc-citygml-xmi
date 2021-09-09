@@ -6,15 +6,22 @@
 To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
 --
 
-[.component,class=test-method]
+[.component,class=test method type]
 --
 Manual Inspection
 --
 
+[.component,class=test method]
+=====
+
+[.component,class=step]
+======
 If any ADE classes or properties are included in the Building Package:
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that the Implementation Specification conforms with the ADE Requirements Class.
 --
+======
+=====
 ====

@@ -6,18 +6,21 @@
 To validate that none of the restrictions which the CityGML Conceptual Model imposes on ISO classes are violated by an Implementation Specification.
 --
 
-[.component,class=test-method]
+[.component,class=test method type]
 --
 Manual Inspection
 --
 
-[.component,class=part]
+[.component,class=test method]
+=====
+[.component,class=step]
 --
 For each instance of the GM_Solid class, validate that there are no interior boundaries associated with that instance.
 --
 
-[.component,class=part]
+[.component,class=step]
 --
 For each instance of a class descended from the GM_Solid class, validate that there are no interior boundaries associated with that instance.
 --
+=====
 ====

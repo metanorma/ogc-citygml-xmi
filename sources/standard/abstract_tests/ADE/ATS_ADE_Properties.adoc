@@ -3,30 +3,37 @@
 ====
 [.component,class=test-purpose]
 --
-To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model implement extension properties correctly.
+To validate that Application Domain Extensions (ADE) to the CityGML Conceptual Model implement extension properties correctly.
 --
 
-[.component,class=test-method]
+[.component,class=test method type]
 --
 Manual Inspection
 --
 
+[.component,class=test method]
+=====
+
+[.component,class=step]
+======
 Every Feature Type in the CityGML Conceptual Model includes an extension property whos' purpose is to allow an ADE to add properties to that existing Feature Type. In every case where an extension property has been used:
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that the ADE creates a subclass of the abstract data type associated with the extension property.
 --
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that this subclass is defined as a data type using the stereotype _&#171;DataType&#187;_.
 --
 
-[.component,class=part]
+[.component,class=step]
 --
 Validate that all application-specific attributes and associations for that Feature Type are modeled as properties of the ADE subclass.
 --
+======
+=====
 ====
 
 

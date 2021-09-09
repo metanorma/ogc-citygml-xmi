@@ -6,15 +6,22 @@
 To validate that Generics are not used in a way that duplicates or conflicts with feature classes or attributes defined in the Conceptual Model..
 --
 
-[.component,class=test-method]
+[.component,class=test method type]
 --
 Manual Inspection
 --
 
+[.component,class=test method]
+=====
+
+[.component,class=step]
+======
 For all Generics-based classes and attributes defined in the Implementation Specification:
 
-[.component,class=part]
+[.component,class=step]
 --
 Demonstrate that this class or attribute does not duplicate or conflict with any classes or attributes defined in the Conceptual Model.
 --
+======
+=====
 ====
