@@ -78,7 +78,7 @@ h|Stereotype: | None
 [cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
-| coordinate   |Sequence {{number,option="noref,noital"}} [1..1]|
+| coordinate   |Sequence <{{number,option="noref,noital"}}> [1..1]|
 | dimension   |{{Integer,option="noref,noital"}} [1..1] |
 |===
 
