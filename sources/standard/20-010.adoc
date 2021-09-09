@@ -30,7 +30,7 @@
 :affiliation_6: HeazelTech LLC
 :role_6: editor
 :keywords: ogcdoc, OGC document, CityGML, 3D city models
-:submitting-organizations: Heazeltech LLC, USA; Institut national de l'information géographique et forestière (IGN), France; OpenSitePlan, USA; Technical University of Munich, Germany; Ordnance Survey, Great Britain; Virtual City Systems, Germany
+:submitting-organizations: Heazeltech LLC; Institut national de l'information géographique et forestière (IGN); OpenSitePlan; Technical University of Munich; Ordnance Survey; Virtual City System
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
