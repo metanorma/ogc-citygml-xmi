@@ -311,9 +311,6 @@ h|Stereotype: | «type»
 |
 |{{GM_GenericSurface,option="noref,noital"}} [1..1]
 |
-|
-|{{Building,option="noref,noital"}} [0..*]
-|
 |===
 
 [NOTE,keep-separate=true]
