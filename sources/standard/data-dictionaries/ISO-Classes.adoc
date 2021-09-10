@@ -101,9 +101,27 @@ NOTE: As a type, GM_Object does not have a well-defined default state or value r
 
 h|Subclass of: | none
 h|Stereotype: | «type»
-h|Constraint: | `dimension() >  boundary().dimension (Invariant):`
-h|Constraint: | `boundary().notEmpty() implies boundary().dimension() = dimension() -1 (Invariant):`
-h|Constraint: | `boundary().isEmpty() = isCycle() (Invariant):`
+h|Constraint: |
+
+[source,ocl,%unnumbered]
+----
+dimension() >  boundary().dimension (Invariant):
+----
+
+h|Constraint: |
+
+[source,ocl,%unnumbered]
+----
+boundary().notEmpty() implies boundary().dimension() = dimension() -1 (Invariant):
+----
+
+h|Constraint: |
+
+[source,ocl,%unnumbered]
+----
+boundary().isEmpty() = isCycle() (Invariant):
+----
+
 |===
 
 .Associations of GM_Object (class)
