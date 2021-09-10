@@ -1,7 +1,29 @@
 [bibliography]
 = Bibliography
 
+* [[[three-dps_citation,OGC 15-001r4]]], Hagedorn, B., Thum, S., Reitz, T., Coors, V., Gutbell, R.: _OGC® 3D Portrayal Service 1.0_, Open Geospatial Consortium, Available from https://docs.opengeospatial.org/is/15-001r4/15-001r4.html[OGC Doc. 15-001r4].
+
+* [[[three-dtiles_citation, OGC 18-053r2]]], Cozzi, P., Lilley, S., Getz, G. _OGC 3D Tiles Specification 1.0_ Open Geospatial Consortium, Available from http://docs.opengeospatial.org/cs/18-053r2/18-053r2.html[OGC Doc. 18-053r2]
+
+* [[[Groger2012b,OGC 12-019]]], Gröger, G., Kolbe, T. H., Nagel, C., Häfele, K.-H., 2012: _OGC City Geography Markup Language (CityGML) Encoding Standard, Version 2.0.0_, Open Geospatial Consortium. https://portal.opengeospatial.org/files/?artifact_id=47842[OGC Doc. 12-019]
+
+* [[[Chaturvedi2017,OGC 16-098]]], Chaturvedi, K., Kolbe, T. H., 2017: _Future City Pilot 1 Engineering Report_, Open Geospatial Consortium. http://docs.opengeospatial.org/per/16-098.html[OGC Doc. 19-098]
+
+* [[[i3s_citation,OGC 17-014r7]]], Reed, C., Belayneh T.: _OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package Format Specification_, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/cs/17-014r7/17-014r7.html[OGC Doc. 17-014r7].
+
+* [[[kml_citation,OGC 12-007r2]]], Burggraf, D.: _OGC KML 2.3_, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/12-007r2/12-007r2.html[OGC Doc. 12-007r2]
+
+* [[[sos_citation,OGC 12-006]]], Bröring, A., Stasch, C., Echterhoff, J.: _OGC® Sensor Observation Service Interface Standard_, Open Geospatial Consortium, Available from https://portal.opengeospatial.org/files/?artifact_id=47599[OGC Doc. 12-006]
+
+* [[[sensorthing_citation,OGC 15-078r6]]], Liang, S., Huang, C., Khalafbeigi, T.: _OGC SensorThings API Part 1: Sensing_, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/15-078r6/15-078r6.html[OGC Doc. 15-078r6]
+
 * [[[ogc08-131,OGC 08-131]]], Open Geospatial Consortium: _The Specification Model -- A Standard for Modular specifications_, https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131]
+
+* [[[gltf_citation, Khronos gLTF]]], Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: _The GL Transmission Format (glTF)_, The Khronos Group, Available from https://www.khronos.org/gltf.
+
+* [[[MQTT2019,OASIS MQTT]]], OASIS MQTT Technical Committee: _MQTT Version 5.0 Standard_, OASIS, March 7, 2019, Available from https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html[OASIS].
+
+* [[[OMGMDA,OMG MDA]]], Object Management Group: Model Driven Architecture Guide rev. 2.0, Available from https://www.omg.org/cgi-bin/doc?ormsc/14-06-01
 
 * [[[Agugiaro2018,Agugiaro et al. 2018]]], Agugiaro, G., Benner, J., Cipriano, P., Nouvel, R., 2018: _The Energy Application Domain Extension for CityGML: enhancing interoperability for urban energy simulations_. Open Geospatial Data, Software and Standards, Vol. 3. https://doi.org/10.1186/s40965-018-0042-y
 
@@ -19,8 +41,6 @@
 
 * [[[Chaturvedi2016,Chaturvedi & Kolbe 2016]]], Chaturvedi, K., Kolbe, T. H., 2016: _Integrating Dynamic Data and Sensors with Semantic 3D City Models in the context of Smart Cities_. In: Proceedings of the 11th International 3D Geoinfo Conference, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. IV-2/W1, ISPRS. https://doi.org/10.5194/isprs-annals-IV-2-W1-31-2016
 
-* [[[Chaturvedi2017,OGC 16-098]]], Chaturvedi, K., Kolbe, T. H., 2017: _Future City Pilot 1 Engineering Report_, Open Geospatial Consortium. http://docs.opengeospatial.org/per/16-098.html[OGC Doc. 19-098]
-
 * [[[Chaturvedi2019,Chaturvedi & Kolbe 2019]]], Chaturvedi, K., Kolbe, T. H., 2019: _A Requirement Analysis on Extending Semantic 3D City Models for Supporting Time-dependent Properties_. In: Proceedings of the 4th International Conference on Smart Data and Smart Cities, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. IV-4/W9, ISPRS. https://doi.org/10.5194/isprs-annals-IV-4-W9-19-2019
 
 * [[[Elfes1989,Elfes 1989]]], Elfes, A., 1989: _Using occupancy grids for mobile robot perception and navigation_. Computer 22(6):46–57. https://doi.org/10.1109/2.30720
@@ -29,7 +49,7 @@
 
 * [[[Groger2012a,Gröger & Plümer 2012]]], Gröger, G., Plümer, L., 2012: _CityGML – Interoperable semantic 3D city models_. ISPRS Journal of Photogrammetry and Remote Sensing, Vol. 71, July 2012. https://dx.doi.org/10.1016/j.isprsjprs.2012.04.004
 
-* [[[Groger2012b,OGC 12-019]]], Gröger, G., Kolbe, T. H., Nagel, C., Häfele, K.-H., 2012: _OGC City Geography Markup Language (CityGML) Encoding Standard, Version 2.0.0_, Open Geospatial Consortium. https://portal.opengeospatial.org/files/?artifact_id=47842[OGC Doc. 12-019]
+* [[[inspire_glossary,INSPIRE Glossary]]], European Union: _INSPIRE Glossary_, Available from https://inspire.ec.europa.eu/glossary
 
 * [[[Jensen1998,Jensen & Dyreson 1998]]], Jensen, Christian S. and Dyreson, Curtis E.: _The Consensus Glossary of Temporal Database Concepts_. February 1998 Version. In: Temporal Databases: Research and Practice [online]. Springer Berlin Heidelberg, 1998. p. 367–405. Lecture Notes in Computer Science. Available from: 10.1007/BFb0053710
 
@@ -57,6 +77,10 @@
 
 * [[[Nouvel2015,Nouvel et al. 2015]]], Nouvel, R., Bahu, J. M., Kaden, R., Kaempf, J., Cipriano, P., Lauster, M., Haefele, K.-H., Munoz, E., Tournaire, O, Casper, E., 2015: _Development of the CityGML Application Domain Extension Energy for Urban Energy Simulation_. In: Proceedings of Building Simulation 2015 - 14th Conference of the International Building Performance Simulation Association, IBPSA, 559-564. http://www.ibpsa.org/proceedings/BS2015/p2863.pdf
 
+* [[[OGCDR,OGC Definitions Register]]], OGC: Definitions Register, Available from http://www.opengis.net/def/
+
+* [[[OGCDTR,OGC Document Types Register]]] OGC: Document Types Register, Available from http://www.opengis.net/def/doc-type
+
 * [[[Smith2000,Smith & Varzi 2000]]], Smith, B., Varzi, A. C., 2000: _Fiat and Bona Fide Boundaries_. Philosophy and Phenomenological Research, Vol. 60, No. 2, 401-420. https://doi.org/10.2307/2653492
 
 * [[[Snodgrass1999,Snodgrass 1999]]], Snodgrass, Richard T: _Developing time-oriented database applications in SQL_. San Francisco, California : Morgan Kaufmann Publishers, July 1999. ISBN 1-55860-436-7. Available from: http://www.cs.arizona.edu/~rts/tdbbook.pdf
@@ -65,26 +89,3 @@
 
 * [[[Vretanos2010, Vretanos 2010]]], Vretanos, P. A. 2010: _OpenGIS Web Feature Service 2.0 Interface Standard_, Open Geospatial Consortium. http://www.opengeospatial.org/standards/wfs[OGC Doc. 09-025r1]
 
-* [[[MQTT2019,OASIS MQTT]]], OASIS MQTT Technical Committee: _MQTT Version 5.0 Standard_, OASIS, March 7, 2019, Available from https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html[OASIS].
-
-* [[[i3s_citation,OGC 17-014r7]]], Reed, C., Belayneh T.: _OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package Format Specification_, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/cs/17-014r7/17-014r7.html[OGC Doc. 17-014r7].
-
-* [[[three-dtiles_citation, OGC 18-053r2]]], Cozzi, P., Lilley, S., Getz, G. _OGC 3D Tiles Specification 1.0_ Open Geospatial Consortium, Available from http://docs.opengeospatial.org/cs/18-053r2/18-053r2.html[OGC Doc. 18-053r2]
-
-* [[[kml_citation,OGC 12-007r2]]], Burggraf, D.: _OGC KML 2.3_, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/12-007r2/12-007r2.html[OGC Doc. 12-007r2]
-
-* [[[sos_citation,OGC 12-006]]], Bröring, A., Stasch, C., Echterhoff, J.: _OGC® Sensor Observation Service Interface Standard_, Open Geospatial Consortium, Available from https://portal.opengeospatial.org/files/?artifact_id=47599[OGC Doc. 12-006]
-
-* [[[sensorthing_citation,OGC 15-078r6]]], Liang, S., Huang, C., Khalafbeigi, T.: _OGC SensorThings API Part 1: Sensing_, Open Geospatial Consortium, Available from http://docs.opengeospatial.org/is/15-078r6/15-078r6.html[OGC Doc. 15-078r6]
-
-* [[[three-dps_citation,OGC 15-001r4]]], Hagedorn, B., Thum, S., Reitz, T., Coors, V., Gutbell, R.: _OGC® 3D Portrayal Service 1.0_, Open Geospatial Consortium, Available from https://docs.opengeospatial.org/is/15-001r4/15-001r4.html[OGC Doc. 15-001r4].
-
-* [[[gltf_citation, Khronos gLTF]]], Bhatia, S.,Cozzi, P., Knyazev, A., Parisi, T.: _The GL Transmission Format (glTF)_, The Khronos Group, Available from https://www.khronos.org/gltf.
-
-* [[[inspire_glossary,INSPIRE Glossary]]], European Union: _INSPIRE Glossary_, Available from https://inspire.ec.europa.eu/glossary
-
-* [[[OMGMDA,OMG MDA]]], Object Management Group: Model Driven Architecture Guide rev. 2.0, Available from https://www.omg.org/cgi-bin/doc?ormsc/14-06-01
-
-* [[[OGCDR,OGC Definitions Register]]], OGC: Definitions Register, Available from http://www.opengis.net/def/
-
-* [[[OGCDTR,OGC Document Types Register]]] OGC: Document Types Register, Available from http://www.opengis.net/def/doc-type
