@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 gem "metanorma-cli"
 
-gem "metanorma-plugin-lutaml", git: "git@github.com:metanorma/metanorma-plugin-lutaml.git", branch: "feature/lutaml_uml_datamodel_description-entities-split-render-single-entity"
-# gem "metanorma-standoc", git: "git@github.com:metanorma/metanorma-standoc.git", branch: "feature/lutaml_uml_datamodel_description"
-gem "lutaml-xmi", git: "git@github.com:lutaml/lutaml-xmi.git", branch: "hotfix/citygml-structure-fixes-1"
+gem "sassc"
+gem "metanorma-standoc", git: "git@github.com:metanorma/metanorma-standoc.git", branch: "main"
+gem "metanorma-ogc", git: "git@github.com:metanorma/metanorma-ogc.git", branch: "fix/reqt-dl-attrs"
+gem "metanorma-plugin-lutaml", git: "git@github.com:metanorma/metanorma-plugin-lutaml.git", branch: "main"
+gem "metanorma-standoc", git: "git@github.com:metanorma/metanorma-standoc.git", branch: "main"
+gem "isodoc", git: "git@github.com:metanorma/isodoc.git", branch: "main"
+gem "metanorma-utils", git: "git@github.com:metanorma/metanorma-utils.git", branch: "main"
