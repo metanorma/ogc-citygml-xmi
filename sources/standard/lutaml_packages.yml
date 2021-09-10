@@ -1,7 +1,7 @@
 packages:
   - "Core":
-      skip_tables:
-        - classes
+    skip_tables:
+      - classes
   - "Appearance"
   - "CityFurniture"
   - "CityObjectGroup"
