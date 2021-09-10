@@ -1,12 +1,13 @@
 packages:
   - "Core":
-    - AbstractLogicalSpace
-    - AbstractOccupiedSpace
-    - AbstractPhysicalSpace
-    - AbstractSpace
-    - AbstractSpaceBoundary
-    - AbstractThematicSurface
-    - AbstractUnoccupiedSpace
-    - ClosureSurface
+      render_entites:
+        - AbstractLogicalSpace
+        - AbstractOccupiedSpace
+        - AbstractPhysicalSpace
+        - AbstractSpace
+        - AbstractSpaceBoundary
+        - AbstractThematicSurface
+        - AbstractUnoccupiedSpace
+        - ClosureSurface
 section_depth: 3
 render_style: entity_list_class

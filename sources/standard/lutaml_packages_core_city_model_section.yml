@@ -1,6 +1,7 @@
 packages:
   - "Core":
-    - Address
-    - CityObjectRelation
+      render_entites:
+        - Address
+        - CityObjectRelation
 section_depth: 3
 render_style: entity_list_class
