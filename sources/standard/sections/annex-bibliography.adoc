@@ -27,9 +27,9 @@
 
 * [[[Foley2002,Foley et al. 2002]]], Foley, J., van Dam, A., Feiner, S., Hughes, J., 2002: _Computer Graphics: Principles and Practice_. 2nd ed., Addison Wesley
 
-* [[[Gröger2012a,Gröger & Plümer 2012]]], Gröger, G., Plümer, L., 2012: _CityGML – Interoperable semantic 3D city models_. ISPRS Journal of Photogrammetry and Remote Sensing, Vol. 71, July 2012. https://dx.doi.org/10.1016/j.isprsjprs.2012.04.004
+* [[[Groger2012a,Gröger & Plümer 2012]]], Gröger, G., Plümer, L., 2012: _CityGML – Interoperable semantic 3D city models_. ISPRS Journal of Photogrammetry and Remote Sensing, Vol. 71, July 2012. https://dx.doi.org/10.1016/j.isprsjprs.2012.04.004
 
-* [[[Gröger2012b,OGC 12-019]]], Gröger, G., Kolbe, T. H., Nagel, C., Häfele, K.-H., 2012: _OGC City Geography Markup Language (CityGML) Encoding Standard, Version 2.0.0_, Open Geospatial Consortium. https://portal.opengeospatial.org/files/?artifact_id=47842[OGC Doc. 12-019]
+* [[[Groger2012b,OGC 12-019]]], Gröger, G., Kolbe, T. H., Nagel, C., Häfele, K.-H., 2012: _OGC City Geography Markup Language (CityGML) Encoding Standard, Version 2.0.0_, Open Geospatial Consortium. https://portal.opengeospatial.org/files/?artifact_id=47842[OGC Doc. 12-019]
 
 * [[[Jensen1998,Jensen & Dyreson 1998]]], Jensen, Christian S. and Dyreson, Curtis E.: _The Consensus Glossary of Temporal Database Concepts_. February 1998 Version. In: Temporal Databases: Research and Practice [online]. Springer Berlin Heidelberg, 1998. p. 367–405. Lecture Notes in Computer Science. Available from: 10.1007/BFb0053710
 
