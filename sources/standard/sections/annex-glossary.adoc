@@ -254,6 +254,7 @@ Used as a type for returning distances and possibly lengths.
 
 
 ==== Engineering CRS
+
 A contextually local coordinate reference system which can be divided into two broad categories:
 
 . earth-fixed systems applied to engineering activities on or near the surface of the earth;
@@ -263,6 +264,11 @@ A contextually local coordinate reference system which can be divided into two b
 [.source]
 <<iso19111>>
 
+==== FeatureType
+
+metaclass that is instantiated as classes that represent individual feature types
+
+<<iso19109,clause=7.4.5>>
 
 ==== Generic Name
 
