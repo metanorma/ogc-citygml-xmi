@@ -14,7 +14,7 @@ h|Stereotype: | «FeatureType»
 |===
 | Role name | Target class and multiplicity | Definition
 |
-|{{FeatureType,option="noref,noital"}} [1..1]
+|{{FeatureType,options="noref,noital"}} [1..1]
 |
 |===
 
@@ -32,7 +32,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | A coverage that returns the same feature attribute values for every direct position within any single spatial object, temporal object or spatiotemporal object in its domain.
-h|Subclass of: | {{CV_DiscreteCoverage,option="noref,noital"}}
+h|Subclass of: | {{CV_DiscreteCoverage,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -41,10 +41,10 @@ h|Stereotype: | «type»
 |===
 | Role name | Target class and multiplicity | Definition
 | element
-|{{CV_GridPointValuePair,option="noref,noital"}} [1..*]
+|{{CV_GridPointValuePair,options="noref,noital"}} [1..*]
 |
 | valueAssignment
-|{{CV_GridValuesMatrix,option="noref,noital"}} [1..1]
+|{{CV_GridValuesMatrix,options="noref,noital"}} [1..1]
 |
 |===
 
@@ -70,7 +70,7 @@ h|Stereotype: | None
 [cols="15a,20a,60a",options="header"]
 |===
 | Role name | Target class and multiplicity | Definition
-| CRS |{{CRS,option="noref,noital"}} [0..1]|
+| CRS |{{CRS,options="noref,noital"}} [0..1]|
 | CRS |<<SC_CRS-section,SC_CRS>> [0..1]|
 |===
 
@@ -78,8 +78,8 @@ h|Stereotype: | None
 [cols="15a,20a,60a",options="header"]
 |===
 | Attribute | Value type and multiplicity | Definition
-| coordinate   |Sequence <{{number,option="noref,noital"}}> [1..1]|
-| dimension   |{{Integer,option="noref,noital"}} [1..1] |
+| coordinate   |Sequence <{{number,options="noref,noital"}}> [1..1]|
+| dimension   |{{Integer,options="noref,noital"}} [1..1] |
 |===
 
 [NOTE,keep-separate=true]
@@ -130,7 +130,7 @@ boundary().isEmpty() = isCycle() (Invariant):
 | Role name | Target class and multiplicity | Definition
 
 |
-|{{Geometry,option="noref,noital"}} [1..1]
+|{{Geometry,options="noref,noital"}} [1..1]
 |
 
 |
@@ -138,11 +138,11 @@ boundary().isEmpty() = isCycle() (Invariant):
 |
 
 |
-|{{CV_DomainObject,option="noref,noital"}} [1..1]
+|{{CV_DomainObject,options="noref,noital"}} [1..1]
 |
 
 | CRS
-|{{CRS,option="noref,noital"}} [0..1]
+|{{CRS,options="noref,noital"}} [0..1]
 |
 
 | CRS
@@ -165,7 +165,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | An aggregate class containing only instances of GM_OrientableCurve. The association role “element” shall be the set of GM_OrientableCurves contained in this GM_MultiCurve.
-h|Subclass of: | {{GM_MultiPrimitive,option="noref,noital"}}
+h|Subclass of: | {{GM_MultiPrimitive,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -174,7 +174,7 @@ h|Stereotype: | «type»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| length  |{{Length,option="noref,noital"}} [1..1] |
+| length  |{{Length,options="noref,noital"}} [1..1] |
 |===
 
 [NOTE,keep-separate=true]
@@ -191,7 +191,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | GM_MultiPoint is an aggregate class containing only points. The association role “element” shall be the set of GM_Points contained in this GM_MultiPoint.
-h|Subclass of: | {{GM_MultiPrimitive,option="noref,noital"}}
+h|Subclass of: | {{GM_MultiPrimitive,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -217,7 +217,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | An aggregate class containing only instances of GM_OrientableSurface. The association role “element” shall be the set of GM_OrientableSurfaces contained in this GM_MultiSurface.
-h|Subclass of: | {{GM_MultiPrimitive,option="noref,noital"}}
+h|Subclass of: | {{GM_MultiPrimitive,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -226,9 +226,9 @@ h|Stereotype: | «type»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| area   |{{Area,option="noref,noital"}} [1..1] |
+| area   |{{Area,options="noref,noital"}} [1..1] |
 
-| perimeter   |{{Length,option="noref,noital"}} [1..1] |
+| perimeter   |{{Length,options="noref,noital"}} [1..1] |
 |===
 
 [NOTE,keep-separate=true]
@@ -245,7 +245,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | GM_Point is the basic data type for a geometric object consisting of one and only one point.
-h|Subclass of: | {{GM_Primitive,option="noref,noital"}}
+h|Subclass of: | {{GM_Primitive,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -254,10 +254,10 @@ h|Stereotype: | «type»
 |===
 | Role name | Target class and multiplicity | Definition
 |
-|{{Point,option="noref,noital"}} [1..1]
+|{{Point,options="noref,noital"}} [1..1]
 |
 | composite
-|{{GM_CompositePoint,option="noref,noital"}} [0..*]
+|{{GM_CompositePoint,options="noref,noital"}} [0..*]
 |
 |===
 
@@ -285,7 +285,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
-h|Subclass of: | {{GM_Primitive,option="noref,noital"}}
+h|Subclass of: | {{GM_Primitive,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -294,10 +294,10 @@ h|Stereotype: | «type»
 |===
 | Role name | Target class and multiplicity | Definition
 | composite
-|{{GM_CompositeSolid,option="noref,noital"}} [0..*]
+|{{GM_CompositeSolid,options="noref,noital"}} [0..*]
 |
 |
-|{{Solid,option="noref,noital"}} [1..1]
+|{{Solid,options="noref,noital"}} [1..1]
 |
 |===
 
@@ -318,7 +318,7 @@ h|Definition: | GM_Surface is a subclass of GM_Primitive and is the basis for 2-
 
 NOTE: Other than the restriction on orientability, no other "validity" condition is required for GM_Surface.
 
-h|Subclass of: | {{GM_OrientableSurface,option="noref,noital"}}
+h|Subclass of: | {{GM_OrientableSurface,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -327,7 +327,7 @@ h|Stereotype: | «type»
 |===
 | Role name | Target class and multiplicity | Definition
 |
-|{{GM_GenericSurface,option="noref,noital"}} [1..1]
+|{{GM_GenericSurface,options="noref,noital"}} [1..1]
 |
 |===
 
@@ -354,13 +354,13 @@ h|Stereotype: | «type»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| breakLines   |Set <{{GM_LineString,option="noref,noital"}}> [1..1] |
+| breakLines   |Set <{{GM_LineString,options="noref,noital"}}> [1..1] |
 
-| controlPoint   |{{GM_Position,option="noref,noital"}}  [3..*] |
+| controlPoint   |{{GM_Position,options="noref,noital"}}  [3..*] |
 
-| maxLength   |{{Distance,option="noref,noital"}} [1..1] |
+| maxLength   |{{Distance,options="noref,noital"}} [1..1] |
 
-| stopLines   |Set <{{GM_LineString,option="noref,noital"}}> [1..1] |
+| stopLines   |Set <{{GM_LineString,options="noref,noital"}}> [1..1] |
 |===
 
 [NOTE,keep-separate=true]
@@ -377,7 +377,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | A GM_TriangulatedSurface is a GM_PolyhedralSurface that is composed only of triangles (GM_Triangle). There is no restriction on how the triangulation is derived.
-h|Subclass of: | {{GM_PolyhedralSurface,option="noref,noital"}}
+h|Subclass of: | {{GM_PolyhedralSurface,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -395,7 +395,7 @@ Unless otherwise specified, all attributes and role names have the stereotype
 [cols="1a,4a"]
 |===
 h|Definition: | Coordinate reference system which is usually single but may be compound.
-h|Subclass of: | {{IO_IdentifiedObjectBase,option="noref,noital"}}, {{RS_ReferenceSystem,option="noref,noital"}}
+h|Subclass of: | {{IO_IdentifiedObjectBase,options="noref,noital"}}, {{RS_ReferenceSystem,options="noref,noital"}}
 h|Stereotype: | «type»
 |===
 
@@ -404,10 +404,10 @@ h|Stereotype: | «type»
 |===
 | Role name | Target class and multiplicity | Definition
 | coordOperationTo
-|{{CC_CoordinateOperation,option="noref,noital"}} [0..*]
+|{{CC_CoordinateOperation,options="noref,noital"}} [0..*]
 |Not-navigable association from a Coordinate Operation that uses ths CRS as its targetCRS.
 | grid
-|{{CV_ReferenceableGrid,option="noref,noital"}} [0..*]
+|{{CV_ReferenceableGrid,options="noref,noital"}} [0..*]
 |
 |===
 
@@ -416,7 +416,7 @@ h|Stereotype: | «type»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| scope   |{{CharacterString,option="noref,noital"}}  [1..*] |Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
+| scope   |{{CharacterString,options="noref,noital"}}  [1..*] |Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
 |===
 
 [NOTE,keep-separate=true]
@@ -442,13 +442,13 @@ h|Stereotype: | «Union»
 |===
 | Attribute | Value type and multiplicity | Definition
 
-| anyOther   |{{TM_TemporalPosition,option="noref,noital"}} [1..1] |
+| anyOther   |{{TM_TemporalPosition,options="noref,noital"}} [1..1] |
 
-| date8601   |{{Date,option="noref,noital"}} [1..1] |
+| date8601   |{{Date,options="noref,noital"}} [1..1] |
 
-| time8601   |{{Time,option="noref,noital"}} [1..1] |
+| time8601   |{{Time,options="noref,noital"}} [1..1] |
 
-| dateTime8601   |{{DateTime,option="noref,noital"}} [1..1] |
+| dateTime8601   |{{DateTime,options="noref,noital"}} [1..1] |
 |===
 
 [NOTE,keep-separate=true]
