@@ -173,4 +173,4 @@ the Core module are illustrated in <<core-uml-codelists>>.
 .Basic Types, Enumerations, and Codelists from the CityGML Core module.
 image::figures/Core/Core-Basic_Types_Enumerations_Codelists.png[]
 
-These supporting constructs are defined in the following clause.
+These supporting constructs are defined in the following tables.
