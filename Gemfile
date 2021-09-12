@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "metanorma-cli"
 
 gem "sassc"
+gem "metanorma-iso", git: "git@github.com:metanorma/metanorma-iso.git", branch: "features/concept-linkmention"
 gem "metanorma-standoc", git: "git@github.com:metanorma/metanorma-standoc.git", branch: "main"
 gem "metanorma-ogc", git: "git@github.com:metanorma/metanorma-ogc.git", branch: "fix/reqt-dl-attrs"
 gem "metanorma-plugin-lutaml", git: "git@github.com:metanorma/metanorma-plugin-lutaml.git", branch: "main"
