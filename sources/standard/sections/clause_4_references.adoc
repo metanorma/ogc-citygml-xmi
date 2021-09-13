@@ -2,13 +2,15 @@
 [bibliography]
 == References
 
-* [[[rfc2045,IETF RFC 2045]]] IETF: RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies. (1996)
+* [[[topic5,OGC 08-126]]] OGC: The OpenGIS® Abstract Specification Topic 5: Features, OGC document 08-126 (2009)
 
-* [[[rfc2046,IETF RFC 2046]]] IETF: RFC 2046, Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. (1996)
+* [[[topic8,OGC 99-108r2]]] OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2 (1999)
 
-* [[[rfc3986,IETF RFC 3986]]] IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax. (2005)
+* [[[topic10,OGC 99-110]]] OGC: The OpenGIS™ Abstract Specification Topic 10: Feature Collections, OGC document 99-110 (1999)
 
-* [[[inspirebu,INSPIRE: D2.8.III.2]]] INSPIRE: D2.8.III.2 Data Specification on Buildings – Technical Guidelines. European Commission Joint Research Centre. (2013)
+* [[[ogc08-094r1,OGC 08-094r1]]] OGC: SWE Common Data Model Encoding Standard, OGC document 08-094r1 (2008)
+
+* [[[ogc15-043r3,OGC 15-043r3]]] OGC: Timeseries Profile of Observations and Measurements, OGC document 15-043r3 (2015)
 
 * [[[iso19101-1,ISO 19101-1:2014]]] ISO: ISO 19101-1:2014, Geographic information - Reference model - Part 1: Fundamentals (2014)
 
@@ -38,16 +40,14 @@
 
 * [[[iso19775,ISO/IEC 19775-1:2013]]] ISO: ISO/IEC 19775-1:2013 Information technology — Computer graphics, image processing and environmental data representation — Extensible 3D (X3D) — Part 1: Architecture and base components (2013)
 
-* [[[collada,COLLADA]]] Khronos Group Inc.: COLLADA – Digital Asset Schema Release 1.5.0 (2008)
+* [[[rfc2045,IETF RFC 2045]]] IETF: RFC 2045, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies. (1996)
+
+* [[[rfc2046,IETF RFC 2046]]] IETF: RFC 2046, Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. (1996)
+
+* [[[rfc3986,IETF RFC 3986]]] IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax. (2005)
+
+* [[[inspirebu,INSPIRE: D2.8.III.2]]] INSPIRE: D2.8.III.2 Data Specification on Buildings – Technical Guidelines. European Commission Joint Research Centre. (2013)
+
+* [[[collada,Khronos COLLADA]]] Khronos Group Inc.: COLLADA – Digital Asset Schema Release 1.5.0 (2008)
 
 * [[[xal2,OASIS xAL]]] OASIS: Customer Information Quality Specifications - extensible Address Language (xAL), Version v3.0 (2008)
-
-* [[[topic5,OGC 08-126]]] OGC: The OpenGIS® Abstract Specification Topic 5: Features, OGC document 08-126 (2009)
-
-* [[[topic8,OGC 99-108r2]]] OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2 (1999)
-
-* [[[topic10,OGC 99-110]]] OGC: The OpenGIS™ Abstract Specification Topic 10: Feature Collections, OGC document 99-110 (1999)
-
-* [[[ogc08-094r1,OGC 08-094r1]]] OGC: SWE Common Data Model Encoding Standard, OGC document 08-094r1 (2008)
-
-* [[[ogc15-043r3,OGC 15-043r3]]] OGC: Timeseries Profile of Observations and Measurements, OGC document 15-043r3 (2015)
