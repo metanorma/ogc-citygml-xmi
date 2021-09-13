@@ -10,7 +10,7 @@
 :docnumber: 20-010
 :received-date: 2021-03-02
 :issued-date: 2021-06-04
-:published-date: 2021-07-15
+:published-date: 2021-09-13
 :fullname: Thomas H. Kolbe
 :affiliation: Chair of Geoinformatics, Technical University of Munich, Germany
 :role: editor
