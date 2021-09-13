@@ -260,7 +260,7 @@ Used as a type for returning distances and possibly lengths.
 
 
 [[EngineeringCRS-section]]
-==== Engineering CRS
+==== EngineeringCRS
 
 A contextually local coordinate reference system which can be divided into two broad categories:
 
@@ -280,9 +280,9 @@ metaclass that is instantiated as classes that represent individual feature type
 
 
 [[GenericName-section]]
-==== Generic Name
+==== GenericName
 
-Generic Name is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName.
+GenericName is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName.
 
 [.source]
 <<iso19103>>
@@ -444,7 +444,7 @@ Description of a spatial and temporal reference system used by a dataset.
 
 
 [[ScopedName-section]]
-==== Scoped Name
+==== ScopedName
 
 ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail.
 
@@ -486,7 +486,7 @@ The position of a TM_Instant relative to a TM_ReferenceSystem.
 
 
 [[UnitOfMeasure-section]]
-==== Unit of Measure
+==== UnitOfMeasure
 
 Any of the systems devised to measure some physical quantity such distance or area or a system devised to measure such things as the passage of time.
 
