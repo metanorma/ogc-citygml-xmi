@@ -10,21 +10,21 @@ geometry of features is represented in a two-dimensional space
 NOTE: In other words, the geometry of 2D data is given using (X,Y) coordinates.
 
 [.source]
-<<inspirebu,clause="definition 1">>
+<<inspirebu,locality:definition=1>>
 
 ==== 2.5D data
 
 geometry of features is represented in a three-dimensional space with the constraint that, for each (X,Y) position, there is only one Z
 
 [.source]
-<<inspirebu,clause="definition 2">>
+<<inspirebu,locality:definition=2>>
 
 ==== 3D data
 
 Geometry of features is represented in a three-dimensional space.
 
 [.source]
-<<inspirebu,clause="definition 3">>
+<<inspirebu,locality:definition=3>>
 
 ==== application schema
 
