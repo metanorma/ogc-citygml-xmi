@@ -16,6 +16,24 @@ packages:
   - "Bridge"
   - "Building"
   - "Tunnel"
+external_classes:
+  Area: "_area"
+  Boolean: "_boolean"
+  Character: "_character"
+  CharacterString: "_characterstring"
+  Date: "_date"
+  DateTime: "_datetime"
+  EngineeringCRS: "_engineeringcrs"
+  GenericName: "_genericname"
+  Integer: "_integer"
+  Length: "_length"
+  Measure: "_measure"
+  Real: "_real"
+  ScopedName: "_scopedname"
+  TM_Duration: "_tm_duration"
+  UnitOfMeasure: "_unitofmeasure"
+  URI: "_uri"
+  Volume: "_volume"
 section_depth: 3
 render_style: data_dictionary
 include_root: true
