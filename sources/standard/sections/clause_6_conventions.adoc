@@ -50,7 +50,7 @@ In order to enhance the readability of the CityGML UML diagrams, classes are dep
 .Notation for class belonging to the Requirements Class which is subject of discussion in that clause
 image::images/ColorScheme_yellow.png[]
 
-Classes painted in yellow belong to the Requirements Class which is subject of discussion in that clause of the standard in which the UML diagram is given. For example, in the context of <<rc_core-model_section>>, which introduces the _CityGML Core_ module, the yellow color is used to denote classes that are defined in the _CityGML Core_ Requirements Class. Likewise, the yellow classes shown in the UML diagram in <<rc_building-model_section>> are associated with the _Building_ Requirements Class that is subject of discussion in that chapter.
+Classes painted in yellow belong to the Requirements Class which is subject of discussion in that clause of the standard in which the UML diagram is given. For example, in the context of lutaml_table::[package="Core"], which introduces the _CityGML Core_ module, the yellow color is used to denote classes that are defined in the _CityGML Core_ Requirements Class. Likewise, the yellow classes shown in the UML diagram in lutaml_table::[package="Building"] are associated with the _Building_ Requirements Class that is subject of discussion in that chapter.
 
 .Notation for class belonging to a Requirements Class different to that associated with the yellow color
 image::images/ColorScheme_blue.png[]

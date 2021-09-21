@@ -209,7 +209,7 @@ If both hierarchies exist for a specific object, they must be coherent (i.e., it
 
 In addition to semantics and geometry, information about the appearance of surfaces, i.e., observable properties of the surface, is considered an integral part of virtual 3D city and landscape models. Appearance relates to any surface-based theme such as infrared radiation or noise pollution, not just visual properties like RGB texture images. Consequently, data provided by appearances can be used as input for both, presentation of and analysis in virtual 3D city models.
 
-The CityGML Conceptual Model supports feature appearances for an arbitrary number of themes per city model. Each LOD of a feature can have an individual appearance. Appearances can represent – among others – textures and georeferenced textures. CityGML's appearance model is packaged within the Appearance module (cf. <<rc_appearance-model_section>>).
+The CityGML Conceptual Model supports feature appearances for an arbitrary number of themes per city model. Each LOD of a feature can have an individual appearance. Appearances can represent – among others – textures and georeferenced textures. CityGML's appearance model is packaged within the Appearance module (cf. lutaml_table::[package="Appearance"]).
 
 === Modeling Dynamic Data
 
@@ -261,11 +261,11 @@ Dynamizers have already been implemented as an Application Domain Extension (ADE
 
 CityGML is designed as a universal information model that defines object types and attributes which are useful for a broad range of applications. In practical applications, the objects within specific 3D city models will most likely contain attributes which are not explicitly modeled in CityGML. Moreover, there might be 3D objects which are not covered by the CityGML CM thematic classes. The CityGML CM provides three different concepts to support the exchange of such data:
 
-. Generic objects and attributes (<<rc_generics-model_section>>),
+. Generic objects and attributes (lutaml_table::[package="Generics"]),
 . Application Domain Extensions (<<rc_ade_section>>), and
 . Code lists (<<codelist-definition>>).
 
-The concept of generic objects and attributes allows application-specific concepts to be represented in CityGML at runtime. This means that any city object may be augmented by additional attributes and relations, whose names, data types, and values can be provided by a running application without requiring extensions to the CityGML conceptual schema and the respective encodings. Similarly, features not represented by the predefined thematic classes of the CityGML conceptual model may be modeled and exchanged using generic objects. The generic extensions of CityGML are provided by the _Generics_ module (cf. <<rc_generics-model_section>>).
+The concept of generic objects and attributes allows application-specific concepts to be represented in CityGML at runtime. This means that any city object may be augmented by additional attributes and relations, whose names, data types, and values can be provided by a running application without requiring extensions to the CityGML conceptual schema and the respective encodings. Similarly, features not represented by the predefined thematic classes of the CityGML conceptual model may be modeled and exchanged using generic objects. The generic extensions of CityGML are provided by the _Generics_ module (cf. lutaml_table::[package="Generics"]).
 
 Application Domain Extensions (ADE) specify additions to the CityGML conceptual model. Such additions comprise the introduction of new properties to existing CityGML feature types such as the energy demand of a building or the definition of additional feature types. The difference between ADEs and generic objects and attributes is, that an ADE has to be defined in an extra conceptual schema (provided in UML) with its own namespace. Encodings have to be extended accordingly. The advantage of this approach is that the extension is formally specified. Extended CityGML datasets can be validated against the CityGML CM and the respective ADE schema. ADEs can be defined (and even standardized) by information communities which are interested in specific application fields. More than one ADE can be used simultaneously in the same dataset. Examples for popular ADEs are the Utility Network ADE [<<Becker2011>>; <<Kutzner2018>>] and the Energy ADE [<<Nouvel2015>>; <<Agugiaro2018>>]. A comprehensive overview of CityGML ADEs is given in [<<Biljecki2018>>]. Further details on ADEs are given in <<rc_ade_section>>.
 

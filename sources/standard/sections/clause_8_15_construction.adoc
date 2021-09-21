@@ -5,7 +5,7 @@ Constructions and constructive elements can be bounded by different types of sur
 Furthermore, the openings of constructions, i.e., windows and doors, can be represented as so-called filling elements including their corresponding filling surfaces.
 
 The UML diagram of the Construction module is depicted in <<construction-uml>>.
-The Construction module defines concepts that are inherited and, where necessary, are specialized by the modules Building, Bridge, and Tunnel  (cf. <<rc_building-model_section>>, <<rc_bridge-model_section>>, and <<rc_tunnel-model_section>>).
+The Construction module defines concepts that are inherited and, where necessary, are specialized by the modules Building, Bridge, and Tunnel  (cf. lutaml_table::[package="Building"], lutaml_table::[package="Bridge"], and lutaml_table::[package="Tunnel"]).
 A detailed discussion of the Requirements Class Construction can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-construction-section[CityGML 3.0 Users Guide].
 
 [[construction-uml]]
