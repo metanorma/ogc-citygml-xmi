@@ -1,5 +1,5 @@
 [[ats_ade_elements]]
-[requirement,type="abstracttest",label="/ats/ade/elements",subject='<<req_ade_elements,/req/ade/elements>>']
+[abstract_test,label="/ats/ade/elements",subject='<<req_ade_elements,/req/ade/elements>>']
 ====
 [.component,class=test-purpose]
 --

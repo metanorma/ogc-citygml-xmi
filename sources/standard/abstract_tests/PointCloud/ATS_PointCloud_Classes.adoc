@@ -1,5 +1,5 @@
 [[ats_pointcloud_classes]]
-[requirement,type="abstracttest",label="/ats/pointcloud/classes",subject='<<req_pointcloud_classes,/req/pointcloud/classes>>']
+[abstract_test,label="/ats/pointcloud/classes",subject='<<req_pointcloud_classes,/req/pointcloud/classes>>']
 ====
 [.component,class=test-purpose]
 --

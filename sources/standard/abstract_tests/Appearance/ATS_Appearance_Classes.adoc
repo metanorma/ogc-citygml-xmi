@@ -1,5 +1,5 @@
 [[ats_appearance_classes]]
-[requirement,type="abstracttest",label="/ats/appearance/classes",subject='<<req_appearance_classes,/req/appearance/classes>>']
+[abstract_test,label="/ats/appearance/classes",subject='<<req_appearance_classes,/req/appearance/classes>>']
 ====
 [.component,class=test-purpose]
 --

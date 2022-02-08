@@ -1,5 +1,5 @@
 [[ats_dynamizer_ade_use]]
-[requirement,type="abstracttest",label="/ats/dynamizer/ade/use",subject='<<req_dynamizer_ade_use,/req/dynamizer/ade_use>>']
+[abstract_test,label="/ats/dynamizer/ade/use",subject='<<req_dynamizer_ade_use,/req/dynamizer/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

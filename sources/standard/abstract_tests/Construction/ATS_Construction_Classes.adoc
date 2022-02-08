@@ -1,5 +1,5 @@
 [[ats_construction_classes]]
-[requirement,type="abstracttest",label="/ats/construction/classes",subject='<<req_construction_classes,/req/construction/classes>>']
+[abstract_test,label="/ats/construction/classes",subject='<<req_construction_classes,/req/construction/classes>>']
 ====
 [.component,class=test-purpose]
 --

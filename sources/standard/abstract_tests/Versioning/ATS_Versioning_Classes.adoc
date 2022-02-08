@@ -1,5 +1,5 @@
 [[ats_versioning_classes]]
-[requirement,type="abstracttest",label="/ats/versioning/classes",subject='<<req_versioning_classes,/req/versioning/classes>>']
+[abstract_test,label="/ats/versioning/classes",subject='<<req_versioning_classes,/req/versioning/classes>>']
 ====
 [.component,class=test-purpose]
 --

@@ -1,5 +1,5 @@
 [[ats_cityfurniture_classes]]
-[requirement,type="abstracttest",label="/ats/cityfurniture/classes",subject='<<req_cityfurniture_classes,/req/cityfurniture/classes>>']
+[abstract_test,label="/ats/cityfurniture/classes",subject='<<req_cityfurniture_classes,/req/cityfurniture/classes>>']
 ====
 [.component,class=test-purpose]
 --

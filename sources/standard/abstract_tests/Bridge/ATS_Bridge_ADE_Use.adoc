@@ -1,5 +1,5 @@
 [[ats_bridge_ade_use]]
-[requirement,type="abstracttest",label="/ats/bridge/ade/use",subject='<<req_bridge_ade_use,/req/bridge/ade_use>>']
+[abstract_test,label="/ats/bridge/ade/use",subject='<<req_bridge_ade_use,/req/bridge/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

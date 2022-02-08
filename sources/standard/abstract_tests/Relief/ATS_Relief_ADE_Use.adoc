@@ -1,5 +1,5 @@
 [[ats_relief_ade_use]]
-[requirement,type="abstracttest",label="/ats/relief/ade/use",subject='<<req_relief_ade_use,/req/relief/ade_use>>']
+[abstract_test,label="/ats/relief/ade/use",subject='<<req_relief_ade_use,/req/relief/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

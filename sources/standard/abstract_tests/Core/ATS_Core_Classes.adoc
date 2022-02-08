@@ -1,5 +1,5 @@
 [[ats_core_classes]]
-[requirement,type="abstracttest",label="/ats/core/classes",subject='<<req_core_classes,/req/core/classes>>']
+[abstract_test,label="/ats/core/classes",subject='<<req_core_classes,/req/core/classes>>']
 ====
 [.component,class=test-purpose]
 --

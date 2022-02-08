@@ -1,5 +1,5 @@
 [[ats_generics_use]]
-[requirement,type="abstracttest",label="/ats/generics/use",subject='<<req_generics_use,/req/generics/use>>']
+[abstract_test,label="/ats/generics/use",subject='<<req_generics_use,/req/generics/use>>']
 ====
 [.component,class=test-purpose]
 --

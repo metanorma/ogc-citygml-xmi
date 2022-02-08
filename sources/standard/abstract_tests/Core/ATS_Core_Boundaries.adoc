@@ -1,5 +1,5 @@
 [[ats_core_boundaries]]
-[requirement,type="abstracttest",label="/ats/core/boundaries",subject='<<req_core_boundaries,/req/core/boundaries>>']
+[abstract_test,label="/ats/core/boundaries",subject='<<req_core_boundaries,/req/core/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

@@ -1,5 +1,5 @@
 [[ats_transportation_ade_use]]
-[requirement,type="abstracttest",label="/ats/transportation/ade/use",subject='<<req_transportation_ade_use,/req/transportation/ade_use>>']
+[abstract_test,label="/ats/transportation/ade/use",subject='<<req_transportation_ade_use,/req/transportation/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

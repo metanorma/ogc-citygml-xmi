@@ -1,5 +1,5 @@
 [[ats_cityobjectgroup_ade_use]]
-[requirement,type="abstracttest",label="/ats/cityobjectgroup/ade/use",subject='<<req_cityobjectgroup_ade_use,/req/cityobjectgroup/ade_use>>']
+[abstract_test,label="/ats/cityobjectgroup/ade/use",subject='<<req_cityobjectgroup_ade_use,/req/cityobjectgroup/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

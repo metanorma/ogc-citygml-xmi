@@ -1,5 +1,5 @@
 [[ats_transportation_boundaries]]
-[requirement,type="abstracttest",label="/ats/transportation/boundaries",subject='<<req_transportation_boundaries,/req/transportation/boundaries>>']
+[abstract_test,label="/ats/transportation/boundaries",subject='<<req_transportation_boundaries,/req/transportation/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

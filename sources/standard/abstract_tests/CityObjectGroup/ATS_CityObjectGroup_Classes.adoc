@@ -1,5 +1,5 @@
 [[ats_cityobjectgroup_classes]]
-[requirement,type="abstracttest",label="/ats/cityobjectgroup/classes",subject='<<req_cityobjectgroup_classes,/req/cityobjectgroup/classes>>']
+[abstract_test,label="/ats/cityobjectgroup/classes",subject='<<req_cityobjectgroup_classes,/req/cityobjectgroup/classes>>']
 ====
 [.component,class=test-purpose]
 --

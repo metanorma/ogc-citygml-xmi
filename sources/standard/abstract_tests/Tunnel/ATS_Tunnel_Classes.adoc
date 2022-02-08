@@ -1,5 +1,5 @@
 [[ats_tunnel_classes]]
-[requirement,type="abstracttest",label="/ats/tunnel/classes",subject='<<req_tunnel_classes,/req/tunnel/classes>>']
+[abstract_test,label="/ats/tunnel/classes",subject='<<req_tunnel_classes,/req/tunnel/classes>>']
 ====
 [.component,class=test-purpose]
 --

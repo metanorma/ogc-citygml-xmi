@@ -1,5 +1,5 @@
 [[ats_ade_uml]]
-[requirement,type="abstracttest",label="/ats/ade/uml",subject='<<req_ade_uml,/req/ade/uml>>']
+[abstract_test,label="/ats/ade/uml",subject='<<req_ade_uml,/req/ade/uml>>']
 ====
 [.component,class=test-purpose]
 --

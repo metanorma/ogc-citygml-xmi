@@ -1,5 +1,5 @@
 [[ats_relief_classes]]
-[requirement,type="abstracttest",label="/ats/relief/classes",subject='<<req_relief_classes,/req/relief/classes>>']
+[abstract_test,label="/ats/relief/classes",subject='<<req_relief_classes,/req/relief/classes>>']
 ====
 [.component,class=test-purpose]
 --

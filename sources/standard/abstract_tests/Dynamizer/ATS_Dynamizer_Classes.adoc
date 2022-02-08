@@ -1,5 +1,5 @@
 [[ats_dynamizer_classes]]
-[requirement,type="abstracttest",label="/ats/dynamizer/classes",subject='<<req_dynamizer_classes,/req/dynamizer/classes>>']
+[abstract_test,label="/ats/dynamizer/classes",subject='<<req_dynamizer_classes,/req/dynamizer/classes>>']
 ====
 [.component,class=test-purpose]
 --

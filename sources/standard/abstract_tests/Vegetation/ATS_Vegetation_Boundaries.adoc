@@ -1,5 +1,5 @@
 [[ats_vegetation_boundaries]]
-[requirement,type="abstracttest",label="/ats/vegetation/boundaries",subject='<<req_vegetation_boundaries,/req/vegetation/boundaries>>']
+[abstract_test,label="/ats/vegetation/boundaries",subject='<<req_vegetation_boundaries,/req/vegetation/boundaries>>']
 ====
 
 [.component,class=test-purpose]

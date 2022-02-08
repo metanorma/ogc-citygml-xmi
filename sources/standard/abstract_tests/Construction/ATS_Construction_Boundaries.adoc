@@ -1,5 +1,5 @@
 [[ats_construction_boundaries]]
-[requirement,type="abstracttest",label="/ats/construction/boundaries",subject='<<req_construction_boundaries,/req/construction/boundaries>>']
+[abstract_test,label="/ats/construction/boundaries",subject='<<req_construction_boundaries,/req/construction/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

@@ -1,5 +1,5 @@
 [[ats_landuse_ade_use]]
-[requirement,type="abstracttest",label="/ats/landuse/ade/use",subject='<<req_landuse_ade_use,/req/landuse/ade_use>>']
+[abstract_test,label="/ats/landuse/ade/use",subject='<<req_landuse_ade_use,/req/landuse/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

@@ -1,5 +1,5 @@
 [[ats_construction_ade_use]]
-[requirement,type="abstracttest",label="/ats/construction/ade/use",subject='<<req_construction_ade_use,/req/construction/ade_use>>']
+[abstract_test,label="/ats/construction/ade/use",subject='<<req_construction_ade_use,/req/construction/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

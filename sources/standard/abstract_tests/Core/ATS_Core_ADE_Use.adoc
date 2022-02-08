@@ -1,5 +1,5 @@
 [[ats_core_ade_use]]
-[requirement,type="abstracttest",label="/ats/core/ade/use",subject='<<req_core_ade_use,/req/core/ade_use>>']
+[abstract_test,label="/ats/core/ade/use",subject='<<req_core_ade_use,/req/core/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

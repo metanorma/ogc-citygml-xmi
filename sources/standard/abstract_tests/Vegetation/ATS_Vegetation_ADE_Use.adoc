@@ -1,5 +1,5 @@
 [[ats_vegetation_ade_use]]
-[requirement,type="abstracttest",label="/ats/vegetation/ade/use",subject='<<req_vegetation_ade_use,/req/vegetation/ade_use>>']
+[abstract_test,label="/ats/vegetation/ade/use",subject='<<req_vegetation_ade_use,/req/vegetation/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

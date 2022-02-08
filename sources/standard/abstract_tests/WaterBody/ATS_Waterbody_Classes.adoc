@@ -1,5 +1,5 @@
 [[ats_waterbody_classes]]
-[requirement,type="abstracttest",label="/ats/waterbody/classes",subject='<<req_waterbody_classes,/req/waterbody/classes>>']
+[abstract_test,label="/ats/waterbody/classes",subject='<<req_waterbody_classes,/req/waterbody/classes>>']
 ====
 [.component,class=test-purpose]
 --

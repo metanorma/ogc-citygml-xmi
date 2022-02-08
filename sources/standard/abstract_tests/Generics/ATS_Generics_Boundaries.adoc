@@ -1,5 +1,5 @@
 [[ats_generics_boundaries]]
-[requirement,type="abstracttest",label="/ats/generics/boundaries",subject='<<req_generics_boundaries,/req/generics/boundaries>>']
+[abstract_test,label="/ats/generics/boundaries",subject='<<req_generics_boundaries,/req/generics/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

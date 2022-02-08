@@ -1,5 +1,5 @@
 [[ats_transportation_classes]]
-[requirement,type="abstracttest",label="/ats/transportation/classes",subject='<<req_transportation_classes,/req/transportation/classes>>']
+[abstract_test,label="/ats/transportation/classes",subject='<<req_transportation_classes,/req/transportation/classes>>']
 ====
 [.component,class=test-purpose]
 --

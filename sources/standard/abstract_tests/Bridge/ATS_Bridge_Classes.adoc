@@ -1,5 +1,5 @@
 [[ats_bridge_classes]]
-[requirement,type="abstracttest",label="/ats/bridge/classes",subject='<<req_bridge_classes,/req/bridge/classes>>']
+[abstract_test,label="/ats/bridge/classes",subject='<<req_bridge_classes,/req/bridge/classes>>']
 ====
 [.component,class=test-purpose]
 --

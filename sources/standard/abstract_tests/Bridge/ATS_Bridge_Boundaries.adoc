@@ -1,5 +1,5 @@
 [[ats_bridge_boundaries]]
-[requirement,type="abstracttest",label="/ats/bridge/boundaries",subject='<<req_bridge_boundaries,/req/bridge/boundaries>>']
+[abstract_test,label="/ats/bridge/boundaries",subject='<<req_bridge_boundaries,/req/bridge/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

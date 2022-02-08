@@ -1,6 +1,10 @@
 [[ats_Core_iso-restrictions]]
-[requirement,type="abstracttest",label="/ats/core/isorestrictions",subject='<<req_Core_iso-restrictions,/req/core/isorestrictions>>']
+[abstract_test]
 ====
+[%metadata]
+label:: /ats/core/isorestrictions
+subject:: <<req_Core_iso-restrictions,/req/core/isorestrictions>>
+
 [.component,class=test-purpose]
 --
 To validate that none of the restrictions which the CityGML Conceptual Model imposes on ISO classes are violated by an Implementation Specification.

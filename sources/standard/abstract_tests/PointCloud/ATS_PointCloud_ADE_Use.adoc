@@ -1,5 +1,5 @@
 [[ats_pointcloud_ade_use]]
-[requirement,type="abstracttest",label="/ats/pointcloud/ade/use",subject='<<req_pointcloud_ade_use,/req/pointcloud/ade_use>>']
+[abstract_test,label="/ats/pointcloud/ade/use",subject='<<req_pointcloud_ade_use,/req/pointcloud/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

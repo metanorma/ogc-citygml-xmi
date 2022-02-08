@@ -1,5 +1,5 @@
 [[ats_tunnel_ade_use]]
-[requirement,type="abstracttest",label="/ats/tunnel/ade/use",subject='<<req_tunnel_ade_use,/req/tunnel/ade_use>>']
+[abstract_test,label="/ats/tunnel/ade/use",subject='<<req_tunnel_ade_use,/req/tunnel/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

@@ -1,5 +1,5 @@
 [[ats_versioning_ade_use]]
-[requirement,type="abstracttest",label="/ats/versioning/ade/use",subject='<<req_versioning_ade_use,/req/versioning/ade_use>>']
+[abstract_test,label="/ats/versioning/ade/use",subject='<<req_versioning_ade_use,/req/versioning/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

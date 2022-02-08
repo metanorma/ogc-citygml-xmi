@@ -1,5 +1,5 @@
 [[ats_waterbody_boundaries]]
-[requirement,type="abstracttest",label="/ats/waterbody/boundaries",subject='<<req_waterbody_boundaries,/req/waterbody/boundaries>>']
+[abstract_test,label="/ats/waterbody/boundaries",subject='<<req_waterbody_boundaries,/req/waterbody/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

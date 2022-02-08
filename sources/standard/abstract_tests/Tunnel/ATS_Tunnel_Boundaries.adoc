@@ -1,5 +1,5 @@
 [[ats_tunnel_boundaries]]
-[requirement,type="abstracttest",label="/ats/tunnel/boundaries",subject='<<req_tunnel_boundaries,/req/tunnel/boundaries>>']
+[abstract_test,label="/ats/tunnel/boundaries",subject='<<req_tunnel_boundaries,/req/tunnel/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

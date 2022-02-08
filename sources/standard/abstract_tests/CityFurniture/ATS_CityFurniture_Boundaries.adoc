@@ -1,5 +1,5 @@
 [[ats_cityfurniture_boundaries]]
-[requirement,type="abstracttest",label="/ats/cityfurniture/boundaries",subject='<<req_cityfurniture_boundaries,/req/cityfurniture/boundaries>>']
+[abstract_test,label="/ats/cityfurniture/boundaries",subject='<<req_cityfurniture_boundaries,/req/cityfurniture/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

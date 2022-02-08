@@ -1,5 +1,5 @@
 [[ats_landuse_classes]]
-[requirement,type="abstracttest",label="/ats/landuse/classes",subject='<<req_landuse_classes,/req/landuse/classes>>']
+[abstract_test,label="/ats/landuse/classes",subject='<<req_landuse_classes,/req/landuse/classes>>']
 ====
 [.component,class=test-purpose]
 --

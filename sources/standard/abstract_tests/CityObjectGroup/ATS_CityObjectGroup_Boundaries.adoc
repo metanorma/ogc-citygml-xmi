@@ -1,5 +1,5 @@
 [[ats_cityobjectgroup_boundaries]]
-[requirement,type="abstracttest",label="/ats/cityobjectgroup/boundaries",subject='<<req_cityobjectgroup_boundaries,/req/cityobjectgroup/boundaries>>']
+[abstract_test,label="/ats/cityobjectgroup/boundaries",subject='<<req_cityobjectgroup_boundaries,/req/cityobjectgroup/boundaries>>']
 ====
 [.component,class=test-purpose]
 --

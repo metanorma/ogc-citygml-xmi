@@ -1,5 +1,5 @@
 [[ats_cityfurniture_ade_use]]
-[requirement,type="abstracttest",label="/ats/cityfurniture/ade/use",subject='<<req_cityfurniture_ade_use,/req/cityfurniture/ade_use>>']
+[abstract_test,label="/ats/cityfurniture/ade/use",subject='<<req_cityfurniture_ade_use,/req/cityfurniture/ade_use>>']
 ====
 [.component,class=test-purpose]
 --

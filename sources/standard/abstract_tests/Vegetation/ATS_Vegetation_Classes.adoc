@@ -1,5 +1,5 @@
 [[ats_vegetation_classes]]
-[requirement,type="abstracttest",label="/ats/vegetation/classes",subject='<<req_vegetation_classes,/req/vegetation/classes>>']
+[abstract_test,label="/ats/vegetation/classes",subject='<<req_vegetation_classes,/req/vegetation/classes>>']
 ====
 [.component,class=test-purpose]
 --

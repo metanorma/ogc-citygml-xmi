@@ -1,5 +1,5 @@
 [[ats_generics_classes]]
-[requirement,type="abstracttest",label="/ats/generics/classes",subject='<<req_generics_classes,/req/generics/classes>>']
+[abstract_test,label="/ats/generics/classes",subject='<<req_generics_classes,/req/generics/classes>>']
 ====
 [.component,class=test-purpose]
 --
