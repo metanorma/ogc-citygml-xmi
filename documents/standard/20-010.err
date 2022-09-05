@@ -1,0 +1,912 @@
+/__w/ogc-citygml-xmi/ogc-citygml-xmi/site/documents/standard/20-010.err errors
+
+
+== AsciiDoc Input
+
+(XML Line 000286): Error: Term reference to `Conceptual-Model` missing:                 "Conceptual-Model" is not defined in document
+	<termxref>Conceptual Model</termxref>
+(XML Line 006140): Error: Term reference to `number` missing:                 "number" is not defined in document
+	<termxref>number</termxref>
+
+
+== Anchors
+
+(XML Line 006804): Crossreference target anyfeature-from-iso-19109-2015 is undefined
+	<xref target="anyfeature-from-iso-19109-2015">AnyFeature</xref>
+(XML Line 006826): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 006838): Crossreference target _scopedname is undefined
+	<xref target="_scopedname">ScopedName</xref>
+(XML Line 006844): Crossreference target _genericname is undefined
+	<xref target="_genericname">GenericName</xref>
+(XML Line 006886): Crossreference target _datetime is undefined
+	<xref target="_datetime">DateTime</xref>
+(XML Line 006892): Crossreference target _datetime is undefined
+	<xref target="_datetime">DateTime</xref>
+(XML Line 006898): Crossreference target _datetime is undefined
+	<xref target="_datetime">DateTime</xref>
+(XML Line 006904): Crossreference target _datetime is undefined
+	<xref target="_datetime">DateTime</xref>
+(XML Line 007582): Crossreference target _engineeringcrs is undefined
+	<xref target="_engineeringcrs">EngineeringCRS</xref>
+(XML Line 007732): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 007789): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 007884): Crossreference target _real is undefined
+	<xref target="_real">Real</xref>
+(XML Line 007996): Crossreference target _unitofmeasure is undefined
+	<xref target="_unitofmeasure">UnitOfMeasure</xref>
+(XML Line 008170): Crossreference target _real is undefined
+	<xref target="_real">Real</xref>
+(XML Line 008212): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 008747): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 008753): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 008759): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 008801): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 008843): Crossreference target _area is undefined
+	<xref target="_area">Area</xref>
+(XML Line 008891): Crossreference target _volume is undefined
+	<xref target="_volume">Volume</xref>
+(XML Line 009095): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 009143): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 009218): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 009281): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 009287): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 009374): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 009434): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 009452): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 009726): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 010105): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010256): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010262): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010424): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010556): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 010616): Crossreference target _character is undefined
+	<xref target="_character">Character</xref>
+(XML Line 010622): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010628): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 010640): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010646): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 010652): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010664): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 010670): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010676): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 010682): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010688): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 010954): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 010966): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010972): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010978): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010984): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010990): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 010996): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011002): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011008): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011014): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011020): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011071): Crossreference target _tm_duration is undefined
+	<xref target="_tm_duration">TM_Duration</xref>
+(XML Line 011077): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 011125): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 011131): Crossreference target _real is undefined
+	<xref target="_real">Real</xref>
+(XML Line 011149): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 011155): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011167): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 011784): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011826): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011832): Crossreference target _date is undefined
+	<xref target="_date">Date</xref>
+(XML Line 011868): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011874): Crossreference target _real is undefined
+	<xref target="_real">Real</xref>
+(XML Line 011925): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 011931): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011967): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 011973): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 012009): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 012015): Crossreference target _measure is undefined
+	<xref target="_measure">Measure</xref>
+(XML Line 012051): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 012057): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 012093): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 012099): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 012356): Crossreference target _uri is undefined
+	<xref target="_uri">URI</xref>
+(XML Line 012362): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 014913): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 014931): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 014937): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 014991): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 015003): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 015009): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 015015): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 015027): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 015301): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 015370): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 015376): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 016017): Crossreference target _date is undefined
+	<xref target="_date">Date</xref>
+(XML Line 016023): Crossreference target _date is undefined
+	<xref target="_date">Date</xref>
+(XML Line 016155): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 017472): Crossreference target _date is undefined
+	<xref target="_date">Date</xref>
+(XML Line 017478): Crossreference target _characterstring is undefined
+	<xref target="_characterstring">CharacterString</xref>
+(XML Line 017580): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+(XML Line 017806): Crossreference target _boolean is undefined
+	<xref target="_boolean">Boolean</xref>
+(XML Line 018662): Crossreference target measureornilreasonlist is undefined
+	<xref target="measureornilreasonlist">MeasureOrNilReasonList</xref>
+(XML Line 018668): Crossreference target measureornilreasonlist is undefined
+	<xref target="measureornilreasonlist">MeasureOrNilReasonList</xref>
+(XML Line 018674): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 018680): Crossreference target _integer is undefined
+	<xref target="_integer">Integer</xref>
+(XML Line 018779): Crossreference target _real is undefined
+	<xref target="_real">Real</xref>
+(XML Line 019815): Crossreference target _length is undefined
+	<xref target="_length">Length</xref>
+
+
+== Style
+
+(): Preface is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000056): Table should have title
+	<table id="_878932eb-2565-10fc-7f0d-f22e63642df8" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+	<th valign="middle" align="left">Affiliation</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Emmanuel Devys</td>
+	<td valign="middle" align="left">Institut national de l’information géographique et forestière (IGN), France</td>
+(XML Line 000084): Table should have title
+	<table id="_d4a127b5-66e1-28e2-b73a-6e58243b0fbb" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+	<th valign="middle" align="left">Institution</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Giorgio Agugiaro</td>
+	<td valign="middle" align="left">3D Geoinformation Group, Delft University of Technology, the Netherlands</td>
+(XML Line 000284): Hanging paragraph in clause
+	<clause id="conformance-section" type="conformance" obligation="normative">
+	<title>Conformance</title>
+	<p id="_ebb6157c-7e52-1f22-d95f-72dec42756b7">This Standard defines a <concept><strong>term <tt>Conceptual Model</tt> not resolved via ID <tt>Conceptual-Model</tt></strong></concept> which is independent of any encoding or formatting techniques. The <concept><refterm>Standardization Target</refterm><renderterm>Standardization Targets</renderterm><xref target="term-Standardization-Target"/></concept> for this Standard are:</p>
+	
+	<ol id="_13b3d1b6-1ecc-d3a0-bee7-1fdd4e55c7ae" type="arabic"><li><p id="_7d96e8e1-01ac-fefa-9dc9-64556d9754c6"><concept><refterm>conceptual model</refterm><renderterm>Conceptual Models</renderterm><xref target="term-conceptual-model"/></concept> (extended versions of this conceptual model)</p>
+(XML Line 000968): Hanging paragraph in clause
+	<clause id="overview-section" obligation="normative">
+	<title>Overview of CityGML</title>
+	<p id="_bdafe5c3-5c68-269b-4ef3-433a95413f92">This Standard defines an open CityGML Conceptual Model (CM) for the storage and exchange of virtual 3D city and landscape models. These models include the most relevant entities of the urban space like buildings, roads, railways, tunnels, bridges, city furniture, water bodies, vegetation, and the terrain. The conceptual schema specifies how and into which parts and pieces physical objects of the real world should be decomposed and classified. All objects can be represented with respect to their semantics, 3D geometry, 3D topology, appearances, and their changes over time. Different spatial representations can be provided for each object (outdoor and indoor) in four predefined Levels of Detail (LOD 0-3). The CityGML 3.0 Conceptual Model (<xref target="conceptual-model-section"/>) is formally specified using UML class diagrams, complemented by a data dictionary (<xref target="data-dictionary-section"/>) providing the definitions and explanations of the object classes and attributes. This Conceptual Model is the basis for multiple encoding standards, which map the concepts (or subsets thereof) onto exchange formats or database structures for data exchange and storage.</p>
+	
+	<p id="_ccf14e1d-78f1-b4aa-3976-1cd5ea7df66c">While the CityGML Conceptual Model can be used for 3D visualization purposes, its special merits lie in applications that go beyond visualization such as decision support, urban and landscape planning, urban facility management, Smart Cities, navigation (both indoor and outdoor), Building Information Modeling (especially for as-built documentation), integration of city and BIM models, assisted and autonomous driving, and simulations in general (cf. <eref type="inline" bibitemid="Kolbe2009" citeas="Kolbe 2009"/>). A comprehensive overview on the many different applications of virtual 3D city models is given in [<eref type="inline" bibitemid="Biljecki2015" citeas="Biljecki et al. 2015"/>]. Many of the applications already use and some even require using CityGML.</p>
+(XML Line 001229): Hanging paragraph in clause
+	<clause id="_modeling_dynamic_data" obligation="normative">
+	<title>Modeling Dynamic Data</title>
+	<p id="_fc807243-6e37-5133-cdae-66eb7e12283a">In general, city objects can have properties related to their geometry, topology, semantics, and appearance. All of these properties may change over time. For example, a construction event leads to the change in geometry of a building (i.e., addition of a new building floor or demolition of an existing door). The geometry of an object can be further classified according to its shape, location, and extent, which can also change over time. A moving car object involves changing only the location of the car object. However, a flood incident involves variations in the location and shape of water. There might be other properties, which change with respect to thematic data of city objects such as hourly variations in energy or gas consumption of a building or changing the building usage from residential to commercial. Some properties involve changes in appearances over a time period, such as building textures changing over years or traffic cameras recording videos of moving traffic over definite intervals. 3D city models also represent interrelationships between objects and relations may change over time as well. Hence, it is important to consider that the representation of time-varying data is required to be associated with these different properties. A detailed discussion on the requirements of city model applications regarding the support of dynamic data is given in [<eref type="inline" bibitemid="Chaturvedi2019" citeas="Chaturvedi  Kolbe 2019"/>].</p>
+	
+	<p id="_dc3dd9ff-6b6c-8a52-ca80-165adaf92e8a">The CityGML 3.0 Conceptual Model introduces two concepts to manage dynamic, time-dependent, properties of city models. The <em>Versioning</em> module manages changes that are slower in nature. Examples are (1) the history or evolution of cities such as construction or demolition of buildings, and (2) managing multiple versions of the city models.</p>
+(XML Line 001303): Hanging paragraph in clause
+	<clause id="conceptual-model-section" obligation="normative">
+	<title>CityGML UML Model</title>
+	<p id="_23c18dd4-d0ca-091f-122d-d746265245db">The CityGML UML model is the normative definition of the CityGML Conceptual Model. The tables and figures in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.</p>
+	
+	<p id="_e17ab5b8-2662-167f-198e-249bf13bf95b">An alternate representation can be found in the Data Dictionary in <xref target="data-dictionary-section"/>.</p>
+(XML Line 001324): Hanging paragraph in clause
+	<clause id="section-EAPK_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F" obligation="normative">
+	<title>Core</title>
+	<requirement id="rc_core" model="ogc" type="class"><inherit><eref type="inline" bibitemid="iso19103" citeas="ISO 19103:2015"/></inherit><inherit><eref type="inline" bibitemid="iso19107" citeas="ISO 19107:2003"/></inherit><inherit><eref type="inline" bibitemid="iso19109" citeas="ISO 19109:2015"/></inherit><inherit><eref type="inline" bibitemid="iso19111" citeas="ISO 19111:2019"/></inherit><inherit><eref type="inline" bibitemid="iso19123" citeas="ISO 19123:2005"/></inherit><inherit><eref type="inline" bibitemid="xal2" citeas="OASIS xAL">OASIS xAL v3.0</eref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002059): Hanging paragraph in clause
+	<clause id="section-EAPK_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD" obligation="normative">
+	<title>Appearance</title>
+	<requirement id="rc_appearance" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002232): Hanging paragraph in clause
+	<clause id="section-EAPK_E1321C0B_B95B_44c0_A3EA_3B507911CD78" obligation="normative">
+	<title>CityFurniture</title>
+	<requirement id="rc_cityfurniture" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002358): Hanging paragraph in clause
+	<clause id="section-EAPK_8877ED0D_AFFC_4f03_9B58_F2736F8935AB" obligation="normative">
+	<title>CityObjectGroup</title>
+	<requirement id="rc_cityobjectgroup" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002495): Hanging paragraph in clause
+	<clause id="section-EAPK_15C00628_ED51_4a92_8216_10ADF1613D98" obligation="normative">
+	<title>Dynamizer</title>
+	<requirement id="rc_dynamizer" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002704): Hanging paragraph in clause
+	<clause id="section-EAPK_511CFB07_CCBA_4005_B3CD_B18A5A29767A" obligation="normative">
+	<title>Generics</title>
+	<requirement id="rc_generics" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002958): Hanging paragraph in clause
+	<clause id="section-EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235" obligation="normative">
+	<title>LandUse</title>
+	<requirement id="rc_landuse" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003064): Hanging paragraph in clause
+	<clause id="section-EAPK_389F21DC_6F91_41f1_89BB_9D864B7E1E0A" obligation="normative">
+	<title>PointCloud</title>
+	<requirement id="rc_pointCloud" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003144): Hanging paragraph in clause
+	<clause id="section-EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" obligation="normative">
+	<title>Relief</title>
+	<requirement id="rc_relief" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003264): Hanging paragraph in clause
+	<clause id="section-EAPK_5563BED2_B142_4d7d_9980_CF451817627D" obligation="normative">
+	<title>Transportation</title>
+	<requirement id="rc_transportation" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003785): Hanging paragraph in clause
+	<clause id="section-EAPK_D44D446F_8AF9_49d7_BD32_6DA30532A847" obligation="normative">
+	<title>Vegetation</title>
+	<requirement id="rc_vegetation" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003950): Hanging paragraph in clause
+	<clause id="section-EAPK_9B83B69F_E472_4e96_A2C2_B48356E8C011" obligation="normative">
+	<title>Versioning</title>
+	<requirement id="rc_versioning" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 004059): Hanging paragraph in clause
+	<clause id="section-EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" obligation="normative">
+	<title>WaterBody</title>
+	<requirement id="rc_waterbody" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 004228): Hanging paragraph in clause
+	<clause id="section-EAPK_1C8607D1_2967_44ff_948A_2A9256D00A45" obligation="normative">
+	<title>Construction</title>
+	<requirement id="rc_construction" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_generics">/req/req-class-generics</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 004719): Hanging paragraph in clause
+	<clause id="section-EAPK_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3" obligation="normative">
+	<title>Bridge</title>
+	<requirement id="rc_bridge" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_construction">/req/req-class-construction</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 005119): Hanging paragraph in clause
+	<clause id="section-EAPK_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA" obligation="normative">
+	<title>Building</title>
+	<requirement id="rc_building" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_construction">/req/req-class-construction</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 005611): Hanging paragraph in clause
+	<clause id="section-EAPK_070A5649_8282_4ad3_A1DE_A9A41FCB55B8" obligation="normative">
+	<title>Tunnel</title>
+	<requirement id="rc_tunnel" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_construction">/req/req-class-construction</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 006015): Hanging paragraph in clause
+	<clause id="data-dictionary-section" obligation="normative">
+	<title>CityGML Data Dictionary</title>
+	<p id="_4973ffda-c655-dd18-318b-8b36cdad87a2">The CityGML UML model is the normative definition of the CityGML Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.</p>
+	
+	<p id="_481b5308-ebe2-4bfc-25c8-c668a9e1fc69">An alternate representation can be found in the Conceptual Model in <xref target="conceptual-model-section"/>.</p>
+(XML Line 006025): Hanging paragraph in clause
+	<clause id="ISO-classes-dd" obligation="normative">
+	<title>ISO Classes</title>
+	<p id="_cfe528df-01b0-2de4-4dae-5803b3077dea">The following classes are defined in ISO standards and used by the CityGML Conceptual Model.</p>
+	
+	<clause id="AnyFeature-section" obligation="normative">
+(XML Line 006613): Hanging paragraph in clause
+	<clause id="_core" obligation="normative">
+	<title>Core</title>
+	<table id="_e96338da-0de7-c889-68d3-9e9dc627372a"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Core (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 009047): Hanging paragraph in clause
+	<clause id="_appearance" obligation="normative">
+	<title>Appearance</title>
+	<table id="_6a119438-d2f0-ee24-0313-db2c7c7d1e66"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Appearance (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 009825): Hanging paragraph in clause
+	<clause id="_cityfurniture" obligation="normative">
+	<title>CityFurniture</title>
+	<table id="_0826758b-2d74-f37c-7f14-0ca7b42a0570"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of CityFurniture (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 009988): Hanging paragraph in clause
+	<clause id="_cityobjectgroup" obligation="normative">
+	<title>CityObjectGroup</title>
+	<table id="_4709e112-e270-800c-a91b-57c433cea651"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of CityObjectGroup (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 010208): Hanging paragraph in clause
+	<clause id="_dynamizer" obligation="normative">
+	<title>Dynamizer</title>
+	<table id="_95140859-33a4-0632-c1de-0e9acacb8ac5"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Dynamizer (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 011238): Hanging paragraph in clause
+	<clause id="_generics" obligation="normative">
+	<title>Generics</title>
+	<table id="_c2781d3b-0ade-9d05-3bd3-a2b23115161d"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Generics (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 012118): Hanging paragraph in clause
+	<clause id="_landuse" obligation="normative">
+	<title>LandUse</title>
+	<table id="_8fca7d54-59ec-cc8c-8256-5d8b35a39aec"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of LandUse (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 012281): Hanging paragraph in clause
+	<clause id="_pointcloud" obligation="normative">
+	<title>PointCloud</title>
+	<table id="_cb9b48ea-43e0-7972-764c-a25ab4768706"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of PointCloud (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 012416): Hanging paragraph in clause
+	<clause id="_relief" obligation="normative">
+	<title>Relief</title>
+	<table id="_99802532-1a6e-1880-8a80-ac186b1cdaf7"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Relief (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 012897): Hanging paragraph in clause
+	<clause id="_transportation" obligation="normative">
+	<title>Transportation</title>
+	<table id="_41e4c8c2-5da5-226b-5289-6eba1c17e59e"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Transportation (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 014829): Hanging paragraph in clause
+	<clause id="_vegetation" obligation="normative">
+	<title>Vegetation</title>
+	<table id="_3809cfa2-cdea-45a7-a369-707fe312fc79"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Vegetation (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 015238): Hanging paragraph in clause
+	<clause id="_versioning" obligation="normative">
+	<title>Versioning</title>
+	<table id="_03e8ea24-9899-52b4-aa5d-9813b432d0e4"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Versioning (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 015584): Hanging paragraph in clause
+	<clause id="_waterbody" obligation="normative">
+	<title>WaterBody</title>
+	<table id="_6b3d7f88-3ecd-1974-6dbc-8cee7396c53b"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of WaterBody (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 015942): Hanging paragraph in clause
+	<clause id="_construction" obligation="normative">
+	<title>Construction</title>
+	<table id="_a79d3ed9-f9bf-6694-f750-53aba051a4f7"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Construction (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 017707): Hanging paragraph in clause
+	<clause id="_bridge" obligation="normative">
+	<title>Bridge</title>
+	<table id="_146b4a54-4680-ad79-9a0c-86616b9254c5"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Bridge (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 018551): Hanging paragraph in clause
+	<clause id="_building" obligation="normative">
+	<title>Building</title>
+	<table id="_cb339750-1697-a8f5-4307-3d8db807304a"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Building (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 019834): Hanging paragraph in clause
+	<clause id="_tunnel" obligation="normative">
+	<title>Tunnel</title>
+	<table id="_87cb9b98-92ca-b63b-f653-5cd25e68490b"><colgroup><col width="20%"/><col width="80%"/></colgroup>
+	<name>Metadata of Tunnel (ApplicationSchema)</name>
+	<tbody><tr><th valign="middle" align="left">Description:</th>
+(XML Line 020667): Hanging paragraph in clause
+	<clause id="rc_ade_section" obligation="normative">
+	<title>Application Domain Extension (ADE)</title>
+	<p id="_f77fc197-e8a0-f50c-cf5d-6997435ba8e6">An <em>Application Domain Extension</em> (ADE) is a formal and systematic extension of the CityGML Conceptual Model (CM) for a specific application or domain. The ADE is expressed in the form of a UML conceptual model. The domain data is mapped to a set of additional classes, attributes, and relations. ADEs may use elements from the CityGML CM to derive application-specific subclasses, to inject additional properties, to associate application data with predefined CityGML content, or to define value domains for attributes.</p>
+	
+	<p id="_c33a079f-00e8-83cf-9bc8-bc6b820ca327">The ADE mechanism allows application-specific information to be aligned with the CityGML CM in a well-structured and systematic way. By this means, CityGML can be extended to meet the information needs of an application while at the same time preserving its concepts and semantic structures. Moreover, and in contrast to generic city objects and attributes, application data can be validated against the formal definition of an ADE to ensure semantic interoperability.</p>
+(XML Line 020734): Hanging paragraph in clause
+	<clause id="_requirements_and_recommendations" obligation="normative">
+	<title>Requirements and Recommendations</title>
+	<p id="_9cbec43e-c15d-865d-bccd-31b5f92ce8fb">The following requirements and recommendations specify how ADEs shall be used as an extension capability to the CityGML Conceptual Model.</p>
+	
+	<requirement id="rc_ade" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Conceptual Model</subject>
+(XML Line 021568): Table should have title
+	<table id="_6b2c36ee-da00-7be7-18cf-e0d19954f86b"><thead><tr><th valign="middle" align="left">Date</th>
+	<th valign="middle" align="left">Release</th>
+	<th valign="middle" align="left">Editor</th>
+	<th valign="middle" align="left">Primary clauses modified</th>
+	<th valign="middle" align="left">Description</th>
+
+
+== Requirements
+
+(XML Line 001326): Requirement class rc_core has no corresponding Conformance class test
+	<requirement id="rc_core" model="ogc" type="class"><inherit><eref type="inline" bibitemid="iso19103" citeas="ISO 19103:2015"/></inherit><inherit><eref type="inline" bibitemid="iso19107" citeas="ISO 19107:2003"/></inherit><inherit><eref type="inline" bibitemid="iso19109" citeas="ISO 19109:2015"/></inherit><inherit><eref type="inline" bibitemid="iso19111" citeas="ISO 19111:2019"/></inherit><inherit><eref type="inline" bibitemid="iso19123" citeas="ISO 19123:2005"/></inherit><inherit><eref type="inline" bibitemid="xal2" citeas="OASIS xAL">OASIS xAL v3.0</eref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 001441): Requirement req_core_classes has no corresponding Conformance test
+	<requirement id="req_core_classes" model="ogc" type="general"><description><p id="_075b5b93-0db7-3c45-0fff-da2c0c334dc5">For each UML class defined or referenced in the Core Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_40ddc583-9076-47d9-0220-1d39b341b6b6">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_471e52c8-6f78-135c-9145-22edaf764e21">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 001458): Requirement req_Core_iso-restrictions has no corresponding Conformance test
+	<requirement id="req_Core_iso-restrictions" model="ogc" type="general"><description><p id="_069a0541-3eb9-e537-5e5c-92f5dafeffb4">ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:</p></description>
+	
+	<component exclude="false" class="part"><p id="_79bcf52e-ec83-c9d7-29b4-9cb4db8b921a">Classes derived from the GM_Solid class (ISO 19107) SHALL only include exterior boundaries. (The <tt>interior</tt> association on the GM_SolidBoundary shall not be defined)</p>
+	</component></requirement>
+(XML Line 001465): Requirement per_Core_classes has no corresponding Conformance test
+	<permission id="per_Core_classes" model="ogc" type=""><description><p id="_6f855a33-3200-c59e-7ef9-3824a0b88389">For each UML class defined or referenced in CityGML Conceptual Model:</p></description>
+	
+	<component exclude="false" class="part"><p id="_bf5a5dec-2a35-d093-b0b5-4b42d8d34c90">An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_4c2105c8-29b7-41a1-94f7-1b2034155fdb">An Implementation Specification MAY represent an association of the UML class with a null association.</p>
+(XML Line 001478): Requirement req_core_boundaries has no corresponding Conformance test
+	<requirement id="req_core_boundaries" model="ogc" type="general"> <description><p id="_1fd0fc23-c2c7-5557-4270-d665ad6a14ac"><xref target="core-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Core module. An Implementation Specification SHALL only support the boundaries described in <xref target="core-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 001483): Requirement req_core_ade_use has no corresponding Conformance test
+	<requirement id="req_core_ade_use" model="ogc" type="general"> <description><p id="_aa30b6da-5377-f145-8b85-b658bac44b88">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 002061): Requirement class rc_appearance has no corresponding Conformance class test
+	<requirement id="rc_appearance" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002089): Requirement req_appearance_classes has no corresponding Conformance test
+	<requirement id="req_appearance_classes" model="ogc" type="general"><description><p id="_6be94a7a-d077-3efd-b18b-66e76c095c1d">For each UML class defined or referenced in the Appearance Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_0438eddc-1977-41ea-3eda-50cfb80668f8">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_d3d2eaae-19b3-1ad1-04aa-1b896ffc8a66">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 002106): Requirement req_appearance_ade_use has no corresponding Conformance test
+	<requirement id="req_appearance_ade_use" model="ogc" type="general"> <description><p id="_5078a1db-d6b3-5290-5ffd-f880a4e6f117">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 002234): Requirement class rc_cityfurniture has no corresponding Conformance class test
+	<requirement id="rc_cityfurniture" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002278): Requirement req_cityfurniture_classes has no corresponding Conformance test
+	<requirement id="req_cityfurniture_classes" model="ogc" type="general"><description><p id="_46c2dd1f-021d-7612-60fa-09cab2e77fad">For each UML class defined or referenced in the CityFurniture Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_e49eacf3-3ac6-21ee-a8b7-1c6c0020c7dc">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_509424c0-e212-4b42-581f-5879011fee54">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 002295): Requirement req_cityfurniture_boundaries has no corresponding Conformance test
+	<requirement id="req_cityfurniture_boundaries" model="ogc" type="general"> <description><p id="_2c3ecc60-1d56-a168-1b82-919f989eee64"><xref target="cityfurniture-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityFurniture module. An Implementation Specification SHALL only support the boundaries described in <xref target="cityfurniture-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 002300): Requirement req_cityfurniture_ade_use has no corresponding Conformance test
+	<requirement id="req_cityfurniture_ade_use" model="ogc" type="general"> <description><p id="_ed44a9d6-21ec-8735-34b4-0f5524aa47e5">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 002360): Requirement class rc_cityobjectgroup has no corresponding Conformance class test
+	<requirement id="rc_cityobjectgroup" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002411): Requirement req_cityobjectgroup_classes has no corresponding Conformance test
+	<requirement id="req_cityobjectgroup_classes" model="ogc" type="general"><description><p id="_47e2f216-ab91-1bb7-05e1-e16e6b785e2a">For each UML class defined or referenced in the CityObjectGroup Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_dfc0ced0-0b60-fae1-036a-6337ea95e853">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_c5437b9d-6924-e528-41eb-1dd284329ea8">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 002428): Requirement req_cityobjectgroup_boundaries has no corresponding Conformance test
+	<requirement id="req_cityobjectgroup_boundaries" model="ogc" type="general"> <description><p id="_85e193f5-d279-1f0f-6e03-7ddacbd261c8"><xref target="cityobjectgroup-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityObjectGroup module. An Implementation Specification SHALL only support the boundaries described in <xref target="cityobjectgroup-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 002433): Requirement req_cityobjectgroup_ade_use has no corresponding Conformance test
+	<requirement id="req_cityobjectgroup_ade_use" model="ogc" type="general"> <description><p id="_179c1aff-72e5-fde3-a87d-6e4d41b6ca3a">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 002497): Requirement class rc_dynamizer has no corresponding Conformance class test
+	<requirement id="rc_dynamizer" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002553): Requirement req_dynamizer_classes has no corresponding Conformance test
+	<requirement id="req_dynamizer_classes" model="ogc" type="general"><description><p id="_0fa2d545-f9ca-f164-0b8a-bf6e58b970bb">For each UML class defined or referenced in the Dynamizer Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_bdd7c680-1f35-a83d-a60d-df5df28482a8">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_162ce84c-3222-002c-a868-98fc5cd0ba47">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 002570): Requirement req_dynamizer_ade_use has no corresponding Conformance test
+	<requirement id="req_dynamizer_ade_use" model="ogc" type="general"> <description><p id="_b9aa59ec-aed5-a06b-ed90-ad3cabe41bb9">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 002706): Requirement class rc_generics has no corresponding Conformance class test
+	<requirement id="rc_generics" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002781): Requirement req_generics_classes has no corresponding Conformance test
+	<requirement id="req_generics_classes" model="ogc" type="general"><description><p id="_4dc94d27-f091-e222-2f5d-51e82033aad6">For each UML class defined or referenced in the Generics Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_a3c80d17-ec8d-76ba-6515-fe3f4bc9fe85">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_8bce7874-87c6-b76e-9189-1e4dee98313c">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 002798): Requirement req_generics_boundaries has no corresponding Conformance test
+	<requirement id="req_generics_boundaries" model="ogc" type="general"> <description><p id="_50ab541e-6969-5223-b3e5-9e4770ee3e5a"><xref target="generics-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Generics module. An Implementation Specification SHALL only support the boundaries described in <xref target="generics-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 002803): Requirement req_generics_use has no corresponding Conformance test
+	<requirement id="req_generics_use" model="ogc" type="general"> <description><p id="_cd0a9e39-6ee2-b3b2-2244-36a8bcc3e6e4">Generic objects and attributes SHALL only be used if a more specific feature class or attribute is not available from the CityGML conceptual model.</p></description>
+	</requirement>
+(XML Line 002808): Requirement req_generics_ade_use has no corresponding Conformance test
+	<requirement id="req_generics_ade_use" model="ogc" type="general"> <description><p id="_c3abc839-6f9e-5f23-1626-df0ad3282d76">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 002960): Requirement class rc_landuse has no corresponding Conformance class test
+	<requirement id="rc_landuse" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 002989): Requirement req_landuse_classes has no corresponding Conformance test
+	<requirement id="req_landuse_classes" model="ogc" type="general"><description><p id="_0e807c17-41a4-1381-2c38-76748ad87532">For each UML class defined or referenced in the LandUse Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_e07d9b3c-f424-adc5-7825-267ae4401322">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_46208349-49ff-9bd2-5eb1-9b3e3975e802">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 003006): Requirement req_landuse_ade_use has no corresponding Conformance test
+	<requirement id="req_landuse_ade_use" model="ogc" type="general"> <description><p id="_81cc7b6b-1514-efac-e122-2c5b15d9e98a">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 003066): Requirement class rc_pointCloud has no corresponding Conformance class test
+	<requirement id="rc_pointCloud" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003089): Requirement req_pointcloud_classes has no corresponding Conformance test
+	<requirement id="req_pointcloud_classes" model="ogc" type="general"><description><p id="_90520d1c-5b71-a3c8-6f97-89bbac3d7bfb">For each UML class defined or referenced in the PointCloud Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_0bbced41-b665-66eb-6a5e-a6c8eb379d4a">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_671fe9a3-e013-ddf0-f9f1-d5b1577d22a7">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 003106): Requirement req_pointcloud_ade_use has no corresponding Conformance test
+	<requirement id="req_pointcloud_ade_use" model="ogc" type="general"> <description><p id="_216c4817-4fcb-fa35-5ac2-f0c2284a58e5">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 003146): Requirement class rc_relief has no corresponding Conformance class test
+	<requirement id="rc_relief" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003169): Requirement req_relief_classes has no corresponding Conformance test
+	<requirement id="req_relief_classes" model="ogc" type="general"><description><p id="_25180c42-5c9f-37ee-3f45-49e8d9b0eb2e">For each UML class defined or referenced in the Relief Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_622e5eec-5490-d560-f3ea-e487ee2eb25e">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_f7f456c9-5839-4cd1-c0f3-d1fe0a0909b5">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 003186): Requirement req_relief_ade_use has no corresponding Conformance test
+	<requirement id="req_relief_ade_use" model="ogc" type="general"> <description><p id="_80b02bdc-e7f4-9313-47b8-77a8d52d7b7a">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 003266): Requirement class rc_transportation has no corresponding Conformance class test
+	<requirement id="rc_transportation" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003449): Requirement req_transportation_classes has no corresponding Conformance test
+	<requirement id="req_transportation_classes" model="ogc" type="general"><description><p id="_8733ad02-6306-e085-85ac-a2fa80c0481e">For each UML class defined or referenced in the Transportation Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_3c27461b-8798-9140-762d-0853c126c7b8">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_df920322-5a43-6816-49a2-35002af4aa59">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 003466): Requirement req_transportation_boundaries has no corresponding Conformance test
+	<requirement id="req_transportation_boundaries" model="ogc" type="general"> <description><p id="_8cea53b6-61d4-cf0e-0f88-5f384b800106"><xref target="transportation-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Transportation module. An Implementation Specification SHALL only support the boundaries described in <xref target="transportation-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 003471): Requirement req_transportation_ade_use has no corresponding Conformance test
+	<requirement id="req_transportation_ade_use" model="ogc" type="general"> <description><p id="_6d578089-2088-1b64-4e40-da9f2acc692e">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 003787): Requirement class rc_vegetation has no corresponding Conformance class test
+	<requirement id="rc_vegetation" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003838): Requirement req_vegetation_classes has no corresponding Conformance test
+	<requirement id="req_vegetation_classes" model="ogc" type="general"><description><p id="_3b5fb03a-b6a2-38a7-ff51-93f1f4d4479a">For each UML class defined or referenced in the Vegetation Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_baf06c87-30ab-8c9d-b603-df0373eea02a">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_fb2cc7af-6381-39f1-fbeb-fc854df48c70">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 003855): Requirement req_vegetation_boundaries has no corresponding Conformance test
+	<requirement id="req_vegetation_boundaries" model="ogc" type="general"> <description><p id="_3b29338a-9aa7-68cd-277a-923d6f0118c7"><xref target="vegetation-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Vegetation module. An Implementation Specification SHALL only support the boundaries described in <xref target="vegetation-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 003860): Requirement req_vegetation_ade_use has no corresponding Conformance test
+	<requirement id="req_vegetation_ade_use" model="ogc" type="general"> <description><p id="_a2afda90-29e7-3609-a856-af34f194d285">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 003952): Requirement class rc_versioning has no corresponding Conformance class test
+	<requirement id="rc_versioning" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 003976): Requirement req_versioning_classes has no corresponding Conformance test
+	<requirement id="req_versioning_classes" model="ogc" type="general"><description><p id="_c18ef0e1-03fe-c555-aa18-e04b6cda27f3">For each UML class defined or referenced in the Versioning Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_e11d958d-8a03-d8d6-0524-d4c08404a93a">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_f4b041db-b605-1879-1f6f-137bb6062317">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 003993): Requirement req_versioning_ade_use has no corresponding Conformance test
+	<requirement id="req_versioning_ade_use" model="ogc" type="general"> <description><p id="_c4bbbbe9-3f2c-dd86-8021-5f54c636a42b">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 004061): Requirement class rc_waterbody has no corresponding Conformance class test
+	<requirement id="rc_waterbody" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 004120): Requirement req_waterbody_classes has no corresponding Conformance test
+	<requirement id="req_waterbody_classes" model="ogc" type="general"><description><p id="_e585b215-ff78-a210-8cc0-b65b94a4780c">For each UML class defined or referenced in the Waterbody Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_a5fde189-e4dc-08aa-a6db-58f6cf051d2b">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_502703f4-0662-46b0-f2dd-f067cff9ede2">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 004137): Requirement req_waterbody_boundaries has no corresponding Conformance test
+	<requirement id="req_waterbody_boundaries" model="ogc" type="general"> <description><p id="_72fe8380-1fa7-3f49-1fcb-6f4d7a29bc53"><xref target="waterbody-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Waterbody module. An Implementation Specification SHALL only support the boundaries described in <xref target="waterbody-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 004142): Requirement req_waterbody_ade_use has no corresponding Conformance test
+	<requirement id="req_waterbody_ade_use" model="ogc" type="general"> <description><p id="_8df5233d-f75b-fb85-b635-b74ce030251a">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 004230): Requirement class rc_construction has no corresponding Conformance class test
+	<requirement id="rc_construction" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_generics">/req/req-class-generics</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 004423): Requirement req_construction_classes has no corresponding Conformance test
+	<requirement id="req_construction_classes" model="ogc" type="general"><description><p id="_f310911f-ed9e-aa2d-198f-5b1e2c15a176">For each UML class defined or referenced in the Construction Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_525fea20-9496-b063-0de4-bad9ff93c31d">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_094420bd-d330-e94d-06c1-54b5ccd1c170">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 004440): Requirement req_construction_boundaries has no corresponding Conformance test
+	<requirement id="req_construction_boundaries" model="ogc" type="general"> <description><p id="_7256914a-ecf5-5fc2-f70a-17ed4c552cab"><xref target="construction-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Construction module. An Implementation Specification SHALL only support the boundaries described in <xref target="construction-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 004445): Requirement req_construction_ade_use has no corresponding Conformance test
+	<requirement id="req_construction_ade_use" model="ogc" type="general"> <description><p id="_42b340e4-f30f-f974-3f94-10550e47728a">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 004721): Requirement class rc_bridge has no corresponding Conformance class test
+	<requirement id="rc_bridge" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_construction">/req/req-class-construction</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 004943): Requirement req_bridge_classes has no corresponding Conformance test
+	<requirement id="req_bridge_classes" model="ogc" type="general"><description><p id="_96117ef6-ff17-bad0-7cc3-41f566989c05">For each UML class defined or referenced in the Bridge Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_c5428e29-f8b7-96c9-b1c8-a4e988b8be93">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_41b3044d-8c6e-30b6-5c4a-79cbaa8ad90d">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 004960): Requirement req_bridge_boundaries has no corresponding Conformance test
+	<requirement id="req_bridge_boundaries" model="ogc" type="general"> <description><p id="_3c5d25c8-8b5a-f319-5009-be945a3a780e"><xref target="bridge-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Bridge module. An Implementation Specification SHALL only support the boundaries described in <xref target="bridge-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 004965): Requirement req_bridge_ade_use has no corresponding Conformance test
+	<requirement id="req_bridge_ade_use" model="ogc" type="general"> <description><p id="_1d6bd3c3-ddff-cc1f-589f-525b6429abc0">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 005121): Requirement class rc_building has no corresponding Conformance class test
+	<requirement id="rc_building" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_construction">/req/req-class-construction</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 005387): Requirement req_building_classes has no corresponding Conformance test
+	<requirement id="req_building_classes" model="ogc" type="general"><description><p id="_c8010e88-3e88-48aa-023c-befb172d2548">For each UML class defined or referenced in the Building Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_9a507bbf-53c7-08ff-56b8-0c5b46112387">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_a6e57617-cbc6-3eef-fb0e-58c1b033ac3c">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 005404): Requirement req_building_boundaries has no corresponding Conformance test
+	<requirement id="req_building_boundaries" model="ogc" type="general"> <description><p id="_074d58fa-15fc-0368-98a2-ab330a157c8f"><xref target="building-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Building module. An Implementation Specification SHALL only support the boundaries described in <xref target="building-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 005409): Requirement req_building_ade_use has no corresponding Conformance test
+	<requirement id="req_building_ade_use" model="ogc" type="general"> <description><p id="_9d0b7aef-f747-7337-a697-34ecee29c4b7">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 005613): Requirement class rc_tunnel has no corresponding Conformance class test
+	<requirement id="rc_tunnel" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit><inherit><xref target="rc_construction">/req/req-class-construction</xref></inherit> <subject>Implementation Specification</subject>
+	
+	</requirement>
+(XML Line 005838): Requirement req_tunnel_classes has no corresponding Conformance test
+	<requirement id="req_tunnel_classes" model="ogc" type="general"><description><p id="_8564a292-b5fb-100a-b1cf-755eebd4382d">For each UML class defined or referenced in the Tunnel Package:</p></description>
+	
+	<component exclude="false" class="part"><p id="_6a693cd2-3546-f424-5005-e14d1cf3697c">The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_417ad5ec-b5dc-643b-ff51-df7c5e43635c">The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.</p>
+(XML Line 005855): Requirement req_tunnel_boundaries has no corresponding Conformance test
+	<requirement id="req_tunnel_boundaries" model="ogc" type="general"> <description><p id="_dcca1809-2fdd-721d-dcd2-5b10ad18c8c7"><xref target="tunnel-boundaries-table"/> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Tunnel module. An Implementation Specification SHALL only support the boundaries described in <xref target="tunnel-boundaries-table"/></p></description>
+	</requirement>
+(XML Line 005860): Requirement req_tunnel_ade_use has no corresponding Conformance test
+	<requirement id="req_tunnel_ade_use" model="ogc" type="general"> <description><p id="_661688b8-e301-204e-8b9b-12fb577e0b55">ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.</p></description>
+	</requirement>
+(XML Line 020738): Requirement class rc_ade has no corresponding Conformance class test
+	<requirement id="rc_ade" model="ogc" type="class"><inherit><xref target="rc_core">/req/req-class-core</xref></inherit> <subject>Conceptual Model</subject>
+	
+	</requirement>
+(XML Line 020746): Requirement req_ade_uml has no corresponding Conformance test
+	<requirement id="req_ade_uml" model="ogc" type="general"><description><p id="_30e34bc1-c9db-64dd-8f9c-4b3bc575ad2e">An ADE SHALL be defined as conceptual model in UML in accordance with the conceptual modelling framework of the ISO 19100 series of International Standards</p></description>
+	
+	<component exclude="false" class="part"><p id="_086cb691-710d-71db-17cc-76f8e1f59119">The UML model SHALL adhere to the General Feature Model as specified in ISO 19109.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_b2eddbdd-7b3b-c632-513b-c011ecc15bed">The UML model SHALL adhere to rules and constraints for application schemas as specified in ISO/TS 19103.</p>
+(XML Line 020755): Requirement rec_ade_uml has no corresponding Conformance test
+	<recommendation id="rec_ade_uml" model="ogc" type=""><description><p id="_7a200a71-2e2d-6459-199c-e6e0f1d90871">In addition to meeting the requirements for a CityGML ADE, an ADE should:</p></description>
+	
+	<component exclude="false" class="part"><p id="_692c1b4f-1aad-bd9f-b6df-e1f3309a6abd">The UML notations and stereotypes (<xref target="uml_notation_section"/>) used in the CityGML
+	conceptual model SHOULD be applied to corresponding model elements in an ADE.</p>
+	</component>
+(XML Line 020768): Requirement req_ade_elements has no corresponding Conformance test
+	<requirement id="req_ade_elements" model="ogc" type="general"><description><p id="_f8ede073-2cb5-7448-684e-198981738237">ADEs typically extend CityGML by defining new Feature Types together with additional content such as Object Types, Data Types, Code Lists, and Enumerations.</p></description>
+	
+	<component exclude="false" class="part"><p id="_93e2a9a2-2aca-d4c1-041b-fd38d42dccc9">Every Feature Type in an ADE SHALL be derived either directly or indirectly from the CityGML root Feature Type <em>core:AbstractFeature</em> or a subclass thereof.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_5f1dc192-74cd-b334-6b08-e036de29c50b">UML classes representing Top-Level Feature Types SHALL use the <em>«TopLevelFeatureType»</em> stereotype.</p>
+(XML Line 020779): Requirement rec_ade_elements has no corresponding Conformance test
+	<recommendation id="rec_ade_elements" model="ogc" type=""><description><p id="_78d690b5-9737-e9cc-1a2d-afd2a2c822e9">ADEs typically extend CityGML by defining new feature types together with additional content such as object types, data types, code lists, and enumerations.</p></description>
+	
+	<component exclude="false" class="part"><p id="_c2fb5134-e0bd-8b7e-2f6d-86d0c31ea9ef">ADEs SHOULD use the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_64c5fb6a-2241-8c3f-384b-cac5b8490186">Constraints on model elements SHOULD be expressed using a formal language such as the Object Constraint Language (OCL).</p>
+(XML Line 020793): Requirement req_ade_properties has no corresponding Conformance test
+	<requirement id="req_ade_properties" model="ogc" type="general"><description><p id="_e89b9c37-2ef9-c57f-a4b8-b6b03b7805b5">Every Feature Type includes an extension property (hook) of type “ADEOf&lt;FeatureTypeName&gt;” where &lt;FeatureTypeName&gt; is the name of that Feature Type. To add an extension property to a Feature Type:</p></description>
+	
+	<component exclude="false" class="part"><p id="_f538302e-502f-ecfb-1503-f87c30565b81">The ADE SHALL create a subclass of the abstract data type associated with the hook.</p>
+	</component>
+	<component exclude="false" class="part"><p id="_f9b78341-7552-6e05-13b7-aabb0bf22bb6">This subclass SHALL be defined as a data type using the stereotype <em>«DataType»</em>.</p>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000185:79): element "clause" not allowed here; expected element "foreword"
+(XML Line 000234:62): element "clause" not allowed here; expected element "foreword"
+(XML Line 000243:76): element "acknowledgements" not allowed here; expected element "foreword"
+(XML Line 000243:76): found attribute "id", but no attributes allowed here
+(XML Line 000243:76): found attribute "obligation", but no attributes allowed here
+(XML Line 000245:47): found attribute "id", but no attributes allowed here
+(XML Line 000247:70): found attribute "id", but no attributes allowed here
+(XML Line 000247:70): found attribute "unnumbered", but no attributes allowed here
+(XML Line 000249:20913): found attribute "src", but no attributes allowed here
+(XML Line 000249:20913): found attribute "id", but no attributes allowed here
+(XML Line 000249:20913): found attribute "mimetype", but no attributes allowed here
+(XML Line 000249:20913): found attribute "height", but no attributes allowed here
+(XML Line 000249:20913): found attribute "width", but no attributes allowed here
+(XML Line 000251:238): found attribute "target", but no attributes allowed here
+(XML Line 000251:286): found attribute "target", but no attributes allowed here
+(XML Line 000251:47): found attribute "id", but no attributes allowed here
+(XML Line 000252:112): element "clause" not allowed here; expected element "foreword"
+(XML Line 000252:298): element "submitters" not allowed yet; missing required element "foreword"
+(XML Line 000421:183): element "concept" incomplete; expected element "eref", "refterm", "renderterm", "termref" or "xref"
+(XML Line 000421:88): element "strong" not allowed here; expected element "eref", "refterm", "renderterm", "termref" or "xref"
+(XML Line 000429:66): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000448:78): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000455:63): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 001149:583): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 001879:136): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002052:139): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002178:141): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002315:135): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002524:134): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002778:133): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002884:136): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 002964:132): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 003084:140): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 003605:136): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 003770:136): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 003879:135): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 004048:214): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 004538:216): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 004937:218): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 005428:216): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 005954:154): element "strong" not allowed here; expected element "eref", "refterm", "renderterm", "termref" or "xref"
+(XML Line 005954:229): element "concept" incomplete; expected element "eref", "refterm", "renderterm", "termref" or "xref"
+(XML Line 005975:50): element "note" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 005985:100): element "sourcecode" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "span", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 005989:100): element "sourcecode" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "span", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 005993:100): element "sourcecode" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "span", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 006176:50): element "note" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 006230:50): element "note" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 007631:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 007779:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 007838:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 007861:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 007884:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 009303:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 009326:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 010278:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 010410:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 010919:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 012129:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 012264:67): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 020552:129): element "subject" not allowed here; expected the element end-tag or element "classification", "component", "description", "import", "inherit", "measurement-target", "permission", "recommendation", "references", "requirement", "specification" or "verification"
+(XML Line 022274:228): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022275:172): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022276:218): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022374:31): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022378:29): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022382:29): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022386:29): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022390:29): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022394:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022398:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022402:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022406:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022410:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022414:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022418:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022422:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022426:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022430:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022434:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022438:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022442:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022446:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022450:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022454:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022458:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022462:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022466:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022470:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022474:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022478:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022482:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022486:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022490:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022494:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022498:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022502:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022506:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022510:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 022514:18): element "docidentifier" not allowed yet; missing required element "title"

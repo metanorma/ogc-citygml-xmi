@@ -1,0 +1,134 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>OGC TB 17 D144 CityGML XMI model-driven standard</title><contributor><role type='author'/><organization><name>OGC</name></organization></contributor><relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard</title>
+  <uri type="xml">documents/standard/20-010.xml</uri>
+  <uri type="pdf">documents/standard/20-010.pdf</uri>
+  <uri type="doc">documents/standard/20-010.doc</uri>
+  <uri type="html">documents/standard/20-010.html</uri>
+  <uri type="rxl">documents/standard/20-010.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CityGML-1/3.0</docidentifier>
+  <docidentifier type="ogc-internal">20-010</docidentifier>
+  <docnumber>20-010</docnumber>
+  <date type="published">
+    <on>2021-09-13</on>
+  </date>
+  <date type="issued">
+    <on>2021-06-04</on>
+  </date>
+  <date type="received">
+    <on>2021-03-02</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Heazeltech LLC</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Institut national de l'information géographique et forestière (IGN)</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>OpenSitePlan</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Technical University of Munich</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Ordnance Survey</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Virtual City Systems</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Thomas H. Kolbe</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Tatjana Kutzner</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Carl Stephen Smyth</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Claus Nagel</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Carsten Roensdorf</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Charles Heazel</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>3.0.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract><p>surrounding countryside within which they reside.</p><p>in different application fields.</p>&lt;p&gt;&lt;link&gt;&lt;/p&gt;&lt;/&gt;</abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>CityGML</keyword>
+  <keyword>3D city models</keyword>
+  <ext>
+    <doctype>standard</doctype>
+    <subdoctype>conceptual-model</subdoctype>
+  </ext>
+</bibdata></relation>
+</relaton-collection>
