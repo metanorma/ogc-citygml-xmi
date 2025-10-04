@@ -1,23 +1,21 @@
-The Vegetation module defines the concepts to represent vegetation within city models. Vegetation can be represented either as solitary vegetation objects, such as trees, bushes and ferns, or as vegetation areas that are covered by plants of a given species or a typical mixture of plant species, such as forests, steppes and wet meadows.
-Vegetation is represented in the UML model by the top-level feature types _SolitaryVegetationObject_ and _PlantCover_, which are also the only classes of the Vegetation module.
+植被模块定义了在城市模型中表示植被的概念。植被既可以表示为单独的植被对象，如树木、灌木和蕨类，也可以表示为由特定物种或典型植物物种混合覆盖的植被区域，如森林、草原和湿草地。在 UML 模型中，植被由顶级要素类型  _“单独植被对象”（SolitaryVegetationObject）_ 和 _“植物覆盖”（PlantCover）_ 表示，这也是植被模块仅有的两个类。
 
-The UML diagram of the Vegetation module is depicted in <<vegetation-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-vegetation-section[OGC CityGML 3.0 Users Guide].
+植被模块的 UML 图如 <<vegetation-uml>>.所示。关于此需求类的详细讨论，可在  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-vegetation-section[OGC CityGML 3.0 Users Guide]中找到。
 
 [[vegetation-uml]]
-.UML diagram of the Vegetation Model.
-
+.植被模型的UML图
 image::figures/Vegetation.png[]
 
-The ADE data types provided for the Vegetation module are illustrated in <<vegetation-uml-ade-types>>.
+为植被模块提供的 ADE 数据类型如<<vegetation-uml-ade-types>>.
 
 [[vegetation-uml-ade-types]]
-.ADE classes of the CityGML Vegetation module.
+.CityGML植被模块的ADE类
 image::figures/Vegetation-ADE_Datatypes.png[]
 
-The Code Lists provided for the Vegetation module are illustrated in <<vegetation-uml-codelists>>.
+<<vegetation-uml-codelists>>展示了为植被模块提供的代码列表
 
 [[vegetation-uml-codelists]]
-.Codelists from the CityGML Vegetation module.
+.来自CityGML植被模块的代码列表
 image::figures/Vegetation-Codelists.png[]
 
-<<vegetation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Vegetation module.
+<<vegetation-boundaries-table>> 列出了植被模块中定义的空间类所允许的作为主题表面边界的表面：

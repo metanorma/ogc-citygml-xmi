@@ -1,4 +1,4 @@
-=== Conformance Class Versioning
+=== 一致性认证：版本控制类
 
 include::Versioning/ATS_Versioning_Classes.adoc[]
 

@@ -1,4 +1,4 @@
-=== Conformance Class ADE
+=== 一致性认证：ADE类
 
 include::ADE/ATS_ADE_UML.adoc[]
 

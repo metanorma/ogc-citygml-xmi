@@ -1,495 +1,390 @@
 [appendix,obligation="informative"]
-[heading='terms and definitions']
-== Glossary
+== 术语表
 
-=== General
+=== 通用术语
 
-==== conformance test class
+==== 一致性测试类
 
-The set of conformance test modules that must be applied to receive a single certificate of
-conformance
+必须应用的一组一致性测试模块，以获得单一的一致性证书
 
-[.source]
-<<ogc08-131,clause=4.4>>
+*来源*: xref:ogc08-131[OGC 08-131]，clause=4.4
 
+==== 要素
 
-==== feature
+对现实世界现象的抽象
 
-An abstraction of real world phenomena
+*来源*: xref:iso19101-1[ISO 19101-1]，clause=4.1.11
 
-[.source]
-<<iso19101-1,clause=4.1.11>>
+==== 要素属性
 
-==== feature attribute
+要素的一个属性
 
-A characteristic of a feature
+*来源*: xref:iso19101-1[ISO 19101-1]，clause=4.1.12
 
-[.source]
-<<iso19101-1,clause=4.1.12>>
+==== 要素类型
 
+具有共同特性的要素类别
 
-==== feature type
+*来源*: xref:iso19156[ISO 19156]，clause=4.7
 
-A class of features having common characteristics
+==== 测量
 
-[.source]
-<<iso19156,clause=4.7>>
+以确定量值为目的的一组操作
 
+*来源*: xref:iso19101-2[ISO 19101-2]，clause=3.21
 
-==== measurement
+==== 模型
 
-A set of operations having the object of determining the value of a quantity
+对现实某些方面的抽象
 
-[.source]
-<<iso19101-2,clause=3.21>>
-//<<VIM,clause=2.1>>
+*来源*: xref:iso19109[ISO 19109]，clause=4.15
 
-==== model
+==== 观测
 
-An abstraction of some aspects of reality
+测量或以其他方式确定属性值的行为
 
-[.source]
-<<iso19109,clause=4.15>>
+*来源*: xref:iso19156[ISO 19156]，clause=4.11
 
+==== 观测程序
 
-==== observation
+可用于进行观测的方法、算法或仪器，或这些的系统
 
-The act of measuring or otherwise determining the value of a property
+*来源*: xref:iso19156[ISO 19156]，clause=4.12
 
-[.source]
-<<iso19156,clause=4.11>>
+==== 观测结果
 
-==== observation procedure
+通过已知观测程序确定的属性值的估计
 
-A method, algorithm or instrument, or system of these, which may be used in making an
-observation
+*来源*: xref:iso19156[ISO 19156]，clause=4.14
 
-[.source]
-<<iso19156,clause=4.12>>
+==== 属性
 
-==== observation result
+通过名称引用的对象的一个方面或属性
 
-An estimate of the value of a property determined through a known observation procedure
+*来源*: xref:iso19143[ISO 19143]，clause=4.21
 
-[.source]
-<<iso19156,clause=4.14>>
+==== 要求类
 
-==== property
+必须满足的所有要求模块的集合，以满足符合性测试类别
 
-A facet or attribute of an object referenced by a name.
+*来源*: xref:ogc08-131[OGC 08-131]，clause=4.19
 
-[.source]
-<<iso19143,clause=4.21>>
+==== 模式
 
-==== requirements class
+模型的正式描述
 
-The aggregate of all requirement modules that must all be satisfied to satisfy a conformance
-test class
+*来源*: xref:iso19101-1[ISO 19101-1]，clause=4.1.34
 
-[.source]
-<<ogc08-131,clause=4.19>>
+==== 传感器
 
+一种观测程序，它在其输出端提供观测属性的估计值
 
-==== schema
+*来源*: xref:ogc08-094r1[OGC 08-094r1]，clause=4.5
 
-The formal description of a model
+==== 标准化目标
 
-[.source]
-<<iso19101-1,clause=4.1.34>>
+标准的某些要求适用的实体
 
+*来源*: xref:ogc08-131[OGC 08-131]，clause=4.23
 
-==== sensor
+==== 时间序列
 
-A type of observation procedure that provides the estimated value of an observed
-property at its output
+按时间顺序排列的数据值序列
 
-[.source]
-<<ogc08-094r1,clause=4.5>>
+*来源*: xref:ogc15-043r3[OGC 15-043r3]
 
-==== Standardization Target
+==== 论域
 
-An entity to which some requirements of a standard apply
+包括所有感兴趣事物的真实或假设世界的视图
 
-[.source]
-<<ogc08-131,clause=4.23>>
+*来源*: xref:iso19101-1[ISO 19101-1]，clause=4.1.38
 
-==== timeseries
+==== 版本
 
-A sequence of data values which are ordered in time
+空间对象的特定变体
 
-[.source]
-<<ogc15-043r3>>
+*来源*: xref:inspire_glossary[INSPIRE Glossary]
 
+=== ISO概念
 
-==== universe of discourse
+以下概念来自ISO TC211协调的UML模型，被城市GML概念UML模型引用，但在其定义中并不起主要作用。在此提供这些概念是为了支持对模型更完整的理解。
 
-View of the real or hypothetical world that includes everything of interest
+==== 面状
 
-[.source]
-<<iso19101-1,clause=4.1.38>>
+任何拓扑上为2D的几何对象的物理范围的度量。通常以长度的“平方”单位来测量。
 
+*来源*: xref:iso19103[ISO 19103]
 
-==== version
+==== 布尔值
 
-Particular variation of a spatial object
+布尔值是与二值逻辑相关的数学数据类型
 
-[.source]
-<<inspire_glossary>>
-
-
-[heading='terms and definitions']
-=== ISO Concepts
-
-The following concepts from the ISO TC211 Harmonized UML model are referenced by the CityGML Conceptual UML model but do not play a major role in its' definition. They are provided here to support a more complete understanding of the model.
-
-
-==== Area
-
-The measure of the physical extent of any topologically 2-D geometric object. Usually measured in "square" units of length.
-
-[.source]
-<<iso19103>>
-
-
-==== Boolean
-
-Boolean is the mathematical datatype associated with two-valued logic
-
-[.source]
-<<iso19103>>
+*来源*: xref:iso19103[ISO 19103]
 
 ==== CC_CoordinateOperation
 
-A mathematical operation on coordinates that transforms or converts coordinates to another coordinate reference system.
+对坐标进行数学运算，将坐标转换或变换到另一个坐标参考系统
 
-[.source]
-<<iso19111>>
+*来源*: xref:iso19111[ISO 19111]
 
+==== 字符
 
-==== Character
+标准字符集中的一个符号
 
-A symbol from a standard character-set.
+*来源*: xref:iso19103[ISO 19103]
 
-[.source]
-<<iso19103>>
+==== 字符串
 
+CharacterString是一系列标准字符集中的符号的数据类型家族
 
-==== CharacterString
-
-CharacterString is a family of datatypes which represent strings of symbols from standard character-sets.
-
-[.source]
-<<iso19103>>
-
+*来源*: xref:iso19103[ISO 19103]
 
 ==== CRS
 
-Coordinate reference system which is usually single but may be compound.
+坐标参考系统，通常是单一的，但也可以是复合的
 
-[.source]
-<<iso19111>>
-
+*来源*: xref:iso19111[ISO 19111]
 
 ==== CV_DiscreteCoverage
 
-A subclass of CV_Coverage that returns a single record of values for any direct position within a single geometric object in its spatiotemporal domain.
+CV_Coverage的一个子类，它为在其时空域内的单个几何对象中的任何直接位置返回单个记录的值
 
-[.source]
-<<iso19123>>
-
+*来源*: xref:iso19123[ISO 19123]
 
 ==== CV_DomainObject
 
-An element of the domain of the CV_Coverage. It is an aggregation of objects that may include any combination of GM_Objects (ISO 19107:2003), TM_GeometricPrimitives (ISO 10108), or spatial or temporal objects defined in other standards, such as the CV_GridPoint defined in this International Standard.
+CV_Coverage的域的一个元素。它是一个对象的聚合，可以包括ISO 19107:2003中的任何GM_Objects组合、ISO 10108中的TM_GeometricPrimitives，或在其他标准中定义的空间或时间对象，例如在本国际标准中定义的CV_GridPoint
 
-[.source]
-<<iso19123>>
-
+*来源*: xref:iso19123[ISO 19123]
 
 ==== CV_GridPointValuePair
 
-A subtype of CV_GeometryValuePair that has a GM_GridPoint as the value of its geometry attribute.
+CV_GeometryValuePair的一个子类型，其几何属性的值为GM_GridPoint
 
-[.source]
-<<iso19123>>
-
+*来源*: xref:iso19123[ISO 19123]
 
 ==== CV_GridValuesMatrix
 
-The geometry represented by the various offset vectors is in the image plane of the grid.
+由各种偏移向量表示的几何在网格的图像平面内
 
-[.source]
-<<iso19123>>
-
+*来源*: xref:iso19123[ISO 19123]
 
 ==== CV_ReferenceableGrid
 
-A subclass of CV_Coverage that relates the grid coordinates to an external coordinate reference system.
+CV_Coverage的一个子类，它将网格坐标与外部坐标参考系统联系起来
 
-[.source]
-<<iso19123>>
+*来源*: xref:iso19123[ISO 19123]
 
-==== Date
+==== 日期
 
-Date gives values for year, month and day. Representation of Date is specified in ISO 8601. Principles for date and time are further discussed in ISO 19108.
+日期给出年、月和日的值。日期的表示在ISO 8601中指定。日期和时间的原则在ISO 19108中进一步讨论
 
-[.source]
-<<iso19103>>
+*来源*: xref:iso19103[ISO 19103]
 
+==== 日期时间
 
-==== DateTime
-
-A DateTime is a combination of a date and a time types. Representation of DateTime is specified in ISO 8601. Principles for date and time are further discussed in ISO 19108.
+日期时间是日期和时间类型的组合。日期时间的表示在ISO 8601中指定。日期和时间的原则在ISO 19108中进一步讨论
 
 [.source]
 <<iso19103>>
 
+==== 距离
 
-==== Distance
+用于返回距离和可能的长度
 
-Used as a type for returning distances and possibly lengths.
+*来源*: xref:iso19103[ISO 19103]
 
-[.source]
-<<iso19103>>
+==== 工程CRS
 
+一种上下文局部坐标参考系统，可分为两大类：
 
-==== EngineeringCRS
+. 应用于地球表面或附近的工程活动的地球固定系统；
 
-A contextually local coordinate reference system which can be divided into two broad categories:
+. 在移动平台上使用的CRS，如道路车辆、船只、飞机或航天器。
 
-. earth-fixed systems applied to engineering activities on or near the surface of the earth;
+*来源*: xref:iso19111[ISO 19111]
 
-. CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft.
+==== 要素类型
 
-[.source]
-<<iso19111>>
+作为代表各个要素类型的类的实例化的元类
 
-==== FeatureType
+*来源*: xref:iso19109[ISO 19109]，clause=7.4.5
 
-metaclass that is instantiated as classes that represent individual feature types
+==== 通用名称
 
-[.source]
-<<iso19109,clause=7.4.5>>
+通用名称是命名空间中所有名称的抽象类。通用名称的每个实例要么是本地名称，要么是作用域名称
 
+*来源*: xref:ogc08-131[OGC 08-131]，clause=4.18
 
-==== GenericName
+==== 几何
 
-GenericName is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName.
+几何是地理参考几何对象分类的根类，并支持所有地理参考几何对象共有的接口
 
-[.source]
-<<iso19103>>
-
-
-==== Geometry
-
-Geometry is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects.
-
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_CompositePoint
 
-A GM_Complex containing one and only one GM_Point.
+包含一个且仅一个GM_Point的GM_Complex
 
-[.source]
-<<iso19107>>
-
+*来源*: xref:iso19107[ISO 19107]
 
 ==== GM_CompositeSolid
 
-A set of geometric solids adjoining one another along common boundary geometric surfaces
+一组几何实体，它们沿着公共边界几何表面相互邻接
 
-[.source]
-<<iso19107>>
-
+*来源*: xref:iso19107[ISO 19107]
 
 ==== GM_GenericSurface
 
-GM_Surface and GM_SurfacePatch both represent sections of surface geometry, and therefore share a number of operation signatures. These are defined in the interface class GM_GenericSurface.
+GM_Surface和GM_SurfacePatch都表示表面几何的一部分，因此共享许多操作签名。这些在接口类GM_GenericSurface中定义
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_LineString
 
-Consists of sequence of line segments, each having a parameterization like the one for GM_LineSegment
+由一系列线段组成，每个线段都有类似于GM_LineSegment的参数化
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_MultiPrimitive
 
-The root class for all primitive aggregates. The association role “element” shall be the set of GM_Primitives contained in this GM_MultiPrimitive. The attribute declaration here specializes the one at GM_Aggregate to include only GM_Primitives in this type of aggregate.
+所有原始集合的根类。关联角色“element”应是包含在此GM_MultiPrimitive中的GM_Primitives集合。此处的属性声明专门化了GM_Aggregate中的声明，仅包括此类型集合中的GM_Primitives
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_OrientableSurface
 
-A surface and an orientation inherited from GM_OrientablePrimitive. If the orientation is "+", then the GM_OrientableSurface is a GM_Surface. If the orientation is "-", then the GM_OrientableSurface is a reference to a GM_Surface with an upNormal that reverses the direction for this GM_OrientableSurface, the sense of "the top of the surface".
+一个表面和从GM_OrientablePrimitive继承的方向。如果方向是“+”，则GM_OrientableSurface是一个GM_Surface。如果方向是“-”，则GM_OrientableSurface是对一个GM_Surface的引用，该GM_Surface的upNormal反转了此GM_OrientableSurface的方向，即“表面顶部”的方向
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_PolyhedralSurface
 
-A GM_Surface composed of polygon surfaces (GM_Polygon) connected along their common boundary curves.
+由沿公共边界曲线连接的多边形表面（GM_Polygon）组成的GM_Surface
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_Position
 
-A union type consisting of either a DirectPosition or of a reference to a GM_Point from which a DirectPosition shall be obtained.
+由直接位置或对GM_Point的引用组成的联合类型，应从该GM_Point获取直接位置
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19107[ISO 19107]
 
 
 ==== GM_Primitive
 
-The abstract root class of the geometric primitives. Its main purpose is to define the basic "boundary" operation that ties the primitives in each dimension together.
+几何原始的抽象根类。其主要目的是定义基本的“边界”操作，将每个维度中的原始联系在一起
 
-[.source]
-<<iso19107>>
-
-
-==== Integer
-
-An exact integer value, with no fractional part.
-
-[.source]
-<<iso19103>>
+*来源*: xref:iso19107[ISO 19107]
 
 
-==== Internet of Things
+==== 整数
 
-The network of physical objects--“things”--that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet. +
+精确的整数值，没有小数部分
 
-[.source]
+*来源*: xref:iso19103[ISO 19103]
 
+
+==== 物联网
+
+物联网是物理对象——“事物”——的网络，这些对象嵌入了传感器、软件和其他技术，用于通过互联网与其他设备和系统连接和交换数据。+
+
+*来源*: xref:iso19103[ISO 19103]
 
 ==== IO_IdentifiedObjectBase
 
-Supplementary identification and remarks information for a CRS or CRS-related object.
+CRS或与CRS相关对象的补充标识和注释信息
 
-[.source]
-<<iso19111>>
-
-
-==== Length
-
-The measure of distance as an integral, i.e., the limit of an infinite sum of distances between points on a curve.
-
-[.source]
-<<iso19103>>
+*来源*: xref:iso19111[ISO 19111]
 
 
-==== Measure
+==== 长度
 
-The result from performing the act or process of ascertaining the extent, dimensions, or quantity of some entity.
+作为积分的测量距离，即曲线上点之间的距离的无限和的极限
 
-[.source]
-<<iso19103>>
-
-
-==== Number
-
-The base type for all number data, giving the basic algebraic operations.
-
-[.source]
-<<iso19103>>
+*来源*: xref:iso19107[ISO 19107]
 
 
-==== Point
+==== 测量
 
-GM_Point is the basic data type for a geometric object consisting of one and only one point.
+执行确定实体范围、尺寸或数量的行为或过程的结果
 
-[.source]
-<<iso19107>>
+*来源*: xref:iso19103[ISO 19103]
 
+==== 数字
 
-==== Real
+所有数字数据的基类型，提供基本的代数运算
 
-The common binary Real finite implementation using base 2.
+*来源*: xref:iso19103[ISO 19103]
 
-[.source]
-<<iso19103>>
+==== 点
 
+GM_Point是仅由一个点组成的几何对象的基本数据类型
+
+*来源*: xref:iso19107[ISO 19107]
+
+==== 实数
+
+使用基数2的常见二进制实数有限实现
+
+*来源*: xref:iso19103[ISO 19103]
 
 ==== RS_ReferenceSystem
 
-Description of a spatial and temporal reference system used by a dataset.
+数据集使用的空间和时间参考系统的描述
 
-[.source]
-<<iso19111>>
+*来源*: xref:iso19111[ISO 19111]
 
+==== 作用域名称
 
-==== ScopedName
+作用域名称是由定位另一个命名空间的本地名称和在该命名空间中有效的通用名称组成的复合体。作用域名称包含一个本地名称作为头部和一个通用名称（可以是本地名称或作用域名称）作为尾部
 
-ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail.
+*来源*: xref:iso19103[ISO 19103]
 
-[.source]
-<<iso19103>>
+==== 实体
 
+GM_Solid是GM_Primitive的一个子类，是三维几何的基础。实体的范围由边界表面定义
 
-==== Solid
+*来源*: xref:iso19107[ISO 19107]
 
-GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
+==== 时间
 
-[.source]
-<<iso19107>>
+时间是天文或原子时间尺度上某一瞬间的名称。它用于表示一天中的时间
 
-
-==== Time
-
-Time is the designation of an instant on a selected time scale, astronomical or atomic. It is used in the sense of time of day.
-
-[.source]
-<<iso19103>>
-
+*来源*: xref:iso19103[ISO 19103]
 
 ==== TM_Duration
 
-A data type to be used for describing length or distance in the temporal dimension.
+用于描述时间维度中的长度或距离的数据类型
 
-[.source]
-<<iso19108>>
-
+*来源*: xref:iso19108[ISO 19108]
 
 ==== TM_TemporalPosition
 
-The position of a TM_Instant relative to a TM_ReferenceSystem.
+TM_Instant相对于TM_ReferenceSystem的位置
 
-[.source]
-<<iso19108>>
+*来源*: xref:iso19108[ISO 19108]
 
+==== 测量单位
 
-==== UnitOfMeasure
+为测量距离或面积等物理量而设计的任何系统，或为测量时间流逝等事物而设计的系统
 
-Any of the systems devised to measure some physical quantity such distance or area or a system devised to measure such things as the passage of time.
-
-[.source]
-<<iso19103>>
-
+*来源*: xref:iso19103[ISO 19103]
 
 ==== URI
 
-Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource
+统一资源标识符（URI）是一个紧凑的字符字符串，用于标识或命名资源
 
-[.source]
-<<iso19103>>
+*来源*: xref:iso19103[ISO 19103]
 
+==== 体积
 
-==== Volume
+任何三维几何对象的物理空间的度量
 
-Volume is the measure of the physical space of any 3-D geometric object.
-
-[.source]
-<<iso19103>>
+*来源*: xref:iso19103[ISO 19103]

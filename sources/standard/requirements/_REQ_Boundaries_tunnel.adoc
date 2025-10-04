@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+本模块的实施还受到以下空间边界要求的进一步约束：
 
 [[req_tunnel_boundaries]]
 [requirement,type="general",label="/req/tunnel/boundaries"]
 ====
-<<tunnel-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Tunnel module. An Implementation Specification SHALL only support the boundaries described in <<tunnel-boundaries-table>>
+<<tunnel-boundaries-table>> 列出了被允许作为隧道模块中定义的空间类的主题表面边界的表面。实施规范应仅支持 <<tunnel-boundaries-table>>中描述的边界。
 ====

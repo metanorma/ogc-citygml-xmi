@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+本模块的实施还受到以下空间边界要求的进一步限制：
 
 [[req_transportation_boundaries]]
 [requirement,type="general",label="/req/transportation/boundaries"]
 ====
-<<transportation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Transportation module. An Implementation Specification SHALL only support the boundaries described in <<transportation-boundaries-table>>
+<<transportation-boundaries-table>>  列出了被允许作为交通模块中定义的空间类的主题表面边界的表面。实施规范应仅支持<<transportation-boundaries-table>>中描述的边界。
 ====

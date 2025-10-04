@@ -1,15 +1,15 @@
-The Versioning module defines the concepts that enable representing multiple versions of a city model. A specific version represents a defined state of a city model consisting of the dedicated versions of all city object instances that belong to the respective city model version. Each version can be complemented by version transitions that describe the change of the state of a city model from one version to another and that give the reason for the change and the modifications applied.
+版本控制模块定义了能够表示城市模型多个版本的概念。一个特定版本代表了城市模型的一个定义状态，由属于相应城市模型版本的所有城市对象实例的特定版本组成。每个版本可以通过版本转换进行补充，版本转换描述了城市模型从一个版本到另一个版本的状态变化，并给出了变化的原因和所应用的修改。
 
-By using the Versioning module, slow changes over a long time period with respect to cities and city models can be represented. This includes the creation and termination of objects (e.g., construction or demolition of sites, planting of trees, construction of new roads), structural changes of objects (e.g., extension of buildings), and changes in the status of an object (e.g., change of building owner, change of the traffic direction of a road to a one-way street). In this way, the history or evolution of cities and city models can be modeled, parallel or alternative versions of cities and city models can be managed, and changes of geometries and thematic properties of individual city objects over time can be tracked.
+通过使用版本控制模块，可以表示城市和城市模型在长时间内的缓慢变化。这包括对象的创建和终止（例如，场地的建设或拆除、树木的种植、新道路的建设）、对象的结构变化（例如，建筑物的扩建）以及对象状态的变化（例如，建筑物所有者的变更、道路交通方向变为单行道）。通过这种方式，可以对城市和城市模型的历史或演变进行建模，管理城市和城市模型的并行或替代版本，并跟踪单个城市对象的几何形状和主题属性随时间的变化。
 
-The UML diagram of the Versioning module is depicted in <<versioning-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-versioning-section[OGC CityGML 3.0 Users Guide].
+版本控制模块的 UML 图 如 <<versioning-uml>>. 关于这个需求类的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-versioning-section[OGC CityGML 3.0 Users Guide]中找到。
 
 [[versioning-uml]]
-.UML diagram of the Versioning Model.
+.版本控制模型的 UML 图
 image::figures/Versioning.png[]
 
-The ADE data types provided for the Versioning module are illustrated in <<versioning-uml-ade-types>>.
+为版本控制模块提供的 ADE 数据类型如 <<versioning-uml-ade-types>>所示。
 
 [[versioning-uml-ade-types]]
-.ADE classes of the CityGML Versioning module.
+.CityGML 版本控制模块的 ADE 类
 image::figures/Versioning-ADE_Datatypes.png[]

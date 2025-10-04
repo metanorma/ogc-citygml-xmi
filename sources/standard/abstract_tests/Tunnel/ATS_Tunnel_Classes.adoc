@@ -1,51 +1,55 @@
 [[ats_tunnel_classes]]
-[abstract_test,label="/ats/tunnel/classes",subject='<<req_tunnel_classes,/req/tunnel/classes>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/tunnel/classes
+主体:: <<req_tunnel_classes,/req/tunnel/classes>>
+
+[.component,class=测试目的]
 --
-To validate that the Implementation Specification correctly implements the UML Classes defined in the Conceptual Model.
+验证实现规范是否正确实现了概念模型中定义的UML类。
 --
 
-[.component,class=test method type]
+[.component,class=测试方法类型]
 --
-Manual Inspection
+人工检查
 --
 
-[.component,class=test method]
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-For each UML class defined or referenced in the Tunnel Package:
+对于隧道包中定义或引用的每个UML类：
 
 [.component,class=step]
 --
-Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=step]
---
-Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.
+验证实现规范是否包含一个数据元素，该元素表示与UML类定义的概念相同的概念。
 --
 
 [.component,class=step]
 --
-Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.
+验证该数据元素与其他元素之间的关系是否与UML类定义的关系相同。验证这些关系是否具有与概念模型中记录的相同的源、目标、方向、角色和多重性。
 --
 
 [.component,class=step]
 --
-Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model
+验证该数据元素是否具有与UML类指定的相同属性（属性）。验证这些属性是否具有与概念模型中记录的相同的名称、定义、类型和多重性。
 --
 
 [.component,class=step]
 --
-Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model
+验证该数据元素的属性是否包括概念模型中记录的UML类的所有基类的属性。验证这些属性是否具有与概念模型中记录的相同的名称、定义、类型和多重性。
 --
 
 [.component,class=step]
 --
-Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model
+验证该数据元素所表示的关联是否包括概念模型中记录的UML类的所有基类的关联。验证这些表示是否具有与概念模型中记录的相同的源、目标、角色和多重性。
+--
+
+[.component,class=step]
+--
+验证实现规范是否强制执行概念模型对UML类施加的所有约束。
 --
 ======
 =====

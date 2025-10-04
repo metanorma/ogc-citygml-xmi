@@ -1,4 +1,4 @@
-=== Conformance Class Building
+=== 一致性认证：建筑物类
 
 include::Building/ATS_Building_Classes.adoc[]
 

@@ -1,4 +1,4 @@
-=== Conformance Class Bridge
+=== 一致性认证：桥梁类
 
 include::Bridge/ATS_Bridge_Classes.adoc[]
 

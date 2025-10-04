@@ -1,37 +1,37 @@
-The following requirement defines the rules governing implementation of the CityGML Dynamizer Module as an Implementation Specification.
+以下需求定义了将 CityGML 动态化器模块作为实施规范进行实施的规则。
 
 [[req_dynamizer_classes]]
 [requirement,type="general",label="/req/dynamizer/classes"]
 ====
-For each UML class defined or referenced in the Dynamizer Package:
+对于在动态化器包中定义或引用的每个 UML 类：
 
 [.component,class=part]
 --
-The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=part]
---
-The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
+实施规范应包含一个元素，其表示的概念与为 UML 类定义的概念相同。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and multiplicity.
+实施规范应以与 UML 类相同的源、目标、方向、角色和多重性来表示关联。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the attributes of all superclasses of the UML class including the name, definition, type, and multiplicity.
+实施规范应表示 UML 类的属性，包括名称、定义、类型和多重性。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the associations of all superclasses of the UML class including the source, target, direction, roles, and multiplicity.
+实施规范应表示 UML 类所有基类的属性，包括名称、定义、类型和多重性。
 --
 
 [.component,class=part]
 --
-The Implementation Specification SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
+实施规范应表示 UML 类所有基类的关联，包括源、目标、方向、角色和多重性。
+--
+
+[.component,class=part]
+--
+实施规范应指定实现如何遵守概念模型对 UML 类施加的所有约束。
 --
 ====

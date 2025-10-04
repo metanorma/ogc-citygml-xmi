@@ -1,4 +1,4 @@
-=== Conformance Class Transportation
+=== 一致性认证：交通类
 
 include::Transportation/ATS_Transportation_Classes.adoc[]
 

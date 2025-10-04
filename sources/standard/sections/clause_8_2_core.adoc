@@ -1,14 +1,14 @@
-The CityGML Core module defines the basic concepts and components of city models. This rather large body of work is divided into seven sections. These sections build on each other from the fundamental principles specified by the relevant ISO standards up to the full CityGML model. These sections are summarized in <<citygml-core-table>>.
+CityGML 核心模块定义了城市模型的基本概念和组件。这项相当庞大的工作分为七个部分。这些部分相互依存，从相关 ISO 标准规定的基本原则逐步构建到完整的 CityGML 模型。这些部分总结在<<citygml-core-table>>.
 
 [[citygml-core-table]]
-.CityGML Core Sections
+.CityGML 核心部分
 [cols="2.^,6.^"]
 |===
-|The Use of ISO Standards (<<ISO-dependencies-section>>) |Describes the use of the ISO 19100 series of International Standards to provide a foundation to the CityGML model.
-|City Models and City Objects (<<city-objects-section>>)|Defines the basic building blocks of the CityGML model.
-|Space Concept (<<space-concepts-section>>)|Defines the concepts of space as used in the CityGML model.
-|Geometry and LOD (<<geometry-lod-section>>)|Defines the geometry and Levels Of Detail concepts.
-|CityGML Core Model (<<CityGML-section>>)|Presents the complete Core model.
-|Data types, Enumerations, and Code lists (<<b-e-c-section>>) |Defines the little things which make this model work.
+| (<<ISO-dependencies-section>>)中 ISO 标准的使用 |描述了使用 ISO 19100 系列国际标准为 CityGML 模型提供基础。
+|(<<city-objects-section>>)中城市模型和城市对象|定义了 CityGML 模型的基本构建块。
+|(<<space-concepts-section>>)中空间概念|定义了 CityGML 模型中使用的空间概念。
+|(<<geometry-lod-section>>)中几何和细节层次|定义了几何和细节层次（LOD）概念。
+|(<<CityGML-section>>)中 CityGML 核心模型|展示了完整的核心模型。
+|(<<b-e-c-section>>)中数据类型、枚举和代码列表 |定义了使该模型正常工作的一些细节内容。
 |===
 

@@ -1,30 +1,31 @@
-The Tunnel module provides the representation of thematic and spatial aspects of tunnels. Tunnels are horizontal or sloping enclosed passage ways of a certain length, mainly underground or underwater. Tunnels are intended for passing obstacles such as mountains, waterways, or other traffic routes by humans, animals, or things.
+隧道模块提供了隧道主题和空间方面的表示。隧道是具有一定长度的水平或倾斜封闭通道，主要位于地下或水下。隧道旨在供人类、动物或物品穿越诸如山脉、水道或其他交通路线等障碍物。
 
-Tunnels are represented in the UML model by the top-level feature type _Tunnel_, which is the main class of the Tunnel module. Tunnels can physically or functionally be subdivided into tunnel parts. In addition, tunnels can be decomposed into structural elements, such as walls, slabs, staircases, and beams.
+在 UML 模型中，隧道由顶级要素类型 _Tunnel_ 表示，它是隧道模块的主要类。隧道可以在物理上或功能上细分为隧道部分。此外，隧道可以分解为结构元素，如墙壁、楼板、楼梯和梁。
 
-The interior of tunnels is represented by hollow spaces. This allows a virtual accessibility of tunnels such as for driving through a tunnel, for simulating disaster management, or for presenting the light illumination within a tunnel.
+隧道的内部由空心空间表示。这使得隧道具有虚拟可访问性，例如用于模拟驾车穿过隧道、模拟灾害管理或展示隧道内的光照情况。
 
-Tunnels can contain installations and furniture. Installations are permanent parts of a tunnel that strongly affect the outer or inner appearance of the tunnel and that cannot be moved. Examples are stairs, railings, radiators, or pipes. In contrast, furniture represents moveable objects inside a tunnel, like movable equipment in control areas.
 
-Tunnels can be bounded by different types of surfaces. In this way, the outer structure of tunnels can be differentiated semantically into wall surfaces, roof surfaces, ground surfaces, outer floor surfaces, and outer ceiling surfaces, whereas the visible surface of hollow spaces can be structured into interior wall surfaces, floor surfaces, and ceiling surfaces. Furthermore, the openings of tunnels, i.e., windows and doors, can be represented including their corresponding surfaces.
+隧道可以包含设施和家具。设施是隧道的永久部分，对隧道的外部或内部外观有很大影响且无法移动。例如楼梯、栏杆、散热器或管道。相比之下，家具代表隧道内可移动的物体，如控制区域内的可移动设备。
 
-The UML diagram of the Tunnel module is depicted in <<tunnel-uml>>. The Tunnel module inherits concepts from the Construction module (cf. lutaml_table::[package="Construction"]). The Construction module defines objects that are common to all types of construction, such as the different surface types and the openings. A detailed discussion of the Requirements Class Tunnel can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-tunnel-section[CityGML 3.0 Users Guide].
+
+隧道可以由不同类型的表面界定。通过这种方式，隧道的外部结构在语义上可以细分为墙壁表面、屋顶表面、地面表面、外部楼板表面和外部天花板表面，而空心空间的可见表面可以细分为内部墙壁表面、楼板表面和天花板表面。此外，隧道的开口，即窗户和门，可以连同它们相应的表面一起表示。
+
+隧道模块的 UML 图如<<tunnel-uml>>所示。隧道模块继承了建筑模块的概念 (cf. lutaml_table::[package="Construction"])。建筑模块定义了所有类型建筑共有的对象，如不同的表面类型和开口。关于需求类隧道的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-tunnel-section[CityGML 3.0 Users Guide]中找到。
 
 [[tunnel-uml]]
-.UML diagram of the Tunnel Model.
-
+.隧道模型的 UML 图
 image::figures/Tunnel.png[]
 
-The ADE data types provided for the Tunnel module are illustrated in <<tunnel-uml-ade-types>>.
+为隧道模块提供的 ADE 数据类型如<<tunnel-uml-ade-types>>所示。
 
 [[tunnel-uml-ade-types]]
-.ADE classes of the CityGML Tunnel module.
+.CityGML 隧道模块的 ADE 类
 image::figures/Tunnel-ADE_Datatypes.png[]
 
-The Code Lists provided for the Tunnel module are illustrated in <<tunnel-uml-codelists>>.
+为隧道模块提供的代码列表如 <<tunnel-uml-codelists>>.
 
 [[tunnel-uml-codelists]]
-.Codelists from the CityGML Tunnel module.
+.CityGML 隧道模块的代码列表
 image::figures/Tunnel-Codelists.png[]
 
-<<tunnel-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Tunnel module:
+<<tunnel-boundaries-table>> 列出了被允许作为隧道模块中定义的空间类的主题表面边界的表面：

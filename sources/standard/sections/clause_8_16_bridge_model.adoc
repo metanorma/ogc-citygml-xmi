@@ -1,27 +1,25 @@
-The Bridge module provides the representation of thematic and spatial aspects of bridges. Bridges are movable or unmovable structures that span intervening natural or built elements. In this way, bridges allow the passage of pedestrians, animals, vehicles, and service(s) above obstacles or between two points at a height above ground.
-Bridges are represented in the UML model by the top-level feature type _Bridge_, which is the main class of the Bridge module. Bridges can physically or functionally be subdivided into bridge parts. In addition, bridges can be decomposed into structural elements, such as pylons, anchorages, cables, slabs, and beams.
+桥梁模块提供了对桥梁主题和空间方面的表示。桥梁是跨越中间自然或人造元素的可移动或不可移动结构。通过这种方式，桥梁允许行人、动物、车辆和服务在障碍物上方或高于地面的两点之间通过。在 UML 模型中，桥梁由顶级要素类型 _Bridge_ 表示，它是桥梁模块的主要类。
+桥梁可以在物理上或功能上细分为桥梁部分。此外，桥梁可以分解为结构元素，如桥墩、锚碇、缆索、板和梁。
 
-The free space inside bridges is represented by rooms, which allows a virtual accessibility of bridges.
-Bridges can contain installations and furniture. Installations are permanent parts of a bridge that strongly affect the outer or inner appearance of the bridge and that cannot be moved. Examples are stairways, signals, railings, and lamps. Furniture, in contrast, represent moveable objects of a bridge, like signs, art works, and benches.
-Bridges can be bounded by different types of surfaces. In this way, the outer structure of bridges can be differentiated semantically into wall surfaces, roof surfaces, ground surfaces, outer floor surfaces, and outer ceiling surfaces, whereas the visible surface of rooms can be structured into interior wall surfaces, floor surfaces, and ceiling surfaces. Furthermore, the openings of bridges, i.e., windows and doors, can be represented including their corresponding surfaces.
 
-The UML diagram of the Bridge module is depicted in <<bridge-uml>>. The Bridge module inherits concepts from the Construction module (cf. lutaml_table::[package="Construction"]). The Construction module defines objects that are common to all types of construction, such as the different surface types and the openings. A detailed discussion of Requirements Class Bridge can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-bridge-section[CityGML 3.0 Users Guide].
+桥梁内部的自由空间由房间表示，这使得可以对桥梁进行虚拟访问。桥梁可以包含设施和家具。设施是桥梁的永久部分，对桥梁的外部或内部外观有很大影响且无法移动。例如楼梯、信号灯、栏杆和灯具。相比之下，家具代表桥梁的可移动物体，如标志、艺术品和长椅。桥梁可以由不同类型的表面界定。通过这种方式，桥梁的外部结构在语义上可以细分为墙面、屋顶面、地面、外部楼面和外部天花板面，而房间的可见表面可以细分为内部墙面、楼面和天花板面。此外，桥梁的开口，即窗户和门，可以连同其相应的表面一起表示。
+
+桥梁模块的 UML 图如 <<bridge-uml>>所示。桥梁模块继承自建筑模块的概念 (cf. lutaml_table::[package="Construction"]). 建筑模块定义了所有类型建筑共有的对象，如不同的表面类型和开口。关于需求类桥梁的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-bridge-section[CityGML 3.0 Users Guide]中找到。
 
 [[bridge-uml]]
-.UML diagram of the Bridge Model.
-
+.桥梁模型的 UML 图
 image::figures/Bridge.png[]
 
-The ADE data types provided for the Bridge module are illustrated in <<bridge-uml-ade-types>>.
+为桥梁模块提供的 ADE 数据类型如<<bridge-uml-ade-types>>所示。
 
 [[bridge-uml-ade-types]]
-.ADE classes of the CityGML Bridge module.
+.CityGML 桥梁模块的 ADE 类
 image::figures/Bridge-ADE_Datatypes.png[]
 
-The Code Lists provided for the Bridge module are illustrated in <<bridge-uml-codelists>>.
+为桥梁模块提供的代码列表如 <<bridge-uml-codelists>>所示。
 
 [[bridge-uml-codelists]]
-.Codelists from the CityGML Bridge module.
+.桥梁模块的代码列表
 image::figures/Bridge-Codelists.png[]
 
-<<bridge-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Bridge module:
+<<bridge-boundaries-table>> 列出了桥梁模块中定义的空间类允许的主题表面边界：

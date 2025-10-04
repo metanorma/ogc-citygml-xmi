@@ -1,20 +1,20 @@
 [[req_ade_properties]]
 [requirement,type="general",label="/req/ade/properties"]
 ====
-Every Feature Type includes an extension property (hook) of type “ADEOf<FeatureTypeName>” where <FeatureTypeName> is the name of that Feature Type. To add an extension property to a Feature Type:
+每个要素类型都包括一个扩展属性（钩子），其类型为 “ADEOf<FeatureTypeName>”，其中 <FeatureTypeName> 是该要素类型的名称。为了向要素类型添加扩展属性：
 
 [.component,class=part]
 --
-The ADE SHALL create a subclass of the abstract data type associated with the hook. 
---
-
-[.component,class=part]
---
-This subclass SHALL be defined as a data type using the stereotype _&#171;DataType&#187;_. 
+ADE **必须**创建与钩子关联的抽象数据类型的子类。
 --
 
 [.component,class=part]
 --
-Application-specific attributes and associations SHALL be modeled as properties of the ADE subclass.
+该子类**必须**使用 _&#171;DataType&#187;_ 构造型定义为数据类型。
+--
+
+[.component,class=part]
+--
+应用特定的属性和关联**必须**作为 ADE 子类的属性建模。
 --
 ====

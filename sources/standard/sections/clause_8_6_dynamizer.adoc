@@ -1,40 +1,33 @@
-The Dynamizer module provides the concepts that enable representation of time-varying data for city object properties as well as for integrating sensors with 3D city models. Dynamizers are objects that inject timeseries data for an individual attribute of the city object in which the Dynamizer is included. In order to represent dynamic (time-dependent) variations of its value, the timeseries data overrides the static value of the referenced city object attribute.
+动态化器模块提供了一些概念，使得能够表示城市对象属性的时变数据，以及将传感器与 3D 城市模型集成。动态化器是一种对象，它为其所包含的城市对象的单个属性注入时间序列数据。为了表示其值的动态（随时间变化）变化，时间序列数据将覆盖所引用的城市对象属性的静态值。
 
-The dynamic values may be given by retrieving observation results directly from
-external sensor/{{Internet of Things,IoT}} services using a sensor connection
-(e.g., OGC SensorThings API, Sensor Observation Service, or other sensor data
-platforms including MQTT [<<MQTT2019>>]). Alternatively, the dynamic values may
-be provided as atomic timeseries that represent time-varying data of a specific
-data type for a single contiguous time interval.
-The data can be provided in:
+动态值可以通过使用传感器连接（例如，OGC SensorThings API、传感器观测服务或包括 MQTT [OASIS MQTT] 在内的其他传感器数据平台）直接从外部传感器物联网服务检索观测结果来获得。或者，动态值可以作为原子时间序列提供，该原子时间序列表示单个连续时间间隔内特定数据类型的时变数据。数据可以以下列方式提供：
 
-* external tabulated files, such as CSV or Excel sheets,
-* external files that format timeseries data according to the OGC TimeseriesML Standard or the OGC Observations & Measurements standards, or
-* inline as embedded time-value-pairs.
+* 外部表格文件，如 CSV 或 Excel 表格
+* 根据 OGC TimeseriesML 标准或 OGC 观测与测量标准格式化时间序列数据的外部文件
+* 内联作为嵌入的时间 - 值对
 
-Furthermore, timeseries data can also be aggregated to form composite timeseries with non-overlapping time intervals.
+此外，时间序列数据还可以聚合形成具有不重叠时间间隔的复合时间序列。
 
-By using the Dynamizer module, fast changes over a short or longer time period with respect to cities and city models can be represented. This includes:
+通过使用动态化器模块，可以表示城市和城市模型在短时间或长时间内的快速变化。这包括：
 
-* variations of spatial properties such as change of a feature's geometry, both in respect to shape and to location (e.g., moving objects),
-* variations of thematic attributes such as changes of physical quantities like energy demands, temperatures, solar irradiation, traffic density, pollution concentration, or overpressure on building walls, and
-* variations with respect to sensor or real-time data resulting from simulations or measurements.
+* 空间属性的变化，例如要素几何形状在形状和位置方面的变化（例如，移动对象）。
+* 专题属性的变化，例如物理量的变化，如能源需求、温度、太阳辐射、交通密度、污染浓度或建筑物墙壁上的超压
+* 与传感器或来自模拟或测量的实时数据相关的变化。
 
-The UML diagram of the Dynamizer module is depicted in <<dynamizer-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-dynamizer-section[CityGML 3.0 Users Guide].
+动态化器模块的 UML 图如 <<dynamizer-uml>>所示。关于此需求类的详细讨论可以在link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-dynamizer-section[CityGML 3.0 Users Guide]中找到。
 
 [[dynamizer-uml]]
-.UML diagram of the Dynamizer Model.
-
+.动态化器模型的 UML 图
 image::figures/Dynamizer.png[]
 
-The ADE data types provided for the Dynamizer module are illustrated in <<dynamizer-uml-ade-types>>.
+为动态化器模块提供的 ADE 数据类型如 <<dynamizer-uml-ade-types>>所示。
 
 [[dynamizer-uml-ade-types]]
-.ADE classes of the CityGML Dynamizer module.
+.CityGML 动态化器模块的 ADE 类
 image::figures/Dynamizer-ADE_Datatypes.png[]
 
-The Code Lists provided for the Dynamizer module are illustrated in <<dynamizer-uml-codelists>>.
+动态化器模块提供的代码列表如<<dynamizer-uml-codelists>>所示。
 
 [[dynamizer-uml-codelists]]
-.Codelists from the CityGML Dynamizer module.
+.CityGML 动态化器模块的代码列表
 image::figures/Dynamizer-Codelists.png[]

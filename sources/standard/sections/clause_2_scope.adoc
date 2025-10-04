@@ -1,87 +1,73 @@
 == Scope
 
-This Standard documents an OGC Conceptual Model (CM) Standard for specifying the
-representation of virtual 3D city and landscape models. The CityGML 3.0
-Conceptual Model is a
-{{Platform Independent Model, Platform Independent Model (PIM)}}.
-It defines concepts in a manner which is independent of any implementing
-technology. As such, the CityGML CM cannot be implemented directly. Rather, it
-serves as the base for
-{{Platform Specific Model,Platform Specific Models (PSM)}}.
-A PSM adds to the PIM the technology-specific details needed to fully define the
-CityGML model for use with a specific technology. The PSM can then be used to
-generate the schema and other artifacts needed to build CityGML 3.0
-implementations.
+本标准记录了一个用于表示虚拟三维城市和景观模型的OGC概念模型（Conceptual Model, CM）标准。CityGML 3.0概念模型是一个平台无关模型（Platform Independent Model, PIM），其相关概念的定义方式与任何实现技术无关。
+因此，CityGML概念模型本身不能直接被实现，而是作为平台相关模型（Platform Specific Models, PSM）的基础。
+PSM在PIM的基础上，补充了针对特定技术的详细信息，从而完整定义了可供特定技术使用的CityGML模型。
+PSM可用于生成构建CityGML 3.0实现所需的模式（schema）及其他相关技术文件（artifacts）。
 
-This Standard does not define the PSMs nor schemas for CityGML 3.0. Future
-CityGML 3.0
-{{Implementation Specification,Implementation Specifications (IS)}}
-will be developed to address this need. At a minimum, support for a Geography
-Markup Language (GML) Implementation Specification is expected. Additional
-Implementation Specifications for JSON and database schemas are also highly
-desirable.
+本标准并未定义CityGML 3.0的PSMs或schema。为此，未来将制定CityGML 3.0的实施规范（Implementation Specifications, IS） 。预计
+至少提供对地理标记语言（Geography Markup Language, GML）实施规范的支持，也希望能够提供针对JSON和数据库schema的实施规范。
 
-A discussion of current and planned efforts to build Implementation
-Specifications for the CityGML Conceptual Model can be found in the
-link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-citygml-encodings-section[CityGML 3.0 Users Guide].
+关于为CityGML概念模型构建实施规范的相关工作与规划，可以在以下链接中找到: http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-citygml-encodings-section[CityGML 3.0 Users Guide].
 
-The target of the conformance classes specified in this document are:
+本文件中规定的一致性类别的目的是：
 
-* CityGML Implementation Specifications that provide encodings for the UML conceptual model specified in this document, and
-* Additional UML models that can be created by users to extend this conceptual model as Application Domain Extensions (ADEs).
+* 提供本文件中指定的UML概念模型编码的CityGML实施规范；
+* 用户可以创建的附加UML模型，用于扩展此概念模型作为应用领域扩展（Application Domain Extensions, ADEs）。
 
-CityGML models are comprised of georeferenced 3D vector data along with the semantics associated with the data. In contrast to other 3D vector formats, CityGML is based on a rich, general purpose information model in addition to geometry and appearance information that allows for the integration of a variety of source data to come together in a City Model. To enable the use of CityGML in specific domain areas, CityGML has historically provided an extension mechanism to enrich the data with identifiable features and properties, preserving semantic interoperability. Recognizing that an implementable expansion mechanism might have dependencies based on the encoding language, the CityGML 3.0 Conceptual Model specifies high level requirements rather than a full extension model.
+CityGML模型由带有地理参考的三维矢量数据（georeferenced 3D vector data）及与之关联的语义信息组成。与其他三维矢量格式不同，
+CityGML不仅包含几何和外观信息，还基于一个通用信息模型，使得各种源数据能够汇聚到同一个城市模型中。
+为了在特定领域中应用CityGML，CityGML历来提供一种扩展机制，用以通过可识别的要素和属性丰富数据，从而保持语义互操作性。
+鉴于可实现的扩展机制可能会依赖具体的编码语言，CityGML 3.0概念模型仅规定了高层级的要求，而未出台完整的扩展模型。
 
-Targeted application areas explicitly include:
+明确可应用的领域包括：
 
-* Urban and landscape planning;
-* Architectural design;
-* Tourist and leisure activities;
-* Environmental, energy and mobility simulations;
-* Mobile telecommunications;
-* Disaster management;
-* Homeland security;
-* Vehicle and pedestrian navigation; and
-* Training simulators and mobile robotics.
+* 城市与景观规划；
+* 建筑设计；
+* 旅游与休闲活动；
+* 环境、能源与交通模拟；
+* 移动通信；
+* 灾害管理；
+* 国土安全；
+* 车辆与行人导航；以及
+* 培训模拟器和移动机器人。
 
-The future CityGML 3.0 Implementation Specifications will be implementable
-source formats for 3D portraying or transformation into dedicated portrayal
-formats such as the
-OGC I3S (<<i3s_citation>>) or the
-OGC 3D Tiles Community Standards (<<three-dtiles_citation>>),
-OGC KML (<<kml_citation>>),
-<<collada>> or
-<<gltf_citation>>.
-The
-OGC 3D Portrayal Service (3DPS) (<<three-dps_citation>>)
-may be used for content delivery.
+未来的 CityGML 3.0实施规范将作为三维展示的可实现源格式，也可用于转换为专用的展示格式，例如：
+OGC I3S (<<i3s_citation>>)、
+OGC 3D Tiles 社区标准(<<three-dtiles_citation>>)、
+OGC KML (<<kml_citation>>)、
+<<collada>>、
+<<gltf_citation>>。
+OGC 三维展示服务（OGC 3D Portrayal Service, 3DPS, <<three-dps_citation>>）可用于内容交付。
 
-Features of the CityGML 3.0 Conceptual Model include the following.
+CityGML 3.0概念模型的主要特性包括以下几点：
 
-* Geospatial Information Model (ontology) for urban landscapes based on the ISO 19100 family.
-* Representation of 3D geometries, based on the ISO 19107 model, independent of data encodings, as well as of 3D point clouds.
-* Grouping into space hierarchies, including concepts like stories/floors within buildings.
-* Representation of object surface characteristics (e.g., textures, materials).
-* Representation of dynamic, i.e., time-dependent, properties of city models.
-* Taxonomies and aggregations including:
-** Digital Terrain Models as a combination of triangulated irregular networks (TINs), regular grids, break and skeleton lines, mass points;
-** Sites (currently buildings, other constructions, bridges, and tunnels);
-** Vegetation (areas, volumes, and solitary objects with vegetation classification);
-** Water bodies (volumes, surfaces);
-** Transportation facilities (graph structures, 3D space, and 3D surface data);
-** Land use (representation of areas of the earth's surface dedicated to a specific land use);
-** City furniture;
-** Generic city objects and attributes; and
-** User-definable (recursive) grouping.
-* Multiscale model with 4 well-defined consecutive Levels of Detail (LOD), applicable to both interior and exterior:
-** LOD0 – Highly generalized model;
-** LOD1 – Block model / extrusion objects;
-** LOD2 – Realistic, but still generalized model; and
-** LOD3 – Highly detailed model.
-* Multiple representations in different LODs simultaneously and generalization relations between objects in different LODs.
-* Ability to combine different interior and exterior LODs, including representation of floor plans.
-* Optional topological connections between feature (sub)geometries.
-* Enables a variety of different encoding specifications, including GML and JSON.
-* Extension of the conceptual model through code lists, generic objects and Application Domain Extensions (ADEs).
-* With CityGML 3.0, ADEs become platform-independent models on a conceptual level that can be mapped to multiple and different target encodings. ADEs are implemented as UML models that extend the conceptual model in this Standard. This includes a mechanism that favors the insertion of additional feature properties into any defined feature class through 'hooks' over subtyping of features. This means that the existing feature classes can be used and additional properties from one or more ADEs can easily be supported in different encodings.
-* Ability to specify an ADE that can be further extended.
+* 基于ISO 19100系列的城市景观地理空间信息模型（本体）。
+* 基于ISO 19107模型的三维几何表示，独立的数据编码和三维点云。
+* 按空间层次进行分组，包括建筑物内部的楼层/层级等概念。
+* 可表示对象表面要素（例如纹理、材料）。
+* 可表示城市模型的动态（即时间相关）属性。
+* 包含以下分类（taxonomies）和聚合（aggregations）：
+** 由三角不规则网格（TINs）、规则网格、断裂线和骨架线、质量点组合而成的数字地形模型；
+** 站点（目前包括建筑物、其他建筑、桥梁和隧道）；
+** 植被（体状、面状、孤立植被）；
+** 水体（体状、面状）；
+** 交通设施（图形结构、三维空间和三维表面数据）；
+** 土地利用（表示专门用于特定土地利用的地表区域）；
+** 城市家具；
+** 泛型城市对象和属性；
+** 用户可定义（递归）分组。
+* 具有4个明确定义的连续细节层级（Levels of Detail, LOD）的多尺度模型，适用于室内和室外：
+** LOD0 – 高度概括的模型；
+** LOD1 – 块状模型/挤出对象；
+** LOD2 – 真实感的，但仍然是概括的模型；
+** LOD3 – 高度详细的模型。
+* 同时在不同LODs中有多个表示，并且不同LODs之间的对象具有概括关系。
+* 能够组合不同的室内和室外LODs，包括表示楼层平面图。
+* 可选的拓扑连接，连接要素（子）几何体。
+* 支持多种不同的编码规范，包括GML和JSON。
+* 通过代码列表（codelist）、泛型对象和应用领域扩展（ADEs）扩展概念模型。
+* 在CityGML 3.0中，ADEs成为平台无关的概念级模型，可以映射到多个不同的目标编码。ADEs作为UML模型实现，扩展了本标准中的概念模型。这包括一个机制，
+支持通过“钩子”而不是要素的子类型，将额外的要素属性插入到任何定义的要素类中。这意味着现有的要素类可以被使用，并且来自一个或多个ADE的附加属性可以在不同编码中轻松支持。
+* 能够提出可进一步扩展的ADE。
+

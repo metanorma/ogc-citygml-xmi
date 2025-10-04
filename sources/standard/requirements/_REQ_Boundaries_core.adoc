@@ -1,7 +1,7 @@
-Surface boundaries are constrained by the following requirement:
+表面边界受到以下要求的约束：
 
 [[req_core_boundaries]]
 [requirement,type="general",label="/req/core/boundaries"]
 ====
-<<core-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Core module. An Implementation Specification SHALL only support the boundaries described in <<core-boundaries-table>>
+<<core-boundaries-table>> 列出了被允许作为核心模块中定义的空间类的主题表面边界的表面。实施规范应仅支持<<core-boundaries-table>>中描述的边界。
 ====

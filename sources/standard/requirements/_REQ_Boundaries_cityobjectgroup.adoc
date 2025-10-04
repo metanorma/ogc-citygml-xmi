@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+此模块的实施还受到以下空间边界需求的限制：
 
 [[req_cityobjectgroup_boundaries]]
 [requirement,type="general",label="/req/cityobjectgroup/boundaries"]
 ====
-<<cityobjectgroup-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityObjectGroup module. An Implementation Specification SHALL only support the boundaries described in <<cityobjectgroup-boundaries-table>>
+<<cityobjectgroup-boundaries-table>>  列出了允许作为城市对象组模块中定义的空间类的专题表面边界的表面。 实施规范应仅支持<<cityobjectgroup-boundaries-table>>中描述的边界。
 ====

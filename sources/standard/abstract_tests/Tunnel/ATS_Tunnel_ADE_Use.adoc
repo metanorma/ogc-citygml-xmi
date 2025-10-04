@@ -1,26 +1,30 @@
 [[ats_tunnel_ade_use]]
-[abstract_test,label="/ats/tunnel/ade/use",subject='<<req_tunnel_ade_use,/req/tunnel/ade_use>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/tunnel/ade/use
+主体:: <<req_tunnel_ade_use,/req/tunnel/ade_use>>
+
+[.component,class=测试目的]
 --
-To validate that Application Data Extensions are not used unless conformance with the ADE Requirements Class can be demonstrated.
+验证除非能够证明符合ADE需求类别，否则不使用应用程序数据扩展。
 --
 
-[.component,class=test method type]
+[.component,class=测试方法类型]
 --
-Manual Inspection
+人工检查
 --
 
-[.component,class=test method]
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-If any ADE classes or properties are included in the Tunnel Package:
+如果隧道包中包含任何ADE类或属性：
 
 [.component,class=step]
 --
-Validate that the Implementation Specification conforms with the ADE Requirements Class.
+验证实现规范是否符合ADE需求类别。
 --
 ======
 =====

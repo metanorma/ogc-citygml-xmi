@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+此模块的实施还受到以下空间边界需求的限制：
 
 [[req_cityfurniture_boundaries]]
 [requirement,type="general",label="/req/cityfurniture/boundaries"]
 ====
-<<cityfurniture-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityFurniture module. An Implementation Specification SHALL only support the boundaries described in <<cityfurniture-boundaries-table>>
+<<cityfurniture-boundaries-table>> 列出了城市家具模块中定义的空间类允许作为主题表面边界的表面。 实施规范应仅支持 <<cityfurniture-boundaries-table>>中描述的边界。
 ====

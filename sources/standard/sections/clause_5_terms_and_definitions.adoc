@@ -1,156 +1,138 @@
 
-== Terms, definitions, symbols and abbreviated terms
+== 术语、定义、符号和缩略语
 
-=== Terms and definitions
+=== 术语和定义
 
-==== 2D data
+==== 二维数据（2D data）
 
-geometry of features is represented in a two-dimensional space
+要素的几何二维空间中被表达
 
-NOTE: In other words, the geometry of 2D data is given using (X,Y) coordinates.
+NOTE: 换句话说，二维数据的几何形状是通过（X, Y）坐标给出的。
 
-[.source]
-<<inspirebu,locality:definition=1>>
+*来源*: INSPIRE: D2.8.III.2
 
-==== 2.5D data
+==== 2.5维数据（2.5D data）
 
-geometry of features is represented in a three-dimensional space with the constraint that, for each (X,Y) position, there is only one Z
+要素的几何在三维空间中被表达，前提是对于每个（X，Y）位置，只有一个Z值。
 
-[.source]
-<<inspirebu,locality:definition=2>>
+*来源*: INSPIRE: D2.8.III.2
 
-==== 3D data
+==== 三维数据（3D data）
 
-Geometry of features is represented in a three-dimensional space.
+要素的几何三维空间中被表达
 
-[.source]
-<<inspirebu,locality:definition=3>>
+*来源*: INSPIRE: D2.8.III.2
 
-==== application schema
+==== 应用模式
 
-A set of {{conceptual schema}} for data required by one or more applications. An application schema contains selected parts of the base schemas presented in the ORM Information Viewpoint. Designers of application schemas may extend or restrict the types defined in the base schemas to define appropriate types for an application domain. Application schemas are information models for a specific information community.
+一组针对一个或多个应用程序所需数据的概念模式。一个应用模式包含了基于ORM信息视角（ORM Information Viewpoint）呈现的基础模式的选定部分。
+应用模式的设计者可以通过扩展或限制基础模式中定义的类型，来为特定的应用领域定义适当的数据类型。因此，应用模式是为特定信息社区设计的信息模型，旨在满足该社区的数据结构需求。
 
-[.source]
-<<OGCDR,locality:URI="http://www.opengis.net/def/glossary/term/ApplicationSchema">>
+*来源*: OGC Definitions Register, URI：http://www.opengis.net/def/glossary/term/ApplicationSchema
 
 [[codelist-definition]]
-==== codelist
+==== 代码列表（codelist）
 
-A value domain including a code for each permissible value.
+一个值域，包括每个允许值的代码。
 
-==== conceptual model
+==== 概念模型（conceptual model）
 
-model that defines concepts of a universe of discourse
+定义基础概念的模型
 
-[.source]
-<<iso19101-1,clause=4.1.5>>
+*来源*: ISO 19101-1:2014, Clause 4.1.5
 
-==== conceptual schema
+==== 概念模式（conceptual schema）
 
-[.definition]
---
-formal description of a {{conceptual model}}
+a.一个概念模型的形式化描述
 
-[.source]
-<<iso19101-1,clause=4.1.6>>
---
+*来源*: ISO 19101-1:2014, Clause 4.1.6
 
-[.definition]
---
-base schema. Formal description of the model of any geospatial information. term:[application schema,Application schemas] are built from conceptual schemas.
+b.基础模式（base schema）：对任何地理空间信息模型的正式描述。应用模式是由概念模式构建的。
 
-[.source]
-<<OGCDR,locality:URI="http://www.opengis.net/def/glossary/term/ConceptualSchema">>
---
+*来源*: OGC Definitions Register, URI http://www.opengis.net/def/glossary/term/ConceptualSchema
 
-==== Implementation Specification
+==== 实现规范（Implementation Specification）
 
-Specified on the OGC Document Types Register
+在OGC文档类型注册表中指定
 
-[.source]
-<<OGCDTR,locality:URI="http://www.opengis.net/def/doc-type/is">>
+*来源*: OGC Document Types Register, URI http://www.opengis.net/def/doc-type/is
 
-==== levels of detail
+==== 层次细节模型（levels of detail）
 
-quantity of information that portrays the real world
+描述现实世界的信息量
 
-NOTE: The concept comprises data capturing rules of spatial object types, the accuracy and the types of geometries, and other aspects of a data specification. In particular, it is related to the notions of scale and resolution.
+NOTE: 该概念包含空间对象类型的数据采集规则、精度和几何类型，以及数据规范的其他方面。特别地，它与比例尺和分辨率的概念相关。
 
-[.source]
-<<inspire_glossary>>
+*来源*: INSPIRE Glossary
 
-==== life-cycle information
+==== 生命周期信息（life-cycle information）
 
-set of properties of a spatial object that describe the temporal characteristics of a version of a spatial object or the changes between versions
+一组空间对象的属性，用于描述空间对象某一版本的时间要素或不同版本之间的变化。
 
-[.source]
-<<inspire_glossary>>
+*来源*: INSPIRE Glossary
 
-==== Platform (Model Driven Architecture)
+==== 平台（模型驱动架构）（Platform (Model Driven Architecture)）
 
-the set of resources on which a system is realized.
+系统实现的资源集合。
 
-[.source]
-<<OMGMDA>>
+*来源*: OMG MDA
 
-==== Platform Independent Model
+==== 平台无关模型（Platform Independent Model）
 
-a model that is independent of a specific platform
+独立于特定平台的模型。
 
-[.source]
-<<OMGMDA>>
+*来源*: OMG MDA
 
-==== Platform Specific Model
+==== 平台相关模型（Platform Specific Model）
 
-a model of a system that is defined in terms of a specific platform
+基于特定平台定义的系统模型。
 
-[.source]
-<<OMGMDA>>
+*来源*: OMG MDA
 
 
-=== Abbreviated terms
+=== 缩略语
 
-2D:: Two Dimensional
-3D:: Three Dimensional
-AEC:: Architecture, Engineering, Construction
-ALKIS:: German National Standard for Cadastral Information
-ATKIS:: German National Standard for Topographic and Cartographic Information
-BIM:: Building Information Modeling
-B-Rep:: Boundary Representation
-bSI:: buildingSMART International
-CAD:: Computer Aided Design
-COLLADA:: Collaborative Design Activity
-CSG:: Constructive Solid Geometry
-DTM:: Digital Terrain Model
-DXF:: Drawing Exchange Format
-EuroSDR:: European Spatial Data Research Organisation
-ESRI:: Environmental Systems Research Institute
-FM:: Facility Management
-GDF:: Geographic Data Files
-GDI-DE:: Spatial Data Infrastructure Germany (Geodateninfrastruktur Deutschland)
-GDI:: NRW Geodata Infrastructure North-Rhine Westphalia
-GML:: Geography Markup Language
-IAI:: International Alliance for Interoperability (now buildingSMART International (bSI))
-IETF:: Internet Engineering Task Force
-IFC:: Industry Foundation Classes
-IoT:: Internet of Things
-ISO:: International Organization for Standardisation
-ISO/TC211:: ISO Technical Committee 211
-LOD:: Levels of Detail
-MQTT:: Message Queuing Telemetry Transport
-NBIMS:: National Building Information Model Standard
-OASIS:: Organisation for the Advancement of Structured Information Standards
-OGC:: Open Geospatial Consortium
-OSCRE:: Open Standards Consortium for Real Estate
-SIG:: Special Interest Group 3D of the GDI-DE
-TIC:: Terrain Intersection Curve
-TIN:: Triangulated Irregular Network
-UML:: Unified Modeling Language
-URI:: Uniform Resource Identifier
-VRML:: Virtual Reality Modeling Language
-W3C:: World Wide Web Consortium
-W3DS:: OGC Web 3D Service
-WFS:: OGC Web Feature Service
-X3D:: Open Standards XML-enabled 3D file format of the Web 3D Consortium
-XML:: Extensible Markup Language
-xAL:: OASIS extensible Address Language
+ 2D:: 二维（Two Dimensional）
+ 3D:: 三维（Three Dimensional）
+ AEC:: 建筑、工程、施工（Architecture, Engineering, Construction）
+ ALKIS:: 德国测绘信息国家标准（German National Standard for Cadastral Information）
+ ATKIS:: 德国地形与制图信息国家标准（German National Standard for Topographic and Cartographic Information）
+ BIM:: 建筑信息建模（Building Information Modeling）
+ B-Rep:: 边界表示（Boundary Representation）
+ bSI:: buildingSMART国际（buildingSMART International）
+ CAD:: 计算机辅助设计（Computer Aided Design）
+ COLLADA:: 协同设计活动（Collaborative Design Activity）
+ CSG:: 构造实体几何（Constructive Solid Geometry）
+ DTM:: 数字地形模型（Digital Terrain Model）
+ DXF:: 绘图交换格式（Drawing Exchange Format）
+ EuroSDR:: 欧洲空间数据研究组织（European Spatial Data Research Organisation）
+ ESRI:: 环境系统研究院（Environmental Systems Research Institute）
+ FM:: 设施管理（Facility Management）
+ GDF:: 地理数据文件（Geographic Data Files）
+ GDI-DE:: 德国空间数据基础设施（Geodateninfrastruktur Deutschland）
+ GDI:: NRW北莱茵-威斯特法伦地理数据基础设施（Geodata Infrastructure North-Rhine Westphalia）
+ GML:: 地理标记语言（Geography Markup Language）
+ IAI:: 国际互操作联盟（现为buildingSMART International (bSI)）（International Alliance for Interoperability, now buildingSMART International (bSI)）
+ IETF:: 网络工程任务组（Internet Engineering Task Force）
+ IFC:: 行业基础类（Industry Foundation Classes）
+ IoT:: 物联网（Internet of Things）
+ ISO:: 国际标准化组织（International Organization for Standardisation）
+ ISO/TC211:: ISO技术委员会211（ISO Technical Committee 211）
+ LOD:: 细节层次（Levels of Detail）
+ MQTT:: 消息队列遥测传输协议（Message Queuing Telemetry Transport）
+ NBIMS:: 国家建筑信息模型标准（National Building Information Model Standard）
+ OASIS:: 结构化信息标准推进组织（Organisation for the Advancement of Structured Information Standards）
+ OGC:: 国际开放地理信息协会（Open Geospatial Consortium）
+ OSCRE:: 房地产开放标准联盟（Open Standards Consortium for Real Estate）
+ SIG:: GDI-DE 3D特定兴趣小组（Special Interest Group 3D of the GDI-DE）
+ TIC:: 地形交点曲线（Terrain Intersection Curve）
+ TIN:: 不规则三角网（Triangulated Irregular Network）
+ UML:: 统一建模语言（Unified Modeling Language）
+ URI:: 统一资源标识符（Uniform Resource Identifier）
+ VRML:: 虚拟现实建模语言（Virtual Reality Modeling Language）
+ W3C:: 万维网联盟（World Wide Web Consortium）
+ W3DS:: OGC Web 3D服务（OGC Web 3D Service）
+ WFS:: OGC Web功能服务（OGC Web Feature Service）
+ X3D:: Web 3D联盟的开放标准XML启用3D文件格式（Open Standards XML-enabled 3D file format of the Web 3D Consortium）
+ XML:: 可扩展标记语言（Extensible Markup Language）
+ xAL:: OASIS可扩展地址语言（OASIS extensible Address Language）

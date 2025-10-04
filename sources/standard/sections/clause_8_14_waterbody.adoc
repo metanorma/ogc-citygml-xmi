@@ -1,25 +1,23 @@
-The WaterBody module provides the representation of significant and permanent or semi-permanent accumulations of surface water, usually covering a part of the Earth. Examples of such water bodies that can be modeled with CityGML are rivers, canals, lakes, and basins.
-Water bodies are represented in the UML model by the top-level feature type _WaterBody_, which is the main class of the WaterBody module.
+水体模块提供了对重要的、永久或半永久的地表水积聚的表示，通常覆盖地球的一部分。可以用 CityGML 建模的此类水体示例包括河流、运河、湖泊和盆地。在 UML 模型中，水体由顶级要素类型 _WaterBody_ 表示，它是水体模块的主要类。
 
-Water bodies can be bounded by water surfaces, which represent the upper exterior interface between the water body and the atmosphere, and by water ground surfaces, which represent the exterior boundary surfaces of the submerged bottom of a water body (e.g., DTM or floor of a 3D basin object).
-Water surfaces are dynamic surfaces, thus, the visible water surface can regularly as well as irregularly change in height and covered area due to natural forces such as tides and floods.
+水体可以由水面界定，水面代表水体与大气之间的上部外部界面，以及水底表面，它代表水体淹没底部的外部边界表面（例如，DTM 或 3D 盆地对象的底部）。水面是动态表面，因此，由于潮汐和洪水等自然力，可见水面的高度和覆盖面积可以定期以及不规则地变化。
 
-The UML diagram of the WaterBody module is depicted in <<waterbody-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-waterbody-section[OGC CityGML 3.0 Users Guide].
+水体模块的 UML 图 <<waterbody-uml>>. A关于这个需求类的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-waterbody-section[OGC CityGML 3.0 Users Guide]中找到。
 
 [[waterbody-uml]]
-.UML diagram of the Water Body Model.
+.水体模型的 UML 图
 image::figures/WaterBody.png[]
 
-The ADE data types provided for the Water Body module are illustrated in <<waterbody-uml-ade-types>>.
+为水体模块提供的 ADE 数据类型如 <<waterbody-uml-ade-types>>.
 
 [[waterbody-uml-ade-types]]
-.ADE classes of the CityGML Water Body module.
+.CityGML 水体模块的 ADE 类
 image::figures/WaterBody-ADE_Datatypes.png[]
 
-The Code Lists provided for the Water Body module are illustrated in <<waterbody-uml-codelists>>.
+为水体模块提供的代码列表<<waterbody-uml-codelists>>.
 
 [[waterbody-uml-codelists]]
-.Codelists from the CityGML Water Body module.
+.CityGML 水体模块的代码列表
 image::figures/WaterBody-Codelists.png[]
 
-<<waterbody-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the WaterBody module:
+<<waterbody-boundaries-table>> 列出了允许作为水体模块中定义的空间类的主题表面边界的表面：

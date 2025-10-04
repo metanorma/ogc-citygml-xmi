@@ -1,14 +1,14 @@
 [[vegetation-boundaries-table]]
-.Vegetation space classes and their allowed thematic surface boundaries
+.植被空间类及其允许的主题表面边界
 [cols="2a,6a",options="header"]
 |===
-^|*Space class* ^|*Allowed space boundaries*
-|AbstractVegetationObject
-a|No boundaries allowed
+^|*空间类* ^|*允许的空间边界*
+|抽象植被对象
+a|不允许有边界
 
-|PlantCover
-a|No boundaries allowed
+|植物覆盖
+a|不允许有边界
 
-|SolitaryVegetationObject
-a|No boundaries allowed
+|单独植被对象
+a|不允许有边界
 |===

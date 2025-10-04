@@ -1,38 +1,40 @@
 
 [[conformance-section]]
-== Conformance
+== 一致性
 
-This Standard defines a {{Conceptual Model}} which is independent of any encoding or formatting techniques. The {{Standardization Target,Standardization Targets}} for this Standard are:
+这个标准定义了一个概念模型，它独立于任何编码或格式化技术。该标准的标准化目标包括：
 
-. {{conceptual model,Conceptual Models}} (extended versions of this conceptual model)
-. {{Implementation Specification,Implementation Specifications}} (encodings of this conceptual model)
+. 概念模型 (此概念模型的详细版本)
+. 实施规范 (此概念模型的编码)
 
 [[conceptual-model-conformance]]
-=== Conceptual Models
+=== 概念模型
 
-A Conceptual Model standardization target is a version of the CityGML 3.0 Conceptual Model (CM) tailored for a specific user community. This tailoring can include:
+一个概念模型的标准化目标是为特定用户群体定制的CityGML 3.0概念模型（CM）版本。这种定制可以包括：
 
-. Omission of one or more of the optional UML packages;
-. Reduction of the multiplicity for an attribute or association;
-. Restriction on the valid values for an attribute; and
-. Additional concepts documented through ADEs.
+. 省略一个或多个可选的 UML 包；
+. 减少属性或关联的多重性；
+. 限制属性的有效值；
+. 通过ADEs记录的额外概念。
 
-Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the CityGML conceptual model. These extensions are accomplished using the ADE mechanism described in Application Domain Extensions (ADE) (<<rc_ade_section>>).
+在这些选项中，操作#1、#2和#3可以在创建实施规范时执行。只有操作#4需要扩展CityGML概念模型。
+这些扩展通过在《应用领域扩展（ADE）》部分（<<rc_ade_section>>）中描述的ADE机制实现。
 
-Extensions of the CityGML Conceptual Model conform with the ADE Conformance Class.
+CityGML概念模型的扩展符合ADE一致性类的要求。
 
 [[implementation-specification-conformance]]
-=== Implementation Specifications
+=== 实施规范
 
-Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <<abstract-test-suite>> of this document.
+实施规范定义了如何使用特定技术实施概念模型。符合规范的实施规范需要提供证据，证明其准确地表示了概念模型。这些证据应包括在本文档的 <<abstract-test-suite>> 部分中所指定的抽象测试的实现。
 
-Since this Standard is agnostic to the implementing technologies, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as an annex to the Implementation Specification document.
+由于本标准与具体的实现技术无关，因此无法指定用于一致性测试的具体技术。实施规范需要提供适用于所使用实现技术的符合性证据。该证据应作为附录附加在实施规范文档中。
 
 [[conformance-class-section]]
-=== Conformance Classes
+=== 一致性类
 
-This Standard identifies seventeen (17) conformance classes. One conformance class is defined for each package in the UML model. Each conformance class is defined by one requirements class. The tests in <<abstract-test-suite>> are organized by Requirements Class. So an implementation of the _Core_ conformance class must pass all tests specified in <<abstract-test-suite>> for the _Core_ requirements class.
+本标准定义了17个一致性性类。每个UML模型包都定义了一个一致性类。每个一致性类由一个要求类定义。<<abstract-test-suite>>中的测试按照要求类进行组织。
+因此， __Core__ 一致性类的实现必须通过<<abstract-test-suite>>中 __Core__ 要求类指定的所有测试。
 
-Of these seventeen conformance classes, only the _Core_ conformance class is mandatory. All other conformance classes are optional. In the case where a conformance class has a dependency on another conformance class, that conformance class should also be implemented.
+在这十七个符合性类别中，只有 __Core__ 一致性类是强制性的，所有其他一致性类都是可选的。如果某个一致性类依赖于另一个一致性类，则该一致性类也应该被实现。
 
-The CityGML Conceptual Model is defined by the CityGML UML model. This Standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.
+CityGML概念模型由CityGML UML模型定义，本标准是UML模型的文档形式表示。如果UML模型与本文档存在不一致之处，以UML模型为准。

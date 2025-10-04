@@ -2,29 +2,29 @@
 [abstract_test]
 ====
 [%metadata]
-label:: /ats/core/isorestrictions
-subject:: <<req_Core_iso-restrictions,/req/core/isorestrictions>>
+标签:: /ats/core/isorestrictions
+主体:: <<req_Core_iso-restrictions,/req/core/isorestrictions>>
 
-[.component,class=test-purpose]
+[.component,class=测试目的]
 --
-To validate that none of the restrictions which the CityGML Conceptual Model imposes on ISO classes are violated by an Implementation Specification.
---
-
-[.component,class=test method type]
---
-Manual Inspection
+验证实现规范是否未违反CityGML概念模型对ISO类施加的任何限制。
 --
 
-[.component,class=test method]
+[.component,class=测试方法类型]
+--
+人工检查
+--
+
+[.component,class=测试方法]
 =====
 [.component,class=step]
 --
-For each instance of the GM_Solid class, validate that there are no interior boundaries associated with that instance.
+对于GM_Solid类的每个实例，验证该实例未关联任何内部边界。
 --
 
 [.component,class=step]
 --
-For each instance of a class descended from the GM_Solid class, validate that there are no interior boundaries associated with that instance.
+对于从GM_Solid类派生的类的每个实例，验证该实例未关联任何内部边界。
 --
 =====
 ====

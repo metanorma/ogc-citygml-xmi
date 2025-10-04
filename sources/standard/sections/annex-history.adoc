@@ -1,14 +1,14 @@
 [appendix,obligation="informative"]
-== Revision History
+== 修订历史
 
 [options="header"]
 |===
-|Date |Release |Editor | Primary clauses modified |Description
-|2020-06-04 |0.9.0 |C. Heazel |all |Draft for review
-|2020-06-07 |0.9.1 |T. H. Kolbe |Chapter 10 |Bibliography was added
-|2020-06-08 |0.9.2 |C. Nagel |Chapter 10 |Chapter on ADE mechanism was added
-|2020-06-11 |0.9.3 |T. H. Kolbe |Chapter 7 |Overview chapter on CityGML was added
-|2020-06-11 |0.9.4 |T. Kutzner |Chapter 0 |List of participants and submitters was added
-|2020-08-05 |0.9.5 |T. Kutzner |Chapter 8 |Boundary constraints were added
-|2020-08-05 |0.9.6 |C. Heazel, T. Kutzner |Chapter 8 |UML update
+|日期 |版本 |编辑 |主要修改章节 |描述
+|2020-06-04 |0.9.0 |C. Heazel |全部 |初稿供审阅
+|2020-06-07 |0.9.1 |T. H. Kolbe |第10章 |增加了参考文献
+|2020-06-08 |0.9.2 |C. Nagel |第10章 |增加了关于ADE机制的章节
+|2020-06-11 |0.9.3 |T. H. Kolbe |第7章 |增加了关于城市GML的概述章节
+|2020-06-11 |0.9.4 |T. Kutzner |第0章 |增加了参与者和提交者名单
+|2020-08-05 |0.9.5 |T. Kutzner |第8章 |增加了边界约束
+|2020-08-05 |0.9.6 |C. Heazel, T. Kutzner |第8章 |更新了UML
 |===

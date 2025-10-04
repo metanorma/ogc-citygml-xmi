@@ -1,4 +1,4 @@
-=== Conformance Class Tunnel
+=== 一致性认证：隧道类
 
 include::Tunnel/ATS_Tunnel_Classes.adoc[]
 

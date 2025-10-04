@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+此模块的实施还受到以下空间边界需求的限制：
 
 [[req_generics_boundaries]]
 [requirement,type="general",label="/req/generics/boundaries"]
 ====
-<<generics-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Generics module. An Implementation Specification SHALL only support the boundaries described in <<generics-boundaries-table>>
+<<generics-boundaries-table>> 列出了允许作为通用类模块中定义的空间类的专题表面边界的表面。实施规范应仅支持 <<generics-boundaries-table>>中描述的边界。
 ====

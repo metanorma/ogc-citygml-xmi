@@ -1,91 +1,86 @@
 [[rc_ade_section]]
-== Application Domain Extension (ADE)
+== 应用领域扩展（ADE）
 
-An _Application Domain Extension_ (ADE) is a formal and systematic extension of the CityGML Conceptual Model (CM) for a specific application or domain. The ADE is expressed in the form of a UML conceptual model. The domain data is mapped to a set of additional classes, attributes, and relations. ADEs may use elements from the CityGML CM to derive application-specific subclasses, to inject additional properties, to associate application data with predefined CityGML content, or to define value domains for attributes.
+应用领域扩展（ADE）是针对特定应用或领域的城市GML概念模型（CM）的正式和系统性扩展。ADE以UML概念模型的形式表示。领域数据被映射到一组额外的类、属性和关系。ADE可以使用城市GML CM中的元素来派生特定于应用的子类、注入额外的属性、将应用数据与预定义的城市GML内容关联，或者为属性定义值域。
 
-The ADE mechanism allows application-specific information to be aligned with the CityGML CM in a well-structured and systematic way. By this means, CityGML can be extended to meet the information needs of an application while at the same time preserving its concepts and semantic structures. Moreover, and in contrast to generic city objects and attributes, application data can be validated against the formal definition of an ADE to ensure semantic interoperability.
+ADE机制允许以结构良好且系统化的方式将特定于应用的信息与城市GML CM对齐。通过这种方式，城市GML可以在满足应用的信息需求的同时，保留其概念和语义结构。此外，与通用城市对象和属性不同，应用数据可以针对ADE的正式定义进行验证，以确保语义互操作性。
 
-Previous versions of the CityGML Standard defined the ADE mechanism solely at the level of the XML Schema encoding. With CityGML 3.0, ADEs become platform-independent models at a conceptual level that can be mapped to multiple and different target encodings.
+城市GML标准的早期版本仅在XML模式编码层面定义了ADE机制。随着城市GML 3.0的推出，ADE成为概念层面的平台无关模型，可以映射到多个不同的目标编码。
 
-ADEs have successfully been implemented in practice and enable a wide range of applications and use cases based on the CityGML Standard. An overview and discussion of existing ADEs is provided in [<<Biljecki2018>>].
+ADE在实践中已成功实施，并基于城市GML标准启用了一系列广泛的应用和用例。关于现有ADE的概述和讨论，请参阅[<<Biljecki2018>>]。
 
-=== General Rules for ADEs
+=== ADE的一般规则
 
-An ADE shall be defined as a UML conceptual model in accordance with the General
-Feature Model and the rules for creating application schemas in UML as specified
-in <<iso19109>> and the rules and constraints for using UML to model geographic
-information as specified in <<iso19103>>. The UML notations and stereotypes
-(<<uml_notation_section>>) used in the CityGML conceptual model should also be
-applied to corresponding model elements in an ADE.
+ADE应按照通用要素模型以及<xref:iso19109[ISO 19109]中指定的创建应用模式的UML规则来定义为UML概念模型，并且应遵循xref:iso19103[ISO 19103]中指定的使用UML建模地理信息的规则和约束。在城市GML概念模型中使用的UML符号和构造型（<<uml_notation_section>>）也应应用于ADE中相应的模型元素。
 
-Every ADE shall be organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE. An ADE may additionally import and use predefined classes from external conceptual UML models such as the CityGML modules or the standardized schemas of the ISO 19100 series of International Standards.
+每个ADE应组织成一个或多个具有全局唯一命名空间的UML包，并包含ADE定义的所有UML模型元素。ADE还可以导入并使用外部概念UML模型（例如城市GML模块或ISO 19100系列国际标准的标准化模式）中预定义的类。
 
-=== Defining New ADE Model Elements
+=== 定义新的ADE模型元素
 
-Following ISO 19109, the primary view of geospatial information and the core element of application schemas is the __feature__. ADEs therefore typically extend CityGML by defining new feature types appropriate to the application area together with additional content such as object types, data types, code lists, and enumerations.
+根据ISO 19109，地理空间信息的主要视图和应用模式的核心元素是__要素__。因此，ADE通常通过定义适用于应用领域的新的要素类型以及额外的内容（如对象类型、数据类型、代码列表和枚举）来扩展城市GML。
 
-Every feature type in an ADE shall be derived either directly or indirectly from the CityGML root feature type _Core::AbstractFeature_ or, depending on its type and characteristics, from a more appropriate subclass thereof. According to the general CityGML space concept, features representing spaces or space boundaries shall be derived either directly or indirectly from _Core::AbstractSpace_ or _Core::AbstractSpaceBoundary_ respectively. UML classes representing top-level feature types shall use the _&#171;TopLevelFeatureType&#187;_ stereotype.
+ADE中的每个要素类型都应直接或间接从城市GML根要素类型__Core::AbstractFeature__派生，或者根据其类型和要素，从更合适的子类派生。根据城市GML的一般空间概念，表示空间或空间边界的要素应直接或间接从__Core::AbstractSpace__或__Core::AbstractSpaceBoundary__派生。代表顶级要素类型的UML类应使用__&#171;TopLevelFeatureType&#187;__构造型。
 
-In contrast to feature types, object types and data types are not required to be derived from a predefined CityGML class unless explicitly stated otherwise.
+与要素类型不同，对象类型和数据类型不要求从预定义的城市GML类派生，除非另有明确说明。
 
-ADE classes may have an unlimited number of attributes and associations in addition to those inherited from their parents. Attributes can be modeled with either simple or complex data types. To ensure semantic interoperability, the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards should be used wherever appropriate. This includes, amongst others, basic types from ISO/TS 19103, geometry and topology objects from ISO 10107, and temporal geometry and topology objects from ISO 19108.
+ADE类可以拥有任意数量的属性和关联，此外还有从其父类继承的属性。属性可以使用简单或复杂的数据类型进行建模。为了确保语义互操作性，应尽可能使用城市GML或ISO 19100系列国际标准的标准化模式中的预定义类型。这包括但不限于ISO/TS 19103中的基本类型、ISO 10107中的几何和拓扑对象以及ISO 19108中的时间几何和拓扑对象。
 
-If a predefined type is not available, ADEs can either define their own data types or import data types from external conceptual models. This explicitly includes the possibility of defining new geometry types not offered by ISO 19107. Designers of an ADE should however note that software might not be able to properly identify and consume such geometry types.
+如果无法使用预定义类型，ADE可以定义自己的数据类型，或者从外部概念模型导入数据类型。这明确包括定义ISO 19107未提供的新几何类型的可能性。然而，ADE的设计者应注意，软件可能无法正确识别和使用这些几何类型。
 
-A feature type capturing a real-world feature with geometry should be derived either directly or indirectly from _Core::AbstractSpace_ or _Core::AbstractSpaceBoundary_. By this means, the CityGML predefined spatial properties and the associated LOD concept are inherited and available for the feature type. If, however, these superclasses are either inappropriate or lack a spatial property required to represent the feature, an ADE may define new and additional spatial properties. If such a spatial property should belong to one of the predefined LODs, then the property name shall start with the prefix “lod__X__”, where _X_ is to be replaced by an integer value between 0 and 3 indicating the target LOD. This enables software to derive the LOD of the geometry.
+捕获具有几何形状的真实世界要素的要素类型应直接或间接从__Core::AbstractSpace__或__Core::AbstractSpaceBoundary__派生。通过这种方式，城市GML预定义的空间属性和相关的LOD概念被继承并可用于该要素类型。然而，如果这些基类不合适或者缺少表示要素所需的空间属性，ADE可以定义新的额外空间属性。如果这样的空间属性属于预定义的LOD之一，那么属性名称应以“lod__X__”为前缀，其中__X__应替换为0到3之间的整数值，表示目标LOD。这使得软件能够推导出几何的LOD。
 
-Constraints on model elements should be expressed using a formal language such as the Object Constraint Language (OCL). The ADE specifies the manner of application of constraints. However, following the CityGML conceptual model, constraints should at least be expressed on ADE subclasses of _Core::AbstractSpace_ to limit the types of space boundaries (i.e., instances of _Core::AbstractSpaceBoundary_) that may be used to model the boundary of a space object.
+应使用正式语言（如对象约束语言OCL）来表达模型元素的约束。ADE指定了约束的应用方式。然而，按照城市GML概念模型，约束至少应在__Core::AbstractSpace__的ADE子类上表达，以限制可用于建模空间对象边界的/Core::AbstractSpaceBoundary/实例的类型。
 
-=== Augmenting CityGML Feature Types with Additional ADE Properties
+=== 为城市GML要素类型添加额外的ADE属性
 
-If a predefined CityGML feature type lacks one or more properties required for a specific application, a feasible solution in CityGML 2.0 was to derive a new ADE feature type as subclass of the CityGML class and to add the properties to this subclass. While conceptually clean, this approach also faces drawbacks. If multiple ADEs require additional properties for the same CityGML feature type, this will lead to many subclasses of this feature type in different ADE namespaces. Information about the same real-world feature might therefore be spread over various instances of the different feature classes in an encoding making it difficult for software to consume the feature data.
+如果预定义的城市GML要素类型缺少特定应用所需的属性，城市GML 2.0中的可行解决方案是从城市GML类派生新的ADE要素类型子类，并将属性添加到该子类中。虽然从概念上讲是清晰的，但这种方法也存在缺点。如果多个ADE需要为同一个城市GML要素类型添加额外属性，这将导致该要素类型在不同ADE命名空间中有许多子类。关于同一真实世界要素的信息可能会分散在不同要素类的各个实例中，使得软件难以使用要素数据。
 
-For this reason, CityGML 3.0 provides a way to augment the predefined CityGML feature types with additional properties from the ADE domain without the need for subclassing. Each CityGML feature type has an extension attribute of name “adeOf__FeatureTypeName__” and type “_ADEOfFeatureTypeName”_, where _FeatureTypeName_ is replaced by the class name in which the attribute is defined. For example, the _Building::Building_ class offers the attribute _adeOfBuilding_ of type _Building::ADEOfBuilding_. Each of these extension attributes can occur zero to unlimited times, and the attribute types are defined as abstract and empty data types.
+因此，城市GML 3.0提供了一种方法，无需子类化即可使用ADE域中的额外属性增强预定义的城市GML要素类型。每个城市GML要素类型都有一个名为“adeOf__FeatureTypeName__”的扩展属性，类型为“__ADEOfFeatureTypeName__”，其中__FeatureTypeName__被定义该属性的类名替换。例如，__Building::Building__类提供了名为__adeOfBuilding__的属性，类型为__Building::ADEOfBuilding__。这些扩展属性可以出现零次或多次，属性类型被定义为抽象且空的数据类型。
 
-If an ADE augments a specific CityGML feature type with additional ADE properties, the ADE shall create a subclass of the corresponding abstract data type associated with the feature class. This subclass shall also be defined as data type using the stereotype _&#171;DataType&#187;_. The additional application-specific attributes and associations are then modeled as properties of the ADE subclass. This may include, amongst others, attributes with simple or complex data type, spatial properties or associations to other object and feature types from the ADE or external models such as CityGML.
+如果ADE为特定城市GML要素类型添加额外的ADE属性，ADE应为与要素类关联的相应抽象数据类型创建子类。该子类也应使用__&#171;DataType&#187;__构造型定义为数据类型。然后将额外的特定于应用的属性和关联建模为ADE子类的属性。这可能包括但不限于具有简单或复杂数据类型的属性、空间属性或与ADE或外部模型（如城市GML）中的其他对象和要素类型的关联。
 
-The predefined “_ADEOfFeatureTypeName”_ data types are called “hooks” because they are used as the head of a hierarchy of ADE subclasses attaching application-specific properties. When subclassing the “hook” of a specific CityGML feature type in an ADE, the properties defined in the subclass can be used for that feature type as well as for all directly or indirectly derived feature types, including feature types defined in the same or another ADE.
+预定义的“_ADEOfFeatureTypeName_”数据类型被称为“钩子”，因为它们被用作附加特定于应用的属性的ADE子类层次结构的头部。在ADE中为特定城市GML要素类型子类化“钩子”时，子类中定义的属性可用于该要素类型以及所有直接或间接派生的要素类型，包括在相同或另一个ADE中定义的要素类型。
 
-Multiple distinct ADEs can use the “hook” mechanism to define additional ADE properties for the same CityGML feature type. Since the “adeOf__FeatureTypeName__” attribute may occur multiple times, the various ADE properties can be exchanged as part of the same CityGML feature instance in an encoding. Software can therefore easily consume the default CityGML feature data plus the additional properties from the different ADEs.
+多个不同的ADE可以使用“钩子”机制为同一个城市GML要素类型定义额外的ADE属性。由于“adeOf__FeatureTypeName__”属性可以多次出现，因此可以在编码中将各种ADE属性作为同一个城市GML要素实例的一部分进行交换。因此，软件可以轻松使用默认的城市GML要素数据以及来自不同ADE的额外属性。
 
-Content from unknown or unsupported ADEs may be ignored by an application or service consuming an encoded CityGML model.
+应用程序或服务在使用编码的城市GML模型时，可能会忽略来自未知或不受支持的ADE的内容。
 
-Designers of an ADE should favor using this “hook” mechanism over subclassing a CityGML feature type when possible. If an ADE must enable other ADEs to augment its own feature types (so-called ADE of an ADE), then it shall implement “hooks” for its feature types following the same schema and naming concept as in the CityGML conceptual model.
+ADE的设计者应尽可能使用这种“钩子”机制，而不是子类化城市GML要素类型。如果ADE必须启用其他ADE增强其自己的要素类型（所谓的ADE的ADE），那么它应按照城市GML概念模型中相同的模式和命名概念实现其要素类型的“钩子”。
 
-The UML fragment in <<figure-adeusage>> shows an example for using the "hook" mechanism. For more details on this and other example ADEs, please see the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-ade-section[OGC CityGML 3.0 Users Guide].
+<<figure-adeusage>>中的UML片段展示了使用“钩子”机制的一个示例。有关此和其他示例ADE的更多详细信息，请参阅链接：http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-ade-section[OGC CityGML 3.0 Users Guide]。
 
 [[figure-adeusage]]
-.The CityGML feature type Building is augmented with additional ADE properties by defining the data type EnergyProperties as a subclass of the ADE data type ADEOfBuilding.
+.通过将数据类型EnergyProperties定义为ADE数据类型ADEOfBuilding的子类，为城市GML要素类型建筑添加额外的ADE属性
 image::./images/Energy_ADE_UML_example.png[]
 
-=== Encoding of ADEs
+=== ADE的编码
 
-This document only addresses the conceptual modeling of ADEs. Rules and constraints for mapping a conceptual ADE model to a target encoding are expected to be defined in a corresponding CityGML Encoding Standard. If supported, an ADE may provide additional mapping rules and constraints in conformance with a corresponding CityGML Encoding Standard.
+本文档仅涉及ADE的概念建模。将概念ADE模型映射到目标编码的规则和约束预计将在相应的城市GML编码标准中定义。如果得到支持，ADE可以在符合相应城市GML编码标准的情况下提供额外的映射规则和约束。
 
-=== Requirements and Recommendations
+=== 要求和推荐
 
-The following requirements and recommendations specify how ADEs shall be used as an extension capability to the CityGML Conceptual Model.
+以下要求和推荐指定了ADE作为城市GML概念模型扩展功能的使用方式。
 
 include::../requirements/_requirements_class_ADE.adoc[]
 
 ==== UML
 
-Any extension to the CityGML Conceptual Model should be a faithful continuation of the styles and techniques used in that model. The following Requirements and Recommendations define a "faithful continuation".
+对城市GML概念模型的任何扩展都应是该模型中使用的风格和技术的忠实延续。以下要求和推荐定义了“忠实延续”。
 
 include::../requirements/ADE/REQ_ADE_UML.adoc[]
 
 include::../recommendations/ADE/REC_ADE_UML.adoc[]
 
-==== Classes
+==== 类
 
-The following Requirements and Recommendations define how CityGML classes should be extended by an ADE.
+以下要求和推荐定义了ADE应如何扩展城市GML类。
 
 include::../requirements/ADE/REQ_ADE_Elements.adoc[]
 
 include::../recommendations/ADE/REC_ADE_Elements.adoc[]
 
-==== Properties
+==== 属性
 
-The following Requirements define how to use the CityGML extension properties to add attributes to an existing CityGML Feature Type.
+以下要求定义了如何使用城市GML扩展属性为现有城市GML要素类型添加属性
 
 include::../requirements/ADE/REQ_ADE_Properties.adoc[]

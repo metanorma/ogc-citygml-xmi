@@ -1,24 +1,21 @@
 [[conceptual-model-section]]
-== CityGML UML Model
+== CityGML UML 模型
 
-The CityGML UML model is the normative definition of the CityGML Conceptual Model. The tables and figures in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.
+CityGML UML 模型是 CityGML 概念模型的规范性定义。本节中的表格和图形由软件根据 UML 模型生成。因此，本节提供了 CityGML 概念模型的规范性表示。
 
-An alternate representation can be found in the Data Dictionary in <<data-dictionary-section>>.
+另一种表示形式可在<<data-dictionary-section>>中找到。
 
 [[rc_overview-section]]
-=== Structural overview of requirements classes
+=== 需求类的结构概述
 
-The Requirements Classes for this Standard are structured as UML Packages as
-illustrated in <<package-diagram>>. Each Requirements Class is specified in
-detail in their respective subsections. These subsections include a UML diagram,
-data dictionary, and the applicable requirements.
+本标准的需求类被构建为 UML 包，如图 <<package-diagram>>所示。每个需求类在各自的子部分中都有详细说明。这些子部分包括 UML 图、数据字典和适用的需求。
 
 [[package-diagram]]
-.CityGML UML Packages
+.CityGML UML 包
 image::figures/CityGMLPackageDiagram.png[]
 
-A detailed discussion of the structuring of the UML model can be found in the
-link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-structure-section[OGC CityGML 3.0 Users Guide].
+对 UML 模型结构的详细讨论可在
+link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-structure-section[OGC CityGML 3.0 Users Guide]中找到。
 
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages.yml]
 ----
@@ -117,7 +114,7 @@ include::clause_8_18_tunnel.adoc[]
 
 [.include_block, index="4", position="before", base_path="requirements/REQ_Classes_"]
 ....
-==== Requirements
+==== 要求
 ....
 
 [.include_block, index="5", position="before", base_path="requirements/REQ_Boundaries_"]
@@ -141,10 +138,10 @@ include::clause_8_2_core_after.adoc[]
 
 [.package_text, liquid=true, position="after"]
 ....
-==== Additional Information
+==== 外部信息
 
-Additional information about the {{ package.name }} Module can be found in the
-link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package.name | identify }}-section[OGC CityGML 3.0 Users Guide].
+关于 {{ package.name }} 模块的其他信息可以在
+link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-{{ package.name | identify }}-section[OGC CityGML 3.0 用户指南]中找到。
 ....
 
 ----
