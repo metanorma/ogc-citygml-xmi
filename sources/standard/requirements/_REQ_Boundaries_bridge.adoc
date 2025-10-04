@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+该模块的实施还受到以下空间边界要求的进一步限制：
 
 [[req_bridge_boundaries]]
 [requirement,type="general",label="/req/bridge/boundaries"]
 ====
-<<bridge-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Bridge module. An Implementation Specification SHALL only support the boundaries described in <<bridge-boundaries-table>>
+<<bridge-boundaries-table>> 列出了桥梁模块中定义的空间类允许的主题表面边界。实施规范应仅支持 <<bridge-boundaries-table>> 中描述的边界。
 ====

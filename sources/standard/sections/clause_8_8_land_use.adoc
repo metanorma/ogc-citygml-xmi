@@ -1,21 +1,19 @@
-The LandUse module defines objects that can be used to describe areas of the earth's surface dedicated to a specific land use or having a specific land cover with or without vegetation, such as sand, rock, mud flats, forest, grasslands, or wetlands (i.e., the physical appearance). Land use and land cover are different concepts. The first describes human activities on the earth's surface, the second describes its physical and biological cover. However, the two concepts are interlinked and often mixed in practice. Land use objects in CityGML support both concepts: They can be employed to represent parcels, spatial planning objects, recreational objects, and objects describing the physical characteristics of an area in 3D.
-Land use objects are represented in the UML model by the top-level feature type _LandUse_, which is also the only class of the LandUse module.
+土地利用模块定义了可用于描述地球表面专用于特定土地利用或具有特定土地覆盖（有无植被均可，如沙地、岩石、泥滩、森林、草原或湿地，即物理外观）区域的对象。土地利用和土地覆盖是不同的概念。前者描述地球表面的人类活动，后者描述其物理和生物覆盖。然而，这两个概念相互关联，在实践中常常混淆。CityGML中的土地利用对象支持这两个概念：它们可用于表示地块、空间规划对象、休闲娱乐对象以及以3D形式描述区域物理要素的对象。在UML模型中，土地利用对象由顶级要素类型LandUse表示，这也是土地利用模块的唯一类。
 
-The UML diagram of the LandUse module is depicted in <<landuse-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-land-use-section[OGC CityGML 3.0 Users Guide].
+土地利用模块的UML图如 <<landuse-uml>>所示。关于此需求类的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-land-use-section[OGC CityGML 3.0 Users Guide]中找到。
 
 [[landuse-uml]]
-.UML diagram of the Land Use Model.
-
+.土地利用模型的UML图
 image::figures/LandUse.png[]
 
-The ADE data types provided for the Land Use module are illustrated in <<landuse-uml-ade-types>>.
+为土地利用模块提供的ADE数据类型如<<landuse-uml-ade-types>>所示。
 
 [[landuse-uml-ade-types]]
-.ADE classes of the CityGML Land Use module.
+.CityGML土地利用模块的ADE类
 image::figures/LandUse-ADE_Datatypes.png[]
 
-The Code Lists provided for the Land Use module are illustrated in <<landuse-uml-codelists>>.
+为土地利用模块提供的代码列表<<landuse-uml-codelists>>所示
 
 [[landuse-uml-codelists]]
-.Codelists from the CityGML Land Use module.
+.CityGML土地利用模块的代码列表
 image::figures/LandUse-Codelists.png[]

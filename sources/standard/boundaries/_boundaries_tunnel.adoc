@@ -1,11 +1,11 @@
 [[tunnel-boundaries-table]]
-.Tunnel space classes and their allowed thematic surface boundaries
+.隧道空间类及其允许的主题表面边界
 [cols="2a,6a",options="header"]
 |===
-^|*Space class* ^|*Allowed space boundaries*
-|AbstractTunnel
+^|*空间类* ^|*允许的空间边界*
+|抽象隧道
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -16,11 +16,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|HollowSpace
+|空心空间
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -31,11 +31,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|Tunnel
+|隧道
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -46,11 +46,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|TunnelConstructiveElement
+|隧道结构元素
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -61,14 +61,14 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|TunnelFurniture
-a|No boundaries allowed
+|隧道家具
+a|无边界允许
 
-|TunnelInstallation
+|隧道设施
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -79,11 +79,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|TunnelPart
+|隧道部分
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -94,6 +94,6 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |===

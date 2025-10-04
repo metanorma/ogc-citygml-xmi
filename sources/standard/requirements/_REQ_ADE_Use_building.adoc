@@ -1,7 +1,7 @@
-The use of extension capabilities by Building elements is constrained by the following requirement:
+建筑元素对扩展能力的使用受到以下要求的约束：
 
 [[req_building_ade_use]]
 [requirement,type="general",label="/req/building/ade/use"]
 ====
-ADE element and property extensions SHALL NOT be used unless conformance with the ADE Requirements Class can be demonstrated.
+除非能够证明符合 ADE 需求类，否则不应使用 ADE 元素和属性扩展。
 ====

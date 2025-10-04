@@ -1,20 +1,19 @@
+
 [[req_ade_uml]]
-[requirement,type="general",label="/req/ade/uml"]
+[recommendation, ,type="general"]
 ====
-An ADE SHALL be defined as conceptual model in UML in accordance with the conceptual modelling framework of the ISO 19100 series of International Standards
+[%metadata]
+标签:: /rec/ade/uml
+
+除了满足 CityGML ADE 的要求外，ADE 应该：
 
 [.component,class=part]
 --
-The UML model SHALL adhere to the General Feature Model as specified in ISO 19109. 
+CityGML 概念模型中使用的 UML 符号和构造（<<uml_notation_section>>）**应该**应用于 ADE 中相应的模型元素。
 --
 
 [.component,class=part]
 --
-The UML model SHALL adhere to rules and constraints for application schemas as specified in ISO/TS 19103. 
---
-
-[.component,class=part]
---
-Every ADE SHALL be organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE. 
+ADE **应该**导入并使用来自外部概念 UML 模型的预定义类，例如 CityGML 模块或 ISO 19100 系列国际标准的标准化架构。
 --
 ====

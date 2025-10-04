@@ -1,28 +1,25 @@
-The Construction module defines concepts that are common to all forms of constructions. Constructions are objects that are manufactured by humans from construction materials, are connected to earth, and are intended to be permanent. The Construction module focuses on as-built representations of constructions and integrates all concepts that are similar over different types of constructions, in particular buildings, bridges, and tunnels. In addition, for representing man-made structures that are neither buildings, nor bridges, nor tunnels so-called other constructions (e.g., large chimneys or city walls) can be defined.
+建筑模块定义了适用于所有建筑形式的通用概念。建筑是人类使用建筑材料制造、与地面相连且旨在永久存在的物体。建筑模块专注于建筑的建成后表示，并整合了不同类型建筑（尤其是建筑物、桥梁和隧道）中相似的所有概念。此外，为了表示既非建筑物、桥梁也非隧道的人造结构，可定义所谓的其他建筑（例如大型烟囱或城墙）。
 
-Furniture, installations, and constructive elements are further concepts that are defined in the Construction module. Installations are permanent parts of a construction that strongly affect the outer or inner appearance of the construction and that cannot be moved (e.g., balconies, chimneys, or stairs), whereas furniture represent moveable objects of a construction (e.g., tables and chairs). Constructive elements allow for decomposing a construction into volumetric components, such as walls, beams, and slabs.
-Constructions and constructive elements can be bounded by different types of surfaces. In this way, the outer structure of constructions and constructive elements can be differentiated semantically into wall surfaces, roof surfaces, ground surfaces, outer floor surfaces, and outer ceiling surfaces, whereas the visible surface of interior spaces can be structured into interior wall surfaces, floor surfaces, and ceiling surfaces.
-Furthermore, the openings of constructions, i.e., windows and doors, can be represented as so-called filling elements including their corresponding filling surfaces.
+家具、设施和结构元素是建筑模块中定义的其他概念。设施是建筑的永久部分，对建筑的外观或内部有显著影响且无法移动（例如阳台、烟囱或楼梯），而家具代表建筑中的可移动物体（例如桌子和椅子）。结构元素允许将建筑分解为体状组件，如墙壁、梁和板。建筑和结构元素可以由不同类型的表面界定。通过这种方式，建筑和结构元素的外部结构在语义上可区分为墙面、屋顶面、地面、外部楼面和外部天花板面，而内部空间的可见表面可分为内部墙面、楼面和天花板面。此外，建筑的开口，即窗户和门，可以表示为所谓的填充元素及其相应的填充表面。
 
-The UML diagram of the Construction module is depicted in <<construction-uml>>.
-The Construction module defines concepts that are inherited and, where necessary, are specialized by the modules Building, Bridge, and Tunnel  (cf. lutaml_table::[package="Building"], lutaml_table::[package="Bridge"], and lutaml_table::[package="Tunnel"]).
-A detailed discussion of the Requirements Class Construction can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-construction-section[CityGML 3.0 Users Guide].
+建筑模块的 UML 图如 <<construction-uml>> 所示。
+建筑模块定义的概念会被建筑、桥梁和隧道模块继承，并在必要时进行专门化  (cf. lutaml_table::[package="Building"], lutaml_table::[package="Bridge"], and lutaml_table::[package="Tunnel"]).
+关于需求类建筑的详细讨论可在link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-construction-section[CityGML 3.0 Users Guide]中找到。
 
 [[construction-uml]]
-.UML diagram of the Construction Model.
-
+.建筑模型的 UML 图
 image::figures/Construction.png[]
 
-The ADE data types provided for the Construction module are illustrated in <<construction-uml-ade-types>>.
+为建筑模块提供的 ADE 数据类型如<<construction-uml-ade-types>> 所示。
 
 [[construction-uml-ade-types]]
-.ADE classes of the CityGML Construction module.
+.CityGML 建筑模块的 ADE 类
 image::figures/Construction-ADE_Datatypes.png[]
 
-The Code Lists provided for the Construction module are illustrated in <<construction-uml-codelists>>.
+为建筑模块提供的代码列表如<<construction-uml-codelists>>所示。
 
 [[construction-uml-codelists]]
-.Codelists from the CityGML Construction module.
+.CityGML 建筑模块的代码列表
 image::figures/Construction-Codelists.png[]
 
-<<construction-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Construction module:
+<<construction-boundaries-table>> 列出了建筑模块中定义的空间类允许的主题表面边界：

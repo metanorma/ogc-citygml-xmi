@@ -1,20 +1,22 @@
 [[rec_ade_elements]]
-[.recommendation,label="/rec/ade/elements"]
+[.recommendation]
 ====
-ADEs typically extend CityGML by defining new feature types together with additional content such as object types, data types, code lists, and enumerations.
+[%metadata]
+标签:: /rec/ade/elements
+ADE 通常通过定义新的要素类型及附加内容，如对象类型、数据类型、代码列表和枚举，来扩展 CityGML。
 
 [.component,class=part]
 --
-ADEs SHOULD use the predefined types from CityGML or the standardized schemas of the ISO 19100 series of International Standards.
+ADE **应该**使用 CityGML 中的预定义类型或 ISO 19100 系列国际标准的标准化架构。
 --
 
 [.component,class=part]
 --
-Constraints on model elements SHOULD be expressed using a formal language such as the Object Constraint Language (OCL).
+模型元素的约束**应该**使用正式语言表达，例如对象约束语言（OCL）。
 --
 
 [.component,class=part]
 --
-ADE subclasses of _core:AbstractSpace_ SHOULD include constraints to limit the boundaries of the space object.
+_&#171;core:AbstractSpace&#187;_ 的 ADE 子类**应该**包括约束，限制空间对象的边界。
 --
 ====

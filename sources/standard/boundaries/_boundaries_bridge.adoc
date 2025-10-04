@@ -1,12 +1,12 @@
 [[bridge-boundaries-table]]
-.Bridge space classes and their allowed thematic surface boundaries
+.桥梁空间类及其允许的主题表面边界
 [cols="2a,6a",options="header"]
 |===
-|Space class |Allowed space boundaries
+|空间类 |允许的空间边界
 
-|AbstractBridge
+|抽象桥梁
 a|
-* Construction::AbstractConstructionSurface and all subclasses, i.e.
+* Construction::AbstractConstructionSurface 及其所有子类，即 
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -18,11 +18,11 @@ a|
 
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|Bridge
+|桥梁
 a|
-* Construction::AbstractConstructionSurface and all subclasses, i.e.
+* Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -34,11 +34,11 @@ a|
 
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|BridgeConstructiveElement
+|桥梁结构元素
 a|
-* Construction::AbstractConstructionSurface and all subclasses, i.e.
+* Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -50,14 +50,14 @@ a|
 
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|BridgeFurniture
-a|No boundaries allowed
+|桥梁家具
+a|无边界允许
 
-|BridgeInstallation
+|桥梁设施
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -69,11 +69,11 @@ a|
 
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|BridgePart
+|桥梁部分
 a|
-* Construction::AbstractConstructionSurface and all subclasses, i.e.
+* Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -85,12 +85,12 @@ a|
 
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
-|BridgeRoom
+|桥梁房间
 a|
 
-* Construction::AbstractConstructionSurface and all subclasses, i.e.
+* Construction::AbstractConstructionSurface 及其所有子类，即 
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -102,6 +102,6 @@ a|
 
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |===

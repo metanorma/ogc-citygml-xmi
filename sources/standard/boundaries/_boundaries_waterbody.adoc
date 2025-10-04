@@ -1,14 +1,14 @@
 [[waterbody-boundaries-table]]
-.WaterBody space classes and their allowed thematic surface boundaries
+.水体空间类及其允许的主题表面边界
 [cols="2a,6a",options="header"]
 |===
-^|*Space class* ^|*Allowed space boundaries*
+^|*空间类* ^|*允许的空间边界*
 |WaterBody
 a|
-*  WaterBody::AbstractWaterBoundarySurface and all subclasses, i.e.
+*  WaterBody::AbstractWaterBoundarySurface 及其所有子类，即
 ** WaterBody::WaterGroundSurface,
 ** WaterBody::WaterSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 |===

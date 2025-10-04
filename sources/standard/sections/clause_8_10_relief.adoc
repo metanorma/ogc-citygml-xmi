@@ -1,15 +1,16 @@
-The Relief module provides the representation of terrain which is an essential part of city models. In CityGML, the terrain is modeled by relief features. They are represented in the UML model by the top-level feature type _ReliefFeature_, which is the main class of the Relief module.
-The relief features, in turn, are collections of relief components that describe the Earth's surface, also known as the Digital Terrain Model. The relief components can have different terrain representations which can coexist. Each relief component may be specified as a regular raster or grid, as a TIN (Triangulated Irregular Network), by break lines, or by mass points. In addition, the validity of the relief components may be restricted to certain areas.
+地形起伏模块定义了用于表示地形表面的概念。地形起伏可以通过不规则三角网（TIN）、栅格或网格、大量点或等高线来表示。在 UML 模型中，地形起伏由顶级要素类型 _ReliefFeature_, 在 UML 模型中，地形起伏由顶级要素类型 ReliefFeature 表示，它是地形起伏模块的主要类。地形起伏对象可以细分为不同的组成部分，例如 TIN 地形起伏、栅格地形起伏、大量点地形起伏和等高线地形起伏。
+TIN 地形起伏使用不规则三角网来表示地形表面。栅格地形起伏通过规则的栅格或网格来表示地形。大量点地形起伏将地形表示为一组三维点。等高线地形起伏则使用三维线来表示地形要素，如等高线或山脊 / 山谷线。
+每个地形起伏组成部分都可以有一个范围（extent），用于定义其空间范围。此外，地形起伏模块还支持使用应用领域扩展（ADE）来添加特定于应用的属性和关系。
 
-The UML diagram of the Relief module is depicted in <<relief-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-relief-section[OGC CityGML 3.0 Users Guide].
+
+地形起伏模块的 UML 图如 <<relief-uml>>. 有关此需求类的详细讨论，请参考 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-relief-section[OGC CityGML 3.0 Users Guide].
 
 [[relief-uml]]
-.UML diagram of Relief module.
-
+.地形起伏模块的 UML 图
 image::figures/Relief.png[]
 
-The ADE data types provided for the Relief module are illustrated in <<relief-uml-ade-types>>.
+为地形起伏模块提供的 ADE 数据类型如<<relief-uml-ade-types>>.
 
 [[relief-uml-ade-types]]
-.ADE classes of the CityGML Relief module.
+.CityGML 地形起伏模块的 ADE 类
 image::figures/Relief-ADE_Datatypes.png[]

@@ -1,4 +1,4 @@
-=== Conformance Class WaterBody
+=== 一致性认证：水体类
 
 include::WaterBody/ATS_Waterbody_Classes.adoc[]
 

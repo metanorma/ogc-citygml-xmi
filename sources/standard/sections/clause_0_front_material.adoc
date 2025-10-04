@@ -1,84 +1,83 @@
+
 [abstract]
-== Abstract
+== 摘要
 
-This Standard defines the open CityGML Conceptual Model for the storage and
-exchange of virtual 3D city models. The CityGML Conceptual Model is defined by a
-Unified Modeling Language (UML) object model. This UML model builds on the ISO
-Technical Committee 211 (ISO/TC 211) conceptual model standards for spatial and
-temporal data. Building on the ISO foundation assures that the man-made features
-described in the city models share the same spatiotemporal universe as the
-surrounding countryside within which they reside.
+本标准定义了用于存储与交换虚拟三维城市模型的CityGML概念模型，由统一建模语言（Unified Modeling Language, UML）进行定义。
+该UML模型在国际标准化组织211技术委员会（ISO/TC 211）的时空数据概念模型标准的基础之上构建，可确保城市模型中描述的人造要素与其所在的周围乡村共享统一的时空参考体系。
 
-A key goal for the development of the CityGML Conceptual Model is to provide a
-common definition of the basic entities, attributes, and relations of a 3D city
-model. This is especially important with respect to the cost-effective
-sustainable maintenance of 3D city models, allowing the reuse of the same data
-in different application fields.
+研制CityGML概念模型的核心目的是提供对三维城市模型中基本实体、属性和关系的统一定义，以允许在不同应用领域中重复利用相同的数据
+，有助于三维城市模型的可持续、低成本维护。
 
-The class models described in this standard are also available at
+本标准中描述的UML类模型亦可通过以下链接获取：
 https://github.com/opengeospatial/CityGML3-Workspace/tree/1.0/UML/CityGML
 
-== Submitters
+[.preface]
+== 提交者
 
-All questions regarding this submission should be directed to the editors or the
-submitters:
+关于本文档的所有相关问题，请联系编辑或提交人。
 
 [%unnumbered]
 |===
-|Name |Affiliation
+|姓名 |机构
 
-|Emmanuel Devys |Institut national de l'information géographique et forestière (IGN), France
-|Volker Coors |HFT Stuttgart, Germany
-|Sylvester Hagler |U.S. National Geospatial-Intelligence Agency
+|Emmanuel Devys |国家地理与林业信息研究所(IGN), 法国
+|Volker Coors |HFT Stuttgart, 德国
+|Sylvester Hagler |国家地理空间情报局, 美国
 |Charles (Chuck) Heazel |HeazelTech LLC
-|Thomas H. Kolbe |Chair of Geoinformatics, Technical University of Munich, Germany
-|Tatjana Kutzner |Chair of Geoinformatics, Technical University of Munich, Germany
-|Claus Nagel |Virtual City Systems, Germany
-|Carsten Roensdorf |Ordnance Survey, Great Britain
-|Carl Stephen Smyth |OpenSitePlan, USA
+|Thomas H. Kolbe |Chair of Geoinformatics, 慕尼黑工业大学, 德国
+|Tatjana Kutzner |Chair of Geoinformatics, 慕尼黑工业大学, 德国
+|Claus Nagel |Virtual City Systems, 德国
+|Carsten Roensdorf |Ordnance Survey, 大不列颠
+|Carl Stephen Smyth |OpenSitePlan, 美国
 
 |===
 
 [.preface]
-== Participants in development
+== 参与开发者
 
-In addition to the Editors of the specification the following individuals contributed to the CityGML 3.0 development:
+除了本规范的编辑外，以下人员亦为 CityGML 3.0的开发做出了贡献：
 
 [%unnumbered,options="header"]
 |===
-|Name |Institution
+|姓名 |机构
 
-|Giorgio Agugiaro |3D Geoinformation Group, Delft University of Technology, the Netherlands
-|Christof Beil |Chair of Geoinformatics, Technical University of Munich, Germany
-|Filip Biljecki |Department of Architecture, National University of Singapore, Singapore
-|Kanishk Chaturvedi |Chair of Geoinformatics, Technical University of Munich, Germany
-|Volker Coors |HFT Stuttgart, Germany
-|Emmanuel Devys |Institut national de l'information géographique et forestière (IGN), France
-|Jürgen Ebbinghaus |AED-SICAD, Germany
-|Heinrich Geerling |Architekturbüro Geerling, Germany
-|Gilles Gesquière |LIRIS, University of Lyon, France
-|Gerhard Gröger |CPA ReDev GmbH, Germany
-|Karl-Heinz Häfele |Institute for Automation and Applied Informatics, Karlsruhe Institute of Technology, Germany
+|Giorgio Agugiaro |三维地理信息组, 代尔夫特理工大学, 荷兰
+|Christof Beil |Chair of Geoinformatics, 慕尼黑工业大学, 德国
+|Filip Biljecki |建筑系, 新加坡国立大学, 新加坡
+|Kanishk Chaturvedi |Chair of Geoinformatics, 慕尼黑工业大学, 德国
+|Volker Coors |HFT Stuttgart, 德国
+|Emmanuel Devys |国家地理与林业信息研究所(IGN), 法国
+|Jürgen Ebbinghaus |AED-SICAD, 德国
+|Heinrich Geerling |Architekturbüro Geerling, 德国
+|Gilles Gesquière |LIRIS, 里昂大学, 法国
+|Gerhard Gröger |CPA ReDev GmbH, 德国
+|Karl-Heinz Häfele |自动化与应用信息学研究所, 卡尔斯鲁厄理工学院, 德国
 |Nobuhiro Ishimaru |Hitachi, Ltd., Japan
-|Marc-Oliver Löwner |Institute for Geodesy and Photogrammetry, Technische Universität Braunschweig, Germany
-|Diana Moraru |Ordnance Survey, Great Britain
-|Friso Penninga |Geonovum, the Netherlands
-|Helga Tauscher |Faculty of Spatial Information, HTW Dresden - University of Applied Sciences, Germany
-|Linda van den Brink |Geonovum, the Netherlands
-|Heidi Vanparys |Danish Agency for Data Supply and Efficiency, Denmark
-|Sisi Zlatanova |Faculty of Built Environment, University of New South Wales, Australia
+|Marc-Oliver Löwner |测量与摄影测量研究所, 布伦瑞克工业大学, 德国
+|Diana Moraru |Ordnance Survey, 大不列颠
+|Friso Penninga |Geonovum, 荷兰
+|Helga Tauscher |空间信息学院, 德累斯顿应用技术大学, 德国
+|Linda van den Brink |Geonovum, 荷兰
+|Heidi Vanparys |丹麦数据供应与效率局, 丹麦
+|Sisi Zlatanova |建筑环境学院, 新南威尔士大学, 澳大利亚
 
 |===
 
-The table only lists persons that were involved in the development of CityGML 3.0. CityGML 3.0 is based on extensive previous work that was done for CityGML 2.0. For persons involved in the previous work, please refer to the CityGML 2.0 specification.
+表格仅列出了参与 CityGML 3.0开发的人员。CityGML 3.0基于大量CityGML 2.0
+所做工作。有关参与先前工作的人员，请参阅CityGML 2.0规范。
 
 [.preface]
-== Acknowledgements
+== 致谢
 
-The editors wish to thank the Special Interest Group 3D (SIG 3D) of the initiative Geodata Infrastructure Germany (GDI-DE) which originally started the development of CityGML, the CityGML Standards Working Group and the 3D Information Management (3DIM) Working Group of the OGC as well as all contributors of change requests and comments.
+编辑们感谢德国地理数据基础设施（Geodata Infrastructure Germany, GDI-DE）
+倡议下的3D特别兴趣小组（Special Interest Group 3D, SIG 3D）和所有提出变更请求和评论的贡献者。
+SIG 3D最初启动了CityGML的开发，组建了CityGML标准工作组（Standards
+Working Group, SWG），3D信息管理（3D Information Management, 3DIM）
+工作组。
 
 [%unnumbered]
-.CityGML official logo
+.CityGML 官方图标
 image::images/CityGML_Logo.png[]
 
-This is the official CityGML logo. For current news on CityGML and information about ongoing projects and fields of research in the area of CityGML see http://www.citygml.org and http://www.citygmlwiki.org.
+这是CityGML的官方图标。有关CityGML的最新消息以及当前CityGML领域的项目和研
+究信息，请访问 http://www.citygml.org 和 http://www.citygmlwiki.org。

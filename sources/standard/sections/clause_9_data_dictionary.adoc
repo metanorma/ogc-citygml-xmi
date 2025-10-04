@@ -1,23 +1,25 @@
 [[data-dictionary-section]]
-== CityGML Data Dictionary
+== CityGML数据字典
 
-The CityGML UML model is the normative definition of the CityGML Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the CityGML Conceptual Model.
+CityGML UML模型是CityGML概念模型的规范定义。本节中的数据字典表是从UML模型基于软件生成的。因此，本节提供了CityGML概念模型的规范表示。
 
-An alternate representation can be found in the Conceptual Model in <<conceptual-model-section>>.
+另一种表达方式可以在 <<conceptual-model-section>> 的概念模型中找到。
 
 [[data-dictionary-package-diagram]]
-.CityGML UML Packages
+.CityGML UML内容
 image::figures/CityGMLPackageDiagram.png[]
 
 
 [[ISO-classes-dd]]
-=== ISO Classes
+=== ISO数据类型说明
 
-The following classes are defined in ISO standards and used by the CityGML Conceptual Model.
+下面的数据类型是在ISO标准中定义的，并由CityGML概念模型引用。
 
 include::../data-dictionaries/ISO-Classes.adoc[]
 
-
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_data_dictionary.yml]
+
 ----
 ----
+
+    

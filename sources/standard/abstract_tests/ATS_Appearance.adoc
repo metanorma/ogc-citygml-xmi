@@ -1,6 +1,5 @@
-=== Conformance Class Appearance
+=== 一致性认证：外观类
 
 include::Appearance/ATS_Appearance_Classes.adoc[]
 
 include::Appearance/ATS_Appearance_ADE_Use.adoc[]
-

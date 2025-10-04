@@ -1,28 +1,29 @@
-The Building module provides the representation of thematic and spatial aspects of buildings. Buildings are free-standing, self-supporting constructions that are roofed and usually walled, and that can be entered by humans and are normally designed to stand permanently in one place. Buildings are intended for human occupancy (e.g., a place of work or recreation), habitation and/or shelter of humans, animals or things. Buildings are represented in the UML model by the top-level feature type _Building_, which is the main class of the Building module. Buildings can physically or functionally be subdivided into building parts, and logically into storeys and building units (e.g., apartments). In addition, buildings can be decomposed into structural elements, such as walls, slabs, staircases, and beams.
+建筑模块用于呈现建筑物的主题和空间方面。建筑物是独立、自承重的结构，通常有屋顶和墙壁，可供人类进入，且一般设计为永久性地位于一个地方。
+建筑物旨在供人类居住（例如工作或娱乐场所）、居住以及 / 或者为人类、动物或物品提供遮蔽。在 UML 模型中，建筑物由顶级要素类型 _Building_ 表示，它是建筑模块的主要类。建筑物可以在物理上或功能上细分为建筑部件，并在逻辑上细分为楼层和建筑单元（例如公寓）。此外，建筑物可以分解为结构元素，如墙壁、楼板、楼梯和梁。
 
-The interior of buildings is represented by rooms. This allows a virtual accessibility of buildings such as for visitor information in a museum (“Location Based Services“), the examination of accommodation standards or the presentation of daylight illumination of a building.
 
-Buildings can contain installations and furniture. Installations are permanent parts of a building that strongly affect the outer or inner appearance of the building and that cannot be moved. Examples are balconies, chimneys, dormers or stairs. In contrast, furniture, represents moveable objects inside a building, like tables and chairs.
+建筑物的内部由房间来表示。这使得建筑物具有虚拟可访问性，例如用于博物馆的游客信息（“基于位置的服务”）、检查住宿标准或展示建筑物的日光照明情况。
 
-Buildings can be bounded by different types of surfaces. In this way, the outer façade of buildings can be differentiated semantically into wall surfaces, roof surfaces, ground surfaces, outer floor surfaces, and outer ceiling surfaces, whereas the visible surface of rooms can be structured into interior wall surfaces, floor surfaces, and ceiling surfaces. Furthermore, the openings of buildings, i.e. windows and doors, can be represented including their corresponding surfaces.
+建筑物可以包含设施和家具。设施是建筑物的永久性部分，对建筑物的外观或内部有显著影响且无法移动。例如阳台、烟囱、老虎窗或楼梯。相比之下，家具代表建筑物内的可移动物体，如桌子和椅子。
 
-The UML diagram of the building module is depicted in <<building-uml>>. The Building module inherits concepts from the Construction module (cf. lutaml_table::[package="Construction"]). The Construction module defines objects that are common to all types of construction, such as the different surface types and the openings. A detailed discussion of the Requirements Class Building can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-building-section[CityGML 3.0 Users Guide].
+建筑物可以由不同类型的表面界定。通过这种方式，建筑物的外立面可以在语义上细分为墙面、屋顶面、地面、外部楼面和外部天花板面，而房间的可见表面可以细分为内部墙面、楼面和天花板面。此外，建筑物的开口，即窗户和门，可以连同其相应的表面一起表示。
+
+建筑模块的 UML 图如 <<building-uml>>. 建筑模块继承自 Construction 模块的概念 (cf. lutaml_table::[package="Construction"]). Construction 模块定义了所有类型建筑共有的对象，例如不同的表面类型和开口。关于需求类 Building 的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-building-section[CityGML 3.0 Users Guide]中找到。
 
 [[building-uml]]
-.UML diagram of CityGML's building model.
-
+.CityGML 的建筑模型
 image::figures/Building.png[]
 
-The ADE data types provided for the Building module are illustrated in <<building-uml-ade-types>>.
+为建筑模块提供的 ADE 数据类型如<<building-uml-ade-types>>.
 
 [[building-uml-ade-types]]
-.ADE classes of the CityGML Building module.
+.CityGML 建筑模块的 ADE 类
 image::figures/Building-ADE_Datatypes.png[]
 
-The Code Lists provided for the Building module are illustrated in <<building-uml-codelists>>.
+为建筑模块提供的代码列表如<<building-uml-codelists>>所示
 
 [[building-uml-codelists]]
-.Codelists from the CityGML Building module.
+.CityGML 建筑模块的代码列表
 image::figures/Building-Codelists.png[]
 
-<<building-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Building module:
+<<building-boundaries-table>> 列出了建筑模块中定义的空间类允许的主题表面边界：

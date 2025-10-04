@@ -1,26 +1,29 @@
 [[per_Core_classes]]
-[.permission,label="/per/core/classes"]
+[.permission]
 ====
-For each UML class defined or referenced in CityGML Conceptual Model:
+[%metadata]
+标签:: /per/core/classes
+
+对于 CityGML 概念模型中定义或引用的每个 UML 类：
 
 [.component,class=part]
 --
-An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.
---
-
-[.component,class=part]
---
-An Implementation Specification MAY represent an association of the UML class with a null association.
---
-
-[.component,class=part]
---
-An Implementation Specification MAY represent an attribute of the UML class with a null attribute.
+实施规范可以将该类表示为没有属性、关联或定义的空类。
 --
 
 [.component,class=part]
 --
-Whenever a null element is used to represent a concept from the Conceptual Model, the Implementation Specification SHOULD document that mapping and provide an explanation for why that concept was not implemented.
+实施规范可以将 UML 类的关联表示为空关联。
+--
+
+[.component,class=part]
+--
+实施规范可以将 UML 类的属性表示为空属性。
+--
+
+[.component,class=part]
+--
+每当使用空元素表示概念模型中的概念时，实施规范应记录该映射，并说明未实现该概念的原因。
 --
 ====
 

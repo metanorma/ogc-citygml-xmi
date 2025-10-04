@@ -1,12 +1,11 @@
 [appendix,obligation="normative"]
 [[abstract-test-suite]]
-== Abstract test suite
+== 抽象测试套件
+=== 引言
 
-=== Introduction
+城市GML 3.0是一个概念模型。由于它与实现技术无关，因此无法提供可执行的测试脚本。提供符合性证据的责任落在实现规范上。此证据应作为附录包含在实现规范文档中。
 
-CityGML 3.0 is a Conceptual Model. Since it is agnostic to implementing technologies, an Executable Test Script is not feasible. It becomes the responsibility of the Implementation Specifications to provide evidence of conformance. This evidence should be provided as an annex to the Implementation Specification document.
-
-The test method specified in this ATS is manual inspection. Automated methods may be used where they exist.
+本抽象测试套件中规定的测试方法是人工检查。在存在自动化方法的情况下，可以使用自动化方法。
 
 include::../abstract_tests/ATS_Core.adoc[]
 
@@ -43,4 +42,3 @@ include::../abstract_tests/ATS_Building.adoc[]
 include::../abstract_tests/ATS_Tunnel.adoc[]
 
 include::../abstract_tests/ATS_ADE.adoc[]
-

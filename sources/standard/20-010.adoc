@@ -1,8 +1,9 @@
-= OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard
+= OGC城市地理标记语言(CityGML) 第1部分: 概念模型标准
 :doctype: standard
 :docsubtype: conceptual-model
 :encoding: utf-8
 :language: en
+:i18nyaml: ./i18n.yaml
 :status: published
 :committee: technical
 :version: 3.0.0
@@ -29,6 +30,9 @@
 :fullname_6: Charles Heazel
 :affiliation_6: HeazelTech LLC
 :role_6: editor
+:fullname_7: 于大宇，彭清山，林旭辉，周博林，黄栋，张勇，乐鹏，陈淑杰，杨滔，陈南江，马欣蕊
+:affiliation_7: 南京师范大学
+:role_7: translator
 :keywords: ogcdoc, OGC document, CityGML, 3D city models
 :submitting-organizations: Heazeltech LLC; Institut national de l'information géographique et forestière (IGN); OpenSitePlan; Technical University of Munich; Ordnance Survey; Virtual City Systems
 :mn-document-class: ogc

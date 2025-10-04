@@ -1,25 +1,28 @@
 [[per_Profile_template]]
-[.permission,label="/per/Profile/template"]
+[.permission]
 ====
-For each UML class defined or referenced in the Core Package:
+[%metadata]
+标签:: /per/profile/template
+
+对核心包中定义或引用的每个 UML 类：
 
 [.component,class=part]
 --
-The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=part]
---
-The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and cardinalities as those of the UML class.
---
-
-[.component,class=part]
---
-The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and cardinality.
+实现规范**应**包含一个元素，表示与 UML 类中定义的相同概念。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the attributes of all parent classes of the the UML class including the name, definition, type, and cardinality.
+实现规范**应**表示与 UML 类相同的源、目标、方向、角色和基数的关联。
+--
+
+[.component,class=part]
+--
+实现规范**应**表示 UML 类的属性，包括名称、定义、类型和基数。
+--
+
+[.component,class=part]
+--
+实现规范**应**表示所有父类的 UML 类属性，包括名称、定义、类型和基数。
 --
 ====

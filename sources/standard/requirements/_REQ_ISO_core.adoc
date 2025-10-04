@@ -1,11 +1,11 @@
 [[req_Core_iso-restrictions]]
 [requirement,type="general",label="/req/core/isorestrictions"]
 ====
-ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:
+在 CityGML 概念模型中使用的 ISO 类受到以下限制：
 
 [.component,class=part]
 --
-Classes derived from the GM_Solid class (ISO 19107) SHALL only include exterior boundaries. (The `interior` association on the GM_SolidBoundary shall not be defined)
+从 GM_Solid 类（ISO 19107）派生的类应仅包括外部边界。（GM_SolidBoundary 上的内部关联不应定义）
 --
 ====
 

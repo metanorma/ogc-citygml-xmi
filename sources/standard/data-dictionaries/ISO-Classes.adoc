@@ -1,121 +1,119 @@
 [[AnyFeature-section]]
-==== AnyFeature (from <<iso19109>>)
+==== AnyFeature（来自于 <<iso19109>>）
 
-.Metadata of AnyFeature (class)
+.AnyFeature（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | AnyFeature is an abstract class that is the generalization of all feature types. AnyFeature is an instance of the «metaclass» FeatureType [cf. ISO 19109].
-h|Subclass of: | none
-h|Stereotype: | «FeatureType»
+h|定义: |AnyFeature是一个抽象基类，是所有要素类型的泛化基础。AnyFeature是 «metaclass» FeatureType的一个实例 [cf. ISO 19109]。
+h|谁的子类：|无
+h|所属构造型：|«FeatureType»
 |===
 
-.Associations of AnyFeature (class)
-[cols="15a,20a,60a",options="header"]
+.AnyFeature（类）的关联
+[cols="15a，20a，60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
+|角色名称|目标类和多重度|定义
 |
-|{{FeatureType,options="noref,noital,linkmention"}} [1..1]
+|FeatureType[1..1]
 |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[CV_DiscreteGridPointCoverage-section]]
-==== CV_DiscreteGridPointCoverage (from <<iso19123>>)
+==== CV_DiscreteGridPointCoverage（来自于 <<iso19123>>）
 
-.Metadata of CV_DiscreteGridPointCoverage (class)
+.CV_DiscreteGridPointCoverage（类）的元数据
+
 [cols="1a,4a"]
 |===
-h|Definition: | A coverage that returns the same feature attribute values for every direct position within any single spatial object, temporal object or spatiotemporal object in its domain.
-h|Subclass of: | {{CV_DiscreteCoverage,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义:|为其域中的任何单个空间对象、时间对象或时空对象内的每个直接定位返回相同要素属性值的覆盖。
+h|谁的子类：| CV_DiscreteCoverage
+h|所属构造型：|«type»
 |===
 
-.Associations of CV_DiscreteGridPointCoverage (class)
+.CV_DiscreteGridPointCoverage（类）的关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
-| element
-|{{CV_GridPointValuePair,options="noref,noital,linkmention"}} [1..*]
+|角色名称|目标类和多重度|定义
+|element
+| CV_GridPointValuePair [1..*]
 |
-| valueAssignment
-|{{CV_GridValuesMatrix,options="noref,noital,linkmention"}} [1..1]
+|valueAssignment
+| CV_GridValuesMatrix [1..1]
 |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[DirectPosition-section]]
-==== DirectPosition (from <<iso19107>>)
+==== DirectPosition（来自于 <<iso19107>>）
 
-.Metadata of DirectPosition (class)
+.DirectPosition（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | DirectPosition object data types (<<iso19107,figure=14>>) hold the coordinates for a position within some coordinate reference system. The coordinate reference system is described in ISO 19111. Since DirectPositions, as data types, will often be included in larger objects (such as GM_Objects) that have references to ISO19111::SC_CRS, the DirectPosition::cordinateReferenceSystem may be left NULL if this particular DirectPosition is included in a larger object with such a reference to a SC_CRS. In this case, the DirectPosition::cordinateReferenceSystem is implicitly assumed to take on the value of the containing object's SC_CRS.
-h|Subclass of: | None
-h|Stereotype: | None
+h|定义：|DirectPosition中的对象数据类型（<<iso19107,figure=14>>）保存某个坐标参考系内的位置坐标。ISO 19111中描述了此坐标参考系统。由于DirectPositions作为数据类型通常包含在，例如ISO19111：SC_CRS较大对象（如GM_Objects）中，因此，如果此特定DirectPosition包含在引用SC_CRS的较大对象中，则DIRECT position：cordinateReferenceSystem可以保留为NULL。在这种情况下，DirectPosition：CordinateReferencesSystem假定默认继承包含对象的SC_CRS的值。
+h|谁的子类：|无
+h|所属构造型：|无
 |===
 
-.Associations of DirectPosition (class)
+.DirectPosition（类）的关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
-| CRS |{{CRS,options="noref,noital,linkmention"}} [0..1]|
+|角色名称|目标类和多重度|定义
+| CRS |CRS [0..1]|
 | CRS |<<SC_CRS-section,SC_CRS>> [0..1]|
 |===
 
-.Attributes of DirectPosition (class)
+
+.DirectPosition（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
-| coordinate   |Sequence <{{number,options="noref,noital,linkmention"}}> [1..1]|
-| dimension   |{{Integer,options="noref,noital,linkmention"}} [1..1] |
+|属性|值类型和多重度|定义
+|坐标|序列 <Number> [1..1] |
+|维度| Integer [1..1] |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
-
 
 [[GM_Object-section]]
-==== GM_Object (from <<iso19107>>)
+==== GM_Obkect（来自于 <<iso19107>>）
 
-.Metadata of GM_Object (class)
+.GM_Object（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | GM_Object is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet<DirectPosition>. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.
+h|定义：|GM_Object是几何对象分类的根类，并支持所有地理参考几何对象的接口。GM_Object实例是一些特定坐标参考系中的直接位置集合。GM_Object可视为一组所有直接位置的集合满足操作接口TransfiniteSet<DirectPosition>的无限点集。由于无限集合类不能直接实现，因此GM_Object接口中应提供包含的布尔测试。该国际标准专注于矢量几何类，但未来可能会使用GM_Object作为不需要修改的根数据类型。
 
-NOTE: As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will.
+NOTE: 作为一种数据类型，GM_Object没有明确定义数据类型的默认状态或值。GM_Object的实例化子类将对其进行描述。
 
-h|Subclass of: | none
-h|Stereotype: | «type»
-h|Constraint: |
+h|谁的子类：|无
+h|所属构造型：|«type»
+h|约束条件: |
 
-[source,ocl,%unnumbered]
+[source,ocl,%numbered]
 ----
 dimension() >  boundary().dimension (Invariant):
 ----
 
-h|Constraint: |
+h|约束条件: |
 
 [source,ocl,%unnumbered]
 ----
 boundary().notEmpty() implies boundary().dimension() = dimension() -1 (Invariant):
 ----
 
-h|Constraint: |
+h|约束条件: |
 
 [source,ocl,%unnumbered]
 ----
@@ -124,337 +122,324 @@ boundary().isEmpty() = isCycle() (Invariant):
 
 |===
 
-.Associations of GM_Object (class)
+.GM_Object（类）的关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
+|角色名称|目标类和多重度|定义
 
 |
-|{{Geometry,options="noref,noital,linkmention"}} [1..1]
-|
-
-|
-|TransfiniteSet <<<DirectPosition-section,DirectPosition>>> [1..1]
+| Geometry [1..1]
 |
 
 |
-|{{CV_DomainObject,options="noref,noital,linkmention"}} [1..1]
+|TransfiniteSet<<<gtt type="0"/>> [1..1]
 |
 
-| CRS
-|{{CRS,options="noref,noital,linkmention"}} [0..1]
+|
+| CV_DomainObject[1..1]
 |
 
-| CRS
+|CRS
+| CRS [0..1]
+|
+
+|CRS
 |<<SC_CRS-section,SC_CRS>> [0..1]
 |
 
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_MultiCurve-section]]
-==== GM_MultiCurve (from <<iso19107>>)
+==== GM_MultiCurve（来自于 <<iso19107>>）
 
-.Metadata of GM_MultiCurve (class)
+.GM_MultiCurve（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | An aggregate class containing only instances of GM_OrientableCurve. The association role “element” shall be the set of GM_OrientableCurves contained in this GM_MultiCurve.
-h|Subclass of: | {{GM_MultiPrimitive,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|仅包含OrientableCurve_GM实例的聚合类。关联角色“element”应为该GM_MultiCurve中包含的GM_OrientableCurves的集合。
+h|谁的子类：| GM_MultiPrimitive
+h|所属构造型：|«type»
 |===
 
-.Attributes of GM_MultiCurve (class)
+.GM_MultiCurve（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| length  |{{Length,options="noref,noital,linkmention"}} [1..1] |
+|长度| Length [1..1] |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_MultiPoint-section]]
-==== GM_MultiPoint (from <<iso19107>>)
+==== GM_MultiPoint（来自于 <<iso19107>>）
 
-.Metadata of GM_MultiPoint (class)
+.GM_MultiPoint（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | GM_MultiPoint is an aggregate class containing only points. The association role “element” shall be the set of GM_Points contained in this GM_MultiPoint.
-h|Subclass of: | {{GM_MultiPrimitive,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|GM_MultiPoint是仅包含点的聚合类。关联角色“Element”应为该GM_MultiPoint中包含的GM_Points。
+h|谁的子类：| GM_MultiPrimitive 
+h|所属构造型：|«type»
 |===
 
-.Attributes of GM_MultiPoint (class)
+.GM_MultiPoint（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| position   | Set <<<DirectPosition-section,DirectPosition>>> [1..1] |
+|位置| 设置 <<<DirectPosition-section,DirectPosition>>> [1..1]  |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_MultiSurface-section]]
-==== GM_MultiSurface (from <<iso19107>>)
+==== GM_MultiSurface（来自于 <<iso19107>>）
 
-.Metadata of GM_MultiSurface (class)
+.GM_MultiSurface（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | An aggregate class containing only instances of GM_OrientableSurface. The association role “element” shall be the set of GM_OrientableSurfaces contained in this GM_MultiSurface.
-h|Subclass of: | {{GM_MultiPrimitive,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|仅包含GM_OrientableSurface的实例中德聚合类。关联角色“element”应为该GM_MultiSurface中包含的GM_OrientableSurfaces的集合。
+h|谁的子类：| GM_MultiPrimitive h|构造型：|«类型»
 |===
 
-.Attributes of GM_MultiSurface (class)
+.GM_MultiSurface（类）属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| area   |{{Area,options="noref,noital,linkmention"}} [1..1] |
+|area| Area [1..1] |
 
-| perimeter   |{{Length,options="noref,noital,linkmention"}} [1..1] |
+|Property| Length, [1..1] |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_Point-section]]
-==== GM_Point (from <<iso19107>>)
+==== GM_Point（来自于 <<iso19107>>）
 
-.Metadata of GM_Point (class)
+.GM_Point（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | GM_Point is the basic data type for a geometric object consisting of one and only one point.
-h|Subclass of: | {{GM_Primitive,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|GM_点是由一个且仅由一个点组成的几何对象的基本数据类型。
+h|谁的子类：| GM_Primitive
+h|所属构造型：|«Type»
 |===
 
-.Associations of GM_Point (class)
+.GM_Point（类）的关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
+|角色名称|目标类和多重度|定义
 |
-|{{Point,options="noref,noital,linkmention"}} [1..1]
+| Point [1..1]
 |
-| composite
-|{{GM_CompositePoint,options="noref,noital,linkmention"}} [0..*]
+|composite
+| GM_CompositePoint [0..*]
 |
 |===
 
-.Attributes of GM_Point (class)
+.GM_Point（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| position   |<<DirectPosition-section,DirectPosition>> [1..1]  |The attribute "position" shall be the DirectPosition of this GM_Point.
+|位置|<<DirectPosition-section,DirectPosition>> [1..1] |属性“position”应为该GM_Point的DirectPosition。
 
-NOTE: In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.
+NOTE: 在大多数情况下，GM_Point的状态完全由其位置属性确定。唯一的例外是，如果GM_Point已被细分用于提供例如符号信息等，额外的非几何信息。
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_Solid-section]]
-==== GM_Solid (from <<iso19107>>)
+==== GM_Solid（来自于 <<iso19107>>）
 
-.Metadata of GM_Solid (class)
+.GM_Solid（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
-h|Subclass of: | {{GM_Primitive,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|GM_Solid是GM_Primitive的子类，是三维几何的基础。实体的范围由边界曲面定义。
+h|谁的子类：| GM_Primitive
+h|所属构造型：|«Type»
 |===
 
-.Associations of GM_Solid (class)
+.GM_Solid（类）的关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
-| composite
-|{{GM_CompositeSolid,options="noref,noital,linkmention"}} [0..*]
+|角色名称|目标类和多重度|定义
+|composite
+| GM_CompositeSolid [0..*]
 |
 |
-|{{Solid,options="noref,noital,linkmention"}} [1..1]
+| Solid [1..1]
 |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_Surface-section]]
-==== GM_Surface (from <<iso19107>>)
+==== GM_Surface（来自于 <<iso19107>>）
 
-.Metadata of GM_Surface (class)
+.GM_Surface（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | GM_Surface is a subclass of GM_Primitive and is the basis for 2-dimensional geometry. Unorientable surfaces such as the Möbius band are not allowed. The orientation of a surface chooses an "up" direction through the choice of the upward normal, which, if the surface is not a cycle, is the side of the surface from which the exterior boundary appears counterclockwise. Reversal of the surface orientation reverses the curve orientation of each boundary component, and interchanges the conceptual "up" and "down" direction of the surface. If the surface is the boundary of a solid, the "up" direction is usually outward. For closed surfaces, which have no boundary, the up direction is that of the surface patches, which must be consistent with one another. Its included GM_SurfacePatches describe the interior structure of a GM_Surface.
+h|定义：|GM_Surface是GM_Primitive的一个子类，是二维几何的基础。不可定向的表面（如莫比乌斯带）是不允许的。曲面的方向通过选择向上法线来选择“上”的方向，如果曲面不是循环，则向上法线是曲面的一侧，外部边界从该侧逆时针显示。反转曲面方向将反转每个边界组件的曲线方向，并交换曲面的概念性“上”和“下”的方向。如果曲面是实体的边界，则“上”方向通常是向外。对于没有边界的闭合曲面，向上方向是曲面片的方向，曲面片必须彼此一致。其所包括的GM_SurfacePatches描述了GM_Surface的内部结构。
 
-NOTE: Other than the restriction on orientability, no other "validity" condition is required for GM_Surface.
+NOTE: 除了对可定向性的限制外，GM_Surface不需要其他“有效性”的限制条件。
 
-h|Subclass of: | {{GM_OrientableSurface,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|谁的子类：| GM_OrientableSurface
+h|所属构造型：|«Type»
 |===
 
-.Associations of GM_Surface (class)
+.GM_Surface（类）关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
+|角色名称|目标类和多重度|定义
 |
-|{{GM_GenericSurface,options="noref,noital,linkmention"}} [1..1]
+| GM_GenericSurface[1..1]
 |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_Tin-section]]
-==== GM_Tin (from <<iso19107>>)
+==== GM_Tin（来自于 <<iso19107>>）
 
-.Metadata of GM_Tin (class)
+.GM_Tin（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | A GM_Tin is a GM_TriangulatedSurface that uses the Delaunay algorithm or a similar algorithm complemented with consideration for breaklines, stoplines and maximum length of triangle sides (<<iso19107,figure=22>>). These networks satisfy the Delaunay criterion away from the modifications: For each triangle in the network, the circle passing through its vertexes does not contain, in its interior, the vertex of any other triangle.
-h|Subclass of: | <<GM_TriangulatedSurface-section,GM_TriangulatedSurface>>
-h|Stereotype: | «type»
+h|定义：|GM_Tin是使用Delaunay三角抛分算法或类似算法计算的GM_TriangulatedSurface，该算法考虑了要素线、停止线和三角形边的最大长度（(<<iso19107,figure=22>>）。这些网络满足Delaunay准则并鲁棒于相应修正。对于网络中的每个三角形，通过其顶点的圆在其内部不包含任何其他三角形的顶点。
+h|谁的子类：| <<GM_TriangulatedSurface-section,GM_TriangulatedSurface>> 
+h|所属构造型：|«Type»
 |===
 
-.Attributes of GM_Tin (class)
+.GM_Tin（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| breakLines   |Set <{{GM_LineString,options="noref,noital,linkmention"}}> [1..1] |
+|breakLines |设置 <GM_LineString> [1..1] |
 
-| controlPoint   |{{GM_Position,options="noref,noital,linkmention"}}  [3..*] |
+|controlPoint| GM_Position [3..*] |
 
-| maxLength   |{{Distance,options="noref,noital,linkmention"}} [1..1] |
+|maxLength| Distance [1..1] |
 
-| stopLines   |Set <{{GM_LineString,options="noref,noital,linkmention"}}> [1..1] |
+|stopLines|设置 <GM_LineString> [1..1] |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[GM_TriangulatedSurface-section]]
-==== GM_TriangulatedSurface (from <<iso19107>>)
+==== GM_TriangulatedSurface（来自于 <<iso19107>>）
 
-.Metadata of GM_TriangulatedSurface (class)
+.GM_TriangulatedSurface（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | A GM_TriangulatedSurface is a GM_PolyhedralSurface that is composed only of triangles (GM_Triangle). There is no restriction on how the triangulation is derived.
-h|Subclass of: | {{GM_PolyhedralSurface,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|GM_TriangulatedSurface是仅由三角形（GM_Triangle）组成的GM_PolyhedralSurface。对如何导出三角剖分没有限制。
+h|谁的子类：| GM_PolyhedralSurface
+h|所属构造型：|«Type»
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
-[[SC_CRS-section]]
-==== SC_CRS (from <<iso19111>>)
+[[SC_CRS-section]]   
+==== SC_CRS（来自于 <<iso19111>>）
 
-.Metadata of SC_CRS (class)
+.SC_CRS（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | Coordinate reference system which is usually single but may be compound.
-h|Subclass of: | {{IO_IdentifiedObjectBase,options="noref,noital,linkmention"}}, {{RS_ReferenceSystem,options="noref,noital,linkmention"}}
-h|Stereotype: | «type»
+h|定义：|坐标参考系，通常是单一的，但也可以是复合的。
+h|谁的子类：|IO_IdentifiedObjectBase， RS_ReferenceSystem
+h|所属构造型：|«Type»
 |===
 
-.Associations of SC_CRS (class)
+.SC_CRS（类）关联
 [cols="15a,20a,60a",options="header"]
 |===
-| Role name | Target class and multiplicity | Definition
-| coordOperationTo
-|{{CC_CoordinateOperation,options="noref,noital,linkmention"}} [0..*]
-|Not-navigable association from a Coordinate Operation that uses ths CRS as its targetCRS.
-| grid
-|{{CV_ReferenceableGrid,options="noref,noital,linkmention"}} [0..*]
+|角色名称|目标类和多重度|定义
+|coordOperationTo
+| CC_CoordinateOperation [0..*]
+|该CRS在所指定的坐标系关联其targetCRS时，不可用于导航。
+|grid
+| CV_ReferenceableGrid [0..*]
 |
 |===
 
-.Attributes of SC_CRS (class)
+.SC_CRS（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| scope   |{{CharacterString,options="noref,noital,linkmention"}}  [1..*] |Description of usage, or limitations of usage, for which this CRS is valid. If unknown, enter "not known".
+|scope| CharacterString [1..*] |描述此CRS对其使用说明或使用限制。如果未知，则输入“not known”。
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»。
 ====
 
 
 [[TM_Position-section]]
-==== TM_Position (from <<iso19108>>)
+==== TM_Position（来自于 <<iso19108>>）
 
-.Metadata of TM_Position (class)
+.TM_Position（类）的元数据
 [cols="1a,4a"]
 |===
-h|Definition: | TM_Position is a union class that consists of one of the data types listed as its attributes. Date, Time, and DateTime are basic data types defined in ISO/TS 19103.
-h|Subclass of: | None
-h|Stereotype: | «Union»
+h|定义：|TM_Position时由作为其属性列出的数据组成的集合。其中，Date, Time和DateTime基于ISO/TS 19103中定义的基本数据类型。
+h|谁的子类：|无
+h|所属构造型：|«Union»
 |===
 
-.Attributes of TM_Position (class)
+.TM_Position（类）的属性
 [cols="15a,20a,60a",options="header"]
 |===
-| Attribute | Value type and multiplicity | Definition
+|属性|值类型和多重度|定义
 
-| anyOther   |{{TM_TemporalPosition,options="noref,noital,linkmention"}} [1..1] |
+|anyOther| TM_TemporalPosition [1..1] |
 
-| date8601   |{{Date,options="noref,noital,linkmention"}} [1..1] |
+|date8601| Date [1..1] |
 
-| time8601   |{{Time,options="noref,noital,linkmention"}} [1..1] |
+|time8601| Time [1..1] |
 
-| dateTime8601   |{{DateTime,options="noref,noital,linkmention"}} [1..1] |
+|dateTime8601| DateTime [1..1] |
 |===
 
-[NOTE,keep-separate=true]
+[NOTE, keep-separate=true]
 ====
-Unless otherwise specified, all attributes and role names have the stereotype
-«Property».
+除非另有说明，否则所有属性和角色名称都具备构造型«Property»»。
 ====
-
 

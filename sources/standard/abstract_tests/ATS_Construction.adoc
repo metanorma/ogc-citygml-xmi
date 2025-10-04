@@ -1,4 +1,4 @@
-=== Conformance Class Construction
+=== 一致性认证：构造物类
 
 include::Construction/ATS_Construction_Classes.adoc[]
 

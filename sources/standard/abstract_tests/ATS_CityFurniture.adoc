@@ -1,9 +1,7 @@
-=== Conformance Class CityFurniture
+=== 一致性认证：城市家具类
 
 include::CityFurniture/ATS_CityFurniture_Classes.adoc[]
 
 include::CityFurniture/ATS_CityFurniture_Boundaries.adoc[]
 
 include::CityFurniture/ATS_CityFurniture_ADE_Use.adoc[]
-
-

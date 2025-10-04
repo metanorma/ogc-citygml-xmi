@@ -1,47 +1,50 @@
 [[ats_ade_elements]]
-[abstract_test,label="/ats/ade/elements",subject='<<req_ade_elements,/req/ade/elements>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/ade/elements
+主体:: <<req_ade_elements,/req/ade/elements>>
+
+[.component,class=测试目的]
 --
-To validate that Application Domain Extension s (ADE) to the CityGML Conceptual Model are implemented correctly.
+验证对CityGML概念模型的应用领域扩展（ADE）是否正确实现。
 --
 
-[.component,class=test method type]
+[.component,class=测试方法类型]
 --
-Manual Inspection
+人工检查
 --
 
-[.component,class=test method]
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-For each new UML class defined by an ADE:
+对于每个由ADE定义的新UML类：
 
 [.component,class=step]
 --
-Validate that every Feature Type class in an ADE is derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
---
-
-[.component,class=step]
---
-Validate that every UML class in an ADE which represents a top-level Feature Type is assigned the _&#171;TopLevelFeatureType&#187;_ stereotype.
+验证ADE中的每个要素类型类是否直接或间接继承自CityGML根要素类型_core:AbstractFeature_或其子类。
 --
 
 [.component,class=step]
 --
-Validate that every UML class in an ADE which represents spaces or space boundaries is derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
+验证ADE中代表顶级要素类型的每个UML类是否被赋予了_«TopLevelFeatureType»_构造型。
 --
 
 [.component,class=step]
 --
-Validate that any new or additional spatial properties defined by an ADE:
+验证ADE中代表空间或空间边界的每个UML类是否分别直接或间接继承自_core:AbstractSpace_或_core:AbstractSpaceBoundary_。
+--
 
-. belongs to a predefined LOD,
-. has a property name which starts with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
+[.component,class=step]
+--
+验证ADE定义的任何新的或额外的空间属性：
+
+. 属于预定义的LOD，
+. 属性名称以“lod__X__”为前缀，其中_X_是一个表示目标LOD的整数值。
 --
 
 ======
 =====
 ====
-

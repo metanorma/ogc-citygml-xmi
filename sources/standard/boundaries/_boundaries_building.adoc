@@ -1,11 +1,11 @@
 [[building-boundaries-table]]
-.Building space classes and their allowed thematic surface boundaries
+.建筑空间类及其允许的主题表面边界
 [cols="2a,6a",options="header"]
 |===
-^|*Space class* ^|*Allowed space boundaries*
+^|*空间类* ^|*允许的空间边界*
 |AbstractBuilding
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -16,14 +16,14 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |AbstractBuildingSubdivision
-a|No boundaries allowed
+a|无允许的边界
 
 |Building
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -34,11 +34,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |BuildingConstructiveElement
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -49,14 +49,14 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |BuildingFurniture
-a|No boundaries allowed
+a|无允许的边界
 
 |BuildingInstallation
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -67,11 +67,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |BuildingPart
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -82,11 +82,11 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |BuildingRoom
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -97,17 +97,17 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |BuildingUnit
 a|
 *  Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 
 |Storey
 a|
-*  Construction::AbstractConstructionSurface and all subclasses, i.e.
+*  Construction::AbstractConstructionSurface 及其所有子类，即
 ** Construction::GroundSurface,
 ** Construction::RoofSurface,
 ** Construction::CeilingSurface,
@@ -118,5 +118,5 @@ a|
 ** Construction::InteriorWallSurface
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自 ADE 的可能类
 |===

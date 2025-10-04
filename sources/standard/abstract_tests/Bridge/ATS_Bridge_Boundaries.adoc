@@ -1,26 +1,30 @@
 [[ats_bridge_boundaries]]
-[abstract_test,label="/ats/bridge/boundaries",subject='<<req_bridge_boundaries,/req/bridge/boundaries>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/bridge/boundaries
+主体:: <<req_bridge_boundaries,/req/bridge/boundaries>>
+
+[.component,class=测试目的]
 --
-To validate that the Implementation Specification does not specify boundaries except as defined in the Conceptual Model.
+验证实现规范是否未定义概念模型中未定义的边界。
 --
 
-[.component,class=test method type]
+[.component,class=测试方法类型]
 --
-Manual Inspection
+人工检查
 --
 
-[.component,class=test method]
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-For each UML class defined or referenced in the Bridge Package:
+对于桥梁包中定义或引用的每个UML类：
 
 [.component,class=step]
 --
-Validate that the Implementation Specification does not specify boundaries for the UML class except as specified in the Conceptual Model.
+验证实现规范是否未为UML类定义边界，除非概念模型中有定义。
 --
 ======
 =====

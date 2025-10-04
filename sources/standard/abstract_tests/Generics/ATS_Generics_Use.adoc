@@ -1,26 +1,30 @@
 [[ats_generics_use]]
-[abstract_test,label="/ats/generics/use",subject='<<req_generics_use,/req/generics/use>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/generics/use
+主体:: <<req_generics_use,/req/generics/use>>
+
+[.component,class=测试目的]
 --
-To validate that Generics are not used in a way that duplicates or conflicts with feature classes or attributes defined in the Conceptual Model..
+验证是否仅在不与概念模型中定义的要素类或属性重复或冲突的情况下使用泛型。
 --
 
-[.component,class=test method type]
+[.component,class=测试方法类型]
 --
-Manual Inspection
+人工检查
 --
 
-[.component,class=test method]
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-For all Generics-based classes and attributes defined in the Implementation Specification:
+对于实现规范中定义的所有基于泛型的类和属性：
 
 [.component,class=step]
 --
-Demonstrate that this class or attribute does not duplicate or conflict with any classes or attributes defined in the Conceptual Model.
+证明此类或属性不重复或冲突于概念模型中定义的任何类或属性。
 --
 ======
 =====

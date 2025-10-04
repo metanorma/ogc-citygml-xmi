@@ -1,19 +1,19 @@
-The Appearance module provides the representation of surface data such as observable properties for surface geometry objects in the form of textures and material.
+外观模块以纹理和材质的形式提供表面数据的表示，例如表面几何对象的可观测属性。
 
-Appearances are not limited to visual data but represent arbitrary categories called themes such as infrared radiation, noise pollution, or earthquake-induced structural stress. A single surface geometry object may have surface data for multiple themes. Similarly, surface data can be shared by multiple surface geometry objects (e.g., road paving).
+外观不仅限于视觉数据，还代表称为主题的任意类别，如红外辐射、噪音污染或地震引起的结构应力。单个表面几何对象可能具有多个主题的表面数据。同样，表面数据可以由多个表面几何对象共享（例如道路铺设）。
 
-Surface data that is constant across a surface is modeled as material based on the material definitions from the X3D and COLLADA standards. Surface data that depends on the exact location within the surface is modeled as a texture. This can either be a parameterized texture (a texture that uses texture coordinates) or a transformation matrix for parameterization, or a georeferenced texture (a texture that uses a planimetric projection).
+在整个表面上恒定的表面数据根据 X3D 和 COLLADA 标准中的材质定义被建模为材质。依赖于表面内确切位置的表面数据被建模为纹理。这可以是参数化纹理（使用纹理坐标的纹理）或用于参数化的变换矩阵，或者是地理参考纹理（使用平面投影的纹理）。
 
-Each surface geometry object can have both, a material and a texture per theme and side. This allows for providing a constant approximation and a complex measurement of a surface's property simultaneously.
+每个表面几何对象在每个主题和每个面上都可以同时具有材质和纹理。这允许同时提供对表面属性的恒定近似值和复杂测量值。
 
-The UML diagram of the Appearance module is illustrated in <<appearance-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-appearance-section[CityGML 3.0 Users Guide].
+外观模块的 UML 图如<<appearance-uml>>所示。 关于此需求类的详细讨论可在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-appearance-section[CityGML 3.0 Users Guide]中找到。
 
 [[appearance-uml]]
-.UML diagram of CityGML's Appearance model.
+.CityGML 外观模型的 UML 图
 image::figures/Appearance.png[]
 
-The ADE data types provided for the Appearance module are illustrated in <<appearance-uml-ade-types>>.
+为外观模块提供的 ADE 数据类型如图<<appearance-uml-ade-types>>所示。
 
 [[appearance-uml-ade-types]]
-.ADE classes of the CityGML Appearance Module.
+.CityGML 外观模块的 ADE 类
 image::figures/Appearance-ADE_Datatypes.png[]

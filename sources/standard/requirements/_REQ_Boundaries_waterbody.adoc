@@ -1,7 +1,7 @@
-The implementation of this Module is further constrained by the following spatial boundary requirement:
+该模块的实施还受到以下空间边界需求的进一步约束：
 
 [[req_waterbody_boundaries]]
 [requirement,type="general",label="/req/waterbody/boundaries"]
 ====
-<<waterbody-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Waterbody module. An Implementation Specification SHALL only support the boundaries described in <<waterbody-boundaries-table>>
+<<waterbody-boundaries-table>> 列出了允许作为水体模块中定义的空间类的主题表面边界的表面。实施规范应仅支持 <<waterbody-boundaries-table>>中描述的边界。
 ====

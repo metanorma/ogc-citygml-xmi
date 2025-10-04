@@ -1,4 +1,4 @@
-=== Conformance Class Core
+=== 一致性认证：Core类
 
 include::Core/ATS_Core_Classes.adoc[]
 
@@ -7,6 +7,3 @@ include::Core/ATS_Core_ISO.adoc[]
 include::Core/ATS_Core_Boundaries.adoc[]
 
 include::Core/ATS_Core_ADE_Use.adoc[]
-
-
-

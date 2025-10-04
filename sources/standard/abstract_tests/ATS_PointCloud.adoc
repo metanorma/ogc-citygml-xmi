@@ -1,4 +1,4 @@
-=== Conformance Class PointCloud
+=== 一致性认证：点云类
 
 include::PointCloud/ATS_PointCloud_Classes.adoc[]
 

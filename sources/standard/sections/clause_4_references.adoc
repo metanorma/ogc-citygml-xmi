@@ -2,6 +2,12 @@
 [bibliography]
 == References
 
+本文件采用OGC政策指令49号（基于ISO/IEC导则第2部分《国际标准的结构与起草规则》）所定义的术语。特别说明，本文件使用"应"（而非"必须"）作为表示严格要求的动词形式，且OGC文件不采用ISO/IEC导则第2部分中的等效表述。
+
+本文件还引用OGC模块化规范标准（OGC 08-131r3，简称"ModSpec"）中定义的术语。诸如"标准（standard）"、"规范（specification）"、"需求（requirement）"及"一致性测试（conformance test）"等术语的定义均以ModSpec为准。
+
+针对本文件，下列新增术语及定义适用：
+、
 * [[[topic5,OGC 08-126]]] OGC: The OpenGIS® Abstract Specification Topic 5: Features, OGC document 08-126 (2009)
 
 * [[[topic8,OGC 99-108r2]]] OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2 (1999)

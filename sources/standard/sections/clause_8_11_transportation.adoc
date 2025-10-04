@@ -1,25 +1,23 @@
-The Transportation module defines central elements of the traffic infrastructure. This includes the transportation objects road, track, and square for the movement of vehicles, bicycles, and pedestrians, the transportation object railway for the movement of wheeled vehicles on rails, as well as the transportation object waterway for the movement of vessels upon or within water bodies.
-The transportation objects are represented in the UML model by the top-level feature types _Road_, _Track_, _Square_, _Railway_, and _Waterway_, which are the main classes of the Transportation module. Transportation objects can be subdivided into sections, which can be regular road, track or railway legs, into intersection areas, and into roundabouts.
+交通模块定义了交通基础设施的核心要素。这包括用于车辆、自行车和行人移动的交通对象道路、轨道和广场，用于轮式车辆在轨道上移动的交通对象铁路，以及用于船只在水体表面或内部移动的交通对象水路。在 UML 模型中，交通对象由顶级要素类型 _道路（Road）_、_轨道（Track）_、_广场（Square）_、_铁路（Railway）_和 _水路（Waterway）_ 表示，它们是交通模块的主要类。交通对象可以细分为路段，这些路段可以是常规的道路、轨道或铁路路段、交叉区域和环形交叉路口。
 
-For each transportation object, traffic spaces and auxiliary traffic spaces can be provided, which are bounded at the bottom by traffic areas and auxiliary traffic areas, respectively. Traffic areas are elements that are important in terms of traffic usage, such as driving lanes, sidewalks, and cycle lanes, whereas auxiliary traffic areas describe further elements, such as curbstones, middle lanes, and green areas. The corresponding spaces define the free space above the areas. In addition, each traffic space can have an optional clearance space. The transportation objects can be represented in different levels of granularity, either as a single area, split up into individual lanes or even decomposed into individual (carriage)ways. Furthermore, holes in the surfaces of roads, tracks or squares, such as road damages, manholes or drains, can be represented including their corresponding boundary surfaces. In addition, markings for the structuring or restriction of traffic can be added to the transportation areas. Examples are road markings and markings related to railway or waterway traffic.
+对于每个交通对象，可以提供交通空间和辅助交通空间，它们分别由交通区域和辅助交通区域在底部界定。交通区域是在交通使用方面很重要的元素，例如行车道、人行道和自行车道，而辅助交通区域描述了其他元素，例如路缘石、中间车道和绿化区域。相应的空间定义了这些区域上方的自由空间。此外，每个交通空间可以有一个可选的净空空间。交通对象可以用不同的粒度级别表示，既可以表示为单个区域，也可以细分为单独的车道，甚至可以分解为单独的（车道）道路。此外，道路、轨道或广场表面的孔洞，如道路损坏处、沙井或排水口，可以连同其相应的边界表面一起表示。此外，可以在交通区域添加用于交通结构划分或限制的标记。例如道路标记以及与铁路或水路交通相关的标记。
 
-The UML diagram of the Transportation module is depicted in <<transportation-uml>>. A detailed discussion of this Requirements Class can be found in the  link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-transportation-section[CityGML 3.0 Users Guide].
+交通模块的 UML 图如 <<transportation-uml>>. 所示。关于这个需求类的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-transportation-section[CityGML 3.0 Users Guide]中找到。
 
 [[transportation-uml]]
-.UML diagram of the Transportation Model.
-
+.交通模型的UML图
 image::figures/Transportation.png[]
 
-The ADE data types provided for the Transportation module are illustrated in <<transportation-uml-ade-types>>.
+为交通模块提供的 ADE 数据类型如 <<transportation-uml-ade-types>>所示。
 
 [[transportation-uml-ade-types]]
-.ADE classes of the CityGML Transportation module.
+.交通模块的ADE类
 image::figures/Transportation-ADE_Datatypes.png[]
 
 The Code Lists provided for the Transportation module are illustrated in <<transportation-uml-codelists>>.
 
 [[transportation-uml-codelists]]
-.Codelists from the CityGML Transportation module.
+.交通模块的代码列表
 image::figures/Bridge-Codelists.png[]
 
-<<transportation-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Transportation module:
+<<transportation-boundaries-table>> 列出了被允许作为交通模块中定义的空间类的主题表面边界的表面：

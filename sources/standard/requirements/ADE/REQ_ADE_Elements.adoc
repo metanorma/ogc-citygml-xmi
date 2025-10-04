@@ -1,25 +1,28 @@
 [[req_ade_elements]]
-[requirement,type="general",label="/req/ade/elements"]
+[requirement,type="general"]
 ====
-ADEs typically extend CityGML by defining new Feature Types together with additional content such as Object Types, Data Types, Code Lists, and Enumerations.
+[%metadata]
+标签:: /req/ade/elements
+
+ADE 通常通过定义新的要素类型以及附加内容（如对象类型、数据类型、代码列表和枚举）来扩展 CityGML 的功能。
 
 [.component,class=part]
 --
-Every Feature Type in an ADE SHALL be derived either directly or indirectly from the CityGML root Feature Type _core:AbstractFeature_ or a subclass thereof.
---
-
-[.component,class=part]
---
-UML classes representing Top-Level Feature Types SHALL use the _&#171;TopLevelFeatureType&#187;_ stereotype.
---
-
-[.component,class=part]
---
-Features representing spaces or space boundaries SHALL be derived either directly or indirectly from _core:AbstractSpace_ or _core:AbstractSpaceBoundary_ respectively.
+ADE 中的每个要素类型（Feature Type）必须直接或间接继承自 CityGML 的根要素类型 __core:AbstractFeature__ 或其子类。
 --
 
 [.component,class=part]
 --
-An ADE may define new and additional spatial properties. If such a spatial property should belong to a predefined LOD, then the property name SHALL start with the prefix “lod__X__”, where _X_ is an integer value indicating the target LOD.
+UML 类如果表示顶层要素类型（Top-Level Feature Types），则**必须**使用 __&#171;TopLevelFeatureType&#187;__ 构造型（stereotype）。
+--
+
+[.component,class=part]
+--
+表示空间（spaces）或空间边界（space boundaries）的要素，**必须**分别直接或间接继承自 __core:AbstractSpace__ 或 __core:AbstractSpaceBoundary__。
+--
+
+[.component,class=part]
+--
+ADE 可以定义新的空间属性。如果该空间属性应属于预定义的 LOD，则该属性名称**必须**以前缀 “lod__X__” 开头，其中 _X_ 是表示目标 LOD 的整数值。
 --
 ====

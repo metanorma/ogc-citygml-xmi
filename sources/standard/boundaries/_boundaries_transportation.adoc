@@ -1,88 +1,88 @@
 [[transportation-boundaries-table]]
-.Transportation space classes and their allowed thematic surface boundaries
+.交通空间类及其允许的主题表面边界
 [cols="2a,6a",options="header"]
 |===
-^|*Space class* ^|*Allowed space boundaries*
-|AbstractTransportationSpace
+^|*空间类* ^|*允许的空间边界*
+|抽象交通空间
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|AuxiliaryTrafficSpace
+|辅助交通空间
 a|
-*  Transportation::AuxiliaryTrafficArea
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::辅助交通区域
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|ClearanceSpace
+|净空空间
 a|
-*  Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Hole
+|孔洞
 a|
-*  Transportation::HoleSurface
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::孔洞表面
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Intersection
+|交叉路口
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Railway
+|铁路
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Road
+|道路
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Section
+|路段
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Square
+|广场
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Track
+|轨道
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|TrafficSpace
+|交通空间
 a|
-*  Transportation::TrafficArea
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::T交通区域
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 
-|Waterway
+|水路
 a|
-*  Transportation::Marking
-* Core::ClosureSurface
-* Generics::GenericThematicSurface
-* possible classes from ADEs
+*  交通::标记
+* 核心::封闭表面
+* 通用::通用主题表面
+* 来自 ADE 的可能类
 |===

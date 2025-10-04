@@ -1,25 +1,24 @@
-The CityObjectGroup module provides the application-specific aggregation of city objects according to some user-defined criteria. Examples for groups are the buildings in a specific region, the result of a query, or objects put together for visualization purposes. Each member of a group may be qualified by a role name, reflecting the role each city object plays in the context of the group.
-City object groups are represented in the UML model by the top-level feature type _CityObjectGroup_, which is the main class of the CityObjectGroup module.
+城市对象组模块根据一些用户定义的标准，提供特定于应用程序的城市对象聚合。组的示例包括特定区域内的建筑物、查询结果或为可视化目的组合在一起的对象。组中的每个成员可以通过角色名称来限定，反映每个城市对象在组的上下文中所扮演的角色。在 UML 模型中，城市对象组由顶级要素类型 CityObjectGroup 表示，它是城市对象组模块的主要类。
 
-City object groups can be linked to other city objects, the so-called parent objects, which allows for modeling a generic hierarchical grouping concept. In addition, as city object groups represent city objects themselves, a group may become a member of another group realizing recursive aggregation in this way.
+城市对象组可以链接到其他城市对象，即所谓的父对象，这允许对通用的分层分组概念进行建模。此外，由于城市对象组本身也代表城市对象，一个组可以成为另一个组的成员，以这种方式实现递归聚合。
 
-The UML diagram of the CityObjectGroup module is depicted in <<cityobject-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-object-group-section[CityGML 3.0 Users Guide].
+
+城市对象组模块的 UML 图如 <<cityobject-uml>>所示。 A关于此需求类的详细讨论可以在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-object-group-section[CityGML 3.0 Users Guide]中找到。
 
 [[cityobject-uml]]
-.UML diagram of the City Object Group Model.
-
+.城市对象组模型的 UML 图
 image::figures/CityObjectGroup.png[]
 
-The ADE data types provided for the CityObjectGroup module are illustrated in <<cityobject-uml-ade-types>>.
+为城市对象组模块提供的 ADE 数据类型如<<cityobject-uml-ade-types>>所示。
 
 [[cityobject-uml-ade-types]]
-.ADE classes of the CityGML CityObjectGroup module.
+.CityGML 城市对象组模块的 ADE 类
 image::figures/CityObjectGroup-ADE_Datatypes.png[]
 
-The Code Lists provided for the CityObjectGroup module are illustrated in <<cityobject-uml-codelists>>.
+为城市对象组模块提供的代码列表如<<cityobject-uml-codelists>>所示
 
 [[cityobject-uml-codelists]]
-.Codelists from the CityGML CityObjectGroup module.
+.CityGML 城市对象组模块的代码列表
 image::figures/CityObjectGroup-Codelists.png[]
 
-<<cityobjectgroup-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityObjectGroup module:
+<<cityobjectgroup-boundaries-table>> 列出了允许作为城市对象组模块中定义的空间类的专题表面边界的表面：

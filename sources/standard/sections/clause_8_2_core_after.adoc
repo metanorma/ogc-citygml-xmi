@@ -1,176 +1,160 @@
 
 [[ISO-dependencies-section]]
-==== ISO Dependencies
+==== ISO 依赖项
 
-CityGML builds on the ISO 19100 family of standards. The applicable standards are identified in the diagram in <<ISO-in-CityGML-diagram>>. Data dictionaries are included for all of the ISO-defined classes explicitly referenced in the CityGML UML model. These data dictionaries are provided for the convenience of the user. The ISO standards are the normative source.
+CityGML 建立在 ISO 19100 系列标准之上。适用的标准在 <<ISO-in-CityGML-diagram>>中的图中标识。为 CityGML UML 模型中明确引用的所有 ISO 定义的类都包含了数据字典。提供这些数据字典是为了用户方便。ISO 标准是规范性来源。
 
 [[ISO-in-CityGML-diagram]]
-.Use of ISO Standards in CityGML
+.CityGML中使用的ISO标准
 image::figures/Core/ISOandOASISstandardsinCityGML.png[]
 
-The ISO classes explicitly used in the CityGML UML model are introduced in <<iso-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
+在 CityGML UML 模型中明确使用的 ISO 类在<<iso-class-table>>. 中介绍。有关这些类的更多详细信息可以在 <<data-dictionary-section>>的数据字典中找到。
 
 [[iso-class-table]]
-.ISO Classes used in CityGML
+.CityGML 中使用的 ISO 类
 [cols="2a,6a",options="header"]
 |===
-|Class Name |Description
-
-|<<AnyFeature-section,AnyFeature>> |A generalization of all feature types
-|<<CV_DiscreteGridPointCoverage-section,CV_DiscreteGridPointCoverage>> |A coverage that returns the same feature attribute values for every direct position within any object in its domain.
-|<<DirectPosition-section,Direct Position>> |The coordinates for a position within some coordinate reference system.
-|<<GM_Object-section,GM_Object>> | root class of the geometric object taxonomy.
-|<<GM_MultiCurve-section,GM_MultiCurve>> |An aggregate class containing only instances of GM_OrientableCurve.
-|<<GM_MultiPoint-section,GM_MultiPoint>> |An aggregate class containing only points.
-|<<GM_MultiSurface-section,GM_MultiSurface>> | An aggregate class containing only instances of GM_OrientableSurface.
-|<<GM_Point-section,GM_Point>> |The basic data type for a geometric object consisting of one and only one point.
-|<<GM_Solid-section,GM_Solid>> |The basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces.
-|<<GM_Surface-section,GM_Surface>> |The basis for 2-dimensional geometry.
-|<<GM_Tin-section,GM_Tin>> |A GM_TriangulatedSurface which uses the Delaunay or similar algorithm.
-|<<GM_TriangulatedSurface-section,GM_TriangulatedSurface>> |A GM_PolyhedralSurface that is composed only of triangles
-|<<SC_CRS-section,SC_CRS>> |Coordinate reference system which is usually single but may be compound.
-|<<TM_Position-section,TM_Position>> |A union class that consists of one of the data types listed as its attributes.
+|类名 |描述
+|<<AnyFeature-section,AnyFeature>> |所有要素类型的泛化
+|<<CV_DiscreteGridPointCoverage-section,CV_DiscreteGridPointCoverage>> |一种覆盖，在其域内的任何对象内的每个直接位置返回相同的要素属性值
+|<<DirectPosition-section,Direct Position>> |在某个坐标参考系统内的一个位置的坐标
+|<<GM_Object-section,GM_Object>> | 几何对象分类法的根类
+|<<GM_MultiCurve-section,GM_MultiCurve>> |一个聚合类，仅包含 GM_OrientableCurve 的实例
+|<<GM_MultiPoint-section,GM_MultiPoint>> |一个聚合类，仅包含点
+|<<GM_MultiSurface-section,GM_MultiSurface>> | 一个聚合类，仅包含 GM_OrientableSurface 的实例
+|<<GM_Point-section,GM_Point>> |由一个且仅一个点组成的几何对象的基本数据类型
+|<<GM_Solid-section,GM_Solid>> |三维几何的基础。实体的范围由边界表面定义
+|<<GM_Surface-section,GM_Surface>> |二维几何的基础
+|<<GM_Tin-section,GM_Tin>> |使用 Delaunay 或类似算法的 GM_TriangulatedSurface
+|<<GM_TriangulatedSurface-section,GM_TriangulatedSurface>> |仅由三角形组成的 GM_PolyhedralSurface
+|<<SC_CRS-section,SC_CRS>> |通常为单一但可能为复合的坐标参考系统
+|<<TM_Position-section,TM_Position>> |一个联合类，由作为其属性列出的数据类型之一组成
 
 |===
 
 [[city-objects-section]]
-==== City Models and City Objects
+==== 城市模型和城市对象
 
-City models are virtual representations of real-world cities and landscapes. A city model aggregates different types of objects, which can be city objects, appearances, different versions of the city model, transitions between different versions of the city model, and feature objects. All objects defined in the CityGML CM are features with lifespan. This allows the optional specification of the real-world and database times for the existence of each feature, as is required by the Versioning module (cf. lutaml_table::[package="Versioning"]). Features that define thematic concepts related to cities and landscapes, such as building, bridge, water body, or land use, are referred to as city objects. All city objects define properties that describe the objects in more detail. These static properties can be overridden with time-varying data through Dynamizers (cf. lutaml_table::[package="Dynamizer"]).
+城市模型是现实世界城市和景观的虚拟表示。一个城市模型聚合了不同类型的对象，这些对象可以是城市对象、外观、城市模型的不同版本、城市模型不同版本之间的过渡以及要素对象。在 CityGML CM 中定义的所有对象都是具有生命周期的要素。这允许根据版本控制模块的要求 (cf. lutaml_table::[package="Versioning"])可选地指定每个要素在现实世界和数据库中的存在时间。定义与城市和景观相关的主题概念的要素，如建筑物、桥梁、水体或土地利用，被称为城市对象。所有城市对象都定义了更详细描述对象的属性。这些静态属性可以通过动态器 (cf. lutaml_table::[package="Dynamizer"])用随时间变化的数据覆盖。
 
-.UML City Models and City Objects
+.UML城市模型和城市对象
 image::figures/Core/Core-City_models_and_city_objects.png[]
 
-The City Model and City Object classes defined in the CityGML UML model are introduced in <<Core-city-model-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
+CityGML UML 模型中定义的城市模型和城市对象类在<<Core-city-model-class-table>>中介绍。 有关这些类的更多详细信息可以在<<data-dictionary-section>>中找到
 
 [[Core-city-model-class-table]]
-.City Model and City Object classes used in Core
+.核心中使用的城市模型和城市对象类
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_city_object_section.yml]
 -----
 -----
 
 
 [[space-concepts-section]]
-==== Space Concept
+==== 空间概念
 
-All city objects are differentiated into spaces and space boundaries. Spaces are entities of volumetric extent in the real world. Buildings, water bodies, trees, rooms, and traffic spaces, for instance, have a volumetric extent. Spaces can be classified into physical spaces and logical spaces. Physical spaces, in turn, can be further classified into occupied spaces and unoccupied spaces.
+所有城市对象被分为空间和空间边界。空间是现实世界中具有体积范围的实体。例如，建筑物、水体、树木、房间和交通空间都有体积范围。空间可以分为物理空间和逻辑空间。物理空间又可以进一步分为占用空间和未占用空间。
 
-Space boundaries, in contrast, are entities with areal extent in the real world. Space boundaries can be differentiated into different types of thematic surfaces, such as wall surfaces and roof surfaces.
+相比之下，空间边界是现实世界中具有面积范围的实体。空间边界可以分为不同类型的主题表面，如墙面和屋顶面。
 
-A detailed introduction to the Space concept can be found in <<overview-section-coremodel>>.
+对空间概念的详细介绍可以在<<overview-section-coremodel>>中找到。
 
-In particular, the classification into OccupiedSpace and UnoccupiedSpace might not always be apparent at first sight. Carports, for instance, represent an OccupiedSpace, although they are not closed and most of the space is free of matter, see <<figure-carport>>. Since a carport is a roofed, immovable structure with the purpose of providing shelter to objects (i.e., cars), carports are frequently represented as buildings in cadastres. Thus, also in CityGML, a carport should be modeled as an instance of the class Building. Since Building is transitively a subclass of OccupiedSpace, a carport is an OccupiedSpace as well. However, only in LOD1, the entire volumetric region covered by the carport would be considered as physically occupied. In LOD1, the occupied space is defined by the entire carport solid (unless a room would be defined in LOD1 that would model the unoccupied part below the roof); whereas in LOD2 and LOD3, the solids represent more realistically the really physically occupied space of the carport. In addition, for all OccupiedSpaces, the normal vectors of the thematic surfaces like the RoofSurface need to point away from the solids, i.e., consistent with the solid geometry.
+特别是，最初可能并不总是能明显区分占用空间和未占用空间。例如，车棚代表占用空间，尽管它们不是封闭的，并且大部分空间没有物质，见<<figure-carport>>。由于车棚是有屋顶的、不可移动的结构，目的是为物体（即汽车）提供遮蔽，车棚在地籍中经常被表示为建筑物。因此，在 CityGML 中，车棚也应被建模为建筑物类的实例。由于建筑物是占用空间的传递子类，车棚也是占用空间。然而，仅在 LOD1 中，车棚覆盖的整个体状区域将被视为实际占用。在 LOD1 中，占用空间由整个车棚实体定义（除非在 LOD1 中定义了一个房间来模拟屋顶下的未占用部分）；而在 LOD2 和 LOD3 中，实体更真实地表示车棚实际占用的空间。此外，对于所有占用空间，像屋顶面这样的主题表面的法向量需要远离实体，即与实体几何形状一致。
 
 [[figure-carport]]
-.Representation of a carport as OccupiedSpace in different LODs. The red boxes represent solids, the green area represents a surface. In addition, the normal vectors of the roof solid (in red) and the roof surface (in green) are shown.
+.在不同lod中将车棚表示为已占用空间。红框表示实体，绿色区域表示表面。此外，还显示了屋顶实体（红色）和屋顶表面（绿色）的法向量
 image::images/carport.png[]
 
-In contrast, a room is a physically unoccupied space. In CityGML, a room is represented by the class BuildingRoom that is a subclass of UnoccupiedSpace. In LOD1, the entire room solid would be considered as unoccupied space, which can contain furniture and installations, though, as is shown in <<figure-room>>. In LOD2 and 3, the solid represents more realistically the really physically unoccupied space of the room (possibly somewhat generalized as indicated in the figure). For all UnoccupiedSpaces, the normal vectors of the bounding thematic surfaces like the InteriorWallSurface need to point inside the object, i.e., opposite to the solid geometry.
+相比之下，房间是物理上未占用的空间。在 CityGML 中，房间由 BuildingRoom 类表示，它是未占用空间的子类。在 LOD1 中，整个房间实体将被视为未占用空间，不过其中可以包含家具和设施，如 <<figure-room>>所示。在 LOD2 和 3 中，实体更真实地表示房间实际未占用的空间（可能如图中所示进行了一定程度的概括）。对于所有未占用空间，像内墙表面这样的边界主题表面的法向量需要指向对象内部，即与实体几何形状相反。
 
 [[figure-room]]
-.Representation of a room as UnoccupiedSpace in different LODs. The red boxes represent solids, the green area represents a surface. In addition, the normal vectors of the room solid (in red) and the wall surface (in green) are shown.
+.将房间表示为不同lod中的未占用空间。红框表示实体，绿色区域表示曲面。此外，还显示了房间实体（红色）和墙壁表面（绿色）的法向量
 image::images/room.png[]
 
-The UML diagram of the Space concept classes is depicted in <<core-spaceconcept>>.
+空间概念类的 UML 图如 <<core-spaceconcept>> 所示
 
 [[core-spaceconcept]]
-.UML Space Concepts
+.UML空间概念
 image::figures/Core/Core-Space_concepts.png[]
 
-The Space Concept classes defined in the CityGML UML model are introduced in <<Core-spatial-class-table>>. More details about these classes can be found in the Data Dictionary in <<data-dictionary-section>>.
+CityGML UML 模型中定义的空间概念类在<<Core-spatial-class-table>>中介绍. 有关这些类的更多详细信息可以在<<data-dictionary-section>>中找到。
 
 [[Core-spatial-class-table]]
-.Space Classes used in Core
+.核心中使用的空间类
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_space_section.yml]
 -----
 -----
 
 
 [[geometry-lod-section]]
-==== Geometry and LOD
+==== 几何和 LOD
 
-Spaces and space boundaries can have various geometry representations depending on the Levels of Detail (LOD). Spaces can be spatially represented as single points in LOD0, multi-surfaces in LOD0/2/3, solids in LOD1/2/3, and multi-curves in LOD2/3. Space boundaries can be represented as multi-surfaces in LOD0/2/3 and as multi-curves in LOD2/3. All Levels of Detail allow for the representation of the interior of city objects.
+空间和空间边界根据细节层次（LOD）可以有各种几何表示。空间在 LOD0 中可以在空间上表示为单个点，在 LOD0/2/3 中表示为多表面，在 LOD1/2/3 中表示为实体，在 LOD2/3 中表示为多曲线。空间边界在 LOD0/2/3 中可以表示为多表面，在 LOD2/3 中表示为多曲线。所有细节层次都允许表示城市对象的内部。
 
-The different Levels of Detail are defined in the following way.
+不同的细节层次定义如下：
 
-* LOD 0: Volumetric real-world objects (Spaces) can be spatially represented by a single point, by a set of curves, or by a set of surfaces. Areal real-world objects (Space Boundaries) can be spatially represented in LOD0 by a set of curves or a set of surfaces. LOD0 surface representations are typically the result of a projection of the shape of a volumetric object onto a plane parallel to the ground, hence, representing a footprint (e.g., a building footprint or a floor plan of the rooms inside a building). LOD0 curve representations are either the result of a projection of the shape of a vertical surface (e.g., a wall surface) onto a grounding plane or the skeleton of a volumetric shape of longitudinal extent such as a road or river segment.
+* LOD 0: 体状现实世界对象（空间）可以在空间上由单个点、一组曲线或一组表面表示。面积现实世界对象（空间边界）在 LOD0 中可以由一组曲线或一组表面在空间上表示。LOD0 表面表示通常是将体状对象的形状投影到与地面平行的平面上的结果，因此表示一个足迹（例如，建筑物足迹或建筑物内房间的平面图）。LOD0 曲线表示要么是将垂直表面（例如，墙面）的形状投影到接地平面上的结果，要么是具有纵向范围的体状形状（如道路或河流段）的骨架。
 
-* LOD 1: Volumetric real-world objects (Spaces) are spatially represented by a vertical extrusion solid, i.e., a solid created from a horizontal footprint by vertical extrusion. Areal real-world objects (Space Boundaries) can be spatially represented in LOD1 by a set of horizontal or vertical surfaces.
+* LOD 1: 体状现实世界对象（空间）由垂直挤压实体在空间上表示，即从水平足迹通过垂直挤压创建的实体。面积现实世界对象（空间边界）在 LOD1 中可以由一组水平或垂直表面在空间上表示。
 
-* LOD 2: Volumetric real-world objects (Spaces) can be spatially represented by a set of curves, a set of surfaces, or a single solid geometry. Areal real-world objects (Space Boundaries) can be spatially represented in LOD2 by a set of surfaces. The shape of the real-world object is generalized in LOD2 and smaller details (e.g., bulges, dents, sills, but also structures, like balconies or dormers of buildings) are typically neglected. LOD2 curve representations are skeletons of volumetric shapes of longitudinal extent like an antenna or a chimney.
+* LOD 2: 体状现实世界对象（空间）可以由一组曲线、一组表面或单个实体几何形状在空间上表示。面积现实世界对象（空间边界）在 LOD2 中可以由一组表面在空间上表示。现实世界对象的形状在 LOD2 中被概括，较小的细节（例如，凸起、凹陷、窗台，以及结构，如建筑物的阳台或老虎窗）通常被忽略。LOD2 曲线表示是具有纵向范围的体状形状（如天线或烟囱）的骨架。
 
-* LOD 3: Volumetric real-world objects (Spaces) can be spatially represented by a set of curves, a set of surfaces, or a single solid geometry. Areal real-world objects (Space Boundaries) can be spatially represented in LOD3 by a set of surfaces. LOD3 is the highest level of detail and respective geometries include all available shape details.
+* LOD 3: 体状现实世界对象（空间）可以由一组曲线、一组表面或单个实体几何形状在空间上表示。面积现实世界对象（空间边界）在 LOD3 中可以由一组表面在空间上表示。LOD3 是最高的细节层次，相应的几何形状包括所有可用的形状细节。
 
-In addition, the geometry can also be represented implicitly. The shape is stored only once as a prototypical geometry, which then is re-used or referenced, wherever the corresponding feature occurs in the 3D city model.
+此外，几何形状也可以隐式表示。形状仅作为原型几何形状存储一次，然后在 3D 城市模型中相应要素出现的任何地方重复使用或引用。
 
-The thematic classes, such as building, tunnel, road, land use, water body, or city furniture are defined as subclasses of the space and space boundary classes within the thematic modules. Since all city objects in the thematic modules represent subclasses of the space and space boundary classes, they automatically inherit the geometries defined in the Core module.
+主题类，如建筑物、隧道、道路、土地利用、水体或城市家具，在主题模块中被定义为空间和空间边界类的子类。由于主题模块中的所有城市对象都表示空间和空间边界类的子类，它们自动继承核心模块中定义的几何形状。
 
-The UML diagram of the Geometry and LoD concept classes is depicted in <<core-geometry>>.
+几何和 LOD 概念类的 UML 图如<<core-geometry>> 所示。
 
 [[core-geometry]]
-.UML Geometry and LOD Concepts
+.UML几何和LOD概念
 image::figures/Core/Core-Geometry_and_LoD_concept.png[]
 
-The Geometry and LOD Concept classes defined in the CityGML UML model are
-introduced in <<Core-geometry-class-table>>. More details about these classes
-can be found in the Data Dictionary in <<data-dictionary-section>>.
+CityGML UML 模型中定义的几何和 LOD 概念类在 <<Core-geometry-class-table>>中介绍。 有关这些类的更多详细信息可以在 <<data-dictionary-section>>的数据字典中找到.
 
-Of particular note is the Implicit Geometry concept. Many of the objects
-encountered in a city landscape have the same geometry. How many types of street
-lamps can there be? An Implicit Geometry captures that geometry once, and
-re-uses that one geometry for all similar street lamp objects.
+特别值得注意的是隐式几何概念。在城市景观中遇到的许多对象具有相同的几何形状。例如，街道灯能有多少种类型呢？隐式几何形状一次性捕获该几何形状，并为所有类似的街道灯对象重复使用该几何形状。
 
 [[Core-geometry-class-table]]
-.Geometry Classes used in Core
+.核心中使用的几何类
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_geometry_section.yml]
 -----
 -----
 
 
 [[CityGML-section]]
-==== CityGML Core Model
+==== CityGML 核心模型
 
-The City Model and City Object classes (<<city-objects-section>>), the
-Space Concept classes (<<space-concepts-section>>), and the
-Geometry and LOD classes (<<geometry-lod-section>>) define the majority of the
-CityGML Core module. In addition to these concepts, the Core module also
-specifies that city objects can have relations to other city objects and that
-they can have address information. All other modules defined in the CityGML
-model refer to the Core module.
+城市模型与城市对象类(<<city-objects-section>>) 、空间概念类 (<<space-concepts-section>>),以及几何和细节层次概念类(<<geometry-lod-section>>) 共同构成了 CityGML 核心模块的主要部分。除这些概念外，核心模块还规定，城市对象可以与其他城市对象建立联系，并且可以拥有地址信息。CityGML 模型中定义的所有其他模块均参考核心模块。
 
-The UML diagram of the complete Core module is depicted in <<core-uml>>.
+完整的核心模块 UML 图如 <<core-uml>>所示。
 
 [[core-uml]]
-.UML diagram of CityGML's core module
+.CityGML 核心模块的 UML 图
 image::figures/Core/Core-Overview.png[]
 
 <<Core-city-model-class-table>>, <<Core-spatial-class-table>> and
-<<Core-geometry-class-table>> introduce already most of the classes of the
-CityGML Core module. The additional classes required to complete this section of
-the standard are introduced in <<Core-class-table>>. More details about these
-classes can be found in the Data Dictionary in <<data-dictionary-section>>.
+<<Core-geometry-class-table>>  已介绍了 CityGML 核心模块的大多数类。完成本标准该部分所需的其他类 <<Core-class-table>>.中介绍。这些类的更多详细信息可在 <<data-dictionary-section>>的数据字典中找到。
 
 [[Core-class-table]]
-.Additional Classes used in Core
+.核心中使用的其他类
 [lutaml_uml_datamodel_description,../../xmi-full/full-242.xmi,lutaml_packages_core_city_model_section.yml]
 -----
 -----
 
 [[b-e-c-section]]
-==== Data types, Enumerations, and Code lists
+==== 数据类型、枚举和代码列表
 
-The ADE data types provided for in the Core module are illustrated in
-<<core-uml-ade-types>>.
+核心模块中提供的 ADE 数据类型如
+<<core-uml-ade-types>>所示。
 
 [[core-uml-ade-types]]
-.ADE classes of the CityGML Core module.
+.CityGML 核心模块的 ADE 类
 image::figures/Core/Core-ADE_Data_types.png[]
 
-The Data Types, Basic Types, Enumerations, Unions, and Code Lists provided for
-the Core module are illustrated in <<core-uml-codelists>>.
+为核心模块提供的数据类型、基本类型、枚举、联合和代码列表如 <<core-uml-codelists>>所示。
 
 [[core-uml-codelists]]
-.Basic Types, Enumerations, and Codelists from the CityGML Core module.
+.来自 CityGML 核心模块的基本类型、枚举和代码列表
 image::figures/Core/Core-Basic_Types_Enumerations_Codelists.png[]
 
-These supporting constructs are defined in the following tables.
+这些支持结构在以下表格中定义。

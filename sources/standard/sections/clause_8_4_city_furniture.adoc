@@ -1,18 +1,17 @@
-The CityFurniture module provides the representation of objects or pieces of equipment that are installed in the outdoor environment for various purposes, such as decoration, explanation, or control. City furniture objects are relatively small, immovable objects and usually are of prototypical or geotypical form. Examples include road signs, traffic signals, bicycle racks, street lamps, fountains, flower buckets, advertising columns, and benches.
+城市家具模块提供了对为各种目的（如装饰、说明或控制）安装在户外环境中的对象或设备的表示。城市家具对象是相对较小的、不可移动的对象，通常具有原型或地理类型的形式。示例包括道路标志、交通信号灯、自行车架、路灯、喷泉、花桶、广告柱和长椅。
 
-City furniture is represented in the UML model by the top-level feature type _CityFurniture_, which is also the only class of the CityFurniture module.
+在 UML 模型中，城市家具由顶级要素类型  _CityFurniture_ 表示，它也是城市家具模块的唯一类。
 
-The UML diagram of the CityFurniture module is depicted in <<cityfurniture-uml>>. A detailed discussion of this Requirements Class can be found in the link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-furniture-section[CityGML 3.0 Users Guide].
+城市家具模块的 UML 图 <<cityfurniture-uml>>所示。关于此需求类的详细讨论可在 link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-city-furniture-section[CityGML 3.0 Users Guide]中找到。
 
 [[cityfurniture-uml]]
-.UML diagram of CityGML's City Furniture model.
-
+.CityGML 城市家具模型的 UML 图
 image::figures/CityFurniture.png[]
 
-The ADE data types and Code Lists provided for the CityFurniture module are illustrated in <<cityfurniture-uml-ade-types>>.
+为城市家具模块提供的 ADE 数据类型和代码列表如 <<cityfurniture-uml-ade-types>> 所示。
 
 [[cityfurniture-uml-ade-types]]
-.ADE classes and Code Lists of the CityGML CityFurniture module.
+.CityGML 城市家具模块的 ADE 类和代码列表
 image::figures/CityFurniture-with_codelists_and_ADE_datatypes.png[]
 
-<<cityfurniture-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the CityFurniture module:
+<<cityfurniture-boundaries-table>> 列出了城市家具模块中定义的空间类允许作为主题表面边界的表面：

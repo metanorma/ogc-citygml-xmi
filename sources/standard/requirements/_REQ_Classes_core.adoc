@@ -1,80 +1,80 @@
-The CityGML Core defines technology-agnostic concepts. These concepts are then realized in technology-specific Implementation Specifications. The following requirements govern the creation of any CityGML compliant Implementation Specification (IS).
+CityGML 核心定义了与技术无关的概念。这些概念随后在特定技术的实施规范中实现。以下需求指导任何符合 CityGML 的实施规范（IS）的创建。
 
 [[req_core_classes]]
 [requirement,type="general",label="/req/core/classes"]
 ====
-For each UML class defined or referenced in the Core Package:
+对于核心包中定义或引用的每个 UML 类：
 
 [.component,class=part]
 --
-The Implementation Specification SHALL contain an element which represents the same concept as that defined for the UML class.
---
-
-[.component,class=part]
---
-The Implementation Specification SHALL represent associations with the same source, target, direction, roles, and multiplicities as those of the UML class.
+实施规范应包含一个元素，该元素代表与 UML 类所定义的相同概念。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the attributes of the UML class including the name, definition, type, and multiplicity.
+实施规范应表示具有与 UML 类相同源、目标、方向、角色和多重性的关联。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the attributes of all superclasses of the UML class including the name, definition, type, and multiplicity.
+实施规范应表示 UML 类的属性，包括名称、定义、类型和多重性。
 --
 
 [.component,class=part]
 --
-The implementation Specification SHALL represent the associations of all superclasses of the UML class including the source, target, direction, roles, and multiplicity.
+实施规范应表示 UML 类所有基类的属性，包括名称、定义、类型和多重性。
 --
 
 [.component,class=part]
 --
-The Implementation Specification SHALL specify how an implementation observes all constraints the Conceptual Model imposes on the UML class.
+实施规范应表示 UML 类所有基类的关联，包括源、目标、方向、角色和多重性。
+--
+
+[.component,class=part]
+--
+实施规范应指定实现如何遵守概念模型对 UML 类施加的所有约束。
 --
 ====
 
 
-While the CityGML Conceptual Model builds on ISO Standards, there are some restrictions on the use of those standards.
+虽然 CityGML 概念模型建立在 ISO 标准之上，但对这些标准的使用存在一些限制。
 
 [[req_Core_iso-restrictions]]
 [requirement,type="general",label="/req/core/isorestrictions"]
 ====
-ISO classes used in the CityGML Conceptual Model are subject to the following restrictions:
+在 CityGML 概念模型中使用的 ISO 类受到以下限制：
 
 [.component,class=part]
 --
-Classes derived from the GM_Solid class (ISO 19107) SHALL only include exterior boundaries. (The `interior` association on the GM_SolidBoundary shall not be defined)
+从 GM_Solid 类（ISO 19107）派生的类应仅包括外部边界。（GM_SolidBoundary 上的内部关联不应定义）
 --
 ====
 
-An implementing technology may not be able to support all of the concepts defined in the CityGML Conceptual Model. Alternately, some concepts from the Conceptual Model may be inappropriate for the application domain for which the Implementation Specification was developed. In those cases, elements of the Conceptual Model may be mapped to null elements in the Implementation Specification.
+一种实施技术可能无法支持 CityGML 概念模型中定义的所有概念。或者，概念模型中的某些概念可能不适用于为其开发实施规范的应用领域。在这些情况下，概念模型的元素可以映射到实施规范中的空元素。
 
 [[per_Core_classes]]
 [.permission,label="/per/core/classes"]
 ====
-For each UML class defined or referenced in CityGML Conceptual Model:
+对于 CityGML 概念模型中定义或引用的每个 UML 类：
 
 [.component,class=part]
 --
-An Implementation Specification MAY represent that class as a null class with no attributes, associations, or definition.
---
-
-[.component,class=part]
---
-An Implementation Specification MAY represent an association of the UML class with a null association.
+实施规范可以将该类表示为没有属性、关联或定义的空类。
 --
 
 [.component,class=part]
 --
-An Implementation Specification MAY represent an attribute of the UML class with a null attribute.
+实施规范可以将 UML 类的关联表示为空关联。
 --
 
 [.component,class=part]
 --
-Whenever a null element is used to represent a concept from the Conceptual Model, the Implementation Specification SHOULD document that mapping and provide an explanation for why that concept was not implemented.
+实施规范可以将 UML 类的属性表示为空属性。
+--
+
+[.component,class=part]
+--
+每当使用空元素表示概念模型中的概念时，实施规范应记录该映射，并说明未实现该概念的原因。
 --
 ====
 

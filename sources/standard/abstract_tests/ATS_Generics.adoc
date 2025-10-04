@@ -1,4 +1,4 @@
-=== Conformance Class Generics
+=== 一致性认证：泛型类
 
 include::Generics/ATS_Generics_Classes.adoc[]
 

@@ -1,4 +1,4 @@
-=== Conformance Class Dynamizer
+=== 一致性认证：动态化器类
 
 include::Dynamizer/ATS_Dynamizer_Classes.adoc[]
 

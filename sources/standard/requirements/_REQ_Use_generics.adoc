@@ -1,7 +1,7 @@
-The decision of whether or not to use Generics is constrained by the following requirement:
+是否使用通用类的决策受到以下需求的限制：
 
 [[req_generics_use]]
 [requirement,type="general",label="/req/generics/use"]
 ====
-Generic objects and attributes SHALL only be used if a more specific feature class or attribute is not available from the CityGML conceptual model.
+只有在CityGML概念模型中没有更具体的要素类或属性时，才应使用通用对象和属性。
 ====

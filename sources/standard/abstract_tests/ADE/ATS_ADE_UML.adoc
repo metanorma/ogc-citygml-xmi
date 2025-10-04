@@ -1,38 +1,40 @@
 [[ats_ade_uml]]
-[abstract_test,label="/ats/ade/uml",subject='<<req_ade_uml,/req/ade/uml>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/ade/uml
+主体:: <<req_ade_uml,/req/ade/uml>>
+[.component,class=测试目的]
 --
-To validate that Application Domain Extensions (ADE) to the CityGML Conceptual Model are modeled correctly in UML.
---
-
-[.component,class=test method type]
---
-Manual Inspection
+验证对CityGML概念模型的应用领域扩展（ADE）是否正确地以UML形式建模。
 --
 
-[.component,class=test method]
+[.component,class=测试方法类型]
+--
+人工检查
+--
+
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-An ADE is defined as conceptual model in UML in accordance with the conceptual modeling framework of the ISO 19100 series of International Standards
+ADE按照ISO 19100系列国际标准的概念建模框架以UML定义为概念模型
 
 [.component,class=step]
 --
-Validate that the ADE UML model adheres to the General Feature Model as specified in ISO 19109.
---
-
-[.component,class=step]
---
-Validate that the ADE UML model adheres to rules and constraints for application schemas as specified in ISO/TS 19103.
+验证ADE UML模型是否符合ISO 19109中规定的通用要素模型。
 --
 
 [.component,class=step]
 --
-Validate that the ADE UML model is organized into one or more UML packages having globally unique namespaces and containing all UML model elements defined by the ADE.
+验证ADE UML模型是否符合ISO/TS 19103中规定的应用模式的规则和约束。
+--
+
+[.component,class=step]
+--
+验证ADE UML模型是否被组织成一个或多个具有全球唯一命名空间的UML包，并包含ADE定义的所有UML模型元素。
 --
 ======
 =====
 ====
-

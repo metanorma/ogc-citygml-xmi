@@ -1,24 +1,24 @@
 [[generics-boundaries-table]]
-.Generics space classes and their allowed thematic surface boundaries
+.通用类空间类及其允许的专题表面边界
 [cols="2a,6a",options="header"]
 |===
-^|*Space class* ^|*Allowed space boundaries*
+^|*空间类* ^|*允许的空间边界*
 |GenericLogicalSpace
 a|
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自ADE的可能类
 
 |GenericOccupiedSpace
 a|
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自ADE的可能类
 
 |GenericUnoccupiedSpace
 a|
 * Core::ClosureSurface
 * Generics::GenericThematicSurface
-* possible classes from ADEs
+* 来自ADE的可能类
 
 |===

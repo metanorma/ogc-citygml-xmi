@@ -1,4 +1,4 @@
-=== Conformance Class Vegetation
+=== 一致性认证：植被类
 
 include::Vegetation/ATS_Vegetation_Classes.adoc[]
 

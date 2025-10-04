@@ -1,10 +1,19 @@
 [.preface]
-== Introduction
+== 引言
 
-An increasing number of cities and companies are building virtual 3D city models for different application areas like urban planning, mobile telecommunication, disaster management, 3D cadastre, tourism, vehicle and pedestrian navigation, facility management, and environmental simulations. Furthermore, in the implementation of the European Environmental Noise Directive (END, 2002/49/EC) 3D geoinformation and 3D city models play an important role.
+越来越多的城市和企业正在为不同领域构建虚拟三维城市模型，例如城市规划、移动通信、灾害管理、三维地籍管理、旅游、车辆和行人导航、设施管理以及环境模拟等。
+此外，在实施《欧洲环境噪声指令》（Environmental Noise Directive, END, 2002/49/EC）过程中，三维地理信息和三维城市模型也发挥着重要作用。
 
-In recent years, most virtual 3D city models were defined as purely graphical or geometrical models, neglecting the semantic and topological aspects. Thus, these models could almost only be used for visualization purposes but not for thematic queries, analysis tasks, or spatial data mining. Since the limited reusability of models inhibits the broader use of 3D city models and may not justify the costs associated with maintaining city models, a more general modeling approach had to be taken in order to satisfy the information needs of the various application fields.
+近年来，大多数虚拟三维城市模型被定义为纯粹的图形或几何模型，忽略了语义（semantic）和拓扑（topological）方面。
+因此，这些模型几乎只能用于可视化，而无法支持专题（thematic）查询、分析任务，以及空间数据挖掘。
+由于模型有限的可重用性，阻碍了三维城市模型在更广泛领域中的应用，从而使其维护成本缺乏合理性支撑。因此有必要采用一种更通用的建模方法，以满足各类应用领域的信息需求。
 
-The CityGML Conceptual Model Standard defines a common semantic information model for the representation of 3D urban objects that can be shared over different applications. The latter capability is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing governments and companies to reap the benefits of their investment in 3D city models by being able to put the same models into play in different application fields. The targeted application areas explicitly include city planning, architectural design, tourist and leisure activities, environmental simulation, mobile telecommunication, disaster management, homeland security, real estate management, vehicle and pedestrian navigation, and training simulators.
+CityGML概念模型标准定义了一个通用的语义信息模型，用于表示三维城市对象，以支持其在不同应用中共享。
+这种跨应用共享的能力对于实现三维城市模型的可持续、低成本维护尤为重要，允许政府和公司通过能够将相同的三维城市模型应用于不同的应用领域来获得其在3D城市模型上的投资收益。
+该标准所面向的应用领域包括但不限于：城市规划、建筑设计、旅游与休闲活动、环境模拟、移动通信、灾害管理、国土安全、不动产管理、车辆与行人导航、以及培训模拟器等。
+ 
+CityGML概念模型定义了城市和区域模型中最重要地形对象的类及其之间的关系，涵盖了几何、拓扑、语义和外观等属性。这里所指的“城市”具有广义含义，不仅包括建筑结构，
+还涵盖了地形、植被、水体、城市家具等内容。此概念模型中包括了专题类之间的泛化层级、对象的聚合关系、对象之间的关联关系以及空间属性。CityGML可用于
+表示大范围区域或小尺度区域，并支持在不同细节层次（Level of Detail, LoD）下同时表示地形与三维对象。由于CityGML既可以表达简单的、单尺度的、缺乏拓扑和语义信息的模型，
+也可以表示具有完整拓扑关系和精细语义划分的复杂多尺度模型，因此它能够在不同地理信息系统和用户之间，实现对三维城市对象的一致性表示。
 
-The CityGML Conceptual Model defines the classes and relations for the most relevant topographic objects in cities and regional models with respect to their geometrical, topological, semantical, and appearance properties. “City” is broadly defined to comprise not just built structures, but also elevation, vegetation, water bodies, city furniture, and more. Included are generalization hierarchies between thematic classes, aggregations, relations between objects, and spatial properties. CityGML is applicable for large areas and small regions, and can represent the terrain and 3D objects in different levels of detail simultaneously. Since both simple, single scale models without topology and few semantics as well as very complex multi-scale models with full topology and fine-grained semantical differentiations can be represented, CityGML enables the consistent representation of 3D urban objects across different geographic information systems and users.

@@ -1,5 +1,5 @@
 [bibliography]
-= Bibliography
+== 参考文献
 
 * [[[three-dps_citation,OGC 15-001r4]]], Hagedorn, B., Thum, S., Reitz, T., Coors, V., Gutbell, R.: _OGC® 3D Portrayal Service 1.0_, Open Geospatial Consortium, Available from https://docs.opengeospatial.org/is/15-001r4/15-001r4.html[OGC Doc. 15-001r4].
 

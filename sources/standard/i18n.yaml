@@ -1,0 +1,127 @@
+term_def_boilerplate: |
+      <p>ISO and IEC maintain terminological databases for use in
+      standardization at the following addresses:</p>
+
+      <ul>
+      <li> <p>ISO Online browsing platform: available at
+        <a href="http://www.iso.org/obp">http://www.iso.org/obp</a></p> </li>
+      <li> <p>IEC Electropedia: available at
+        <a href="http://www.electropedia.org">http://www.electropedia.org</a>
+      </p> </li> </ul>
+scope: 适应范围
+symbols: 符号和缩略语
+introduction: Introduction
+foreword: Frontispiece
+termsdefs: 术语和定义
+termsdefsymbols: 术语、定义、符号和缩略语
+normref: 规范性引用文件
+bibliography: 参考文献
+clause: 章节
+annex: 附录
+no_terms_boilerplate: <p>No terms and definitions are listed in this document.</p>
+internal_terms_boilerplate: |
+  <p>For the purposes of this document, the following terms and definitions apply.</p>
+norm_with_refs_pref:
+  以下文件在本文中被引用，其部分或全部内容构成本文件的要求。对于有日期的引用，仅适用所引用的版本；对于无日期的引用，适用引用文献的最新版本（包括任何修订）。
+norm_empty_pref:
+  There are no normative references in this document.
+external_terms_boilerplate: |
+  <p>For the purposes of this document, the terms and definitions given in % apply.</p>
+internal_external_terms_boilerplate: |
+          <p>For the purposes of this document, the terms and definitions 
+            given in % and the following apply.</p>
+note: 注意
+note_xref: 注意
+termnote: Note % to entry
+figure: 图
+formula: 公式
+table: 表
+key: Key
+example: EXAMPLE
+example_xref: Example
+where: where
+wholeoftext: Whole of text
+draft: draft
+inform_annex: 信息性
+norm_annex: 规范性
+modified: modified
+deprecated: DEPRECATED
+source: 来源
+and: and
+all_parts: All Parts
+locality: {
+       section: Section,
+       clause: 章节,
+       part: Part,
+       paragraph: Paragraph,
+       chapter: Chapter,
+       page: Page,
+       table: 表,
+       annex: 附录,
+       figure: 图,
+       example: Example,
+       note: 注意,
+       formula: 公式
+}
+admitted: ALTERNATIVE
+foreword: 前言
+abstract: 摘要
+submitters: 提交者
+contributors_clause: 贡献者
+recommendationtest: 推荐性测试
+requirementtest: 要求性测试
+permissiontest: 许可性测试
+recommendationclass: 推荐性类
+requirementclass: 要求性类
+permissionclass: 许可性类
+abstracttest: 抽象性测试
+conformanceclass: 一致性类
+dochistory: 修订历史
+example: Example
+Keywords: 关键词
+sourcecode: Listing
+table_of_contents: 目录
+toc_figures: 图附录
+toc_tables: 表附录
+toc_recommendations: 建议附录
+table_of_figures: Table of Figures
+security_empty: 本文档未考虑安全因素
+terms, definitions and abbreviated terms: 术语、定义和缩略语
+Acknowlegements: 致谢
+internal_terms_boilerplate: |
+  This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+  This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+  For the purposes of this document, the following additional terms and definitions apply.
+external_terms_boilerplate: |
+  This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+  This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+  For the purposes of this document, the terms and definitions given in % additionally apply.
+internal_external_terms_boilerplate: |
+  This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+  This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+  For the purposes of this document, the terms and definitions given in % and the following additionally apply.
+term_defined_in: "(%)"
+submission_date: 提交日期
+approval_date: 批准日期
+publication_date: 出版日期
+author: 作者
+editor_full: 编辑
+contributor: 贡献者
+stage_dict:
+  draft: Draft
+  work-item-draft: Work Item Draft
+  swg-draft: Candidate SWG Draft
+  oab-review: Candidate OAB Review Draft
+  public-rfc: Candidate Public RFC Draft
+  tc-vote: Candidate TC Vote Draft
+  approved: Approved
+  published: Published
+  deprecated: Deprecated
+  rescinded: Rescinded
+  retired: Retired

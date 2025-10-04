@@ -1,29 +1,26 @@
-The Generics module provides the representation of generic city objects. These are city objects that are not covered by any explicitly modeled thematic class within the CityGML Conceptual Model. The Generics module also provides the representation of generic attributes which are attributes that are not explicitly represented in the CityGML Conceptual Model. In order to avoid problems concerning semantic interoperability, generic city objects and generic attributes shall only be used if appropriate thematic classes and attributes are not provided by any other CityGML module.
+通用类模块用于表示通用的城市对象。这些城市对象在CityGML概念模型中没有被任何明确建模的主题类所涵盖。通用类模块还用于表示通用属性，即那些在CityGML概念模型中未被明确表示的属性。为了避免语义互操作性方面的问题，只有在其他CityGML模块没有提供合适的主题类和属性时，才应使用通用城市对象和通用属性。
 
-In accordance with the CityGML Space concept defined in the Core module (lutaml_table::[package="Core"]) generic city objects can be represented as generic logical spaces, generic occupied spaces, generic unoccupied spaces, and generic thematic surfaces. In this way, spaces and surfaces can be defined that are not represented by any explicitly modeled class within CityGML that is a subclass of the classes AbstractLogicalSpace, AbstractOccupiedSpace, AbstractUnoccupiedSpace or AbstractThematicSurface, respectively.
-Generic city objects are represented in the UML model by the top-level feature types _GenericLogicalSpace_, _GenericOccupiedSpace_, _GenericUnoccupiedSpace_ and _GenericThematicSurface_.
+根据核心模块(lutaml_table::[package="Core"]) 中定义的CityGML空间概念，通用城市对象可以表示为通用逻辑空间、通用占用空间、通用未占用空间和通用专题表面。通过这种方式，可以定义那些在CityGML中没有被任何明确建模的类（分别是AbstractLogicalSpace、AbstractOccupiedSpace、AbstractUnoccupiedSpace或AbstractThematicSurface类的子类）所表示的空间和表面。在UML模型中，通用城市对象由顶级要素类型 _GenericLogicalSpace_, _GenericOccupiedSpace_, _GenericUnoccupiedSpace_ and _GenericThematicSurface_表示。
 
-Generic attributes are defined as name-value pairs and are always associated with a city object. Generic attributes can be of type String, Integer, Double, Date, URI, Measure, and Code. In addition, generic attributes can be grouped under a common name as generic attribute sets.
+通用属性被定义为名称 - 值对，并且总是与一个城市对象相关联。通用属性的类型可以是字符串（String）、整数（Integer）、双精度浮点数（Double）、日期（Date）、统一资源标识符（URI）、度量（Measure）和代码（Code）。此外，通用属性可以在一个通用名称下分组为通用属性集。
 
-The UML diagram of the Generics module is depicted in <<generics-uml>>. A
-detailed discussion of this Requirements Class can be found in the
-link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-generics-section[CityGML 3.0 Users Guide].
+通用类模块的UML图如 <<generics-uml>>所示。关于此需求类的详细讨论可以在
+link:http://docs.opengeospatial.org/DRAFTS/20-066.html#ug-model-generics-section[CityGML 3.0 Users Guide]中找到。
 
 [[generics-uml]]
-.UML diagram of the Generics Model.
-
+.通用类模型的UML图
 image::figures/Generics.png[]
 
-The ADE data types provided for the Generics module are illustrated in <<generics-uml-ade-types>>.
+为通用类模块提供的ADE数据类型如 <<generics-uml-ade-types>>所示。
 
 [[generics-uml-ade-types]]
-.ADE classes of the CityGML Generics module.
+.CityGML通用类模块的ADE类。
 image::figures/Generics-ADE_Datatypes.png[]
 
-The Code Lists provided for the Generics module are illustrated in <<generics-uml-codelists>>.
+为通用类模块提供的代码列表如 <<generics-uml-codelists>>所示
 
 [[generics-uml-codelists]]
-.Codelists from the CityGML Generics module.
+.CityGML通用类模块的代码列表
 image::figures/Generics-Codelists.png[]
 
-<<generics-boundaries-table>> lists the surfaces that are allowed as thematic surface boundaries of the space classes defined in the Generics module:
+<<generics-boundaries-table>> 列出了允许作为通用类模块中定义的空间类的专题表面边界的表面：

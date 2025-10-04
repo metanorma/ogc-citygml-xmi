@@ -1,39 +1,40 @@
 [[ats_ade_properties]]
-[abstract_test,label="/ats/ade/properties",subject='<<req_ade_properties,/req/ade/properties>>']
+[abstract_test]
 ====
-[.component,class=test-purpose]
+[%metadata]
+标签:: /ats/ade/properties
+主体:: <<req_ade_properties,/req/ade/properties>>
+[.component,class=测试目的]
 --
-To validate that Application Domain Extensions (ADE) to the CityGML Conceptual Model implement extension properties correctly.
---
-
-[.component,class=test method type]
---
-Manual Inspection
+验证对CityGML概念模型的应用领域扩展（ADE）是否正确实现了扩展属性。
 --
 
-[.component,class=test method]
+[.component,class=测试方法类型]
+--
+人工检查
+--
+
+[.component,class=测试方法]
 =====
 
 [.component,class=step]
 ======
-Every Feature Type in the CityGML Conceptual Model includes an extension property whos' purpose is to allow an ADE to add properties to that existing Feature Type. In every case where an extension property has been used:
+CityGML概念模型中的每个要素类型都包含一个扩展属性，其目的是允许ADE向该现有的要素类型添加属性。在每个使用了扩展属性的情况下：
 
 [.component,class=step]
 --
-Validate that the ADE creates a subclass of the abstract data type associated with the extension property.
---
-
-[.component,class=step]
---
-Validate that this subclass is defined as a data type using the stereotype _&#171;DataType&#187;_.
+验证ADE是否创建了与扩展属性相关联的抽象数据类型的子类。
 --
 
 [.component,class=step]
 --
-Validate that all application-specific attributes and associations for that Feature Type are modeled as properties of the ADE subclass.
+验证此子类是否被定义为使用_«DataType»_构造型的数据类型。
+--
+
+[.component,class=step]
+--
+验证该要素类型的所有特定于应用程序的属性和关联是否被建模为ADE子类的属性。
 --
 ======
 =====
 ====
-
-
