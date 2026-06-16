@@ -1,5 +1,5 @@
-<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>OGC TB 17 D144 CityGML XMI model-driven standard</title><contributor><role type='author'/><organization><name>OGC</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard</title>
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>OGC TB 17 D144 CityGML XMI model-driven standard</title><contributor><role type='author'/><organization><name>OGC</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard</title>
   <uri type="xml">./documents/standard/20-010.xml</uri>
   <uri type="pdf">./documents/standard/20-010.pdf</uri>
   <uri type="doc">./documents/standard/20-010.doc</uri>
@@ -107,9 +107,9 @@
     </role>
     <organization>
       <name>Open Geospatial Consortium</name>
-      <subdivision>
-technical
-</subdivision>
+      <subdivision type="Committee">
+        <name>technical</name>
+      </subdivision>
       <abbreviation>OGC</abbreviation>
     </organization>
   </contributor>
@@ -121,16 +121,15 @@ technical
     </organization>
   </contributor>
   <edition>3.0.0</edition>
-  <version>
-    <draft>3.0.0</draft>
-  </version>
+  <version>3.0.0</version>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;This Standard defines the open CityGML Conceptual Model for the storage and exchange of virtual 3D city models. The CityGML Conceptual Model is defined by a Unified Modeling Language (UML) object model. This UML model builds on the ISO Technical Committee 211 (ISO/TC 211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the man-made features described in the city models share the same spatiotemporal universe as the surrounding countryside within which they reside.&lt;/p&gt;
+  <abstract><p>This Standard defines the open CityGML Conceptual Model for the storage and exchange of virtual 3D city models. The CityGML Conceptual Model is defined by a Unified Modeling Language (UML) object model. This UML model builds on the ISO Technical Committee 211 (ISO/TC 211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the man-made features described in the city models share the same spatiotemporal universe as the surrounding countryside within which they reside.</p>
 
-&lt;p&gt;A key goal for the development of the CityGML Conceptual Model is to provide a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.&lt;/p&gt;
+<p>A key goal for the development of the CityGML Conceptual Model is to provide a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.</p>
 
-&lt;p&gt;The class models described in this standard are also available at &lt;link target="https://github.com/opengeospatial/CityGML3-Workspace/tree/1.0/UML/CityGML"/&gt;&lt;/p&gt;</abstract>
+<p>The class models described in this standard are also available at </p>
+</abstract>
   <status>
     <stage>approved</stage>
   </status>
@@ -143,13 +142,14 @@ technical
       </organization>
     </owner>
   </copyright>
-  <keyword>ogcdoc</keyword>
-  <keyword>OGC document</keyword>
-  <keyword>CityGML</keyword>
-  <keyword>3D city models</keyword>
+  <keyword/>
+  <keyword/>
+  <keyword/>
+  <keyword/>
   <ext>
     <doctype>standard</doctype>
     <subdoctype>conceptual-model</subdoctype>
+    <flavor>ogc</flavor>
   </ext>
 </bibdata></relation>
 </relaton-collection>
