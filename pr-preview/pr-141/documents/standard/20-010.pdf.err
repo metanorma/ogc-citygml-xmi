@@ -1,0 +1,78 @@
+WARNING: font '/config/fonts/google/fira_code/FiraCode[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+WARNING: font '/config/fonts/google/overpass/Overpass-Italic[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+WARNING: font '/config/fonts/google/overpass/Overpass[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+Page #3: Font "Fira Code,normal,700" not found. Substituting with "Fira Code,normal,400".
+The contents of fo:region-body on page 85 exceed its viewport by 9374 millipoints. (See position 1:2030)
+Please check the PDF and if necessary, report this issue at the following link: https://github.com/metanorma/mn-native-pdf/issues/new, and attach the XSL-FO file or fragment: '/__w/ogc-citygml-xmi/ogc-citygml-xmi/_site/documents/standard/20-010.pdf.fo.xml'.
+The contents of fo:region-body on page 66 exceed its viewport by 12674 millipoints. (See position 1:2030)
+Please check the PDF and if necessary, report this issue at the following link: https://github.com/metanorma/mn-native-pdf/issues/new, and attach the XSL-FO file or fragment: '/__w/ogc-citygml-xmi/ogc-citygml-xmi/_site/documents/standard/20-010.pdf.fo.xml'.
+Page #4: Font "Fira Code,normal,700" not found. Substituting with "Fira Code,normal,400".
+Page 170: Unresolved ID reference "_genericname" found.
+Page 170: Unresolved ID reference "_characterstring" found.
+Page 170: Unresolved ID reference "_scopedname" found.
+Page 171: Unresolved ID reference "_datetime" found.
+Page 181: Unresolved ID reference "_engineeringcrs" found.
+Page 183: Unresolved ID reference "_uri" found.
+Page 184: Unresolved ID reference "_uri" found.
+Page 185: Unresolved ID reference "_real" found.
+Page 186: Unresolved ID reference "_unitofmeasure" found.
+Page 189: Unresolved ID reference "_uri" found.
+Page 189: Unresolved ID reference "_real" found.
+Page 199: Unresolved ID reference "_uri" found.
+Page 199: Unresolved ID reference "_integer" found.
+Page 200: Unresolved ID reference "_area" found.
+Page 201: Unresolved ID reference "_volume" found.
+Page 204: Unresolved ID reference "_boolean" found.
+Page 205: Unresolved ID reference "_uri" found.
+Page 206: Unresolved ID reference "_uri" found.
+Page 206: Unresolved ID reference "_characterstring" found.
+Page 206: Unresolved ID reference "_boolean" found.
+Page 208: Unresolved ID reference "_uri" found.
+Page 208: Unresolved ID reference "_boolean" found.
+Page 213: Unresolved ID reference "_uri" found.
+Page 219: Unresolved ID reference "_characterstring" found.
+Page 221: Unresolved ID reference "_characterstring" found.
+Page 224: Unresolved ID reference "_characterstring" found.
+Page 225: Unresolved ID reference "_uri" found.
+Page 226: Unresolved ID reference "_uri" found.
+Page 226: Unresolved ID reference "_characterstring" found.
+Page 226: Unresolved ID reference "_character" found.
+Page 226: Unresolved ID reference "_integer" found.
+Page 231: Unresolved ID reference "_uri" found.
+Page 231: Unresolved ID reference "_characterstring" found.
+Page 232: Unresolved ID reference "_tm_duration" found.
+Page 232: Unresolved ID reference "_integer" found.
+Page 233: Unresolved ID reference "_uri" found.
+Page 233: Unresolved ID reference "_boolean" found.
+Page 233: Unresolved ID reference "_characterstring" found.
+Page 233: Unresolved ID reference "_integer" found.
+Page 233: Unresolved ID reference "_real" found.
+Page 242: Unresolved ID reference "_characterstring" found.
+Page 243: Unresolved ID reference "_characterstring" found.
+Page 243: Unresolved ID reference "_date" found.
+Page 243: Unresolved ID reference "_real" found.
+Page 244: Unresolved ID reference "_uri" found.
+Page 244: Unresolved ID reference "_characterstring" found.
+Page 245: Unresolved ID reference "_characterstring" found.
+Page 245: Unresolved ID reference "_measure" found.
+Page 245: Unresolved ID reference "_integer" found.
+Page 246: Unresolved ID reference "_uri" found.
+Page 246: Unresolved ID reference "_characterstring" found.
+Page 250: Unresolved ID reference "_uri" found.
+Page 250: Unresolved ID reference "_characterstring" found.
+Page 288: Unresolved ID reference "_length" found.
+Page 289: Unresolved ID reference "_length" found.
+Page 294: Unresolved ID reference "_characterstring" found.
+Page 295: Unresolved ID reference "_boolean" found.
+Page 295: Unresolved ID reference "_characterstring" found.
+Page 305: Unresolved ID reference "_date" found.
+Page 307: Unresolved ID reference "_boolean" found.
+Page 327: Unresolved ID reference "_characterstring" found.
+Page 327: Unresolved ID reference "_date" found.
+Page 328: Unresolved ID reference "_length" found.
+Page 331: Unresolved ID reference "_boolean" found.
+Page 344: Unresolved ID reference "_integer" found.
+Page 344: Unresolved ID reference "measureornilreasonlist" found.
+Page 345: Unresolved ID reference "_integer" found.
+Page 346: Unresolved ID reference "_real" found.
+Page 362: Unresolved ID reference "_length" found.
